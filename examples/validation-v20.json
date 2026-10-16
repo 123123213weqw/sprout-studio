@@ -1,0 +1,214 @@
+{
+  "version": "0.20.0",
+  "automatedTests": {
+    "total": 457,
+    "passed": 457,
+    "failed": 0,
+    "new": 32,
+    "sectionFillCoreTests": 25,
+    "actualDownloadedFixtureTests": 7
+  },
+  "actualUi": {
+    "draftDoesNotApplyOrStart": true,
+    "invalidEnergyAndEmptySelectionRefused": true,
+    "desktop": {
+      "style": "rise",
+      "bars": 2,
+      "energy": 82,
+      "seed": 20261010,
+      "selectedTracks": [
+        "kick",
+        "snare",
+        "hat"
+      ],
+      "startBeat": 88,
+      "endBeat": 96,
+      "removed": 25,
+      "added": 37,
+      "notesBefore": 816,
+      "notesAfter": 828,
+      "globalAndOtherMusicExact": true,
+      "sourcePatternsUnchanged": true,
+      "sharedReferences": 4,
+      "backupBeforeOneUndo": true
+    },
+    "mobile": {
+      "style": "break",
+      "bars": 1,
+      "energy": 65,
+      "seed": 321,
+      "selectedTracks": [
+        "snare"
+      ],
+      "startBeat": 92,
+      "endBeat": 96,
+      "removed": 3,
+      "added": 4,
+      "notesAfter": 817,
+      "otherTracksByteContentExact": true,
+      "oneUndo": true
+    },
+    "gap": {
+      "defaultRefused": true,
+      "explicitFillGaps": true,
+      "selectedTracks": [
+        "kick"
+      ],
+      "bars": 2,
+      "startBeat": 88,
+      "endBeat": 96,
+      "addedNotes": 4,
+      "newIndependentUnmutedClips": 1,
+      "notesAfter": 814,
+      "undoFillAndTestDeletionRestoresOriginal": true
+    },
+    "stale": {
+      "actualOfflineDrumCandidateApplied": true,
+      "candidateNotesAfter": 632,
+      "oldFillRefused": true,
+      "error": "工程或段落选择已改变，请重新打开过门助手。",
+      "undoRestoredOriginal": true
+    },
+    "refreshOriginalDownloadByteExact": true,
+    "final": {
+      "revision": 0,
+      "notes": 816,
+      "transport": {
+        "playing": false,
+        "beat": 64,
+        "range": {
+          "start": 64,
+          "end": 96
+        },
+        "loop": true,
+        "quiet": true,
+        "clipPreview": null,
+        "hardwareAudioInitialized": false
+      },
+      "candidate": false,
+      "errors": []
+    }
+  },
+  "audio": {
+    "offlineOnly": true,
+    "notPlayed": true,
+    "realLlmCalls": 0,
+    "practiceRange": {
+      "start": 64,
+      "end": 96
+    },
+    "events": 216,
+    "tailSeconds": 2.42,
+    "frames": 1091281,
+    "durationSeconds": 24.745600907029477,
+    "sampleRate": 44100,
+    "channels": 2,
+    "bitsPerSample": 16,
+    "peak": 0.4984130859375,
+    "rms": 0.084405476525562,
+    "clipped": 0
+  },
+  "midi": {
+    "fullSong": true,
+    "notes": 828,
+    "byteEqualEncoder": true,
+    "onsetDurationAndVelocityCompared": true
+  },
+  "layout": {
+    "desktop": {
+      "body": {
+        "bottom": 798,
+        "height": 701,
+        "left": 241,
+        "right": 1039,
+        "top": 97,
+        "width": 798,
+        "x": 241,
+        "y": 97
+      },
+      "bodyScroll": 792,
+      "bodyWidth": 792,
+      "dialog": {
+        "bottom": 876,
+        "height": 852,
+        "left": 240,
+        "right": 1040,
+        "top": 24,
+        "width": 800,
+        "x": 240,
+        "y": 24
+      },
+      "footer": {
+        "bottom": 875,
+        "height": 77,
+        "left": 241,
+        "right": 1039,
+        "top": 798,
+        "width": 798,
+        "x": 241,
+        "y": 798
+      },
+      "width": 1280
+    },
+    "mobile": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "pageWidth": 384,
+      "dialog": {
+        "x": 12,
+        "y": 12,
+        "width": 360,
+        "height": 820
+      },
+      "footer": {
+        "x": 13,
+        "y": 765,
+        "width": 358,
+        "height": 66
+      },
+      "bodyClientWidth": 352,
+      "bodyScrollWidth": 352
+    }
+  },
+  "screenshots": [
+    "screenshots/v20-section-fill-desktop.jpg",
+    "screenshots/v20-section-fill-mobile.jpg"
+  ],
+  "files": {
+    "section-fill-original.sprout": {
+      "bytes": 164769,
+      "sha256": "e914f4bc0a2e03767f695f677faf168d28770bcd6e769b07449f09b61dab89cf"
+    },
+    "section-fill-rise.sprout": {
+      "bytes": 166954,
+      "sha256": "661b2674fcab1a3b85bba7db312ec00c5ae780eeb07fa0da76787fc8a43ef097"
+    },
+    "section-fill-rise.mid": {
+      "bytes": 7642,
+      "sha256": "f85f95ec7339095f32b898b7e7db2a521f3f06cf299ca6fb3ff715406ad30900"
+    },
+    "section-fill-region.wav": {
+      "bytes": 4365168,
+      "sha256": "4a2a6a6b91da3234234f1b22a4c669694aa00f8dd33f32f95ca408cc2725448f"
+    },
+    "section-fill-mobile-snare.sprout": {
+      "bytes": 164948,
+      "sha256": "323509c8c4393b57639149812c204a2ec57f9eceeb36d6461c49a8bcc26a4299"
+    },
+    "section-fill-gap.sprout": {
+      "bytes": 164427,
+      "sha256": "2e21feb7bc3c44a9a4caede05f0f74b47ad242d6d29250f3afe34bdc40ca4d27"
+    },
+    "section-fill-restored.sprout": {
+      "bytes": 164769,
+      "sha256": "e914f4bc0a2e03767f695f677faf168d28770bcd6e769b07449f09b61dab89cf"
+    }
+  },
+  "verificationLimits": [
+    "未播放声音，未做人工听感评价",
+    "规则鼓过门，不是 LLM 衔接 / 和声分析 / 旋律变奏",
+    "故障与容量注入仅使用纯测试数据，没有篡改浏览器隐藏状态"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "version": "0.11.0",
+  "quiet": true,
+  "hardwareAudioInitialized": false,
+  "realModelCalls": 0,
+  "automatedTests": 187,
+  "tracks": 7,
+  "bars": 32,
+  "notes": 816,
+  "sourcePatterns": 1,
+  "linkedInstances": 4,
+  "sections": [
+    {
+      "name": "前奏",
+      "start": 0,
+      "length": 32
+    },
+    {
+      "name": "主歌",
+      "start": 32,
+      "length": 32
+    },
+    {
+      "name": "副歌",
+      "start": 64,
+      "length": 32
+    },
+    {
+      "name": "尾奏",
+      "start": 96,
+      "length": 32
+    }
+  ],
+  "practice": {
+    "start": 64,
+    "end": 96
+  },
+  "actualLatePianoEdit": {
+    "start": 106.25,
+    "pitch": 66,
+    "duration": 0.5,
+    "velocity": 78,
+    "undone": true,
+    "allOriginalDataPreserved": true
+  },
+  "actualMIDIImport": {
+    "bars": 32,
+    "sourceNotes": 816,
+    "importedNotes": 816,
+    "undoRestoredOriginal": true
+  },
+  "actual64BarVirtualView": {
+    "logicalWidth": 8960,
+    "canvasWidth": 883,
+    "bufferWidth": 883
+  },
+  "mobileLengthModal": {
+    "viewport": [
+      390,
+      844
+    ],
+    "left": 12,
+    "right": 372,
+    "top": 33.1,
+    "bottom": 810.9
+  },
+  "limits": {
+    "bars": 64,
+    "tracks": 16,
+    "notesPerTrack": 4000,
+    "totalNotes": 12000,
+    "modelOutputNotes": 5000,
+    "composeRequestBytes": 3000000
+  },
+  "notVerified": [
+    "人工听感",
+    "真实模型服务",
+    "64小节满容量实际WAV",
+    "低内存手机长WAV"
+  ],
+  "long-song-demo.wav": {
+    "bytes": 16179864,
+    "channels": 2,
+    "sampleRate": 44100,
+    "bits": 16,
+    "seconds": 91.72233560090703,
+    "peak": 0.471771240234375,
+    "rms": 0.08791167019059815,
+    "clipped": 0
+  },
+  "long-song-region.wav": {
+    "bytes": 4365168,
+    "channels": 2,
+    "sampleRate": 44100,
+    "bits": 16,
+    "seconds": 24.745600907029477,
+    "peak": 0.471771240234375,
+    "rms": 0.08434651011338772,
+    "clipped": 0
+  }
+}

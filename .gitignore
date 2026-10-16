@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.DS_Store
+*.log
+
+# Media is distributed with GitHub Releases, not Git history.
+*.wav
+*.zip
+.openai/
+__pycache__/

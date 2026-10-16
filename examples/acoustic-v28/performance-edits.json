@@ -1,0 +1,186 @@
+[
+  {
+    "trackId": "27307a9d-cca1-4ebf-b919-575dfcb8beca",
+    "targetCount": 4,
+    "changed": 4,
+    "moved": 0,
+    "velocity": 3,
+    "timing": 3,
+    "shortened": 0,
+    "limitedTiming": 1,
+    "clampedVelocity": 0,
+    "overlapBefore": {
+      "count": 0,
+      "rows": [],
+      "truncated": false
+    },
+    "overlapAfter": {
+      "count": 0,
+      "rows": [],
+      "truncated": false
+    },
+    "blocked": [],
+    "detached": 0
+  },
+  {
+    "trackId": "57340dac-ed68-4198-8752-632139134e32",
+    "targetCount": 4,
+    "changed": 4,
+    "moved": 0,
+    "velocity": 4,
+    "timing": 4,
+    "shortened": 0,
+    "limitedTiming": 0,
+    "clampedVelocity": 0,
+    "overlapBefore": {
+      "count": 0,
+      "rows": [],
+      "truncated": false
+    },
+    "overlapAfter": {
+      "count": 0,
+      "rows": [],
+      "truncated": false
+    },
+    "blocked": [],
+    "detached": 0
+  },
+  {
+    "trackId": "9ce049c8-b729-414c-a75c-cab0ce6dc087",
+    "targetCount": 32,
+    "changed": 32,
+    "moved": 0,
+    "velocity": 30,
+    "timing": 31,
+    "shortened": 0,
+    "limitedTiming": 1,
+    "clampedVelocity": 0,
+    "overlapBefore": {
+      "count": 0,
+      "rows": [],
+      "truncated": false
+    },
+    "overlapAfter": {
+      "count": 0,
+      "rows": [],
+      "truncated": false
+    },
+    "blocked": [],
+    "detached": 0
+  },
+  {
+    "trackId": "21389fdc-5198-4c6c-a55d-90a0e6563d72",
+    "targetCount": 4,
+    "changed": 4,
+    "moved": 0,
+    "velocity": 4,
+    "timing": 3,
+    "shortened": 0,
+    "limitedTiming": 1,
+    "clampedVelocity": 0,
+    "overlapBefore": {
+      "count": 0,
+      "rows": [],
+      "truncated": false
+    },
+    "overlapAfter": {
+      "count": 0,
+      "rows": [],
+      "truncated": false
+    },
+    "blocked": [],
+    "detached": 0
+  },
+  {
+    "trackId": "aeaea914-7545-47ee-9a1f-4c38567bd9d0",
+    "targetCount": 12,
+    "changed": 11,
+    "moved": 0,
+    "velocity": 11,
+    "timing": 6,
+    "shortened": 0,
+    "limitedTiming": 6,
+    "clampedVelocity": 0,
+    "overlapBefore": {
+      "count": 0,
+      "rows": [],
+      "truncated": false
+    },
+    "overlapAfter": {
+      "count": 0,
+      "rows": [],
+      "truncated": false
+    },
+    "blocked": [],
+    "detached": 0
+  },
+  {
+    "trackId": "628e7cfd-60d3-4395-92a2-d174f5801c82",
+    "targetCount": 12,
+    "changed": 12,
+    "moved": 0,
+    "velocity": 7,
+    "timing": 12,
+    "shortened": 0,
+    "limitedTiming": 0,
+    "clampedVelocity": 0,
+    "overlapBefore": {
+      "count": 0,
+      "rows": [],
+      "truncated": false
+    },
+    "overlapAfter": {
+      "count": 0,
+      "rows": [],
+      "truncated": false
+    },
+    "blocked": [],
+    "detached": 0
+  },
+  {
+    "trackId": "6ac0d183-f23b-45ad-9cfe-765e649983d1",
+    "targetCount": 4,
+    "changed": 4,
+    "moved": 0,
+    "velocity": 2,
+    "timing": 2,
+    "shortened": 0,
+    "limitedTiming": 2,
+    "clampedVelocity": 0,
+    "overlapBefore": {
+      "count": 0,
+      "rows": [],
+      "truncated": false
+    },
+    "overlapAfter": {
+      "count": 0,
+      "rows": [],
+      "truncated": false
+    },
+    "blocked": [],
+    "detached": 0
+  },
+  {
+    "trackId": "930b6f24-6f93-4aa6-afe2-b46c9623c322",
+    "targetCount": 8,
+    "changed": 8,
+    "moved": 0,
+    "velocity": 7,
+    "timing": 7,
+    "shortened": 0,
+    "limitedTiming": 1,
+    "clampedVelocity": 0,
+    "overlapBefore": {
+      "count": 0,
+      "rows": [],
+      "truncated": false
+    },
+    "overlapAfter": {
+      "count": 0,
+      "rows": [],
+      "truncated": false
+    },
+    "blocked": [],
+    "detached": 0
+  }
+]

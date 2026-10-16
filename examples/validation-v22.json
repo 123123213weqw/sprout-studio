@@ -1,0 +1,229 @@
+{
+  "version": "0.22.0",
+  "verifiedDate": "2026-10-13",
+  "delivery": "local only; no Site source push or deployment",
+  "automatedTests": {
+    "passed": 507,
+    "failed": 0,
+    "newWorkspaceTests": 15,
+    "newActualExportTests": 2,
+    "fullSuiteLog": "work/test-v22-final.log"
+  },
+  "runtime": {
+    "host": "127.0.0.1",
+    "port": 4173,
+    "pageHTTP": 200,
+    "healthVersion": "0.22.0",
+    "llmConfigured": false,
+    "providerEnvironment": "empty"
+  },
+  "project": {
+    "tracks": 7,
+    "notes": 816,
+    "sourcePatterns": 1,
+    "linkedInstances": 4,
+    "revision": 0,
+    "byteExactOriginal": true,
+    "midiExactEncoder": true,
+    "displayColorsDoNotAlterSavedTrackColors": true
+  },
+  "transport": {
+    "playing": false,
+    "beat": 64,
+    "range": {
+      "start": 64,
+      "end": 96
+    },
+    "loop": true,
+    "quiet": false,
+    "clipPreview": null,
+    "hardwareAudioInitialized": false
+  },
+  "browserErrors": [],
+  "layout": {
+    "desktop": {
+      "arrangementHeight": 351,
+      "clipToolsExpanded": "false",
+      "height": 900,
+      "noteToolsExpanded": "false",
+      "quiet": "false",
+      "scrollWidth": 1280,
+      "visibleTracks": 7,
+      "width": 1280
+    },
+    "mobile": {
+      "arrangement": {
+        "bottom": 595.5,
+        "height": 366,
+        "left": 0,
+        "right": 384,
+        "top": 229.5,
+        "width": 384,
+        "x": 0,
+        "y": 229.5
+      },
+      "clipTools": {
+        "bottom": 665.5,
+        "height": 69,
+        "left": 0,
+        "right": 384,
+        "top": 596.5,
+        "width": 384,
+        "x": 0,
+        "y": 596.5
+      },
+      "editor": {
+        "bottom": 992.5,
+        "height": 302,
+        "left": 0,
+        "right": 384,
+        "top": 690.5,
+        "width": 384,
+        "x": 0,
+        "y": 690.5
+      },
+      "header": {
+        "bottom": 54,
+        "height": 54,
+        "left": 0,
+        "right": 384,
+        "top": 0,
+        "width": 384,
+        "x": 0,
+        "y": 0
+      },
+      "pageScrollWidth": 384,
+      "pageWidth": 384,
+      "transport": {
+        "bottom": 104,
+        "height": 50,
+        "left": 0,
+        "right": 384,
+        "top": 54,
+        "width": 384,
+        "x": 0,
+        "y": 54
+      }
+    },
+    "narrow": {
+      "width": 354,
+      "scrollWidth": 354,
+      "headerWidth": 354,
+      "transportWidth": 354,
+      "clipToolsWidth": 354
+    }
+  },
+  "auditSteps": [
+    {
+      "step": 1,
+      "surface": "Original desktop working view",
+      "health": "Needs simplification",
+      "screenshot": "screenshots/v22-before-desktop.png",
+      "findings": [
+        "Stacked low-frequency toolbars leave little arrangement height",
+        "Large assistant greeting competes with music editing",
+        "Multiple accent-filled controls and decorated style tiles are visually noisy"
+      ]
+    },
+    {
+      "step": 2,
+      "surface": "Simplified desktop and focus view",
+      "health": "Verified mouse paths and refresh restoration",
+      "screenshots": [
+        "screenshots/v22-default-desktop.png",
+        "screenshots/v22-focus-desktop.png"
+      ],
+      "findings": [
+        "Seven tracks fully visible at 1280 by 900",
+        "Secondary tools folded, not removed",
+        "Focus and expansion preferences are stored separately from projects"
+      ]
+    },
+    {
+      "step": 3,
+      "surface": "Mobile overview and note tools",
+      "health": "Verified within captured scope",
+      "screenshots": [
+        "screenshots/v22-mobile.png",
+        "screenshots/v22-mobile-tools.png"
+      ],
+      "findings": [
+        "Actual page widths 384 and 354 have no document/header/transport/clip-toolbar overflow",
+        "Select 16 notes, open batch and copy/paste dialogs, cancel without changing music",
+        "Moved note actions retain their editor ancestor delegation; regression fixed and tested"
+      ]
+    }
+  ],
+  "interactionChecks": {
+    "allThreeDisclosurePanels": true,
+    "sharedTransformDialogOpened": true,
+    "focusRestoreAfterRefresh": true,
+    "bulkDialogOpenedOnMobile": true,
+    "copy16AndPasteDialogOpenedOnMobile": true,
+    "soundToggleUpdatesURL": true,
+    "refreshKeepsSoundEnabled": true,
+    "offlineDrumCandidateStaged": {
+      "beforeNotes": 816,
+      "candidateNotes": 632,
+      "changedTracks": 3,
+      "applied": false,
+      "saved": false,
+      "differenceReviewOpened": true,
+      "discarded": true
+    }
+  },
+  "files": [
+    {
+      "file": "examples/ui-simplified.sprout",
+      "bytes": 164769,
+      "sha256": "e914f4bc0a2e03767f695f677faf168d28770bcd6e769b07449f09b61dab89cf"
+    },
+    {
+      "file": "examples/ui-simplified.mid",
+      "bytes": 7548,
+      "sha256": "3d18d332be2a4b59a8d80226babb88a7e9bc4f4547d30ad0673dbd798105a729"
+    },
+    {
+      "file": "screenshots/v22-before-desktop.png",
+      "bytes": 134261,
+      "sha256": "079fdf54754744a972ee0ef79482b6f791c09f691c58c37286e29470a65fe688",
+      "width": 65536,
+      "height": 4292542531
+    },
+    {
+      "file": "screenshots/v22-default-desktop.png",
+      "bytes": 137701,
+      "sha256": "4119ae922d251a04c234a00157aa8b10fd8eff499dcae4aab50e1554e01dca44",
+      "width": 65536,
+      "height": 4292542531
+    },
+    {
+      "file": "screenshots/v22-focus-desktop.png",
+      "bytes": 129365,
+      "sha256": "155909299d696eb7352de1ca095604ff227d64b9f293e4cc27ba0b0149063e6b",
+      "width": 65536,
+      "height": 4292542531
+    },
+    {
+      "file": "screenshots/v22-mobile-tools.png",
+      "bytes": 24258,
+      "sha256": "739eee49abca35970a8ed99b2aca8a405fce639b26a92e48183b6c1486d55e55",
+      "width": 65536,
+      "height": 4292542531
+    },
+    {
+      "file": "screenshots/v22-mobile.png",
+      "bytes": 40219,
+      "sha256": "02fc5d36a1641fcbfb2751933438c1dedde491d8f3f0bb465eb2a11c57f3167a",
+      "width": 65536,
+      "height": 4292542531
+    }
+  ],
+  "verificationLimits": [
+    "No real model generation or music-quality evaluation",
+    "No new WAV render in this UI iteration; prior offline-export regression suite passed",
+    "Keyboard automation could not send Return to the focus button; no claim of end-to-end keyboard or screen-reader certification",
+    "Some track M/S controls remain small; larger-touch-target refinement is still pending",
+    "No claim that the paused app Goal has automatically resumed"
+  ]
+}

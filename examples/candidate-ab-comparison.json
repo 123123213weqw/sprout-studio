@@ -1,0 +1,181 @@
+{
+  "format": "sprout-candidate-comparison",
+  "version": 1,
+  "baseline": {
+    "id": "2e9dea3c-cd3c-42fc-8678-1b3d7e834528",
+    "name": "歌曲骨架 · 静音编排示例",
+    "bars": 32,
+    "bpm": 86,
+    "key": "A minor",
+    "notes": 816
+  },
+  "direction": "A → B",
+  "a": {
+    "id": "7f090eea-5830-4d2b-8f9c-d125c2713b99",
+    "label": "A · 留一点空白",
+    "source": "offline",
+    "prompt": "雨夜 Lo-fi，副歌有一点起伏",
+    "context": {
+      "scope": "section",
+      "sectionId": "6b4eb7ae-ebdb-4bb4-9d2b-d8f35fb6757a",
+      "range": {
+        "start": 64,
+        "length": 32
+      },
+      "scopeLabel": "段落 · 副歌 · 第 17 小节起"
+    },
+    "controls": {
+      "density": 20,
+      "complexity": 15,
+      "energy": 30,
+      "humanize": 20,
+      "progression": "warm",
+      "voiceLeading": true,
+      "seed": 20261010
+    }
+  },
+  "b": {
+    "id": "c1980bba-dddd-4cfb-a7fd-27163fcc39a1",
+    "label": "B · 刚刚好",
+    "source": "offline",
+    "prompt": "雨夜 Lo-fi，副歌有一点起伏",
+    "context": {
+      "scope": "section",
+      "sectionId": "6b4eb7ae-ebdb-4bb4-9d2b-d8f35fb6757a",
+      "range": {
+        "start": 64,
+        "length": 32
+      },
+      "scopeLabel": "段落 · 副歌 · 第 17 小节起"
+    },
+    "controls": {
+      "density": 50,
+      "complexity": 35,
+      "energy": 50,
+      "humanize": 15,
+      "progression": "warm",
+      "voiceLeading": true,
+      "seed": 20261011
+    }
+  },
+  "differences": {
+    "tracks": [
+      {
+        "id": "9385fee3-87b0-48d8-b1c4-ec62c16cb5c3",
+        "name": "底鼓",
+        "kind": "drum",
+        "before": 61,
+        "after": 67,
+        "added": 7,
+        "removed": 1,
+        "modified": 6,
+        "created": false,
+        "deleted": false,
+        "soundChanged": false,
+        "changed": true
+      },
+      {
+        "id": "8e40110e-db03-4b41-8834-023fb4916984",
+        "name": "军鼓",
+        "kind": "drum",
+        "before": 61,
+        "after": 60,
+        "added": 1,
+        "removed": 2,
+        "modified": 8,
+        "created": false,
+        "deleted": false,
+        "soundChanged": false,
+        "changed": true
+      },
+      {
+        "id": "de321b9a-14a5-4872-9467-23e9149860b5",
+        "name": "踩镲",
+        "kind": "drum",
+        "before": 144,
+        "after": 157,
+        "added": 18,
+        "removed": 5,
+        "modified": 13,
+        "created": false,
+        "deleted": false,
+        "soundChanged": false,
+        "changed": true
+      },
+      {
+        "id": "fe5a776a-183b-47d9-b647-9ff68bb23c49",
+        "name": "温暖贝斯",
+        "kind": "tonal",
+        "before": 78,
+        "after": 90,
+        "added": 12,
+        "removed": 0,
+        "modified": 6,
+        "created": false,
+        "deleted": false,
+        "soundChanged": false,
+        "changed": true
+      },
+      {
+        "id": "98bf586e-ecab-47a8-87e2-e27332da5b8c",
+        "name": "柔和电钢琴",
+        "kind": "tonal",
+        "before": 162,
+        "after": 165,
+        "added": 3,
+        "removed": 0,
+        "modified": 18,
+        "created": false,
+        "deleted": false,
+        "soundChanged": false,
+        "changed": true
+      },
+      {
+        "id": "eee2b713-a85d-4f44-ae12-51a837b30d22",
+        "name": "细碎旋律",
+        "kind": "tonal",
+        "before": 76,
+        "after": 84,
+        "added": 14,
+        "removed": 6,
+        "modified": 1,
+        "created": false,
+        "deleted": false,
+        "soundChanged": false,
+        "changed": true
+      },
+      {
+        "id": "6bd46b3f-ed4d-4004-9ef2-eecb96f273f6",
+        "name": "空气铺底",
+        "kind": "tonal",
+        "before": 108,
+        "after": 111,
+        "added": 3,
+        "removed": 0,
+        "modified": 12,
+        "created": false,
+        "deleted": false,
+        "soundChanged": false,
+        "changed": true
+      }
+    ],
+    "patterns": {
+      "before": 1,
+      "after": 1,
+      "created": 0,
+      "deleted": 0,
+      "modified": 0,
+      "linked": 0,
+      "detached": 0
+    },
+    "soundChanges": 0,
+    "changedTracks": 7,
+    "notesBefore": 690,
+    "notesAfter": 734,
+    "added": 58,
+    "removed": 14,
+    "modified": 64,
+    "globals": []
+  },
+  "interpretation": "按相同音高与拍位置配对；ID 不计变化。修改含长度、力度与微偏移。不是音乐质量评分，也没有播放音频。"
+}

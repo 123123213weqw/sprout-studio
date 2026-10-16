@@ -1,0 +1,60 @@
+{
+  "harmony": [
+    {
+      "bar": 1,
+      "chord": "Am",
+      "pianoTriad": true,
+      "bassRoot": true
+    },
+    {
+      "bar": 2,
+      "chord": "F",
+      "pianoTriad": true,
+      "bassRoot": false
+    },
+    {
+      "bar": 3,
+      "chord": "C",
+      "pianoTriad": true,
+      "bassRoot": false
+    },
+    {
+      "bar": 4,
+      "chord": "G",
+      "pianoTriad": true,
+      "bassRoot": true
+    }
+  ],
+  "hiHat": {
+    "expected": 32,
+    "actual": 16,
+    "missingOnsets": [
+      0.5,
+      1.5,
+      2.5,
+      3.5,
+      4.5,
+      5.5,
+      6.5,
+      7.5,
+      8.5,
+      9.5,
+      10.5,
+      11.5,
+      12.5,
+      13.5,
+      14.5,
+      15.5
+    ],
+    "extraOnsets": [],
+    "eighthNotes": false
+  },
+  "key": {
+    "name": "A minor",
+    "melodicNotes": 40,
+    "outOfKey": 0
+  },
+  "allRolesHaveNotes": true,
+  "matchesExplicitBrief": false,
+  "quality": "Not a listening test, style assessment, originality check or artistic-quality score."
+}

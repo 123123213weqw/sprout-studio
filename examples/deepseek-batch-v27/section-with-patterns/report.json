@@ -1,0 +1,106 @@
+{
+  "id": "section-with-patterns",
+  "status": "accepted",
+  "receipt": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "elapsedMs": 6157,
+    "usage": {
+      "prompt_tokens": 6625,
+      "completion_tokens": 1464,
+      "total_tokens": 8089
+    },
+    "format": "sprout-score-v1",
+    "verified": "validated-notes",
+    "quality": "not-rated",
+    "requestId": "f1434892-c971-4273-9ea7-871c5722d0a1",
+    "maxOutputTokens": 8192
+  },
+  "assessment": {
+    "globalsPreserved": true,
+    "trackIdsPreserved": true,
+    "unselectedTracksPreserved": true,
+    "voicesAndMixPreserved": true,
+    "clipLayoutPreserved": true,
+    "outsideRangePreserved": true,
+    "patternLibraryPreserved": true,
+    "sectionLabelsPreserved": true,
+    "changedTracks": 8,
+    "boundariesPass": true,
+    "instructions": {
+      "allTargetRolesHaveNotes": true,
+      "outsideLinkedClipsPreserved": true,
+      "targetLinkedClipsDetached": true
+    },
+    "harmony": {
+      "harmony": [
+        {
+          "bar": 1,
+          "chord": "Am",
+          "pianoTriad": true,
+          "bassRoot": true
+        },
+        {
+          "bar": 2,
+          "chord": "F",
+          "pianoTriad": true,
+          "bassRoot": true
+        },
+        {
+          "bar": 3,
+          "chord": "C",
+          "pianoTriad": true,
+          "bassRoot": true
+        },
+        {
+          "bar": 4,
+          "chord": "G",
+          "pianoTriad": true,
+          "bassRoot": true
+        }
+      ],
+      "hiHat": {
+        "expected": 32,
+        "actual": 32,
+        "missingOnsets": [],
+        "extraOnsets": [],
+        "eighthNotes": true
+      },
+      "key": {
+        "name": "A minor",
+        "melodicNotes": 60,
+        "outOfKey": 0
+      },
+      "allRolesHaveNotes": true,
+      "matchesExplicitBrief": true,
+      "quality": "Not a listening test, style assessment, originality check or artistic-quality score."
+    },
+    "exactAnchors": [
+      {
+        "start": 32,
+        "piano": true,
+        "bass": true
+      },
+      {
+        "start": 36,
+        "piano": true,
+        "bass": true
+      },
+      {
+        "start": 40,
+        "piano": true,
+        "bass": true
+      },
+      {
+        "start": 44,
+        "piano": true,
+        "bass": true
+      }
+    ],
+    "instructionsPass": true
+  },
+  "notes": 451,
+  "midiNotes": 451,
+  "summary": "Restrained chorus rewrite for beats 32–48: piano triads follow Am–F–C–G with bass anchors, a short flute motif answers itself, sparse cello and harp add color, and a quiet lo-fi drum pattern stays restrained with stereo width implied by velocity and timing.",
+  "inputUnchanged": true
+}

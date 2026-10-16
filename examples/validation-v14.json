@@ -1,0 +1,288 @@
+{
+  "version": "0.14.0",
+  "automatedTests": {
+    "total": 258,
+    "passed": 258,
+    "failed": 0,
+    "new": 25,
+    "protocolAndCapacityTests": 21,
+    "actualDownloadedFixtureTests": 4
+  },
+  "portableFile": {
+    "format": "sprout-pattern-library",
+    "version": 1,
+    "sources": 3,
+    "notes": 30,
+    "reference": {
+      "bpm": 86,
+      "key": "A minor",
+      "swing": 12
+    },
+    "referenceIsExportingProjectOnly": true,
+    "autoTranspose": false,
+    "includesAudioOrSoundPresets": false,
+    "filename": "portable-phrases.sprout-patterns",
+    "singleKickNotes": 6
+  },
+  "mainProjectImport": {
+    "before": {
+      "bars": 32,
+      "tracks": 7,
+      "notes": 816,
+      "patterns": 1,
+      "sourceNotes": 16,
+      "instances": 4
+    },
+    "sourceProject": {
+      "bars": 32,
+      "tracks": 7,
+      "notes": 816,
+      "patterns": 3,
+      "sourceNotes": 30,
+      "instances": 4
+    },
+    "afterDefaultSkip": {
+      "bars": 32,
+      "tracks": 7,
+      "notes": 816,
+      "patterns": 3,
+      "sourceNotes": 30,
+      "instances": 4
+    },
+    "selected": 3,
+    "added": 2,
+    "skipped": 1,
+    "allTrackFieldsAndOriginalReferencesPreserved": true,
+    "allNonLibraryProjectFieldsPreserved": true,
+    "actualMidiByteIdenticalToOriginal": true,
+    "afterExplicitSelectedKickCopy": {
+      "bars": 32,
+      "tracks": 7,
+      "notes": 816,
+      "patterns": 4,
+      "sourceNotes": 36,
+      "instances": 4
+    },
+    "copyAdded": 1,
+    "copyNewName": "雨夜底鼓 · 两小节 · 导入 2",
+    "copyHasNoInstances": true,
+    "copyUndoneInUI": true
+  },
+  "separateProjectWorkflow": {
+    "newProjectIdDifferentFromOriginal": true,
+    "blankStart": {
+      "bars": 8,
+      "tracks": 6,
+      "notes": 0,
+      "patterns": 0,
+      "sourceNotes": 0,
+      "instances": 0
+    },
+    "libraryOnly": {
+      "bars": 8,
+      "tracks": 6,
+      "notes": 0,
+      "patterns": 3,
+      "sourceNotes": 30,
+      "instances": 0
+    },
+    "noMusicOrNewClipsOnLibraryImport": true,
+    "placedResult": {
+      "bars": 16,
+      "tracks": 6,
+      "notes": 30,
+      "patterns": 3,
+      "sourceNotes": 30,
+      "instances": 3
+    },
+    "explicitPlacementStartBeat": 32,
+    "explicitPlacementLengthBeats": 8,
+    "explicitBlankExtensionFromBars": 8,
+    "explicitBlankExtensionToBars": 16,
+    "loopRange": {
+      "start": 32,
+      "end": 40
+    },
+    "name": "乐句拼装 · 静音示例",
+    "placements": [
+      {
+        "instrument": "kick",
+        "start": 32,
+        "length": 8,
+        "patternId": "5ab2933d-519d-4f43-b625-148f363e46e3"
+      },
+      {
+        "instrument": "keys",
+        "start": 32,
+        "length": 8,
+        "patternId": "cb2d0ef1-8431-4c87-98f9-54c0cf819955"
+      },
+      {
+        "instrument": "lead",
+        "start": 32,
+        "length": 8,
+        "patternId": "997bf3c1-edee-4e05-ba15-c9e1e601ae35"
+      }
+    ],
+    "actualMidiNotes": 30,
+    "midiPitchTimeDurationVelocityComparedPerTrack": true,
+    "toleranceBeats": 0.002183333333333333,
+    "actualOfflineRegionWav": {
+      "bytes": 1249204,
+      "frames": 312290,
+      "channels": 2,
+      "sampleRate": 44100,
+      "bitDepth": 16,
+      "seconds": 7.08140589569161,
+      "peak": 0.397308349609375,
+      "rms": 0.061709815399429484,
+      "clippedSamples": 0,
+      "range": {
+        "start": 32,
+        "end": 40
+      },
+      "notes": 30
+    }
+  },
+  "browserChecks": [
+    "real three-source and selected single-source file downloads",
+    "none selected disables export and confirmation",
+    "default skip adds sources only; existing shared references remain exact",
+    "explicit copy imports only selected kick with regenerated IDs and suffix; one-step undo",
+    "complete valid project extraction works; all identical sources disable default apply",
+    "damaged v3 shared cache rejected before preview",
+    "file larger than 3000000 bytes rejected before text read",
+    "ten-source two-page selection preserves unchecked items; HTML-like name is text, not an img element",
+    "workspace changed by actual offline candidate apply rejects and disables stale import confirmation",
+    "library import into genuine new blank project creates no notes or instances",
+    "three deliberate placements on correct tracks at bar 9; blank extension expressly checked",
+    "actual project, MIDI and offline WAV downloads; no audio playback",
+    "new project persists correctly through refresh",
+    "original project restored and finally downloaded for complete JSON equality",
+    "390x844 and 1280x900 modal body scrolls, footer fits entirely and no horizontal page overflow",
+    "quiet virtual transport continues forward while appending an unused source; no restart or hardware context",
+    "final page stopped, quiet, original project restored and five pre-existing candidates preserved"
+  ],
+  "responsive": {
+    "mobile": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dialog": {
+        "width": 360,
+        "height": 820,
+        "top": 12,
+        "bottom": 832
+      },
+      "footerBottom": 831,
+      "footerInside": true,
+      "horizontalPageOverflow": false
+    },
+    "desktop": {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "dialog": {
+        "width": 900,
+        "height": 852,
+        "bottom": 876
+      },
+      "footerBottom": 875,
+      "footerInside": true,
+      "horizontalPageOverflow": false
+    },
+    "temporaryViewportReset": true,
+    "dialogHeightFixAlsoCoversPatternLibraryAndForms": true
+  },
+  "quietVerification": {
+    "urlQuery": "silent=1",
+    "realtimeHardwareAudioInitialized": false,
+    "audiblePlaybackPerformed": false,
+    "virtualTransportQA": {
+      "used": true,
+      "beatImmediatelyBeforeSourceAppend": 65.52520999994874,
+      "beatImmediatelyAfterSourceAppend": 66.02701999998291,
+      "playingBeforeAndAfter": true,
+      "quietBeforeAndAfter": true,
+      "hardwareAudioInitializedBeforeAndAfter": false,
+      "range": {
+        "start": 64,
+        "end": 96
+      },
+      "sourceCountBefore": 1,
+      "sourceCountAfter": 2,
+      "thenStoppedAndUndone": true
+    },
+    "offlineWavRendered": true,
+    "humanListeningPerformed": false,
+    "realModelCalls": 0,
+    "paidModelCalls": 0,
+    "existingModelCredentialsRead": false,
+    "previewServerEnvEmpty": true,
+    "fileTransferOperationsUploadOrCallModel": false,
+    "browserConsoleWarningsOrErrorsAtFinish": 0
+  },
+  "restoredWorkspace": {
+    "fullFinalDownloadedProjectEqualsOriginalJson": true,
+    "counts": {
+      "bars": 32,
+      "tracks": 7,
+      "notes": 816,
+      "patterns": 1,
+      "sourceNotes": 16,
+      "instances": 4
+    },
+    "loopRange": {
+      "start": 64,
+      "end": 96
+    },
+    "candidateShelfEntries": 5,
+    "stagedCandidate": false,
+    "transportPlaying": false,
+    "quiet": true,
+    "hardwareAudioInitialized": false
+  },
+  "capacityTests": {
+    "maxFileUtf8Bytes": 3000000,
+    "maxFullSavedProjectUtf8Bytes": 3000000,
+    "maxPatterns": 64,
+    "maxSourceNotes": 12000,
+    "maxNotesPerSource": 4000,
+    "allOrNothing": true,
+    "fullLibraryAllowsDedupedNoOp": true,
+    "newIdsAvoidExistingProjectSectionTrackClipSourceNotesAndAllFileIds": true,
+    "collisionRetries": 32,
+    "prettyExportActualByteCap": true,
+    "largeCapacityIsSyntheticUnitTestOnly": true
+  },
+  "evidence": {
+    "screenshots": [
+      "screenshots/v14-pattern-import-desktop.jpg",
+      "screenshots/v14-pattern-import-mobile.jpg",
+      "screenshots/v14-arranged-desktop.jpg"
+    ],
+    "actualDownloadedFiles": [
+      "portable-phrases.sprout-patterns",
+      "portable-source-project.sprout",
+      "portable-kick.sprout-patterns",
+      "portable-import-demo.sprout",
+      "portable-import-demo.mid",
+      "portable-copy-demo.sprout",
+      "portable-target-start.sprout",
+      "portable-target-library.sprout",
+      "portable-arranged-demo.sprout",
+      "portable-arranged-demo.mid",
+      "portable-arranged-region.wav"
+    ]
+  },
+  "limitations": [
+    "No real LLM quality or authentication validation; explicit user configuration still needed",
+    "No listening or professional music-quality judgement; PCM statistics do not replace listening",
+    "No automatic transposition, per-source provenance, operating-system phrase index or cloud sync",
+    "Not FLP, audio-sample import, VST/AU or a full FL Studio replacement",
+    "Maximum capacities verified synthetically, not full-capacity real hardware rendering"
+  ],
+  "goalContinues": true
+}

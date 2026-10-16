@@ -1,0 +1,31 @@
+{
+  "status": "passed-api-bridge-checks",
+  "testedAt": "2026-10-15T11:52:19.697Z",
+  "calls": 1,
+  "route": "local loopback API -> SSH loopback tunnel -> V100 Sprout -> official DeepSeek",
+  "receipt": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "elapsedMs": 2149,
+    "usage": {
+      "prompt_tokens": 1740,
+      "completion_tokens": 281,
+      "total_tokens": 2021
+    },
+    "format": "sprout-score-v1",
+    "verified": "validated-notes",
+    "quality": "not-rated",
+    "requestId": "f4d6a6c7-c8a4-4767-b947-fa87a99debf5",
+    "maxOutputTokens": 8192
+  },
+  "checks": {
+    "inputUnchanged": true,
+    "unselectedTracksUnchanged": true,
+    "sampledTracks": 8,
+    "selectedNotes": 11,
+    "totalNotes": 79,
+    "midiNotes": 79
+  },
+  "summary": "A restrained four-bar flute answer in A minor with a three-note motif, a varied repeat, and a soft cadence on the tonic before the final bar ends. The phrase leaves clear rests and follows the Am, F, C, G harmony without touching any other track.",
+  "quality": "Not a listening verdict."
+}

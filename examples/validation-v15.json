@@ -1,0 +1,318 @@
+{
+  "version": "0.15.0",
+  "automatedTests": {
+    "total": 286,
+    "passed": 286,
+    "failed": 0,
+    "new": 28,
+    "purePlanProtectionTests": 22,
+    "actualDownloadedFixtureTests": 6
+  },
+  "series": {
+    "defaultCount": 1,
+    "explicitMaxCount": 32,
+    "tenCopyActualDownload": {
+      "bars": 32,
+      "notes": 160,
+      "references": 10,
+      "startBeat": 32,
+      "intervalBeats": 8,
+      "phoneUndoRedoVerified": true,
+      "oneUndoResult": {
+        "bars": 8,
+        "notes": 0,
+        "references": 0
+      },
+      "redoResult": {
+        "bars": 32,
+        "notes": 160,
+        "references": 10
+      }
+    },
+    "threeTrackActualDownload": {
+      "name": "共享乐句 · 批量编排示例",
+      "barsBefore": 8,
+      "barsAfter": 16,
+      "tracks": 6,
+      "sourceCount": 3,
+      "sourceNotes": 30,
+      "notes": 96,
+      "references": 10,
+      "placements": [
+        {
+          "instrument": "keys",
+          "starts": [
+            32,
+            44,
+            56
+          ],
+          "length": 8,
+          "addedNotes": 48
+        },
+        {
+          "instrument": "kick",
+          "starts": [
+            32,
+            40,
+            48,
+            56
+          ],
+          "length": 8,
+          "addedNotes": 24
+        },
+        {
+          "instrument": "lead",
+          "starts": [
+            32,
+            44,
+            56
+          ],
+          "length": 8,
+          "addedNotes": 24
+        }
+      ],
+      "loopRange": {
+        "start": 32,
+        "end": 64
+      },
+      "explicitBlankExtension": true,
+      "oldEmptyClipsPreserved": 24,
+      "sourceLibraryAndOtherFieldsPreserved": true
+    },
+    "sameInstrumentFallbackActualUI": {
+      "selectedTrackInstrument": "kick",
+      "sourceInstrument": "keys",
+      "defaultTargetName": "柔和电钢琴",
+      "didApply": false,
+      "revisionBeforeAndAfter": 0
+    }
+  },
+  "selectiveManagement": {
+    "defaultSelection": "none",
+    "pageSize": 8,
+    "tenReferencesTwoPageSelection": {
+      "selectedAfterDeselectingFirstAndTenth": 8,
+      "storedNotesSelected": 128,
+      "selectionKeptOnBackPage": true,
+      "canceledWithoutChange": true
+    },
+    "mute": {
+      "selectedInstrument": "keys",
+      "selectedStartBeat": 44,
+      "notesBeforeAndAfter": 96,
+      "referencesBeforeAndAfter": 10,
+      "scheduledNotesAfter": 80,
+      "unmuteAndUndoVerified": true,
+      "alreadyMutedNoOpDisabled": true
+    },
+    "detach": {
+      "selectedInstrument": "keys",
+      "selectedStartBeat": 32,
+      "storedNotesBeforeAndAfter": 96,
+      "referencesBefore": 10,
+      "referencesAfter": 9,
+      "allNoteIdsPreserved": true,
+      "encodedMidiByteUnchanged": true
+    },
+    "delete": {
+      "selectedInstrument": "lead",
+      "selectedStartBeat": 56,
+      "deletedNotes": 8,
+      "notesBefore": 96,
+      "notesAfter": 88,
+      "referencesBefore": 9,
+      "referencesAfter": 8,
+      "scheduledNotesAfter": 72,
+      "actualUndoAndRedo": true,
+      "noRippleOrSongShortening": true
+    },
+    "allUnselectedDataAndSourcesPreserved": true,
+    "normalIndexedDbBackupVerifiedInUI": true,
+    "physicalStorageFaultInjectionPerformed": false
+  },
+  "independentCopies": {
+    "starts": [
+      64,
+      72
+    ],
+    "length": 8,
+    "notesBefore": 88,
+    "notesAfter": 120,
+    "barsBefore": 16,
+    "barsAfter": 32,
+    "referencesRemain": 8,
+    "keysReferencesRemain": 2,
+    "firstCopyNotes": 16,
+    "firstCopyEditedVelocity": 50,
+    "siblingAndSourceNotesUnchanged": true,
+    "old88NoteIdsAndContentsPreserved": true,
+    "actualTwoStepUndoRestores88": true
+  },
+  "crossTrackManagement": {
+    "bars": 32,
+    "tracks": 7,
+    "notes": 816,
+    "patterns": 1,
+    "references": 4,
+    "onlySelectedPadClipStart0Muted": true,
+    "otherThreeRefsAndAllNotesSoundsMixGlobalsUnchanged": true,
+    "computedMidiNotes": 800,
+    "newMidiDownloaded": false,
+    "oneUndoRestoresOriginalByteExact": true
+  },
+  "actualExports": {
+    "midiNotes": 72,
+    "midiByteExactToEncoder": true,
+    "perTrackPitchVelocityOnsetDurationCompared": true,
+    "toleranceBeats": 0.002183333333333333,
+    "wav": {
+      "bytes": 4202880,
+      "frames": 1050709,
+      "sampleRate": 44100,
+      "channels": 2,
+      "bitDepth": 16,
+      "seconds": 23.82560090702948,
+      "peak": 0.397308349609375,
+      "rms": 0.051946048329556946,
+      "clippedSamples": 0,
+      "range": {
+        "start": 32,
+        "end": 64
+      },
+      "notes": 72
+    }
+  },
+  "staleWindowActualUi": [
+    {
+      "window": "series",
+      "offlineCandidateScope": "drums",
+      "notesAfterCandidate": 112,
+      "staleConfirmDisabled": true,
+      "revisionUnchangedOnRejectedConfirm": true,
+      "noUnexpectedExtensionOrCopies": true,
+      "undoRestores88": true
+    },
+    {
+      "window": "instance-manager",
+      "offlineCandidateScope": "selected",
+      "notesAfterCandidate": 82,
+      "staleConfirmDisabled": true,
+      "revisionUnchangedOnRejectedConfirm": true,
+      "undoRestores88": true
+    }
+  ],
+  "readOnlyLocate": {
+    "keysClipStart": 56,
+    "viewRange": {
+      "start": 32,
+      "end": 64
+    },
+    "revisionBeforeAndAfter": 0,
+    "changedMusicOrPlaybackPosition": false
+  },
+  "responsive": {
+    "mobile": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dialogBottom": 832,
+      "footerBottom": 831,
+      "footerInside": true,
+      "horizontalPageOverflow": false
+    },
+    "desktop": {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    "temporaryViewportReset": true,
+    "mobileProjectMenuUndoRedoActuallyVerified": true
+  },
+  "quietVerification": {
+    "urlQuery": "silent=1",
+    "realtimeHardwareAudioInitialized": false,
+    "audiblePlaybackPerformed": false,
+    "offlineWavRendered": true,
+    "humanListeningPerformed": false,
+    "virtualDetach": {
+      "beatBefore": 45.3150933333675,
+      "beatAfter": 45.83768666664958,
+      "range": {
+        "start": 32,
+        "end": 64
+      },
+      "playingBeforeAndAfter": true,
+      "quietBeforeAndAfter": true,
+      "hardwareAudioInitializedBeforeAndAfter": false,
+      "thenStopped": true
+    },
+    "realModelCalls": 0,
+    "paidModelCalls": 0,
+    "existingModelCredentialsRead": false,
+    "previewServerEnvEmpty": true,
+    "actualOfflineCandidateStageApplyCalls": 2,
+    "browserConsoleWarningsOrErrorsAtFinish": 0
+  },
+  "refreshAndRestore": {
+    "managed88ActualDownloadAfterRefreshByteExact": true,
+    "originalActualFinalDownloadByteExactToLongSongDemo": true,
+    "finalCounts": {
+      "bars": 32,
+      "tracks": 7,
+      "notes": 816,
+      "patterns": 1,
+      "sourceNotes": 16,
+      "references": 4
+    },
+    "loopRange": {
+      "start": 64,
+      "end": 96
+    },
+    "candidateShelfEntries": 5,
+    "hasCandidate": false,
+    "transportPlaying": false,
+    "quiet": true,
+    "hardwareAudioInitialized": false
+  },
+  "capacityTests": {
+    "maxSeriesCopies": 32,
+    "maxSelectedReferences": 4096,
+    "maxTrackClips": 256,
+    "maxTrackNotes": 4000,
+    "maxProjectNotes": 12000,
+    "maxFullSavedProjectUtf8Bytes": 3000000,
+    "allOrNothing": true,
+    "maximaSyntheticOnly": true,
+    "fullCapacityHardwareRenderingPerformed": false
+  },
+  "evidence": {
+    "screenshots": [
+      "screenshots/v15-series-desktop.jpg",
+      "screenshots/v15-instance-manager-desktop.jpg",
+      "screenshots/v15-instance-manager-mobile.jpg",
+      "screenshots/v15-independent-series-mobile.jpg"
+    ],
+    "actualDownloadedFiles": [
+      "pattern-series-ten.sprout",
+      "pattern-series-baseline.sprout",
+      "pattern-series-demo.sprout",
+      "pattern-series-muted.sprout",
+      "pattern-series-detached.sprout",
+      "pattern-series-managed.sprout",
+      "pattern-series-managed.mid",
+      "pattern-series-managed-region.wav",
+      "pattern-series-independent.sprout",
+      "pattern-managed-cross-track.sprout"
+    ]
+  },
+  "limitations": [
+    "No real model credentials, paid calls, authentication or music-quality validation",
+    "No listening; PCM statistics do not replace listening",
+    "No automatic transposition, smart variants, automatic phrase transitions or provenance",
+    "No physical storage quota fault injection in this UI turn; capacity maxima synthetic",
+    "Not audio-sample import, FLP compatibility, VST/AU or a complete FL Studio replacement"
+  ],
+  "goalContinues": true
+}

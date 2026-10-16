@@ -1,0 +1,350 @@
+{
+  "version": "0.18.0",
+  "automatedTests": {
+    "total": 393,
+    "passed": 393,
+    "failed": 0,
+    "new": 47,
+    "projectLibraryTests": 29,
+    "workspacePreparationAndUrlTests": 6,
+    "startContractTests": 4,
+    "actualDownloadedFixtureTests": 8
+  },
+  "original": {
+    "name": "歌曲骨架 · 静音编排示例",
+    "bars": 32,
+    "bpm": 86,
+    "key": "A minor",
+    "tracks": 7,
+    "notes": 816,
+    "patterns": 1,
+    "instances": 4,
+    "loopRange": {
+      "start": 64,
+      "end": 96
+    }
+  },
+  "library": {
+    "projectsIncludingArchived": 6,
+    "activeRows": 5,
+    "archivedRows": 1,
+    "maxProjectsIncludingArchived": 12,
+    "committedRecordBytesApproxMiB": 3.76,
+    "measure": "UTF-8 serialized workspace records, not physical disk usage",
+    "globalTotalByteCeiling": null,
+    "archiveDeletesData": false,
+    "archiveFreesQuota": false,
+    "automaticProjectEviction": false,
+    "legacyKeyUnchanged": "active",
+    "newScopePrefix": "project:",
+    "sharedCandidateShelfAndConfiguration": true,
+    "notCloudBackup": true
+  },
+  "realUi": {
+    "blank": {
+      "name": "独立练习 · 已命名",
+      "bars": 8,
+      "tracks": 6,
+      "notes": 0,
+      "initialUndo": 0,
+      "initialRedo": 0,
+      "renameImmediateRefresh": {
+        "undo": 1,
+        "redo": 0,
+        "source": "journal"
+      },
+      "phoneUndoImmediateRefresh": {
+        "undo": 0,
+        "redo": 1,
+        "source": "journal"
+      },
+      "redoRestoresName": true,
+      "finalUndo": 1,
+      "finalRedo": 1,
+      "independentCheckpoint": "空白练习保存点",
+      "checkpointAppearsInOriginal": false,
+      "archiveAndRestoreKeepCheckpointAndHistory": true
+    },
+    "copy": {
+      "newProjectId": true,
+      "initialUndo": 0,
+      "initialRedo": 0,
+      "originalMusicExceptIdAndNamePreserved": true,
+      "onlyExplicitChange": "first keys block muted",
+      "storedNotes": 816,
+      "midiNotes": 800,
+      "midiKeysNotes": 176,
+      "sourcePatterns": 1,
+      "sharedInstances": 4,
+      "originalUnaffected": true
+    },
+    "import": {
+      "source": "phrase-transform-demo.sprout",
+      "newProjectId": true,
+      "onlyOtherChangedField": "name",
+      "initialUndo": 0,
+      "initialRedo": 0,
+      "storedNotes": 816,
+      "sharedInstances": 3
+    },
+    "house": {
+      "name": "电子起点 · House 16",
+      "bars": 16,
+      "bpm": 124,
+      "notes": 703,
+      "initialUndo": 0,
+      "initialRedo": 0,
+      "allFiveStartOptionsPresentAfterFix": true
+    },
+    "lofi": {
+      "name": "规则模板 · Lo-fi 8",
+      "bars": 8,
+      "initialUndo": 0,
+      "initialRedo": 0,
+      "archivedReversiblyAfterOpeningOriginal": true
+    },
+    "staleNewForm": {
+      "pendingName": "过期窗口 · 不应创建",
+      "realOfflineCandidateApplied": true,
+      "scope": "selected keys track",
+      "notesBefore": 703,
+      "notesAfter": 592,
+      "keysBefore": 192,
+      "keysAfter": 81,
+      "rejectedMessage": "工作区已经改变，请重新打开工程库再操作",
+      "staleCreated": 0,
+      "rowCountBeforeLofi": 5,
+      "undoDownloadByteExactToHouse": true
+    },
+    "differentWorkspacePages": {
+      "bothRealEditsCommitted": true,
+      "bothWarningsHidden": true,
+      "eachUndoRestoredOwnName": true,
+      "noCrossScopeConflict": true
+    },
+    "sameWorkspacePages": {
+      "realMainEditCommitted": true,
+      "otherPageConflictVisible": true,
+      "staleOtherPageDidNotEditOrOverwrite": true,
+      "mainUndoRestoredOwnSong": true
+    },
+    "tabRefreshAfterAnotherPageSelects": {
+      "mainWorkspace": "legacy",
+      "secondWorkspace": "ea4d56ee-cdb3-4eff-8978-686b805fb596",
+      "lastOpenedIdAtSecondRefresh": "legacy",
+      "secondName": "独立练习 · 已命名",
+      "secondNotes": 0,
+      "retainedOwnWorkspace": true,
+      "silentQueryPreserved": true
+    },
+    "originalHistory": {
+      "initialUndo": 5,
+      "initialRedo": 2,
+      "finalUndo": 5,
+      "finalRedo": 1,
+      "reasonForRedoDifference": "intentional name edit opens a new branch and clears prior redo; subsequent undo creates one new redo. Switching alone preserves histories in exact-data tests."
+    }
+  },
+  "downloads": [
+    {
+      "file": "library-blank.sprout",
+      "bytes": 6299,
+      "sha256": "a547802c8f733946765a9cf8425020700038deaae247d532c351586a3fc39362",
+      "actualBrowserDownload": true,
+      "name": "独立练习 · 已命名",
+      "bars": 8,
+      "tracks": 6,
+      "notes": 0,
+      "patterns": 0,
+      "instances": 0,
+      "bpm": 86
+    },
+    {
+      "file": "library-copy-muted.sprout",
+      "bytes": 164775,
+      "sha256": "e7bbb3e275fe8881f9b5a4c3196caf6e5a4b3b98202225c3f1b4e793bcfa5497",
+      "actualBrowserDownload": true,
+      "name": "歌曲骨架 · 静音编排示例 副本",
+      "bars": 32,
+      "tracks": 7,
+      "notes": 816,
+      "patterns": 1,
+      "instances": 4,
+      "bpm": 86
+    },
+    {
+      "file": "library-copy-muted.mid",
+      "bytes": 7415,
+      "sha256": "d0c46bd89be0a343fdc879b9f8e6a72810c3a90f0eda0890a4b90e845ad112d7",
+      "actualBrowserDownload": true
+    },
+    {
+      "file": "library-import.sprout",
+      "bytes": 164756,
+      "sha256": "9bdfac73ce8f6c032304c23b35815ab7eb308321c797afb6af6a403e614286fc",
+      "actualBrowserDownload": true,
+      "name": "导入乐句 · 独立工程",
+      "bars": 32,
+      "tracks": 7,
+      "notes": 816,
+      "patterns": 1,
+      "instances": 3,
+      "bpm": 86
+    },
+    {
+      "file": "library-house.sprout",
+      "bytes": 135198,
+      "sha256": "579f9b0498729082722a5351839ae9f18ba7642cf9be317ce6d9b9f9f0486f83",
+      "actualBrowserDownload": true,
+      "name": "电子起点 · House 16",
+      "bars": 16,
+      "tracks": 6,
+      "notes": 703,
+      "patterns": 0,
+      "instances": 0,
+      "bpm": 124
+    },
+    {
+      "file": "library-house-restored.sprout",
+      "bytes": 135198,
+      "sha256": "579f9b0498729082722a5351839ae9f18ba7642cf9be317ce6d9b9f9f0486f83",
+      "actualBrowserDownload": true,
+      "name": "电子起点 · House 16",
+      "bars": 16,
+      "tracks": 6,
+      "notes": 703,
+      "patterns": 0,
+      "instances": 0,
+      "bpm": 124
+    },
+    {
+      "file": "library-restored-original.sprout",
+      "bytes": 164769,
+      "sha256": "e914f4bc0a2e03767f695f677faf168d28770bcd6e769b07449f09b61dab89cf",
+      "actualBrowserDownload": true,
+      "name": "歌曲骨架 · 静音编排示例",
+      "bars": 32,
+      "tracks": 7,
+      "notes": 816,
+      "patterns": 1,
+      "instances": 4,
+      "bpm": 86
+    },
+    {
+      "file": "library-lofi.sprout",
+      "bytes": 47352,
+      "sha256": "c6a949e6e313a9af600cf2efa6b60d1ad1b8adb42a5db5faca806170f4fc8e3e",
+      "actualBrowserDownload": true,
+      "name": "规则模板 · Lo-fi 8",
+      "bars": 8,
+      "tracks": 6,
+      "notes": 232,
+      "patterns": 0,
+      "instances": 0,
+      "bpm": 86
+    }
+  ],
+  "downloadAssertions": {
+    "blankTemplateExactIgnoringFreshIdsAndName": true,
+    "copyOnlyFreshIdNameAndBlockMute": true,
+    "copyMidiByteExactToEncoder": true,
+    "importOnlyFreshIdAndChosenName": true,
+    "houseCompleteTemplateExactIgnoringFreshIdsAndName": true,
+    "houseAfterUndoByteExact": true,
+    "lofiCompleteTemplateExactIgnoringFreshIdsAndName": true,
+    "originalByteExactToLongSongDemo": true
+  },
+  "layout": {
+    "desktop": {
+      "width": 1280,
+      "height": 900,
+      "contentHeight": 629,
+      "contentScrollHeight": 629,
+      "contentScrollWidth": 738,
+      "contentWidth": 738,
+      "dialog": {
+        "height": 702.578125,
+        "width": 740,
+        "x": 270,
+        "y": 98.7109375
+      },
+      "pageWidth": 1280,
+      "screenshot": "screenshots/v18-project-library-desktop.jpg"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "contentHeight": 640,
+      "contentScrollHeight": 640,
+      "contentScrollWidth": 358,
+      "contentWidth": 358,
+      "dialog": {
+        "height": 713.8515625,
+        "width": 360,
+        "x": 12,
+        "y": 65.0703125
+      },
+      "pageWidth": 384,
+      "screenshot": "screenshots/v18-project-library-mobile.jpg"
+    }
+  },
+  "observedAndFixed": [
+    {
+      "problem": "initial create target prep introduced an unsupported timeline start field",
+      "fix": "pure prepareWorkspace validates only supported view fields before old vault closes or live state changes",
+      "recordPreserved": true
+    },
+    {
+      "problem": "malformed literal option omitted Lo-fi in actual rendered select",
+      "fix": "generate every option from validated PROJECT_STARTS; actual Lo-fi select/create/download then passed"
+    },
+    {
+      "problem": "creation prematurely changed last-opened before open succeeded",
+      "fix": "create atomically stores music and row; separate validated select changes pointer; failed-open regression preserves prior choice"
+    },
+    {
+      "problem": "global last-opened could otherwise redirect a different tab on refresh",
+      "fix": "per-tab workspace URL overrides fresh-link directory default; native second-tab reload verified"
+    }
+  ],
+  "limits": {
+    "perSongProjectBytes": 3000000,
+    "versions": 24,
+    "versionPayloadBytes": 8388608,
+    "refreshHistoryEach": 8,
+    "refreshHistorySharedPayloadBytes": 1572864,
+    "catalogBytes": 32768,
+    "quotaAndCorruptionFaultsOnlyTestAdapters": true,
+    "noRealStorageMutationForFaultInjection": true,
+    "musicOnlyJournalFallbackExplicit": true,
+    "selectionAndClipboardResetOnSwitch": true,
+    "sharedShelfRequiresOriginalFingerprint": true,
+    "archiveCannotReclaimQuota": true,
+    "urlDoesNotTransferMusic": true,
+    "damagedRecordsNotAutoReset": true,
+    "browserStorageMayBeReclaimed": true,
+    "exitTransactionNotGuaranteed": true
+  },
+  "final": {
+    "workspaceId": "legacy",
+    "originalByteExact": true,
+    "shelfEntries": 5,
+    "hasCandidate": false,
+    "undo": 5,
+    "redo": 1,
+    "quiet": true,
+    "playing": false,
+    "hardwareAudioInitialized": false,
+    "warningAndErrorLogs": [],
+    "realModelCalls": 0,
+    "realtimePlayback": false,
+    "audioRenderThisStage": false
+  },
+  "remaining": [
+    "explicit history cleanup / full library portable backup / long-song history compression",
+    "controlled musical phrase transitions and persistent sound preset reuse",
+    "explicitly configured real LLM and human listening quality",
+    "cloud sync and FL Studio full feature parity are not implemented"
+  ],
+  "goalRemainsActive": true
+}

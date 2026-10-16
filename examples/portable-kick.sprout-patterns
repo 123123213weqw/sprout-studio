@@ -1,0 +1,62 @@
+{
+  "format": "sprout-pattern-library",
+  "version": 1,
+  "context": {
+    "bpm": 86,
+    "key": "A minor",
+    "swing": 12
+  },
+  "patterns": [
+    {
+      "id": "f6f810d7-3add-422d-b19e-06011e56db4f",
+      "name": "雨夜底鼓 · 两小节",
+      "instrument": "kick",
+      "kind": "drum",
+      "length": 8,
+      "notes": [
+        {
+          "id": "bd5a1e30-d41b-4d3a-b7c4-8a1549af9845",
+          "pitch": 36,
+          "start": 0,
+          "duration": 0.13,
+          "velocity": 109
+        },
+        {
+          "id": "66b0cf68-3292-46cb-9880-a2aee85ebd95",
+          "pitch": 36,
+          "start": 1.75,
+          "duration": 0.13,
+          "velocity": 98
+        },
+        {
+          "id": "2b1c0046-1f12-4e09-a794-98f6c7146e4a",
+          "pitch": 36,
+          "start": 2.5,
+          "duration": 0.13,
+          "velocity": 95
+        },
+        {
+          "id": "a70f9cc4-52b2-4717-88e4-2de7eb01b72c",
+          "pitch": 36,
+          "start": 4,
+          "duration": 0.13,
+          "velocity": 103
+        },
+        {
+          "id": "a50de5ce-0906-4823-a6cb-c38bb408071e",
+          "pitch": 36,
+          "start": 5.75,
+          "duration": 0.13,
+          "velocity": 100
+        },
+        {
+          "id": "92b80f89-a5af-4108-adb9-516fbe746269",
+          "pitch": 36,
+          "start": 6.5,
+          "duration": 0.13,
+          "velocity": 95
+        }
+      ]
+    }
+  ]
+}

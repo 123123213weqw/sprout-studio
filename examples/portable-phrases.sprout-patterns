@@ -1,0 +1,248 @@
+{
+  "format": "sprout-pattern-library",
+  "version": 1,
+  "context": {
+    "bpm": 86,
+    "key": "A minor",
+    "swing": 12
+  },
+  "patterns": [
+    {
+      "id": "89d250ca-0c10-4ae3-8916-0b8b782f8b23",
+      "name": "柔和电钢琴",
+      "instrument": "keys",
+      "kind": "tonal",
+      "length": 8,
+      "notes": [
+        {
+          "id": "f48ee10f-54d0-47f1-960e-272b6345dff6",
+          "pitch": 57,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 59
+        },
+        {
+          "id": "18948713-db91-4d79-a52c-9a8090c0509f",
+          "pitch": 60,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 60
+        },
+        {
+          "id": "0c18e926-5670-409d-ae91-5415d21f7a74",
+          "pitch": 64,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 56
+        },
+        {
+          "id": "bc34e1d0-da1c-4687-8cbd-24355d06e776",
+          "pitch": 67,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 54
+        },
+        {
+          "id": "480d079e-c852-4a83-8c4e-0694e73f8eb1",
+          "pitch": 57,
+          "start": 2.5,
+          "duration": 1.35,
+          "velocity": 67
+        },
+        {
+          "id": "cdadfb70-50a5-43b0-a112-4c8002357c4e",
+          "pitch": 60,
+          "start": 2.5,
+          "duration": 1.35,
+          "velocity": 59
+        },
+        {
+          "id": "a1679f15-4eb5-4fff-af54-12f00cc50bcf",
+          "pitch": 64,
+          "start": 2.5,
+          "duration": 1.35,
+          "velocity": 58
+        },
+        {
+          "id": "e6edb814-7c4d-437e-81d6-5472835a550a",
+          "pitch": 67,
+          "start": 2.5,
+          "duration": 1.35,
+          "velocity": 49
+        },
+        {
+          "id": "6375a0f3-5545-414b-af66-38d6e2983911",
+          "pitch": 57,
+          "start": 4,
+          "duration": 2.1,
+          "velocity": 66
+        },
+        {
+          "id": "c2fc7bee-412f-4e24-bdda-8997fe22dcca",
+          "pitch": 60,
+          "start": 4,
+          "duration": 2.1,
+          "velocity": 57
+        },
+        {
+          "id": "4be5bb6a-a0f8-4699-8c58-ac82921119db",
+          "pitch": 64,
+          "start": 4,
+          "duration": 2.1,
+          "velocity": 56
+        },
+        {
+          "id": "c48bd2f6-9834-448f-bd4c-a76f24c37bef",
+          "pitch": 67,
+          "start": 4,
+          "duration": 2.1,
+          "velocity": 55
+        },
+        {
+          "id": "f0c4e454-a11b-48cd-8eed-78a5c66fbcb1",
+          "pitch": 57,
+          "start": 6.5,
+          "duration": 1.35,
+          "velocity": 65
+        },
+        {
+          "id": "7b07effe-4edc-40ce-9bee-2ea22fcf1397",
+          "pitch": 60,
+          "start": 6.5,
+          "duration": 1.35,
+          "velocity": 62
+        },
+        {
+          "id": "d42e0f39-168b-4d25-9ef5-d26cf2260c18",
+          "pitch": 64,
+          "start": 6.5,
+          "duration": 1.35,
+          "velocity": 53
+        },
+        {
+          "id": "31c52a56-3b87-45ea-8ded-b71e779bb2d3",
+          "pitch": 67,
+          "start": 6.5,
+          "duration": 1.35,
+          "velocity": 57
+        }
+      ]
+    },
+    {
+      "id": "2f498d62-b6bf-4023-b25a-b9c3ce10187f",
+      "name": "雨夜底鼓 · 两小节",
+      "instrument": "kick",
+      "kind": "drum",
+      "length": 8,
+      "notes": [
+        {
+          "id": "52d54bde-8add-452d-9bb3-01d4c925cb05",
+          "pitch": 36,
+          "start": 0,
+          "duration": 0.13,
+          "velocity": 109
+        },
+        {
+          "id": "3475dca3-d626-4954-b1cb-aa749102aaa2",
+          "pitch": 36,
+          "start": 1.75,
+          "duration": 0.13,
+          "velocity": 98
+        },
+        {
+          "id": "3e9722c6-1f20-420d-af3c-f11b0a9de4d2",
+          "pitch": 36,
+          "start": 2.5,
+          "duration": 0.13,
+          "velocity": 95
+        },
+        {
+          "id": "440ca37a-fd42-44f9-9087-644904095125",
+          "pitch": 36,
+          "start": 4,
+          "duration": 0.13,
+          "velocity": 103
+        },
+        {
+          "id": "3727317c-7559-4b12-9823-a14d0ac59c07",
+          "pitch": 36,
+          "start": 5.75,
+          "duration": 0.13,
+          "velocity": 100
+        },
+        {
+          "id": "23871937-cd0f-4728-9d98-5b7f399553b9",
+          "pitch": 36,
+          "start": 6.5,
+          "duration": 0.13,
+          "velocity": 95
+        }
+      ]
+    },
+    {
+      "id": "6aee2025-79d5-4fb4-a0b2-e25206afd728",
+      "name": "雨夜旋律 · 两小节",
+      "instrument": "lead",
+      "kind": "tonal",
+      "length": 8,
+      "notes": [
+        {
+          "id": "ec320315-142d-4f92-98ed-812b8caa1362",
+          "pitch": 76,
+          "start": 0.5,
+          "duration": 0.45,
+          "velocity": 70
+        },
+        {
+          "id": "0be161c9-04fc-4fa1-9804-bfbd8fb18d1c",
+          "pitch": 74,
+          "start": 1.25,
+          "duration": 0.45,
+          "velocity": 66
+        },
+        {
+          "id": "e1908079-e73f-46c7-b3d3-cbf487bafdb4",
+          "pitch": 76,
+          "start": 2.5,
+          "duration": 0.45,
+          "velocity": 70
+        },
+        {
+          "id": "b6ffe28e-06db-47c4-a41c-2b68fbbff723",
+          "pitch": 79,
+          "start": 3.25,
+          "duration": 0.65,
+          "velocity": 63
+        },
+        {
+          "id": "a188eaf5-d07e-4ac3-b766-090816fa58b1",
+          "pitch": 76,
+          "start": 4,
+          "duration": 0.45,
+          "velocity": 69
+        },
+        {
+          "id": "e1e4d8f4-2c7c-4843-be84-f742790e7f70",
+          "pitch": 72,
+          "start": 4.75,
+          "duration": 0.45,
+          "velocity": 65
+        },
+        {
+          "id": "b8d7fb5b-e0f5-431b-a598-2310834f8fb2",
+          "pitch": 76,
+          "start": 5.5,
+          "duration": 0.45,
+          "velocity": 68
+        },
+        {
+          "id": "d6db6a46-87aa-417c-b953-e6747342a7b5",
+          "pitch": 79,
+          "start": 6.75,
+          "duration": 0.65,
+          "velocity": 70
+        }
+      ]
+    }
+  ]
+}

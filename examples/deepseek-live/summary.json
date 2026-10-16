@@ -1,0 +1,217 @@
+{
+  "testedAt": "2026-10-15T11:55:53.391Z",
+  "provider": "DeepSeek official API",
+  "model": "deepseek-flash",
+  "executionHost": "V100 (WZU_Server)",
+  "calls": 3,
+  "totalReportedTokens": 7310,
+  "requestIds": [
+    "2a100e68-f576-407f-9c51-b7439f4e047b",
+    "1c1285c2-7dcc-4aec-9c9d-d362c33c23f4",
+    "f4d6a6c7-c8a4-4767-b947-fa87a99debf5"
+  ],
+  "cases": [
+    {
+      "folder": "descriptive",
+      "receipt": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "elapsedMs": 4938,
+        "usage": {
+          "prompt_tokens": 1460,
+          "completion_tokens": 955,
+          "total_tokens": 2415
+        },
+        "format": "sprout-score-v1",
+        "verified": "validated-notes",
+        "quality": "not-rated",
+        "requestId": "2a100e68-f576-407f-9c51-b7439f4e047b",
+        "maxOutputTokens": 8192
+      },
+      "checks": {
+        "inputUnchanged": true,
+        "tracks": 8,
+        "notes": 62,
+        "midiNotes": 62,
+        "sampledTracks": 8,
+        "allRolesHaveNotes": true,
+        "settingsPreserved": true
+      }
+    },
+    {
+      "folder": "explicit",
+      "receipt": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "elapsedMs": 5572,
+        "usage": {
+          "prompt_tokens": 1672,
+          "completion_tokens": 1202,
+          "total_tokens": 2874
+        },
+        "format": "sprout-score-v1",
+        "verified": "validated-notes",
+        "quality": "not-rated",
+        "requestId": "1c1285c2-7dcc-4aec-9c9d-d362c33c23f4",
+        "maxOutputTokens": 8192
+      },
+      "checks": {
+        "inputUnchanged": true,
+        "tracks": 8,
+        "notes": 83,
+        "midiNotes": 83,
+        "sampledTracks": 8,
+        "allRolesHaveNotes": true,
+        "settingsPreserved": true
+      },
+      "musicalInstructions": {
+        "harmony": [
+          {
+            "bar": 1,
+            "chord": "Am",
+            "pianoTriad": true,
+            "bassRoot": true
+          },
+          {
+            "bar": 2,
+            "chord": "F",
+            "pianoTriad": true,
+            "bassRoot": false
+          },
+          {
+            "bar": 3,
+            "chord": "C",
+            "pianoTriad": true,
+            "bassRoot": true
+          },
+          {
+            "bar": 4,
+            "chord": "G",
+            "pianoTriad": true,
+            "bassRoot": true
+          }
+        ],
+        "hiHat": {
+          "expected": 32,
+          "actual": 32,
+          "missingOnsets": [],
+          "extraOnsets": [],
+          "eighthNotes": true
+        },
+        "key": {
+          "name": "A minor",
+          "melodicNotes": 43,
+          "outOfKey": 0
+        },
+        "allRolesHaveNotes": true,
+        "matchesExplicitBrief": false,
+        "quality": "Not a listening test, style assessment, originality check or artistic-quality score."
+      }
+    },
+    {
+      "folder": "bridge",
+      "receipt": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "elapsedMs": 2149,
+        "usage": {
+          "prompt_tokens": 1740,
+          "completion_tokens": 281,
+          "total_tokens": 2021
+        },
+        "format": "sprout-score-v1",
+        "verified": "validated-notes",
+        "quality": "not-rated",
+        "requestId": "f4d6a6c7-c8a4-4767-b947-fa87a99debf5",
+        "maxOutputTokens": 8192
+      },
+      "checks": {
+        "inputUnchanged": true,
+        "unselectedTracksUnchanged": true,
+        "sampledTracks": 8,
+        "selectedNotes": 11,
+        "totalNotes": 79,
+        "midiNotes": 79
+      }
+    }
+  ],
+  "credentialHandling": "Existing remote ~/.deepseek_key read in remote process memory; no credential copied to the Mac or browser.",
+  "paidCallsStopped": true,
+  "workspaceMusicUnchanged": true,
+  "subjectiveListeningPerformed": false,
+  "browserVisualQA": "blocked",
+  "artifacts": {
+    "examples/deepseek-live/descriptive/input.sprout": {
+      "bytes": 6475,
+      "sha256": "2d933a4d6d3f5e8350de68534b0c06375e0ac80abb5808f8f4e59b54bdfbd269"
+    },
+    "examples/deepseek-live/descriptive/composition.sprout": {
+      "bytes": 17374,
+      "sha256": "85a23623a82590b36ab31aa017cb960a1abf491425ef3c782b54ad2548769aa3"
+    },
+    "examples/deepseek-live/descriptive/composition.mid": {
+      "bytes": 886,
+      "sha256": "1fdd49e5056737c1c9d6b8ca6eede5aed3d5a996fc9e0cf874864fe64ab71086"
+    },
+    "examples/deepseek-live/descriptive/composition.wav": {
+      "bytes": 2307852,
+      "sha256": "2985817c1dda66655f6c22a0f965668010b7f7f1a805681b3876b083bded983b"
+    },
+    "examples/deepseek-live/descriptive/report.json": {
+      "bytes": 1157,
+      "sha256": "353e8a36e468ca5b1278ba43781b292f91466f193d1e60763ff900365b948be6"
+    },
+    "examples/deepseek-live/descriptive/audio-checks.json": {
+      "bytes": 662,
+      "sha256": "befd028d5ebe57aec3b1b4ef1df62ea4d392765722434786ee5ed8f13ef442d7"
+    },
+    "examples/deepseek-live/explicit/input.sprout": {
+      "bytes": 6475,
+      "sha256": "14b949547110dbcd9991f40652b7e6224ef601eae5d5ff026401a7a40c53d9d4"
+    },
+    "examples/deepseek-live/explicit/composition.sprout": {
+      "bytes": 21047,
+      "sha256": "cbe0ae690a840a42df2312b6d809e4868926063320ab1730993f9fdb8fe95d5a"
+    },
+    "examples/deepseek-live/explicit/composition.mid": {
+      "bytes": 1046,
+      "sha256": "38c09e033f42991e35bddb7cba43872a0611f9d0fb3e5fcb099c5b37ab08c807"
+    },
+    "examples/deepseek-live/explicit/composition.wav": {
+      "bytes": 2307852,
+      "sha256": "986fa761624a6945df4f24a263e9f816949afeb10bf5f2bc422833d9fe1daa58"
+    },
+    "examples/deepseek-live/explicit/report.json": {
+      "bytes": 2160,
+      "sha256": "5035112605205f92a4b31357d3a8cffcc0856ccb988743d20e38b23baf7860af"
+    },
+    "examples/deepseek-live/explicit/audio-checks.json": {
+      "bytes": 3918,
+      "sha256": "5caf93882b6a95f31575bbf3b3ae19888610099b83342a481519a1313a8ddb1e"
+    },
+    "examples/deepseek-live/bridge/input.sprout": {
+      "bytes": 21047,
+      "sha256": "cbe0ae690a840a42df2312b6d809e4868926063320ab1730993f9fdb8fe95d5a"
+    },
+    "examples/deepseek-live/bridge/composition.sprout": {
+      "bytes": 20344,
+      "sha256": "bb0b1573b37927c1113be7ab7a08490b981dd52101cf49b46089cf59ed9c3861"
+    },
+    "examples/deepseek-live/bridge/composition.mid": {
+      "bytes": 1011,
+      "sha256": "17369e8c90e3a4b1525c76f1350921a86bf5ec1fbd63766f0d0f5a1a2a7ca58a"
+    },
+    "examples/deepseek-live/bridge/composition.wav": {
+      "bytes": 2307852,
+      "sha256": "4804a521631e49dcc820ff3041e62848309a894b0a1bf850de96e4023dc5da61"
+    },
+    "examples/deepseek-live/bridge/report.json": {
+      "bytes": 1064,
+      "sha256": "32a3ec8ffd65bdfd3a808fc4a13e50f332121da0b065dc7628745fc07472b798"
+    },
+    "examples/deepseek-live/bridge/audio-checks.json": {
+      "bytes": 663,
+      "sha256": "c604031b378b48d49093340b9489a55c6e1f92d04a93c5078fb54a1186c47d01"
+    }
+  }
+}

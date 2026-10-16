@@ -1,0 +1,101 @@
+{
+  "id": "numeric-harmony",
+  "status": "accepted",
+  "receipt": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "elapsedMs": 4911,
+    "usage": {
+      "prompt_tokens": 1563,
+      "completion_tokens": 1171,
+      "total_tokens": 2734
+    },
+    "format": "sprout-score-v1",
+    "verified": "validated-notes",
+    "quality": "not-rated",
+    "requestId": "809c4fe5-5ed0-4517-8df3-91baa6562803",
+    "maxOutputTokens": 8192
+  },
+  "assessment": {
+    "globalsPreserved": true,
+    "trackIdsPreserved": true,
+    "unselectedTracksPreserved": true,
+    "voicesAndMixPreserved": true,
+    "clipLayoutPreserved": true,
+    "outsideRangePreserved": true,
+    "patternLibraryPreserved": true,
+    "sectionLabelsPreserved": true,
+    "changedTracks": 8,
+    "boundariesPass": true,
+    "instructions": {
+      "harmony": [
+        {
+          "bar": 1,
+          "chord": "Am",
+          "pianoTriad": true,
+          "bassRoot": true
+        },
+        {
+          "bar": 2,
+          "chord": "F",
+          "pianoTriad": true,
+          "bassRoot": true
+        },
+        {
+          "bar": 3,
+          "chord": "C",
+          "pianoTriad": true,
+          "bassRoot": true
+        },
+        {
+          "bar": 4,
+          "chord": "G",
+          "pianoTriad": true,
+          "bassRoot": true
+        }
+      ],
+      "hiHat": {
+        "expected": 32,
+        "actual": 32,
+        "missingOnsets": [],
+        "extraOnsets": [],
+        "eighthNotes": true
+      },
+      "key": {
+        "name": "A minor",
+        "melodicNotes": 40,
+        "outOfKey": 0
+      },
+      "allRolesHaveNotes": true,
+      "matchesExplicitBrief": true,
+      "quality": "Not a listening test, style assessment, originality check or artistic-quality score."
+    },
+    "exactAnchors": [
+      {
+        "start": 0,
+        "piano": true,
+        "bass": true
+      },
+      {
+        "start": 4,
+        "piano": true,
+        "bass": true
+      },
+      {
+        "start": 8,
+        "piano": true,
+        "bass": true
+      },
+      {
+        "start": 12,
+        "piano": true,
+        "bass": true
+      }
+    ],
+    "instructionsPass": true
+  },
+  "notes": 80,
+  "midiNotes": 80,
+  "summary": "A four-bar A-minor chamber lo-fi loop at 86 BPM. Keys hold the required anchor chords, bass plays the required roots, hi-hat supplies exactly 32 quiet varied eighth-notes, flute states and answers a short motif with a breath before bar four, while restrained kick/snare, sparse cello and harp stay out of the way. The loop ends on the given G harmony and resolves back to Am without claiming a tonic ending.",
+  "inputUnchanged": true
+}

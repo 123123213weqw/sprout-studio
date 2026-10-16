@@ -1,0 +1,61 @@
+{
+  "renderer": "node-web-audio-api 2.2.0 prebuilt OfflineAudioContext; unchanged app renderWAV/sample library",
+  "range": null,
+  "mix": {
+    "frames": 1260672,
+    "sampleRate": 44100,
+    "channels": 2,
+    "seconds": 28.586666666666666,
+    "peak": 0.113861083984375,
+    "rms": 0.01755248247456564,
+    "clippedSamples": 0,
+    "nonzeroSamples": 2392456,
+    "sha256": "8b1f198e43cb36f0ae98a97b079a7e3e7d1e27b212124b98ecb20565493b2ce8",
+    "windows": []
+  },
+  "inputUnchanged": true,
+  "hardwareAudioOpened": false,
+  "subjectiveListeningPerformed": false,
+  "heldStems": [
+    {
+      "instrument": "pad",
+      "frames": 1260672,
+      "sampleRate": 44100,
+      "channels": 2,
+      "seconds": 28.586666666666666,
+      "peak": 0.0447998046875,
+      "rms": 0.006550478785883597,
+      "clippedSamples": 0,
+      "nonzeroSamples": 671632,
+      "sha256": "76d5dcc57658425c43ebd28db0de8dd07f9dd1eb24d36acfe761d9058410be10",
+      "windows": [
+        {
+          "start": 6,
+          "end": 6.2,
+          "purpose": "Beyond six seconds of the original recording, still inside the requested held note",
+          "rms": 0.012736991758019352
+        }
+      ]
+    },
+    {
+      "instrument": "lead",
+      "frames": 1260672,
+      "sampleRate": 44100,
+      "channels": 2,
+      "seconds": 28.586666666666666,
+      "peak": 0.05712890625,
+      "rms": 0.01294379753968263,
+      "clippedSamples": 0,
+      "nonzeroSamples": 640667,
+      "sha256": "4499614cd2236ee702e2aacc030f278f31d376110c9a1a0f09cad6ea1f3e31d9",
+      "windows": [
+        {
+          "start": 12.666666666666668,
+          "end": 12.866666666666667,
+          "purpose": "Beyond six seconds of the original recording, still inside the requested held note",
+          "rms": 0.027280358191527215
+        }
+      ]
+    }
+  ]
+}

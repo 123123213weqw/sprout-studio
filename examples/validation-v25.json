@@ -1,0 +1,57 @@
+{
+  "version": "0.25.0",
+  "updatedAt": "2026-10-15T11:37:41.430Z",
+  "delivery": "Local only; no publish or push",
+  "automatedTests": {
+    "passed": 593,
+    "failed": 0,
+    "newDeepSeekTests": 23,
+    "syntheticTransports": true,
+    "syntaxPassed": true,
+    "whitespacePassed": true
+  },
+  "localService": {
+    "ok": true,
+    "llmConfigured": false,
+    "version": "0.25.0"
+  },
+  "providerConfiguration": {
+    "ready": false,
+    "apiKeyPresent": false,
+    "checks": {
+      "endpoint": "valid",
+      "model": "valid",
+      "credential": "missing"
+    },
+    "profile": {
+      "id": "deepseek",
+      "format": "sprout-score-v1",
+      "thinking": "disabled",
+      "maxOutputTokens": 16384
+    }
+  },
+  "liveDeepSeek": {
+    "status": "blocked",
+    "reason": "missing-api-key",
+    "calls": 0
+  },
+  "visualVerification": {
+    "status": "blocked",
+    "reason": "Current browser error document cannot be inspected or reloaded under browser policy. User refresh required.",
+    "uiRedesignPerformed": false
+  },
+  "preserved": {
+    "existingMusicWorkspaces": true,
+    "sampleFiles": 84,
+    "allEightSampledRoles": true,
+    "noAutoplay": true,
+    "noAutoApply": true,
+    "noAutomaticProviderRetries": true
+  },
+  "designRationale": "DESIGN-DECISIONS.md",
+  "limitations": [
+    "No real DeepSeek response yet.",
+    "No new audio rendered or auditioned from a live model.",
+    "No new screenshot audit or UI redesign verified."
+  ]
+}

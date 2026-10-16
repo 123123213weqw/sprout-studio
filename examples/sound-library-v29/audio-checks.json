@@ -1,0 +1,3666 @@
+{
+  "version": "0.29.0",
+  "renderer": "node-web-audio-api 2.2.0 published prebuilt OfflineAudioContext using app sampler/renderWAV",
+  "hardwareAudioOpened": false,
+  "subjectiveListeningPerformed": false,
+  "browserVisualQAPerformed": false,
+  "modelCalls": 0,
+  "catalog": {
+    "total": 179,
+    "recordings": 15,
+    "soundbank": 128,
+    "synthesized": 36,
+    "categories": 27,
+    "files": 2259
+  },
+  "auditions": [
+    {
+      "id": "vsco-piano",
+      "name": "立式钢琴 · 采样",
+      "origin": "recording",
+      "pitch": 60,
+      "preset": "vsco-piano",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.111907958984375,
+      "rms": 0.012512692244275534,
+      "clippedSamples": 0,
+      "nonzeroSamples": 168492,
+      "sha256": "9de4df1f484b0da7b1a8f4c7ee21a9d13efc6fc842f8b9021f9ee59d3cb13265",
+      "inputUnchanged": true
+    },
+    {
+      "id": "vsco-kick",
+      "name": "管弦底鼓 · 采样",
+      "origin": "recording",
+      "pitch": 36,
+      "preset": "vsco-kick",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.97,
+      "frames": 175077,
+      "peak": 0.10076904296875,
+      "rms": 0.005671642863213564,
+      "clippedSamples": 0,
+      "nonzeroSamples": 48112,
+      "sha256": "f607084381b977dd93dc2cceacd825b72f18e1fd37f072b056f3c6badc0a976c",
+      "inputUnchanged": true
+    },
+    {
+      "id": "vsco-snare",
+      "name": "军鼓 · 采样",
+      "origin": "recording",
+      "pitch": 38,
+      "preset": "vsco-snare",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.10711669921875,
+      "rms": 0.003612997211697537,
+      "clippedSamples": 0,
+      "nonzeroSamples": 33456,
+      "sha256": "971e53c3af4b6970a03a52b2203a1b421da4d97ba86844b7848ab8b571f46e59",
+      "inputUnchanged": true
+    },
+    {
+      "id": "vsco-cymbal",
+      "name": "短镲 · 采样",
+      "origin": "recording",
+      "pitch": 42,
+      "preset": "vsco-cymbal",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.07794189453125,
+      "rms": 0.002594182288114854,
+      "clippedSamples": 0,
+      "nonzeroSamples": 15764,
+      "sha256": "9c00b3f4fa4343f13497990a4362339041457795775992de46a25dfa39cded69",
+      "inputUnchanged": true
+    },
+    {
+      "id": "vsco-piano-full",
+      "name": "立式钢琴 · 细分采样",
+      "origin": "recording",
+      "pitch": 60,
+      "preset": "vsco-piano-full",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.09759521484375,
+      "rms": 0.010913094119596248,
+      "clippedSamples": 0,
+      "nonzeroSamples": 168914,
+      "sha256": "2b5d54593f4152b2628d67bd0ad5402c421c08389ece3c7dc1bec3eaa0e84db9",
+      "inputUnchanged": true
+    },
+    {
+      "id": "vsco-bass",
+      "name": "低音提琴拨奏 · 采样",
+      "origin": "recording",
+      "pitch": 40,
+      "preset": "vsco-bass",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.15570068359375,
+      "rms": 0.01119345532406949,
+      "clippedSamples": 0,
+      "nonzeroSamples": 168582,
+      "sha256": "fff67f602deefc4efa2aa04ac03f117384bbdd0c709f1c4f3ee395fa54c57513",
+      "inputUnchanged": true
+    },
+    {
+      "id": "vsco-flute",
+      "name": "长笛 · 采样",
+      "origin": "recording",
+      "pitch": 69,
+      "preset": "vsco-flute",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.118560791015625,
+      "rms": 0.028686852304195452,
+      "clippedSamples": 0,
+      "nonzeroSamples": 233550,
+      "sha256": "a3769b891af95cff2fcdf5832fedaf8b766a61fa9b5d1f071f328a973094d37e",
+      "inputUnchanged": true
+    },
+    {
+      "id": "vsco-cello",
+      "name": "大提琴弦乐 · 采样",
+      "origin": "recording",
+      "pitch": 60,
+      "preset": "vsco-cello",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 4.32,
+      "frames": 190512,
+      "peak": 0.098602294921875,
+      "rms": 0.01557233616755027,
+      "clippedSamples": 0,
+      "nonzeroSamples": 258846,
+      "sha256": "c791534fba2264677b9ad8e98c159d7de8a087dfb7a9385e82b96833eeced2fb",
+      "inputUnchanged": true
+    },
+    {
+      "id": "vsco-harp",
+      "name": "竖琴拨弦 · 采样",
+      "origin": "recording",
+      "pitch": 60,
+      "preset": "vsco-harp",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 4.22,
+      "frames": 186102,
+      "peak": 0.131103515625,
+      "rms": 0.013599351921328346,
+      "clippedSamples": 0,
+      "nonzeroSamples": 211552,
+      "sha256": "7abd0610e97dc2df3ac7336c63790c4bf045601d758ce3871a4d61eaac67f045",
+      "inputUnchanged": true
+    },
+    {
+      "id": "karoryfer-guitar",
+      "name": "Archtop guitar · microphone",
+      "origin": "recording",
+      "pitch": 60,
+      "preset": "karoryfer-guitar",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.10162353515625,
+      "rms": 0.008068275298634032,
+      "clippedSamples": 0,
+      "nonzeroSamples": 174654,
+      "sha256": "f94be36736c22a9235f750e5256da28295507dc17e66f4f04784cfad4d09b811",
+      "inputUnchanged": true
+    },
+    {
+      "id": "vsco-violin",
+      "name": "Solo violin · bowed",
+      "origin": "recording",
+      "pitch": 69,
+      "preset": "vsco-violin",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.091339111328125,
+      "rms": 0.012439923213631505,
+      "clippedSamples": 0,
+      "nonzeroSamples": 214106,
+      "sha256": "64661b3c1985013d0bb532940b2dba9778671bed41438690bdedf53789fa4dfb",
+      "inputUnchanged": true
+    },
+    {
+      "id": "vsco-clarinet",
+      "name": "Clarinet · sustained",
+      "origin": "recording",
+      "pitch": 69,
+      "preset": "vsco-clarinet",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.057037353515625,
+      "rms": 0.016661621506730857,
+      "clippedSamples": 0,
+      "nonzeroSamples": 215744,
+      "sha256": "8563095cfa2ccadf3eba36df450eb2927e2b72758e2843411e01638cea87a16b",
+      "inputUnchanged": true
+    },
+    {
+      "id": "sonic-kick",
+      "name": "架子鼓底鼓 · 采样",
+      "origin": "recording",
+      "pitch": 36,
+      "preset": "sonic-kick",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.1854248046875,
+      "rms": 0.009618241246071448,
+      "clippedSamples": 0,
+      "nonzeroSamples": 39436,
+      "sha256": "ce9c648d40bc9e43a62c702f3793fae07cfff1af69fcfb4a581d20b5722a80d4",
+      "inputUnchanged": true
+    },
+    {
+      "id": "sonic-snare",
+      "name": "架子鼓军鼓 · 采样",
+      "origin": "recording",
+      "pitch": 38,
+      "preset": "sonic-snare",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.14178466796875,
+      "rms": 0.008449087073759303,
+      "clippedSamples": 0,
+      "nonzeroSamples": 25852,
+      "sha256": "83f806cad2f0e4e9d81f3e5ea1e59f39e7a70b7f55b95386800c44df01c9706b",
+      "inputUnchanged": true
+    },
+    {
+      "id": "sonic-hat",
+      "name": "闭合踩镲 · 采样",
+      "origin": "recording",
+      "pitch": 42,
+      "preset": "sonic-hat",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.085296630859375,
+      "rms": 0.00208751986023523,
+      "clippedSamples": 0,
+      "nonzeroSamples": 12042,
+      "sha256": "959afb839707dcf5e884d95ef4dfea6dae5650f23e617bcaa29d8320afb64fcc",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-000",
+      "name": "Yamaha Grand Piano · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-000",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.139556884765625,
+      "rms": 0.015773337083738483,
+      "clippedSamples": 0,
+      "nonzeroSamples": 186664,
+      "sha256": "ca14ae3ef2e93cc085640b1c7006ad0d30084d62790eaf770df63eb85b3202b2",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-001",
+      "name": "Bright Yamaha Grand · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-001",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.139862060546875,
+      "rms": 0.01599026872682823,
+      "clippedSamples": 0,
+      "nonzeroSamples": 186910,
+      "sha256": "7c0151b4ce56eef27a4abf075fe244ce0540eabb1ffc62edac80c7eda1cb5088",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-002",
+      "name": "Electric Piano · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-002",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.13922119140625,
+      "rms": 0.017804176116991376,
+      "clippedSamples": 0,
+      "nonzeroSamples": 181922,
+      "sha256": "5573a382eda2e03f6bf214f627b298af456b67f3f84eaf9abc45ce690ec3aee1",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-003",
+      "name": "Honky Tonk · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-003",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.139373779296875,
+      "rms": 0.012615121860989785,
+      "clippedSamples": 0,
+      "nonzeroSamples": 187034,
+      "sha256": "29e47a4ea175a181be59b32940762a419ff897b0a7734dff41f26ba2816fa53f",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-004",
+      "name": "Rhodes EP · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-004",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.139251708984375,
+      "rms": 0.03758148198444249,
+      "clippedSamples": 0,
+      "nonzeroSamples": 219916,
+      "sha256": "f74bba508894829dd225650ed95f9ee6dc9ac7fe803a21384b4f2f5ed6ca086e",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-005",
+      "name": "Legend EP 2 · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-005",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.138885498046875,
+      "rms": 0.020214483386006975,
+      "clippedSamples": 0,
+      "nonzeroSamples": 215804,
+      "sha256": "5782ed6fbe0e7ccc35693dfa5ee89c997a6ac7a0bb76a9ab96f1a29e65875d79",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-006",
+      "name": "Harpsichord · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-006",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.1396484375,
+      "rms": 0.014646484443605414,
+      "clippedSamples": 0,
+      "nonzeroSamples": 184200,
+      "sha256": "6fc1c478637ab81a89434f5829dec81b55741e6a4259ba13740e4e4c9865957a",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-007",
+      "name": "Clavinet · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-007",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.13897705078125,
+      "rms": 0.0155440257132868,
+      "clippedSamples": 0,
+      "nonzeroSamples": 209492,
+      "sha256": "2aa044302d28afc8d895e87b778b0d1d50a72b08372c76c410bca7ad1a8da414",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-008",
+      "name": "Celesta · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-008",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.13934326171875,
+      "rms": 0.016380682954784814,
+      "clippedSamples": 0,
+      "nonzeroSamples": 165452,
+      "sha256": "5c8f0fc5078ab9819170a8914002bc7bfa8658c0cb41f31462f5424fabd5d190",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-009",
+      "name": "Glockenspiel · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-009",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.136566162109375,
+      "rms": 0.01151329178073473,
+      "clippedSamples": 0,
+      "nonzeroSamples": 167532,
+      "sha256": "e6e4d384dbe8d7b10c87c30390b210c3ff0e912bdabcf88c6d31a34fd4fa4433",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-010",
+      "name": "Music Box · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-010",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.1409912109375,
+      "rms": 0.0090100159908537,
+      "clippedSamples": 0,
+      "nonzeroSamples": 159436,
+      "sha256": "7ffeff2a65a032209d037eb117f32912915277e11ea3c4a530996db8a317ca0d",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-011",
+      "name": "Vibraphone · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-011",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.08270263671875,
+      "rms": 0.00851098009512588,
+      "clippedSamples": 0,
+      "nonzeroSamples": 170674,
+      "sha256": "5a758591703286fcd8e16f8f0c6584cdb180d8882c17b63a6e56029c63feb755",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-012",
+      "name": "Marimba · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-012",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.13934326171875,
+      "rms": 0.016453133478009262,
+      "clippedSamples": 0,
+      "nonzeroSamples": 105492,
+      "sha256": "ce8af20937379aebb5ec4a9d8f10befa5107b8869b183065d1cf143f4dc63d1c",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-013",
+      "name": "Xylophone · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-013",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.111053466796875,
+      "rms": 0.004239652753578683,
+      "clippedSamples": 0,
+      "nonzeroSamples": 79700,
+      "sha256": "8d578082acef3153a3e4117ced34841898ffe97c1a4af5975373dde758b19f50",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-014",
+      "name": "Tubular Bells · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-014",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.139678955078125,
+      "rms": 0.013702084602987878,
+      "clippedSamples": 0,
+      "nonzeroSamples": 175258,
+      "sha256": "3ae8909811e01ec1d8aec2a44442d692ed1169f923c9d531966c03574cc91f4d",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-015",
+      "name": "Dulcimer · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-015",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.141082763671875,
+      "rms": 0.009290042981605342,
+      "clippedSamples": 0,
+      "nonzeroSamples": 160200,
+      "sha256": "19fbe621d2bae9835c0d80fd6afa027a54bffc450a5d9bf428370951b3013a88",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-016",
+      "name": "DrawbarOrgan · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-016",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.1170654296875,
+      "rms": 0.026695001314458806,
+      "clippedSamples": 0,
+      "nonzeroSamples": 216978,
+      "sha256": "95d0299b79e3091cbfdb433d556f70327fddbd34e97e7376aab7cd2ed4249efa",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-017",
+      "name": "Percussive Organ · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-017",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.1392822265625,
+      "rms": 0.022475951806886853,
+      "clippedSamples": 0,
+      "nonzeroSamples": 220754,
+      "sha256": "dad104fa8019ad78689327a6b0e52d2b2ce5ae8c025e9fe41330a8c07979f3db",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-018",
+      "name": "Rock Organ · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-018",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.135467529296875,
+      "rms": 0.02672301980716286,
+      "clippedSamples": 0,
+      "nonzeroSamples": 228070,
+      "sha256": "13df237331ede3beaa906052943c3686a30845ee2195b156f626fd63d291b122",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-019",
+      "name": "Church Organ · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-019",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.13397216796875,
+      "rms": 0.024618325683614318,
+      "clippedSamples": 0,
+      "nonzeroSamples": 232274,
+      "sha256": "8c5e2b900eb482063f220080c641cd7ed83fd004506fa1efa3b36d75a854960e",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-020",
+      "name": "Reed Organ · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-020",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.138580322265625,
+      "rms": 0.03621133773737572,
+      "clippedSamples": 0,
+      "nonzeroSamples": 228394,
+      "sha256": "86ac4142b645fe681cd6173eebdc01bcc38b07fe7297c18867462e97a5c45e73",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-021",
+      "name": "Accordian · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-021",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.139434814453125,
+      "rms": 0.01641780934699751,
+      "clippedSamples": 0,
+      "nonzeroSamples": 220054,
+      "sha256": "e4890ceb4280f23d95e7926ddab3a47cc68fcb1db07bbe031ee86f758cec56f7",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-022",
+      "name": "Harmonica · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-022",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.139556884765625,
+      "rms": 0.019784371778828212,
+      "clippedSamples": 0,
+      "nonzeroSamples": 219094,
+      "sha256": "fbfebe9f19f07b1f6930489dae23e7423dbe7257ddec64bdd6ae3cb8f094dfda",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-023",
+      "name": "Bandoneon · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-023",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.139007568359375,
+      "rms": 0.02057263998605865,
+      "clippedSamples": 0,
+      "nonzeroSamples": 220386,
+      "sha256": "ca354d0e9e548c13de5f69e3d1530d48f0f47cbf33e84526a59db5c02bd0f46e",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-024",
+      "name": "Nylon String Guitar · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-024",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.137054443359375,
+      "rms": 0.011333090084520442,
+      "clippedSamples": 0,
+      "nonzeroSamples": 167718,
+      "sha256": "1a63ed7faaa36d0846fbed9a6f7856f6fa09177adf13b001c6af0a614e2bb3dd",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-025",
+      "name": "Steel String Guitar · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-025",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.140045166015625,
+      "rms": 0.011942224177266099,
+      "clippedSamples": 0,
+      "nonzeroSamples": 187264,
+      "sha256": "69b31afd18857a208b4081dce727793b4bfb5fac7daedf47dd6887e7a60a90c4",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-026",
+      "name": "Jazz Guitar · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-026",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.123504638671875,
+      "rms": 0.01123761867551733,
+      "clippedSamples": 0,
+      "nonzeroSamples": 187568,
+      "sha256": "833768e96367cfd1091fb7892ed7be5c5a76f6568b33931de632b534b4a923fa",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-027",
+      "name": "Clean Guitar · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-027",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.1414794921875,
+      "rms": 0.011273965365568062,
+      "clippedSamples": 0,
+      "nonzeroSamples": 189768,
+      "sha256": "b71cdce8f4db5fe827e93d2b2782e3cd7c368822660cc3433d90f610c5450699",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-028",
+      "name": "Palm Muted Guitar · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-028",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.1392822265625,
+      "rms": 0.0064911444570869715,
+      "clippedSamples": 0,
+      "nonzeroSamples": 79328,
+      "sha256": "8348f8f8c77d6244b592aa98d926978cb5ed2ed6e6644fb0036daa3c62e0c8b3",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-029",
+      "name": "Overdrive Guitar · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-029",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.141998291015625,
+      "rms": 0.026715708614695424,
+      "clippedSamples": 0,
+      "nonzeroSamples": 221220,
+      "sha256": "a06aa9268657a90fcee22de24fd1e97541c89af4e5763935bd4034eb11d4f426",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-030",
+      "name": "Distortion Guitar · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-030",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.13861083984375,
+      "rms": 0.022261696478176843,
+      "clippedSamples": 0,
+      "nonzeroSamples": 219704,
+      "sha256": "86bacc3d8c151599dfe009be51009f9065912b276d67c9ba34ac42f477f4e29e",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-031",
+      "name": "Guitar Harmonics · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-031",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.138397216796875,
+      "rms": 0.03835263438917674,
+      "clippedSamples": 0,
+      "nonzeroSamples": 238306,
+      "sha256": "1584d033e05a2b48fe5dbcaf5354987af570cde9bc5e00fc1026340b4f4f0026",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-032",
+      "name": "Acoustic Bass · Fluid",
+      "origin": "soundfont",
+      "pitch": 40,
+      "preset": "fluid-032",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.139312744140625,
+      "rms": 0.018706278499472713,
+      "clippedSamples": 0,
+      "nonzeroSamples": 188652,
+      "sha256": "7506db0bbe5635b131243e0e865c705fc94304823efe8dac4331ee90a9ad8fec",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-033",
+      "name": "Fingered Bass · Fluid",
+      "origin": "soundfont",
+      "pitch": 40,
+      "preset": "fluid-033",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.1392822265625,
+      "rms": 0.020878909240566186,
+      "clippedSamples": 0,
+      "nonzeroSamples": 206250,
+      "sha256": "0420578d3da3939adcadbc6cd69a1fe3d4c9e4f03ed9cf1dc94a4749b7c56371",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-034",
+      "name": "Picked Bass · Fluid",
+      "origin": "soundfont",
+      "pitch": 40,
+      "preset": "fluid-034",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.139251708984375,
+      "rms": 0.019815031844281968,
+      "clippedSamples": 0,
+      "nonzeroSamples": 209812,
+      "sha256": "dbd6470b19807ec87566d5b8f835e55a62e0d56f9008e3d6127368ed90da1cfb",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-035",
+      "name": "Fretless Bass · Fluid",
+      "origin": "soundfont",
+      "pitch": 40,
+      "preset": "fluid-035",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.139312744140625,
+      "rms": 0.0313669064621373,
+      "clippedSamples": 0,
+      "nonzeroSamples": 216582,
+      "sha256": "2f553c181e3fd80ee544393df558298d42befeb67f3a8960842a3cf7b8379da7",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-036",
+      "name": "Slap Bass · Fluid",
+      "origin": "soundfont",
+      "pitch": 40,
+      "preset": "fluid-036",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.139373779296875,
+      "rms": 0.010782061711008852,
+      "clippedSamples": 0,
+      "nonzeroSamples": 190592,
+      "sha256": "e59a94b4ec489183b7b4b543ad825de35eafabbfe63bc462fa567cee5c3d88d7",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-037",
+      "name": "Pop Bass · Fluid",
+      "origin": "soundfont",
+      "pitch": 40,
+      "preset": "fluid-037",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.139739990234375,
+      "rms": 0.015450387798846263,
+      "clippedSamples": 0,
+      "nonzeroSamples": 205412,
+      "sha256": "19db45eb4cb212d2dc4855932300f198ec1015cca8513a1795f491b6f5a92051",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-038",
+      "name": "Synth Bass 1 · Fluid",
+      "origin": "soundfont",
+      "pitch": 40,
+      "preset": "fluid-038",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.1390380859375,
+      "rms": 0.0188027895553532,
+      "clippedSamples": 0,
+      "nonzeroSamples": 176922,
+      "sha256": "a8fe715232fbf200798cfff28ceb00cbde223404859255741159a188bf63bac1",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-039",
+      "name": "Synth Bass 2 · Fluid",
+      "origin": "soundfont",
+      "pitch": 40,
+      "preset": "fluid-039",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.139312744140625,
+      "rms": 0.028157693455210863,
+      "clippedSamples": 0,
+      "nonzeroSamples": 217358,
+      "sha256": "65ad0045023672a40ea4afb6c62a66acf3121d8ee2b8f2fda30e0ce67c35bd3f",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-040",
+      "name": "Violin · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-040",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.122528076171875,
+      "rms": 0.02560035778209028,
+      "clippedSamples": 0,
+      "nonzeroSamples": 233608,
+      "sha256": "29ee1ff323def6a83ccae1da13f2ea4353cf2f5734f6c17629a298b9cac7f5c8",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-041",
+      "name": "Viola · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-041",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.1231689453125,
+      "rms": 0.021477893595943043,
+      "clippedSamples": 0,
+      "nonzeroSamples": 233182,
+      "sha256": "3aa53496daf02bac95c10cc7bdc36d2468b3e7b0fdfbb0a9de143ee33f421ac2",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-042",
+      "name": "Cello · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-042",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.124755859375,
+      "rms": 0.03055293435183875,
+      "clippedSamples": 0,
+      "nonzeroSamples": 250338,
+      "sha256": "3f90e5e4f14d6d8a2eb70f7b57cba7f50381146f3a300859c619395ea38ac27b",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-043",
+      "name": "Contrabass · Fluid",
+      "origin": "soundfont",
+      "pitch": 40,
+      "preset": "fluid-043",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.137451171875,
+      "rms": 0.033426365938945914,
+      "clippedSamples": 0,
+      "nonzeroSamples": 223554,
+      "sha256": "4a7e0f6aa1cabcb060cfaa5b2bebf2407cc9481b6853d76a92d82c3840e22e0d",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-044",
+      "name": "Tremolo · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-044",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.115234375,
+      "rms": 0.01684415319405754,
+      "clippedSamples": 0,
+      "nonzeroSamples": 235274,
+      "sha256": "82344b949bcb9456cad63e856f36833ee1cfb57236df81ecee8d5edeb8d6aebc",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-045",
+      "name": "Pizzicato Section · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-045",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.139312744140625,
+      "rms": 0.012975168956680149,
+      "clippedSamples": 0,
+      "nonzeroSamples": 133098,
+      "sha256": "d222d4232fda1e9e3908492f9a07ef944a62f50e7bba2aa8eb6dbe377f71a226",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-046",
+      "name": "Harp · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-046",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.139312744140625,
+      "rms": 0.020357124327541703,
+      "clippedSamples": 0,
+      "nonzeroSamples": 180110,
+      "sha256": "8488050ba95315ecdc5ddbbc8949a9ca316f4275591e697dec564edeb7ca6b68",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-047",
+      "name": "Timpani · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-047",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.1239013671875,
+      "rms": 0.005717155832014625,
+      "clippedSamples": 0,
+      "nonzeroSamples": 102372,
+      "sha256": "091d1b55956638e5f8f191d8d6c2216eddc51427db6998b9d22608573e2f30eb",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-048",
+      "name": "Strings · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-048",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.116912841796875,
+      "rms": 0.020657598756561323,
+      "clippedSamples": 0,
+      "nonzeroSamples": 239162,
+      "sha256": "659544bbccd323b2ef7e04df3d7723bc230af4aa763f1d087042182c24bd0746",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-049",
+      "name": "Slow Strings · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-049",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.1168212890625,
+      "rms": 0.019975625861470992,
+      "clippedSamples": 0,
+      "nonzeroSamples": 238764,
+      "sha256": "1a5907e9ca9983a3f19f7fef2606901f2aadec394fce66470fe53add9e1a7418",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-050",
+      "name": "Synth Strings 1 · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-050",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.126708984375,
+      "rms": 0.03444868608607001,
+      "clippedSamples": 0,
+      "nonzeroSamples": 255826,
+      "sha256": "2e30954bdd79366c5a069a2a8e7801e4a3053ea7d687ce9d8604e38c47026d32",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-051",
+      "name": "Synth Strings 2 · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-051",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.124542236328125,
+      "rms": 0.0349128967430685,
+      "clippedSamples": 0,
+      "nonzeroSamples": 249084,
+      "sha256": "792c26d4099b5faff38682ee2275473a5685a4c53abc6d8a0bc9b0109b74023b",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-052",
+      "name": "Ahh Choir · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-052",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.123443603515625,
+      "rms": 0.019102155209315918,
+      "clippedSamples": 0,
+      "nonzeroSamples": 235270,
+      "sha256": "de622824a6290049437c794cb22c80e55e351dc3af82e8d96350979e79cc1169",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-053",
+      "name": "Ohh Voices · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-053",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.123016357421875,
+      "rms": 0.02044616938670905,
+      "clippedSamples": 0,
+      "nonzeroSamples": 229718,
+      "sha256": "8cf2b670e4b57c69ad66a980e52d44f58c5c3f9f8f93ae3253bfb7ea280902b5",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-054",
+      "name": "Synth Voice · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-054",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.1231689453125,
+      "rms": 0.028545430346723966,
+      "clippedSamples": 0,
+      "nonzeroSamples": 243654,
+      "sha256": "e91dd5c7ad6241d833d50c07f84c3c04287f7cc5c4b5b7497e427bce6d601b84",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-055",
+      "name": "Orchestra Hit · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-055",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.1229248046875,
+      "rms": 0.01148565373936721,
+      "clippedSamples": 0,
+      "nonzeroSamples": 153534,
+      "sha256": "c2fb8250e5acb3cdcc3b48d5a563fc96f5f6ff7a6793786d2b6ac37f0d3060e4",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-056",
+      "name": "Trumpet · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-056",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.11663818359375,
+      "rms": 0.01741361915142829,
+      "clippedSamples": 0,
+      "nonzeroSamples": 207524,
+      "sha256": "64637b4abbe45c86226cc8ad5cb96ae9a2a91c56b703cb3aa2bd0d0fc3167e33",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-057",
+      "name": "Trombone · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-057",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.105682373046875,
+      "rms": 0.03358891223810794,
+      "clippedSamples": 0,
+      "nonzeroSamples": 239462,
+      "sha256": "0344e3de6a67f96236f5557e235743c8a8b1a5162576b51bbeb9546dbdb38e49",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-058",
+      "name": "Tuba · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-058",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.1229248046875,
+      "rms": 0.04201010663702904,
+      "clippedSamples": 0,
+      "nonzeroSamples": 244804,
+      "sha256": "90bc8a27e9de15dd0c059f85b365df7539cb2519f203b15c91d09df931ca0e7c",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-059",
+      "name": "Muted Trumpet · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-059",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.11248779296875,
+      "rms": 0.024838318329650742,
+      "clippedSamples": 0,
+      "nonzeroSamples": 227740,
+      "sha256": "2d34925bb4d1c0afccf5358c5dbaacb7976079ce8dd45f10f7fc6d9ab2fadcc9",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-060",
+      "name": "French Horns · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-060",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.113861083984375,
+      "rms": 0.021610208019702787,
+      "clippedSamples": 0,
+      "nonzeroSamples": 216878,
+      "sha256": "55a391d6801a2cad7c187d7668ae23540432515e51b403fb65f53de113d62307",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-061",
+      "name": "Brass Section · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-061",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.11773681640625,
+      "rms": 0.017486645689076267,
+      "clippedSamples": 0,
+      "nonzeroSamples": 219472,
+      "sha256": "dc4fb73eb6667891c78c6e92b2e2972da78495b8d3342c995784d261ecb2a439",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-062",
+      "name": "Synth Brass 1 · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-062",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.122467041015625,
+      "rms": 0.01945798122774119,
+      "clippedSamples": 0,
+      "nonzeroSamples": 223210,
+      "sha256": "58c86fb65d44283c1e25e48020e37929f180ba1243dbc410896ad9911b497c22",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-063",
+      "name": "Synth Brass 2 · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-063",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.116119384765625,
+      "rms": 0.020529057022579535,
+      "clippedSamples": 0,
+      "nonzeroSamples": 221294,
+      "sha256": "117917740359df415579fa738e8142074cdf11bbe7c197de41b37db969a12613",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-064",
+      "name": "Soprano Sax · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-064",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.117523193359375,
+      "rms": 0.021737000923650027,
+      "clippedSamples": 0,
+      "nonzeroSamples": 226386,
+      "sha256": "a86950500864f98026566f5451b9da2a2f426f73c5f0f7d123e29ec6605cacdf",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-065",
+      "name": "Alto Sax · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-065",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.118743896484375,
+      "rms": 0.02271176744062838,
+      "clippedSamples": 0,
+      "nonzeroSamples": 229126,
+      "sha256": "84f32891dcf222a010abbacc18208d1a505b00d06c675c37fedaf41b4bab62b2",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-066",
+      "name": "Tenor Sax · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-066",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.116943359375,
+      "rms": 0.02478628911853397,
+      "clippedSamples": 0,
+      "nonzeroSamples": 232972,
+      "sha256": "e78fa3a35d047622a88679d46789026dc9b69db539ad274ad30a731c79601e9f",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-067",
+      "name": "Baritone Sax · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-067",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.113739013671875,
+      "rms": 0.01657440481944379,
+      "clippedSamples": 0,
+      "nonzeroSamples": 223856,
+      "sha256": "47360a8dafa96134445a543ca0939023b7f9c2a1fda35546fd86990cdea92aef",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-068",
+      "name": "Oboe · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-068",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.12286376953125,
+      "rms": 0.02794558120493401,
+      "clippedSamples": 0,
+      "nonzeroSamples": 233836,
+      "sha256": "689cfeb0df5a236c25bcaa21a1305ce12528ddbf1a3406caa19ea7aee20806a5",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-069",
+      "name": "English Horn · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-069",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.12677001953125,
+      "rms": 0.02101396240702746,
+      "clippedSamples": 0,
+      "nonzeroSamples": 239716,
+      "sha256": "e5a607dca9a7ddacf3574150f07ee7345276bbd23b6473b0137699d740f5e9f7",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-070",
+      "name": "Bassoon · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-070",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.128631591796875,
+      "rms": 0.0372411882757367,
+      "clippedSamples": 0,
+      "nonzeroSamples": 238734,
+      "sha256": "a29b17ec999fd91f0e45d76b14fc14d457cec038c8fabec5afd9afa897a2901f",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-071",
+      "name": "Clarinet · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-071",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.113922119140625,
+      "rms": 0.023758369763342807,
+      "clippedSamples": 0,
+      "nonzeroSamples": 223862,
+      "sha256": "ee5e887404218b6fe6cfabb294ea85a9ca99b1eb50c49f8af29c939e53f1531c",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-072",
+      "name": "Piccolo · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-072",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.124603271484375,
+      "rms": 0.03764967496308132,
+      "clippedSamples": 0,
+      "nonzeroSamples": 238922,
+      "sha256": "efbbe51aa779d1ede2204e9739893bfb236710f1f160b0c08c03e95527b6ca0d",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-073",
+      "name": "Flute · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-073",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.121063232421875,
+      "rms": 0.030363800191702886,
+      "clippedSamples": 0,
+      "nonzeroSamples": 231004,
+      "sha256": "29bd5e098daf15aa1083eb8dcf6f55e3005e3c1fbe5c5b9fd65c3dcf6ab0b733",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-074",
+      "name": "Recorder · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-074",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.112579345703125,
+      "rms": 0.026489707101368817,
+      "clippedSamples": 0,
+      "nonzeroSamples": 230286,
+      "sha256": "b02f7d2dbd7c0b473939bc566f66518f414561e2eb277c858a7434a7014e89b2",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-075",
+      "name": "Pan Flute · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-075",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.122833251953125,
+      "rms": 0.03530393136351459,
+      "clippedSamples": 0,
+      "nonzeroSamples": 242682,
+      "sha256": "cd5920da9c65d9ad6d9528c2d7e34560d26c723fc8c401b2e0be24b402e378d5",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-076",
+      "name": "Bottle Chiff · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-076",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.122344970703125,
+      "rms": 0.0304910990690262,
+      "clippedSamples": 0,
+      "nonzeroSamples": 221674,
+      "sha256": "ccea3b10b7a1c08c0c8505fc56caf5688662f71bec9bc00af6a270eaa53dd5fd",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-077",
+      "name": "Shakuhachi · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-077",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.122833251953125,
+      "rms": 0.01979841408209831,
+      "clippedSamples": 0,
+      "nonzeroSamples": 224944,
+      "sha256": "939ca5408517e849a41fb3c48acf80b371e419a33e417f8c0a00d204a9136a39",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-078",
+      "name": "Whistle · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-078",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.122100830078125,
+      "rms": 0.03155714937565679,
+      "clippedSamples": 0,
+      "nonzeroSamples": 227870,
+      "sha256": "9378b90e559fc4e2d414805c8d7d3f1c13e1efc41d7d4bec34bdeb2a583585fb",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-079",
+      "name": "Ocarina · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-079",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.12432861328125,
+      "rms": 0.03764071349985496,
+      "clippedSamples": 0,
+      "nonzeroSamples": 219172,
+      "sha256": "9f699c0fa1f9d2039fd52b682cb82664ddf30d8957d7dbf1143f4b2a8ea280d6",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-080",
+      "name": "Square Lead · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-080",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.125213623046875,
+      "rms": 0.03565103698883244,
+      "clippedSamples": 0,
+      "nonzeroSamples": 235166,
+      "sha256": "fe4e2f163b3bb125804e49354f62301588752fb6289a010e029f6b1b764dad12",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-081",
+      "name": "Saw Wave · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-081",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.1221923828125,
+      "rms": 0.0188520081306298,
+      "clippedSamples": 0,
+      "nonzeroSamples": 219720,
+      "sha256": "e9eecebf15f70fc01ab6c48e4c460ed042464fdb3de01e83007e21eb5494e4d8",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-082",
+      "name": "Calliope Lead · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-082",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.104217529296875,
+      "rms": 0.015284763197541535,
+      "clippedSamples": 0,
+      "nonzeroSamples": 218300,
+      "sha256": "5d12e6b7666f36d2c5dd57e580ca145c3564ff37dce91b09bf1aa404b4b8f5f8",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-083",
+      "name": "Chiffer Lead · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-083",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.105865478515625,
+      "rms": 0.017782582714838367,
+      "clippedSamples": 0,
+      "nonzeroSamples": 221046,
+      "sha256": "655098ea47ad994a64cf651eee0b03267ecf7a683b4378ebb45cd0837a9461f5",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-084",
+      "name": "Charang · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-084",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.12091064453125,
+      "rms": 0.018962342669658398,
+      "clippedSamples": 0,
+      "nonzeroSamples": 204400,
+      "sha256": "0c07556adc561abfbeaabe8eafc42a8bfbc656c8989470fd24bf1889bafb3e82",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-085",
+      "name": "Solo Vox · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-085",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.122711181640625,
+      "rms": 0.026476064726198168,
+      "clippedSamples": 0,
+      "nonzeroSamples": 225324,
+      "sha256": "7a7b0054c724e442a8c109399ca65ff10e048c0e1542f853df81611402a50024",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-086",
+      "name": "Fifth Sawtooth Wave · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-086",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.109893798828125,
+      "rms": 0.017915547068179445,
+      "clippedSamples": 0,
+      "nonzeroSamples": 220054,
+      "sha256": "2fe2fed16a699d1a13b7cbdcdc6f753eca8ec87df03c77e2baabcf7b7161b7ad",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-087",
+      "name": "Bass & Lead · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-087",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.120635986328125,
+      "rms": 0.019578140505869143,
+      "clippedSamples": 0,
+      "nonzeroSamples": 217102,
+      "sha256": "9462279e1b287065633ad6ca9d8af5b70bb366a3500d8ba222a70bb11b35c95f",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-088",
+      "name": "Fantasia · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-088",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.123870849609375,
+      "rms": 0.027870621749884774,
+      "clippedSamples": 0,
+      "nonzeroSamples": 241318,
+      "sha256": "4b382d9f931bcd138b42ee27695256938b82762e555d72bc694428d190699ccc",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-089",
+      "name": "Warm Pad · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-089",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.11981201171875,
+      "rms": 0.02468473425233815,
+      "clippedSamples": 0,
+      "nonzeroSamples": 246790,
+      "sha256": "36a09e49164c5a09857f68a89c4035ad2c0fabeabcb565ed81c48fe4cac3a515",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-090",
+      "name": "Polysynth · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-090",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.12249755859375,
+      "rms": 0.018259054372668466,
+      "clippedSamples": 0,
+      "nonzeroSamples": 229782,
+      "sha256": "218dc68e712072d4ee53a21a6b163f653a9d4a1e8b3025d832fcf5bb78a20a75",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-091",
+      "name": "Space Voice · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-091",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.122894287109375,
+      "rms": 0.03231698709691546,
+      "clippedSamples": 0,
+      "nonzeroSamples": 241086,
+      "sha256": "9d63219f51989856910d67b71e64bce67d615b444aed0223bea0922f424b8edd",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-092",
+      "name": "Bowed Glass · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-092",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.1229248046875,
+      "rms": 0.020849566179032906,
+      "clippedSamples": 0,
+      "nonzeroSamples": 243942,
+      "sha256": "89eb04050fdae1c2a3e9c555f0677d17a3261f46af85bf6d8845866e5a08451e",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-093",
+      "name": "Metal Pad · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-093",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.120147705078125,
+      "rms": 0.021907981063343247,
+      "clippedSamples": 0,
+      "nonzeroSamples": 223828,
+      "sha256": "eb1f4942b1a7732018cc69198e3dad3177a12bb781178e165d081dc295059b9c",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-094",
+      "name": "Halo Pad · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-094",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.119659423828125,
+      "rms": 0.028168928102815488,
+      "clippedSamples": 0,
+      "nonzeroSamples": 236994,
+      "sha256": "d0e7668dcff28deddd060aa54f645e69703a16da6e1a1f062f2b8e9ce0ecf8f6",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-095",
+      "name": "Sweep Pad · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-095",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.1004638671875,
+      "rms": 0.017927169093781472,
+      "clippedSamples": 0,
+      "nonzeroSamples": 243134,
+      "sha256": "230c21b590e6974665727c724598b829bfb467af3b3a307b7bc36136342f19a9",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-096",
+      "name": "Ice Rain · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-096",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.121185302734375,
+      "rms": 0.026206550584282902,
+      "clippedSamples": 0,
+      "nonzeroSamples": 241334,
+      "sha256": "4b6d54c5fece543bb5b24c1a3994155f0af17ecd28c2dd98c30596c3e5000899",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-097",
+      "name": "Soundtrack · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-097",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.12127685546875,
+      "rms": 0.02277859850864605,
+      "clippedSamples": 0,
+      "nonzeroSamples": 242040,
+      "sha256": "0fc2eb5299d75e7c2285ec1c73a6dc6e24924fdcb1edc7c7e95e5c88cd9d8603",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-098",
+      "name": "Crystal · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-098",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.123077392578125,
+      "rms": 0.01555317353409547,
+      "clippedSamples": 0,
+      "nonzeroSamples": 201758,
+      "sha256": "4360f560dd5e851e9bd2156a2808b28983b9e45a9cf84cf4455b569100aa2398",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-099",
+      "name": "Atmosphere · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-099",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.1229248046875,
+      "rms": 0.02398087983989811,
+      "clippedSamples": 0,
+      "nonzeroSamples": 229504,
+      "sha256": "78daa64c0a8b9be45de2a84235b4806edca8892ba2bc5bcb9d63b7d04d136dea",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-100",
+      "name": "Brightness · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-100",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.122650146484375,
+      "rms": 0.026576628460789193,
+      "clippedSamples": 0,
+      "nonzeroSamples": 251852,
+      "sha256": "437112b7d9c7df1879fe55fc5a2149feef6f3c9be87115b13ab66ad4774083e9",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-101",
+      "name": "Goblin · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-101",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.109649658203125,
+      "rms": 0.017698856242453306,
+      "clippedSamples": 0,
+      "nonzeroSamples": 236082,
+      "sha256": "03d817a4966595e76b286c9cc2c90a8efe1ac992073a2ec31c2e0ff4f0b78033",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-102",
+      "name": "Echo Drops · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-102",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.12286376953125,
+      "rms": 0.023270123647440494,
+      "clippedSamples": 0,
+      "nonzeroSamples": 236708,
+      "sha256": "47f1b2347ea9ff7987043f6624396fa7ca99e90d116a4d24c2449b6481683f4e",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-103",
+      "name": "Star Theme · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-103",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.1217041015625,
+      "rms": 0.02482291060641398,
+      "clippedSamples": 0,
+      "nonzeroSamples": 231226,
+      "sha256": "509f4c5bb2ca3c78f4acf90e3d39fa57a9e2377baa2746334a1f78daf221784f",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-104",
+      "name": "Sitar · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-104",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.13995361328125,
+      "rms": 0.01090076067019054,
+      "clippedSamples": 0,
+      "nonzeroSamples": 186162,
+      "sha256": "7c4d57f3a8296aed3d4594b81157fb9cfa542fef22dce15041e2a0c4491fe0f9",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-105",
+      "name": "Banjo · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-105",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.13946533203125,
+      "rms": 0.007208023576611363,
+      "clippedSamples": 0,
+      "nonzeroSamples": 157778,
+      "sha256": "9a8172030fd492e4802d5f7f4165815ec2c359b972e1663d83072e81c2395904",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-106",
+      "name": "Shamisen · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-106",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.1407470703125,
+      "rms": 0.0072082839780760345,
+      "clippedSamples": 0,
+      "nonzeroSamples": 179278,
+      "sha256": "475997243b92d75829724c475efbab073b5dd46b178ae69273f4fe5ec8467a7e",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-107",
+      "name": "Koto · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-107",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.140655517578125,
+      "rms": 0.0069382443030616674,
+      "clippedSamples": 0,
+      "nonzeroSamples": 163978,
+      "sha256": "2d657be8a6e9cc5b66d964351abab48cf8952a2527fbc451a53f52516a719e3f",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-108",
+      "name": "Kalimba · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-108",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.139678955078125,
+      "rms": 0.0041615494775801695,
+      "clippedSamples": 0,
+      "nonzeroSamples": 100014,
+      "sha256": "f8d762ced7cea6d4865c52c67c9f83ea7ce0b1079d438610d25c519351739324",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-109",
+      "name": "BagPipe · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-109",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.12469482421875,
+      "rms": 0.026751207703050117,
+      "clippedSamples": 0,
+      "nonzeroSamples": 240006,
+      "sha256": "2afc8639b13e64c97b290d69aca60d2c58c04a859dbc314fe254ad22ced0562b",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-110",
+      "name": "Fiddle · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-110",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.122589111328125,
+      "rms": 0.025625115234257343,
+      "clippedSamples": 0,
+      "nonzeroSamples": 233622,
+      "sha256": "310df6f0d4c101b295b880a067858e0470b5d41744cf4c8814e110d32e570da7",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-111",
+      "name": "Shenai · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-111",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.1207275390625,
+      "rms": 0.024775277129365347,
+      "clippedSamples": 0,
+      "nonzeroSamples": 229002,
+      "sha256": "df8769e3eaeb45f11d59f9acfef3bc81e79e0fed5839a328335bc28b48f95be8",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-112",
+      "name": "Tinker Bell · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-112",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.139373779296875,
+      "rms": 0.010534087143004644,
+      "clippedSamples": 0,
+      "nonzeroSamples": 107150,
+      "sha256": "a8c7cb3d88e5a6a709e6e0d8466937a927f83a80dff6841a85e641e5d77f1038",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-113",
+      "name": "Agogo · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-113",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.136260986328125,
+      "rms": 0.004706743576469803,
+      "clippedSamples": 0,
+      "nonzeroSamples": 83594,
+      "sha256": "de3695590269d83bb1cab867e34a66eb39599f7688eecdedf6bf9aecaf1a1fe9",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-114",
+      "name": "Steel Drums · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-114",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.1396484375,
+      "rms": 0.011923622805435245,
+      "clippedSamples": 0,
+      "nonzeroSamples": 112604,
+      "sha256": "549781df40a1674d583f50dd26f5286dc177f95b4de7b630a0d6f38b7ea3e740",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-115",
+      "name": "Woodblock · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-115",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.126068115234375,
+      "rms": 0.0028599920626196703,
+      "clippedSamples": 0,
+      "nonzeroSamples": 39298,
+      "sha256": "6c6cd3ae33467eb8e9ea365cc540aa68e4d229fa7319b17cd15f8147e943c9fa",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-116",
+      "name": "Taiko Drum · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-116",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.139312744140625,
+      "rms": 0.011793748679272872,
+      "clippedSamples": 0,
+      "nonzeroSamples": 114866,
+      "sha256": "f87a904b5d4dfd6e26e8d96b47cdecff21fd5a47af6e5b7e62266ada05c46c43",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-117",
+      "name": "Melodic Tom · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-117",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.137908935546875,
+      "rms": 0.0065502347171017,
+      "clippedSamples": 0,
+      "nonzeroSamples": 84694,
+      "sha256": "945d25821fad96645877eb7ab61f74c20ebf7fe5dcc5aee7af1df748673a741c",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-118",
+      "name": "Synth Drum · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-118",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.13897705078125,
+      "rms": 0.012771121969385523,
+      "clippedSamples": 0,
+      "nonzeroSamples": 107260,
+      "sha256": "5edef3f488c9bb7387bfe5daa7165e00ddfc3149ed1352c74a8752128a59c3ab",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-119",
+      "name": "Reverse Cymbal · Fluid",
+      "origin": "soundfont",
+      "pitch": 60,
+      "preset": "fluid-119",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.143890380859375,
+      "rms": 0.01218950063602191,
+      "clippedSamples": 0,
+      "nonzeroSamples": 188066,
+      "sha256": "a8ccc250161415f9e4e9315591da810dd196eabc70a11118c9206d89709c259f",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-120",
+      "name": "Fret Noise · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-120",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.120758056640625,
+      "rms": 0.005135085010506788,
+      "clippedSamples": 0,
+      "nonzeroSamples": 35080,
+      "sha256": "46f4bc928b75b9609679d5bbd33e7b3ced5110bfa7050605bfb48dd63f80eb4f",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-121",
+      "name": "Breath Noise · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-121",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.116485595703125,
+      "rms": 0.0057209472592837825,
+      "clippedSamples": 0,
+      "nonzeroSamples": 65192,
+      "sha256": "0744c87783ccdc031a14127dcdf2e6814902528f2a1f03b7d947ff6044f5c235",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-122",
+      "name": "Sea Shore · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-122",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.1259765625,
+      "rms": 0.012506833816255438,
+      "clippedSamples": 0,
+      "nonzeroSamples": 211742,
+      "sha256": "37fb27ae6e5846f0cc61149b13af1d100c9d16f53c53432d1d34a26a8013025b",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-123",
+      "name": "Bird Tweet · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-123",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.116668701171875,
+      "rms": 0.00868995624809826,
+      "clippedSamples": 0,
+      "nonzeroSamples": 70558,
+      "sha256": "2e77f96f271b5644907c10445229233824510743b5baf261dc44b54650c864b9",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-124",
+      "name": "Telephone · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-124",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.11614990234375,
+      "rms": 0.011520667628531442,
+      "clippedSamples": 0,
+      "nonzeroSamples": 147286,
+      "sha256": "d9e0fd8846a22f9c862133d2fa19a1b7a7fd40da17021dbbc3f07e990729f93b",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-125",
+      "name": "Helicopter · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-125",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.1220703125,
+      "rms": 0.009796542913957864,
+      "clippedSamples": 0,
+      "nonzeroSamples": 207040,
+      "sha256": "914e9fe4472d2253c529df36bfe4eea8a25cc8fa8af392241d7f27deb026bb24",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-126",
+      "name": "Applause · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-126",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.11993408203125,
+      "rms": 0.018088059309219397,
+      "clippedSamples": 0,
+      "nonzeroSamples": 212654,
+      "sha256": "3cdc6639dac1a0403b464dac9c12c745883fb3aff91234c979a758c7c6bd8ccd",
+      "inputUnchanged": true
+    },
+    {
+      "id": "fluid-127",
+      "name": "Gun Shot · Fluid",
+      "origin": "soundfont",
+      "pitch": 69,
+      "preset": "fluid-127",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.124908447265625,
+      "rms": 0.010058674393730142,
+      "clippedSamples": 0,
+      "nonzeroSamples": 99150,
+      "sha256": "11b325875b1865ead735990b43ff676537ce3836d5219fdc47a3a00148a82ecf",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-bass-1",
+      "name": "Sub tail · synthesized",
+      "origin": "synthesized",
+      "pitch": 40,
+      "preset": "edm-bass-1",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.131103515625,
+      "rms": 0.03712100025857965,
+      "clippedSamples": 0,
+      "nonzeroSamples": 217510,
+      "sha256": "02f9d97bb73d2ae9bda039b819a851cd8447cd6428744c51717711378e691d49",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-bass-2",
+      "name": "Square punch · synthesized",
+      "origin": "synthesized",
+      "pitch": 40,
+      "preset": "edm-bass-2",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.1295166015625,
+      "rms": 0.040283471545601725,
+      "clippedSamples": 0,
+      "nonzeroSamples": 231206,
+      "sha256": "5c5c0dacd550d07b577f9eb102f0ec3bd504548ca73717e33ac9176895ec897f",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-bass-3",
+      "name": "Detuned Reese · synthesized",
+      "origin": "synthesized",
+      "pitch": 40,
+      "preset": "edm-bass-3",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.112213134765625,
+      "rms": 0.027802348598680818,
+      "clippedSamples": 0,
+      "nonzeroSamples": 224342,
+      "sha256": "6c389df7444f9398b74816020ee68caddbbbcdf1c1f6351c5ad9eee895964638",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-bass-4",
+      "name": "Acid pulse · synthesized",
+      "origin": "synthesized",
+      "pitch": 40,
+      "preset": "edm-bass-4",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.131256103515625,
+      "rms": 0.06642609524992456,
+      "clippedSamples": 0,
+      "nonzeroSamples": 242280,
+      "sha256": "1c141c8c7575e1b6b8674f9f0e4b616e801edeef67fb0e405b6dd418f0d521ec",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-bass-5",
+      "name": "FM growl · synthesized",
+      "origin": "synthesized",
+      "pitch": 40,
+      "preset": "edm-bass-5",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.13665771484375,
+      "rms": 0.05140763359424035,
+      "clippedSamples": 0,
+      "nonzeroSamples": 237466,
+      "sha256": "229d4908e9324810885c68866a58bc71697282b399a591c6cc76232fe296612e",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-bass-6",
+      "name": "Rubber FM · synthesized",
+      "origin": "synthesized",
+      "pitch": 40,
+      "preset": "edm-bass-6",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.13116455078125,
+      "rms": 0.045585216581664284,
+      "clippedSamples": 0,
+      "nonzeroSamples": 230754,
+      "sha256": "d3be30f990a7027ab97d931ba182e6646bb4d17a0eb2119241164823fd0246c9",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-lead-1",
+      "name": "Festival supersaw · synthesized",
+      "origin": "synthesized",
+      "pitch": 69,
+      "preset": "edm-lead-1",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.12890625,
+      "rms": 0.02188817630712404,
+      "clippedSamples": 0,
+      "nonzeroSamples": 222566,
+      "sha256": "799333937ca60a084a88d799c92e56ca4d8de2c29de124176b43e75945b5a135",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-lead-2",
+      "name": "Focused saw · synthesized",
+      "origin": "synthesized",
+      "pitch": 69,
+      "preset": "edm-lead-2",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.144256591796875,
+      "rms": 0.03228331208467284,
+      "clippedSamples": 0,
+      "nonzeroSamples": 234220,
+      "sha256": "a8a05a7eb3a01853aae1910bf6c401e7384bb735858da0a3a25bb6bf0f90da02",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-lead-3",
+      "name": "Fifths stack · synthesized",
+      "origin": "synthesized",
+      "pitch": 69,
+      "preset": "edm-lead-3",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.140167236328125,
+      "rms": 0.03906874831288189,
+      "clippedSamples": 0,
+      "nonzeroSamples": 238228,
+      "sha256": "9579f4a990775fc0086dd5d36b113fa6fab727ecfa4e3864b9207464d0bde839",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-lead-4",
+      "name": "Glass FM lead · synthesized",
+      "origin": "synthesized",
+      "pitch": 69,
+      "preset": "edm-lead-4",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.138702392578125,
+      "rms": 0.061553563234313234,
+      "clippedSamples": 0,
+      "nonzeroSamples": 249456,
+      "sha256": "f653a4277831cc28e94e3d3267ffd2044fc3ccc3f82c08f3604fbf3b2705afe0",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-lead-5",
+      "name": "Narrow pulse lead · synthesized",
+      "origin": "synthesized",
+      "pitch": 69,
+      "preset": "edm-lead-5",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.135040283203125,
+      "rms": 0.0646535874476556,
+      "clippedSamples": 0,
+      "nonzeroSamples": 254346,
+      "sha256": "45f976a08eeef15c629b9d4a330161bf7376bd58c96a66989deb4fe1d09ca673",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-lead-6",
+      "name": "Edge stack · synthesized",
+      "origin": "synthesized",
+      "pitch": 69,
+      "preset": "edm-lead-6",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.136749267578125,
+      "rms": 0.03640145484828481,
+      "clippedSamples": 0,
+      "nonzeroSamples": 236898,
+      "sha256": "c5d181d0bab9e9c3c78db93284ac7a4df68d70caf1f55a63c6c96f11aa3f8391",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-pad-1",
+      "name": "Warm analog pad · synthesized",
+      "origin": "synthesized",
+      "pitch": 60,
+      "preset": "edm-pad-1",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 4.12,
+      "frames": 181692,
+      "peak": 0.125244140625,
+      "rms": 0.030398036524679185,
+      "clippedSamples": 0,
+      "nonzeroSamples": 257056,
+      "sha256": "947a6fd18b3e6c92060f9c901c208b609cbce00fff2aa838c910f9351b6ddfbe",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-pad-2",
+      "name": "Air halo · synthesized",
+      "origin": "synthesized",
+      "pitch": 60,
+      "preset": "edm-pad-2",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 4.12,
+      "frames": 181692,
+      "peak": 0.1248779296875,
+      "rms": 0.026149056191704642,
+      "clippedSamples": 0,
+      "nonzeroSamples": 266540,
+      "sha256": "5011850ffae9360913062c058e1b93bf6ad17e030db39c63fc1529e18aa96003",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-pad-3",
+      "name": "Slow synth strings · synthesized",
+      "origin": "synthesized",
+      "pitch": 60,
+      "preset": "edm-pad-3",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 4.12,
+      "frames": 181692,
+      "peak": 0.115447998046875,
+      "rms": 0.026714786325178052,
+      "clippedSamples": 0,
+      "nonzeroSamples": 268648,
+      "sha256": "6f9ef413bf9d291d0a6798092d721373307abb468affb46eb70c30eda23c6758",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-pad-4",
+      "name": "Glass cloud · synthesized",
+      "origin": "synthesized",
+      "pitch": 60,
+      "preset": "edm-pad-4",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 4.12,
+      "frames": 181692,
+      "peak": 0.1226806640625,
+      "rms": 0.03862994243869068,
+      "clippedSamples": 0,
+      "nonzeroSamples": 265224,
+      "sha256": "73db7190b154e2c5944eaaa823276466ccc97e76b8a8371f41f0efdfe5222b4e",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-pad-5",
+      "name": "Dark pulse pad · synthesized",
+      "origin": "synthesized",
+      "pitch": 60,
+      "preset": "edm-pad-5",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 4.12,
+      "frames": 181692,
+      "peak": 0.12799072265625,
+      "rms": 0.03836218357588316,
+      "clippedSamples": 0,
+      "nonzeroSamples": 266212,
+      "sha256": "90d4abe11dae1ea956d56d9247521a90cb1324184cb5f8ff1fc39fdea07165e9",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-pad-6",
+      "name": "Fifths atmosphere · synthesized",
+      "origin": "synthesized",
+      "pitch": 60,
+      "preset": "edm-pad-6",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 4.12,
+      "frames": 181692,
+      "peak": 0.1094970703125,
+      "rms": 0.0251772175763932,
+      "clippedSamples": 0,
+      "nonzeroSamples": 250558,
+      "sha256": "9f81819850259e8695205d39186abb3f0e788aa5010e125b004ff4f2beed419d",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-pluck-1",
+      "name": "Short saw pluck · synthesized",
+      "origin": "synthesized",
+      "pitch": 60,
+      "preset": "edm-pluck-1",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.127777099609375,
+      "rms": 0.013483343224044092,
+      "clippedSamples": 0,
+      "nonzeroSamples": 152772,
+      "sha256": "ac0f7e2f68f554630e3566ffb2183bd8f2b1611e9fa7337494df15f47c6d29f4",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-pluck-2",
+      "name": "FM marimba · synthesized",
+      "origin": "synthesized",
+      "pitch": 60,
+      "preset": "edm-pluck-2",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.131072998046875,
+      "rms": 0.025194953580172014,
+      "clippedSamples": 0,
+      "nonzeroSamples": 170666,
+      "sha256": "15fa8a01b472f0cbe5dc58b3d9e472069fe67005d153ff43076981c892262998",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-pluck-3",
+      "name": "Glass keys · synthesized",
+      "origin": "synthesized",
+      "pitch": 60,
+      "preset": "edm-pluck-3",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.131134033203125,
+      "rms": 0.019629667507622968,
+      "clippedSamples": 0,
+      "nonzeroSamples": 184896,
+      "sha256": "dfe2aae1b8495e1b919cb4ed8068786cede952660501542f940b09afe421d293",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-pluck-4",
+      "name": "Digital bell · synthesized",
+      "origin": "synthesized",
+      "pitch": 60,
+      "preset": "edm-pluck-4",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.13134765625,
+      "rms": 0.03455027084162376,
+      "clippedSamples": 0,
+      "nonzeroSamples": 202594,
+      "sha256": "d6baa0f7835535a1d01859593ff22b96b265f55b0967fb7af42772b6f312a01b",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-pluck-5",
+      "name": "Soft pulse pluck · synthesized",
+      "origin": "synthesized",
+      "pitch": 60,
+      "preset": "edm-pluck-5",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.130401611328125,
+      "rms": 0.025507521630639036,
+      "clippedSamples": 0,
+      "nonzeroSamples": 170756,
+      "sha256": "a2b4159ae30874fde97373039aee4fa8ba0a93090531fa7530866216a6e2218b",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-pluck-6",
+      "name": "Metallic pluck · synthesized",
+      "origin": "synthesized",
+      "pitch": 60,
+      "preset": "edm-pluck-6",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.13104248046875,
+      "rms": 0.016394883141774508,
+      "clippedSamples": 0,
+      "nonzeroSamples": 162762,
+      "sha256": "c113c33350c32316138af1937eb269d86e9b9e74833fa44b96d45fe8ca0457d1",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-kick-1",
+      "name": "Deep sub kick · synthesized",
+      "origin": "synthesized",
+      "pitch": 36,
+      "preset": "edm-kick-1",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.18572998046875,
+      "rms": 0.03575888275077368,
+      "clippedSamples": 0,
+      "nonzeroSamples": 44080,
+      "sha256": "cce6901b749a68b2d47174fadf295a017813dfb22c2967441e9bfa2a85ae6d98",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-kick-2",
+      "name": "Tight punch kick · synthesized",
+      "origin": "synthesized",
+      "pitch": 36,
+      "preset": "edm-kick-2",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.185577392578125,
+      "rms": 0.02672422119610385,
+      "clippedSamples": 0,
+      "nonzeroSamples": 44060,
+      "sha256": "bb6f89346676dcf4256a0e9f31c8b6828050935790eb88d73501267fd2ec7803",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-kick-3",
+      "name": "Click house kick · synthesized",
+      "origin": "synthesized",
+      "pitch": 36,
+      "preset": "edm-kick-3",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.18585205078125,
+      "rms": 0.025524229988482017,
+      "clippedSamples": 0,
+      "nonzeroSamples": 44020,
+      "sha256": "fbd71be07f587e0a535afba0dccdc89cac4f0a16ad0c5ad70ede52c9e2e95674",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-kick-4",
+      "name": "Driven techno kick · synthesized",
+      "origin": "synthesized",
+      "pitch": 36,
+      "preset": "edm-kick-4",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.1859130859375,
+      "rms": 0.038165779864541304,
+      "clippedSamples": 0,
+      "nonzeroSamples": 44060,
+      "sha256": "515f5cde95c56df47e07e3fdae56d054b069a0e2e5fc784d4bf07172cb109641",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-snare-1",
+      "name": "Snappy snare · synthesized",
+      "origin": "synthesized",
+      "pitch": 38,
+      "preset": "edm-snare-1",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.15142822265625,
+      "rms": 0.005635643310245059,
+      "clippedSamples": 0,
+      "nonzeroSamples": 42292,
+      "sha256": "e1cc5f9d6cf6baaabc58f220894588644b259c8b8aa0e2796778eb25bb41fe57",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-snare-2",
+      "name": "Layered clap · synthesized",
+      "origin": "synthesized",
+      "pitch": 38,
+      "preset": "edm-snare-2",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.1610107421875,
+      "rms": 0.005119895045811285,
+      "clippedSamples": 0,
+      "nonzeroSamples": 42364,
+      "sha256": "c6a82552ea425c866ee9be9411956a2d33ce49f2363eb3398ea397789ca69c1b",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-snare-3",
+      "name": "Noise snare · synthesized",
+      "origin": "synthesized",
+      "pitch": 38,
+      "preset": "edm-snare-3",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.146697998046875,
+      "rms": 0.006818002170092591,
+      "clippedSamples": 0,
+      "nonzeroSamples": 43788,
+      "sha256": "3ff83286ce3f172a81af07da78138cd19140a0eae9559a5b85d89f3f8e34767c",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-snare-4",
+      "name": "Dry rim · synthesized",
+      "origin": "synthesized",
+      "pitch": 38,
+      "preset": "edm-snare-4",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.92,
+      "frames": 172872,
+      "peak": 0.14990234375,
+      "rms": 0.0038800619933970883,
+      "clippedSamples": 0,
+      "nonzeroSamples": 12096,
+      "sha256": "77dcf51b28de1bceb4490af74b6d676221190c64e9b8520f6c7cf3d6fad6d6ce",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-hat-1",
+      "name": "Bright closed hat · synthesized",
+      "origin": "synthesized",
+      "pitch": 42,
+      "preset": "edm-hat-1",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.13031005859375,
+      "rms": 0.0033675922444440106,
+      "clippedSamples": 0,
+      "nonzeroSamples": 16436,
+      "sha256": "45652398012bd52d031cb139186c9f5b2637da43b1a96e8b6dc8113773f9a5e1",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-hat-2",
+      "name": "Dark closed hat · synthesized",
+      "origin": "synthesized",
+      "pitch": 42,
+      "preset": "edm-hat-2",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.117919921875,
+      "rms": 0.0039600884146393945,
+      "clippedSamples": 0,
+      "nonzeroSamples": 17274,
+      "sha256": "df10f41d52fead824d17b0c88dde84e707b82f9349bc3686e07872f56a1b2a9f",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-hat-3",
+      "name": "Noise shaker · synthesized",
+      "origin": "synthesized",
+      "pitch": 42,
+      "preset": "edm-hat-3",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 3.9,
+      "frames": 171990,
+      "peak": 0.135406494140625,
+      "rms": 0.004841708716281838,
+      "clippedSamples": 0,
+      "nonzeroSamples": 17492,
+      "sha256": "b92f52daed22ca4d0c2fa639959451f49c3a64f7ab55c85443d6e549d5cb88f8",
+      "inputUnchanged": true
+    },
+    {
+      "id": "edm-hat-4",
+      "name": "Open decay hat · synthesized",
+      "origin": "synthesized",
+      "pitch": 42,
+      "preset": "edm-hat-4",
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 1,
+      "seconds": 4.07,
+      "frames": 179487,
+      "peak": 0.1219482421875,
+      "rms": 0.00655435267005574,
+      "clippedSamples": 0,
+      "nonzeroSamples": 56984,
+      "sha256": "55b9e0c93dd0f55b49c8ddfa281daee253fe8769080cee8682eeef0c0e1e655d",
+      "inputUnchanged": true
+    }
+  ],
+  "demos": [
+    {
+      "name": "edm-sketch",
+      "notes": 120,
+      "presets": [
+        "edm-kick-3",
+        "edm-snare-2",
+        "edm-hat-1",
+        "edm-hat-4",
+        "edm-bass-3",
+        "edm-lead-1",
+        "edm-pad-1",
+        "edm-pluck-2"
+      ],
+      "range": {
+        "start": 0,
+        "end": 16
+      },
+      "seconds": 9.22,
+      "frames": 406602,
+      "peak": 0.4185791015625,
+      "rms": 0.09291811095202042,
+      "clippedSamples": 0,
+      "nonzeroSamples": 750435,
+      "sha256": "329dd093e04702ff04e419f9a662303239d483ec8bb82651730e4aec492646fd",
+      "inputUnchanged": true
+    },
+    {
+      "name": "acoustic-choir-sketch",
+      "notes": 70,
+      "presets": [
+        "vsco-piano-full",
+        "karoryfer-guitar",
+        "fluid-043",
+        "fluid-012",
+        "fluid-052",
+        "vsco-clarinet",
+        "fluid-056",
+        "fluid-048"
+      ],
+      "range": {
+        "start": 0,
+        "end": 16
+      },
+      "seconds": 11.732766439909296,
+      "frames": 517415,
+      "peak": 0.19525146484375,
+      "rms": 0.03632776477175172,
+      "clippedSamples": 0,
+      "nonzeroSamples": 970199,
+      "sha256": "9e228732a9ce8bcd704c1783723d6280a0031aae48ab657923aa2bb454468269",
+      "inputUnchanged": true
+    }
+  ],
+  "uniqueAuditionHashes": 179,
+  "allAuditionsNonSilent": true,
+  "allAuditionsUnclipped": true,
+  "library": {
+    "loaded": 152,
+    "pending": 0,
+    "pcmBytes": 95476040,
+    "evicted": 172,
+    "nativeEvicted": 0,
+    "preparedBytes": 0,
+    "voices": 484,
+    "lastAsset": "fluid-012-68-v104",
+    "lastError": null
+  }
+}

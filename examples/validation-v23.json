@@ -1,0 +1,340 @@
+{
+  "version": "0.23.0",
+  "updatedAt": "2026-10-13T03:20:22.715477+00:00",
+  "delivery": "local working-tree snapshot only; no online publish or Git push",
+  "automatedTests": {
+    "passed": 546,
+    "failed": 0,
+    "newSamplerCore": 33,
+    "newActualFileRegressions": 6,
+    "syntaxCheck": true,
+    "diffWhitespaceCheck": true
+  },
+  "localService": {
+    "url": "http://127.0.0.1:4173/",
+    "llmConfigured": false,
+    "version": "0.23.0",
+    "authenticatedAccountRequired": false,
+    "automaticPlayback": false
+  },
+  "source": {
+    "library": "VSCO 2 Community Edition / Upright Nr. 1",
+    "source": "https://github.com/sgossner/VSCO-2-CE",
+    "sourceCommit": "440300901dfe9275fd84e0b7763af1f8443ae62e",
+    "license": "CC0-1.0",
+    "credit": "Versilian Studios / Sam Gossner; Ivy Audio / Simon Dalzell; sample cutting Elan Hickler / Soundemote",
+    "transforms": "Subset selection, 44.1kHz 16-bit mono conversion, leading near-silence trimmed, maximum 6s piano / 3s drums, final 50ms fade; no gain normalization; short cymbal is not a recorded hi-hat"
+  },
+  "samples": {
+    "assets": 21,
+    "bytes": 8223066,
+    "sampleRate": 44100,
+    "bits": 16,
+    "channels": 1,
+    "pianoRoots": 8,
+    "pianoLayers": 2,
+    "velocityBlend": "(velocity-1)/126 linear weights, then voice gain",
+    "cachedPCMBytes": 16444284,
+    "presets": [
+      "vsco-piano",
+      "vsco-kick",
+      "vsco-snare",
+      "vsco-cymbal"
+    ],
+    "shortCymbalIsNotRecordedHihat": true,
+    "arbitraryProjectURLsAccepted": false
+  },
+  "uiChecks": {
+    "invalidGainRejected": true,
+    "applyLoadsBeforeBackupAndSingleCommit": true,
+    "sourceApplyDoesNotInitializeHardware": true,
+    "cancelDraftDoesNotApply": true,
+    "undoRedoAndRefreshPreserve": true,
+    "newEmptySampledPianoAddedThenUndone": true,
+    "synthesisParamsRetainedWhenSwitchingBack": true,
+    "staleAfterActualOfflineCandidateRejected": true,
+    "staleApplyNoRevisionOrGainChange": true,
+    "mobileGainAppliedThenUndone": true,
+    "desktopViewport": [
+      1280,
+      900
+    ],
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "mobilePageWidth": 384,
+    "mobileDialogBounds": {
+      "x": 12,
+      "y": 51.9296875,
+      "width": 360,
+      "height": 740.140625
+    },
+    "mobileFooterBottom": 791.0703125,
+    "pageHorizontalOverflow": false,
+    "browserErrorsAndWarnings": 0,
+    "originalWorkspaceByteExact": true,
+    "demoRestoredByteExact": true
+  },
+  "demoBeforeFinalExplicitPlay": {
+    "name": "采样乐器 · 演示副本",
+    "revision": 8,
+    "workspace": {
+      "id": "7d3046ee-2960-485e-ae95-4ddb47eaba25",
+      "switching": false,
+      "libraryAvailable": true,
+      "projects": 7,
+      "lastOpenedId": "7d3046ee-2960-485e-ae95-4ddb47eaba25"
+    },
+    "tracks": [
+      {
+        "id": "9385fee3-87b0-48d8-b1c4-ec62c16cb5c3",
+        "instrument": "kick",
+        "notes": 72,
+        "sampler": {
+          "preset": "vsco-kick",
+          "gain": 0.85,
+          "release": 0.55,
+          "cutoff": 18000
+        }
+      },
+      {
+        "id": "8e40110e-db03-4b41-8834-023fb4916984",
+        "instrument": "snare",
+        "notes": 68,
+        "sampler": {
+          "preset": "vsco-snare",
+          "gain": 0.7,
+          "release": 0.4,
+          "cutoff": 18000
+        }
+      },
+      {
+        "id": "de321b9a-14a5-4872-9467-23e9149860b5",
+        "instrument": "hat",
+        "notes": 168,
+        "sampler": {
+          "preset": "vsco-cymbal",
+          "gain": 0.45,
+          "release": 0.18,
+          "cutoff": 18000
+        }
+      },
+      {
+        "id": "fe5a776a-183b-47d9-b647-9ff68bb23c49",
+        "instrument": "bass",
+        "notes": 96
+      },
+      {
+        "id": "98bf586e-ecab-47a8-87e2-e27332da5b8c",
+        "instrument": "keys",
+        "notes": 192,
+        "sampler": {
+          "preset": "vsco-piano",
+          "gain": 0.8,
+          "release": 0.2,
+          "cutoff": 18000
+        }
+      },
+      {
+        "id": "eee2b713-a85d-4f44-ae12-51a837b30d22",
+        "instrument": "lead",
+        "notes": 92
+      },
+      {
+        "id": "6bd46b3f-ed4d-4004-9ef2-eecb96f273f6",
+        "instrument": "pad",
+        "notes": 128
+      }
+    ],
+    "patterns": [
+      {
+        "id": "89d250ca-0c10-4ae3-8916-0b8b782f8b23",
+        "name": "柔和电钢琴",
+        "instrument": "keys",
+        "length": 8,
+        "notes": 16,
+        "instances": 4
+      }
+    ],
+    "range": {
+      "start": 64,
+      "end": 96
+    },
+    "transport": {
+      "playing": false,
+      "beat": 64,
+      "range": {
+        "start": 64,
+        "end": 96
+      },
+      "loop": true,
+      "quiet": false,
+      "clipPreview": null,
+      "hardwareAudioInitialized": false,
+      "samples": {
+        "loaded": 21,
+        "pending": 0,
+        "pcmBytes": 16444284,
+        "voices": 208,
+        "lastAsset": "cymbal",
+        "lastError": null
+      }
+    }
+  },
+  "actualAudioPath": {
+    "singleNote": {
+      "hardware": true,
+      "voices": 2,
+      "revision": 6
+    },
+    "transport": {
+      "before": {
+        "playing": false,
+        "beat": 64,
+        "range": {
+          "start": 64,
+          "end": 96
+        },
+        "loop": true,
+        "quiet": false,
+        "clipPreview": null,
+        "hardwareAudioInitialized": false,
+        "samples": {
+          "loaded": 21,
+          "pending": 0,
+          "pcmBytes": 16444284,
+          "voices": 208,
+          "lastAsset": "cymbal",
+          "lastError": null
+        }
+      },
+      "during": {
+        "playing": true,
+        "beat": 64.21834444444444,
+        "range": {
+          "start": 64,
+          "end": 96
+        },
+        "loop": true,
+        "quiet": false,
+        "clipPreview": null,
+        "hardwareAudioInitialized": true,
+        "samples": {
+          "loaded": 21,
+          "pending": 0,
+          "pcmBytes": 16444284,
+          "voices": 219,
+          "lastAsset": "piano-C5-hard",
+          "lastError": null
+        }
+      },
+      "after": {
+        "playing": false,
+        "beat": 64,
+        "range": {
+          "start": 64,
+          "end": 96
+        },
+        "loop": true,
+        "quiet": false,
+        "clipPreview": null,
+        "hardwareAudioInitialized": true,
+        "samples": {
+          "loaded": 21,
+          "pending": 0,
+          "pcmBytes": 16444284,
+          "voices": 219,
+          "lastAsset": "piano-C5-hard",
+          "lastError": null
+        }
+      },
+      "revisionBefore": 8,
+      "revisionAfter": 8
+    }
+  },
+  "wav": {
+    "channels": 2,
+    "sampleRate": 44100,
+    "bits": 16,
+    "frames": 1091281,
+    "seconds": 24.745600907029477,
+    "peak": 0.31353759765625,
+    "rms": 0.06947384255304952,
+    "clippedSamples": 0,
+    "bytes": 4365168,
+    "sha256": "9183b036b6040f8eb9284c79696f964c0aae62510d8ecc4aaaea639eb7c26c1f"
+  },
+  "midi": {
+    "importedNotes": 816,
+    "performedNotesEqualOriginal": true,
+    "encoderByteExact": true,
+    "pianoGMProgram": 0,
+    "sampleRecordingsEmbedded": false
+  },
+  "files": [
+    {
+      "file": "examples/sampled-instruments-demo.mid",
+      "bytes": 7548,
+      "sha256": "c02f400eaf4f9aa7be4f47a4dcb0331de50102cdad360b384ea462d7704b8693"
+    },
+    {
+      "file": "examples/sampled-instruments-demo.sprout",
+      "bytes": 165283,
+      "sha256": "6520d593895ada4fcfd25b23ff115e9d7dfc387b04ed87c0743007c1023145c3"
+    },
+    {
+      "file": "examples/sampled-instruments-original.sprout",
+      "bytes": 164769,
+      "sha256": "e914f4bc0a2e03767f695f677faf168d28770bcd6e769b07449f09b61dab89cf"
+    },
+    {
+      "file": "examples/sampled-instruments-region.wav",
+      "bytes": 4365168,
+      "sha256": "9183b036b6040f8eb9284c79696f964c0aae62510d8ecc4aaaea639eb7c26c1f"
+    },
+    {
+      "file": "examples/sampled-instruments-restored.sprout",
+      "bytes": 165283,
+      "sha256": "6520d593895ada4fcfd25b23ff115e9d7dfc387b04ed87c0743007c1023145c3"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "screenshots/v23-add-instruments.png",
+      "bytes": 44657,
+      "sha256": "541acb85e842c1f1232c7dfc39ce73318a73524882feae7f662f723a84583e1a",
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "file": "screenshots/v23-sampler-desktop.png",
+      "bytes": 50503,
+      "sha256": "85d1cfcd6d9a826c3dbd9f337001d0e71b89b52f0ab3e351b81dcb21a96a0856",
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "file": "screenshots/v23-sampler-mobile.png",
+      "bytes": 27906,
+      "sha256": "b2e410b607fd6cd8080816b72fd4f84b875c98cb26a07f09b4ab26986593a38a",
+      "width": 384,
+      "height": 831
+    },
+    {
+      "file": "screenshots/v23-workspace.png",
+      "bytes": 132798,
+      "sha256": "b1c12177bb5e514cdfd05b4195836c4532cc856762ee665039849ed37d46c265",
+      "width": 1280,
+      "height": 900
+    }
+  ],
+  "verificationLimits": [
+    "No human audio-quality evaluation; successful AudioBufferSource scheduling and PCM measurements do not replace listening",
+    "No arbitrary user sample import, full SFZ, round-robin, sustain pedal or professional plugin support",
+    "No genuine recorded hi-hat; the short cymbal uses an explicit gate",
+    "No real LLM call, paid service or external model configuration",
+    "Paused app Goal was not automatically resumed; this is the requested local feature iteration",
+    "No claim of all-browser, low-memory full-capacity rendering or comprehensive accessibility certification"
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "version": "0.17.0",
+  "automatedTests": {
+    "total": 346,
+    "passed": 346,
+    "failed": 0,
+    "new": 33,
+    "journalTimelineTests": 30,
+    "actualDownloadedFixtureTests": 3
+  },
+  "original": {
+    "bars": 32,
+    "tracks": 7,
+    "notes": 816,
+    "patterns": 1,
+    "instances": 4,
+    "loopRange": {
+      "start": 64,
+      "end": 96
+    },
+    "bpm": 86
+  },
+  "immediateRefresh": {
+    "preReloadStatus": "应急已写 · 保存中",
+    "rename": {
+      "name": "刷新历史 · 安静验证",
+      "undo": 6,
+      "redo": 0,
+      "source": "journal"
+    },
+    "undoSameSongNewFuture": {
+      "name": "刷新历史 · 安静验证",
+      "undo": 6,
+      "redo": 1,
+      "source": "journal",
+      "redoButtonEnabled": true
+    },
+    "redone": {
+      "name": "重做路径 · 安静验证",
+      "undo": 7,
+      "redo": 0,
+      "source": "journal"
+    },
+    "phoneTwiceUndone": {
+      "name": "歌曲骨架 · 静音编排示例",
+      "undo": 5,
+      "redo": 2,
+      "source": "journal"
+    },
+    "normalFinalRefresh": {
+      "status": "已恢复 · 版本",
+      "undo": 5,
+      "redo": 2,
+      "recoveryWarningHidden": true
+    }
+  },
+  "downloads": [
+    {
+      "file": "history-renamed.sprout",
+      "bytes": 164763,
+      "sha256": "a193d0b7faa7d6426a390fcb49cd7156656de09c99fe833bd0cfd31ad7b2eedd",
+      "actualBrowserDownload": true
+    },
+    {
+      "file": "history-redone.sprout",
+      "bytes": 164763,
+      "sha256": "149708aa4a64883f5fec4979e15396df62e1b7adf90cc80b24d701937a91da24",
+      "actualBrowserDownload": true
+    },
+    {
+      "file": "history-restored.sprout",
+      "bytes": 164769,
+      "sha256": "e914f4bc0a2e03767f695f677faf168d28770bcd6e769b07449f09b61dab89cf",
+      "actualBrowserDownload": true
+    }
+  ],
+  "downloadAssertions": {
+    "renamedOnlyNameChanged": true,
+    "redoneOnlyNameChanged": true,
+    "originalRestoredByteExact": true
+  },
+  "layout": {
+    "desktop": {
+      "width": 1280,
+      "height": 900,
+      "dialog": {
+        "x": 260,
+        "y": 127.5625,
+        "width": 760,
+        "height": 644.875
+      },
+      "pageWidth": 1280,
+      "screenshot": "screenshots/v17-history-desktop.jpg"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "dialog": {
+        "x": 16,
+        "y": 59.0234375,
+        "width": 352,
+        "height": 725.953125
+      },
+      "pageWidth": 384,
+      "contentWidth": 350,
+      "contentScrollWidth": 350,
+      "screenshot": "screenshots/v17-history-mobile.jpg"
+    }
+  },
+  "final": {
+    "originalByteExact": true,
+    "shelfEntries": 5,
+    "hasCandidate": false,
+    "quiet": true,
+    "playing": false,
+    "hardwareAudioInitialized": false,
+    "warningAndErrorLogs": [],
+    "realModelCalls": 0,
+    "realtimePlayback": false
+  },
+  "limits": {
+    "historyEntriesEach": 8,
+    "historyPayloadBytesShared": 1572864,
+    "historyCapacityPriority": "nearest undo then nearest redo",
+    "musicOnlyFallbackExplicit": true,
+    "exitTransactionNotGuaranteed": true,
+    "browserStorageNotPermanentBackup": true,
+    "quotaFaultsTestedWithPureAdaptersNotBrowserStorageMutation": true
+  },
+  "remaining": [
+    "multiple independent projects",
+    "history memory and storage UI",
+    "long-song history compression / fairer shared retention",
+    "controllable music / phrase transitions",
+    "explicitly configured real LLM and human listening quality"
+  ],
+  "goalRemainsActive": true
+}

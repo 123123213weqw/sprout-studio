@@ -1,0 +1,505 @@
+{
+  "version": 3,
+  "id": "c435ece1-95ac-4547-9092-87342cde9df9",
+  "name": "我的第一首歌",
+  "style": "lofi",
+  "key": "A minor",
+  "bars": 8,
+  "bpm": 86,
+  "swing": 12,
+  "master": 0.75,
+  "seed": 271828,
+  "tracks": [
+    {
+      "id": "2a089505-2933-46f2-997b-05e512a6a697",
+      "instrument": "kick",
+      "kind": "drum",
+      "name": "底鼓",
+      "color": "#eda96b",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "e153dd41-7b0f-43ff-9928-635459be888f",
+          "name": "底鼓",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "69ba7a6c-3dbc-43ca-8c6b-401f18d1f07f",
+          "name": "底鼓",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "bf34091c-2253-467a-9e20-c520ae4b1dee",
+          "name": "底鼓",
+          "start": 16,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "707327ed-479d-4f3c-81f4-bdb4b4daea40",
+          "name": "底鼓",
+          "start": 24,
+          "length": 8,
+          "muted": false
+        }
+      ]
+    },
+    {
+      "id": "1e5e27f0-9d69-41e1-91d9-04637829aaff",
+      "instrument": "snare",
+      "kind": "drum",
+      "name": "军鼓",
+      "color": "#e8bc80",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "2cb4eaac-653a-48a1-867d-b3ecfa85f779",
+          "name": "军鼓",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "421c82fe-ed2f-46ef-81a6-55406eacc878",
+          "name": "军鼓",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "712a6951-0623-4341-83d6-f7ede63ce8f7",
+          "name": "军鼓",
+          "start": 16,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "66ba218b-2060-4a96-b267-6e8173aa135e",
+          "name": "军鼓",
+          "start": 24,
+          "length": 8,
+          "muted": false
+        }
+      ]
+    },
+    {
+      "id": "79207c7f-b9ef-4e4c-b107-48c7365d14c9",
+      "instrument": "hat",
+      "kind": "drum",
+      "name": "踩镲",
+      "color": "#d6d995",
+      "volume": 0.45,
+      "pan": 0.18,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "990f3b59-4f20-495c-99fe-32676324bf51",
+          "name": "踩镲",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "68ff2f55-9dd2-43b1-8b26-243719a60aee",
+          "name": "踩镲",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "c7265b8b-439b-415e-afad-4e5a65a8cb04",
+          "name": "踩镲",
+          "start": 16,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "b1c50f44-58c0-4ffb-89e4-52127834e430",
+          "name": "踩镲",
+          "start": 24,
+          "length": 8,
+          "muted": false
+        }
+      ]
+    },
+    {
+      "id": "a3db73fe-adf5-41ea-b4d5-0dd2ec04f8c9",
+      "instrument": "bass",
+      "kind": "tonal",
+      "name": "温暖贝斯",
+      "color": "#77cabb",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "bc9ca888-6465-4e34-915d-a55cc8024b14",
+          "name": "温暖贝斯",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "3dfc3928-d0e9-4a64-899f-3636a05dd61d",
+          "name": "温暖贝斯",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "0f6a7bf1-ef94-4de5-8a67-935ec0db84b5",
+          "name": "温暖贝斯",
+          "start": 16,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "905b82c1-5670-4557-abe0-75908f50accd",
+          "name": "温暖贝斯",
+          "start": 24,
+          "length": 8,
+          "muted": false
+        }
+      ]
+    },
+    {
+      "id": "64729743-48d4-415d-88db-72894ef17d4c",
+      "instrument": "keys",
+      "kind": "tonal",
+      "name": "柔和电钢琴",
+      "color": "#b4a0e2",
+      "volume": 0.62,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "9d034f5c-917d-47e0-9463-8e7090eeded5",
+          "name": "柔和电钢琴",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "dd548385-f4a4-4a3f-a50d-c25ba1c8d80c",
+          "name": "柔和电钢琴",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "b050f23f-e895-42e3-9dc5-75f241eea336",
+          "name": "柔和电钢琴",
+          "start": 16,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "55347a73-1f61-45d2-abae-71473a9368c9",
+          "name": "柔和电钢琴",
+          "start": 24,
+          "length": 8,
+          "muted": false
+        }
+      ]
+    },
+    {
+      "id": "90cd026e-013f-400a-9cd2-5cc51b4d7e71",
+      "instrument": "lead",
+      "kind": "tonal",
+      "name": "细碎旋律",
+      "color": "#84afe2",
+      "volume": 0.72,
+      "pan": 0.12,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "6e95256b-7dd7-4f8f-8f2c-045be9329c1c",
+          "name": "细碎旋律",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "b01a9078-551d-4859-8999-4a52ff8a414d",
+          "name": "细碎旋律",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "a045e268-842a-449c-92a2-ff209ded7657",
+          "name": "细碎旋律",
+          "start": 16,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "d7b64a1a-9332-4363-8506-edd0e8d0189c",
+          "name": "细碎旋律",
+          "start": 24,
+          "length": 8,
+          "muted": false
+        }
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "cb2d0ef1-8431-4c87-98f9-54c0cf819955",
+      "name": "柔和电钢琴",
+      "instrument": "keys",
+      "kind": "tonal",
+      "length": 8,
+      "notes": [
+        {
+          "id": "0f3af7bc-fc95-46a4-bf05-a825369468c5",
+          "pitch": 57,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 59
+        },
+        {
+          "id": "87e5b5fb-d042-49f8-a260-4e5197aee68d",
+          "pitch": 60,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 60
+        },
+        {
+          "id": "8adfd901-5b60-4964-94a5-4455e56d40bf",
+          "pitch": 64,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 56
+        },
+        {
+          "id": "e2d56c57-9116-46bc-bfde-e6fa1a1a5089",
+          "pitch": 67,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 54
+        },
+        {
+          "id": "f906e337-7b18-4f61-9d47-8faccdeb9d29",
+          "pitch": 57,
+          "start": 2.5,
+          "duration": 1.35,
+          "velocity": 67
+        },
+        {
+          "id": "d3e6593e-ca30-43f5-bf44-3d27ed470fef",
+          "pitch": 60,
+          "start": 2.5,
+          "duration": 1.35,
+          "velocity": 59
+        },
+        {
+          "id": "65039f73-655e-49bb-97dc-a3e623511d48",
+          "pitch": 64,
+          "start": 2.5,
+          "duration": 1.35,
+          "velocity": 58
+        },
+        {
+          "id": "a119f927-383a-4513-b304-dc99f9c7c089",
+          "pitch": 67,
+          "start": 2.5,
+          "duration": 1.35,
+          "velocity": 49
+        },
+        {
+          "id": "4d8d1b50-2470-4d05-8a69-399d522eb75c",
+          "pitch": 57,
+          "start": 4,
+          "duration": 2.1,
+          "velocity": 66
+        },
+        {
+          "id": "c10a0b79-f6f5-4512-9c80-38e6e5d5b2e7",
+          "pitch": 60,
+          "start": 4,
+          "duration": 2.1,
+          "velocity": 57
+        },
+        {
+          "id": "05549f66-23ce-452f-8630-c800c19e782f",
+          "pitch": 64,
+          "start": 4,
+          "duration": 2.1,
+          "velocity": 56
+        },
+        {
+          "id": "cc81dbcc-f108-4d2b-a205-ff2811d51da3",
+          "pitch": 67,
+          "start": 4,
+          "duration": 2.1,
+          "velocity": 55
+        },
+        {
+          "id": "378c0309-8171-476b-89c6-19d865ec50fe",
+          "pitch": 57,
+          "start": 6.5,
+          "duration": 1.35,
+          "velocity": 65
+        },
+        {
+          "id": "03f4e963-449c-4aa1-a901-9c0f636ef3d2",
+          "pitch": 60,
+          "start": 6.5,
+          "duration": 1.35,
+          "velocity": 62
+        },
+        {
+          "id": "c470f9ee-f9f0-4bc7-92ae-3c8c23c7865e",
+          "pitch": 64,
+          "start": 6.5,
+          "duration": 1.35,
+          "velocity": 53
+        },
+        {
+          "id": "132f3003-a5e1-43a8-938c-5edeca4f0e23",
+          "pitch": 67,
+          "start": 6.5,
+          "duration": 1.35,
+          "velocity": 57
+        }
+      ]
+    },
+    {
+      "id": "5ab2933d-519d-4f43-b625-148f363e46e3",
+      "name": "雨夜底鼓 · 两小节",
+      "instrument": "kick",
+      "kind": "drum",
+      "length": 8,
+      "notes": [
+        {
+          "id": "d67c3e15-6d11-4768-b06f-d5a64fef6d6f",
+          "pitch": 36,
+          "start": 0,
+          "duration": 0.13,
+          "velocity": 109
+        },
+        {
+          "id": "580decf4-7c30-4a2f-8d44-c43c49d16280",
+          "pitch": 36,
+          "start": 1.75,
+          "duration": 0.13,
+          "velocity": 98
+        },
+        {
+          "id": "56fe5ef5-233b-4aa0-8ac7-39d41b131400",
+          "pitch": 36,
+          "start": 2.5,
+          "duration": 0.13,
+          "velocity": 95
+        },
+        {
+          "id": "c7954e41-abd0-4020-9292-bef516a42e2e",
+          "pitch": 36,
+          "start": 4,
+          "duration": 0.13,
+          "velocity": 103
+        },
+        {
+          "id": "ff21f2f0-63c0-4cb8-9c73-26fb91ca9a57",
+          "pitch": 36,
+          "start": 5.75,
+          "duration": 0.13,
+          "velocity": 100
+        },
+        {
+          "id": "be599c13-3f6e-4109-be7d-fe8aa94e0d33",
+          "pitch": 36,
+          "start": 6.5,
+          "duration": 0.13,
+          "velocity": 95
+        }
+      ]
+    },
+    {
+      "id": "997bf3c1-edee-4e05-ba15-c9e1e601ae35",
+      "name": "雨夜旋律 · 两小节",
+      "instrument": "lead",
+      "kind": "tonal",
+      "length": 8,
+      "notes": [
+        {
+          "id": "7e793be5-5d68-44ed-ba74-d7fccacd63d3",
+          "pitch": 76,
+          "start": 0.5,
+          "duration": 0.45,
+          "velocity": 70
+        },
+        {
+          "id": "0c2c4b8e-d6ae-4d0a-9337-7d7b8b2d0029",
+          "pitch": 74,
+          "start": 1.25,
+          "duration": 0.45,
+          "velocity": 66
+        },
+        {
+          "id": "928426e8-0345-4c4b-b711-2ea46c903d85",
+          "pitch": 76,
+          "start": 2.5,
+          "duration": 0.45,
+          "velocity": 70
+        },
+        {
+          "id": "1bfe649b-ba0e-4850-abb1-aef39f20e8a5",
+          "pitch": 79,
+          "start": 3.25,
+          "duration": 0.65,
+          "velocity": 63
+        },
+        {
+          "id": "e350f70d-0683-484d-b5ee-3ff969b9df29",
+          "pitch": 76,
+          "start": 4,
+          "duration": 0.45,
+          "velocity": 69
+        },
+        {
+          "id": "9913cfdc-4640-4d69-a94e-e2a2e82d7f16",
+          "pitch": 72,
+          "start": 4.75,
+          "duration": 0.45,
+          "velocity": 65
+        },
+        {
+          "id": "1b3415ba-828c-4d3e-8842-6dfd1cd180ab",
+          "pitch": 76,
+          "start": 5.5,
+          "duration": 0.45,
+          "velocity": 68
+        },
+        {
+          "id": "209a5aae-3cf0-4f3b-adfd-b0edd52522cd",
+          "pitch": 79,
+          "start": 6.75,
+          "duration": 0.65,
+          "velocity": 70
+        }
+      ]
+    }
+  ]
+}

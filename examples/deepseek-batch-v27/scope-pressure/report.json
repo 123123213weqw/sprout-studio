@@ -1,0 +1,41 @@
+{
+  "id": "scope-pressure",
+  "status": "accepted",
+  "receipt": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "elapsedMs": 2017,
+    "usage": {
+      "prompt_tokens": 2192,
+      "completion_tokens": 228,
+      "total_tokens": 2420
+    },
+    "format": "sprout-score-v1",
+    "verified": "validated-notes",
+    "quality": "not-rated",
+    "requestId": "70e31d6d-e034-4ba2-a189-e4e9c4f65429",
+    "maxOutputTokens": 8192
+  },
+  "assessment": {
+    "globalsPreserved": true,
+    "trackIdsPreserved": true,
+    "unselectedTracksPreserved": true,
+    "voicesAndMixPreserved": true,
+    "clipLayoutPreserved": true,
+    "outsideRangePreserved": true,
+    "patternLibraryPreserved": true,
+    "sectionLabelsPreserved": true,
+    "changedTracks": 1,
+    "boundariesPass": true,
+    "instructions": {
+      "noteCount": 12,
+      "requestedRange": true,
+      "requestedCount": true
+    },
+    "instructionsPass": true
+  },
+  "notes": 113,
+  "midiNotes": 113,
+  "summary": "Restrained flute variation on the lead track, keeping the existing four bars, 86 BPM, A minor and sampled flute voice. Two four-bar halves share a rising-then-settling motif, with the second half answering in a lower register; the phrase ends on a held A so the track closes deliberately.",
+  "inputUnchanged": true
+}

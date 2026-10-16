@@ -1,0 +1,42 @@
+{
+  "id": "drum-pocket",
+  "status": "accepted",
+  "receipt": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "elapsedMs": 2544,
+    "usage": {
+      "prompt_tokens": 3696,
+      "completion_tokens": 593,
+      "total_tokens": 4289
+    },
+    "format": "sprout-score-v1",
+    "verified": "validated-notes",
+    "quality": "not-rated",
+    "requestId": "7be10ece-13cc-422e-b2b8-e3cd67f7b048",
+    "maxOutputTokens": 8192
+  },
+  "assessment": {
+    "globalsPreserved": true,
+    "trackIdsPreserved": true,
+    "unselectedTracksPreserved": true,
+    "voicesAndMixPreserved": true,
+    "clipLayoutPreserved": true,
+    "outsideRangePreserved": true,
+    "patternLibraryPreserved": true,
+    "sectionLabelsPreserved": true,
+    "changedTracks": 3,
+    "boundariesPass": true,
+    "instructions": {
+      "kick": true,
+      "snare": true,
+      "hat": true,
+      "durationsAndVelocities": true
+    },
+    "instructionsPass": true
+  },
+  "notes": 170,
+  "midiNotes": 170,
+  "summary": "Sparse half-time drum pocket: kick on 0,8,16,24, snare on 2,6,10,14,18,22,26,30, and hats on every integer beat from 0 through 31, with no fills or extra onsets.",
+  "inputUnchanged": true
+}

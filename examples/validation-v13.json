@@ -1,0 +1,127 @@
+{
+  "version": "0.13.0",
+  "automatedTests": {"total": 233, "passed": 233, "failed": 0, "new": 22},
+  "serviceProtocol": {
+    "name": "sprout-compose",
+    "version": 1,
+    "statusProbeSendsProjectOrPrompt": false,
+    "statusProbeCallsModel": false,
+    "statusTimeoutMs": 8000,
+    "clientComposeTimeoutMs": 90000,
+    "providerTimeoutMs": 80000,
+    "statusMaxBytes": 32000,
+    "projectResponseMaxBytes": 3000000,
+    "providerResponseMaxBytes": 3000000,
+    "defaultMaxConcurrent": 1,
+    "defaultMinIntervalMs": 1500,
+    "automaticRetry": false,
+    "rawProviderErrorsReturned": false
+  },
+  "browserChecks": [
+    "unconfigured server status and generation rejected without a model call",
+    "credential-like URL query rejected before settings save",
+    "ready configuration clearly labelled not a real model call",
+    "actual stopped generation followed immediately by a new generation",
+    "late cancelled result not adopted and new request not unlocked by old finally",
+    "network failure exposes explicit retry only",
+    "actual key change rejects retry against a different baseline",
+    "scope dropdown changed to drums but explicit retry retains original keys scope",
+    "candidate saved, downloaded, explicitly applied and undone",
+    "arbitrary server error redacted from visible UI",
+    "different-origin status address rejected before fetch",
+    "missing status protocol gives actionable static-site explanation",
+    "slow status request stopped and another status request aborted by address edit",
+    "offline settings restored and persisted through refresh",
+    "actual original project reimported with confirmation and exported again for full equality",
+    "390x844 configuration modal scrolls with fixed action footer and no page overflow"
+  ],
+  "mockService": {
+    "ownedLocalhostOnly": true,
+    "realModelCalls": 0,
+    "existingCredentialsRead": false,
+    "composerRequests": 8,
+    "returned": 4,
+    "cancelled": 1,
+    "simulatedNetworkFailures": 2,
+    "redactedFailure": 1,
+    "transportProjectVersion": 2,
+    "transportNotes": 816,
+    "usesActualServerAndProviderAdapterWithInjectedFetcher": true,
+    "slowStatusRequests": 2,
+    "slowStatusRequestsDisconnected": 2,
+    "slowStatusRequestBodiesSent": false
+  },
+  "serviceFixture": {
+    "baselineFile": "service-demo-baseline.sprout",
+    "resultFile": "service-demo.sprout",
+    "bars": 32,
+    "tracks": 7,
+    "notesBefore": 816,
+    "notesAfter": 816,
+    "target": "keys",
+    "changedTracks": 1,
+    "added": 0,
+    "removed": 0,
+    "modified": 190,
+    "detachedTargetSharedReferences": 2,
+    "remainingSharedReferences": 2,
+    "unrelatedTracksPreservedExactly": 6,
+    "sourceLibraryPreservedExactly": true,
+    "sectionsAndSoundPreservedExactly": true,
+    "globalChanges": 0,
+    "savedCandidateEqualsAppliedProject": true,
+    "baselineEqualsOriginalExceptPracticeRange": true,
+    "practiceRangeBeats": {"start": 24, "end": 32},
+    "controls": {
+      "density": 20, "complexity": 15, "energy": 30, "humanize": 20,
+      "progression": "warm", "voiceLeading": true, "seed": 20261010
+    },
+    "midiNotes": 816,
+    "midiBytesEqualEncoder": true,
+    "midiOnsetsAndDurationsToleranceBeats": 0.0021833333333333333,
+    "rangeScheduledNotes": 73
+  },
+  "pcm": {
+    "service-demo-region.wav": {
+      "frames": 352862,
+      "channels": 2,
+      "sampleRate": 44100,
+      "bitDepth": 16,
+      "seconds": 8.00140589569161,
+      "peak": 0.407196044921875,
+      "rms": 0.08292593869113321,
+      "clippedSamples": 0
+    }
+  },
+  "restoredMainProject": {
+    "exportExactlyEqualsLongSongDemo": true,
+    "bars": 32, "notes": 816, "sharedReferences": 4,
+    "practiceRangeBeats": {"start": 64, "end": 96},
+    "candidateShelfEntries": 5,
+    "stagedCandidate": false,
+    "settingsMode": "offline"
+  },
+  "responsive": {
+    "viewport": {"width": 390, "height": 844},
+    "pageWidth": 384,
+    "dialog": {"x": 12, "y": 19, "width": 360, "height": 806},
+    "footer": {"x": 13, "y": 758, "width": 352, "height": 66},
+    "viewportOverrideReset": true
+  },
+  "quiet": {
+    "playing": false,
+    "quietMode": true,
+    "hardwareAudioInitialized": false,
+    "audioPlaybackPerformed": false,
+    "offlineFileRenderingOnly": true
+  },
+  "limitations": [
+    "No real provider authentication, quota, latency or musical-quality validation",
+    "Published Site remains static with no built-in model backend",
+    "Stopping client wait does not guarantee upstream processing or billing cancellation",
+    "Cross-origin service deployment and its access control require user configuration",
+    "Browser deliberately omits cookies; cookie-authenticated composition is unsupported",
+    "Concurrency, body/stream limits and error races include injected or synthetic tests",
+    "No full-capacity physical-device long render verification"
+  ]
+}

@@ -1,0 +1,400 @@
+{
+  "format": "sprout-deepseek-live-batch",
+  "testedAt": "2026-10-15T13:24:04.997Z",
+  "provider": "DeepSeek V4.1 Flash",
+  "model": "deepseek-flash",
+  "limits": {
+    "maxCalls": 6,
+    "maxOutputTokensPerCall": 8192,
+    "automaticRetries": 0
+  },
+  "calls": 6,
+  "accepted": 6,
+  "rejected": 0,
+  "reportedTokens": 23441,
+  "allUsageReported": true,
+  "allInputsUnchanged": true,
+  "results": [
+    {
+      "id": "numeric-harmony",
+      "status": "accepted",
+      "receipt": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "elapsedMs": 4911,
+        "usage": {
+          "prompt_tokens": 1563,
+          "completion_tokens": 1171,
+          "total_tokens": 2734
+        },
+        "format": "sprout-score-v1",
+        "verified": "validated-notes",
+        "quality": "not-rated",
+        "requestId": "809c4fe5-5ed0-4517-8df3-91baa6562803",
+        "maxOutputTokens": 8192
+      },
+      "assessment": {
+        "globalsPreserved": true,
+        "trackIdsPreserved": true,
+        "unselectedTracksPreserved": true,
+        "voicesAndMixPreserved": true,
+        "clipLayoutPreserved": true,
+        "outsideRangePreserved": true,
+        "patternLibraryPreserved": true,
+        "sectionLabelsPreserved": true,
+        "changedTracks": 8,
+        "boundariesPass": true,
+        "instructions": {
+          "harmony": [
+            {
+              "bar": 1,
+              "chord": "Am",
+              "pianoTriad": true,
+              "bassRoot": true
+            },
+            {
+              "bar": 2,
+              "chord": "F",
+              "pianoTriad": true,
+              "bassRoot": true
+            },
+            {
+              "bar": 3,
+              "chord": "C",
+              "pianoTriad": true,
+              "bassRoot": true
+            },
+            {
+              "bar": 4,
+              "chord": "G",
+              "pianoTriad": true,
+              "bassRoot": true
+            }
+          ],
+          "hiHat": {
+            "expected": 32,
+            "actual": 32,
+            "missingOnsets": [],
+            "extraOnsets": [],
+            "eighthNotes": true
+          },
+          "key": {
+            "name": "A minor",
+            "melodicNotes": 40,
+            "outOfKey": 0
+          },
+          "allRolesHaveNotes": true,
+          "matchesExplicitBrief": true,
+          "quality": "Not a listening test, style assessment, originality check or artistic-quality score."
+        },
+        "exactAnchors": [
+          {
+            "start": 0,
+            "piano": true,
+            "bass": true
+          },
+          {
+            "start": 4,
+            "piano": true,
+            "bass": true
+          },
+          {
+            "start": 8,
+            "piano": true,
+            "bass": true
+          },
+          {
+            "start": 12,
+            "piano": true,
+            "bass": true
+          }
+        ],
+        "instructionsPass": true
+      },
+      "notes": 80,
+      "midiNotes": 80,
+      "summary": "A four-bar A-minor chamber lo-fi loop at 86 BPM. Keys hold the required anchor chords, bass plays the required roots, hi-hat supplies exactly 32 quiet varied eighth-notes, flute states and answers a short motif with a breath before bar four, while restrained kick/snare, sparse cello and harp stay out of the way. The loop ends on the given G harmony and resolves back to Am without claiming a tonic ending.",
+      "inputUnchanged": true
+    },
+    {
+      "id": "flute-clip",
+      "status": "accepted",
+      "receipt": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "elapsedMs": 1543,
+        "usage": {
+          "prompt_tokens": 3462,
+          "completion_tokens": 150,
+          "total_tokens": 3612
+        },
+        "format": "sprout-score-v1",
+        "verified": "validated-notes",
+        "quality": "not-rated",
+        "requestId": "b0cf8305-760d-4e62-8348-68294da9d49e",
+        "maxOutputTokens": 8192
+      },
+      "assessment": {
+        "globalsPreserved": true,
+        "trackIdsPreserved": true,
+        "unselectedTracksPreserved": true,
+        "voicesAndMixPreserved": true,
+        "clipLayoutPreserved": true,
+        "outsideRangePreserved": true,
+        "patternLibraryPreserved": true,
+        "sectionLabelsPreserved": true,
+        "changedTracks": 1,
+        "boundariesPass": true,
+        "instructions": {
+          "matches": true,
+          "noteCount": 6
+        },
+        "instructionsPass": true
+      },
+      "notes": 228,
+      "midiNotes": 228,
+      "summary": "Replaces the selected flute clip with exactly six restrained notes in A minor, tucking a compact rising-falling motif into the second half of bar 3 and the first half of bar 4 while leaving all other tracks, settings and sampled voices untouched.",
+      "inputUnchanged": true
+    },
+    {
+      "id": "drum-pocket",
+      "status": "accepted",
+      "receipt": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "elapsedMs": 2544,
+        "usage": {
+          "prompt_tokens": 3696,
+          "completion_tokens": 593,
+          "total_tokens": 4289
+        },
+        "format": "sprout-score-v1",
+        "verified": "validated-notes",
+        "quality": "not-rated",
+        "requestId": "7be10ece-13cc-422e-b2b8-e3cd67f7b048",
+        "maxOutputTokens": 8192
+      },
+      "assessment": {
+        "globalsPreserved": true,
+        "trackIdsPreserved": true,
+        "unselectedTracksPreserved": true,
+        "voicesAndMixPreserved": true,
+        "clipLayoutPreserved": true,
+        "outsideRangePreserved": true,
+        "patternLibraryPreserved": true,
+        "sectionLabelsPreserved": true,
+        "changedTracks": 3,
+        "boundariesPass": true,
+        "instructions": {
+          "kick": true,
+          "snare": true,
+          "hat": true,
+          "durationsAndVelocities": true
+        },
+        "instructionsPass": true
+      },
+      "notes": 170,
+      "midiNotes": 170,
+      "summary": "Sparse half-time drum pocket: kick on 0,8,16,24, snare on 2,6,10,14,18,22,26,30, and hats on every integer beat from 0 through 31, with no fills or extra onsets.",
+      "inputUnchanged": true
+    },
+    {
+      "id": "section-with-patterns",
+      "status": "accepted",
+      "receipt": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "elapsedMs": 6157,
+        "usage": {
+          "prompt_tokens": 6625,
+          "completion_tokens": 1464,
+          "total_tokens": 8089
+        },
+        "format": "sprout-score-v1",
+        "verified": "validated-notes",
+        "quality": "not-rated",
+        "requestId": "f1434892-c971-4273-9ea7-871c5722d0a1",
+        "maxOutputTokens": 8192
+      },
+      "assessment": {
+        "globalsPreserved": true,
+        "trackIdsPreserved": true,
+        "unselectedTracksPreserved": true,
+        "voicesAndMixPreserved": true,
+        "clipLayoutPreserved": true,
+        "outsideRangePreserved": true,
+        "patternLibraryPreserved": true,
+        "sectionLabelsPreserved": true,
+        "changedTracks": 8,
+        "boundariesPass": true,
+        "instructions": {
+          "allTargetRolesHaveNotes": true,
+          "outsideLinkedClipsPreserved": true,
+          "targetLinkedClipsDetached": true
+        },
+        "harmony": {
+          "harmony": [
+            {
+              "bar": 1,
+              "chord": "Am",
+              "pianoTriad": true,
+              "bassRoot": true
+            },
+            {
+              "bar": 2,
+              "chord": "F",
+              "pianoTriad": true,
+              "bassRoot": true
+            },
+            {
+              "bar": 3,
+              "chord": "C",
+              "pianoTriad": true,
+              "bassRoot": true
+            },
+            {
+              "bar": 4,
+              "chord": "G",
+              "pianoTriad": true,
+              "bassRoot": true
+            }
+          ],
+          "hiHat": {
+            "expected": 32,
+            "actual": 32,
+            "missingOnsets": [],
+            "extraOnsets": [],
+            "eighthNotes": true
+          },
+          "key": {
+            "name": "A minor",
+            "melodicNotes": 60,
+            "outOfKey": 0
+          },
+          "allRolesHaveNotes": true,
+          "matchesExplicitBrief": true,
+          "quality": "Not a listening test, style assessment, originality check or artistic-quality score."
+        },
+        "exactAnchors": [
+          {
+            "start": 32,
+            "piano": true,
+            "bass": true
+          },
+          {
+            "start": 36,
+            "piano": true,
+            "bass": true
+          },
+          {
+            "start": 40,
+            "piano": true,
+            "bass": true
+          },
+          {
+            "start": 44,
+            "piano": true,
+            "bass": true
+          }
+        ],
+        "instructionsPass": true
+      },
+      "notes": 451,
+      "midiNotes": 451,
+      "summary": "Restrained chorus rewrite for beats 32–48: piano triads follow Am–F–C–G with bass anchors, a short flute motif answers itself, sparse cello and harp add color, and a quiet lo-fi drum pattern stays restrained with stereo width implied by velocity and timing.",
+      "inputUnchanged": true
+    },
+    {
+      "id": "ambient-sustain",
+      "status": "accepted",
+      "receipt": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "elapsedMs": 3634,
+        "usage": {
+          "prompt_tokens": 1638,
+          "completion_tokens": 659,
+          "total_tokens": 2297
+        },
+        "format": "sprout-score-v1",
+        "verified": "validated-notes",
+        "quality": "not-rated",
+        "requestId": "cbb5ea56-fcc4-40dc-9718-1f96ee401133",
+        "maxOutputTokens": 8192
+      },
+      "assessment": {
+        "globalsPreserved": true,
+        "trackIdsPreserved": true,
+        "unselectedTracksPreserved": true,
+        "voicesAndMixPreserved": true,
+        "clipLayoutPreserved": true,
+        "outsideRangePreserved": true,
+        "patternLibraryPreserved": true,
+        "sectionLabelsPreserved": true,
+        "changedTracks": 6,
+        "boundariesPass": true,
+        "instructions": {
+          "celloLongNote": true,
+          "fluteLongNote": true,
+          "allMelodicNotesInKey": true,
+          "allRolesHaveNotes": false,
+          "noMoreThan90": true
+        },
+        "emptyRoles": [
+          "kick",
+          "snare"
+        ],
+        "instructionsPass": false
+      },
+      "notes": 34,
+      "midiNotes": 34,
+      "summary": "Spacious 8-bar C-major ambient arrangement at 72 BPM. A long cello C holds beats 0-7.5, then a long flute C answers beats 8-15.5, framing a quiet progression over C/F/G chord tones. Piano and sparse harp add gentle harmonic punctuation, bass roots move slowly, and drums are intentionally almost absent with only three soft hat cues. Phrases repeat with variation and close on a deliberate sustained C sonority.",
+      "inputUnchanged": true
+    },
+    {
+      "id": "scope-pressure",
+      "status": "accepted",
+      "receipt": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "elapsedMs": 2017,
+        "usage": {
+          "prompt_tokens": 2192,
+          "completion_tokens": 228,
+          "total_tokens": 2420
+        },
+        "format": "sprout-score-v1",
+        "verified": "validated-notes",
+        "quality": "not-rated",
+        "requestId": "70e31d6d-e034-4ba2-a189-e4e9c4f65429",
+        "maxOutputTokens": 8192
+      },
+      "assessment": {
+        "globalsPreserved": true,
+        "trackIdsPreserved": true,
+        "unselectedTracksPreserved": true,
+        "voicesAndMixPreserved": true,
+        "clipLayoutPreserved": true,
+        "outsideRangePreserved": true,
+        "patternLibraryPreserved": true,
+        "sectionLabelsPreserved": true,
+        "changedTracks": 1,
+        "boundariesPass": true,
+        "instructions": {
+          "noteCount": 12,
+          "requestedRange": true,
+          "requestedCount": true
+        },
+        "instructionsPass": true
+      },
+      "notes": 113,
+      "midiNotes": 113,
+      "summary": "Restrained flute variation on the lead track, keeping the existing four bars, 86 BPM, A minor and sampled flute voice. Two four-bar halves share a rising-then-settling motif, with the second half answering in a lower register; the phrase ends on a held A so the track closes deliberately.",
+      "inputUnchanged": true
+    }
+  ],
+  "quality": "Format, boundaries and explicit measurable instructions only; no artistic-quality or subjective-listening score.",
+  "boundaryPasses": 6,
+  "instructionPasses": 5,
+  "reassessedLocallyWithoutNewModelCalls": true
+}

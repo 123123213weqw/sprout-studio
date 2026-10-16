@@ -1,0 +1,63 @@
+{
+  "version": "0.28.0",
+  "testedAt": "2026-10-15T14:23:34.880935+00:00",
+  "delivery": "Local only, existing V100 Flash bridge; no publish or Git push",
+  "automatedTests": {
+    "passed": 655,
+    "failed": 0,
+    "newAcousticTests": 25,
+    "syntaxPassed": true,
+    "whitespacePassed": true,
+    "paidCalls": 0
+  },
+  "recordings": {
+    "presets": 15,
+    "assets": 264,
+    "newAssets": 180,
+    "bytes": 100876222,
+    "legacy84MetadataAndPCMUnchanged": true,
+    "newSources": [
+      "Microphone archtop guitar: 16 roots, four dynamics, two recorded takes",
+      "Solo violin: 11 roots, two dynamics",
+      "Clarinet: ten roots, three dynamics"
+    ],
+    "decodedPCMCacheBudget": 96000000,
+    "preparedBufferBudgetPerContext": 256000000,
+    "allAssetsPreparedPCMBytes": 201729212
+  },
+  "audio": {
+    "evidence": "examples/acoustic-v28/audio-checks.json",
+    "actualWavExports": 8,
+    "allNonSilent": true,
+    "allUnclipped": true,
+    "rawDeepSeekUnchanged": true,
+    "hardwareAudioOpened": false,
+    "subjectiveListeningPerformed": false
+  },
+  "localHttp": {
+    "health": {
+      "ok": true,
+      "llmConfigured": true,
+      "remoteBridge": true,
+      "version": "0.28.0"
+    },
+    "recordingsFetched": 180,
+    "bytes": 65801194,
+    "allMimesAndChecksumsValid": true,
+    "modelCalls": 0,
+    "browserOrHardwareUsed": false,
+    "modelSelection": {
+      "model": "deepseek-flash",
+      "label": "DeepSeek V4.1 Flash",
+      "locked": true
+    },
+    "readinessRechecked": 3
+  },
+  "visualQA": {
+    "performed": false,
+    "reason": "Existing browser connection-error state and policy restriction; no alternate browser or screenshot workaround",
+    "design": "Existing source and add-instrument controls reused; no layout/style redesign"
+  },
+  "userWorkspaceModified": false,
+  "fullDAWComplete": false
+}

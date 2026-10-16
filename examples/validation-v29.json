@@ -1,0 +1,169 @@
+{
+  "version": "0.29.0",
+  "testedAt": "2026-10-15T16:24:53.103230+00:00",
+  "delivery": "Local only, existing V100 Flash bridge; no publish or Git push",
+  "overnightTarget": "More than 100 distinct playable sounds with broad acoustic/choir/electronic/EDM coverage",
+  "automatedTests": {
+    "passed": 688,
+    "failed": 0,
+    "addedSinceV28": 33,
+    "syntaxPassed": true,
+    "whitespacePassed": true,
+    "paidModelCalls": 0
+  },
+  "library": {
+    "totalPresets": 179,
+    "detailedRecordingPresets": 15,
+    "mixedSoundbankPresets": 128,
+    "originalSynthesizedEDMPresets": 36,
+    "categories": 27,
+    "sourceWavs": 2259,
+    "sourceBytes": 767071468,
+    "old264RecordsAndPCMUnchanged": true,
+    "fullLibraryClaimedNewAcousticRecordings": false,
+    "decodedPCMCacheLimit": 96000000,
+    "preparedBufferCacheLimitPerContext": 256000000,
+    "preparation": "Only project/preview note roots; active project buffers pinned; idle prepared buffers can be evicted"
+  },
+  "audio": {
+    "evidence": "examples/sound-library-v29/audio-checks.json",
+    "actualPresetAuditions": 179,
+    "allNonSilent": true,
+    "allUnclipped": true,
+    "authoredDemos": [
+      {
+        "name": "edm-sketch",
+        "notes": 120,
+        "presets": [
+          "edm-kick-3",
+          "edm-snare-2",
+          "edm-hat-1",
+          "edm-hat-4",
+          "edm-bass-3",
+          "edm-lead-1",
+          "edm-pad-1",
+          "edm-pluck-2"
+        ],
+        "range": {
+          "start": 0,
+          "end": 16
+        },
+        "seconds": 9.22,
+        "frames": 406602,
+        "peak": 0.4185791015625,
+        "rms": 0.09291811095202042,
+        "clippedSamples": 0,
+        "nonzeroSamples": 750435,
+        "sha256": "329dd093e04702ff04e419f9a662303239d483ec8bb82651730e4aec492646fd",
+        "inputUnchanged": true
+      },
+      {
+        "name": "acoustic-choir-sketch",
+        "notes": 70,
+        "presets": [
+          "vsco-piano-full",
+          "karoryfer-guitar",
+          "fluid-043",
+          "fluid-012",
+          "fluid-052",
+          "vsco-clarinet",
+          "fluid-056",
+          "fluid-048"
+        ],
+        "range": {
+          "start": 0,
+          "end": 16
+        },
+        "seconds": 11.732766439909296,
+        "frames": 517415,
+        "peak": 0.19525146484375,
+        "rms": 0.03632776477175172,
+        "clippedSamples": 0,
+        "nonzeroSamples": 970199,
+        "sha256": "9e228732a9ce8bcd704c1783723d6280a0031aae48ab657923aa2bb454468269",
+        "inputUnchanged": true
+      }
+    ],
+    "legacyByteExactReplays": [
+      {
+        "project": "examples/acoustic-v28/acoustic-trio.sprout",
+        "wav": "examples/acoustic-v28/acoustic-trio.wav",
+        "byteExact": true,
+        "sha256": "a8f0f20d84c918c8a0737c8efa702821c5ed054fef5de138ce75455d9c8991b0"
+      },
+      {
+        "project": "examples/deepseek-batch-v27/numeric-harmony/composition.sprout",
+        "wav": "examples/deepseek-batch-v27/numeric-harmony/composition.wav",
+        "byteExact": true,
+        "sha256": "0459e6e16c1f4172d2fcbf89999a83d367218bcc273d6055c0077b63414f40f7"
+      }
+    ],
+    "hardwareAudioOpened": false,
+    "subjectiveListeningPerformed": false
+  },
+  "licenses": {
+    "identifiers": [
+      "CC0-1.0",
+      "MIT"
+    ],
+    "originalNoticesBundled": true,
+    "verifiedUpstreamPins": [
+      {
+        "repo": "schellingb/TinySoundFont",
+        "commit": "853a0a171759f1ddba0de1442133a75912bbeffa",
+        "file": "tsf.h",
+        "sha256": "70d55963c98f60ebb81518eaa1f25d46888d5180eb5f5289fd6b74ffc177d197",
+        "byteExact": true
+      },
+      {
+        "repo": "pianobooster/fluid-soundfont",
+        "commit": "24c5c8a82e2f2cec2497710c6a72e5ccfeca40cd",
+        "file": "COPYING",
+        "sha256": "8ef830b65c97a976b86e34bb5fde08d99dfb1db13c4149b5b20bc837ac6c4568",
+        "byteExact": true
+      },
+      {
+        "repo": "pianobooster/fluid-soundfont",
+        "commit": "24c5c8a82e2f2cec2497710c6a72e5ccfeca40cd",
+        "file": "README",
+        "sha256": "2f92d462684629f207e43815115b79d7f1ce130d30ca8792b7d82b398a8306f9",
+        "byteExact": true
+      }
+    ]
+  },
+  "localHttp": {
+    "health": {
+      "ok": true,
+      "llmConfigured": true,
+      "remoteBridge": true,
+      "version": "0.29.0"
+    },
+    "modelSelection": {
+      "model": "deepseek-flash",
+      "label": "DeepSeek V4.1 Flash",
+      "locked": true
+    },
+    "newSourceWavsFetched": 1995,
+    "bytes": 666195246,
+    "allMimesAndChecksumsValid": true,
+    "newModulesServed": true,
+    "modelCalls": 0,
+    "browserOrHardwareUsed": false
+  },
+  "remoteSchema": {
+    "version": "0.29.0",
+    "presets": 179,
+    "samplePresetAccepted": "edm-lead-1",
+    "paidModelCalls": 0
+  },
+  "ui": {
+    "implementation": "Existing add/source flow; search, category filter, provenance labels, 24-result pagination and native source groups",
+    "mockDOMFlowTests": 8,
+    "browserVisualVerified": false,
+    "reason": "Existing browser policy restriction not bypassed"
+  },
+  "runtimeDependenciesAdded": 0,
+  "userWorkspaceModified": false,
+  "localRustCompilationPerformed": false,
+  "fullDAWComplete": false
+}

@@ -1,0 +1,294 @@
+{
+  "id": "numeric-harmony",
+  "kind": "harmony",
+  "input": {
+    "project": {
+      "version": 2,
+      "id": "f00746d0-7f49-4fe1-9a35-bf2bc48e4509",
+      "name": "Isolated DeepSeek regression fixture",
+      "style": "lofi",
+      "key": "A minor",
+      "bars": 4,
+      "bpm": 86,
+      "swing": 12,
+      "master": 0.75,
+      "seed": 192801,
+      "tracks": [
+        {
+          "id": "27307a9d-cca1-4ebf-b919-575dfcb8beca",
+          "instrument": "kick",
+          "kind": "drum",
+          "name": "Kick",
+          "color": "#eda96b",
+          "volume": 0.72,
+          "pan": 0,
+          "muted": false,
+          "solo": false,
+          "notes": [],
+          "clips": [
+            {
+              "id": "6a122dfb-e3d2-49a8-8acd-0a5623aaf561",
+              "name": "底鼓",
+              "start": 0,
+              "length": 8,
+              "muted": false
+            },
+            {
+              "id": "c5656a78-011f-401f-a4cb-b07f3a1b68c0",
+              "name": "底鼓",
+              "start": 8,
+              "length": 8,
+              "muted": false
+            }
+          ],
+          "sampler": {
+            "preset": "sonic-kick",
+            "gain": 0.85,
+            "release": 0.45,
+            "cutoff": 18000
+          }
+        },
+        {
+          "id": "57340dac-ed68-4198-8752-632139134e32",
+          "instrument": "snare",
+          "kind": "drum",
+          "name": "Snare",
+          "color": "#e8bc80",
+          "volume": 0.72,
+          "pan": 0,
+          "muted": false,
+          "solo": false,
+          "notes": [],
+          "clips": [
+            {
+              "id": "ee9df355-f090-4732-ae8d-cb12d4d1cc43",
+              "name": "军鼓",
+              "start": 0,
+              "length": 8,
+              "muted": false
+            },
+            {
+              "id": "aaffbd6b-80ea-40bd-89aa-42e252e26145",
+              "name": "军鼓",
+              "start": 8,
+              "length": 8,
+              "muted": false
+            }
+          ],
+          "sampler": {
+            "preset": "sonic-snare",
+            "gain": 0.75,
+            "release": 0.3,
+            "cutoff": 18000
+          }
+        },
+        {
+          "id": "9ce049c8-b729-414c-a75c-cab0ce6dc087",
+          "instrument": "hat",
+          "kind": "drum",
+          "name": "Hi-hat",
+          "color": "#d6d995",
+          "volume": 0.45,
+          "pan": 0.18,
+          "muted": false,
+          "solo": false,
+          "notes": [],
+          "clips": [
+            {
+              "id": "6b82df02-7434-4cd2-b30e-6fe84c901adb",
+              "name": "踩镲",
+              "start": 0,
+              "length": 8,
+              "muted": false
+            },
+            {
+              "id": "70963eb2-2328-4ef6-addf-e2ec4674fec4",
+              "name": "踩镲",
+              "start": 8,
+              "length": 8,
+              "muted": false
+            }
+          ],
+          "sampler": {
+            "preset": "sonic-hat",
+            "gain": 0.6,
+            "release": 0.14,
+            "cutoff": 18000
+          }
+        },
+        {
+          "id": "21389fdc-5198-4c6c-a55d-90a0e6563d72",
+          "instrument": "bass",
+          "kind": "tonal",
+          "name": "Double bass",
+          "color": "#77cabb",
+          "volume": 0.72,
+          "pan": 0,
+          "muted": false,
+          "solo": false,
+          "notes": [],
+          "clips": [
+            {
+              "id": "00a2820a-a720-4b3c-8cbd-8236bd442d71",
+              "name": "温暖贝斯",
+              "start": 0,
+              "length": 8,
+              "muted": false
+            },
+            {
+              "id": "b6ae69cf-9223-43ec-b98b-4d5bce033b15",
+              "name": "温暖贝斯",
+              "start": 8,
+              "length": 8,
+              "muted": false
+            }
+          ],
+          "sampler": {
+            "preset": "vsco-bass",
+            "gain": 0.95,
+            "release": 0.3,
+            "cutoff": 18000
+          }
+        },
+        {
+          "id": "aeaea914-7545-47ee-9a1f-4c38567bd9d0",
+          "instrument": "keys",
+          "kind": "tonal",
+          "name": "Piano",
+          "color": "#b4a0e2",
+          "volume": 0.62,
+          "pan": 0,
+          "muted": false,
+          "solo": false,
+          "notes": [],
+          "clips": [
+            {
+              "id": "90bd534c-b4a9-42cb-b6a4-81de67ea0e33",
+              "name": "柔和电钢琴",
+              "start": 0,
+              "length": 8,
+              "muted": false
+            },
+            {
+              "id": "9e678103-fd66-47c0-b3c3-e2ec320a6af8",
+              "name": "柔和电钢琴",
+              "start": 8,
+              "length": 8,
+              "muted": false
+            }
+          ],
+          "sampler": {
+            "preset": "vsco-piano-full",
+            "gain": 0.8,
+            "release": 0.3,
+            "cutoff": 18000
+          }
+        },
+        {
+          "id": "628e7cfd-60d3-4395-92a2-d174f5801c82",
+          "instrument": "lead",
+          "kind": "tonal",
+          "name": "Flute",
+          "color": "#84afe2",
+          "volume": 0.72,
+          "pan": 0.12,
+          "muted": false,
+          "solo": false,
+          "notes": [],
+          "clips": [
+            {
+              "id": "1d4fc69f-1d5a-40d0-ba1f-b2f227919611",
+              "name": "细碎旋律",
+              "start": 0,
+              "length": 8,
+              "muted": false
+            },
+            {
+              "id": "72a1d15d-8e32-4a36-8d49-53e8a8de06fc",
+              "name": "细碎旋律",
+              "start": 8,
+              "length": 8,
+              "muted": false
+            }
+          ],
+          "sampler": {
+            "preset": "vsco-flute",
+            "gain": 0.7,
+            "release": 0.18,
+            "cutoff": 18000
+          }
+        },
+        {
+          "id": "6ac0d183-f23b-45ad-9cfe-765e649983d1",
+          "instrument": "pad",
+          "kind": "tonal",
+          "name": "Cello",
+          "color": "#86bdca",
+          "volume": 0.72,
+          "pan": 0,
+          "muted": false,
+          "solo": false,
+          "notes": [],
+          "clips": [
+            {
+              "id": "c826caf6-4048-4093-927a-d66e6f1133d9",
+              "name": "空气铺底",
+              "start": 0,
+              "length": 8,
+              "muted": false
+            },
+            {
+              "id": "4a8760de-8d57-43e5-9fc0-f61329613939",
+              "name": "空气铺底",
+              "start": 8,
+              "length": 8,
+              "muted": false
+            }
+          ],
+          "sampler": {
+            "preset": "vsco-cello",
+            "gain": 0.6,
+            "release": 0.9,
+            "cutoff": 18000
+          }
+        },
+        {
+          "id": "930b6f24-6f93-4aa6-afe2-b46c9623c322",
+          "instrument": "pluck",
+          "kind": "tonal",
+          "name": "Harp",
+          "color": "#ed91a1",
+          "volume": 0.72,
+          "pan": 0,
+          "muted": false,
+          "solo": false,
+          "notes": [],
+          "clips": [
+            {
+              "id": "6ef9c999-b36a-4e72-b307-b18a50af9cc3",
+              "name": "清亮拨弦",
+              "start": 0,
+              "length": 8,
+              "muted": false
+            },
+            {
+              "id": "ebd7a6e9-d0aa-4041-824f-fd3d346c6096",
+              "name": "清亮拨弦",
+              "start": 8,
+              "length": 8,
+              "muted": false
+            }
+          ],
+          "sampler": {
+            "preset": "vsco-harp",
+            "gain": 0.8,
+            "release": 0.8,
+            "cutoff": 18000
+          }
+        }
+      ]
+    },
+    "scope": "all",
+    "prompt": "Create a four-bar A-minor chamber lo-fi loop, using all eight roles sparingly. Hard anchor table (absolute beats -> MIDI pitches): piano at 0=[57,60,64], 4=[53,57,60], 8=[60,64,67], 12=[55,59,62]; bass at 0=45, 4=41, 8=48, 12=43. These exact pitches at these exact starts are required. You may add chord tones between anchors, never change an anchor root. Hi-hat: exactly 32 notes at starts 0,0.5,1,...,15.5, quiet varied velocities. Flute: invent a short motif, repeat it with one answering variation, and leave a breath before beat 16. Cello and harp should be sparse chord tones. Restrained kick and snare. Stay in A minor. At most 150 notes total. End on the given G harmony, looping back to Am; do not claim a tonic ending."
+  }
+}

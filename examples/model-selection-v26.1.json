@@ -1,0 +1,41 @@
+{
+  "version": "0.26.1",
+  "verifiedAt": "2026-10-15T13:03:09.374Z",
+  "requestedName": "DeepSeek V4.1 Flash",
+  "apiModel": "deepseek-flash",
+  "officialDocumentation": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "providerModelsMetadata": [
+    {
+      "id": "deepseek-flash",
+      "name": "DeepSeek-V4.1-Flash",
+      "owned_by": "deepseek"
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "name": "DeepSeek-V4-Pro",
+      "owned_by": "deepseek"
+    }
+  ],
+  "providerMetadataReadFrom": "Authenticated GET /models executed on V100; no key returned",
+  "selection": {
+    "model": "deepseek-flash",
+    "label": "DeepSeek V4.1 Flash",
+    "locked": true
+  },
+  "health": {
+    "ok": true,
+    "llmConfigured": true,
+    "remoteBridge": true,
+    "version": "0.26.1"
+  },
+  "proOverrideRejected": {
+    "code": "model_locked",
+    "httpStatus": 502,
+    "beforeProviderGeneration": true
+  },
+  "newGenerationCalls": 0,
+  "previousGenerationCalls": 3,
+  "previousReportedTokens": 7310,
+  "credentialsRemainOnV100": true,
+  "testsPassed": 612
+}

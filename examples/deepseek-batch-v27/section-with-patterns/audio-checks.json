@@ -1,0 +1,22 @@
+{
+  "renderer": "node-web-audio-api 2.2.0 prebuilt OfflineAudioContext; unchanged app renderWAV/sample library",
+  "range": {
+    "start": 32,
+    "end": 48
+  },
+  "mix": {
+    "frames": 576952,
+    "sampleRate": 44100,
+    "channels": 2,
+    "seconds": 13.08281179138322,
+    "peak": 0.34051513671875,
+    "rms": 0.04489225900419441,
+    "clippedSamples": 0,
+    "nonzeroSamples": 1117382,
+    "sha256": "e13beeb4dee378761fba3bd7807087cc3be01a1e075c2da34909024cd1f7f872",
+    "windows": []
+  },
+  "inputUnchanged": true,
+  "hardwareAudioOpened": false,
+  "subjectiveListeningPerformed": false
+}

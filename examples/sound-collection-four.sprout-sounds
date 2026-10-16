@@ -1,0 +1,37 @@
+{
+  "format": "sprout-sounds",
+  "version": 1,
+  "presets": [
+    {
+      "name": "温柔 · 底鼓",
+      "instrument": "kick",
+      "sound": {
+        "decay": 0.481,
+        "tone": 34.4
+      }
+    },
+    {
+      "name": "原始 · 底鼓",
+      "instrument": "kick",
+      "sound": null
+    },
+    {
+      "name": "原始 · 电钢琴",
+      "instrument": "keys",
+      "sound": null
+    },
+    {
+      "name": "夜晚 · 电钢琴",
+      "instrument": "keys",
+      "sound": {
+        "attack": 0.123,
+        "decay": 0.4,
+        "sustain": 0.5,
+        "release": 1.8,
+        "cutoff": 1800,
+        "resonance": 0.5,
+        "waveform": "triangle"
+      }
+    }
+  ]
+}

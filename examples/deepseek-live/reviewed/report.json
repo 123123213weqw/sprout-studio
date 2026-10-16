@@ -1,0 +1,60 @@
+{
+  "status": "reviewed-with-one-explicit-note-edit",
+  "calls": 0,
+  "source": "DeepSeek explicit test plus a disclosed local editor correction; not an unmodified model response",
+  "sourceRequestId": "1c1285c2-7dcc-4aec-9c9d-d362c33c23f4",
+  "edit": {
+    "trackId": "9a05299d-f8c5-4cfe-a839-e44c15919cb6",
+    "noteId": "13d45caf-4569-4466-8466-3ac89814d2c3",
+    "beat": 4,
+    "fromPitch": 45,
+    "toPitch": 41,
+    "reason": "Match the requested F bass root at the start of bar 2",
+    "method": "Existing transformNotes editor function, deltaPitch -4"
+  },
+  "undoRestoresOriginalExactly": true,
+  "musicalInstructions": {
+    "harmony": [
+      {
+        "bar": 1,
+        "chord": "Am",
+        "pianoTriad": true,
+        "bassRoot": true
+      },
+      {
+        "bar": 2,
+        "chord": "F",
+        "pianoTriad": true,
+        "bassRoot": true
+      },
+      {
+        "bar": 3,
+        "chord": "C",
+        "pianoTriad": true,
+        "bassRoot": true
+      },
+      {
+        "bar": 4,
+        "chord": "G",
+        "pianoTriad": true,
+        "bassRoot": true
+      }
+    ],
+    "hiHat": {
+      "expected": 32,
+      "actual": 32,
+      "missingOnsets": [],
+      "extraOnsets": [],
+      "eighthNotes": true
+    },
+    "key": {
+      "name": "A minor",
+      "melodicNotes": 43,
+      "outOfKey": 0
+    },
+    "allRolesHaveNotes": true,
+    "matchesExplicitBrief": true,
+    "quality": "Not a listening test, style assessment, originality check or artistic-quality score."
+  },
+  "quality": "Measurable fixture checks pass after one disclosed edit. This is not a listening or artistic-quality verdict."
+}

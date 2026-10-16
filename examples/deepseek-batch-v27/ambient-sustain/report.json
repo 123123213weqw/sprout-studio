@@ -1,0 +1,47 @@
+{
+  "id": "ambient-sustain",
+  "status": "accepted",
+  "receipt": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "elapsedMs": 3634,
+    "usage": {
+      "prompt_tokens": 1638,
+      "completion_tokens": 659,
+      "total_tokens": 2297
+    },
+    "format": "sprout-score-v1",
+    "verified": "validated-notes",
+    "quality": "not-rated",
+    "requestId": "cbb5ea56-fcc4-40dc-9718-1f96ee401133",
+    "maxOutputTokens": 8192
+  },
+  "assessment": {
+    "globalsPreserved": true,
+    "trackIdsPreserved": true,
+    "unselectedTracksPreserved": true,
+    "voicesAndMixPreserved": true,
+    "clipLayoutPreserved": true,
+    "outsideRangePreserved": true,
+    "patternLibraryPreserved": true,
+    "sectionLabelsPreserved": true,
+    "changedTracks": 6,
+    "boundariesPass": true,
+    "instructions": {
+      "celloLongNote": true,
+      "fluteLongNote": true,
+      "allMelodicNotesInKey": true,
+      "allRolesHaveNotes": false,
+      "noMoreThan90": true
+    },
+    "emptyRoles": [
+      "kick",
+      "snare"
+    ],
+    "instructionsPass": false
+  },
+  "notes": 34,
+  "midiNotes": 34,
+  "summary": "Spacious 8-bar C-major ambient arrangement at 72 BPM. A long cello C holds beats 0-7.5, then a long flute C answers beats 8-15.5, framing a quiet progression over C/F/G chord tones. Piano and sparse harp add gentle harmonic punctuation, bass roots move slowly, and drums are intentionally almost absent with only three soft hat cues. Phrases repeat with variation and close on a deliberate sustained C sonority.",
+  "inputUnchanged": true
+}

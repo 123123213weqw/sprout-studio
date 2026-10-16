@@ -1,0 +1,248 @@
+{
+  "version": "0.19.0",
+  "automatedTests": {
+    "total": 425,
+    "passed": 425,
+    "failed": 0,
+    "new": 32,
+    "soundCollectionCoreTests": 24,
+    "actualDownloadedFixtureTests": 8
+  },
+  "actualUi": {
+    "collectionSaveNoMusicRevisionChange": true,
+    "currentDraftNotAppliedOnSave": true,
+    "custom": {
+      "source": "keys",
+      "sound": {
+        "attack": 0.123,
+        "decay": 0.4,
+        "sustain": 0.5,
+        "release": 1.8,
+        "cutoff": 1800,
+        "resonance": 0.5,
+        "waveform": "triangle"
+      }
+    },
+    "initialSavedRows": 4,
+    "defaultReimport": {
+      "added": 0,
+      "skipped": 4
+    },
+    "explicitDuplicateReimport": {
+      "added": 4,
+      "skipped": 0,
+      "newIdsAndNameSuffixes": true
+    },
+    "allNotSelectedConfirmationDisabled": true,
+    "defaultApplicableFilter": {
+      "checked": true,
+      "keysRows": 4,
+      "allRows": 8,
+      "incompatibleDrumLoadDisabled": true
+    },
+    "paging": {
+      "allRowsPerPage": 4,
+      "pages": 2,
+      "secondPageVerified": true
+    },
+    "archiveRestoreDesktopAndMobile": true,
+    "renamedLiteralText": "夜晚 & 舒缓 <收藏>",
+    "invalidFileWholeRejected": true,
+    "invalidFileContainsValidFourPlusInvalidFifth": true,
+    "padOnlySoundChanged": true,
+    "sourceAndFourInstancesUnchanged": true,
+    "separateHouseOnlyKeysSoundChanged": true,
+    "exactOriginalCollectionCustomCheckboxFalse": true,
+    "exactOriginalCustomFieldAbsent": true,
+    "staleWindow": {
+      "offlineCandidateActuallyApplied": true,
+      "houseNotesBefore": 703,
+      "houseNotesAfter": 592,
+      "saveRejected": "工程已改变，请关闭后重新打开音色窗口。",
+      "bankRowsRemain": 8,
+      "undoRestoredHouse": true
+    },
+    "twoPages": {
+      "mainRenameCommitted": true,
+      "secondSaveRejected": "另一页面修改了音色收藏，请重新读取；这次没有覆盖。",
+      "explicitReloadSawMainName": true,
+      "rowsRemain": 8,
+      "temporaryNameRestored": true
+    }
+  },
+  "downloads": [
+    {
+      "file": "sound-collection-single.sprout-sounds",
+      "bytes": 345,
+      "sha256": "f5750dccbb6f1f8e4e18095a4a159a27d465eed60f2ded5052a38db8dc071746",
+      "actualBrowserDownload": true
+    },
+    {
+      "file": "sound-collection-four.sprout-sounds",
+      "bytes": 683,
+      "sha256": "9f8dad3c5bfccb519822d0aa9e66c76a49d18a2f39f3fea872eea5fce9c06c07",
+      "actualBrowserDownload": true
+    },
+    {
+      "file": "sound-collection-pad.sprout",
+      "bytes": 164772,
+      "sha256": "1f71aa07a47ae62d2b29feffb4fd19960f199bdd3a45a3ad27751ada9f9c08fc",
+      "actualBrowserDownload": true
+    },
+    {
+      "file": "sound-collection-pad.mid",
+      "bytes": 7548,
+      "sha256": "3d18d332be2a4b59a8d80226babb88a7e9bc4f4547d30ad0673dbd798105a729",
+      "actualBrowserDownload": true
+    },
+    {
+      "file": "sound-collection-region.wav",
+      "bytes": 4435728,
+      "sha256": "e19d447141859252c354a4bf1aa9b8d3e7deac7141d9070e77c8e724b9cb21cf",
+      "actualBrowserDownload": true
+    },
+    {
+      "file": "sound-collection-house.sprout",
+      "bytes": 135400,
+      "sha256": "dfd7d6105ce0558c13aa04f4822780926e603cd43ca1460187442574b92aea7e",
+      "actualBrowserDownload": true
+    },
+    {
+      "file": "sound-collection-original.sprout",
+      "bytes": 164568,
+      "sha256": "520cc56aac80900c9a5f98fc0ac7fc08dc321519def51dfc79c9d15c5e49eb91",
+      "actualBrowserDownload": true
+    },
+    {
+      "file": "sound-collection-restored.sprout",
+      "bytes": 164769,
+      "sha256": "e914f4bc0a2e03767f695f677faf168d28770bcd6e769b07449f09b61dab89cf",
+      "actualBrowserDownload": true
+    }
+  ],
+  "dataAssertions": {
+    "originalRestoredByteExact": true,
+    "midiByteExactToOriginalAndCustomPadProject": true,
+    "originalCollectionDoesNotInjectDefaults": true,
+    "wholeProjectOtherwiseExact": true
+  },
+  "wav": {
+    "channels": 2,
+    "sampleRate": 44100,
+    "bits": 16,
+    "frames": 1108921,
+    "seconds": 25.14560090702948,
+    "peak": 0.471771240234375,
+    "rms": 0.08337793823688368,
+    "clippedSamples": 0,
+    "range": {
+      "start": 64,
+      "end": 96
+    },
+    "scheduledEvents": 204,
+    "tailSeconds": 2.82,
+    "offlineOnly": true,
+    "played": false,
+    "listeningQualityNotEvaluated": true
+  },
+  "layout": {
+    "desktop": {
+      "width": 1280,
+      "height": 900,
+      "bodyScrollWidth": 732,
+      "bodyWidth": 732,
+      "dialog": {
+        "height": 852,
+        "width": 740,
+        "x": 270,
+        "y": 24
+      },
+      "footer": {
+        "height": 77,
+        "width": 738,
+        "x": 271,
+        "y": 798
+      },
+      "pageWidth": 1280,
+      "panelScrollWidth": 654,
+      "panelWidth": 654,
+      "screenshot": "screenshots/v19-sound-collection-desktop.jpg"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "bodyScrollWidth": 352,
+      "bodyWidth": 352,
+      "dialog": {
+        "height": 820,
+        "width": 360,
+        "x": 12,
+        "y": 12
+      },
+      "footer": {
+        "height": 71.5,
+        "width": 358,
+        "x": 13,
+        "y": 759.5
+      },
+      "pageWidth": 384,
+      "panelScrollWidth": 286,
+      "panelWidth": 286,
+      "screenshot": "screenshots/v19-sound-collection-mobile.jpg"
+    }
+  },
+  "storageAndFormat": {
+    "bankSharedAcrossProjects": true,
+    "maxEntriesIncludingArchived": 32,
+    "recordBytesLimit": 262144,
+    "portableFileBytesLimit": 262144,
+    "noAutomaticEviction": true,
+    "archiveReversibleDoesNotFreeQuota": true,
+    "corruptStateNotAutoReset": true,
+    "originalUsesNullInsteadOfDefaultDSP": true,
+    "originalSameSourceOnly": true,
+    "customMelodicCrossInstrument": true,
+    "nativeUsesTargetInstrumentLayers": true,
+    "drumsSameKindOnly": true,
+    "portableDoesNotContainIdsMusicMixCredentials": true,
+    "wholeFileChecksUnselectedItems": true,
+    "appliedProjectBytesLimit": 3000000,
+    "nearBudgetTestBaseBytes": 2999980,
+    "quotaFaultsOnlyPureTestAdapters": true,
+    "noRealBrowserStorageFaultMutation": true,
+    "collectionAndSongUndoIndependent": true,
+    "browserLocalNotCloudBackup": true
+  },
+  "final": {
+    "name": "歌曲骨架 · 静音编排示例",
+    "bars": 32,
+    "tracks": 7,
+    "notes": 816,
+    "patterns": 1,
+    "instances": 4,
+    "loopRange": {
+      "start": 64,
+      "end": 96
+    },
+    "originalByteExact": true,
+    "bankEntries": 8,
+    "archivedBankEntries": 0,
+    "workspaceProjects": 6,
+    "workspaceId": "legacy",
+    "shelfEntries": 5,
+    "hasCandidate": false,
+    "quiet": true,
+    "playing": false,
+    "hardwareAudioInitialized": false,
+    "warningAndErrorLogs": [],
+    "realModelCalls": 0,
+    "realtimePlayback": false
+  },
+  "remaining": [
+    "controlled phrase transitions / harmony transformations",
+    "reusable performance settings / sound and effect expansion",
+    "explicitly configured real LLM and human listening quality",
+    "bulk project backup / history management / cloud sync not complete"
+  ],
+  "goalRemainsActive": true
+}

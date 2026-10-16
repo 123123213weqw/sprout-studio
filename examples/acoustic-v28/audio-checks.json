@@ -1,0 +1,192 @@
+{
+  "version": "0.28.0",
+  "renderer": "node-web-audio-api 2.2.0 published prebuilt OfflineAudioContext through the app renderWAV and sample-library modules",
+  "hardwareOpened": false,
+  "subjectiveListeningPerformed": false,
+  "modelCalls": 0,
+  "files": [
+    {
+      "name": "deepseek-same-notes-new-voices",
+      "notes": 80,
+      "sources": [
+        "sonic-kick",
+        "sonic-snare",
+        "sonic-hat",
+        "vsco-bass",
+        "vsco-piano-full",
+        "vsco-clarinet",
+        "vsco-cello",
+        "karoryfer-guitar"
+      ],
+      "seconds": 13.08281179138322,
+      "sampleRate": 44100,
+      "channels": 2,
+      "frames": 576952,
+      "peak": 0.155364990234375,
+      "rms": 0.01843826302090923,
+      "clippedSamples": 0,
+      "nonzeroSamples": 1063947,
+      "sha256": "ecdc5ce317297e24c03a73976650b835ca184472ae18b296e12b3f4de7ddeff3",
+      "windows": [],
+      "inputUnchanged": true
+    },
+    {
+      "name": "deepseek-natural-performance",
+      "notes": 80,
+      "sources": [
+        "sonic-kick",
+        "sonic-snare",
+        "sonic-hat",
+        "vsco-bass",
+        "vsco-piano-full",
+        "vsco-clarinet",
+        "vsco-cello",
+        "karoryfer-guitar"
+      ],
+      "seconds": 13.08281179138322,
+      "sampleRate": 44100,
+      "channels": 2,
+      "frames": 576952,
+      "peak": 0.1590576171875,
+      "rms": 0.018339642215397387,
+      "clippedSamples": 0,
+      "nonzeroSamples": 1066973,
+      "sha256": "bebb01a6ccb6cb5947752fa558a2526104f4e17786548b23ac917194507d8a53",
+      "windows": [],
+      "inputUnchanged": true
+    },
+    {
+      "name": "acoustic-trio",
+      "notes": 46,
+      "sources": [
+        "karoryfer-guitar",
+        "vsco-violin",
+        "vsco-clarinet"
+      ],
+      "seconds": 13.207324263038549,
+      "sampleRate": 44100,
+      "channels": 2,
+      "frames": 582443,
+      "peak": 0.126953125,
+      "rms": 0.018341862972241565,
+      "clippedSamples": 0,
+      "nonzeroSamples": 1078029,
+      "sha256": "a8f0f20d84c918c8a0737c8efa702821c5ed054fef5de138ce75455d9c8991b0",
+      "windows": [],
+      "inputUnchanged": true
+    },
+    {
+      "name": "solo-guitar",
+      "notes": 32,
+      "sources": [
+        "karoryfer-guitar"
+      ],
+      "seconds": 13.207324263038549,
+      "sampleRate": 44100,
+      "channels": 2,
+      "frames": 582443,
+      "peak": 0.125640869140625,
+      "rms": 0.011165797895875079,
+      "clippedSamples": 0,
+      "nonzeroSamples": 1055087,
+      "sha256": "46ec5c81f0fe04417f3a7101e02c15766365ca927463c2268591e652736e0142",
+      "windows": [],
+      "inputUnchanged": true
+    },
+    {
+      "name": "solo-violin",
+      "notes": 6,
+      "sources": [
+        "vsco-violin"
+      ],
+      "seconds": 13.207324263038549,
+      "sampleRate": 44100,
+      "channels": 2,
+      "frames": 582443,
+      "peak": 0.056732177734375,
+      "rms": 0.00832567684231021,
+      "clippedSamples": 0,
+      "nonzeroSamples": 1028274,
+      "sha256": "8fe186c4bb69088c3613adc4fe658e6cd054a80c421ddd02ec289fbdbd317f73",
+      "windows": [],
+      "inputUnchanged": true
+    },
+    {
+      "name": "solo-clarinet",
+      "notes": 8,
+      "sources": [
+        "vsco-clarinet"
+      ],
+      "seconds": 13.207324263038549,
+      "sampleRate": 44100,
+      "channels": 2,
+      "frames": 582443,
+      "peak": 0.03839111328125,
+      "rms": 0.01202046551745816,
+      "clippedSamples": 0,
+      "nonzeroSamples": 922303,
+      "sha256": "5cb41c500bff503b5d705d57f6919e7bcf579679b38fca2fd2f0d39ecd15701a",
+      "windows": [],
+      "inputUnchanged": true
+    },
+    {
+      "name": "held-strings-wind",
+      "notes": 2,
+      "sources": [
+        "vsco-violin",
+        "vsco-clarinet"
+      ],
+      "seconds": 13.207324263038549,
+      "sampleRate": 44100,
+      "channels": 2,
+      "frames": 582443,
+      "peak": 0.0804443359375,
+      "rms": 0.016630428709358984,
+      "clippedSamples": 0,
+      "nonzeroSamples": 991822,
+      "sha256": "074ec1f42d105d90b1cc7dd494ebbf1175e53e3b028ac0b2b9afcafcfbee6766",
+      "windows": [
+        {
+          "from": 7,
+          "to": 9,
+          "rms": 0.018090112546973302
+        }
+      ],
+      "inputUnchanged": true
+    },
+    {
+      "name": "guitar-alternate-takes",
+      "notes": 16,
+      "sources": [
+        "karoryfer-guitar"
+      ],
+      "seconds": 13.207324263038549,
+      "sampleRate": 44100,
+      "channels": 2,
+      "frames": 582443,
+      "peak": 0.08740234375,
+      "rms": 0.013817521459959424,
+      "clippedSamples": 0,
+      "nonzeroSamples": 849700,
+      "sha256": "7c2f5610cb7d65832b6c2711879e6e925aa4c06be2cfad92538d37130ce163ed",
+      "windows": [],
+      "inputUnchanged": true
+    }
+  ],
+  "rawDeepSeekInput": {
+    "path": "examples/deepseek-batch-v27/numeric-harmony/composition.sprout",
+    "sha256": "a6ac301cd277596e954366dd15bc8001f7e423e37dff4b012215cd4a5f9cc6c1"
+  },
+  "trioProvenance": "Authored demonstration, not a raw DeepSeek response: strum offsets, changing velocities, phrase lengths and rests are saved editable note data. No automatic edits to user workspaces.",
+  "rawDeepSeekInputUnchanged": true,
+  "library": {
+    "loaded": 139,
+    "pending": 0,
+    "pcmBytes": 95501352,
+    "evicted": 651,
+    "preparedBytes": 0,
+    "voices": 430,
+    "lastAsset": "guitar-c4-v3-rr2",
+    "lastError": null
+  }
+}

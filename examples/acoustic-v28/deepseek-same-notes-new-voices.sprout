@@ -1,0 +1,854 @@
+{
+  "version": 2,
+  "id": "f00746d0-7f49-4fe1-9a35-bf2bc48e4509",
+  "name": "Isolated DeepSeek regression fixture",
+  "style": "lofi",
+  "key": "A minor",
+  "bars": 4,
+  "bpm": 86,
+  "swing": 12,
+  "master": 0.75,
+  "seed": 192801,
+  "tracks": [
+    {
+      "id": "27307a9d-cca1-4ebf-b919-575dfcb8beca",
+      "instrument": "kick",
+      "kind": "drum",
+      "name": "Kick",
+      "color": "#eda96b",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "278ba7ad-3ad4-4f2c-bffa-cdf699eaec2d",
+          "pitch": 36,
+          "start": 0,
+          "duration": 0.5,
+          "velocity": 54
+        },
+        {
+          "id": "abb9d29e-b381-48de-8a4d-11ce7a2ca1f9",
+          "pitch": 36,
+          "start": 4,
+          "duration": 0.5,
+          "velocity": 46
+        },
+        {
+          "id": "f80d82d7-26b8-4b2d-be57-29cd3f460b1d",
+          "pitch": 36,
+          "start": 8,
+          "duration": 0.5,
+          "velocity": 52
+        },
+        {
+          "id": "feb0d396-b060-4b76-a9ce-c87c52db11a7",
+          "pitch": 36,
+          "start": 12,
+          "duration": 0.5,
+          "velocity": 44
+        }
+      ],
+      "clips": [
+        {
+          "id": "6a122dfb-e3d2-49a8-8acd-0a5623aaf561",
+          "name": "底鼓",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "c5656a78-011f-401f-a4cb-b07f3a1b68c0",
+          "name": "底鼓",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "sonic-kick",
+        "gain": 0.85,
+        "release": 0.45,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "57340dac-ed68-4198-8752-632139134e32",
+      "instrument": "snare",
+      "kind": "drum",
+      "name": "Snare",
+      "color": "#e8bc80",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "35fe3a0c-136d-4c74-ac59-20e0a3e42f3f",
+          "pitch": 38,
+          "start": 2,
+          "duration": 0.5,
+          "velocity": 50
+        },
+        {
+          "id": "ddd473d1-84bd-4138-abf0-5cec2c2887b8",
+          "pitch": 38,
+          "start": 6,
+          "duration": 0.5,
+          "velocity": 46
+        },
+        {
+          "id": "59234fb7-c66a-41d1-819e-bd3d59bcaa34",
+          "pitch": 38,
+          "start": 10,
+          "duration": 0.5,
+          "velocity": 52
+        },
+        {
+          "id": "bf1eec49-c2bc-41db-a976-3adfff2fb040",
+          "pitch": 38,
+          "start": 14,
+          "duration": 0.5,
+          "velocity": 48
+        }
+      ],
+      "clips": [
+        {
+          "id": "ee9df355-f090-4732-ae8d-cb12d4d1cc43",
+          "name": "军鼓",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "aaffbd6b-80ea-40bd-89aa-42e252e26145",
+          "name": "军鼓",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "sonic-snare",
+        "gain": 0.75,
+        "release": 0.3,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "9ce049c8-b729-414c-a75c-cab0ce6dc087",
+      "instrument": "hat",
+      "kind": "drum",
+      "name": "Hi-hat",
+      "color": "#d6d995",
+      "volume": 0.45,
+      "pan": 0.18,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "d34fb469-5eb6-43ed-9ac4-de678eded741",
+          "pitch": 42,
+          "start": 0,
+          "duration": 0.25,
+          "velocity": 34
+        },
+        {
+          "id": "daf2d947-a95f-4130-b7e6-0d30c88f8049",
+          "pitch": 42,
+          "start": 0.5,
+          "duration": 0.25,
+          "velocity": 26
+        },
+        {
+          "id": "826dcc88-5e29-4a6b-b2bd-76d49e440a50",
+          "pitch": 42,
+          "start": 1,
+          "duration": 0.25,
+          "velocity": 30
+        },
+        {
+          "id": "2387ffe5-78bb-49da-a5b9-c5b306beabb9",
+          "pitch": 42,
+          "start": 1.5,
+          "duration": 0.25,
+          "velocity": 22
+        },
+        {
+          "id": "d67e4f71-6985-4c4f-9080-209f11c98294",
+          "pitch": 42,
+          "start": 2,
+          "duration": 0.25,
+          "velocity": 33
+        },
+        {
+          "id": "d325edc4-749a-4c25-b985-60d84de0a13c",
+          "pitch": 42,
+          "start": 2.5,
+          "duration": 0.25,
+          "velocity": 25
+        },
+        {
+          "id": "14c484d6-1fbc-4f93-8d9c-8f7500a14bbb",
+          "pitch": 42,
+          "start": 3,
+          "duration": 0.25,
+          "velocity": 29
+        },
+        {
+          "id": "a238aaed-e69d-429c-b81f-6d48d4d6848e",
+          "pitch": 42,
+          "start": 3.5,
+          "duration": 0.25,
+          "velocity": 21
+        },
+        {
+          "id": "e2d2d86d-5066-4746-973c-7ea331f060f3",
+          "pitch": 42,
+          "start": 4,
+          "duration": 0.25,
+          "velocity": 32
+        },
+        {
+          "id": "cbb8333b-8ec1-4004-a45f-c4be300b2d30",
+          "pitch": 42,
+          "start": 4.5,
+          "duration": 0.25,
+          "velocity": 24
+        },
+        {
+          "id": "bea49c85-84b8-409f-a75e-86a6047735b5",
+          "pitch": 42,
+          "start": 5,
+          "duration": 0.25,
+          "velocity": 28
+        },
+        {
+          "id": "2a7485f5-d444-4ffa-9028-504ca2b15e73",
+          "pitch": 42,
+          "start": 5.5,
+          "duration": 0.25,
+          "velocity": 20
+        },
+        {
+          "id": "201fe1eb-e29a-460b-9531-73de38d6548c",
+          "pitch": 42,
+          "start": 6,
+          "duration": 0.25,
+          "velocity": 31
+        },
+        {
+          "id": "4149564e-dc36-4b70-ba1e-f6d579b1a13b",
+          "pitch": 42,
+          "start": 6.5,
+          "duration": 0.25,
+          "velocity": 23
+        },
+        {
+          "id": "91abfc52-2efd-469d-9713-9e276d816b56",
+          "pitch": 42,
+          "start": 7,
+          "duration": 0.25,
+          "velocity": 27
+        },
+        {
+          "id": "0536731c-8da3-4c36-957f-d38661c6bab3",
+          "pitch": 42,
+          "start": 7.5,
+          "duration": 0.25,
+          "velocity": 19
+        },
+        {
+          "id": "a17e1235-f573-489f-8e6f-65c3e113da59",
+          "pitch": 42,
+          "start": 8,
+          "duration": 0.25,
+          "velocity": 34
+        },
+        {
+          "id": "350f2787-2529-4d77-a3ef-f6bad809338a",
+          "pitch": 42,
+          "start": 8.5,
+          "duration": 0.25,
+          "velocity": 26
+        },
+        {
+          "id": "5683796f-e9e6-4fb8-99d1-1d93df1230ec",
+          "pitch": 42,
+          "start": 9,
+          "duration": 0.25,
+          "velocity": 30
+        },
+        {
+          "id": "c1d2387a-80ee-4a37-b681-2976da6fb9c3",
+          "pitch": 42,
+          "start": 9.5,
+          "duration": 0.25,
+          "velocity": 22
+        },
+        {
+          "id": "a03cc2e5-a416-43b5-913a-bd920d71284d",
+          "pitch": 42,
+          "start": 10,
+          "duration": 0.25,
+          "velocity": 33
+        },
+        {
+          "id": "b0a54305-a226-46f6-8ed8-93e5d8a70514",
+          "pitch": 42,
+          "start": 10.5,
+          "duration": 0.25,
+          "velocity": 25
+        },
+        {
+          "id": "4c97db8a-ee50-472a-af95-37840ce28afc",
+          "pitch": 42,
+          "start": 11,
+          "duration": 0.25,
+          "velocity": 29
+        },
+        {
+          "id": "be87a793-5d46-4301-8435-9928e5f517b5",
+          "pitch": 42,
+          "start": 11.5,
+          "duration": 0.25,
+          "velocity": 21
+        },
+        {
+          "id": "d3b0e9bf-f628-4b0d-89d3-e833f2b8a788",
+          "pitch": 42,
+          "start": 12,
+          "duration": 0.25,
+          "velocity": 32
+        },
+        {
+          "id": "fcad7479-abdf-4b31-8be7-d67e4b99542c",
+          "pitch": 42,
+          "start": 12.5,
+          "duration": 0.25,
+          "velocity": 24
+        },
+        {
+          "id": "7c8d1667-6024-4ccc-97d6-264323e50bb5",
+          "pitch": 42,
+          "start": 13,
+          "duration": 0.25,
+          "velocity": 28
+        },
+        {
+          "id": "0336d015-35df-492e-b53e-03c201fd44cd",
+          "pitch": 42,
+          "start": 13.5,
+          "duration": 0.25,
+          "velocity": 20
+        },
+        {
+          "id": "3f7b15c0-7e18-44cb-85e3-3d0dfbbfd00e",
+          "pitch": 42,
+          "start": 14,
+          "duration": 0.25,
+          "velocity": 31
+        },
+        {
+          "id": "f2b69acb-458e-4a2d-a009-38b82ed832be",
+          "pitch": 42,
+          "start": 14.5,
+          "duration": 0.25,
+          "velocity": 23
+        },
+        {
+          "id": "837b5e2f-a1c7-49a4-b40d-3d9ffb8b7aac",
+          "pitch": 42,
+          "start": 15,
+          "duration": 0.25,
+          "velocity": 27
+        },
+        {
+          "id": "0c4e11cc-e187-4fa2-924e-c2afb120a9eb",
+          "pitch": 42,
+          "start": 15.5,
+          "duration": 0.25,
+          "velocity": 19
+        }
+      ],
+      "clips": [
+        {
+          "id": "6b82df02-7434-4cd2-b30e-6fe84c901adb",
+          "name": "踩镲",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "70963eb2-2328-4ef6-addf-e2ec4674fec4",
+          "name": "踩镲",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "sonic-hat",
+        "gain": 0.6,
+        "release": 0.14,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "21389fdc-5198-4c6c-a55d-90a0e6563d72",
+      "instrument": "bass",
+      "kind": "tonal",
+      "name": "Double bass",
+      "color": "#77cabb",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "ad5a8a5c-b236-43d5-878d-762f55ba0407",
+          "pitch": 45,
+          "start": 0,
+          "duration": 3,
+          "velocity": 58
+        },
+        {
+          "id": "faa1e3a8-9ff3-43c3-a4aa-9d0945decd8a",
+          "pitch": 41,
+          "start": 4,
+          "duration": 3,
+          "velocity": 54
+        },
+        {
+          "id": "aed285fb-73dd-40d0-9791-f031bfa61927",
+          "pitch": 48,
+          "start": 8,
+          "duration": 3,
+          "velocity": 56
+        },
+        {
+          "id": "735b6e79-38c4-4c81-b8a8-16e58949cca5",
+          "pitch": 43,
+          "start": 12,
+          "duration": 3,
+          "velocity": 52
+        }
+      ],
+      "clips": [
+        {
+          "id": "00a2820a-a720-4b3c-8cbd-8236bd442d71",
+          "name": "温暖贝斯",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "b6ae69cf-9223-43ec-b98b-4d5bce033b15",
+          "name": "温暖贝斯",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "vsco-bass",
+        "gain": 0.95,
+        "release": 0.3,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "aeaea914-7545-47ee-9a1f-4c38567bd9d0",
+      "instrument": "keys",
+      "kind": "tonal",
+      "name": "Piano",
+      "color": "#b4a0e2",
+      "volume": 0.62,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "6014de7d-0954-48bb-a211-6a9d33fc2593",
+          "pitch": 57,
+          "start": 0,
+          "duration": 3.5,
+          "velocity": 54
+        },
+        {
+          "id": "ca75c5ed-d60e-417b-b689-5f645b878cb3",
+          "pitch": 60,
+          "start": 0,
+          "duration": 3.5,
+          "velocity": 50
+        },
+        {
+          "id": "1483c33d-3ae3-48b8-a045-bdbe900b2861",
+          "pitch": 64,
+          "start": 0,
+          "duration": 3.5,
+          "velocity": 48
+        },
+        {
+          "id": "8f4a35e8-2464-4269-9cf9-4554a859c675",
+          "pitch": 53,
+          "start": 4,
+          "duration": 3.5,
+          "velocity": 52
+        },
+        {
+          "id": "1955971d-d19f-4c23-bac8-cad6a39ac107",
+          "pitch": 57,
+          "start": 4,
+          "duration": 3.5,
+          "velocity": 48
+        },
+        {
+          "id": "cc29c3a1-c25b-43c7-95b8-036059fc2faf",
+          "pitch": 60,
+          "start": 4,
+          "duration": 3.5,
+          "velocity": 46
+        },
+        {
+          "id": "c268d20f-a383-4ddf-9369-5608a7522fdf",
+          "pitch": 60,
+          "start": 8,
+          "duration": 3.5,
+          "velocity": 54
+        },
+        {
+          "id": "aa77a0af-78f9-46f3-b0f5-35bedbce6eb6",
+          "pitch": 64,
+          "start": 8,
+          "duration": 3.5,
+          "velocity": 50
+        },
+        {
+          "id": "34c731f2-a176-47f6-8194-c4d2b8bfe5dd",
+          "pitch": 67,
+          "start": 8,
+          "duration": 3.5,
+          "velocity": 48
+        },
+        {
+          "id": "c567b908-37fc-46ba-a206-4d800398bad5",
+          "pitch": 55,
+          "start": 12,
+          "duration": 3.5,
+          "velocity": 52
+        },
+        {
+          "id": "ce3b2948-bad3-4f05-a548-c75d70d6a250",
+          "pitch": 59,
+          "start": 12,
+          "duration": 3.5,
+          "velocity": 48
+        },
+        {
+          "id": "43b7f1a7-4280-405a-9ddf-680f776dbb56",
+          "pitch": 62,
+          "start": 12,
+          "duration": 3.5,
+          "velocity": 46
+        }
+      ],
+      "clips": [
+        {
+          "id": "90bd534c-b4a9-42cb-b6a4-81de67ea0e33",
+          "name": "柔和电钢琴",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "9e678103-fd66-47c0-b3c3-e2ec320a6af8",
+          "name": "柔和电钢琴",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "vsco-piano-full",
+        "gain": 0.8,
+        "release": 0.3,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "628e7cfd-60d3-4395-92a2-d174f5801c82",
+      "instrument": "lead",
+      "kind": "tonal",
+      "name": "Flute",
+      "color": "#84afe2",
+      "volume": 0.72,
+      "pan": 0.12,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "97cda53d-f53f-4b26-bc2b-a04e43a3d635",
+          "pitch": 69,
+          "start": 1,
+          "duration": 0.5,
+          "velocity": 52
+        },
+        {
+          "id": "384a97e5-e3da-44e2-9a9c-10f6310a519b",
+          "pitch": 72,
+          "start": 1.5,
+          "duration": 0.5,
+          "velocity": 50
+        },
+        {
+          "id": "dfff5e86-6bc4-4149-9fa3-082fe623d415",
+          "pitch": 76,
+          "start": 2,
+          "duration": 1,
+          "velocity": 54
+        },
+        {
+          "id": "4a1e44f3-1745-4e6e-9ce6-3cf751d4971e",
+          "pitch": 72,
+          "start": 5,
+          "duration": 0.5,
+          "velocity": 50
+        },
+        {
+          "id": "0e229452-5da4-415f-93e7-113314151d4c",
+          "pitch": 69,
+          "start": 5.5,
+          "duration": 0.5,
+          "velocity": 48
+        },
+        {
+          "id": "6d0a1a5d-6687-4034-adc4-9303577bd29b",
+          "pitch": 67,
+          "start": 6,
+          "duration": 1,
+          "velocity": 52
+        },
+        {
+          "id": "28a3301e-c179-47f9-99db-4ca14c0969fd",
+          "pitch": 69,
+          "start": 9,
+          "duration": 0.5,
+          "velocity": 54
+        },
+        {
+          "id": "5f3fbb2f-30be-42e2-b643-c8d1a1b98b98",
+          "pitch": 72,
+          "start": 9.5,
+          "duration": 0.5,
+          "velocity": 52
+        },
+        {
+          "id": "6c412a16-1237-41a6-9c76-c22a65cff671",
+          "pitch": 77,
+          "start": 10,
+          "duration": 1,
+          "velocity": 56
+        },
+        {
+          "id": "e2f1963a-7b10-4085-ad68-e4330bb2997f",
+          "pitch": 74,
+          "start": 13,
+          "duration": 0.5,
+          "velocity": 50
+        },
+        {
+          "id": "a6d18d03-58c9-4dd3-a2c0-d7fe0ce3407f",
+          "pitch": 71,
+          "start": 13.5,
+          "duration": 0.5,
+          "velocity": 48
+        },
+        {
+          "id": "2471f1c6-5f3c-45e4-9bfd-928511dd48ed",
+          "pitch": 67,
+          "start": 14,
+          "duration": 1,
+          "velocity": 50
+        }
+      ],
+      "clips": [
+        {
+          "id": "1d4fc69f-1d5a-40d0-ba1f-b2f227919611",
+          "name": "细碎旋律",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "72a1d15d-8e32-4a36-8d49-53e8a8de06fc",
+          "name": "细碎旋律",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "vsco-clarinet",
+        "gain": 0.7,
+        "release": 0.2,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "6ac0d183-f23b-45ad-9cfe-765e649983d1",
+      "instrument": "pad",
+      "kind": "tonal",
+      "name": "Cello",
+      "color": "#86bdca",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "225222e1-6d2d-4780-a274-c3b258d72fe8",
+          "pitch": 57,
+          "start": 0,
+          "duration": 2,
+          "velocity": 52
+        },
+        {
+          "id": "2087447f-9375-4a7c-b92c-fec86da5cf40",
+          "pitch": 53,
+          "start": 4,
+          "duration": 2,
+          "velocity": 48
+        },
+        {
+          "id": "4e8754e4-6b15-4f6d-8181-7d6e525790cd",
+          "pitch": 64,
+          "start": 8,
+          "duration": 2,
+          "velocity": 50
+        },
+        {
+          "id": "aba3a709-e94d-49de-b99f-8f8fdb6b3e91",
+          "pitch": 55,
+          "start": 12,
+          "duration": 2,
+          "velocity": 46
+        }
+      ],
+      "clips": [
+        {
+          "id": "c826caf6-4048-4093-927a-d66e6f1133d9",
+          "name": "空气铺底",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "4a8760de-8d57-43e5-9fc0-f61329613939",
+          "name": "空气铺底",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "vsco-cello",
+        "gain": 0.6,
+        "release": 0.9,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "930b6f24-6f93-4aa6-afe2-b46c9623c322",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "name": "Harp",
+      "color": "#ed91a1",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "78b45e78-765a-4c85-9fa4-fdb1bb1aca7d",
+          "pitch": 64,
+          "start": 1,
+          "duration": 1,
+          "velocity": 48
+        },
+        {
+          "id": "c71df106-e1bb-4b6e-820c-767fcf87ab4a",
+          "pitch": 60,
+          "start": 3,
+          "duration": 1,
+          "velocity": 44
+        },
+        {
+          "id": "d1141a46-dd5d-410a-bc72-66728cb84de3",
+          "pitch": 57,
+          "start": 5,
+          "duration": 1,
+          "velocity": 46
+        },
+        {
+          "id": "5f6f85ca-1a17-4e64-abfd-d8dcca438b7b",
+          "pitch": 60,
+          "start": 7,
+          "duration": 1,
+          "velocity": 42
+        },
+        {
+          "id": "e096218e-8e10-45a5-972d-a5787903c31a",
+          "pitch": 67,
+          "start": 9,
+          "duration": 1,
+          "velocity": 48
+        },
+        {
+          "id": "5333443b-9f4d-43d5-b684-09f9c755b4d9",
+          "pitch": 64,
+          "start": 11,
+          "duration": 1,
+          "velocity": 44
+        },
+        {
+          "id": "9adeeec7-3b89-4aeb-80c1-9cdb68b9bb70",
+          "pitch": 62,
+          "start": 13,
+          "duration": 1,
+          "velocity": 46
+        },
+        {
+          "id": "4e6e6253-3ed4-423e-b2db-431ef65f7ebc",
+          "pitch": 59,
+          "start": 15,
+          "duration": 1,
+          "velocity": 42
+        }
+      ],
+      "clips": [
+        {
+          "id": "6ef9c999-b36a-4e72-b307-b18a50af9cc3",
+          "name": "清亮拨弦",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "ebd7a6e9-d0aa-4041-824f-fd3d346c6096",
+          "name": "清亮拨弦",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "karoryfer-guitar",
+        "gain": 0.8,
+        "release": 0.45,
+        "cutoff": 18000
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "version": "0.27.0",
+  "testedAt": "2026-10-15T13:39:41.774Z",
+  "delivery": "Local only + V100 API bridge, no publish or Git push",
+  "automatedTests": {
+    "passed": 630,
+    "failed": 0,
+    "newBatchAndActualArtifactTests": 18,
+    "syntaxPassed": true,
+    "whitespacePassed": true,
+    "paidCallsDuringAutomatedTests": 0
+  },
+  "batch": {
+    "calls": 6,
+    "accepted": 6,
+    "rejected": 0,
+    "boundariesPass": 6,
+    "instructionsPass": 5,
+    "reportedTokens": 23441,
+    "requestCap": 6,
+    "maxOutputTokensPerCall": 8192,
+    "retries": 0,
+    "inputsUnchanged": true,
+    "knownMiss": "Ambient response left kick and snare silent despite the all-eight-roles instruction",
+    "evidence": "examples/deepseek-batch-v27/summary.json"
+  },
+  "cumulativeRealTests": {
+    "calls": 9,
+    "reportedTokens": 30751
+  },
+  "audio": {
+    "mixes": 6,
+    "additionalNumericHarmonyStems": 8,
+    "ambientHeldStems": 2,
+    "allMixesNonSilent": true,
+    "allMixesUnclipped": true,
+    "sustainBeyondSixSeconds": true,
+    "hardwareAudioOpened": false,
+    "subjectiveListeningPerformed": false,
+    "renderer": "App renderWAV with node-web-audio-api 2.2.0 prebuilt OfflineAudioContext; no Rust compilation"
+  },
+  "credentialsRemainOnV100": true,
+  "accountBalancesExcludedFromArtifacts": true,
+  "humanWorkspacesUnchanged": true,
+  "visualQA": "Unchanged and blocked; no new UI verification claimed",
+  "artifacts": {
+    "examples/deepseek-batch-v27/numeric-harmony/case.json": {
+      "bytes": 8467,
+      "sha256": "1f6424c84912a8233d399c69baff669e59847e8aa7dabbd72d45a5ba102107b2"
+    },
+    "examples/deepseek-batch-v27/numeric-harmony/provider-score.json": {
+      "bytes": 7295,
+      "sha256": "2fa2d06f0dc463fc5eb5894ab7cd9ec00d11ce5be0a24bded0fec65d305bae44"
+    },
+    "examples/deepseek-batch-v27/numeric-harmony/report.json": {
+      "bytes": 2640,
+      "sha256": "efc56fbbcfbb3d62ddefb0fee75dabf5289f719e9ab95e565d1ee07c74b42657"
+    },
+    "examples/deepseek-batch-v27/numeric-harmony/composition.sprout": {
+      "bytes": 20504,
+      "sha256": "a6ac301cd277596e954366dd15bc8001f7e423e37dff4b012215cd4a5f9cc6c1"
+    },
+    "examples/deepseek-batch-v27/numeric-harmony/composition.mid": {
+      "bytes": 1014,
+      "sha256": "9e33246289ae61b9dc9169603947e9a92fa82904ea1c7b1c057352e5a7df6846"
+    },
+    "examples/deepseek-batch-v27/numeric-harmony/composition.wav": {
+      "bytes": 2307852,
+      "sha256": "0459e6e16c1f4172d2fcbf89999a83d367218bcc273d6055c0077b63414f40f7"
+    },
+    "examples/deepseek-batch-v27/numeric-harmony/audio-checks.json": {
+      "bytes": 3623,
+      "sha256": "f9443210b5dbc15cebd5b791d927041755bfea60420298125410ad2d3731f298"
+    },
+    "examples/deepseek-batch-v27/flute-clip/case.json": {
+      "bytes": 58638,
+      "sha256": "5212de7f31f267a55c0a83d0119a0faa90c74cfab7960593ad9c25266b9f7c55"
+    },
+    "examples/deepseek-batch-v27/flute-clip/provider-score.json": {
+      "bytes": 832,
+      "sha256": "79ddc9b99a33e1ec735d6ca420f394a34e353db8842326815195686e0c379d33"
+    },
+    "examples/deepseek-batch-v27/flute-clip/report.json": {
+      "bytes": 1220,
+      "sha256": "c984020ee4651b7a6182ce4192ab63cfe20e86e77e536a347cec1a57e1be5bb7"
+    },
+    "examples/deepseek-batch-v27/flute-clip/composition.sprout": {
+      "bytes": 49685,
+      "sha256": "3fe4d69342cdcdd54a4f7eb606a04f5cfce2cdab65296ea3e57459eb8cd7ebd9"
+    },
+    "examples/deepseek-batch-v27/flute-clip/composition.mid": {
+      "bytes": 2343,
+      "sha256": "c55931db24ddc9b337430bfa49ac8c84fc6ea51a55f889126cfc3d1c99104cd2"
+    },
+    "examples/deepseek-batch-v27/flute-clip/composition.wav": {
+      "bytes": 1323292,
+      "sha256": "94f58c6c3f97dee816d269533515ee70d916af30d214ccb28a06b2f4c93d6114"
+    },
+    "examples/deepseek-batch-v27/flute-clip/audio-checks.json": {
+      "bytes": 595,
+      "sha256": "a639828f1cca5ac0146e604c79879ee3df6289f24fd7c3f308f63ac9c0773520"
+    },
+    "examples/deepseek-batch-v27/drum-pocket/case.json": {
+      "bytes": 58622,
+      "sha256": "2a53f2b1a74d155f9939aab3bb2c1141632714af135ebde3586fc78f1bf8d0a4"
+    },
+    "examples/deepseek-batch-v27/drum-pocket/provider-score.json": {
+      "bytes": 3927,
+      "sha256": "875a2c0e30d86978538bcf7f4ca95de541376ad90b3d499fbdaa464bf332c2c2"
+    },
+    "examples/deepseek-batch-v27/drum-pocket/report.json": {
+      "bytes": 1189,
+      "sha256": "1f6e4749b890c8194a192b4ce00c180c5d17ba2a5427765d754217ba544adf46"
+    },
+    "examples/deepseek-batch-v27/drum-pocket/composition.sprout": {
+      "bytes": 39436,
+      "sha256": "5edfebf15858f8985908f1642c68d0ce67a25bb596a22bb5a6b9d79479b7cd64"
+    },
+    "examples/deepseek-batch-v27/drum-pocket/composition.mid": {
+      "bytes": 1828,
+      "sha256": "cc17fffc35bf5802dfa9bf1ef0fb5bebabae7e324db949e383e318e5a76e5c4e"
+    },
+    "examples/deepseek-batch-v27/drum-pocket/composition.wav": {
+      "bytes": 4276968,
+      "sha256": "ec3d87527ba5b0a6ce1dadd7d14bdac5dd45b4459dbbd8f2726ba10404b1713b"
+    },
+    "examples/deepseek-batch-v27/drum-pocket/audio-checks.json": {
+      "bytes": 565,
+      "sha256": "50144948b8c5fe292b918c1b8a7219ea2f29a5087a3cee1f9dfb6fe1710cf37a"
+    },
+    "examples/deepseek-batch-v27/section-with-patterns/case.json": {
+      "bytes": 115534,
+      "sha256": "0394c4975fc83bf48400c28016309ec846a4cdecefaf2bc35f4b8870be6854ac"
+    },
+    "examples/deepseek-batch-v27/section-with-patterns/provider-score.json": {
+      "bytes": 9439,
+      "sha256": "857089a04188fcb6dd37e74ef9ceb3fc850e2e93ea5757571c3c48fceefad816"
+    },
+    "examples/deepseek-batch-v27/section-with-patterns/report.json": {
+      "bytes": 2655,
+      "sha256": "24fed33ef385851e095a41212f6e432bd515ae23dd3658422b87cdf9fe9f469c"
+    },
+    "examples/deepseek-batch-v27/section-with-patterns/composition.sprout": {
+      "bytes": 98153,
+      "sha256": "8cac8d64b598f0cff55272bbb747ccac6ff28935ee837c2dec759dda4340e732"
+    },
+    "examples/deepseek-batch-v27/section-with-patterns/composition.mid": {
+      "bytes": 4364,
+      "sha256": "b279fddac2ea9268299c5f559c106c65960d6f8f8b420e37f98d03169158b6af"
+    },
+    "examples/deepseek-batch-v27/section-with-patterns/composition.wav": {
+      "bytes": 2307852,
+      "sha256": "e13beeb4dee378761fba3bd7807087cc3be01a1e075c2da34909024cd1f7f872"
+    },
+    "examples/deepseek-batch-v27/section-with-patterns/audio-checks.json": {
+      "bytes": 596,
+      "sha256": "5d309e33e46a657d263892b79018f84fc4c69c3db8c8aab03e96e4871a44d553"
+    },
+    "examples/deepseek-batch-v27/ambient-sustain/case.json": {
+      "bytes": 11533,
+      "sha256": "3d8d0606723c805261117be0dfd6c9dae4d8010af34ed0447b0079c28e673251"
+    },
+    "examples/deepseek-batch-v27/ambient-sustain/provider-score.json": {
+      "bytes": 3721,
+      "sha256": "da70307870ed85f8dc25b19f3efb249288a726cd4c5ede0c5ab15c3c065682ab"
+    },
+    "examples/deepseek-batch-v27/ambient-sustain/report.json": {
+      "bytes": 1555,
+      "sha256": "eb5dad88c886d5be2f13e5514d7229f0c367cdcb4337645ddbfbe2b42fb7d173"
+    },
+    "examples/deepseek-batch-v27/ambient-sustain/composition.sprout": {
+      "bytes": 15300,
+      "sha256": "f61f4aa90bd4b426d6070c5d89565187bb3f351538fcf55490ddbe5cd6c499fe"
+    },
+    "examples/deepseek-batch-v27/ambient-sustain/composition.mid": {
+      "bytes": 641,
+      "sha256": "76146ec5b02425bf651579bc79a77c09c82b7515d00e6b1cfeda3635df1b03f0"
+    },
+    "examples/deepseek-batch-v27/ambient-sustain/composition.wav": {
+      "bytes": 5042732,
+      "sha256": "8b1f198e43cb36f0ae98a97b079a7e3e7d1e27b212124b98ecb20565493b2ce8"
+    },
+    "examples/deepseek-batch-v27/ambient-sustain/audio-checks.json": {
+      "bytes": 1808,
+      "sha256": "5cce1890e4ee5e3a0e21bffb90befb38044f8324a37392a2da2ccff7d182304f"
+    },
+    "examples/deepseek-batch-v27/scope-pressure/case.json": {
+      "bytes": 32140,
+      "sha256": "d554d04415f3b99b329f676d45522375b0a0b86689a151d01c9a2c36f38f5fc9"
+    },
+    "examples/deepseek-batch-v27/scope-pressure/provider-score.json": {
+      "bytes": 1342,
+      "sha256": "d96375575e37e604760b6023e7a180d3e5b932de6fe2faa56996f8e36832f35f"
+    },
+    "examples/deepseek-batch-v27/scope-pressure/report.json": {
+      "bytes": 1304,
+      "sha256": "b94cabc95911b12e25976e767f8157bc26000a9b0c995bae60a45f5c7d5cc356"
+    },
+    "examples/deepseek-batch-v27/scope-pressure/composition.sprout": {
+      "bytes": 26427,
+      "sha256": "aed277f507f0a7d911f5a71401c1708681a3a69cf33cb3cffc87eb931ba3244c"
+    },
+    "examples/deepseek-batch-v27/scope-pressure/composition.mid": {
+      "bytes": 1309,
+      "sha256": "69b6025da63ff753ea950d962cc489ef9581f889fb7d7858c3a1d916fe1140f3"
+    },
+    "examples/deepseek-batch-v27/scope-pressure/composition.wav": {
+      "bytes": 2307852,
+      "sha256": "b42dc5f08c217bbedb3cdc3ca61e8b581d0571129316ded1abf89f746a06e48b"
+    },
+    "examples/deepseek-batch-v27/scope-pressure/audio-checks.json": {
+      "bytes": 565,
+      "sha256": "a282d5d69e3181de4653d98e6be9fdcd1edb6b7206136de439bcb9962bda71dd"
+    }
+  },
+  "localService": {
+    "ok": true,
+    "llmConfigured": true,
+    "remoteBridge": true,
+    "version": "0.27.0"
+  },
+  "modelSelection": {
+    "model": "deepseek-flash",
+    "label": "DeepSeek V4.1 Flash",
+    "locked": true
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "flute-clip",
+  "status": "accepted",
+  "receipt": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "elapsedMs": 1543,
+    "usage": {
+      "prompt_tokens": 3462,
+      "completion_tokens": 150,
+      "total_tokens": 3612
+    },
+    "format": "sprout-score-v1",
+    "verified": "validated-notes",
+    "quality": "not-rated",
+    "requestId": "b0cf8305-760d-4e62-8348-68294da9d49e",
+    "maxOutputTokens": 8192
+  },
+  "assessment": {
+    "globalsPreserved": true,
+    "trackIdsPreserved": true,
+    "unselectedTracksPreserved": true,
+    "voicesAndMixPreserved": true,
+    "clipLayoutPreserved": true,
+    "outsideRangePreserved": true,
+    "patternLibraryPreserved": true,
+    "sectionLabelsPreserved": true,
+    "changedTracks": 1,
+    "boundariesPass": true,
+    "instructions": {
+      "matches": true,
+      "noteCount": 6
+    },
+    "instructionsPass": true
+  },
+  "notes": 228,
+  "midiNotes": 228,
+  "summary": "Replaces the selected flute clip with exactly six restrained notes in A minor, tucking a compact rising-falling motif into the second half of bar 3 and the first half of bar 4 while leaving all other tracks, settings and sampled voices untouched.",
+  "inputUnchanged": true
+}

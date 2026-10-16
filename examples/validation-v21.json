@@ -1,0 +1,182 @@
+{
+  "version": "0.21.0",
+  "delivery": "implemented locally; bundled in local 0.22, not published by this iteration",
+  "automatedTests": {
+    "passed": 490,
+    "coreAdded": 24,
+    "actualExportsAdded": 9,
+    "kind": "previous verified v21 run; included in latest full suite"
+  },
+  "feature": "source Pattern transform and every linked instance",
+  "fileChecks": {
+    "sourceReport": {
+      "changed": true,
+      "sourceNotes": 16,
+      "changedSourceNotes": 16,
+      "instances": 4,
+      "changedInstances": 4,
+      "instanceNotes": 64,
+      "snapped": 0,
+      "pitchChanged": 16,
+      "moved": 16,
+      "durationChanged": 16,
+      "timingChanged": 0,
+      "lengthBefore": 8,
+      "lengthAfter": 4,
+      "barsBefore": 32,
+      "barsAfter": 32
+    },
+    "events": 204,
+    "tail": 2.42,
+    "frames": 1091281,
+    "seconds": 24.745600907029477,
+    "peak": 0.471771240234375,
+    "rms": 0.07820773198494935,
+    "clipped": 0,
+    "midiExact": true,
+    "restoredExact": true
+  },
+  "layout": {
+    "desktop": {
+      "bodyScrollWidth": 812,
+      "bodyWidth": 812,
+      "dialog": {
+        "bottom": 876,
+        "height": 852,
+        "left": 230,
+        "right": 1050,
+        "top": 24,
+        "width": 820,
+        "x": 230,
+        "y": 24
+      },
+      "footer": {
+        "bottom": 875,
+        "height": 77,
+        "left": 231,
+        "right": 1049,
+        "top": 798,
+        "width": 818,
+        "x": 231,
+        "y": 798
+      },
+      "pageWidth": 1280
+    },
+    "mobile": {
+      "bodyScrollWidth": 352,
+      "bodyWidth": 352,
+      "dialog": {
+        "bottom": 832,
+        "height": 820,
+        "left": 12,
+        "right": 372,
+        "top": 12,
+        "width": 360,
+        "x": 12,
+        "y": 12
+      },
+      "footer": {
+        "bottom": 831,
+        "height": 66,
+        "left": 13,
+        "right": 371,
+        "top": 765,
+        "width": 358,
+        "x": 13,
+        "y": 765
+      },
+      "pageWidth": 384
+    }
+  },
+  "finalBrowser": {
+    "revision": 2,
+    "notes": 816,
+    "patterns": [
+      {
+        "id": "89d250ca-0c10-4ae3-8916-0b8b782f8b23",
+        "name": "柔和电钢琴",
+        "instrument": "keys",
+        "length": 8,
+        "notes": 16,
+        "instances": 4
+      }
+    ],
+    "transport": {
+      "playing": false,
+      "beat": 64,
+      "range": {
+        "start": 64,
+        "end": 96
+      },
+      "loop": true,
+      "quiet": true,
+      "clipPreview": null,
+      "hardwareAudioInitialized": false
+    },
+    "candidate": false,
+    "errors": [],
+    "staleCandidateAfterNotes": 696
+  },
+  "files": [
+    {
+      "file": "examples/shared-transform-demo.mid",
+      "bytes": 7543,
+      "sha256": "172548b684ab54a73b623dccc71225e9b434c35064bef488d9735285b568c083"
+    },
+    {
+      "file": "examples/shared-transform-demo.sprout",
+      "bytes": 165049,
+      "sha256": "47c1277678a83802aa1890fb6352c1d643f5dbbb6575f705f32de1573da8fff8"
+    },
+    {
+      "file": "examples/shared-transform-eight-before.sprout",
+      "bytes": 176114,
+      "sha256": "f9df89b3f7138ec8f68c21e4d4d0ce16cae714b8a492dacd07d481e5365306c2"
+    },
+    {
+      "file": "examples/shared-transform-eight.sprout",
+      "bytes": 176330,
+      "sha256": "5bdad8cb2fceb6defff37247e07cce025a9879f2b327d099486d3a93f9d6bad2"
+    },
+    {
+      "file": "examples/shared-transform-extended.sprout",
+      "bytes": 167563,
+      "sha256": "728dd3ef2d40c4ef5488d2eca2f0e67c3897d44b141dc272b1503a1e03b7dfb1"
+    },
+    {
+      "file": "examples/shared-transform-extension-before.sprout",
+      "bytes": 167605,
+      "sha256": "09a3e50af3c50014486a32def16486644ba4a8d008ca199d5f8b4b0c96200483"
+    },
+    {
+      "file": "examples/shared-transform-mobile.sprout",
+      "bytes": 164889,
+      "sha256": "0313da44cec226adc2c2f88c626b899e448b1d56d4735c9a6999834285850576"
+    },
+    {
+      "file": "examples/shared-transform-original.sprout",
+      "bytes": 164769,
+      "sha256": "e914f4bc0a2e03767f695f677faf168d28770bcd6e769b07449f09b61dab89cf"
+    },
+    {
+      "file": "examples/shared-transform-region.sprout",
+      "bytes": 165048,
+      "sha256": "6e79b3d37f48bebe2867a35a87a1ce7eee1a7aed2ac6fc772e9fc3255544fa29"
+    },
+    {
+      "file": "examples/shared-transform-region.wav",
+      "bytes": 4365168,
+      "sha256": "8598425f9e52f8e86ef807e029fb2612f593d71610ca57fd39bb0442b51a86c3"
+    },
+    {
+      "file": "examples/shared-transform-restored.sprout",
+      "bytes": 164769,
+      "sha256": "e914f4bc0a2e03767f695f677faf168d28770bcd6e769b07449f09b61dab89cf"
+    }
+  ],
+  "limits": [
+    "No real LLM call",
+    "WAV checked numerically offline; not listened to",
+    "Changes remain local until an explicit hosted update"
+  ]
+}

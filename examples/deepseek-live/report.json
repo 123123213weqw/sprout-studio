@@ -1,0 +1,31 @@
+{
+  "status": "passed-structural-checks",
+  "testedAt": "2026-10-15T11:44:06.311Z",
+  "calls": 1,
+  "receipt": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "elapsedMs": 4938,
+    "usage": {
+      "prompt_tokens": 1460,
+      "completion_tokens": 955,
+      "total_tokens": 2415
+    },
+    "format": "sprout-score-v1",
+    "verified": "validated-notes",
+    "quality": "not-rated",
+    "requestId": "2a100e68-f576-407f-9c51-b7439f4e047b",
+    "maxOutputTokens": 8192
+  },
+  "checks": {
+    "inputUnchanged": true,
+    "tracks": 8,
+    "notes": 62,
+    "midiNotes": 62,
+    "sampledTracks": 8,
+    "allRolesHaveNotes": true,
+    "settingsPreserved": true
+  },
+  "summary": "A four-bar A minor chamber lo-fi phrase at 86 BPM: piano outlines Am–F–C–G, pizzicato bass supports the roots, flute states a short motif then answers it with a varied phrase. Cello and harp appear sparingly, with restrained kick, snare, and quiet eighth-note hi-hat, leaving deliberate space and a settled ending.",
+  "audio": "Not rendered or listened to by this CLI. Validate WAV playback in the app; structural checks are not a musical-quality verdict."
+}

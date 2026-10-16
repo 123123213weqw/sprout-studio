@@ -1,0 +1,241 @@
+{
+  "version": "0.16.0",
+  "automatedTests": {
+    "total": 313,
+    "passed": 313,
+    "failed": 0,
+    "new": 27,
+    "purePlanTests": 22,
+    "actualDownloadedFixtureTests": 5
+  },
+  "combinedTransform": {
+    "sourceFile": "long-song-demo.sprout",
+    "resultFile": "phrase-transform-demo.sprout",
+    "bars": 32,
+    "tracks": 7,
+    "notesBeforeAndAfter": 816,
+    "targetInstrument": "keys",
+    "targetClipId": "f0cc64a1-8540-4b73-a224-0681de152a58",
+    "targetStartBeat": 0,
+    "lengthBefore": 8,
+    "lengthAfter": 4,
+    "controls": {
+      "ratio": 0.5,
+      "reverse": true,
+      "transpose": 13,
+      "scale": "D minor",
+      "timing": "follow",
+      "extend": false
+    },
+    "changedNotes": 16,
+    "changedPitch": 16,
+    "changedStart": 16,
+    "changedDuration": 16,
+    "changedMicroOffsets": 0,
+    "snapped": 8,
+    "referencesBefore": 4,
+    "referencesAfter": 3,
+    "sourcesBeforeAndAfter": 1,
+    "sourceNotesBeforeAndAfter": 16,
+    "targetNoteIdsAndVelocitiesPreserved": true,
+    "otherSixTracksAndAllUntargetedNotesExact": true,
+    "sourceAndGlobalFieldsExact": true,
+    "samePitchOverlapsBeforeAndAfter": 0,
+    "actualOneStepPhoneUndoRedo": true
+  },
+  "actualExports": {
+    "clipPracticeFile": "phrase-transform-clip-range.sprout",
+    "onlyAdditionalPracticeRangeChange": {
+      "start": 0,
+      "end": 4
+    },
+    "midiFile": "phrase-transform-demo.mid",
+    "midiNotes": 816,
+    "midiByteExactToEncoder": true,
+    "perTrackOnsetDurationPitchVelocityCompared": true,
+    "toleranceBeats": 0.002183333333333333,
+    "offlineWavFile": "phrase-transform-region.wav",
+    "wav": {
+      "bytes": 919212,
+      "frames": 229792,
+      "sampleRate": 44100,
+      "channels": 2,
+      "bitDepth": 16,
+      "seconds": 5.210702947845805,
+      "peak": 0.4376220703125,
+      "rms": 0.06916327903789399,
+      "clippedSamples": 0,
+      "range": {
+        "start": 0,
+        "end": 4
+      },
+      "notes": 43
+    },
+    "targetTransformedKeysEventsInWav": 16
+  },
+  "drumTransform": {
+    "filename": "phrase-transform-drums.sprout",
+    "instrument": "kick",
+    "start": 0,
+    "lengthBeforeAndAfter": 8,
+    "reverse": true,
+    "notesChanged": 6,
+    "projectNotesBeforeAndAfter": 816,
+    "gmPitchBeforeAndAfter": 36,
+    "referencesBeforeAndAfter": 4,
+    "allOtherNotesAndFieldsExact": true,
+    "pitchControlsDisabledInActualUI": true,
+    "threeRhythmPresetsOnly": true,
+    "oneStepUndoVerified": true
+  },
+  "lateExpansion": {
+    "filename": "phrase-transform-expanded.sprout",
+    "instrument": "lead",
+    "start": 120,
+    "lengthBefore": 8,
+    "lengthAfter": 16,
+    "barsBefore": 32,
+    "barsAfter": 64,
+    "ratio": 2,
+    "notesChanged": 8,
+    "totalNotesBeforeAndAfter": 816,
+    "extensionExplicit": true,
+    "defaultOverflowRejectedInUI": true,
+    "otherTracksSourcesSectionsAndPracticeUnchanged": true,
+    "oneStepUndoReturns32": true
+  },
+  "uiChecks": {
+    "neutralDisabled": true,
+    "invalidTranspose25Rejected": true,
+    "existingBlockCollisionRejected": true,
+    "twoPageNoteTableVerified": true,
+    "draftPresetThenCancelRevisionBefore": 5,
+    "draftPresetThenCancelRevisionAfter": 5,
+    "staleWindowAfterActualOfflineCandidate": {
+      "originalNotes": 816,
+      "candidateNotes": 696,
+      "revisionBeforeOldConfirm": 4,
+      "revisionAfterOldConfirm": 4,
+      "staleDisabled": true,
+      "error": "工程或音块选择已改变，请重新打开乐句变换。"
+    },
+    "normalIndexedDbBackupVerified": true,
+    "actualBackupFaultOrQuotaInjectionPerformed": false,
+    "timelineStickyRulerScrollPaddingAdded": 60,
+    "actualKickClickHitClipId": "4b3a31b2-06cf-4b41-8336-6b73a73c7163",
+    "actualKickSelectionTrackId": "9385fee3-87b0-48d8-b1c4-ec62c16cb5c3"
+  },
+  "responsive": {
+    "mobile": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dialog": {
+        "top": 12,
+        "bottom": 832,
+        "width": 360
+      },
+      "footerBottom": 831,
+      "footerInside": true,
+      "pageHorizontalOverflow": false
+    },
+    "desktop": {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "dialog": {
+        "left": 190,
+        "right": 1090,
+        "top": 24,
+        "bottom": 876,
+        "width": 900
+      },
+      "footerBottom": 875,
+      "footerInside": true,
+      "bodyClientWidth": 892,
+      "bodyScrollWidth": 892
+    },
+    "temporaryViewportReset": true
+  },
+  "refreshAndHistory": {
+    "actualRefreshedMusicDownloadByteExactToTransformedFile": true,
+    "immediateRedoRefreshRecoveredMusic": true,
+    "emergencyJournalPathDoesNotCarryHistory": true,
+    "observedAfterPracticeUndoNoEarlierUndoAvailable": true,
+    "normalVersionHistoryLimitEach": 8,
+    "combinedHistoryByteBudget": 1572864,
+    "historyHandoffFixedInThisVersion": false
+  },
+  "finalRestoredWorkspace": {
+    "actualFinalDownloadedFileByteExactToOriginal": true,
+    "bars": 32,
+    "tracks": 7,
+    "notes": 816,
+    "patterns": 1,
+    "sourceNotes": 16,
+    "references": 4,
+    "loopRange": {
+      "start": 64,
+      "end": 96
+    },
+    "candidateShelfEntries": 5,
+    "stagedCandidate": false,
+    "playing": false,
+    "quiet": true,
+    "hardwareAudioInitialized": false
+  },
+  "quietVerification": {
+    "silentQuery": true,
+    "audiblePlaybackPerformed": false,
+    "realtimeHardwareAudioInitialized": false,
+    "offlineRenderingOnly": true,
+    "virtualTransportTestPerformedThisTurn": false,
+    "humanListeningPerformed": false,
+    "previewEnvEmpty": true,
+    "existingModelCredentialsRead": false,
+    "realModelCalls": 0,
+    "paidModelCalls": 0,
+    "actualOfflineCandidateStageApplyCalls": 1,
+    "browserWarningsOrErrorsAtFinish": 0
+  },
+  "syntheticChecks": {
+    "stylesKeysLengthsCombinations": 120,
+    "nearestPitchRange": [
+      24,
+      108
+    ],
+    "keys": 6,
+    "minNoteDurationBeats": 0.03125,
+    "minClipLengthBeats": 0.25,
+    "maxMicroOffsetBeats": 0.04,
+    "maxFullProjectUtf8Bytes": 3000000,
+    "oversizeInMemoryDraftAtomicRefusal": true,
+    "maxCapacityHardwareRenderingPerformed": false
+  },
+  "evidence": {
+    "screenshots": [
+      "screenshots/v16-phrase-transform-desktop.jpg",
+      "screenshots/v16-phrase-transform-mobile.jpg"
+    ],
+    "actualDownloadedFiles": [
+      "phrase-transform-demo.sprout",
+      "phrase-transform-clip-range.sprout",
+      "phrase-transform-demo.mid",
+      "phrase-transform-region.wav",
+      "phrase-transform-drums.sprout",
+      "phrase-transform-expanded.sprout"
+    ]
+  },
+  "limitations": [
+    "No real model calls, authentication, paid service or musical quality verification",
+    "No human listening; PCM checks not sound-quality judgement",
+    "Note interval reversal is not reversed audio; global swing reapplied",
+    "Scale snapping not source-key analysis or functional-harmony conversion; pitches may collapse",
+    "No emergency-history handoff repair yet; immediate refresh can lose undo/redo history",
+    "No physical storage fault injection or maximum-capacity real hardware rendering",
+    "Not FLP compatibility, VST/AU, audio recording or full DAW replacement"
+  ],
+  "goalContinues": true
+}

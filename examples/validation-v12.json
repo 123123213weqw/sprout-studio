@@ -1,0 +1,115 @@
+{
+  "version": "0.12.0",
+  "automatedTests": {
+    "total": 211,
+    "passed": 211,
+    "failed": 0,
+    "new": 24
+  },
+  "baseline": {
+    "bars": 32,
+    "tracks": 7,
+    "notes": 816,
+    "patternSources": 1,
+    "sharedReferences": 4
+  },
+  "batch": {
+    "source": "offline",
+    "scope": "section",
+    "rangeBeats": [
+      64,
+      96
+    ],
+    "notes": [
+      690,
+      734,
+      814
+    ],
+    "seeds": [
+      20261010,
+      20261011,
+      20261012
+    ],
+    "snapshotsDownloadedFromQuietBrowser": true,
+    "outsideNoteIdsPreserved": true,
+    "sourceLibraryAndRefsPreserved": true
+  },
+  "comparison": {
+    "direction": "A → B",
+    "added": 58,
+    "removed": 14,
+    "modified": 64,
+    "changedTracks": 7,
+    "globalChanges": 0,
+    "soundChanges": 0
+  },
+  "appliedB": {
+    "savedProjectEqualsAppliedProject": true,
+    "midiNotes": 734,
+    "rangeScheduledNotes": 122
+  },
+  "browserChecks": [
+    "actual IndexedDB batch save",
+    "invalid seed rejection",
+    "explicit staging without application",
+    "explicit application / stale eligibility / undo",
+    "rename / remove / in-page undo",
+    "refresh persistence / no automatic staging",
+    "different baseline and same candidate comparison rejection",
+    "4 + 3 batch capacity rejection without eviction",
+    "stale generation window rejection",
+    "actual two-page rename CAS refusal and explicit reread",
+    "reopen shelf connection",
+    "390x844 stacked comparison and fixed action footer"
+  ],
+  "mockService": {
+    "ownedLocalhostOnly": true,
+    "requests": 1,
+    "realModelCalls": 0,
+    "transportProjectVersion": 2,
+    "beforeAndAfterNotes": 734,
+    "target": "keys",
+    "velocity": 42,
+    "modifiedNotes": 165,
+    "detachedTargetRefs": 2,
+    "otherTracksPreserved": 6,
+    "settingsRestoredOffline": true,
+    "serverStopped": true
+  },
+  "quiet": {
+    "playing": false,
+    "quietMode": true,
+    "hardwareAudioInitialized": false,
+    "audioPlaybackPerformed": false,
+    "offlineFileRenderingOnly": true
+  },
+  "limitations": [
+    "No real model or musical-quality evaluation",
+    "No cross-device/cloud candidate backup",
+    "Removal undo survives current page only",
+    "Quota/corruption/byte cap failures use simulated storage tests",
+    "No full-capacity real-device long render validation"
+  ],
+  "pcm": {
+    "candidate-b.wav": {
+      "frames": 4044955,
+      "channels": 2,
+      "sampleRate": 44100,
+      "bitDepth": 16,
+      "seconds": 91.72233560090703,
+      "peak": 0.471771240234375,
+      "rms": 0.08418976131570227,
+      "clippedSamples": 0
+    },
+    "candidate-b-region.wav": {
+      "frames": 1091281,
+      "channels": 2,
+      "sampleRate": 44100,
+      "bitDepth": 16,
+      "seconds": 24.745600907029477,
+      "peak": 0.438995361328125,
+      "rms": 0.06954880547313275,
+      "clippedSamples": 0
+    }
+  }
+}

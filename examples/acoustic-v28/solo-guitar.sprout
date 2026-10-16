@@ -1,0 +1,299 @@
+{
+  "version": 3,
+  "id": "acoustic-trio-v28",
+  "name": "Acoustic trio · authored performance",
+  "style": "lofi",
+  "key": "A minor",
+  "bars": 4,
+  "bpm": 82,
+  "swing": 0,
+  "master": 0.75,
+  "seed": 192801,
+  "tracks": [
+    {
+      "id": "acoustic-guitar",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "name": "Archtop guitar",
+      "color": "#ed91a1",
+      "volume": 0.65,
+      "pan": -0.22,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "acoustic-note-1",
+          "pitch": 45,
+          "start": 0,
+          "duration": 2.6,
+          "velocity": 74
+        },
+        {
+          "id": "acoustic-note-2",
+          "pitch": 52,
+          "start": 0,
+          "duration": 2.6,
+          "velocity": 61,
+          "timingOffset": 0.008
+        },
+        {
+          "id": "acoustic-note-3",
+          "pitch": 57,
+          "start": 0,
+          "duration": 2.6,
+          "velocity": 67,
+          "timingOffset": 0.016
+        },
+        {
+          "id": "acoustic-note-4",
+          "pitch": 60,
+          "start": 0,
+          "duration": 2.6,
+          "velocity": 64,
+          "timingOffset": 0.024
+        },
+        {
+          "id": "acoustic-note-5",
+          "pitch": 64,
+          "start": 0,
+          "duration": 2.6,
+          "velocity": 58,
+          "timingOffset": 0.032
+        },
+        {
+          "id": "acoustic-note-6",
+          "pitch": 64,
+          "start": 2,
+          "duration": 0.42,
+          "velocity": 65,
+          "timingOffset": 0.01
+        },
+        {
+          "id": "acoustic-note-7",
+          "pitch": 60,
+          "start": 2.5,
+          "duration": 0.42,
+          "velocity": 57,
+          "timingOffset": 0.01
+        },
+        {
+          "id": "acoustic-note-8",
+          "pitch": 57,
+          "start": 3,
+          "duration": 0.42,
+          "velocity": 61,
+          "timingOffset": 0.01
+        },
+        {
+          "id": "acoustic-note-9",
+          "pitch": 41,
+          "start": 4,
+          "duration": 2.6,
+          "velocity": 71
+        },
+        {
+          "id": "acoustic-note-10",
+          "pitch": 48,
+          "start": 4,
+          "duration": 2.6,
+          "velocity": 58,
+          "timingOffset": 0.008
+        },
+        {
+          "id": "acoustic-note-11",
+          "pitch": 53,
+          "start": 4,
+          "duration": 2.6,
+          "velocity": 64,
+          "timingOffset": 0.016
+        },
+        {
+          "id": "acoustic-note-12",
+          "pitch": 57,
+          "start": 4,
+          "duration": 2.6,
+          "velocity": 61,
+          "timingOffset": 0.024
+        },
+        {
+          "id": "acoustic-note-13",
+          "pitch": 60,
+          "start": 4,
+          "duration": 2.6,
+          "velocity": 55,
+          "timingOffset": 0.032
+        },
+        {
+          "id": "acoustic-note-14",
+          "pitch": 60,
+          "start": 6,
+          "duration": 0.42,
+          "velocity": 65,
+          "timingOffset": 0.01
+        },
+        {
+          "id": "acoustic-note-15",
+          "pitch": 57,
+          "start": 6.5,
+          "duration": 0.42,
+          "velocity": 57,
+          "timingOffset": 0.01
+        },
+        {
+          "id": "acoustic-note-16",
+          "pitch": 53,
+          "start": 7,
+          "duration": 0.42,
+          "velocity": 61,
+          "timingOffset": 0.01
+        },
+        {
+          "id": "acoustic-note-17",
+          "pitch": 48,
+          "start": 8,
+          "duration": 2.6,
+          "velocity": 74
+        },
+        {
+          "id": "acoustic-note-18",
+          "pitch": 55,
+          "start": 8,
+          "duration": 2.6,
+          "velocity": 61,
+          "timingOffset": 0.008
+        },
+        {
+          "id": "acoustic-note-19",
+          "pitch": 60,
+          "start": 8,
+          "duration": 2.6,
+          "velocity": 67,
+          "timingOffset": 0.016
+        },
+        {
+          "id": "acoustic-note-20",
+          "pitch": 64,
+          "start": 8,
+          "duration": 2.6,
+          "velocity": 64,
+          "timingOffset": 0.024
+        },
+        {
+          "id": "acoustic-note-21",
+          "pitch": 67,
+          "start": 8,
+          "duration": 2.6,
+          "velocity": 58,
+          "timingOffset": 0.032
+        },
+        {
+          "id": "acoustic-note-22",
+          "pitch": 67,
+          "start": 10,
+          "duration": 0.42,
+          "velocity": 65,
+          "timingOffset": 0.01
+        },
+        {
+          "id": "acoustic-note-23",
+          "pitch": 64,
+          "start": 10.5,
+          "duration": 0.42,
+          "velocity": 57,
+          "timingOffset": 0.01
+        },
+        {
+          "id": "acoustic-note-24",
+          "pitch": 60,
+          "start": 11,
+          "duration": 0.42,
+          "velocity": 61,
+          "timingOffset": 0.01
+        },
+        {
+          "id": "acoustic-note-25",
+          "pitch": 43,
+          "start": 12,
+          "duration": 2.6,
+          "velocity": 71
+        },
+        {
+          "id": "acoustic-note-26",
+          "pitch": 50,
+          "start": 12,
+          "duration": 2.6,
+          "velocity": 58,
+          "timingOffset": 0.008
+        },
+        {
+          "id": "acoustic-note-27",
+          "pitch": 55,
+          "start": 12,
+          "duration": 2.6,
+          "velocity": 64,
+          "timingOffset": 0.016
+        },
+        {
+          "id": "acoustic-note-28",
+          "pitch": 59,
+          "start": 12,
+          "duration": 2.6,
+          "velocity": 61,
+          "timingOffset": 0.024
+        },
+        {
+          "id": "acoustic-note-29",
+          "pitch": 62,
+          "start": 12,
+          "duration": 2.6,
+          "velocity": 55,
+          "timingOffset": 0.032
+        },
+        {
+          "id": "acoustic-note-30",
+          "pitch": 62,
+          "start": 14,
+          "duration": 0.42,
+          "velocity": 65,
+          "timingOffset": 0.01
+        },
+        {
+          "id": "acoustic-note-31",
+          "pitch": 59,
+          "start": 14.5,
+          "duration": 0.42,
+          "velocity": 57,
+          "timingOffset": 0.01
+        },
+        {
+          "id": "acoustic-note-32",
+          "pitch": 55,
+          "start": 15,
+          "duration": 0.42,
+          "velocity": 61,
+          "timingOffset": 0.01
+        }
+      ],
+      "clips": [
+        {
+          "id": "acoustic-guitar-clip",
+          "name": "Archtop guitar",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "karoryfer-guitar",
+        "gain": 0.8,
+        "release": 0.45,
+        "cutoff": 18000
+      }
+    }
+  ],
+  "loopRange": {
+    "start": 0,
+    "end": 16
+  },
+  "patterns": []
+}

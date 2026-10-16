@@ -1,0 +1,89 @@
+{
+  "version": "0.26.0",
+  "updatedAt": "2026-10-15T11:55:53.445Z",
+  "delivery": "Local Mac app + V100 loopback SSH model service; no public publishing or Git push",
+  "automatedTests": {
+    "passed": 609,
+    "failed": 0,
+    "newBridgeAndActualArtifactTests": 16,
+    "syntaxPassed": true,
+    "whitespacePassed": true,
+    "automaticTestsMakeNoPaidCalls": true
+  },
+  "localService": {
+    "ok": true,
+    "llmConfigured": true,
+    "remoteBridge": true,
+    "version": "0.26.0"
+  },
+  "remoteStatus": {
+    "ready": true,
+    "provider": {
+      "id": "deepseek",
+      "format": "sprout-score-v1",
+      "thinking": "disabled",
+      "maxOutputTokens": 8192
+    },
+    "checks": {
+      "endpoint": "valid",
+      "model": "valid",
+      "credential": "valid"
+    },
+    "remoteKeyPresent": true
+  },
+  "liveDeepSeek": {
+    "calls": 3,
+    "reportedTokens": 7310,
+    "descriptiveNotes": 62,
+    "explicitNotes": 83,
+    "fluteEditNotes": 11,
+    "fluteEditTotalNotes": 79,
+    "unselectedTracksPreserved": true,
+    "midiRoundTrips": true,
+    "fullInstructionCompliance": false,
+    "paidCallsStopped": true,
+    "evidence": "examples/deepseek-live/summary.json"
+  },
+  "offlineAudio": {
+    "renderer": "node-web-audio-api 2.2.0 prebuilt, app renderWAV and sample library",
+    "mixedWavs": 4,
+    "explicitStems": 8,
+    "allNonSilent": true,
+    "clippedSamples": 0,
+    "hardwareAudioOpened": false,
+    "noRustCompilation": true,
+    "subjectiveListeningPerformed": false
+  },
+  "security": {
+    "keyStaysOnV100": true,
+    "macKeyNotConfigured": true,
+    "loopbackOnlyListeners": true,
+    "sshHostKeyChecking": true,
+    "sshAgentForwarding": false,
+    "secretsExcludedFromSourcePackage": true
+  },
+  "visualQA": {
+    "status": "blocked",
+    "uiAppearanceUnchanged": true,
+    "reason": "Browser policy blocks the current connection-error document. No workaround used."
+  },
+  "designRationale": "DESIGN-DECISIONS.md",
+  "preserved": {
+    "humanMusicWorkspaces": true,
+    "sampleWavs": 84,
+    "allEightInstrumentRoles": true,
+    "noAutoplay": true,
+    "noAutoApply": true
+  },
+  "reviewedDemo": {
+    "modelCalls": 0,
+    "disclosedEdits": 1,
+    "bassPitchFrom": 45,
+    "bassPitchTo": 41,
+    "beat": 4,
+    "existingEditorUsed": true,
+    "exactUndo": true,
+    "measurableBriefChecksPass": true,
+    "notUnmodifiedModelOutput": true
+  }
+}

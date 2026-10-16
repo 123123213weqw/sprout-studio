@@ -1,0 +1,769 @@
+{
+  "version": 3,
+  "id": "acoustic-choir-v29",
+  "name": "Acoustic and choir sketch · authored demo",
+  "style": "lofi",
+  "key": "A minor",
+  "bars": 4,
+  "bpm": 94,
+  "swing": 0,
+  "master": 0.8,
+  "seed": 291016,
+  "tracks": [
+    {
+      "id": "library-track-188",
+      "instrument": "keys",
+      "kind": "tonal",
+      "name": "Upright piano",
+      "color": "#b4a0e2",
+      "volume": 0.58,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "library-note-301",
+          "pitch": 57,
+          "start": 0,
+          "duration": 2.8,
+          "velocity": 64
+        },
+        {
+          "id": "library-note-305",
+          "pitch": 60,
+          "start": 0,
+          "duration": 2.8,
+          "velocity": 60,
+          "timingOffset": 0.005
+        },
+        {
+          "id": "library-note-309",
+          "pitch": 64,
+          "start": 0,
+          "duration": 2.8,
+          "velocity": 56,
+          "timingOffset": 0.01
+        },
+        {
+          "id": "library-note-320",
+          "pitch": 53,
+          "start": 4,
+          "duration": 2.8,
+          "velocity": 64
+        },
+        {
+          "id": "library-note-323",
+          "pitch": 57,
+          "start": 4,
+          "duration": 2.8,
+          "velocity": 60,
+          "timingOffset": 0.005
+        },
+        {
+          "id": "library-note-326",
+          "pitch": 60,
+          "start": 4,
+          "duration": 2.8,
+          "velocity": 56,
+          "timingOffset": 0.01
+        },
+        {
+          "id": "library-note-336",
+          "pitch": 55,
+          "start": 8,
+          "duration": 2.8,
+          "velocity": 64
+        },
+        {
+          "id": "library-note-340",
+          "pitch": 60,
+          "start": 8,
+          "duration": 2.8,
+          "velocity": 60,
+          "timingOffset": 0.005
+        },
+        {
+          "id": "library-note-344",
+          "pitch": 64,
+          "start": 8,
+          "duration": 2.8,
+          "velocity": 56,
+          "timingOffset": 0.01
+        },
+        {
+          "id": "library-note-355",
+          "pitch": 55,
+          "start": 12,
+          "duration": 2.8,
+          "velocity": 64
+        },
+        {
+          "id": "library-note-358",
+          "pitch": 59,
+          "start": 12,
+          "duration": 2.8,
+          "velocity": 60,
+          "timingOffset": 0.005
+        },
+        {
+          "id": "library-note-361",
+          "pitch": 62,
+          "start": 12,
+          "duration": 2.8,
+          "velocity": 56,
+          "timingOffset": 0.01
+        }
+      ],
+      "clips": [
+        {
+          "id": "library-track-188-clip",
+          "name": "Upright piano",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "vsco-piano-full",
+        "gain": 0.8,
+        "release": 0.3,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "library-track-189",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "name": "Microphone guitar",
+      "color": "#ed91a1",
+      "volume": 0.5,
+      "pan": -0.2,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "library-note-302",
+          "pitch": 45,
+          "start": 2,
+          "duration": 1.2,
+          "velocity": 65
+        },
+        {
+          "id": "library-note-306",
+          "pitch": 48,
+          "start": 2,
+          "duration": 1.2,
+          "velocity": 60,
+          "timingOffset": 0.012
+        },
+        {
+          "id": "library-note-310",
+          "pitch": 52,
+          "start": 2,
+          "duration": 1.2,
+          "velocity": 55,
+          "timingOffset": 0.024
+        },
+        {
+          "id": "library-note-321",
+          "pitch": 41,
+          "start": 6,
+          "duration": 1.2,
+          "velocity": 65
+        },
+        {
+          "id": "library-note-324",
+          "pitch": 45,
+          "start": 6,
+          "duration": 1.2,
+          "velocity": 60,
+          "timingOffset": 0.012
+        },
+        {
+          "id": "library-note-327",
+          "pitch": 48,
+          "start": 6,
+          "duration": 1.2,
+          "velocity": 55,
+          "timingOffset": 0.024
+        },
+        {
+          "id": "library-note-337",
+          "pitch": 43,
+          "start": 10,
+          "duration": 1.2,
+          "velocity": 65
+        },
+        {
+          "id": "library-note-341",
+          "pitch": 48,
+          "start": 10,
+          "duration": 1.2,
+          "velocity": 60,
+          "timingOffset": 0.012
+        },
+        {
+          "id": "library-note-345",
+          "pitch": 52,
+          "start": 10,
+          "duration": 1.2,
+          "velocity": 55,
+          "timingOffset": 0.024
+        },
+        {
+          "id": "library-note-356",
+          "pitch": 43,
+          "start": 14,
+          "duration": 1.2,
+          "velocity": 65
+        },
+        {
+          "id": "library-note-359",
+          "pitch": 47,
+          "start": 14,
+          "duration": 1.2,
+          "velocity": 60,
+          "timingOffset": 0.012
+        },
+        {
+          "id": "library-note-362",
+          "pitch": 50,
+          "start": 14,
+          "duration": 1.2,
+          "velocity": 55,
+          "timingOffset": 0.024
+        }
+      ],
+      "clips": [
+        {
+          "id": "library-track-189-clip",
+          "name": "Microphone guitar",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "karoryfer-guitar",
+        "gain": 0.8,
+        "release": 0.45,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "library-track-190",
+      "instrument": "bass",
+      "kind": "tonal",
+      "name": "Bowed contrabass",
+      "color": "#77cabb",
+      "volume": 0.46,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "library-note-300",
+          "pitch": 33,
+          "start": 0,
+          "duration": 3.1,
+          "velocity": 72
+        },
+        {
+          "id": "library-note-319",
+          "pitch": 29,
+          "start": 4,
+          "duration": 3.1,
+          "velocity": 72
+        },
+        {
+          "id": "library-note-335",
+          "pitch": 36,
+          "start": 8,
+          "duration": 3.1,
+          "velocity": 72
+        },
+        {
+          "id": "library-note-354",
+          "pitch": 31,
+          "start": 12,
+          "duration": 3.1,
+          "velocity": 72
+        }
+      ],
+      "clips": [
+        {
+          "id": "library-track-190-clip",
+          "name": "Bowed contrabass",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "fluid-043",
+        "gain": 0.85,
+        "release": 0.25,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "library-track-191",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "name": "Marimba",
+      "color": "#ed91a1",
+      "volume": 0.48,
+      "pan": 0.25,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "library-note-313",
+          "pitch": 69,
+          "start": 0.5,
+          "duration": 0.4,
+          "velocity": 68,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-314",
+          "pitch": 72,
+          "start": 1.25,
+          "duration": 0.4,
+          "velocity": 59,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-315",
+          "pitch": 76,
+          "start": 2,
+          "duration": 0.4,
+          "velocity": 63,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-316",
+          "pitch": 69,
+          "start": 2.75,
+          "duration": 0.4,
+          "velocity": 55,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-329",
+          "pitch": 65,
+          "start": 4.5,
+          "duration": 0.4,
+          "velocity": 68,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-330",
+          "pitch": 69,
+          "start": 5.25,
+          "duration": 0.4,
+          "velocity": 59,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-331",
+          "pitch": 72,
+          "start": 6,
+          "duration": 0.4,
+          "velocity": 63,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-332",
+          "pitch": 65,
+          "start": 6.75,
+          "duration": 0.4,
+          "velocity": 55,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-348",
+          "pitch": 67,
+          "start": 8.5,
+          "duration": 0.4,
+          "velocity": 68,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-349",
+          "pitch": 72,
+          "start": 9.25,
+          "duration": 0.4,
+          "velocity": 59,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-350",
+          "pitch": 76,
+          "start": 10,
+          "duration": 0.4,
+          "velocity": 63,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-351",
+          "pitch": 67,
+          "start": 10.75,
+          "duration": 0.4,
+          "velocity": 55,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-364",
+          "pitch": 67,
+          "start": 12.5,
+          "duration": 0.4,
+          "velocity": 68,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-365",
+          "pitch": 71,
+          "start": 13.25,
+          "duration": 0.4,
+          "velocity": 59,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-366",
+          "pitch": 74,
+          "start": 14,
+          "duration": 0.4,
+          "velocity": 63,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-367",
+          "pitch": 67,
+          "start": 14.75,
+          "duration": 0.4,
+          "velocity": 55,
+          "timingOffset": 0.004
+        }
+      ],
+      "clips": [
+        {
+          "id": "library-track-191-clip",
+          "name": "Marimba",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "fluid-012",
+        "gain": 0.85,
+        "release": 0.35,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "library-track-192",
+      "instrument": "pad",
+      "kind": "tonal",
+      "name": "Ahh choir",
+      "color": "#86bdca",
+      "volume": 0.3,
+      "pan": -0.08,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "library-note-303",
+          "pitch": 57,
+          "start": 0,
+          "duration": 3.5,
+          "velocity": 60
+        },
+        {
+          "id": "library-note-307",
+          "pitch": 60,
+          "start": 0,
+          "duration": 3.5,
+          "velocity": 56
+        },
+        {
+          "id": "library-note-311",
+          "pitch": 64,
+          "start": 0,
+          "duration": 3.5,
+          "velocity": 52
+        },
+        {
+          "id": "library-note-322",
+          "pitch": 53,
+          "start": 4,
+          "duration": 3.5,
+          "velocity": 60
+        },
+        {
+          "id": "library-note-325",
+          "pitch": 57,
+          "start": 4,
+          "duration": 3.5,
+          "velocity": 56
+        },
+        {
+          "id": "library-note-328",
+          "pitch": 60,
+          "start": 4,
+          "duration": 3.5,
+          "velocity": 52
+        },
+        {
+          "id": "library-note-338",
+          "pitch": 55,
+          "start": 8,
+          "duration": 3.5,
+          "velocity": 60
+        },
+        {
+          "id": "library-note-342",
+          "pitch": 60,
+          "start": 8,
+          "duration": 3.5,
+          "velocity": 56
+        },
+        {
+          "id": "library-note-346",
+          "pitch": 64,
+          "start": 8,
+          "duration": 3.5,
+          "velocity": 52
+        },
+        {
+          "id": "library-note-357",
+          "pitch": 55,
+          "start": 12,
+          "duration": 3.5,
+          "velocity": 60
+        },
+        {
+          "id": "library-note-360",
+          "pitch": 59,
+          "start": 12,
+          "duration": 3.5,
+          "velocity": 56
+        },
+        {
+          "id": "library-note-363",
+          "pitch": 62,
+          "start": 12,
+          "duration": 3.5,
+          "velocity": 52
+        }
+      ],
+      "clips": [
+        {
+          "id": "library-track-192-clip",
+          "name": "Ahh choir",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "fluid-052",
+        "gain": 0.75,
+        "release": 0.5,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "library-track-193",
+      "instrument": "lead",
+      "kind": "tonal",
+      "name": "Clarinet",
+      "color": "#84afe2",
+      "volume": 0.48,
+      "pan": 0.15,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "library-note-317",
+          "pitch": 76,
+          "start": 0.5,
+          "duration": 1.1,
+          "velocity": 70
+        },
+        {
+          "id": "library-note-318",
+          "pitch": 72,
+          "start": 2,
+          "duration": 1.2,
+          "velocity": 64,
+          "timingOffset": 0.008
+        },
+        {
+          "id": "library-note-352",
+          "pitch": 76,
+          "start": 8.5,
+          "duration": 1.1,
+          "velocity": 70
+        },
+        {
+          "id": "library-note-353",
+          "pitch": 72,
+          "start": 10,
+          "duration": 1.2,
+          "velocity": 64,
+          "timingOffset": 0.008
+        }
+      ],
+      "clips": [
+        {
+          "id": "library-track-193-clip",
+          "name": "Clarinet",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "vsco-clarinet",
+        "gain": 0.7,
+        "release": 0.2,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "library-track-194",
+      "instrument": "lead",
+      "kind": "tonal",
+      "name": "Trumpet phrase",
+      "color": "#84afe2",
+      "volume": 0.35,
+      "pan": -0.15,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "library-note-333",
+          "pitch": 72,
+          "start": 4.5,
+          "duration": 1.1,
+          "velocity": 70
+        },
+        {
+          "id": "library-note-334",
+          "pitch": 69,
+          "start": 6,
+          "duration": 1.2,
+          "velocity": 64,
+          "timingOffset": 0.008
+        },
+        {
+          "id": "library-note-368",
+          "pitch": 74,
+          "start": 12.5,
+          "duration": 1.1,
+          "velocity": 70
+        },
+        {
+          "id": "library-note-369",
+          "pitch": 71,
+          "start": 14,
+          "duration": 1.2,
+          "velocity": 64,
+          "timingOffset": 0.008
+        }
+      ],
+      "clips": [
+        {
+          "id": "library-track-194-clip",
+          "name": "Trumpet phrase",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "fluid-056",
+        "gain": 0.75,
+        "release": 0.35,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "library-track-195",
+      "instrument": "pad",
+      "kind": "tonal",
+      "name": "Strings",
+      "color": "#86bdca",
+      "volume": 0.27,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "library-note-304",
+          "pitch": 69,
+          "start": 0,
+          "duration": 3.6,
+          "velocity": 50
+        },
+        {
+          "id": "library-note-308",
+          "pitch": 72,
+          "start": 0,
+          "duration": 3.6,
+          "velocity": 47
+        },
+        {
+          "id": "library-note-312",
+          "pitch": 76,
+          "start": 0,
+          "duration": 3.6,
+          "velocity": 44
+        },
+        {
+          "id": "library-note-339",
+          "pitch": 67,
+          "start": 8,
+          "duration": 3.6,
+          "velocity": 50
+        },
+        {
+          "id": "library-note-343",
+          "pitch": 72,
+          "start": 8,
+          "duration": 3.6,
+          "velocity": 47
+        },
+        {
+          "id": "library-note-347",
+          "pitch": 76,
+          "start": 8,
+          "duration": 3.6,
+          "velocity": 44
+        }
+      ],
+      "clips": [
+        {
+          "id": "library-track-195-clip",
+          "name": "Strings",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "fluid-048",
+        "gain": 0.75,
+        "release": 0.5,
+        "cutoff": 18000
+      }
+    }
+  ],
+  "loopRange": {
+    "start": 0,
+    "end": 16
+  },
+  "patterns": []
+}

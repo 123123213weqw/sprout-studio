@@ -1,0 +1,75 @@
+{
+  "status": "passed-structural-checks",
+  "testedAt": "2026-10-15T11:46:25.747Z",
+  "calls": 1,
+  "brief": "explicit",
+  "receipt": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "elapsedMs": 5572,
+    "usage": {
+      "prompt_tokens": 1672,
+      "completion_tokens": 1202,
+      "total_tokens": 2874
+    },
+    "format": "sprout-score-v1",
+    "verified": "validated-notes",
+    "quality": "not-rated",
+    "requestId": "1c1285c2-7dcc-4aec-9c9d-d362c33c23f4",
+    "maxOutputTokens": 8192
+  },
+  "checks": {
+    "inputUnchanged": true,
+    "tracks": 8,
+    "notes": 83,
+    "midiNotes": 83,
+    "sampledTracks": 8,
+    "allRolesHaveNotes": true,
+    "settingsPreserved": true
+  },
+  "musicalInstructions": {
+    "harmony": [
+      {
+        "bar": 1,
+        "chord": "Am",
+        "pianoTriad": true,
+        "bassRoot": true
+      },
+      {
+        "bar": 2,
+        "chord": "F",
+        "pianoTriad": true,
+        "bassRoot": false
+      },
+      {
+        "bar": 3,
+        "chord": "C",
+        "pianoTriad": true,
+        "bassRoot": true
+      },
+      {
+        "bar": 4,
+        "chord": "G",
+        "pianoTriad": true,
+        "bassRoot": true
+      }
+    ],
+    "hiHat": {
+      "expected": 32,
+      "actual": 32,
+      "missingOnsets": [],
+      "extraOnsets": [],
+      "eighthNotes": true
+    },
+    "key": {
+      "name": "A minor",
+      "melodicNotes": 43,
+      "outOfKey": 0
+    },
+    "allRolesHaveNotes": true,
+    "matchesExplicitBrief": false,
+    "quality": "Not a listening test, style assessment, originality check or artistic-quality score."
+  },
+  "summary": "A four-bar A-minor lofi chamber loop at 86 BPM. Piano states each bar's triad at the downbeat over bass roots A, F, C, G, with restrained kick/snare and exactly 32 quiet eighth-note hats. The flute introduces a short A–C–E motif, answers it with a varied phrase ending before beat 16, while cello and harp add sparse harmonic color. It ends on G and loops back to Am without a final tonic cadence.",
+  "audio": "Not rendered or listened to by this CLI. Validate WAV playback in the app; structural checks are not a musical-quality verdict."
+}

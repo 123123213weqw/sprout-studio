@@ -1,0 +1,25 @@
+{
+  "renderer": "node-web-audio-api 2.2.0 prebuilt macOS arm64; app renderWAV + sample library, no hardware AudioContext",
+  "mix": {
+    "frames": 576952,
+    "sampleRate": 44100,
+    "channels": 2,
+    "seconds": 13.08281179138322,
+    "peak": 0.249114990234375,
+    "rms": 0.031377084983477216,
+    "clippedSamples": 0,
+    "nonzeroSamples": 1079548,
+    "sha256": "4804a521631e49dcc820ff3041e62848309a894b0a1bf850de96e4023dc5da61"
+  },
+  "stems": [],
+  "inputUnchanged": true,
+  "notListeningVerdict": true,
+  "samples": {
+    "loaded": 79,
+    "pending": 0,
+    "pcmBytes": 68334836,
+    "voices": 95,
+    "lastAsset": "kit-hat",
+    "lastError": null
+  }
+}

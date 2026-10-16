@@ -1,0 +1,1309 @@
+{
+  "version": 3,
+  "id": "cddd69e6-9b53-4436-a482-c5530a6fee4b",
+  "name": "午夜漫游",
+  "style": "lofi",
+  "key": "A minor",
+  "bars": 16,
+  "bpm": 86,
+  "swing": 12,
+  "master": 0.75,
+  "seed": 20261010,
+  "tracks": [
+    {
+      "id": "fc9a6954-7230-4c17-beb6-57113501a2bd",
+      "instrument": "kick",
+      "kind": "drum",
+      "name": "底鼓",
+      "color": "#eda96b",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "a75280eb-10aa-4a1d-841b-cfe1c63a6767",
+          "pitch": 36,
+          "start": 0,
+          "duration": 0.13,
+          "velocity": 95,
+          "timingOffset": 0.0035
+        },
+        {
+          "id": "05a8a71a-dffd-4ace-8556-552a625bc9b1",
+          "pitch": 36,
+          "start": 4,
+          "duration": 0.13,
+          "velocity": 99,
+          "timingOffset": -0.0054
+        },
+        {
+          "id": "333fcbb8-f224-463b-880b-fe83ca3595d2",
+          "pitch": 36,
+          "start": 8,
+          "duration": 0.13,
+          "velocity": 92,
+          "timingOffset": 0
+        },
+        {
+          "id": "e0670972-c03f-4636-9e77-095d435a6724",
+          "pitch": 36,
+          "start": 12,
+          "duration": 0.13,
+          "velocity": 88,
+          "timingOffset": -0.0066
+        },
+        {
+          "id": "85b42611-9bb7-40d0-ab98-d92a8e3f5e56",
+          "pitch": 36,
+          "start": 16,
+          "duration": 0.13,
+          "velocity": 98,
+          "timingOffset": 0
+        },
+        {
+          "id": "8d7f0dd3-acde-4a47-895b-4c81138bb3a2",
+          "pitch": 36,
+          "start": 20,
+          "duration": 0.13,
+          "velocity": 88,
+          "timingOffset": 0.0007
+        },
+        {
+          "id": "712c30e7-9422-4ef3-9a93-0f62d309e9d3",
+          "pitch": 36,
+          "start": 24,
+          "duration": 0.13,
+          "velocity": 99,
+          "timingOffset": 0
+        },
+        {
+          "id": "10482276-3ede-4782-a0fd-e561c9bd7b7a",
+          "pitch": 36,
+          "start": 28,
+          "duration": 0.13,
+          "velocity": 87,
+          "timingOffset": -0.004
+        }
+      ],
+      "clips": [
+        {
+          "id": "239eda81-17d6-464d-923f-c25392924397",
+          "name": "底鼓",
+          "start": 0,
+          "length": 32,
+          "muted": false
+        }
+      ]
+    },
+    {
+      "id": "16be78e4-7d60-4204-acd7-1c5eb2f5ab90",
+      "instrument": "snare",
+      "kind": "drum",
+      "name": "军鼓",
+      "color": "#e8bc80",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "cc3ff4b0-eba0-4a1c-b323-fcef257fb411",
+          "pitch": 38,
+          "start": 1,
+          "duration": 0.14,
+          "velocity": 80,
+          "timingOffset": 0.0048
+        },
+        {
+          "id": "0f914a08-974d-4f8a-b5c7-5b1ed9ddc151",
+          "pitch": 38,
+          "start": 5,
+          "duration": 0.14,
+          "velocity": 87,
+          "timingOffset": -0.0069
+        },
+        {
+          "id": "a6534dbc-cd5b-4e43-a846-fe02bcb55b24",
+          "pitch": 38,
+          "start": 7,
+          "duration": 0.14,
+          "velocity": 76,
+          "timingOffset": 0.0053
+        },
+        {
+          "id": "837e8500-fca1-4b38-9b56-96be801c725d",
+          "pitch": 38,
+          "start": 9,
+          "duration": 0.14,
+          "velocity": 78,
+          "timingOffset": 0
+        },
+        {
+          "id": "24fd6c3f-8efb-48e3-b61d-8054d0304ce3",
+          "pitch": 38,
+          "start": 11,
+          "duration": 0.14,
+          "velocity": 78,
+          "timingOffset": -0.0064
+        },
+        {
+          "id": "b5c6096b-8edb-4189-a2d1-8e66f5337d99",
+          "pitch": 38,
+          "start": 13,
+          "duration": 0.14,
+          "velocity": 82,
+          "timingOffset": 0.0007
+        },
+        {
+          "id": "e7e56e39-77ee-4ab3-81c6-e23ea75ac76e",
+          "pitch": 38,
+          "start": 17,
+          "duration": 0.14,
+          "velocity": 86,
+          "timingOffset": 0.0017
+        },
+        {
+          "id": "7f179bfa-8c78-428f-81f7-d1ca5f98e430",
+          "pitch": 38,
+          "start": 21,
+          "duration": 0.14,
+          "velocity": 87,
+          "timingOffset": 0
+        },
+        {
+          "id": "68cad424-429d-49da-8bf2-1a147b994ede",
+          "pitch": 38,
+          "start": 23,
+          "duration": 0.14,
+          "velocity": 88,
+          "timingOffset": -0.0014
+        },
+        {
+          "id": "a137e068-c0fb-4d03-91ac-a1b82d26961f",
+          "pitch": 38,
+          "start": 25,
+          "duration": 0.14,
+          "velocity": 85,
+          "timingOffset": 0.0069
+        },
+        {
+          "id": "bcb61a32-e7a2-4bc7-97e7-d775b8e2fb97",
+          "pitch": 38,
+          "start": 29,
+          "duration": 0.14,
+          "velocity": 85,
+          "timingOffset": 0.0071
+        },
+        {
+          "id": "69730902-7d17-43a5-8b67-929307181506",
+          "pitch": 38,
+          "start": 31,
+          "duration": 0.14,
+          "velocity": 82,
+          "timingOffset": 0.0037
+        }
+      ],
+      "clips": [
+        {
+          "id": "a6c9bf98-e52e-4c97-84e3-7ef1559263c1",
+          "name": "军鼓",
+          "start": 0,
+          "length": 32,
+          "muted": false
+        }
+      ],
+      "sound": {
+        "decay": 0.152,
+        "tone": 2160,
+        "body": 0.2
+      }
+    },
+    {
+      "id": "eb4488f5-4b42-47df-83a5-4868d6c78069",
+      "instrument": "hat",
+      "kind": "drum",
+      "name": "踩镲",
+      "color": "#d6d995",
+      "volume": 0.45,
+      "pan": 0.18,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "081d866a-b2fa-47e1-9ca6-1fabb5acd465",
+          "pitch": 42,
+          "start": 0,
+          "duration": 0.08,
+          "velocity": 66,
+          "timingOffset": 0.0054
+        },
+        {
+          "id": "e4adf399-bd04-4665-abff-756828f6f20d",
+          "pitch": 42,
+          "start": 0.5,
+          "duration": 0.08,
+          "velocity": 40,
+          "timingOffset": 0.0001
+        },
+        {
+          "id": "c361ed22-1782-4ecd-a29a-64bd54ec5a8a",
+          "pitch": 42,
+          "start": 1,
+          "duration": 0.08,
+          "velocity": 53,
+          "timingOffset": -0.0041
+        },
+        {
+          "id": "8bfa85b3-7e45-444b-8ca7-9da93faf4fd2",
+          "pitch": 42,
+          "start": 4,
+          "duration": 0.08,
+          "velocity": 61,
+          "timingOffset": 0.0027
+        },
+        {
+          "id": "f098775c-a9d7-4379-aad9-af736ab19d64",
+          "pitch": 42,
+          "start": 6,
+          "duration": 0.08,
+          "velocity": 67,
+          "timingOffset": -0.0017
+        },
+        {
+          "id": "d8a9eb96-138d-4f3c-870c-2e763ddad65f",
+          "pitch": 42,
+          "start": 8,
+          "duration": 0.08,
+          "velocity": 58,
+          "timingOffset": 0
+        },
+        {
+          "id": "033dbe32-46d1-465a-87f3-8503c97a81d1",
+          "pitch": 42,
+          "start": 9.5,
+          "duration": 0.08,
+          "velocity": 39,
+          "timingOffset": -0.0052
+        },
+        {
+          "id": "4a15eb6b-9cb6-4231-828a-6c217524aa03",
+          "pitch": 42,
+          "start": 12,
+          "duration": 0.08,
+          "velocity": 57,
+          "timingOffset": 0.0044
+        },
+        {
+          "id": "fa76a267-78d7-4270-b2ad-747b98e2d11a",
+          "pitch": 42,
+          "start": 14,
+          "duration": 0.08,
+          "velocity": 58,
+          "timingOffset": -0.0019
+        },
+        {
+          "id": "52b0e4b7-4c52-46ce-99c8-a252cb1b081a",
+          "pitch": 42,
+          "start": 16,
+          "duration": 0.08,
+          "velocity": 55,
+          "timingOffset": 0.0059
+        },
+        {
+          "id": "e708e4b6-33b4-44d5-8c61-93b7052359e6",
+          "pitch": 42,
+          "start": 16.5,
+          "duration": 0.08,
+          "velocity": 40,
+          "timingOffset": 0.0079
+        },
+        {
+          "id": "85d36f7a-a0aa-4ea6-bc9a-2025947773a9",
+          "pitch": 42,
+          "start": 17.5,
+          "duration": 0.08,
+          "velocity": 34,
+          "timingOffset": 0.0061
+        },
+        {
+          "id": "fd6f73ac-4761-4bc0-bfcd-06e5d58761d8",
+          "pitch": 42,
+          "start": 18.5,
+          "duration": 0.08,
+          "velocity": 44,
+          "timingOffset": -0.0048
+        },
+        {
+          "id": "7ae86f44-e410-4c71-aaa9-2228a166f95f",
+          "pitch": 42,
+          "start": 20,
+          "duration": 0.08,
+          "velocity": 54,
+          "timingOffset": 0.0023
+        },
+        {
+          "id": "0a7a8fed-355f-4462-abf5-cbcb461589d2",
+          "pitch": 42,
+          "start": 21.5,
+          "duration": 0.08,
+          "velocity": 37,
+          "timingOffset": -0.0018
+        },
+        {
+          "id": "34b9e571-165c-4f28-80bd-95f9fc1166d7",
+          "pitch": 42,
+          "start": 23.5,
+          "duration": 0.08,
+          "velocity": 38,
+          "timingOffset": 0.0068
+        },
+        {
+          "id": "4f38bf1f-7dbf-400d-a973-d39b3c7e356b",
+          "pitch": 42,
+          "start": 24,
+          "duration": 0.08,
+          "velocity": 63,
+          "timingOffset": 0
+        },
+        {
+          "id": "f59f45c4-764e-4852-bfe1-d43cdeabc78e",
+          "pitch": 42,
+          "start": 28,
+          "duration": 0.08,
+          "velocity": 63,
+          "timingOffset": 0.0078
+        }
+      ],
+      "clips": [
+        {
+          "id": "dbfd16a3-0f5c-4be8-ba63-aabf3e108ded",
+          "name": "踩镲",
+          "start": 0,
+          "length": 32,
+          "muted": false
+        }
+      ]
+    },
+    {
+      "id": "aa5b5cf2-51e4-4d37-ab55-78857798d27e",
+      "instrument": "bass",
+      "kind": "tonal",
+      "name": "温暖贝斯",
+      "color": "#77cabb",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "d792ca7d-505c-439b-a4fd-bac0ab79bf5c",
+          "pitch": 45,
+          "start": 0,
+          "duration": 3.5,
+          "velocity": 73,
+          "timingOffset": 0.0073
+        },
+        {
+          "id": "dfe7a434-86a9-441c-af03-9ce1eaea2985",
+          "pitch": 45,
+          "start": 4,
+          "duration": 3.5,
+          "velocity": 72,
+          "timingOffset": 0.0018
+        },
+        {
+          "id": "f4972824-01e5-409b-a0aa-d7de41a4ddcc",
+          "pitch": 53,
+          "start": 8,
+          "duration": 3.5,
+          "velocity": 74,
+          "timingOffset": 0
+        },
+        {
+          "id": "0406681a-4474-4bb4-8c32-32e7178f2867",
+          "pitch": 53,
+          "start": 12,
+          "duration": 3.5,
+          "velocity": 69,
+          "timingOffset": -0.0061
+        },
+        {
+          "id": "f3761ad9-a5a1-443b-ade4-3ea9c3a90c3e",
+          "pitch": 48,
+          "start": 16,
+          "duration": 3.5,
+          "velocity": 74,
+          "timingOffset": 0.0033
+        },
+        {
+          "id": "b731b647-48bc-4578-9b4f-fe39360373dd",
+          "pitch": 48,
+          "start": 20,
+          "duration": 3.5,
+          "velocity": 74,
+          "timingOffset": 0.0064
+        },
+        {
+          "id": "1edd147a-ac10-4a40-9967-a89922d1e9c5",
+          "pitch": 55,
+          "start": 24,
+          "duration": 3.5,
+          "velocity": 75,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "274694ad-4aee-4f0e-b56e-2fc8fa548abf",
+          "pitch": 55,
+          "start": 28,
+          "duration": 3.5,
+          "velocity": 71,
+          "timingOffset": 0.0023
+        }
+      ],
+      "clips": [
+        {
+          "id": "905c8e4f-8140-47f0-85a9-4dd542ee131c",
+          "name": "温暖贝斯",
+          "start": 0,
+          "length": 32,
+          "muted": false
+        }
+      ]
+    },
+    {
+      "id": "9080d165-7b4f-46c4-a4d1-4bb222232ee7",
+      "instrument": "keys",
+      "kind": "tonal",
+      "name": "柔和电钢琴",
+      "color": "#b4a0e2",
+      "volume": 0.62,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "d718f3fb-0b9d-4094-b11c-ae1ce4105dae",
+          "pitch": 57,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 55,
+          "timingOffset": 0.0001
+        },
+        {
+          "id": "10d22a18-d493-4783-a400-82ba9a18c3c8",
+          "pitch": 60,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 55,
+          "timingOffset": 0.0001
+        },
+        {
+          "id": "b3374a24-39c1-42b4-85ae-f17ba23334d9",
+          "pitch": 64,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 47,
+          "timingOffset": 0.0001
+        },
+        {
+          "id": "09213da0-46ad-4bce-bdb1-7bbc6699f14d",
+          "pitch": 57,
+          "start": 4,
+          "duration": 2.1,
+          "velocity": 59,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "8aff5d1b-5a20-4173-abd8-2200e58de5b6",
+          "pitch": 60,
+          "start": 4,
+          "duration": 2.1,
+          "velocity": 54,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "92997c8d-b2e9-4a5d-aa83-de38a949141e",
+          "pitch": 64,
+          "start": 4,
+          "duration": 2.1,
+          "velocity": 45,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "a0e07dfd-d81b-419f-a2df-1d38959b1f31",
+          "pitch": 57,
+          "start": 8,
+          "duration": 2.1,
+          "velocity": 51,
+          "timingOffset": 0
+        },
+        {
+          "id": "09f858d2-422c-4d52-8ae7-3b01e83ebb16",
+          "pitch": 60,
+          "start": 8,
+          "duration": 2.1,
+          "velocity": 54,
+          "timingOffset": 0
+        },
+        {
+          "id": "feb3bc5a-1aff-4aba-8f6d-9e45e78e71e4",
+          "pitch": 65,
+          "start": 8,
+          "duration": 2.1,
+          "velocity": 47,
+          "timingOffset": 0
+        },
+        {
+          "id": "3f3c94ca-639f-40d5-a949-24ddd95c5c9a",
+          "pitch": 57,
+          "start": 12,
+          "duration": 2.1,
+          "velocity": 53,
+          "timingOffset": -0.0039
+        },
+        {
+          "id": "c633c6b1-7446-4482-badf-19eec4be22a0",
+          "pitch": 60,
+          "start": 12,
+          "duration": 2.1,
+          "velocity": 55,
+          "timingOffset": -0.0039
+        },
+        {
+          "id": "51f9e9ce-ebc3-43f0-944e-636f557d0e63",
+          "pitch": 65,
+          "start": 12,
+          "duration": 2.1,
+          "velocity": 48,
+          "timingOffset": -0.0039
+        },
+        {
+          "id": "0385ad63-93d4-4c3a-9326-29b56d81dd24",
+          "pitch": 55,
+          "start": 16,
+          "duration": 2.1,
+          "velocity": 56,
+          "timingOffset": 0.0061
+        },
+        {
+          "id": "ab128b89-f662-435e-b28d-af13b0ebca4c",
+          "pitch": 60,
+          "start": 16,
+          "duration": 2.1,
+          "velocity": 51,
+          "timingOffset": 0.0061
+        },
+        {
+          "id": "fbabb9a0-feba-41d3-9a73-d9e8f3ea67be",
+          "pitch": 64,
+          "start": 16,
+          "duration": 2.1,
+          "velocity": 53,
+          "timingOffset": 0.0061
+        },
+        {
+          "id": "abb2eadb-79fe-4cba-bee1-352ff3d75aee",
+          "pitch": 55,
+          "start": 20,
+          "duration": 2.1,
+          "velocity": 58,
+          "timingOffset": 0.0065
+        },
+        {
+          "id": "9e4ce80e-c88d-4989-b0d0-ee80962bdd84",
+          "pitch": 60,
+          "start": 20,
+          "duration": 2.1,
+          "velocity": 53,
+          "timingOffset": 0.0065
+        },
+        {
+          "id": "e30d37b4-be5a-47fc-94b3-4f68147e9402",
+          "pitch": 64,
+          "start": 20,
+          "duration": 2.1,
+          "velocity": 49,
+          "timingOffset": 0.0065
+        },
+        {
+          "id": "e00a7fad-44d4-4cd9-8180-9c2646876d80",
+          "pitch": 55,
+          "start": 24,
+          "duration": 2.1,
+          "velocity": 53,
+          "timingOffset": 0
+        },
+        {
+          "id": "00b4f722-0d63-417f-b70b-7e50c8e5aa3f",
+          "pitch": 59,
+          "start": 24,
+          "duration": 2.1,
+          "velocity": 53,
+          "timingOffset": 0
+        },
+        {
+          "id": "b34f46fa-7f5f-48c5-9bc6-f14ee82022a1",
+          "pitch": 62,
+          "start": 24,
+          "duration": 2.1,
+          "velocity": 52,
+          "timingOffset": 0
+        },
+        {
+          "id": "a3ef6a32-421c-480d-9b8d-e5f79590ac65",
+          "pitch": 55,
+          "start": 28,
+          "duration": 2.1,
+          "velocity": 59,
+          "timingOffset": -0.004
+        },
+        {
+          "id": "5302e609-150f-4884-b0ea-aee1c244a572",
+          "pitch": 59,
+          "start": 28,
+          "duration": 2.1,
+          "velocity": 55,
+          "timingOffset": -0.004
+        },
+        {
+          "id": "e2dc4ebc-5cf5-4b9f-a06e-c2e3b270aad9",
+          "pitch": 62,
+          "start": 28,
+          "duration": 2.1,
+          "velocity": 53,
+          "timingOffset": -0.004
+        },
+        {
+          "id": "7ec519eb-272e-4342-b85f-fc758f5e028d",
+          "pitch": 57,
+          "start": 32,
+          "duration": 2.1,
+          "velocity": 59,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "94b8ff7e-cdcc-4acd-b757-19d05b17790e",
+          "pitch": 60,
+          "start": 32,
+          "duration": 2.1,
+          "velocity": 54,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "44049624-ab45-484a-b6eb-98e121681e95",
+          "pitch": 64,
+          "start": 32,
+          "duration": 2.1,
+          "velocity": 45,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "eb1799b1-9db8-4be8-93ad-fa1972680b41",
+          "pitch": 57,
+          "start": 36,
+          "duration": 2.1,
+          "velocity": 59,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "a9ddf4bf-2a4a-467d-9867-3432a9f90d49",
+          "pitch": 60,
+          "start": 36,
+          "duration": 2.1,
+          "velocity": 54,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "ad528a4d-d661-47ad-88e1-4889db017eee",
+          "pitch": 64,
+          "start": 36,
+          "duration": 2.1,
+          "velocity": 45,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "link_5a3ca3c52dc4be4a",
+          "pitch": 57,
+          "start": 40,
+          "duration": 2.1,
+          "velocity": 90,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "link_1e2ae0e83b77be38",
+          "pitch": 60,
+          "start": 40,
+          "duration": 2.1,
+          "velocity": 90,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "link_0fd536c834b12c1a",
+          "pitch": 64,
+          "start": 40,
+          "duration": 2.1,
+          "velocity": 90,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "link_71983a201a463d43",
+          "pitch": 57,
+          "start": 44,
+          "duration": 2.1,
+          "velocity": 50,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "link_64fa11886ef04095",
+          "pitch": 60,
+          "start": 44,
+          "duration": 2.1,
+          "velocity": 50,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "link_ab48bf38a4e334bb",
+          "pitch": 64,
+          "start": 44,
+          "duration": 2.1,
+          "velocity": 50,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "e15d3478-fbb9-4c9e-84cf-099e4bcb0989",
+          "pitch": 57,
+          "start": 48,
+          "duration": 2.1,
+          "velocity": 90,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "def357f1-d6ab-44e1-abfa-7d31f2427f84",
+          "pitch": 60,
+          "start": 48,
+          "duration": 2.1,
+          "velocity": 90,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "f18b19f1-7035-43e0-bcb3-0476ad52a715",
+          "pitch": 64,
+          "start": 48,
+          "duration": 2.1,
+          "velocity": 90,
+          "timingOffset": 0.0056
+        }
+      ],
+      "clips": [
+        {
+          "id": "88d068aa-47a3-4af8-918e-1b87a5692854",
+          "name": "柔和电钢琴 副本",
+          "start": 0,
+          "length": 4,
+          "muted": true
+        },
+        {
+          "id": "5716c389-037f-4b50-a80f-bf00e21f6127",
+          "name": "柔和电钢琴",
+          "start": 4,
+          "length": 4,
+          "muted": false
+        },
+        {
+          "id": "204cf95d-6273-4bb0-be9a-d9b7f2863613",
+          "name": "柔和电钢琴",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "727c8a31-9e0e-4877-8a3e-2cb170db7353",
+          "name": "柔和电钢琴 · B",
+          "start": 16,
+          "length": 16,
+          "muted": false
+        },
+        {
+          "id": "e122734c-4e17-4e46-ac08-b982498b6771",
+          "name": "柔和电钢琴 · 2",
+          "start": 32,
+          "length": 4,
+          "muted": false
+        },
+        {
+          "id": "b9afd46e-7a45-4e00-b26c-eeeac079ab13",
+          "name": "柔和电钢琴 · 3",
+          "start": 36,
+          "length": 4,
+          "muted": false
+        },
+        {
+          "id": "b7b2f975-c118-44af-a0d0-e03d51e91ebf",
+          "name": "柔和电钢琴 · 4",
+          "start": 40,
+          "length": 4,
+          "muted": false,
+          "patternId": "a9a395ae-b062-434a-8a72-5943e5b0c039"
+        },
+        {
+          "id": "f539c432-106d-4fcc-8f64-68b266040ac8",
+          "name": "午夜和弦 · 共享",
+          "start": 44,
+          "length": 4,
+          "muted": false
+        },
+        {
+          "id": "1fcb8abc-e001-4090-aff2-56065d78233d",
+          "name": "柔和电钢琴 · 4 副本",
+          "start": 48,
+          "length": 4,
+          "muted": false
+        }
+      ],
+      "sound": {
+        "attack": 0.05,
+        "decay": 0.4,
+        "sustain": 0.65,
+        "release": 0.8,
+        "cutoff": 1800,
+        "resonance": 0.5,
+        "waveform": "triangle"
+      }
+    },
+    {
+      "id": "9fd1d9c3-277c-4ca5-bae3-21bfacb294b1",
+      "instrument": "lead",
+      "kind": "tonal",
+      "name": "细碎旋律",
+      "color": "#84afe2",
+      "volume": 0.72,
+      "pan": 0.12,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "daf91627-87cc-4c17-be56-95cd9fb8dd4e",
+          "pitch": 76,
+          "start": 0.5,
+          "duration": 0.45,
+          "velocity": 67,
+          "timingOffset": -0.0057
+        },
+        {
+          "id": "93ecbee2-120d-46d0-bc79-50cb7c8c5e2a",
+          "pitch": 76,
+          "start": 4.5,
+          "duration": 0.45,
+          "velocity": 65,
+          "timingOffset": -0.0058
+        },
+        {
+          "id": "0f811467-d3a8-475c-8334-5f8c537b9e01",
+          "pitch": 72,
+          "start": 6.5,
+          "duration": 0.45,
+          "velocity": 52,
+          "timingOffset": 0.0062
+        },
+        {
+          "id": "ad61d2f9-096d-4a58-bbfb-6b1d434efaf0",
+          "pitch": 81,
+          "start": 8.5,
+          "duration": 0.45,
+          "velocity": 67,
+          "timingOffset": 0.0047
+        },
+        {
+          "id": "0e282e41-f7a7-4e2c-aaca-df63221bd5e0",
+          "pitch": 84,
+          "start": 10.5,
+          "duration": 0.45,
+          "velocity": 56,
+          "timingOffset": -0.0041
+        },
+        {
+          "id": "5832517c-3a9f-40e9-834c-673f1708a953",
+          "pitch": 84,
+          "start": 12.5,
+          "duration": 0.45,
+          "velocity": 58,
+          "timingOffset": -0.007
+        },
+        {
+          "id": "6e496bb4-e8e6-45f1-ad12-53f9ea412fd9",
+          "pitch": 79,
+          "start": 16.5,
+          "duration": 0.45,
+          "velocity": 55,
+          "timingOffset": -0.0072
+        },
+        {
+          "id": "92e1db26-efe7-4332-86b5-e09c8aa1ebb0",
+          "pitch": 76,
+          "start": 18.5,
+          "duration": 0.45,
+          "velocity": 61,
+          "timingOffset": -0.004
+        },
+        {
+          "id": "39beb415-5a30-4a90-bd71-0561b4cfd90d",
+          "pitch": 79,
+          "start": 20.5,
+          "duration": 0.45,
+          "velocity": 64,
+          "timingOffset": 0.0001
+        },
+        {
+          "id": "63160e9e-83ca-4c96-8817-26bbd7940f51",
+          "pitch": 83,
+          "start": 24.5,
+          "duration": 0.45,
+          "velocity": 65,
+          "timingOffset": 0.0074
+        },
+        {
+          "id": "da814da1-4c49-4be8-85f3-78c817cffd0b",
+          "pitch": 86,
+          "start": 28.5,
+          "duration": 0.45,
+          "velocity": 65,
+          "timingOffset": -0.0073
+        }
+      ],
+      "clips": [
+        {
+          "id": "620aed98-ec3b-44c3-8bba-8fbe48916edc",
+          "name": "细碎旋律",
+          "start": 0,
+          "length": 32,
+          "muted": false
+        }
+      ]
+    },
+    {
+      "id": "6aa02cba-cc72-4c14-a7da-371700ad3c6c",
+      "instrument": "pad",
+      "kind": "tonal",
+      "name": "空气铺底",
+      "color": "#86bdca",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "e0d938b2-9113-475e-a4f5-6d33d7d28397",
+          "pitch": 57,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 55,
+          "timingOffset": 0.0001
+        },
+        {
+          "id": "f298b18b-6500-4e7a-8693-e29664f48de3",
+          "pitch": 60,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 55,
+          "timingOffset": 0.0001
+        },
+        {
+          "id": "692be827-f6ce-4cb8-9a7b-3bd51fb0aa20",
+          "pitch": 64,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 47,
+          "timingOffset": 0.0001
+        },
+        {
+          "id": "a251af41-35c5-4085-a291-c814ce53bb9c",
+          "pitch": 57,
+          "start": 4,
+          "duration": 2.1,
+          "velocity": 59,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "661ec11b-90f4-47a8-8dc0-dfb42e4c9ade",
+          "pitch": 60,
+          "start": 4,
+          "duration": 2.1,
+          "velocity": 54,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "6cb90ff6-5ab7-4ab8-ac0c-de393d4218cb",
+          "pitch": 64,
+          "start": 4,
+          "duration": 2.1,
+          "velocity": 45,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "bcac97ac-dccc-4da8-939c-2971b3e68be7",
+          "pitch": 57,
+          "start": 8,
+          "duration": 2.1,
+          "velocity": 51,
+          "timingOffset": 0
+        },
+        {
+          "id": "dd0da299-faec-42ea-9b7d-0de652bd75e7",
+          "pitch": 60,
+          "start": 8,
+          "duration": 2.1,
+          "velocity": 54,
+          "timingOffset": 0
+        },
+        {
+          "id": "ef081bce-85a3-4e85-ae4f-ace9835c7e6d",
+          "pitch": 65,
+          "start": 8,
+          "duration": 2.1,
+          "velocity": 47,
+          "timingOffset": 0
+        },
+        {
+          "id": "5912853d-a4ab-4552-8807-5d27b0a8e1fb",
+          "pitch": 57,
+          "start": 12,
+          "duration": 2.1,
+          "velocity": 53,
+          "timingOffset": -0.0039
+        },
+        {
+          "id": "bf6329b4-a89b-4f95-8573-30a3a7476bef",
+          "pitch": 60,
+          "start": 12,
+          "duration": 2.1,
+          "velocity": 55,
+          "timingOffset": -0.0039
+        },
+        {
+          "id": "8187be10-89ae-4c74-88b5-098c5062f102",
+          "pitch": 65,
+          "start": 12,
+          "duration": 2.1,
+          "velocity": 48,
+          "timingOffset": -0.0039
+        },
+        {
+          "id": "7908311e-c70e-44b6-aa85-9b8c970dea04",
+          "pitch": 55,
+          "start": 16,
+          "duration": 2.1,
+          "velocity": 56,
+          "timingOffset": 0.0061
+        },
+        {
+          "id": "08a23701-1397-4cce-af71-48b657739f7c",
+          "pitch": 60,
+          "start": 16,
+          "duration": 2.1,
+          "velocity": 51,
+          "timingOffset": 0.0061
+        },
+        {
+          "id": "be616f64-36cf-4805-8f88-14a709c602b5",
+          "pitch": 64,
+          "start": 16,
+          "duration": 2.1,
+          "velocity": 53,
+          "timingOffset": 0.0061
+        },
+        {
+          "id": "56c32d22-9023-444a-b579-f6a9754d5d84",
+          "pitch": 55,
+          "start": 20,
+          "duration": 2.1,
+          "velocity": 58,
+          "timingOffset": 0.0065
+        },
+        {
+          "id": "cc22701f-4334-43ae-80c0-11fd15823aff",
+          "pitch": 60,
+          "start": 20,
+          "duration": 2.1,
+          "velocity": 53,
+          "timingOffset": 0.0065
+        },
+        {
+          "id": "452c5995-a0fd-4065-8311-987c31758ab7",
+          "pitch": 64,
+          "start": 20,
+          "duration": 2.1,
+          "velocity": 49,
+          "timingOffset": 0.0065
+        },
+        {
+          "id": "1a2d0381-8e89-464b-b28d-6d1af7d572ce",
+          "pitch": 55,
+          "start": 24,
+          "duration": 2.1,
+          "velocity": 53,
+          "timingOffset": 0
+        },
+        {
+          "id": "a9126cd1-eddd-4711-82d8-cf07fcd057f9",
+          "pitch": 59,
+          "start": 24,
+          "duration": 2.1,
+          "velocity": 53,
+          "timingOffset": 0
+        },
+        {
+          "id": "63483b23-eda8-4e1a-bcac-04f31fb83c1a",
+          "pitch": 62,
+          "start": 24,
+          "duration": 2.1,
+          "velocity": 52,
+          "timingOffset": 0
+        },
+        {
+          "id": "a061df01-2cc8-4409-a771-38e8197529a8",
+          "pitch": 55,
+          "start": 28,
+          "duration": 2.1,
+          "velocity": 59,
+          "timingOffset": -0.004
+        },
+        {
+          "id": "3938dfab-38c7-489d-a69e-4cacb920244c",
+          "pitch": 59,
+          "start": 28,
+          "duration": 2.1,
+          "velocity": 55,
+          "timingOffset": -0.004
+        },
+        {
+          "id": "546bb50f-9ceb-4aa0-be72-409aabe8b0c9",
+          "pitch": 62,
+          "start": 28,
+          "duration": 2.1,
+          "velocity": 53,
+          "timingOffset": -0.004
+        },
+        {
+          "id": "link_550c8ae2160adec2",
+          "pitch": 57,
+          "start": 40,
+          "duration": 2.1,
+          "velocity": 90,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "link_90b4f70d041cc9b0",
+          "pitch": 60,
+          "start": 40,
+          "duration": 2.1,
+          "velocity": 90,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "link_f1bc364928d25782",
+          "pitch": 64,
+          "start": 40,
+          "duration": 2.1,
+          "velocity": 90,
+          "timingOffset": 0.0056
+        }
+      ],
+      "clips": [
+        {
+          "id": "87ecc7b0-a481-4b65-b653-59d0dddc58ef",
+          "name": "空气铺底",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "8684a2a8-b456-4329-abbd-35cbb969127b",
+          "name": "空气铺底",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "674daa0a-992d-4afa-9bc1-07d23d651f19",
+          "name": "空气铺底",
+          "start": 16,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "b52b7e76-4e14-4a6c-b5dc-175b800953fe",
+          "name": "空气铺底",
+          "start": 24,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "bfd33369-e9fc-4f78-aed2-190aed56e096",
+          "name": "午夜和弦 · 共享",
+          "start": 40,
+          "length": 4,
+          "muted": false,
+          "patternId": "a9a395ae-b062-434a-8a72-5943e5b0c039"
+        }
+      ],
+      "sound": {
+        "attack": 0.42,
+        "decay": 0.4,
+        "sustain": 0.65,
+        "release": 2.4,
+        "cutoff": 825,
+        "resonance": 0.5,
+        "waveform": "native"
+      }
+    }
+  ],
+  "composition": {
+    "density": 20,
+    "complexity": 15,
+    "energy": 30,
+    "humanize": 20,
+    "progression": "warm",
+    "voiceLeading": true,
+    "seed": 20261010
+  },
+  "loopRange": {
+    "start": 40,
+    "end": 44
+  },
+  "patterns": [
+    {
+      "id": "a9a395ae-b062-434a-8a72-5943e5b0c039",
+      "name": "午夜和弦 · 共享",
+      "instrument": "keys",
+      "kind": "tonal",
+      "length": 4,
+      "notes": [
+        {
+          "id": "fe347ed3-ec34-4a16-ab68-69480df3651e",
+          "pitch": 57,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 90,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "85d1daa3-89eb-4079-858e-9c00feeec2de",
+          "pitch": 60,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 90,
+          "timingOffset": 0.0056
+        },
+        {
+          "id": "036c75c1-32df-4ca5-972d-83f3e2e1cc1f",
+          "pitch": 64,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 90,
+          "timingOffset": 0.0056
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "summary": "Replaces the selected flute clip with exactly six restrained notes in A minor, tucking a compact rising-falling motif into the second half of bar 3 and the first half of bar 4 while leaving all other tracks, settings and sampled voices untouched.",
+  "tracks": [
+    {
+      "id": "d509ef54-3161-4c46-8917-93d1ed571e1f",
+      "notes": [
+        [
+          69,
+          8,
+          0.5,
+          58
+        ],
+        [
+          72,
+          9,
+          0.5,
+          63
+        ],
+        [
+          76,
+          10,
+          0.5,
+          67
+        ],
+        [
+          74,
+          12,
+          0.5,
+          65
+        ],
+        [
+          72,
+          13,
+          0.5,
+          61
+        ],
+        [
+          69,
+          14,
+          0.5,
+          56
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,439 @@
+{
+  "version": "0.24.0",
+  "updatedAt": "2026-10-13T04:02:08.389165+00:00",
+  "scope": "All eight existing instrument roles have real-recording choices; no effect-chain expansion",
+  "delivery": "Local only, no online publishing or Git push",
+  "automatedTests": {
+    "passed": 570,
+    "failed": 0,
+    "newCore": 18,
+    "newActualFileRegressions": 6,
+    "syntaxPassed": true,
+    "whitespacePassed": true
+  },
+  "localService": {
+    "url": "http://127.0.0.1:4173/",
+    "version": "0.24.0",
+    "llmConfigured": false,
+    "loginRequired": false
+  },
+  "assets": {
+    "count": 84,
+    "presets": 12,
+    "bytes": 35075028,
+    "floatPCMBytes": 70142664,
+    "rawPCMCacheLimit": 96000000,
+    "recommendedRoles": 8,
+    "windAndStringLoopedFiles": 23,
+    "crossfadeFrames": 5292,
+    "loopCrossfadeMs": 120,
+    "newFloatNormalizationBeforePCM16": true,
+    "numericSFZCentersVerified": true,
+    "classicAssetsAndAudioParametersUnchanged": true
+  },
+  "sources": {
+    "vsco": "https://github.com/sgossner/VSCO-2-CE",
+    "audioCommit": "440300901dfe9275fd84e0b7763af1f8443ae62e",
+    "mappingCommit": "6dd651d55dde97fd4028699be9d4481f26917891",
+    "additional": [
+      {
+        "source": "https://github.com/samblenny/web-midi-drumkit",
+        "sourceCommit": "9a23295cb7f3f4611a69acd8e963ea6364658b5f",
+        "license": "CC0-1.0",
+        "credit": "menegass / Freesound, Sonic Pi, samblenny",
+        "originalSources": [
+          "https://freesound.org/people/menegass/sounds/100052/",
+          "https://freesound.org/people/menegass/sounds/100058/",
+          "https://freesound.org/people/menegass/sounds/100059/",
+          "https://freesound.org/people/menegass/sounds/100053/"
+        ]
+      }
+    ],
+    "licensesBundled": true,
+    "upstreamDocumentationLicense": {
+      "file": "dist/samples/licenses/Sonic-Pi-upstream-LICENSE.md",
+      "url": "https://github.com/sonic-pi-net/sonic-pi/blob/dev/LICENSE.md",
+      "sha256": "def8251f2c07e50807ee5486c1891ff8d2ab3478d9b897dd157e12e55e0acacf"
+    }
+  },
+  "ui": {
+    "allSourceButtonsAvailable": true,
+    "bulkApplyPreserved816NotesAnd4References": true,
+    "bulkUndoRedo": true,
+    "addedEmptyHarpThenExplicitlyWrote3Notes": true,
+    "harpPreviewUsedRecordedAsset": true,
+    "staleBulkAfterActualCandidateRefused": true,
+    "undoRestoredAll819NotesAndSources": true,
+    "neutralBulkDisabled": true,
+    "refreshDataExact": true,
+    "desktopViewport": [
+      1280,
+      900
+    ],
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "phoneInstrumentList": {
+      "body": {
+        "bottom": 831,
+        "height": 746,
+        "left": 13,
+        "right": 371,
+        "top": 85,
+        "width": 358,
+        "x": 13,
+        "y": 85
+      },
+      "client": 746,
+      "dialog": {
+        "bottom": 832,
+        "height": 820,
+        "left": 12,
+        "right": 372,
+        "top": 12,
+        "width": 360,
+        "x": 12,
+        "y": 12
+      },
+      "innerHeight": 844,
+      "innerWidth": 390,
+      "scroll": 874,
+      "width": 384
+    },
+    "sourceDialogFooterBottom": 801.8671875,
+    "mobilePageWidth": 384,
+    "noHorizontalOverflow": true,
+    "browserWarningsAndErrors": 0
+  },
+  "beforeExplicitPlay": {
+    "notes": 819,
+    "transport": {
+      "playing": false,
+      "beat": 64,
+      "range": {
+        "start": 64,
+        "end": 96
+      },
+      "loop": true,
+      "quiet": false,
+      "clipPreview": null,
+      "hardwareAudioInitialized": false,
+      "samples": {
+        "loaded": 0,
+        "pending": 0,
+        "pcmBytes": 0,
+        "voices": 0,
+        "lastAsset": null,
+        "lastError": null
+      }
+    }
+  },
+  "live": {
+    "playing": true,
+    "beat": 64.08838888888889,
+    "range": {
+      "start": 64,
+      "end": 96
+    },
+    "loop": true,
+    "quiet": false,
+    "clipPreview": null,
+    "hardwareAudioInitialized": true,
+    "samples": {
+      "loaded": 79,
+      "pending": 0,
+      "pcmBytes": 68334836,
+      "voices": 18,
+      "lastAsset": "cello-G3",
+      "lastError": null
+    }
+  },
+  "afterStop": {
+    "playing": false,
+    "beat": 64,
+    "range": {
+      "start": 64,
+      "end": 96
+    },
+    "loop": true,
+    "quiet": false,
+    "clipPreview": null,
+    "hardwareAudioInitialized": true,
+    "samples": {
+      "loaded": 79,
+      "pending": 0,
+      "pcmBytes": 68334836,
+      "voices": 18,
+      "lastAsset": "cello-G3",
+      "lastError": null
+    }
+  },
+  "sustainOfflineTransport": {
+    "playing": false,
+    "beat": 0,
+    "range": {
+      "start": 0,
+      "end": 16
+    },
+    "loop": true,
+    "quiet": false,
+    "clipPreview": null,
+    "hardwareAudioInitialized": false,
+    "samples": {
+      "loaded": 79,
+      "pending": 0,
+      "pcmBytes": 68334836,
+      "voices": 26,
+      "lastAsset": "kit-hat",
+      "lastError": null
+    }
+  },
+  "finalHandoff": {
+    "url": "http://127.0.0.1:4173/?workspace=a21409ba-6d18-438a-9fcf-8845ce62ad7b",
+    "name": "全真实音色 · 演示副本",
+    "workspace": {
+      "id": "a21409ba-6d18-438a-9fcf-8845ce62ad7b",
+      "switching": false,
+      "libraryAvailable": true,
+      "projects": 9,
+      "lastOpenedId": "a21409ba-6d18-438a-9fcf-8845ce62ad7b"
+    },
+    "notes": 819,
+    "tracks": [
+      {
+        "id": "9385fee3-87b0-48d8-b1c4-ec62c16cb5c3",
+        "instrument": "kick",
+        "sampler": {
+          "preset": "sonic-kick",
+          "gain": 0.85,
+          "release": 0.45,
+          "cutoff": 18000
+        }
+      },
+      {
+        "id": "8e40110e-db03-4b41-8834-023fb4916984",
+        "instrument": "snare",
+        "sampler": {
+          "preset": "sonic-snare",
+          "gain": 0.75,
+          "release": 0.3,
+          "cutoff": 18000
+        }
+      },
+      {
+        "id": "de321b9a-14a5-4872-9467-23e9149860b5",
+        "instrument": "hat",
+        "sampler": {
+          "preset": "sonic-hat",
+          "gain": 0.6,
+          "release": 0.14,
+          "cutoff": 18000
+        }
+      },
+      {
+        "id": "fe5a776a-183b-47d9-b647-9ff68bb23c49",
+        "instrument": "bass",
+        "sampler": {
+          "preset": "vsco-bass",
+          "gain": 0.95,
+          "release": 0.3,
+          "cutoff": 18000
+        }
+      },
+      {
+        "id": "98bf586e-ecab-47a8-87e2-e27332da5b8c",
+        "instrument": "keys",
+        "sampler": {
+          "preset": "vsco-piano-full",
+          "gain": 0.8,
+          "release": 0.3,
+          "cutoff": 18000
+        }
+      },
+      {
+        "id": "eee2b713-a85d-4f44-ae12-51a837b30d22",
+        "instrument": "lead",
+        "sampler": {
+          "preset": "vsco-flute",
+          "gain": 0.7,
+          "release": 0.18,
+          "cutoff": 18000
+        }
+      },
+      {
+        "id": "6bd46b3f-ed4d-4004-9ef2-eecb96f273f6",
+        "instrument": "pad",
+        "sampler": {
+          "preset": "vsco-cello",
+          "gain": 0.6,
+          "release": 0.9,
+          "cutoff": 18000
+        }
+      },
+      {
+        "id": "aa664f29-fbc4-4399-882b-faf10048ad74",
+        "instrument": "pluck",
+        "sampler": {
+          "preset": "vsco-harp",
+          "gain": 0.8,
+          "release": 0.8,
+          "cutoff": 18000
+        }
+      }
+    ],
+    "patterns": [
+      {
+        "id": "89d250ca-0c10-4ae3-8916-0b8b782f8b23",
+        "name": "柔和电钢琴",
+        "instrument": "keys",
+        "length": 8,
+        "notes": 16,
+        "instances": 4
+      }
+    ],
+    "transport": {
+      "playing": false,
+      "beat": 64,
+      "range": {
+        "start": 64,
+        "end": 96
+      },
+      "loop": true,
+      "quiet": false,
+      "clipPreview": null,
+      "hardwareAudioInitialized": false,
+      "samples": {
+        "loaded": 0,
+        "pending": 0,
+        "pcmBytes": 0,
+        "voices": 0,
+        "lastAsset": null,
+        "lastError": null
+      }
+    }
+  },
+  "wav": {
+    "real-instruments-region.wav": {
+      "channels": 2,
+      "rate": 44100,
+      "bits": 16,
+      "frames": 1069231,
+      "seconds": 24.245600907029477,
+      "peak": 0.323394775390625,
+      "rms": 0.047017777462771894,
+      "clippedSamples": 0,
+      "sevenToNineSecondsRms": 0.04672415031093807,
+      "bytes": 4276968,
+      "sha256": "2313819352b28cce7528045dd1c2ffaf40723372e3cb8f17f842f07902e43f0f"
+    },
+    "real-instruments-sustain.wav": {
+      "channels": 2,
+      "rate": 44100,
+      "bits": 16,
+      "frames": 508032,
+      "seconds": 11.52,
+      "peak": 0.087249755859375,
+      "rms": 0.023545402142296046,
+      "clippedSamples": 0,
+      "sevenToNineSecondsRms": 0.02506711373208925,
+      "bytes": 2032172,
+      "sha256": "bc1a0cacf69df5530b034341b2d53f3e552f434bda4a1677b0aa8ecbe9e618a9"
+    }
+  },
+  "midi": {
+    "notes": 819,
+    "eightRolesRestored": true,
+    "GMHints": [
+      0,
+      43,
+      73,
+      42,
+      46
+    ],
+    "bytesMatchEncoder": true,
+    "samplesEmbedded": false
+  },
+  "files": [
+    {
+      "file": "examples/real-instruments-demo.mid",
+      "bytes": 7626,
+      "sha256": "498865a008862eed8579b2a9672caaf92ae511de4e5b200c960c5f0f5c4b22fa"
+    },
+    {
+      "file": "examples/real-instruments-demo.sprout",
+      "bytes": 169712,
+      "sha256": "6694cbadd2f8a6adb9180b808faa7bc07ed318f96d92a1e58b52435da163c415"
+    },
+    {
+      "file": "examples/real-instruments-region.wav",
+      "bytes": 4276968,
+      "sha256": "2313819352b28cce7528045dd1c2ffaf40723372e3cb8f17f842f07902e43f0f"
+    },
+    {
+      "file": "examples/real-instruments-restored.sprout",
+      "bytes": 169712,
+      "sha256": "6694cbadd2f8a6adb9180b808faa7bc07ed318f96d92a1e58b52435da163c415"
+    },
+    {
+      "file": "examples/real-instruments-sustain-input.sprout",
+      "bytes": 8134,
+      "sha256": "78e9db16516a9e7d480019a1c9837ae0aa403df399bcf51e8b570ffd6560819b"
+    },
+    {
+      "file": "examples/real-instruments-sustain-render.sprout",
+      "bytes": 8151,
+      "sha256": "5c6880672caf3b3973bd43f712db8bcac683767d8d81ca6149df3863d4227270"
+    },
+    {
+      "file": "examples/real-instruments-sustain.wav",
+      "bytes": 2032172,
+      "sha256": "bc1a0cacf69df5530b034341b2d53f3e552f434bda4a1677b0aa8ecbe9e618a9"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "screenshots/v24-bass-mobile.png",
+      "bytes": 28596,
+      "sha256": "41a74ee1c5a05edf170c3671afc748f25b461e9bac85e90b4c7cfac6a7930ad0",
+      "width": 384,
+      "height": 831
+    },
+    {
+      "file": "screenshots/v24-instruments-desktop.png",
+      "bytes": 56433,
+      "sha256": "df6444a4c25c93655c48e7192abbcd8cb816bf17d1baadefacc2bc200c6754d4",
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "file": "screenshots/v24-instruments-mobile.png",
+      "bytes": 30342,
+      "sha256": "74a62c6c468ddbbd86938e6953c9afbe075bac5094378601096d80851db74932",
+      "width": 384,
+      "height": 831
+    },
+    {
+      "file": "screenshots/v24-palette-desktop.png",
+      "bytes": 55710,
+      "sha256": "47d969f277b47aac5dc012c91aca20b14c736c491cb51e97255d67cee2dc2c8e",
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "file": "screenshots/v24-workspace.png",
+      "bytes": 134327,
+      "sha256": "23fb8e521fdac0dc55f0c20f9fd01bc36ecf6dd161e6ebfb76506a71d9ff1b75",
+      "width": 1280,
+      "height": 900
+    }
+  ],
+  "limits": [
+    "No human audio-quality acceptance; data and node scheduling checks are not a listening verdict",
+    "Only the eight built-in roles are covered; not every possible instrument or sound effect",
+    "No real LLM call, external model service, cloud publishing or automatic Goal resume",
+    "No sustain pedal, full round-robin, all articulations, full SFZ, VST, arbitrary audio import or open-hi-hat state machine",
+    "No full-capacity hardware or low-memory-phone audio certification; responsive checks used viewport overrides",
+    "Peak normalization cannot repair saturation in an original recording; original full-scale counts remain in the manifest"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "hardwareAudioOpened": false,
+  "modelCalls": 0,
+  "cases": [
+    {
+      "project": "examples/acoustic-v28/acoustic-trio.sprout",
+      "wav": "examples/acoustic-v28/acoustic-trio.wav",
+      "byteExact": true,
+      "sha256": "a8f0f20d84c918c8a0737c8efa702821c5ed054fef5de138ce75455d9c8991b0"
+    },
+    {
+      "project": "examples/deepseek-batch-v27/numeric-harmony/composition.sprout",
+      "wav": "examples/deepseek-batch-v27/numeric-harmony/composition.wav",
+      "byteExact": true,
+      "sha256": "0459e6e16c1f4172d2fcbf89999a83d367218bcc273d6055c0077b63414f40f7"
+    }
+  ]
+}

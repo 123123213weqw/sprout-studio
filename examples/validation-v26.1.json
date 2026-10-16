@@ -1,0 +1,27 @@
+{
+  "version": "0.26.1",
+  "updatedAt": "2026-10-15T13:03:09.376Z",
+  "automatedTests": {
+    "passed": 612,
+    "failed": 0,
+    "newModelSelectionTests": 3,
+    "syntaxPassed": true,
+    "whitespacePassed": true
+  },
+  "modelSelection": {
+    "model": "deepseek-flash",
+    "label": "DeepSeek V4.1 Flash",
+    "locked": true
+  },
+  "service": {
+    "ok": true,
+    "llmConfigured": true,
+    "remoteBridge": true,
+    "version": "0.26.1"
+  },
+  "newGenerationCalls": 0,
+  "previousLiveEvidence": "examples/deepseek-live/summary.json",
+  "modelEvidence": "examples/model-selection-v26.1.json",
+  "visualQA": "Unchanged; no UI redesign or new visual verification claimed.",
+  "noPublishOrPush": true
+}
