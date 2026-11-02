@@ -7,13 +7,36 @@
   --border:#30353a;
   --text:#e8ecee;
   --muted:#a1a9b1;
-  --subtle:#717b85;
+  --subtle:#8b949e;
   --accent:#bee984;
   --orange:#edab65;
   --teal:#74c8b9;
   --blue:#87aee9;
   --purple:#ba9fe9;
   --red:#ed8990;
+
+  --bg-bar:#181b1f;
+  --bg-panel-2:#1b1f23;
+  --bg-tile:#22292e;
+  --bg-tile-hover:#20272b;
+  --chip-bg:#292f34;
+  --grid-line:#333a40;
+  --grid-sub:#232a30;
+  --grid-strong:#46505a;
+  --accent-bg:#303b29;
+  --accent-bg-strong:#2c3626;
+  --accent-border:#809c5c;
+  --accent-border-dim:#647a4d;
+  --accent-border-soft:#47543d;
+  --on-accent:#202819;
+  --accent-hover:#d1f5a2;
+  --piano-key:#c4cbd0;
+  --lane-base:#1b2127;
+  --warn-text:#e5d2b2;
+  --hint-text:#96a093;
+  --radius-s:4px;
+  --radius-m:6px;
+  --radius-l:10px;
   --track-width:174px;
   --row-height:64px;
   font-size:14px;
@@ -42,7 +65,7 @@ button,select,input[type=range] {
 button {
   color:inherit;
   border:1px solid transparent;
-  border-radius:6px;
+  border-radius:var(--radius-m);
   background:transparent;
   transition:background .14s,border .14s;
   display:inline-flex;
@@ -64,7 +87,7 @@ input,select,textarea {
   color:inherit;
   background:#202429;
   border:1px solid var(--border);
-  border-radius:5px
+  border-radius:var(--radius-m)
 }
 
 input[type=range] {
@@ -109,7 +132,7 @@ button svg {
   align-items:center;
   padding:0 24px;
   gap:32px;
-  background:#181b1f
+  background:var(--bg-bar)
 }
 
 .brand {
@@ -189,13 +212,13 @@ button svg {
 
 .accent {
   background:var(--accent);
-  color:#202819;
+  color:var(--on-accent);
   font-weight:600;
   padding:10px 19px
 }
 
 .accent:hover {
-  background:#d1f5a2
+  background:var(--accent-hover)
 }
 
 .compact {
@@ -235,13 +258,13 @@ button svg {
 
 .play {
   background:var(--accent);
-  color:#202819;
+  color:var(--on-accent);
   width:40px;
   height:38px
 }
 
 .play:hover {
-  background:#d1f5a2
+  background:var(--accent-hover)
 }
 
 .play svg {
@@ -297,7 +320,7 @@ button svg {
 
 .key-control select {
   border:none;
-  background:#292e34;
+  background:var(--chip-bg);
   padding:7px 12px
 }
 
@@ -361,7 +384,7 @@ button svg {
 }
 
 .library {
-  background:#181b1f;
+  background:var(--bg-bar);
   border-right:1px solid var(--border);
   padding:22px 16px 16px;
   display:flex;
@@ -413,7 +436,7 @@ button svg {
 }
 
 .style-choice.selected {
-  background:#303b29;
+  background:var(--accent-bg);
   border-color:#4e6140;
   color:var(--accent)
 }
@@ -421,7 +444,7 @@ button svg {
 .style-icon {
   width:30px;
   height:32px;
-  border-radius:7px;
+  border-radius:var(--radius-m);
   background:#272d31;
   font-size:20px;
   display:flex;
@@ -587,9 +610,9 @@ button svg {
 
 .section-toolbar h1>span {
   font-size:11px;
-  background:#292f34;
+  background:var(--chip-bg);
   color:var(--muted);
-  border-radius:4px;
+  border-radius:var(--radius-s);
   padding:3px 6px;
   font-weight:400
 }
@@ -677,7 +700,7 @@ button svg {
   align-items:center;
   gap:10px;
   border-right:1px solid var(--border);
-  background:#1b1f23;
+  background:var(--bg-panel-2);
   cursor:pointer
 }
 
@@ -691,7 +714,7 @@ button svg {
   display:flex;
   align-items:center;
   justify-content:center;
-  border-radius:6px;
+  border-radius:var(--radius-m);
   background:color-mix(in srgb,var(--track-color),transparent 88%);
   color:var(--track-color);
   font-family:'SFMono-Regular',ui-monospace,monospace;
@@ -732,7 +755,7 @@ button svg {
   font-size:9px;
   padding:0;
   color:var(--subtle);
-  border-radius:3px;
+  border-radius:var(--radius-s);
   border:1px solid #384047
 }
 
@@ -745,7 +768,7 @@ button svg {
 .track-lane {
   flex:1;
   position:relative;
-  background:repeating-linear-gradient(to right,transparent 0,transparent calc(100% / var(--bars) - 1px),#333a40 calc(100% / var(--bars) - 1px),#333a40 calc(100% / var(--bars))),repeating-linear-gradient(to right,transparent 0,transparent calc(100% / var(--bars) / 4 - 1px),#232a30 calc(100% / var(--bars) / 4 - 1px),#232a30 calc(100% / var(--bars) / 4));
+  background:repeating-linear-gradient(to right,transparent 0,transparent calc(100% / var(--bars) - 1px),var(--grid-line) calc(100% / var(--bars) - 1px),var(--grid-line) calc(100% / var(--bars))),repeating-linear-gradient(to right,transparent 0,transparent calc(100% / var(--bars) / 4 - 1px),var(--grid-sub) calc(100% / var(--bars) / 4 - 1px),var(--grid-sub) calc(100% / var(--bars) / 4));
   background-color:#181c20
 }
 
@@ -759,8 +782,8 @@ button svg {
   height:46px;
   overflow:hidden;
   border:1px solid color-mix(in srgb,var(--track-color),transparent 55%);
-  border-radius:4px;
-  background:color-mix(in srgb,var(--track-color),#1b2127 80%);
+  border-radius:var(--radius-s);
+  background:color-mix(in srgb,var(--track-color),var(--lane-base) 80%);
   text-align:left;
   justify-content:initial;
   padding:0;
@@ -768,7 +791,7 @@ button svg {
 }
 
 .clip:hover,.track-row.selected .clip {
-  background:color-mix(in srgb,var(--track-color),#1b2127 68%);
+  background:color-mix(in srgb,var(--track-color),var(--lane-base) 68%);
   border-color:color-mix(in srgb,var(--track-color),transparent 25%)
 }
 
@@ -805,7 +828,7 @@ button svg {
   bottom:0;
   width:1px;
   background:var(--accent);
-  box-shadow:0 0 8px #bee98444;
+  box-shadow:0 0 8px color-mix(in srgb,var(--accent) 27%,transparent);
   z-index:5;
   pointer-events:none;
   display:none
@@ -949,7 +972,7 @@ button svg {
   width:49px;
   flex-shrink:0;
   position:relative;
-  background:#c4cbd0
+  background:var(--piano-key)
 }
 
 .piano-key {
@@ -959,7 +982,7 @@ button svg {
   border:0;
   border-bottom:1px solid #8c949a;
   color:#454d56;
-  background:#c4cbd0;
+  background:var(--piano-key);
   padding:0 5px;
   font-family:'SFMono-Regular',ui-monospace,monospace;
   font-size:8px;
@@ -1022,7 +1045,7 @@ button svg {
 /* ===== AI 助手面板 ===== */
 .assistant-panel {
   border-left:1px solid var(--border);
-  background:#1b1f23;
+  background:var(--bg-panel-2);
   display:flex;
   flex-direction:column;
   overflow:hidden
@@ -1043,8 +1066,8 @@ button svg {
   display:flex;
   justify-content:center;
   align-items:center;
-  background:#303b29;
-  border-radius:10px
+  background:var(--accent-bg);
+  border-radius:var(--radius-l)
 }
 
 .assistant-heading h2 {
@@ -1068,7 +1091,7 @@ button svg {
   margin:0 18px;
   padding:10px 11px;
   border:1px solid var(--border);
-  border-radius:6px;
+  border-radius:var(--radius-m);
   display:flex;
   align-items:center;
   gap:7px;
@@ -1163,7 +1186,7 @@ button svg {
 .prompt-box {
   border:1px solid #4d5a43;
   background:#242a25;
-  border-radius:8px;
+  border-radius:var(--radius-l);
   padding:11px 10px 8px
 }
 
@@ -1186,7 +1209,7 @@ button svg {
 }
 
 .prompt-box textarea::placeholder {
-  color:#849080
+  color:var(--hint-text)
 }
 
 .prompt-box textarea:focus-visible {
@@ -1202,7 +1225,7 @@ button svg {
 
 .prompt-bottom>span {
   font-size:9px;
-  color:#849080
+  color:var(--hint-text)
 }
 
 .send-btn {
@@ -1210,12 +1233,12 @@ button svg {
   color:#293223;
   width:29px;
   height:29px;
-  border-radius:6px;
+  border-radius:var(--radius-m);
   padding:5px
 }
 
 .send-btn:hover {
-  background:#d0f59f
+  background:var(--accent-hover)
 }
 
 .assistant-footnote {
@@ -1234,7 +1257,7 @@ button svg {
   align-items:center;
   justify-content:space-between;
   padding:0 17px;
-  background:#1b1f23;
+  background:var(--bg-panel-2);
   border-top:1px solid var(--border);
   color:var(--subtle);
   font-size:10px;
@@ -1301,7 +1324,7 @@ button svg {
 .step-btn {
   flex:1;
   height:32px;
-  border-radius:4px;
+  border-radius:var(--radius-s);
   border:1px solid #414951;
   background:#2b3137;
   min-width:8px
@@ -1423,11 +1446,11 @@ button svg {
 .mixer-ms button {
   font-size:10px;
   border:1px solid #424b53;
-  background:#292f35;
+  background:var(--chip-bg);
   width:26px;
   height:22px;
   padding:0;
-  border-radius:3px
+  border-radius:var(--radius-s)
 }
 
 .mixer-ms button.on {
@@ -1439,7 +1462,7 @@ button svg {
 /* ===== AI 助手面板 ===== */
 .chat-message {
   padding:11px 12px;
-  border-radius:7px;
+  border-radius:var(--radius-m);
   margin:14px 0;
   font-size:12px;
   line-height:1.75;
@@ -1469,7 +1492,7 @@ button svg {
 .candidate {
   border:1px solid #526445;
   background:#273024;
-  border-radius:8px;
+  border-radius:var(--radius-l);
   padding:14px;
   font-size:12px
 }
@@ -1593,7 +1616,7 @@ dialog::backdrop {
   font-size:12px;
   color:var(--subtle);
   background:#1a1e23;
-  border-radius:7px;
+  border-radius:var(--radius-m);
   padding:12px;
   margin-top:15px;
   line-height:1.8
@@ -1609,7 +1632,7 @@ dialog::backdrop {
   justify-content:flex-start;
   text-align:left;
   border:1px solid #44505a;
-  background:#292f35
+  background:var(--chip-bg)
 }
 
 .export-choice:hover {
@@ -1658,7 +1681,7 @@ dialog::backdrop {
 .instrument-choice {
   border:1px solid var(--border);
   padding:15px 10px;
-  background:#292f34;
+  background:var(--chip-bg);
   justify-content:flex-start;
   text-align:left;
   font-size:13px
@@ -1678,7 +1701,7 @@ dialog::backdrop {
 
 .project-actions button {
   border:1px solid var(--border);
-  background:#292e34;
+  background:var(--chip-bg);
   justify-content:flex-start;
   padding:13px 15px;
   text-align:left
@@ -1713,7 +1736,7 @@ dialog::backdrop {
   padding:12px 20px;
   background:#34412b;
   border:1px solid #6c8453;
-  border-radius:8px;
+  border-radius:var(--radius-l);
   font-size:13px;
   box-shadow:0 4px 20px #0004;
   transition:transform .2s,opacity .2s;
@@ -1779,7 +1802,7 @@ dialog::backdrop {
   outline-offset:4px;
   position:relative;
   z-index:91;
-  box-shadow:0 0 0 7px #bee98414
+  box-shadow:0 0 0 7px color-mix(in srgb,var(--accent) 8%,transparent)
 }
 
 .keyboard-shortcuts {
@@ -1792,7 +1815,7 @@ dialog::backdrop {
 .keyboard-shortcuts span {
   font-size:12px;
   border:1px solid var(--border);
-  border-radius:4px;
+  border-radius:var(--radius-s);
   padding:4px 8px;
   color:var(--muted)
 }
@@ -1806,7 +1829,7 @@ dialog::backdrop {
 
 ::-webkit-scrollbar-thumb {
   background:#46515a;
-  border-radius:5px
+  border-radius:var(--radius-m)
 }
 
 ::-webkit-scrollbar-track {
@@ -2751,12 +2774,12 @@ dialog::backdrop {
 
 .save-warning .quiet {
   border-color:#715f44;
-  color:#e5d2b2;
+  color:var(--warn-text);
   white-space:nowrap
 }
 
 .save-warning .icon-btn {
-  color:#e5d2b2;
+  color:var(--warn-text);
   flex-shrink:0
 }
 
@@ -2858,7 +2881,7 @@ dialog::backdrop {
 .version-preview {
   padding:14px;
   border:1px solid var(--border);
-  border-radius:7px;
+  border-radius:var(--radius-m);
   background:#1b2227;
   min-width:0
 }
@@ -2884,7 +2907,7 @@ dialog::backdrop {
 
 .version-stats span {
   padding:4px 6px;
-  border-radius:4px;
+  border-radius:var(--radius-s);
   background:#2e353a
 }
 
@@ -2907,7 +2930,7 @@ dialog::backdrop {
   padding:8px;
   background:#252d33;
   border-left:2px solid var(--track-color);
-  border-radius:3px;
+  border-radius:var(--radius-s);
   min-width:0
 }
 
@@ -3040,7 +3063,7 @@ dialog:has(.version-browser) {
 }
 
 .note-tools .active {
-  background:#bee9841c;
+  background:color-mix(in srgb,var(--accent) 11%,transparent);
   border-color:var(--accent);
   color:var(--accent)
 }
@@ -3101,7 +3124,7 @@ dialog:has(.version-browser) {
   max-height:360px;
   overflow-y:auto;
   border:1px solid var(--border);
-  border-radius:6px
+  border-radius:var(--radius-m)
 }
 
 .accessible-note-list>p {
@@ -3160,13 +3183,13 @@ dialog:has(.version-browser) {
 .chord-degree.active {
   color:var(--accent);
   border-color:var(--accent);
-  background:#bee98413
+  background:color-mix(in srgb,var(--accent) 7%,transparent)
 }
 
 .chord-preview {
   padding:16px;
   border:1px solid var(--border);
-  border-radius:7px;
+  border-radius:var(--radius-m);
   background:#1b2125;
   margin-top:15px
 }
@@ -3332,7 +3355,7 @@ dialog:has(.chord-preview) .modal-body {
   margin:0 16px 8px;
   padding:10px 11px;
   border:1px solid var(--border);
-  border-radius:6px;
+  border-radius:var(--radius-m);
   background:#242b30;
   display:flex;
   align-items:flex-start;
@@ -3354,8 +3377,8 @@ dialog:has(.chord-preview) .modal-body {
 }
 
 .palette-indicator.active {
-  border-color:#809c5c;
-  background:#2c3626
+  border-color:var(--accent-border);
+  background:var(--accent-bg-strong)
 }
 
 .palette-indicator.active span {
@@ -3403,8 +3426,8 @@ dialog:has(.chord-preview) .modal-body {
 .palette-sliders>label {
   padding:13px 14px;
   border:1px solid var(--border);
-  border-radius:6px;
-  background:#22292e;
+  border-radius:var(--radius-m);
+  background:var(--bg-tile);
   min-width:0
 }
 
@@ -3480,8 +3503,8 @@ dialog:has(.chord-preview) .modal-body {
   padding:10px 12px;
   border:1px solid var(--border);
   border-left:3px solid #58634f;
-  border-radius:4px;
-  background:#22292e;
+  border-radius:var(--radius-s);
+  background:var(--bg-tile);
   font-size:12px
 }
 
@@ -3516,8 +3539,8 @@ dialog:has(.chord-preview) .modal-body {
 
 .candidate-controls {
   padding:12px 14px;
-  border:1px solid #647a4d;
-  border-radius:6px;
+  border:1px solid var(--accent-border-dim);
+  border-radius:var(--radius-m);
   margin-top:15px
 }
 
@@ -3601,7 +3624,7 @@ dialog:has(.palette-form) .modal-body,dialog:has(.candidate-review) .modal-body 
   min-height:38px;
   padding:5px 12px;
   flex-shrink:0;
-  background:#20272b;
+  background:var(--bg-tile-hover);
   border-bottom:1px solid var(--border);
   overflow-x:auto;
   white-space:nowrap
@@ -3618,8 +3641,8 @@ dialog:has(.palette-form) .modal-body,dialog:has(.candidate-review) .modal-body 
 
 .playback-controls .active {
   color:var(--accent);
-  border-color:#809c5c;
-  background:#bee9840c
+  border-color:var(--accent-border);
+  background:color-mix(in srgb,var(--accent) 5%,transparent)
 }
 
 #playback-scope-label {
@@ -3630,7 +3653,7 @@ dialog:has(.palette-form) .modal-body,dialog:has(.candidate-review) .modal-body 
 
 .range-tick {
   color:var(--accent);
-  background:#bee98413;
+  background:color-mix(in srgb,var(--accent) 7%,transparent);
   box-shadow:inset 0 -2px #9dbf70
 }
 
@@ -3639,18 +3662,18 @@ dialog:has(.palette-form) .modal-body,dialog:has(.candidate-review) .modal-body 
   top:0;
   bottom:0;
   pointer-events:none;
-  background:#bee98408;
-  border-left:1px dashed #9dbf7066;
-  border-right:1px dashed #9dbf7066
+  background:color-mix(in srgb,var(--accent) 3%,transparent);
+  border-left:1px dashed color-mix(in srgb,#9dbf70 40%,transparent);
+  border-right:1px dashed color-mix(in srgb,#9dbf70 40%,transparent)
 }
 
 .repeat-map {
   height:38px;
   position:relative;
   margin:15px 0;
-  background:repeating-linear-gradient(to right,#293139 0,#293139 calc(6.25% - 1px),#46505a calc(6.25% - 1px),#46505a 6.25%);
+  background:repeating-linear-gradient(to right,#293139 0,#293139 calc(6.25% - 1px),var(--grid-strong) calc(6.25% - 1px),var(--grid-strong) 6.25%);
   border:1px solid var(--border);
-  border-radius:4px;
+  border-radius:var(--radius-s);
   overflow:hidden
 }
 
@@ -3660,7 +3683,7 @@ dialog:has(.palette-form) .modal-body,dialog:has(.candidate-review) .modal-body 
   bottom:7px;
   background:#9cba7344;
   border:1px solid #a1c576;
-  border-radius:3px;
+  border-radius:var(--radius-s);
   color:var(--accent);
   font-size:10px;
   display:flex;
@@ -3740,12 +3763,12 @@ dialog:has(.pattern-library) .modal-body,dialog:has(.pattern-form) .modal-body {
   min-width:0;
   padding:12px;
   border:1px solid var(--border);
-  background:#22292e
+  background:var(--bg-tile)
 }
 
 .pattern-list button.active {
-  border-color:#809c5c;
-  background:#2c3626
+  border-color:var(--accent-border);
+  background:var(--accent-bg-strong)
 }
 
 .pattern-list strong {
@@ -3807,7 +3830,7 @@ dialog:has(.pattern-library) .modal-body,dialog:has(.pattern-form) .modal-body {
 .pattern-refs span {
   padding:8px 10px;
   background:#242b30;
-  border-radius:4px;
+  border-radius:var(--radius-s);
   font-size:11px;
   color:var(--muted);
   overflow-wrap:anywhere;
@@ -3839,7 +3862,7 @@ dialog:has(.pattern-library) .modal-body,dialog:has(.pattern-form) .modal-body {
   overflow:auto;
   max-height:280px;
   border:1px solid var(--border);
-  border-radius:5px;
+  border-radius:var(--radius-m);
   background:#1c2226
 }
 
@@ -4099,8 +4122,8 @@ dialog:has(.sound-form) .modal-body {
   min-width:0;
   padding:13px 14px;
   border:1px solid var(--border);
-  border-radius:6px;
-  background:#22292e
+  border-radius:var(--radius-m);
+  background:var(--bg-tile)
 }
 
 .sound-field label {
@@ -4146,9 +4169,9 @@ dialog:has(.sound-form) .modal-body {
 }
 
 .sound-curve {
-  border:1px solid #647a4d;
-  border-radius:6px;
-  background:#20272b;
+  border:1px solid var(--accent-border-dim);
+  border-radius:var(--radius-m);
+  background:var(--bg-tile-hover);
   padding:14px 16px;
   margin:15px 0
 }
@@ -4209,8 +4232,8 @@ dialog:has(.sound-form) .modal-body {
 
 #sound-btn.active {
   color:var(--accent);
-  border-color:#809c5c;
-  background:#bee9840c
+  border-color:var(--accent-border);
+  background:color-mix(in srgb,var(--accent) 5%,transparent)
 }
 
 
@@ -4361,8 +4384,8 @@ dialog:has(.performance-form) .modal-body {
   min-width:0;
   padding:13px 14px;
   border:1px solid var(--border);
-  border-radius:6px;
-  background:#22292e
+  border-radius:var(--radius-m);
+  background:var(--bg-tile)
 }
 
 .performance-field>label {
@@ -4435,10 +4458,10 @@ dialog:has(.performance-form) .modal-body {
 }
 
 .performance-summary {
-  border:1px solid #647a4d;
-  border-radius:6px;
+  border:1px solid var(--accent-border-dim);
+  border-radius:var(--radius-m);
   padding:15px 17px;
-  background:#20272b;
+  background:var(--bg-tile-hover);
   margin:16px 0;
   font-size:11px;
   line-height:1.8
@@ -4479,7 +4502,7 @@ dialog:has(.performance-form) .modal-body {
 .performance-badges span {
   padding:5px 8px;
   border:1px solid var(--border);
-  border-radius:4px;
+  border-radius:var(--radius-s);
   background:#293139;
   color:var(--text)
 }
@@ -4492,7 +4515,7 @@ dialog:has(.performance-form) .modal-body {
   overflow-x:auto;
   margin-top:10px;
   border:1px solid var(--border);
-  border-radius:5px
+  border-radius:var(--radius-m)
 }
 
 .performance-table table {
@@ -4512,7 +4535,7 @@ dialog:has(.performance-form) .modal-body {
 
 .performance-table thead {
   color:var(--muted);
-  background:#222a30
+  background:var(--grid-sub)
 }
 
 .performance-table tbody th {
@@ -4618,7 +4641,7 @@ dialog:has(.performance-form) .modal-body {
   top:4px;
   bottom:4px;
   padding:3px 8px;
-  border-radius:3px;
+  border-radius:var(--radius-s);
   border-color:#44606c;
   background:#22373e;
   color:#9cbbc4;
@@ -4759,7 +4782,7 @@ dialog:has(.performance-form) .modal-body {
   text-align:left;
   padding:13px;
   border:1px solid var(--border);
-  border-radius:5px;
+  border-radius:var(--radius-m);
   font-size:11px;
   align-items:center
 }
@@ -4780,7 +4803,7 @@ dialog:has(.performance-form) .modal-body {
   padding:15px;
   background:#202a2d;
   border:1px solid #4b6254;
-  border-radius:5px;
+  border-radius:var(--radius-m);
   margin-top:17px;
   font-size:12px;
   line-height:1.8
@@ -4802,7 +4825,7 @@ dialog:has(.performance-form) .modal-body {
   position:relative;
   margin:14px 0;
   background:#192126;
-  border-radius:3px;
+  border-radius:var(--radius-s);
   overflow:hidden
 }
 
@@ -5198,7 +5221,7 @@ dialog:has(.length-form) .modal-head,dialog:has(.length-form) .modal-footer {
   padding:13px;
   border:1px solid #3c4a44;
   background:#202929;
-  border-radius:8px;
+  border-radius:var(--radius-l);
   min-width:0
 }
 
@@ -5295,7 +5318,7 @@ dialog:has(.length-form) .modal-head,dialog:has(.length-form) .modal-footer {
   padding:14px;
   background:#212b28;
   border:1px solid #3a4840;
-  border-radius:8px;
+  border-radius:var(--radius-l);
   min-width:0
 }
 
@@ -5330,14 +5353,14 @@ dialog:has(.length-form) .modal-head,dialog:has(.length-form) .modal-footer {
   background:#192025;
   color:var(--text);
   border:1px solid var(--border);
-  border-radius:7px;
+  border-radius:var(--radius-m);
   resize:vertical
 }
 
 .candidate-empty {
   padding:18px;
   border:1px dashed var(--border);
-  border-radius:8px
+  border-radius:var(--radius-l)
 }
 
 .candidate-empty h3 {
@@ -5454,7 +5477,7 @@ dialog:has(.candidate-shelf-form) .modal-footer {
   padding:12px 14px;
   background:#222d2b;
   border:1px solid #3c5146;
-  border-radius:7px;
+  border-radius:var(--radius-m);
   font-size:12px;
   color:var(--accent);
   line-height:1.7
@@ -5478,7 +5501,7 @@ dialog:has(.candidate-shelf-form) .modal-footer {
   gap:10px;
   padding:12px;
   border:1px solid var(--border);
-  border-radius:7px;
+  border-radius:var(--radius-m);
   background:#20272a;
   min-width:0
 }
@@ -5530,7 +5553,7 @@ dialog:has(.candidate-shelf-form) .modal-footer {
   padding:14px;
   border:1px solid #3a4947;
   background:#1e282a;
-  border-radius:8px;
+  border-radius:var(--radius-l);
   margin:17px 0
 }
 
@@ -5592,7 +5615,7 @@ dialog:has(.candidate-shelf-form) .modal-footer {
 
 
 .generation-progress {
-  border:1px solid #47543d;
+  border:1px solid var(--accent-border-soft);
   border-radius:9px;
   background:#29312b;
   padding:10px;
@@ -5639,8 +5662,8 @@ dialog:has(.candidate-shelf-form) .modal-footer {
 
 .service-probe-result {
   background:#283329;
-  border:1px solid #47543d;
-  border-radius:10px;
+  border:1px solid var(--accent-border-soft);
+  border-radius:var(--radius-l);
   padding:14px;
   font-size:12px;
   line-height:1.8;
@@ -5726,7 +5749,7 @@ dialog:has(.service-settings) .modal-head,dialog:has(.service-settings) .modal-f
 
 .pattern-series-map span {
   border:1px solid #475241;
-  border-radius:5px;
+  border-radius:var(--radius-m);
   padding:5px 8px;
   font-size:11px;
   color:var(--muted)
@@ -5927,9 +5950,9 @@ dialog:has(.phrase-transform-form) #modal-content {
 
 .library-project {
   border:1px solid var(--border);
-  border-radius:8px;
+  border-radius:var(--radius-l);
   padding:15px;
-  background:#222a30;
+  background:var(--grid-sub);
   min-width:0
 }
 
@@ -6043,9 +6066,9 @@ dialog:has(.project-library) .modal-head,dialog:has(.project-library) .modal-foo
 .sound-bank-details {
   margin:18px 0;
   border:1px solid var(--border);
-  border-radius:6px;
+  border-radius:var(--radius-m);
   padding:14px;
-  background:#20272b
+  background:var(--bg-tile-hover)
 }
 
 .sound-bank-details summary {
@@ -6110,7 +6133,7 @@ dialog:has(.project-library) .modal-head,dialog:has(.project-library) .modal-foo
 .sound-bank-row {
   border:1px solid var(--border);
   padding:13px;
-  border-radius:5px;
+  border-radius:var(--radius-m);
   background:#252d32
 }
 
@@ -6273,7 +6296,7 @@ dialog:has(.sound-form) .modal-body {
 
 .fill-tracks {
   border:1px solid var(--border);
-  border-radius:10px;
+  border-radius:var(--radius-l);
   padding:12px;
   display:flex;
   flex-wrap:wrap;
@@ -6320,7 +6343,7 @@ dialog:has(.sound-form) .modal-body {
 
 .fill-cell {
   height:25px;
-  border-radius:3px;
+  border-radius:var(--radius-s);
   background:#272d32;
   border:1px solid #333b42
 }
@@ -6532,7 +6555,7 @@ dialog:has(.fill-form) .modal-head,dialog:has(.fill-form) .modal-footer {
 
 .shared-transform-refs {
   border:1px solid var(--border);
-  border-radius:7px;
+  border-radius:var(--radius-m);
   padding:14px
 }
 

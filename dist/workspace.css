@@ -1,6 +1,6 @@
 /* A working surface, not a landing page. Colors below never change song data. */
 :root {
- --bg:#191c20; --panel:#202429; --raised:#292e34; --border:#373d44;
+ --bg:#191c20; --panel:#202429; --raised:#292e34; --border:#464e57;
  --text:#e2e6ea; --muted:#b0b8c1; --subtle:#969fa9; --accent:#a6bdaf;
  --track-width:150px; --row-height:42px;
  font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;
@@ -95,11 +95,11 @@ body.has-save-warning .studio-layout { height:calc(100dvh - 170px); }
 .track-mini { flex-direction:row; gap:3px; }
 .track-mini button { width:20px; height:23px; font-size:10px; }
 .track-mini button.on { background:#354339; color:#e2ece6; border-color:#869e90; }
-.clip { top:5px; height:31px; border-radius:2px; border-color:color-mix(in srgb,var(--clip-color),transparent 50%); background:color-mix(in srgb,var(--clip-color) 16%,#22282e); }
-.clip:hover,.track-row.selected .clip { background:color-mix(in srgb,var(--clip-color) 24%,#22282e); border-color:var(--clip-color); }
+.clip { top:5px; height:31px; border-radius:2px; border-color:color-mix(in srgb,var(--clip-color),transparent 38%); background:color-mix(in srgb,var(--clip-color) 28%,#22282e); }
+.clip:hover,.track-row.selected .clip { background:color-mix(in srgb,var(--clip-color) 36%,#22282e); border-color:var(--clip-color); }
 .clip-selected { border-color:var(--clip-color)!important; box-shadow:inset 0 0 0 1px var(--clip-color); }
 .clip-label { color:var(--clip-color); top:3px; font-size:10px; }
-.clip svg { height:14px; bottom:3px; fill:var(--clip-color); opacity:.85; }
+.clip svg { height:14px; bottom:3px; fill:var(--clip-color); opacity:1; }
 .clip-handle { background:color-mix(in srgb,var(--clip-color),transparent 90%); border-color:color-mix(in srgb,var(--clip-color),transparent 65%); }
 .playhead { box-shadow:none; }
 .clip-controls { display:block; overflow:visible; min-height:0; padding:0; background:#23282e; }
@@ -134,7 +134,7 @@ body.has-save-warning .studio-layout { height:calc(100dvh - 170px); }
 .mixer-strip-list { height:100%; min-height:218px; }
 .mixer-strip { border-top-color:color-mix(in srgb,var(--track-color) 42%,#97a6b3); }
 .step-btn.on { background:color-mix(in srgb,var(--track-color) 42%,#97a6b3); border-color:color-mix(in srgb,var(--track-color) 42%,#97a6b3); }
-.assistant-panel { background:#20252a; }
+.assistant-panel { background:#232930; }
 .assistant-heading { padding:16px 14px 11px; }
 .assistant-heading h2 { font-size:13px; margin-bottom:4px; }
 .assistant-heading>div>span { font-size:10px; }
@@ -161,7 +161,7 @@ body.has-save-warning .studio-layout { height:calc(100dvh - 170px); }
 .chat-message.user { background:#303a35; border-color:#56695e; color:#dde5e0; }
 .candidate { background:#2b3630; border-color:#607466; }
 .candidate p,.candidate small { color:var(--muted); }
-.statusbar { height:26px; background:#20252a; color:var(--subtle); }
+.statusbar { height:26px; background:#232930; color:var(--subtle); }
 dialog { border-radius:5px; background:#262c32; }
 .modal-head,.modal-footer { background:#23292f; }
 .guide-card,.tour-card { background-image:none; }
