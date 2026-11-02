@@ -18,7 +18,7 @@ button:hover { background:#30363d; }
 .brand { width:140px; gap:8px; color:var(--muted); }
 .brand svg { width:22px; height:22px; }
 .brand>span { font-size:18px; letter-spacing:0; }
-.brand-en { font-size:8px; letter-spacing:.8px; }
+.brand-en { font-size:10px; letter-spacing:.8px; }
 .project-heading { gap:12px; }
 .project-heading input { width:220px; font-size:13px; }
 .save-indicator { font-size:11px; border:0; color:var(--subtle); }
@@ -91,7 +91,7 @@ body.has-save-warning .studio-layout { height:calc(100dvh - 170px); }
 .track-icon { display:none; }
 .track-row.selected .track-info { background:#343b42; }
 .track-name strong { font-size:12px; }
-.track-name small { font-size:9px; margin-top:3px; }
+.track-name small { font-size:10px; margin-top:3px; }
 .track-mini { flex-direction:row; gap:3px; }
 .track-mini button { width:20px; height:23px; font-size:10px; }
 .track-mini button.on { background:#354339; color:#e2ece6; border-color:#869e90; }
@@ -237,7 +237,7 @@ dialog { border-radius:5px; background:#262c32; }
  .tab { font-size:11px; }
  #editor-track-label { display:none; }
  #sound-btn { margin-left:auto; }
- .editor-toolbar .edit-hint { max-width:none; font-size:9px; }
+ .editor-toolbar .edit-hint { max-width:none; font-size:10px; }
  .editor-toolbar .compact { padding:4px 6px; font-size:10px; }
  .note-tools { height:38px; padding:3px 10px; gap:5px; }
  .note-tools .compact { font-size:10px; padding:6px 7px; min-height:30px; }
@@ -261,7 +261,7 @@ dialog { border-radius:5px; background:#262c32; }
  .tempo-control span { display:none; }
  .key-control select { max-width:72px; }
  .note-tools { gap:4px; }
- .note-tools .compact { padding:6px; font-size:9px; }
+ .note-tools .compact { padding:6px; font-size:10px; }
 }
 
 /* Source selection remains a small, explicit audio action, not a decorative card. */
@@ -300,6 +300,6 @@ dialog:has(.sampler-form),dialog:has(.sampler-palette-form),dialog:has(#add-inst
 .assistant-tools .palette-indicator { margin: 0; }
 .assistant-tools .candidate-tools { margin: 0; }
 .assistant-help>summary { font-size: 11px; color: var(--subtle); cursor: pointer; padding: 4px 0; list-style: none; display: flex; align-items: center; gap: 6px; }
-.assistant-help>summary::before { content: '▸'; font-size: 9px; transition: transform .14s; }
+.assistant-help>summary::before { content: '▸'; font-size: 10px; transition: transform .14s; }
 .assistant-help[open]>summary::before { transform: rotate(90deg); }
 .assistant-help p { font-size: 11px; color: var(--muted); line-height: 1.8; margin: 0 0 8px; }

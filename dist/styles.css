@@ -162,7 +162,7 @@ button svg {
 .brand-en {
   font-family:'SFMono-Regular',ui-monospace,monospace,sans-serif;
   display:block;
-  font-size:9px;
+  font-size:10px;
   letter-spacing:1.6px;
   color:var(--muted);
   margin-top:1px
@@ -410,7 +410,7 @@ button svg {
 }
 
 .panel-title .eyebrow {
-  font-size:9px;
+  font-size:10px;
   letter-spacing:1px;
   padding-top:3px
 }
@@ -754,7 +754,7 @@ button svg {
 .track-mini button {
   height:19px;
   width:20px;
-  font-size:9px;
+  font-size:10px;
   padding:0;
   color:var(--subtle);
   border-radius:var(--radius-s);
@@ -987,7 +987,7 @@ button svg {
   background:var(--piano-key);
   padding:0 5px;
   font-family:'SFMono-Regular',ui-monospace,monospace;
-  font-size:8px;
+  font-size:10px;
   justify-content:flex-end;
   position:absolute
 }
@@ -1110,7 +1110,7 @@ button svg {
 
 .model-indicator>span:last-child {
   margin-left:auto;
-  font-size:9px;
+  font-size:10px;
   color:var(--subtle)
 }
 
@@ -1226,7 +1226,7 @@ button svg {
 }
 
 .prompt-bottom>span {
-  font-size:9px;
+  font-size:10px;
   color:var(--hint-text)
 }
 
@@ -1436,7 +1436,7 @@ button svg {
   display:flex;
   align-items:center;
   gap:4px;
-  font-size:9px;
+  font-size:10px;
   color:var(--subtle)
 }
 
@@ -1490,7 +1490,7 @@ button svg {
 
 .chat-message .message-label {
   display:block;
-  font-size:9px;
+  font-size:10px;
   margin-bottom:5px;
   letter-spacing:1px;
   color:var(--subtle)
@@ -1920,7 +1920,7 @@ dialog::backdrop {
     padding:17px 16px
   }
   .edit-hint {
-    font-size:9px
+    font-size:10px
   }
   .time-signature {
     display:none
@@ -2134,7 +2134,7 @@ dialog::backdrop {
     font-size:10px
   }
   .editor-toolbar .edit-hint {
-    font-size:9px;
+    font-size:10px;
     line-height:1.5;
     max-width:155px
   }
@@ -2230,7 +2230,7 @@ dialog::backdrop {
   }
   .note-inspector {
     gap:6px;
-    font-size:9px
+    font-size:10px
   }
   .note-inspector input[type=range] {
     width:50px
@@ -3183,7 +3183,7 @@ dialog:has(.version-browser) {
 }
 
 .chord-degree small {
-  font-size:9px;
+  font-size:10px;
   color:var(--muted)
 }
 
@@ -3603,7 +3603,7 @@ dialog:has(.palette-form) .modal-body,dialog:has(.candidate-review) .modal-body 
     font-size:11px
   }
   .palette-presets small {
-    font-size:9px
+    font-size:10px
   }
   .palette-indicator {
     margin:0 14px 8px
@@ -4279,7 +4279,7 @@ dialog:has(.sound-form) .modal-body {
     font-size:11px
   }
   .sound-presets small {
-    font-size:9px
+    font-size:10px
   }
   .sound-field output {
     font-size:14px
@@ -4291,7 +4291,7 @@ dialog:has(.sound-form) .modal-body {
     height:95px
   }
   #sound-btn {
-    font-size:9px;
+    font-size:10px;
     padding:5px 6px
   }
   .editor-top {
