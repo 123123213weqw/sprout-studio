@@ -16,7 +16,7 @@ Both release assets are listed in **SHA256SUMS**. The v0.29.0 release remains av
 
 ## Developer clone
 
-Git history intentionally excludes WAV files and desktop binaries. With GitHub CLI authenticated to this private repository:
+Git history intentionally excludes WAV files and desktop binaries. The repository is public, so a plain clone works without authentication:
 
 ```sh
 gh repo clone 123123213weqw/sprout-studio

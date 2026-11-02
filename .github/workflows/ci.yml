@@ -1,0 +1,72 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Syntax check (all modules)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm run check
+
+  test:
+    name: Tests (full when release media exists)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Locate release media for this version
+        id: media
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          ZIP="seed-studio-v${VERSION}.zip"
+          URL="https://github.com/${GITHUB_REPOSITORY}/releases/download/v${VERSION}/${ZIP}"
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "url=${URL}" >> "$GITHUB_OUTPUT"
+          if curl -fsSI --retry 2 "$URL" >/dev/null 2>&1; then
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "available=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::${ZIP} is not on release v${VERSION}; running the media-independent test set only (see .github/media-dependent-tests.txt)"
+          fi
+
+      - name: Cache release media ZIP
+        if: steps.media.outputs.available == 'true'
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}/seed-studio-media.zip
+          key: media-seed-studio-v${{ steps.media.outputs.version }}
+
+      - name: Download release media
+        if: steps.media.outputs.available == 'true' && steps.cache.outputs.cache-hit != 'true'
+        run: curl -fsSL --retry 3 -o "${RUNNER_TEMP}/seed-studio-media.zip" "${{ steps.media.outputs.url }}"
+
+      - name: Restore sample media
+        if: steps.media.outputs.available == 'true'
+        run: python3 scripts/restore-release-media.py "${RUNNER_TEMP}/seed-studio-media.zip"
+
+      - name: Run tests
+        run: |
+          if [ "${{ steps.media.outputs.available }}" = "true" ]; then
+            npm test
+          else
+            ls tests/*.test.mjs \
+              | grep -vxF -f .github/media-dependent-tests.txt \
+              | xargs node --test
+          fi
