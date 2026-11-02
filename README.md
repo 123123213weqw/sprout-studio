@@ -1,38 +1,46 @@
-# Sprout Studio — GitHub distribution
+# Sprout Studio — desktop and local web studio
 
-Beginner-friendly local music studio with 179 playable sounds, MIDI/WAV export and an optional DeepSeek composition assistant.
+Beginner-friendly music studio with 179 playable presets, MIDI/WAV export and an optional DeepSeek composition assistant.
 
-## Download and run
+## Mac desktop download
 
-Download **seed-studio-v0.29.0.zip** from the [v0.29.0 release](https://github.com/123123213weqw/sprout-studio/releases/tag/v0.29.0), rather than GitHub's automatically generated source ZIP. It includes all 2,259 instrument samples, rendered examples, source code and third-party notices.
+Download **Sprout-Studio-0.30.0-mac-arm64.zip** from the [v0.30.0 release](https://github.com/123123213weqw/sprout-studio/releases/tag/v0.30.0). Extract and open `Sprout Studio.app`. It includes Electron, the backend and all 2,259 instrument WAV samples; no Node.js install, browser server, account or API key is required for offline use.
 
-Extract it, open a terminal inside `seed-studio`, and run:
+This build is tested on **macOS Apple Silicon only**, with an ad-hoc signature and **no Apple notarization**. Windows/Linux binaries are not included. Existing browser projects must be exported as `.sprout` and explicitly imported in the desktop app. The inherited sidebar `LOCAL 0.24` badge is a known cosmetic mismatch; native app metadata is v0.30.0.
 
-```sh
-npm start
-```
+## Complete source and media download
 
-Requires Node.js 22 or newer. No `npm install`, login or API key is needed for local editing, instruments or offline composition. Open the local address printed by the server. Audio only starts after an explicit interaction.
+For the local website, development or all rendered examples, download **seed-studio-v0.30.0.zip** from the same release. Unlike GitHub's automatically generated Source code archives, this ZIP includes instrument samples and rendered WAV test fixtures. Extract it, enter `seed-studio`, and run `npm start` with Node.js 22 or newer. The browser app has no third-party runtime dependency and does not require `npm install`.
+
+Both release assets are listed in **SHA256SUMS**. The v0.29.0 release remains available as a historical backup.
 
 ## Developer clone
 
-Git history intentionally excludes WAV files to keep clones lightweight. With GitHub CLI authenticated to this private repository:
+Git history intentionally excludes WAV files and desktop binaries. With GitHub CLI authenticated to this private repository:
 
 ```sh
 gh repo clone 123123213weqw/sprout-studio
 cd sprout-studio
-gh release download v0.29.0 --pattern 'seed-studio-v0.29.0.zip' --dir ../sprout-downloads
-python3 scripts/restore-release-media.py ../sprout-downloads/seed-studio-v0.29.0.zip
+gh release download v0.30.0 --pattern 'seed-studio-v0.30.0.zip' --dir ../sprout-downloads
+python3 scripts/restore-release-media.py ../sprout-downloads/seed-studio-v0.30.0.zip
 npm test
 npm run check
 npm start
 ```
 
-Python 3 is only needed for the one-time media restoration helper. It verifies every expected WAV against the committed size and SHA-256, refuses modified local media and never extracts arbitrary archive paths. Test fixtures that inspect audio require this restoration step. The complete release ZIP can also be run directly without Python.
+For Electron development and packaging, Node.js 22.12 or newer is required:
 
-API keys, local environment files, hosting identifiers and the old local Git history are excluded. The optional V100 bridge requires your own SSH host configuration and credentials; no credentials are bundled. Original project code has no newly assigned open-source license; bundled third-party assets retain their individual notices in `dist/samples/licenses` and the sound-library tools.
+```sh
+npm ci
+npm run desktop
+npm run desktop:package
+```
 
-The repository is a clean v0.29.0 snapshot. The original local working repository and its history are preserved separately.
+Python 3 is needed only for media restoration. The helper validates every expected WAV's size/SHA-256, refuses modified local files and never extracts arbitrary ZIP paths. Source tests inspecting audio and all desktop packaging require restored media. No samples are fetched automatically when the app starts.
+
+API keys, local environment files, hosting identifiers, app profiles, `node_modules` and the old local Site Git history are excluded. The optional V100 bridge requires separately configured SSH access; no credentials are bundled. Original project code has no newly assigned open-source license; third-party notices are retained under `dist/samples/licenses` and the sound-library tools.
+
+The source was synchronized from the local v0.30.0 working tree. The original local repository/history and the user's running desktop profile are not replaced. The v0.30 validation file records the earlier local build verification; this release adds distribution, not a new music feature or new paid model calls.
 
 ---
 
@@ -40,13 +48,51 @@ The repository is a clean v0.29.0 snapshot. The original local working repositor
 
 一个面向新手的浏览器编曲工作站。参考经典 DAW 的暗色轨道、钢琴卷帘和混音台工作流，采用原创界面、内置合成音源和随包采样乐器。不是 FL Studio 的全功能替代品，也不读取 `.flp` 文件。
 
+## 0.30 — Electron desktop, local-first
+
+The studio now has a standalone Electron entry point and a macOS Apple-silicon packaging command. The packaged application includes all **179 playable presets / 2,259 instrument WAVs** and its own backend. Double-clicking the `.app` does not require Node.js, a browser tab, a manually started server, a login or a model key. Nothing automatically plays or calls a model.
+
+For source development, use Node.js 22.12 or newer:
+
+```sh
+npm ci
+npm run desktop
+npm run desktop:package
+```
+
+The macOS application and its ZIP are written under `desktop-build/0.30.0/`. Only macOS arm64 is built and exercised here; Windows/Linux packages are not claimed tested. This first macOS build uses an **ad-hoc signature, not Apple Developer ID signing or notarization**.
+
+### Project storage and migration
+
+The desktop editor uses the fixed `sprout://studio/` origin and its own profile at `~/Library/Application Support/Sprout Studio`. Its private backend uses a free loopback port, so it does not conflict with a browser studio on port 4173. The stable editor origin prevents a changing backend port from creating an apparently empty project library.
+
+Existing browser projects are **not silently copied**. Export a `.sprout` file from the browser and import it using the desktop **工程 → 导入工程** menu. MIDI import retains the existing mapping and limitations; Electron packaging does not add MP3 transcription, VST support or perfect automatic instrument matching.
+
+### Optional model connection
+
+Use the native **模型连接 → 编辑本机模型配置** menu to create/open `desktop.env` in the application data directory. This file is server-side only, created with owner-only permissions, and is not included in a build. Restart after editing. Offline editing and instruments need no configuration.
+
+To reuse an **already running** V100 SSH bridge, configure `SPROUT_REMOTE_SERVICE_URL=http://127.0.0.1:54173`. The desktop wrapper does not automatically start SSH, copy a V100 key or make a paid model call. Direct provider credentials can instead be configured in the same local file, never in the renderer.
+
+### Desktop design decisions
+
+- Keep the existing restrained editor rather than introducing another dashboard or setup wizard.
+- Use native menus/file dialogs for imports and downloads; route piano-roll copy/paste and project undo to the music editor rather than native text editing.
+- Use a sandboxed, context-isolated renderer with Node integration disabled and no broad preload/IPC bridge.
+- Keep external links outside the editor behind explicit confirmation.
+- Package an explicit runtime allowlist: no `.env`, hosting metadata, Git history, test profiles or example renders.
+
+`npm run desktop:smoke` runs actual Electron checks in a disposable profile with muted output. `desktop/reopen-smoke.mjs` can reopen that profile in a second process to verify project persistence. These checks do not establish subjective sound quality or exhaustive platform compatibility.
+
+Verification: **698 automated tests and 11 actual Electron checks pass**, with an additional successful second-process project reopen on a different private port. All 2,259 samples were checksum-verified inside the final application archive, the macOS ad-hoc signature passes deep/strict verification, and the packaged native window was opened and inspected. See [v0.30 evidence](examples/validation-v30.json). The inherited sidebar `LOCAL 0.24` text is a known cosmetic mismatch; native application metadata is v0.30.0. The v0.30.0 desktop source and macOS archive are backed up in the private GitHub repository and release.
+
 ## 0.29 — 179 playable sounds across acoustic and EDM families
 
 The library now contains **179 distinct playable presets**, not just 179 audio files: 15 detailed recording presets, all 128 bank-zero FluidR3 General MIDI programs and 36 original EDM patches. Coverage includes pianos/electric keys, organs, mallets, guitars, basses, strings, choirs/ooh voices, brass, reeds, winds, synth leads/pads, world instruments, tuned percussion, effects and electronic drums. These are not 179 newly recorded acoustic instrument families; soundbank and synthesized sources are labeled separately.
 
 **Add instrument** now has literal text search, collection/family filters and 24 featured results at a time, with explicit Show more. Source changes retain compatible native category groups. No auto-audition, replacement of existing songs, account or new runtime plugin. The full local recording library is **2,259 WAV files / 767.07 MB**; files load per source rather than downloading the whole library at startup. Native playback preparation uses only note roots needed by the project or preview. Raw PCM and prepared-buffer caches have separate 96 MB and 256 MB ceilings; idle prepared buffers can be evicted without removing active project roots.
 
-**688 tests pass.** Every preset has an actual non-silent, unclipped offline audition. The authored [EDM and acoustic/choir sketches](examples/sound-library-v29/README.md) are separate from model output. Two older WAVs re-rendered byte-exactly, and all 264 old PCM assets/records remain unchanged. No new paid model calls or Sites deployment. This snapshot is backed up on GitHub with media in a separate release asset. These are signal/behavior checks; current browser visual and subjective listening QA remain unperformed.
+**688 tests pass.** Every preset has an actual non-silent, unclipped offline audition. The authored [EDM and acoustic/choir sketches](examples/sound-library-v29/README.md) are separate from model output. Two older WAVs re-rendered byte-exactly, and all 264 old PCM assets/records remain unchanged. No new paid model calls, publishing or Git push. These are signal/behavior checks; current browser visual and subjective listening QA remain unperformed.
 
 ## 0.28 — more acoustic recordings, fewer identical retriggers
 

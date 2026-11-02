@@ -4,9 +4,12 @@
 node_modules/
 .DS_Store
 *.log
+desktop-build/
+.desktop-stage-*/
+__pycache__/
 
-# Media is distributed with GitHub Releases, not Git history.
+# Large media and native applications are GitHub Release assets.
 *.wav
 *.zip
 .openai/
-__pycache__/
+desktop.env

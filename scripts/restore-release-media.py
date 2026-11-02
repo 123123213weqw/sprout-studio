@@ -36,7 +36,7 @@ def checked_target(root, relative):
 
 def restore(root, archive, verify_only=False):
     manifest = json.loads((root / 'release-media.json').read_text())
-    if manifest.get('archiveRoot') != 'seed-studio' or manifest.get('version') != '0.29.0':
+    if manifest.get('archiveRoot') != 'seed-studio' or manifest.get('version') != json.loads((root / 'package.json').read_text())['version']:
         raise ValueError('Unsupported media manifest')
     expected = manifest['files']
     if not isinstance(expected, dict) or not expected:
@@ -80,7 +80,7 @@ def restore(root, archive, verify_only=False):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('archive', type=Path, help='Path to seed-studio-v0.29.0.zip')
+    parser.add_argument('archive', type=Path, help='Path to the complete seed-studio release ZIP (not the Mac application ZIP)')
     parser.add_argument('--verify-only', action='store_true', help='Validate without writing files')
     options = parser.parse_args()
     root = Path(__file__).resolve().parents[1]

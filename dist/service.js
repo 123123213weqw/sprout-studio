@@ -28,7 +28,9 @@ export const SERVICE_MESSAGES={
 const retryCodes=new Set(['network','timeout','rate_limit','server']);
 export class ServiceError extends Error{constructor(code,status){super(SERVICE_MESSAGES[code]||SERVICE_MESSAGES.server);this.name='ServiceError';this.code=SERVICE_MESSAGES[code]?code:'server';this.retryable=retryCodes.has(this.code);if(Number.isInteger(status))this.status=status}}
 export function serviceUrl(value,base){let url;try{url=new URL(value,base)}catch{throw new ServiceError('endpoint')}
- if(url.protocol!=='https:'&&!(url.protocol==='http:'&&['localhost','127.0.0.1','[::1]'].includes(url.hostname)))throw new ServiceError('endpoint');
+ // Only the desktop renderer may resolve relative endpoints to its fixed local origin.
+ let desktop=false;try{const parent=new URL(base);desktop=parent.protocol==='sprout:'&&parent.host==='studio'&&!parent.username&&!parent.password&&url.protocol==='sprout:'&&url.host==='studio'}catch{}
+ if(!desktop&&url.protocol!=='https:'&&!(url.protocol==='http:'&&['localhost','127.0.0.1','[::1]'].includes(url.hostname)))throw new ServiceError('endpoint');
  if(url.username||url.password||url.hash||[...url.searchParams.keys()].some(k=>/key|token|secret|password|auth|credential/i.test(k)))throw new ServiceError('endpoint');return url;
 }
 export function statusUrl(compose,status,base){const c=serviceUrl(compose,base),s=serviceUrl(status,base);if(c.origin!==s.origin)throw new ServiceError('status_address');return{compose:c,status:s}}

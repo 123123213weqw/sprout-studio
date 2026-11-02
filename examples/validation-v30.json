@@ -1,0 +1,28 @@
+{
+  "version": "0.30.0",
+  "kind": "Local Electron desktop build; not published to GitHub",
+  "platform": "darwin",
+  "arch": "arm64",
+  "zipBytes": 684248268,
+  "sha256": "dddcccaaf2cce5a52da6e4f27a684cbdb378e5dac21d99f525d0f91177660f71",
+  "packagedSamplesVerified": 2259,
+  "packagedSourcesVerified": true,
+  "secretsAndHostingMetadataExcluded": true,
+  "adHocSignatureVerified": true,
+  "appleNotarized": false,
+  "automatedTestsPassed": 698,
+  "electronChecksPassed": 11,
+  "secondProcessReopen": {
+    "passed": true,
+    "stableOrigin": "sprout://studio/",
+    "privatePortChanged": true
+  },
+  "packagedWindowVerifiedByNativeAccessibility": true,
+  "subjectiveListeningQA": false,
+  "knownLimitations": [
+    "macOS arm64 only tested",
+    "Browser projects require explicit .sprout migration",
+    "Legacy LOCAL 0.24 sidebar badge is inherited; app metadata reports 0.30.0",
+    "No MP3 transcription or new MIDI instrument mapping in this desktop wrapper"
+  ]
+}
