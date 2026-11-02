@@ -55,5 +55,17 @@ for (const c of checks) {
   if (!ok) fail++;
   console.log(`${ok ? '✓' : '✗'} ${c.fg}(${f}) on ${c.bg}(${b}) = ${r.toFixed(2)}:1  最低 ${c.min}  [${c.why}]`);
 }
+
+// 字号下限：不允许小于 10px 的文字（可读性 + 抗锯齿损耗）
+const smallFonts = [];
+for (const f of files) {
+  const text = readFileSync(f, 'utf8');
+  for (const m of text.matchAll(/font-size:\s*(\d+(?:\.\d+)?)px/g)) {
+    if (Number(m[1]) < 10) smallFonts.push(`${f}: font-size:${m[1]}px`);
+  }
+}
+for (const s of smallFonts) { fail++; console.log(`✗ 字号低于 10px 下限 — ${s}`); }
+if (!smallFonts.length) console.log('✓ 全部字号 ≥ 10px');
+
 console.log(fail ? `\n${fail} 项不达标` : '\n全部达标');
 process.exit(fail ? 1 : 0);
