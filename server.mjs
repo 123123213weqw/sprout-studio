@@ -32,7 +32,7 @@ export function createAppServer({env=process.env,compose=composeWithModel,now=Da
    return;
   }
   if(req.method!=='GET'&&req.method!=='HEAD'){res.writeHead(405);return res.end('Method not allowed')}
-  const file=resolve(dir,'.'+(pathname==='/'?'/index.html':pathname));if(!file.startsWith(dir+sep)){res.writeHead(403);return res.end('Forbidden')};const meta=await stat(file);if(!meta.isFile())throw Error('Not found');const data=await readFile(file);res.writeHead(200,{'Content-Type':mime[extname(file)]||'application/octet-stream','Cache-Control':'no-cache'});res.end(req.method==='HEAD'?undefined:data)
+  const file=resolve(dir,'.'+(pathname==='/'?'/index.html':pathname));if(!file.startsWith(dir+sep)){res.writeHead(403);return res.end('Forbidden')};const meta=await stat(file);if(!meta.isFile())throw Error('Not found');let data=await readFile(file);if(pathname==='/')data=Buffer.from(data.toString().replace('<span class="version" data-version>local</span>',`<span class="version" data-version>v${version}</span>`));res.writeHead(200,{'Content-Type':mime[extname(file)]||'application/octet-stream','Cache-Control':'no-cache'});res.end(req.method==='HEAD'?undefined:data)
  }catch{if(!res.destroyed&&!res.writableEnded){res.writeHead(404);res.end('Not found')}}});return app;
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
