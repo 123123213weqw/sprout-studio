@@ -290,3 +290,16 @@ dialog:has(.sampler-form),dialog:has(.sampler-palette-form),dialog:has(#add-inst
 #instrument-more{margin:12px 0}
 .instrument-browser>details{margin-top:18px}
 @media(max-width:420px){.instrument-browser .instrument-list{grid-template-columns:minmax(0,1fr)}}
+/* 助手面板折叠组（与左栏 beginner-guide 同模式） */
+.assistant-tools { border-top: 1px solid var(--border); }
+.assistant-tools>summary { font-size: 12px; color: var(--muted); cursor: pointer; padding: 9px 18px; list-style: none; display: flex; align-items: center; gap: 6px; }
+.assistant-tools>summary::before { content: '▸'; color: var(--subtle); font-size: 10px; transition: transform .14s; }
+.assistant-tools[open]>summary::before { transform: rotate(90deg); }
+.assistant-tools>div { display: grid; gap: 8px; padding: 0 18px 12px; }
+.assistant-tools .model-indicator { margin: 0; }
+.assistant-tools .palette-indicator { margin: 0; }
+.assistant-tools .candidate-tools { margin: 0; }
+.assistant-help>summary { font-size: 11px; color: var(--subtle); cursor: pointer; padding: 4px 0; list-style: none; display: flex; align-items: center; gap: 6px; }
+.assistant-help>summary::before { content: '▸'; font-size: 9px; transition: transform .14s; }
+.assistant-help[open]>summary::before { transform: rotate(90deg); }
+.assistant-help p { font-size: 11px; color: var(--muted); line-height: 1.8; margin: 0 0 8px; }
