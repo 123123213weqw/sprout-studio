@@ -235,7 +235,7 @@ $('#modal').addEventListener('click',e=>{if(e.target.closest('[data-close]'))$('
 function confirmDialog(title,message,fn,label='确认'){modal(title,`<p>${escape(message)}</p>`,'<button class="quiet" data-close>取消</button><button class="accent" id="confirm-action">'+escape(label)+'</button>');$('#confirm-action').onclick=async()=>{$('#modal').close();try{await fn()}catch(error){toast(error.message)}}}
 function download(bytes,filename,type){const blob=bytes instanceof Blob?bytes:new Blob([bytes],{type}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=filename;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000)}
 const filename=()=>project.name.replace(/[\\/:*?"<>|]/g,'-').trim()||'我的作品';
-function projectFilename(p){return String(p.name||'芽音作品').replace(/[\\/:*?"<>|]/g,'_').slice(0,60)}
+function projectFilename(p){return String(p.name||'Sprout 作品').replace(/[\\/:*?"<>|]/g,'_').slice(0,60)}
 function versionDate(time){try{return new Intl.DateTimeFormat('zh-CN',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit'}).format(new Date(time))}catch{return'未知时间'}}
 let versionsRequest=0;
 async function showVersions(){

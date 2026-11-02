@@ -32,7 +32,7 @@ export async function launchDesktop({visible=true,onProgress=()=>{}}={}){
   if(answer.response===1)await shell.openExternal(value);
  };
  const createWindow=async()=>{
-  window=new BrowserWindow({title:'芽音 · Sprout Studio',width:1360,height:860,minWidth:940,minHeight:640,backgroundColor:'#15191f',show:false,
+  window=new BrowserWindow({title:'Sprout Studio',width:1360,height:860,minWidth:940,minHeight:640,backgroundColor:'#15191f',show:false,
    webPreferences:{nodeIntegration:false,contextIsolation:true,sandbox:true,webSecurity:true,allowRunningInsecureContent:false,autoplayPolicy:'document-user-activation-required',devTools:!app.isPackaged}});
   window.webContents.setWindowOpenHandler(({url})=>{void external(url).catch(()=>{});return{action:'deny'}});
   window.webContents.on('will-navigate',(event,url)=>{if(!isStudioURL(url)){event.preventDefault();void external(url).catch(()=>{})}});
@@ -73,9 +73,9 @@ export async function launchDesktop({visible=true,onProgress=()=>{}}={}){
   {label:'窗口',submenu:[{role:'minimize'},{role:'zoom'},{role:'front'}]},
  ];
  Menu.setApplicationMenu(Menu.buildFromTemplate(menu));
- app.setAboutPanelOptions({applicationName:'芽音 · Sprout Studio',applicationVersion:app.getVersion(),copyright:'Instrument notices are bundled in dist/samples/licenses.'});
+ app.setAboutPanelOptions({applicationName:'Sprout Studio',applicationVersion:app.getVersion(),copyright:'Instrument notices are bundled in dist/samples/licenses.'});
  const mainWindow=await createWindow();
- const reopen=()=>void createWindow().catch(()=>dialog.showErrorBox('窗口无法打开','请退出芽音后重新启动。工程仍保存在本机应用数据目录中。'));
+ const reopen=()=>void createWindow().catch(()=>dialog.showErrorBox('窗口无法打开','请退出 Sprout Studio 后重新启动。工程仍保存在本机应用数据目录中。'));
  app.on('second-instance',()=>{if(quitting)return;if(window){if(window.isMinimized())window.restore();window.show();window.focus()}else reopen()});
  app.on('activate',()=>{if(!window&&!quitting)reopen()});
  app.on('window-all-closed',()=>{if(process.platform!=='darwin')app.quit()});

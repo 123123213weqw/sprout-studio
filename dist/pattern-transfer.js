@@ -17,7 +17,7 @@ function context(value){
  return{bpm:value.bpm,key:value.key,swing:value.swing};
 }
 export function validatePatternLibrary(input){
- fields(input,['format','version','context','patterns'],'请选择芽音乐句文件，不是音频或任意 JSON');
+ fields(input,['format','version','context','patterns'],'请选择Sprout 乐句文件，不是音频或任意 JSON');
  if(input.format!==PATTERN_FILE_FORMAT||input.version!==PATTERN_FILE_VERSION)throw Error('不支持这个乐句文件格式或版本');
  if(!Array.isArray(input.patterns)||!input.patterns.length||input.patterns.length>PATTERN_LIMITS.patterns)throw Error('乐句文件须包含 1–64 个 Pattern');
  for(const p of input.patterns){
@@ -48,7 +48,7 @@ export function readPatternFile(text){
  if(typeof text!=='string'||byteLength(text)>PATTERN_FILE_MAX_BYTES)throw Error('乐句或工程文件超过 3 MB 上限');
  let raw;try{raw=JSON.parse(text)}catch{throw Error('文件不是完整 JSON，没有导入任何乐句')}
  if(object(raw)&&Object.hasOwn(raw,'format'))return{library:validatePatternLibrary(raw),origin:'library'};
- let project;try{project=validateProject(raw)}catch{throw Error('不是有效的芽音乐句文件或完整工程；工程共享缓存也必须一致')}
+ let project;try{project=validateProject(raw)}catch{throw Error('不是有效的Sprout 乐句文件或完整工程；工程共享缓存也必须一致')}
  if(!project.patterns?.length)throw Error('这个工程没有库中的 Pattern；请先从音块存入，再导出乐句');
  return{library:exportPatternLibrary(project),origin:'project'};
 }
