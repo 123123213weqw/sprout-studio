@@ -1,0 +1,931 @@
+{
+ "version": 1,
+ "transport": {
+  "acoustic-v28/acoustic-trio.sprout": "bf8d6342",
+  "acoustic-v28/deepseek-natural-performance.sprout": "3ea37c67",
+  "acoustic-v28/deepseek-same-notes-new-voices.sprout": "bd8f30be",
+  "acoustic-v28/guitar-alternate-takes.sprout": "08ce82be",
+  "acoustic-v28/held-strings-wind.sprout": "665c5f00",
+  "acoustic-v28/solo-clarinet.sprout": "e4ad74a2",
+  "acoustic-v28/solo-guitar.sprout": "e1c67afa",
+  "acoustic-v28/solo-violin.sprout": "045d14a6",
+  "candidate-a.sprout": "f48949b0",
+  "candidate-b.sprout": "2ecf99ea",
+  "candidate-c.sprout": "d021aa55",
+  "candidate-mock-service.sprout": "6c263b7e",
+  "clip-edit-demo.sprout": "fad92bde",
+  "deepseek-batch-v27/ambient-sustain/composition.sprout": "6c843d93",
+  "deepseek-batch-v27/drum-pocket/composition.sprout": "7537a954",
+  "deepseek-batch-v27/flute-clip/composition.sprout": "6e9597f5",
+  "deepseek-batch-v27/numeric-harmony/composition.sprout": "bd8f30be",
+  "deepseek-batch-v27/scope-pressure/composition.sprout": "22981b75",
+  "deepseek-batch-v27/section-with-patterns/composition.sprout": "538954cc",
+  "deepseek-live/bridge/composition.sprout": "b8d4193a",
+  "deepseek-live/bridge/input.sprout": "9e44ac68",
+  "deepseek-live/composition.sprout": "3cb0410a",
+  "deepseek-live/descriptive/composition.sprout": "3cb0410a",
+  "deepseek-live/descriptive/input.sprout": "ae1b0a9c",
+  "deepseek-live/explicit/composition.sprout": "9e44ac68",
+  "deepseek-live/explicit/input.sprout": "ae1b0a9c",
+  "deepseek-live/input.sprout": "ae1b0a9c",
+  "deepseek-live/reviewed/composition.sprout": "0af7a476",
+  "deepseek-live/reviewed/input.sprout": "9e44ac68",
+  "history-redone.sprout": "1d1b604c",
+  "history-renamed.sprout": "1d1b604c",
+  "history-restored.sprout": "1d1b604c",
+  "library-blank.sprout": "9a36147f",
+  "library-copy-muted.sprout": "1d1b604c",
+  "library-house-restored.sprout": "76e4145e",
+  "library-house.sprout": "76e4145e",
+  "library-import.sprout": "1d1b604c",
+  "library-lofi.sprout": "0a318863",
+  "library-restored-original.sprout": "1d1b604c",
+  "long-song-demo.sprout": "1d1b604c",
+  "note-chord-demo.sprout": "4b266f18",
+  "palette-demo.sprout": "9032bb34",
+  "pattern-managed-cross-track.sprout": "1d1b604c",
+  "pattern-series-baseline.sprout": "9a36147f",
+  "pattern-series-demo.sprout": "8153652e",
+  "pattern-series-detached.sprout": "5b048935",
+  "pattern-series-independent.sprout": "2b345e55",
+  "pattern-series-managed.sprout": "2b345e55",
+  "pattern-series-muted.sprout": "5b048935",
+  "pattern-series-ten.sprout": "8648f4a6",
+  "performance-demo.sprout": "725c0786",
+  "phrase-transform-clip-range.sprout": "e1c400e1",
+  "phrase-transform-demo.sprout": "1d1b604c",
+  "phrase-transform-drums.sprout": "1d1b604c",
+  "phrase-transform-expanded.sprout": "1d1b604c",
+  "portable-arranged-demo.sprout": "79ea5fba",
+  "portable-copy-demo.sprout": "1d1b604c",
+  "portable-import-demo.sprout": "1d1b604c",
+  "portable-source-project.sprout": "1d1b604c",
+  "portable-target-library.sprout": "9a36147f",
+  "portable-target-start.sprout": "9a36147f",
+  "real-instruments-demo.sprout": "43ef585c",
+  "real-instruments-restored.sprout": "43ef585c",
+  "real-instruments-sustain-input.sprout": "bb5c0d12",
+  "real-instruments-sustain-render.sprout": "bb5c0d12",
+  "repeat-loop-demo.sprout": "416e28f4",
+  "sampled-instruments-demo.sprout": "1d1b604c",
+  "sampled-instruments-original.sprout": "1d1b604c",
+  "sampled-instruments-restored.sprout": "1d1b604c",
+  "section-fill-gap.sprout": "1410de5e",
+  "section-fill-mobile-snare.sprout": "bb8b4ab7",
+  "section-fill-original.sprout": "1d1b604c",
+  "section-fill-restored.sprout": "1d1b604c",
+  "section-fill-rise.sprout": "11847325",
+  "service-demo-baseline.sprout": "b9b02296",
+  "service-demo.sprout": "ef3aa0a2",
+  "shared-pattern-demo.sprout": "70a35785",
+  "shared-transform-demo.sprout": "1d1b604c",
+  "shared-transform-eight-before.sprout": "9b7b8f2b",
+  "shared-transform-eight.sprout": "9d628443",
+  "shared-transform-extended.sprout": "1d1b604c",
+  "shared-transform-extension-before.sprout": "1d1b604c",
+  "shared-transform-mobile.sprout": "1d1b604c",
+  "shared-transform-original.sprout": "1d1b604c",
+  "shared-transform-region.sprout": "2857bf28",
+  "shared-transform-restored.sprout": "1d1b604c",
+  "song-sections-demo.sprout": "b9b02296",
+  "song-sections-start.sprout": "f13170b6",
+  "sound-collection-house.sprout": "76e4145e",
+  "sound-collection-original.sprout": "1d1b604c",
+  "sound-collection-pad.sprout": "1d1b604c",
+  "sound-collection-restored.sprout": "1d1b604c",
+  "sound-design-demo.sprout": "70a35785",
+  "sound-library-v29/acoustic-choir-sketch.sprout": "12266404",
+  "sound-library-v29/edm-sketch.sprout": "fa2c7940",
+  "ui-simplified.sprout": "1d1b604c"
+ },
+ "sampler": {
+  "vsco-piano": "00e20b35",
+  "vsco-kick": "c8d0ca1b",
+  "vsco-snare": "6f8b79bc",
+  "vsco-cymbal": "8d54e782",
+  "vsco-piano-full": "f287d003",
+  "vsco-bass": "a9f15006",
+  "vsco-flute": "a6124ed8",
+  "vsco-cello": "276b48c0",
+  "vsco-harp": "b1c086ba",
+  "karoryfer-guitar": "4a122074",
+  "vsco-violin": "4a1f2fc2",
+  "vsco-clarinet": "8170f6dc",
+  "sonic-kick": "c6841ebe",
+  "sonic-snare": "9abc2e43",
+  "sonic-hat": "be3e7f60",
+  "fluid-000": "0d58429a",
+  "fluid-001": "4813f4a4",
+  "fluid-002": "0c981857",
+  "fluid-003": "a7293648",
+  "fluid-004": "57561eca",
+  "fluid-005": "dc6c572c",
+  "fluid-006": "2f590c7a",
+  "fluid-007": "bb8b9828",
+  "fluid-008": "98129862",
+  "fluid-009": "233d267d",
+  "fluid-010": "7d95cb78",
+  "fluid-011": "cf7a605e",
+  "fluid-012": "70919ca0",
+  "fluid-013": "2fedacac",
+  "fluid-014": "8b4c53c8",
+  "fluid-015": "d396cf36",
+  "fluid-016": "2f00be34",
+  "fluid-017": "3d3e40e2",
+  "fluid-018": "b5456e2c",
+  "fluid-019": "9e7c294e",
+  "fluid-020": "d8a8cd82",
+  "fluid-021": "13ed8e84",
+  "fluid-022": "48fe5ccd",
+  "fluid-023": "fe9dc486",
+  "fluid-024": "2f1fb13e",
+  "fluid-025": "fc8b1306",
+  "fluid-026": "c86b1ea0",
+  "fluid-027": "2b6406de",
+  "fluid-028": "6a17aa50",
+  "fluid-029": "90525526",
+  "fluid-030": "28dd19e2",
+  "fluid-031": "38362f20",
+  "fluid-032": "de4b83aa",
+  "fluid-033": "98da09c8",
+  "fluid-034": "467ed1ae",
+  "fluid-035": "583cb428",
+  "fluid-036": "495b04da",
+  "fluid-037": "8435c8c0",
+  "fluid-038": "680c0ea6",
+  "fluid-039": "403d9ff0",
+  "fluid-040": "f6377d90",
+  "fluid-041": "de61b9de",
+  "fluid-042": "789099ec",
+  "fluid-043": "a327e498",
+  "fluid-044": "c53e6954",
+  "fluid-045": "329e55a6",
+  "fluid-046": "5104ef04",
+  "fluid-047": "b4dbc6f7",
+  "fluid-048": "0f989e28",
+  "fluid-049": "6ba0a7be",
+  "fluid-050": "f13d3b5e",
+  "fluid-051": "8f11ba6c",
+  "fluid-052": "d4fd23a2",
+  "fluid-053": "67b8d8f4",
+  "fluid-054": "2a29725e",
+  "fluid-055": "ae17c234",
+  "fluid-056": "cea4bd0d",
+  "fluid-057": "a5cadd44",
+  "fluid-058": "b6bb6da8",
+  "fluid-059": "53508caa",
+  "fluid-060": "e024413e",
+  "fluid-061": "6955d05f",
+  "fluid-062": "f68d0bac",
+  "fluid-063": "8671f5e1",
+  "fluid-064": "8fe795b2",
+  "fluid-065": "bc3f845b",
+  "fluid-066": "2fdfc664",
+  "fluid-067": "ed0fdbf5",
+  "fluid-068": "a58c7518",
+  "fluid-069": "dd14e406",
+  "fluid-070": "c051feb2",
+  "fluid-071": "0546626c",
+  "fluid-072": "24f05498",
+  "fluid-073": "f96692fa",
+  "fluid-074": "8e1e94ff",
+  "fluid-075": "5ea283ce",
+  "fluid-076": "52fbab30",
+  "fluid-077": "3e6d1c9a",
+  "fluid-078": "4c9e2238",
+  "fluid-079": "7c707196",
+  "fluid-080": "5155ce62",
+  "fluid-081": "d266edf0",
+  "fluid-082": "fbbddcc2",
+  "fluid-083": "c708d3bb",
+  "fluid-084": "7dcddb48",
+  "fluid-085": "279512c0",
+  "fluid-086": "f7475832",
+  "fluid-087": "b3ee691c",
+  "fluid-088": "7a3bf81c",
+  "fluid-089": "155f00e2",
+  "fluid-090": "7ac3cfad",
+  "fluid-091": "9792fb80",
+  "fluid-092": "fac1dede",
+  "fluid-093": "3ec2f490",
+  "fluid-094": "69bb76fa",
+  "fluid-095": "1c651944",
+  "fluid-096": "7f399886",
+  "fluid-097": "308d24d8",
+  "fluid-098": "84d0f1ca",
+  "fluid-099": "bf7ff480",
+  "fluid-100": "d780e842",
+  "fluid-101": "083c23f6",
+  "fluid-102": "67227705",
+  "fluid-103": "948afe68",
+  "fluid-104": "6e1a7971",
+  "fluid-105": "580a53b2",
+  "fluid-106": "b08d97ac",
+  "fluid-107": "42cc5542",
+  "fluid-108": "4afe98f0",
+  "fluid-109": "cd6ccfa8",
+  "fluid-110": "3aa2f59c",
+  "fluid-111": "3eded348",
+  "fluid-112": "6735bc42",
+  "fluid-113": "e0a94f68",
+  "fluid-114": "be9ffbee",
+  "fluid-115": "d8887f18",
+  "fluid-116": "53197ca2",
+  "fluid-117": "f8014940",
+  "fluid-118": "c57c6016",
+  "fluid-119": "d5608f60",
+  "fluid-120": "6f3b7cee",
+  "fluid-121": "47da5acc",
+  "fluid-122": "1234fdbe",
+  "fluid-123": "4bd0b600",
+  "fluid-124": "d4bbd2ce",
+  "fluid-125": "8607b28c",
+  "fluid-126": "ac3fdefe",
+  "fluid-127": "a0036358",
+  "edm-bass-1": "85908fce",
+  "edm-bass-2": "aec4b1a4",
+  "edm-bass-3": "19b8693f",
+  "edm-bass-4": "3009717a",
+  "edm-bass-5": "1289cf26",
+  "edm-bass-6": "c4a0de5a",
+  "edm-lead-1": "3b7c5502",
+  "edm-lead-2": "5144405a",
+  "edm-lead-3": "e941d97a",
+  "edm-lead-4": "c8ea0662",
+  "edm-lead-5": "4f5ca5ea",
+  "edm-lead-6": "3f2b52ca",
+  "edm-pad-1": "d97422cf",
+  "edm-pad-2": "76c61610",
+  "edm-pad-3": "fb90da02",
+  "edm-pad-4": "93fd7478",
+  "edm-pad-5": "69b924d3",
+  "edm-pad-6": "26efc678",
+  "edm-pluck-1": "897c1ae4",
+  "edm-pluck-2": "c98cf116",
+  "edm-pluck-3": "df4251c0",
+  "edm-pluck-4": "e9aa0c5a",
+  "edm-pluck-5": "036a7b98",
+  "edm-pluck-6": "a31893c6",
+  "edm-kick-1": "5078a25b",
+  "edm-kick-2": "274ea362",
+  "edm-kick-3": "663e29b1",
+  "edm-kick-4": "0f016bf0",
+  "edm-snare-1": "741e20ee",
+  "edm-snare-2": "29cb76b6",
+  "edm-snare-3": "99cc0918",
+  "edm-snare-4": "4007777e",
+  "edm-hat-1": "85928752",
+  "edm-hat-2": "ff8ba61a",
+  "edm-hat-3": "56ce928e",
+  "edm-hat-4": "8e2923ce"
+ },
+ "voicePlan": {
+  "vsco-piano": "e2063735",
+  "vsco-kick": "0559247d",
+  "vsco-snare": "bc6ee4a3",
+  "vsco-cymbal": "b2ffac93",
+  "vsco-piano-full": "35dc8af9",
+  "vsco-bass": "e7a768e5",
+  "vsco-flute": "0706262c",
+  "vsco-cello": "f9d128b7",
+  "vsco-harp": "c0cc84e8",
+  "karoryfer-guitar": "1a85ead2",
+  "vsco-violin": "280128ae",
+  "vsco-clarinet": "b6541588",
+  "sonic-kick": "84085619",
+  "sonic-snare": "3da3e10d",
+  "sonic-hat": "5d7137dd",
+  "fluid-000": "f05d3202",
+  "fluid-001": "08d138cc",
+  "fluid-002": "4972ee8e",
+  "fluid-003": "b31dea90",
+  "fluid-004": "61dec11a",
+  "fluid-005": "f5f0d8ec",
+  "fluid-006": "345b3d12",
+  "fluid-007": "338b8d48",
+  "fluid-008": "e99f04d4",
+  "fluid-009": "6511024e",
+  "fluid-010": "4ed5f326",
+  "fluid-011": "5991c59a",
+  "fluid-012": "49d7bdae",
+  "fluid-013": "9a6ce192",
+  "fluid-014": "a91111f6",
+  "fluid-015": "5cbca468",
+  "fluid-016": "780618ef",
+  "fluid-017": "d21f10b3",
+  "fluid-018": "b4a7d719",
+  "fluid-019": "a2e734d7",
+  "fluid-020": "23e4c44f",
+  "fluid-021": "d9693b56",
+  "fluid-022": "0cda8d6f",
+  "fluid-023": "58ddff39",
+  "fluid-024": "06ea98bb",
+  "fluid-025": "7cfc0a99",
+  "fluid-026": "42c0f01f",
+  "fluid-027": "f8f12dbd",
+  "fluid-028": "55f7435a",
+  "fluid-029": "08c26f99",
+  "fluid-030": "8bfad249",
+  "fluid-031": "98356d5e",
+  "fluid-032": "45cbe07c",
+  "fluid-033": "9cb4820a",
+  "fluid-034": "33f30ec0",
+  "fluid-035": "59acb5b2",
+  "fluid-036": "86e91f54",
+  "fluid-037": "cf425ec2",
+  "fluid-038": "c182506b",
+  "fluid-039": "3a63a60d",
+  "fluid-040": "c5572a86",
+  "fluid-041": "0acf6ed8",
+  "fluid-042": "17d270a2",
+  "fluid-043": "4b1879da",
+  "fluid-044": "f92ab19e",
+  "fluid-045": "5259572d",
+  "fluid-046": "bd42108f",
+  "fluid-047": "458f7b43",
+  "fluid-048": "f1cc7eef",
+  "fluid-049": "206f8633",
+  "fluid-050": "198aab37",
+  "fluid-051": "27ef1ca9",
+  "fluid-052": "87e25c57",
+  "fluid-053": "ce12134d",
+  "fluid-054": "8c6e7f67",
+  "fluid-055": "0a764f3a",
+  "fluid-056": "b2bb5fea",
+  "fluid-057": "6b7433fe",
+  "fluid-058": "11223897",
+  "fluid-059": "d9740f72",
+  "fluid-060": "3734e56a",
+  "fluid-061": "cdfddaae",
+  "fluid-062": "9e0bd7f6",
+  "fluid-063": "3fbf9fc6",
+  "fluid-064": "2b2a5c0a",
+  "fluid-065": "9b19a068",
+  "fluid-066": "67b0077a",
+  "fluid-067": "d87ff991",
+  "fluid-068": "76ed4966",
+  "fluid-069": "d61af287",
+  "fluid-070": "ca272803",
+  "fluid-071": "8d725bca",
+  "fluid-072": "16fc756d",
+  "fluid-073": "97237df8",
+  "fluid-074": "5d448771",
+  "fluid-075": "bad491e1",
+  "fluid-076": "45860e8d",
+  "fluid-077": "c39b5c3f",
+  "fluid-078": "9a809681",
+  "fluid-079": "daa73267",
+  "fluid-080": "fc0d91d4",
+  "fluid-081": "5c7b839c",
+  "fluid-082": "b5d1e7fc",
+  "fluid-083": "c351b560",
+  "fluid-084": "cd5e12d8",
+  "fluid-085": "3296a5f2",
+  "fluid-086": "0e31ba3c",
+  "fluid-087": "a4ae2d3e",
+  "fluid-088": "4fff3264",
+  "fluid-089": "c7c0f4a6",
+  "fluid-090": "20666616",
+  "fluid-091": "e621e1e0",
+  "fluid-092": "2e2385e2",
+  "fluid-093": "b36fcc70",
+  "fluid-094": "7d19ebe6",
+  "fluid-095": "591cce62",
+  "fluid-096": "0e6a8f1a",
+  "fluid-097": "1a875fb8",
+  "fluid-098": "84866806",
+  "fluid-099": "ae5d5630",
+  "fluid-100": "bde73f56",
+  "fluid-101": "dd04bf5e",
+  "fluid-102": "5acb034e",
+  "fluid-103": "b003cdb0",
+  "fluid-104": "bbeb0aee",
+  "fluid-105": "69f06114",
+  "fluid-106": "59c5300a",
+  "fluid-107": "a01a223c",
+  "fluid-108": "03a62fc6",
+  "fluid-109": "58d5fa9a",
+  "fluid-110": "ad5f5dd2",
+  "fluid-111": "6207abfc",
+  "fluid-112": "f8ed0164",
+  "fluid-113": "4bfac176",
+  "fluid-114": "45dfdba0",
+  "fluid-115": "fdbf61b6",
+  "fluid-116": "23fd4ba4",
+  "fluid-117": "95862c1e",
+  "fluid-118": "212eeb28",
+  "fluid-119": "85d74f5e",
+  "fluid-120": "67165434",
+  "fluid-121": "ae78a412",
+  "fluid-122": "ef22f07f",
+  "fluid-123": "94c7c61a",
+  "fluid-124": "d897a4f4",
+  "fluid-125": "58017301",
+  "fluid-126": "e8a8bd21",
+  "fluid-127": "bc31c2e2",
+  "edm-bass-1": "9bdad587",
+  "edm-bass-2": "41b310de",
+  "edm-bass-3": "1d48fd94",
+  "edm-bass-4": "047afd8b",
+  "edm-bass-5": "bd019e59",
+  "edm-bass-6": "f4ec7886",
+  "edm-lead-1": "3e33b0cc",
+  "edm-lead-2": "00c18e9c",
+  "edm-lead-3": "03ef10f4",
+  "edm-lead-4": "241dd9c5",
+  "edm-lead-5": "1532fbf6",
+  "edm-lead-6": "95417f4c",
+  "edm-pad-1": "39d86749",
+  "edm-pad-2": "7b9b67fd",
+  "edm-pad-3": "fdd9edd3",
+  "edm-pad-4": "4c26067c",
+  "edm-pad-5": "352510fb",
+  "edm-pad-6": "a9ddcba3",
+  "edm-pluck-1": "be96f26b",
+  "edm-pluck-2": "3f878c92",
+  "edm-pluck-3": "16fbe9ab",
+  "edm-pluck-4": "632c6309",
+  "edm-pluck-5": "457eff2b",
+  "edm-pluck-6": "77dce42e",
+  "edm-kick-1": "c6a56dad",
+  "edm-kick-2": "79467335",
+  "edm-kick-3": "e90c3373",
+  "edm-kick-4": "f5bfa3d7",
+  "edm-snare-1": "eb000c87",
+  "edm-snare-2": "a21f0671",
+  "edm-snare-3": "00c5efff",
+  "edm-snare-4": "634f5767",
+  "edm-hat-1": "dff690f3",
+  "edm-hat-2": "1817e4c9",
+  "edm-hat-3": "d5be1a21",
+  "edm-hat-4": "c8cc1eab"
+ },
+ "midi": {
+  "acoustic-v28/acoustic-trio.sprout": {
+   "encode": "67d8b27c",
+   "project": "4cd4e807",
+   "report": "11bc2e06"
+  },
+  "acoustic-v28/deepseek-natural-performance.sprout": {
+   "encode": "3f8bd926",
+   "project": "f98d6383",
+   "report": "86b52dc1"
+  },
+  "acoustic-v28/deepseek-same-notes-new-voices.sprout": {
+   "encode": "7e81cfe8",
+   "project": "31ca357c",
+   "report": "86b52dc1"
+  },
+  "acoustic-v28/guitar-alternate-takes.sprout": {
+   "encode": "a2fc3f70",
+   "project": "20317527",
+   "report": "0d8fd70e"
+  },
+  "acoustic-v28/held-strings-wind.sprout": {
+   "encode": "8a627a1e",
+   "project": "0cd3582f",
+   "report": "7c0ef459"
+  },
+  "acoustic-v28/solo-clarinet.sprout": {
+   "encode": "64dc30ac",
+   "project": "7c1b3ec0",
+   "report": "c75c278e"
+  },
+  "acoustic-v28/solo-guitar.sprout": {
+   "encode": "c406da68",
+   "project": "45ad470c",
+   "report": "9906454e"
+  },
+  "acoustic-v28/solo-violin.sprout": {
+   "encode": "a36bc141",
+   "project": "e2d2137b",
+   "report": "05aeaa8a"
+  },
+  "candidate-a.sprout": {
+   "encode": "3766917f",
+   "project": "4ba2fcec",
+   "report": "4b41a35c"
+  },
+  "candidate-b.sprout": {
+   "encode": "498812ee",
+   "project": "1679f04e",
+   "report": "414267e0"
+  },
+  "candidate-c.sprout": {
+   "encode": "dfb75976",
+   "project": "20d1fde2",
+   "report": "579597cc"
+  },
+  "candidate-mock-service.sprout": {
+   "encode": "8f0a5995",
+   "project": "af34d2ca",
+   "report": "414267e0"
+  },
+  "clip-edit-demo.sprout": {
+   "encode": "d9bd9109",
+   "project": "abecbb89",
+   "report": "60f83c75"
+  },
+  "deepseek-batch-v27/ambient-sustain/composition.sprout": {
+   "encode": "4deab2a1",
+   "project": "50412d12",
+   "report": "884f2d4c"
+  },
+  "deepseek-batch-v27/drum-pocket/composition.sprout": {
+   "encode": "399ecb00",
+   "project": "baedcc27",
+   "report": "a52abb71"
+  },
+  "deepseek-batch-v27/flute-clip/composition.sprout": {
+   "encode": "99a73377",
+   "project": "4f94f180",
+   "report": "740f4379"
+  },
+  "deepseek-batch-v27/numeric-harmony/composition.sprout": {
+   "encode": "bbb01a34",
+   "project": "31ca357c",
+   "report": "86b52dc1"
+  },
+  "deepseek-batch-v27/scope-pressure/composition.sprout": {
+   "encode": "230ffef4",
+   "project": "d69fe1b1",
+   "report": "9f3e5ac5"
+  },
+  "deepseek-batch-v27/section-with-patterns/composition.sprout": {
+   "encode": "07c46dd7",
+   "project": "9019a23d",
+   "report": "0bd7a92b"
+  },
+  "deepseek-live/bridge/composition.sprout": {
+   "encode": "a7512012",
+   "project": "81fe04ee",
+   "report": "19bbd369"
+  },
+  "deepseek-live/bridge/input.sprout": {
+   "encode": "d6076b62",
+   "project": "e730d2fc",
+   "report": "0958ad6b"
+  },
+  "deepseek-live/composition.sprout": {
+   "encode": "c376a4bd",
+   "project": "ab8dc4fb",
+   "report": "e5b4b165"
+  },
+  "deepseek-live/descriptive/composition.sprout": {
+   "encode": "c376a4bd",
+   "project": "ab8dc4fb",
+   "report": "e5b4b165"
+  },
+  "deepseek-live/descriptive/input.sprout": {
+   "encode": "369e2cc5"
+  },
+  "deepseek-live/explicit/composition.sprout": {
+   "encode": "d6076b62",
+   "project": "e730d2fc",
+   "report": "0958ad6b"
+  },
+  "deepseek-live/explicit/input.sprout": {
+   "encode": "369e2cc5"
+  },
+  "deepseek-live/input.sprout": {
+   "encode": "369e2cc5"
+  },
+  "deepseek-live/reviewed/composition.sprout": {
+   "encode": "3522af3a",
+   "project": "66da1d38",
+   "report": "0958ad6b"
+  },
+  "deepseek-live/reviewed/input.sprout": {
+   "encode": "d6076b62",
+   "project": "e730d2fc",
+   "report": "0958ad6b"
+  },
+  "history-redone.sprout": {
+   "encode": "50941371",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "history-renamed.sprout": {
+   "encode": "50941371",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "history-restored.sprout": {
+   "encode": "50941371",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "library-blank.sprout": {
+   "encode": "e216232b"
+  },
+  "library-copy-muted.sprout": {
+   "encode": "0981fb18",
+   "project": "f5810440",
+   "report": "8f428164"
+  },
+  "library-house-restored.sprout": {
+   "encode": "b93991e6",
+   "project": "883f4914",
+   "report": "d5d1d8d4"
+  },
+  "library-house.sprout": {
+   "encode": "b93991e6",
+   "project": "883f4914",
+   "report": "d5d1d8d4"
+  },
+  "library-import.sprout": {
+   "encode": "0fdb790b",
+   "project": "22b62d6d",
+   "report": "25ccd18c"
+  },
+  "library-lofi.sprout": {
+   "encode": "ea017a8f",
+   "project": "9290aea1",
+   "report": "5fc14495"
+  },
+  "library-restored-original.sprout": {
+   "encode": "50941371",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "long-song-demo.sprout": {
+   "encode": "50941371",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "note-chord-demo.sprout": {
+   "encode": "444f3f86",
+   "project": "030916d6",
+   "report": "3079ac18"
+  },
+  "palette-demo.sprout": {
+   "encode": "0a9cf339",
+   "project": "54a47763",
+   "report": "9013b8e4"
+  },
+  "pattern-managed-cross-track.sprout": {
+   "encode": "e9b52a5b",
+   "project": "44327df8",
+   "report": "8f428164"
+  },
+  "pattern-series-baseline.sprout": {
+   "encode": "e216232b"
+  },
+  "pattern-series-demo.sprout": {
+   "encode": "68deef74",
+   "project": "1d6d6b7c",
+   "report": "434955a8"
+  },
+  "pattern-series-detached.sprout": {
+   "encode": "447c2dc4",
+   "project": "8a797e9f",
+   "report": "4e68d45a"
+  },
+  "pattern-series-independent.sprout": {
+   "encode": "27be86bc",
+   "project": "0045304b",
+   "report": "8e0cc68c"
+  },
+  "pattern-series-managed.sprout": {
+   "encode": "dd0cc850",
+   "project": "9a51a699",
+   "report": "d06d2248"
+  },
+  "pattern-series-muted.sprout": {
+   "encode": "447c2dc4",
+   "project": "8a797e9f",
+   "report": "4e68d45a"
+  },
+  "pattern-series-ten.sprout": {
+   "encode": "8b51081b",
+   "project": "cca06b70",
+   "report": "e6aa1d3a"
+  },
+  "performance-demo.sprout": {
+   "encode": "d5c4fbcb",
+   "project": "ac9c2ff7",
+   "report": "33f31e44"
+  },
+  "phrase-transform-clip-range.sprout": {
+   "encode": "0fdb790b",
+   "project": "22b62d6d",
+   "report": "25ccd18c"
+  },
+  "phrase-transform-demo.sprout": {
+   "encode": "0fdb790b",
+   "project": "22b62d6d",
+   "report": "25ccd18c"
+  },
+  "phrase-transform-drums.sprout": {
+   "encode": "54ff2f49",
+   "project": "7147c34f",
+   "report": "25ccd18c"
+  },
+  "phrase-transform-expanded.sprout": {
+   "encode": "0ac276d0",
+   "project": "8d4e4cfd",
+   "report": "e97d283c"
+  },
+  "portable-arranged-demo.sprout": {
+   "encode": "c10bd8dd",
+   "project": "b6f3a822",
+   "report": "0b81b728"
+  },
+  "portable-copy-demo.sprout": {
+   "encode": "50941371",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "portable-import-demo.sprout": {
+   "encode": "50941371",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "portable-source-project.sprout": {
+   "encode": "50941371",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "portable-target-library.sprout": {
+   "encode": "e216232b"
+  },
+  "portable-target-start.sprout": {
+   "encode": "e216232b"
+  },
+  "real-instruments-demo.sprout": {
+   "encode": "c505b248",
+   "project": "69bd4f5d",
+   "report": "9e03f06b"
+  },
+  "real-instruments-restored.sprout": {
+   "encode": "c505b248",
+   "project": "69bd4f5d",
+   "report": "9e03f06b"
+  },
+  "real-instruments-sustain-input.sprout": {
+   "encode": "8b273476",
+   "project": "1f18dadf",
+   "report": "37964484"
+  },
+  "real-instruments-sustain-render.sprout": {
+   "encode": "8b273476",
+   "project": "1f18dadf",
+   "report": "37964484"
+  },
+  "repeat-loop-demo.sprout": {
+   "encode": "cfa2a425",
+   "project": "96eae038",
+   "report": "2a4cbb9c"
+  },
+  "sampled-instruments-demo.sprout": {
+   "encode": "55f69e05",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "sampled-instruments-original.sprout": {
+   "encode": "50941371",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "sampled-instruments-restored.sprout": {
+   "encode": "55f69e05",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "section-fill-gap.sprout": {
+   "encode": "5516db68",
+   "project": "013bdfb7",
+   "report": "579597cc"
+  },
+  "section-fill-mobile-snare.sprout": {
+   "encode": "3bd113cb",
+   "project": "209dde84",
+   "report": "27c3ada4"
+  },
+  "section-fill-original.sprout": {
+   "encode": "50941371",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "section-fill-restored.sprout": {
+   "encode": "50941371",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "section-fill-rise.sprout": {
+   "encode": "38d9de7a",
+   "project": "2e73c8ec",
+   "report": "1bd8e344"
+  },
+  "service-demo-baseline.sprout": {
+   "encode": "50941371",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "service-demo.sprout": {
+   "encode": "d73137c8",
+   "project": "42d406f2",
+   "report": "25ccd18c"
+  },
+  "shared-pattern-demo.sprout": {
+   "encode": "91ee6d57",
+   "project": "52bf6dc7",
+   "report": "33f31e44"
+  },
+  "shared-transform-demo.sprout": {
+   "encode": "0bfbfb8e",
+   "project": "59f1c683",
+   "report": "25ccd18c"
+  },
+  "shared-transform-eight-before.sprout": {
+   "encode": "ec104c13",
+   "project": "e7e167dd",
+   "report": "44e40374"
+  },
+  "shared-transform-eight.sprout": {
+   "encode": "5d53c114",
+   "project": "ad5a0671",
+   "report": "44e40374"
+  },
+  "shared-transform-extended.sprout": {
+   "encode": "9bc0af41",
+   "project": "18ab53a8",
+   "report": "e97d283c"
+  },
+  "shared-transform-extension-before.sprout": {
+   "encode": "50941371",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "shared-transform-mobile.sprout": {
+   "encode": "bd13e492",
+   "project": "6a362ff3",
+   "report": "25ccd18c"
+  },
+  "shared-transform-original.sprout": {
+   "encode": "50941371",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "shared-transform-region.sprout": {
+   "encode": "0bfbfb8e",
+   "project": "59f1c683",
+   "report": "25ccd18c"
+  },
+  "shared-transform-restored.sprout": {
+   "encode": "50941371",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "song-sections-demo.sprout": {
+   "encode": "78b0948f",
+   "project": "0c6f2b1c",
+   "report": "f7d427b0"
+  },
+  "song-sections-start.sprout": {
+   "encode": "33740f7e",
+   "project": "d032e211",
+   "report": "89cd333c"
+  },
+  "sound-collection-house.sprout": {
+   "encode": "b93991e6",
+   "project": "883f4914",
+   "report": "d5d1d8d4"
+  },
+  "sound-collection-original.sprout": {
+   "encode": "50941371",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "sound-collection-pad.sprout": {
+   "encode": "50941371",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "sound-collection-restored.sprout": {
+   "encode": "50941371",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  },
+  "sound-design-demo.sprout": {
+   "encode": "91ee6d57",
+   "project": "52bf6dc7",
+   "report": "33f31e44"
+  },
+  "sound-library-v29/acoustic-choir-sketch.sprout": {
+   "encode": "cb969ba9",
+   "project": "941c2efe",
+   "report": "ddf79530"
+  },
+  "sound-library-v29/edm-sketch.sprout": {
+   "encode": "7ccf5092",
+   "project": "72da94e1",
+   "report": "19a6c76e"
+  },
+  "ui-simplified.sprout": {
+   "encode": "50941371",
+   "project": "f48563b7",
+   "report": "25ccd18c"
+  }
+ }
+}

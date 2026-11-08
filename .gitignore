@@ -13,3 +13,6 @@ __pycache__/
 *.zip
 .openai/
 desktop.env
+
+# Swift 构建产物
+native/.build/

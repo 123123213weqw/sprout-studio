@@ -1,0 +1,1131 @@
+{
+  "version": 3,
+  "id": "edm-sketch-v29",
+  "name": "EDM sketch · authored sound-library demo",
+  "style": "house",
+  "key": "A minor",
+  "bars": 4,
+  "bpm": 128,
+  "swing": 0,
+  "master": 0.8,
+  "seed": 291016,
+  "tracks": [
+    {
+      "id": "library-track-180",
+      "instrument": "kick",
+      "kind": "drum",
+      "name": "House kick",
+      "color": "#eda96b",
+      "volume": 0.7,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "library-note-180",
+          "pitch": 36,
+          "start": 0,
+          "duration": 0.125,
+          "velocity": 110
+        },
+        {
+          "id": "library-note-183",
+          "pitch": 36,
+          "start": 1,
+          "duration": 0.125,
+          "velocity": 110
+        },
+        {
+          "id": "library-note-187",
+          "pitch": 36,
+          "start": 2,
+          "duration": 0.125,
+          "velocity": 110
+        },
+        {
+          "id": "library-note-190",
+          "pitch": 36,
+          "start": 3,
+          "duration": 0.125,
+          "velocity": 110
+        },
+        {
+          "id": "library-note-210",
+          "pitch": 36,
+          "start": 4,
+          "duration": 0.125,
+          "velocity": 104
+        },
+        {
+          "id": "library-note-213",
+          "pitch": 36,
+          "start": 5,
+          "duration": 0.125,
+          "velocity": 104
+        },
+        {
+          "id": "library-note-217",
+          "pitch": 36,
+          "start": 6,
+          "duration": 0.125,
+          "velocity": 104
+        },
+        {
+          "id": "library-note-220",
+          "pitch": 36,
+          "start": 7,
+          "duration": 0.125,
+          "velocity": 104
+        },
+        {
+          "id": "library-note-240",
+          "pitch": 36,
+          "start": 8,
+          "duration": 0.125,
+          "velocity": 110
+        },
+        {
+          "id": "library-note-243",
+          "pitch": 36,
+          "start": 9,
+          "duration": 0.125,
+          "velocity": 110
+        },
+        {
+          "id": "library-note-247",
+          "pitch": 36,
+          "start": 10,
+          "duration": 0.125,
+          "velocity": 110
+        },
+        {
+          "id": "library-note-250",
+          "pitch": 36,
+          "start": 11,
+          "duration": 0.125,
+          "velocity": 110
+        },
+        {
+          "id": "library-note-270",
+          "pitch": 36,
+          "start": 12,
+          "duration": 0.125,
+          "velocity": 104
+        },
+        {
+          "id": "library-note-273",
+          "pitch": 36,
+          "start": 13,
+          "duration": 0.125,
+          "velocity": 104
+        },
+        {
+          "id": "library-note-277",
+          "pitch": 36,
+          "start": 14,
+          "duration": 0.125,
+          "velocity": 104
+        },
+        {
+          "id": "library-note-280",
+          "pitch": 36,
+          "start": 15,
+          "duration": 0.125,
+          "velocity": 104
+        }
+      ],
+      "clips": [
+        {
+          "id": "library-track-180-clip",
+          "name": "House kick",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "edm-kick-3",
+        "gain": 0.85,
+        "release": 0.5,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "library-track-181",
+      "instrument": "snare",
+      "kind": "drum",
+      "name": "Layered clap",
+      "color": "#e8bc80",
+      "volume": 0.52,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "library-note-186",
+          "pitch": 38,
+          "start": 1,
+          "duration": 0.125,
+          "velocity": 96,
+          "timingOffset": 0.002
+        },
+        {
+          "id": "library-note-193",
+          "pitch": 38,
+          "start": 3,
+          "duration": 0.125,
+          "velocity": 96,
+          "timingOffset": 0.002
+        },
+        {
+          "id": "library-note-216",
+          "pitch": 38,
+          "start": 5,
+          "duration": 0.125,
+          "velocity": 96,
+          "timingOffset": 0.006
+        },
+        {
+          "id": "library-note-223",
+          "pitch": 38,
+          "start": 7,
+          "duration": 0.125,
+          "velocity": 96,
+          "timingOffset": 0.006
+        },
+        {
+          "id": "library-note-246",
+          "pitch": 38,
+          "start": 9,
+          "duration": 0.125,
+          "velocity": 96,
+          "timingOffset": 0.002
+        },
+        {
+          "id": "library-note-253",
+          "pitch": 38,
+          "start": 11,
+          "duration": 0.125,
+          "velocity": 96,
+          "timingOffset": 0.002
+        },
+        {
+          "id": "library-note-276",
+          "pitch": 38,
+          "start": 13,
+          "duration": 0.125,
+          "velocity": 96,
+          "timingOffset": 0.006
+        },
+        {
+          "id": "library-note-283",
+          "pitch": 38,
+          "start": 15,
+          "duration": 0.125,
+          "velocity": 96,
+          "timingOffset": 0.006
+        }
+      ],
+      "clips": [
+        {
+          "id": "library-track-181-clip",
+          "name": "Layered clap",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "edm-snare-2",
+        "gain": 0.7,
+        "release": 0.5,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "library-track-182",
+      "instrument": "hat",
+      "kind": "drum",
+      "name": "Closed hat",
+      "color": "#d6d995",
+      "volume": 0.44,
+      "pan": 0.22,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "library-note-181",
+          "pitch": 42,
+          "start": 0.5,
+          "duration": 0.125,
+          "velocity": 80,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-184",
+          "pitch": 42,
+          "start": 1.5,
+          "duration": 0.125,
+          "velocity": 67,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-188",
+          "pitch": 42,
+          "start": 2.5,
+          "duration": 0.125,
+          "velocity": 83,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-191",
+          "pitch": 42,
+          "start": 3.5,
+          "duration": 0.125,
+          "velocity": 71,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-211",
+          "pitch": 42,
+          "start": 4.5,
+          "duration": 0.125,
+          "velocity": 80,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-214",
+          "pitch": 42,
+          "start": 5.5,
+          "duration": 0.125,
+          "velocity": 67,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-218",
+          "pitch": 42,
+          "start": 6.5,
+          "duration": 0.125,
+          "velocity": 83,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-221",
+          "pitch": 42,
+          "start": 7.5,
+          "duration": 0.125,
+          "velocity": 71,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-241",
+          "pitch": 42,
+          "start": 8.5,
+          "duration": 0.125,
+          "velocity": 80,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-244",
+          "pitch": 42,
+          "start": 9.5,
+          "duration": 0.125,
+          "velocity": 67,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-248",
+          "pitch": 42,
+          "start": 10.5,
+          "duration": 0.125,
+          "velocity": 83,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-251",
+          "pitch": 42,
+          "start": 11.5,
+          "duration": 0.125,
+          "velocity": 71,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-271",
+          "pitch": 42,
+          "start": 12.5,
+          "duration": 0.125,
+          "velocity": 80,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-274",
+          "pitch": 42,
+          "start": 13.5,
+          "duration": 0.125,
+          "velocity": 67,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-278",
+          "pitch": 42,
+          "start": 14.5,
+          "duration": 0.125,
+          "velocity": 83,
+          "timingOffset": 0.004
+        },
+        {
+          "id": "library-note-281",
+          "pitch": 42,
+          "start": 15.5,
+          "duration": 0.125,
+          "velocity": 71,
+          "timingOffset": 0.004
+        }
+      ],
+      "clips": [
+        {
+          "id": "library-track-182-clip",
+          "name": "Closed hat",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "edm-hat-1",
+        "gain": 0.55,
+        "release": 0.2,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "library-track-183",
+      "instrument": "hat",
+      "kind": "drum",
+      "name": "Open decay hat",
+      "color": "#d6d995",
+      "volume": 0.25,
+      "pan": -0.18,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "library-note-194",
+          "pitch": 42,
+          "start": 3.5,
+          "duration": 0.2,
+          "velocity": 78
+        },
+        {
+          "id": "library-note-224",
+          "pitch": 42,
+          "start": 7.5,
+          "duration": 0.2,
+          "velocity": 78
+        },
+        {
+          "id": "library-note-254",
+          "pitch": 42,
+          "start": 11.5,
+          "duration": 0.2,
+          "velocity": 78
+        },
+        {
+          "id": "library-note-284",
+          "pitch": 42,
+          "start": 15.5,
+          "duration": 0.2,
+          "velocity": 78
+        }
+      ],
+      "clips": [
+        {
+          "id": "library-track-183-clip",
+          "name": "Open decay hat",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "edm-hat-4",
+        "gain": 0.55,
+        "release": 0.65,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "library-track-184",
+      "instrument": "bass",
+      "kind": "tonal",
+      "name": "Reese bass",
+      "color": "#77cabb",
+      "volume": 0.62,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "library-note-182",
+          "pitch": 33,
+          "start": 0.5,
+          "duration": 0.32,
+          "velocity": 92
+        },
+        {
+          "id": "library-note-185",
+          "pitch": 33,
+          "start": 1.5,
+          "duration": 0.32,
+          "velocity": 78
+        },
+        {
+          "id": "library-note-189",
+          "pitch": 33,
+          "start": 2.5,
+          "duration": 0.32,
+          "velocity": 88
+        },
+        {
+          "id": "library-note-192",
+          "pitch": 33,
+          "start": 3.5,
+          "duration": 0.32,
+          "velocity": 84
+        },
+        {
+          "id": "library-note-212",
+          "pitch": 29,
+          "start": 4.5,
+          "duration": 0.32,
+          "velocity": 92
+        },
+        {
+          "id": "library-note-215",
+          "pitch": 29,
+          "start": 5.5,
+          "duration": 0.32,
+          "velocity": 78
+        },
+        {
+          "id": "library-note-219",
+          "pitch": 29,
+          "start": 6.5,
+          "duration": 0.32,
+          "velocity": 88
+        },
+        {
+          "id": "library-note-222",
+          "pitch": 29,
+          "start": 7.5,
+          "duration": 0.32,
+          "velocity": 84
+        },
+        {
+          "id": "library-note-242",
+          "pitch": 36,
+          "start": 8.5,
+          "duration": 0.32,
+          "velocity": 92
+        },
+        {
+          "id": "library-note-245",
+          "pitch": 36,
+          "start": 9.5,
+          "duration": 0.32,
+          "velocity": 78
+        },
+        {
+          "id": "library-note-249",
+          "pitch": 36,
+          "start": 10.5,
+          "duration": 0.32,
+          "velocity": 88
+        },
+        {
+          "id": "library-note-252",
+          "pitch": 36,
+          "start": 11.5,
+          "duration": 0.32,
+          "velocity": 84
+        },
+        {
+          "id": "library-note-272",
+          "pitch": 31,
+          "start": 12.5,
+          "duration": 0.32,
+          "velocity": 92
+        },
+        {
+          "id": "library-note-275",
+          "pitch": 31,
+          "start": 13.5,
+          "duration": 0.32,
+          "velocity": 78
+        },
+        {
+          "id": "library-note-279",
+          "pitch": 31,
+          "start": 14.5,
+          "duration": 0.32,
+          "velocity": 88
+        },
+        {
+          "id": "library-note-282",
+          "pitch": 31,
+          "start": 15.5,
+          "duration": 0.32,
+          "velocity": 84
+        }
+      ],
+      "clips": [
+        {
+          "id": "library-track-184-clip",
+          "name": "Reese bass",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "edm-bass-3",
+        "gain": 0.8,
+        "release": 0.3,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "library-track-185",
+      "instrument": "lead",
+      "kind": "tonal",
+      "name": "Festival lead",
+      "color": "#84afe2",
+      "volume": 0.43,
+      "pan": 0.12,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "library-note-196",
+          "pitch": 57,
+          "start": 1.5,
+          "duration": 0.65,
+          "velocity": 86
+        },
+        {
+          "id": "library-note-199",
+          "pitch": 60,
+          "start": 1.5,
+          "duration": 0.65,
+          "velocity": 82
+        },
+        {
+          "id": "library-note-202",
+          "pitch": 64,
+          "start": 1.5,
+          "duration": 0.65,
+          "velocity": 78
+        },
+        {
+          "id": "library-note-197",
+          "pitch": 57,
+          "start": 3,
+          "duration": 0.55,
+          "velocity": 80
+        },
+        {
+          "id": "library-note-200",
+          "pitch": 60,
+          "start": 3,
+          "duration": 0.55,
+          "velocity": 77
+        },
+        {
+          "id": "library-note-203",
+          "pitch": 64,
+          "start": 3,
+          "duration": 0.55,
+          "velocity": 74
+        },
+        {
+          "id": "library-note-226",
+          "pitch": 53,
+          "start": 5.5,
+          "duration": 0.65,
+          "velocity": 86
+        },
+        {
+          "id": "library-note-229",
+          "pitch": 57,
+          "start": 5.5,
+          "duration": 0.65,
+          "velocity": 82
+        },
+        {
+          "id": "library-note-232",
+          "pitch": 60,
+          "start": 5.5,
+          "duration": 0.65,
+          "velocity": 78
+        },
+        {
+          "id": "library-note-227",
+          "pitch": 53,
+          "start": 7,
+          "duration": 0.55,
+          "velocity": 80
+        },
+        {
+          "id": "library-note-230",
+          "pitch": 57,
+          "start": 7,
+          "duration": 0.55,
+          "velocity": 77
+        },
+        {
+          "id": "library-note-233",
+          "pitch": 60,
+          "start": 7,
+          "duration": 0.55,
+          "velocity": 74
+        },
+        {
+          "id": "library-note-256",
+          "pitch": 55,
+          "start": 9.5,
+          "duration": 0.65,
+          "velocity": 86
+        },
+        {
+          "id": "library-note-259",
+          "pitch": 60,
+          "start": 9.5,
+          "duration": 0.65,
+          "velocity": 82
+        },
+        {
+          "id": "library-note-262",
+          "pitch": 64,
+          "start": 9.5,
+          "duration": 0.65,
+          "velocity": 78
+        },
+        {
+          "id": "library-note-257",
+          "pitch": 55,
+          "start": 11,
+          "duration": 0.55,
+          "velocity": 80
+        },
+        {
+          "id": "library-note-260",
+          "pitch": 60,
+          "start": 11,
+          "duration": 0.55,
+          "velocity": 77
+        },
+        {
+          "id": "library-note-263",
+          "pitch": 64,
+          "start": 11,
+          "duration": 0.55,
+          "velocity": 74
+        },
+        {
+          "id": "library-note-286",
+          "pitch": 55,
+          "start": 13.5,
+          "duration": 0.65,
+          "velocity": 86
+        },
+        {
+          "id": "library-note-289",
+          "pitch": 59,
+          "start": 13.5,
+          "duration": 0.65,
+          "velocity": 82
+        },
+        {
+          "id": "library-note-292",
+          "pitch": 62,
+          "start": 13.5,
+          "duration": 0.65,
+          "velocity": 78
+        },
+        {
+          "id": "library-note-287",
+          "pitch": 55,
+          "start": 15,
+          "duration": 0.55,
+          "velocity": 80
+        },
+        {
+          "id": "library-note-290",
+          "pitch": 59,
+          "start": 15,
+          "duration": 0.55,
+          "velocity": 77
+        },
+        {
+          "id": "library-note-293",
+          "pitch": 62,
+          "start": 15,
+          "duration": 0.55,
+          "velocity": 74
+        }
+      ],
+      "clips": [
+        {
+          "id": "library-track-185-clip",
+          "name": "Festival lead",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "edm-lead-1",
+        "gain": 0.8,
+        "release": 0.3,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "library-track-186",
+      "instrument": "pad",
+      "kind": "tonal",
+      "name": "Warm pad",
+      "color": "#86bdca",
+      "volume": 0.32,
+      "pan": -0.1,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "library-note-195",
+          "pitch": 57,
+          "start": 0,
+          "duration": 3.6,
+          "velocity": 62
+        },
+        {
+          "id": "library-note-198",
+          "pitch": 60,
+          "start": 0,
+          "duration": 3.6,
+          "velocity": 58
+        },
+        {
+          "id": "library-note-201",
+          "pitch": 64,
+          "start": 0,
+          "duration": 3.6,
+          "velocity": 54
+        },
+        {
+          "id": "library-note-225",
+          "pitch": 53,
+          "start": 4,
+          "duration": 3.6,
+          "velocity": 62
+        },
+        {
+          "id": "library-note-228",
+          "pitch": 57,
+          "start": 4,
+          "duration": 3.6,
+          "velocity": 58
+        },
+        {
+          "id": "library-note-231",
+          "pitch": 60,
+          "start": 4,
+          "duration": 3.6,
+          "velocity": 54
+        },
+        {
+          "id": "library-note-255",
+          "pitch": 55,
+          "start": 8,
+          "duration": 3.6,
+          "velocity": 62
+        },
+        {
+          "id": "library-note-258",
+          "pitch": 60,
+          "start": 8,
+          "duration": 3.6,
+          "velocity": 58
+        },
+        {
+          "id": "library-note-261",
+          "pitch": 64,
+          "start": 8,
+          "duration": 3.6,
+          "velocity": 54
+        },
+        {
+          "id": "library-note-285",
+          "pitch": 55,
+          "start": 12,
+          "duration": 3.6,
+          "velocity": 62
+        },
+        {
+          "id": "library-note-288",
+          "pitch": 59,
+          "start": 12,
+          "duration": 3.6,
+          "velocity": 58
+        },
+        {
+          "id": "library-note-291",
+          "pitch": 62,
+          "start": 12,
+          "duration": 3.6,
+          "velocity": 54
+        }
+      ],
+      "clips": [
+        {
+          "id": "library-track-186-clip",
+          "name": "Warm pad",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "edm-pad-1",
+        "gain": 0.8,
+        "release": 0.7,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "library-track-187",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "name": "FM pluck",
+      "color": "#ed91a1",
+      "volume": 0.44,
+      "pan": -0.3,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "library-note-204",
+          "pitch": 69,
+          "start": 0,
+          "duration": 0.28,
+          "velocity": 78,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-205",
+          "pitch": 72,
+          "start": 0.5,
+          "duration": 0.28,
+          "velocity": 64,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-206",
+          "pitch": 76,
+          "start": 1,
+          "duration": 0.28,
+          "velocity": 71,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-207",
+          "pitch": 69,
+          "start": 1.5,
+          "duration": 0.28,
+          "velocity": 67,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-208",
+          "pitch": 72,
+          "start": 2,
+          "duration": 0.28,
+          "velocity": 75,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-209",
+          "pitch": 76,
+          "start": 2.5,
+          "duration": 0.28,
+          "velocity": 62,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-234",
+          "pitch": 65,
+          "start": 4,
+          "duration": 0.28,
+          "velocity": 78,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-235",
+          "pitch": 69,
+          "start": 4.5,
+          "duration": 0.28,
+          "velocity": 64,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-236",
+          "pitch": 72,
+          "start": 5,
+          "duration": 0.28,
+          "velocity": 71,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-237",
+          "pitch": 65,
+          "start": 5.5,
+          "duration": 0.28,
+          "velocity": 67,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-238",
+          "pitch": 69,
+          "start": 6,
+          "duration": 0.28,
+          "velocity": 75,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-239",
+          "pitch": 72,
+          "start": 6.5,
+          "duration": 0.28,
+          "velocity": 62,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-264",
+          "pitch": 67,
+          "start": 8,
+          "duration": 0.28,
+          "velocity": 78,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-265",
+          "pitch": 72,
+          "start": 8.5,
+          "duration": 0.28,
+          "velocity": 64,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-266",
+          "pitch": 76,
+          "start": 9,
+          "duration": 0.28,
+          "velocity": 71,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-267",
+          "pitch": 67,
+          "start": 9.5,
+          "duration": 0.28,
+          "velocity": 67,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-268",
+          "pitch": 72,
+          "start": 10,
+          "duration": 0.28,
+          "velocity": 75,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-269",
+          "pitch": 76,
+          "start": 10.5,
+          "duration": 0.28,
+          "velocity": 62,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-294",
+          "pitch": 67,
+          "start": 12,
+          "duration": 0.28,
+          "velocity": 78,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-295",
+          "pitch": 71,
+          "start": 12.5,
+          "duration": 0.28,
+          "velocity": 64,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-296",
+          "pitch": 74,
+          "start": 13,
+          "duration": 0.28,
+          "velocity": 71,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-297",
+          "pitch": 67,
+          "start": 13.5,
+          "duration": 0.28,
+          "velocity": 67,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-298",
+          "pitch": 71,
+          "start": 14,
+          "duration": 0.28,
+          "velocity": 75,
+          "timingOffset": 0.003
+        },
+        {
+          "id": "library-note-299",
+          "pitch": 74,
+          "start": 14.5,
+          "duration": 0.28,
+          "velocity": 62,
+          "timingOffset": 0.003
+        }
+      ],
+      "clips": [
+        {
+          "id": "library-track-187-clip",
+          "name": "FM pluck",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "edm-pluck-2",
+        "gain": 0.8,
+        "release": 0.3,
+        "cutoff": 18000
+      }
+    }
+  ],
+  "loopRange": {
+    "start": 0,
+    "end": 16
+  },
+  "patterns": []
+}

@@ -1,0 +1,391 @@
+{
+  "version": 3,
+  "id": "ccb28672-082b-4430-a76b-f5683ba44608",
+  "name": "真实音色长音验收",
+  "style": "lofi",
+  "key": "A minor",
+  "bars": 4,
+  "bpm": 100,
+  "swing": 0,
+  "master": 0.55,
+  "seed": 271828,
+  "tracks": [
+    {
+      "id": "audit-track-kick",
+      "instrument": "kick",
+      "kind": "drum",
+      "name": "底鼓",
+      "color": "#eda96b",
+      "volume": 0.6,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "audit-note-kick-0",
+          "pitch": 36,
+          "start": 0,
+          "duration": 0.125,
+          "velocity": 85
+        },
+        {
+          "id": "audit-note-kick-1",
+          "pitch": 36,
+          "start": 4,
+          "duration": 0.125,
+          "velocity": 85
+        },
+        {
+          "id": "audit-note-kick-2",
+          "pitch": 36,
+          "start": 8,
+          "duration": 0.125,
+          "velocity": 85
+        },
+        {
+          "id": "audit-note-kick-3",
+          "pitch": 36,
+          "start": 12,
+          "duration": 0.125,
+          "velocity": 85
+        }
+      ],
+      "clips": [
+        {
+          "id": "audit-clip-kick",
+          "name": "底鼓",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "sonic-kick",
+        "gain": 0.85,
+        "release": 0.45,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "audit-track-snare",
+      "instrument": "snare",
+      "kind": "drum",
+      "name": "军鼓",
+      "color": "#e8bc80",
+      "volume": 0.6,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "audit-note-snare-0",
+          "pitch": 38,
+          "start": 2,
+          "duration": 0.125,
+          "velocity": 85
+        },
+        {
+          "id": "audit-note-snare-1",
+          "pitch": 38,
+          "start": 6,
+          "duration": 0.125,
+          "velocity": 85
+        },
+        {
+          "id": "audit-note-snare-2",
+          "pitch": 38,
+          "start": 10,
+          "duration": 0.125,
+          "velocity": 85
+        },
+        {
+          "id": "audit-note-snare-3",
+          "pitch": 38,
+          "start": 14,
+          "duration": 0.125,
+          "velocity": 85
+        }
+      ],
+      "clips": [
+        {
+          "id": "audit-clip-snare",
+          "name": "军鼓",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "sonic-snare",
+        "gain": 0.75,
+        "release": 0.3,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "audit-track-hat",
+      "instrument": "hat",
+      "kind": "drum",
+      "name": "踩镲",
+      "color": "#d6d995",
+      "volume": 0.6,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "audit-note-hat-0",
+          "pitch": 42,
+          "start": 1,
+          "duration": 0.125,
+          "velocity": 85
+        },
+        {
+          "id": "audit-note-hat-1",
+          "pitch": 42,
+          "start": 3,
+          "duration": 0.125,
+          "velocity": 85
+        },
+        {
+          "id": "audit-note-hat-2",
+          "pitch": 42,
+          "start": 5,
+          "duration": 0.125,
+          "velocity": 85
+        },
+        {
+          "id": "audit-note-hat-3",
+          "pitch": 42,
+          "start": 7,
+          "duration": 0.125,
+          "velocity": 85
+        },
+        {
+          "id": "audit-note-hat-4",
+          "pitch": 42,
+          "start": 9,
+          "duration": 0.125,
+          "velocity": 85
+        },
+        {
+          "id": "audit-note-hat-5",
+          "pitch": 42,
+          "start": 11,
+          "duration": 0.125,
+          "velocity": 85
+        },
+        {
+          "id": "audit-note-hat-6",
+          "pitch": 42,
+          "start": 13,
+          "duration": 0.125,
+          "velocity": 85
+        },
+        {
+          "id": "audit-note-hat-7",
+          "pitch": 42,
+          "start": 15,
+          "duration": 0.125,
+          "velocity": 85
+        }
+      ],
+      "clips": [
+        {
+          "id": "audit-clip-hat",
+          "name": "踩镲",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "sonic-hat",
+        "gain": 0.6,
+        "release": 0.14,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "audit-track-bass",
+      "instrument": "bass",
+      "kind": "tonal",
+      "name": "温暖贝斯",
+      "color": "#77cabb",
+      "volume": 0.6,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "audit-note-bass-0",
+          "pitch": 40,
+          "start": 0,
+          "duration": 16,
+          "velocity": 85
+        }
+      ],
+      "clips": [
+        {
+          "id": "audit-clip-bass",
+          "name": "温暖贝斯",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "vsco-bass",
+        "gain": 0.95,
+        "release": 0.3,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "audit-track-keys",
+      "instrument": "keys",
+      "kind": "tonal",
+      "name": "柔和电钢琴",
+      "color": "#b4a0e2",
+      "volume": 0.6,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "audit-note-keys-0",
+          "pitch": 60,
+          "start": 0,
+          "duration": 2,
+          "velocity": 85
+        }
+      ],
+      "clips": [
+        {
+          "id": "audit-clip-keys",
+          "name": "柔和电钢琴",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "vsco-piano-full",
+        "gain": 0.8,
+        "release": 0.3,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "audit-track-lead",
+      "instrument": "lead",
+      "kind": "tonal",
+      "name": "细碎旋律",
+      "color": "#84afe2",
+      "volume": 0.6,
+      "pan": 0,
+      "muted": false,
+      "solo": true,
+      "notes": [
+        {
+          "id": "audit-note-lead-0",
+          "pitch": 60,
+          "start": 0,
+          "duration": 16,
+          "velocity": 85
+        }
+      ],
+      "clips": [
+        {
+          "id": "audit-clip-lead",
+          "name": "细碎旋律",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "vsco-flute",
+        "gain": 0.7,
+        "release": 0.18,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "audit-track-pad",
+      "instrument": "pad",
+      "kind": "tonal",
+      "name": "空气铺底",
+      "color": "#86bdca",
+      "volume": 0.6,
+      "pan": 0,
+      "muted": false,
+      "solo": true,
+      "notes": [
+        {
+          "id": "audit-note-pad-0",
+          "pitch": 48,
+          "start": 0,
+          "duration": 16,
+          "velocity": 85
+        }
+      ],
+      "clips": [
+        {
+          "id": "audit-clip-pad",
+          "name": "空气铺底",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "vsco-cello",
+        "gain": 0.6,
+        "release": 0.9,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "audit-track-pluck",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "name": "清亮拨弦",
+      "color": "#ed91a1",
+      "volume": 0.6,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "audit-note-pluck-0",
+          "pitch": 60,
+          "start": 0,
+          "duration": 16,
+          "velocity": 85
+        }
+      ],
+      "clips": [
+        {
+          "id": "audit-clip-pluck",
+          "name": "清亮拨弦",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "vsco-harp",
+        "gain": 0.8,
+        "release": 0.8,
+        "cutoff": 18000
+      }
+    }
+  ],
+  "loopRange": {
+    "start": 0,
+    "end": 16
+  },
+  "sections": [],
+  "patterns": []
+}

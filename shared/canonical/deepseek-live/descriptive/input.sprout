@@ -1,0 +1,286 @@
+{
+  "version": 2,
+  "id": "f7043523-a9ad-4ae6-8dd5-11c5865114b8",
+  "name": "DeepSeek four-bar composition test",
+  "style": "lofi",
+  "key": "A minor",
+  "bars": 4,
+  "bpm": 86,
+  "swing": 12,
+  "master": 0.75,
+  "seed": 271828,
+  "tracks": [
+    {
+      "id": "2d71c311-ed62-4d0a-8bdc-43bb55caaff5",
+      "instrument": "kick",
+      "kind": "drum",
+      "name": "Kick",
+      "color": "#eda96b",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "a538fc9f-c679-48d5-a05a-d161ac6da5b5",
+          "name": "底鼓",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "24eca4f0-bc71-4bd4-9a28-9943f06fb21d",
+          "name": "底鼓",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "sonic-kick",
+        "gain": 0.85,
+        "release": 0.45,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "3cb58e01-607d-4f68-945d-09e0181d17a6",
+      "instrument": "snare",
+      "kind": "drum",
+      "name": "Snare",
+      "color": "#e8bc80",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "ba1c8acc-65e6-4db5-bd43-77920b0417ac",
+          "name": "军鼓",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "79226b7e-bce1-4057-a467-4af253f8b6fe",
+          "name": "军鼓",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "sonic-snare",
+        "gain": 0.75,
+        "release": 0.3,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "379e300a-d30f-4923-9245-f104bb50e2f2",
+      "instrument": "hat",
+      "kind": "drum",
+      "name": "Hi-hat",
+      "color": "#d6d995",
+      "volume": 0.45,
+      "pan": 0.18,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "69aa9255-e016-49e8-b44f-b20f49f9f79e",
+          "name": "踩镲",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "a69a3740-0dd3-43b9-a40c-17ba854c0fc7",
+          "name": "踩镲",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "sonic-hat",
+        "gain": 0.6,
+        "release": 0.14,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "0736d6c7-e220-4887-a005-9c33bff3937f",
+      "instrument": "bass",
+      "kind": "tonal",
+      "name": "Double bass",
+      "color": "#77cabb",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "cb3581d4-a214-421e-b0a8-22ca35d56388",
+          "name": "温暖贝斯",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "254a48d6-7315-4cae-b81c-dfcbfef2e4a1",
+          "name": "温暖贝斯",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "vsco-bass",
+        "gain": 0.95,
+        "release": 0.3,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "584f1295-9c66-41f0-bfe6-470bb9fd35dc",
+      "instrument": "keys",
+      "kind": "tonal",
+      "name": "Piano",
+      "color": "#b4a0e2",
+      "volume": 0.62,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "63199637-9795-44c0-92a6-60cf5e43d898",
+          "name": "柔和电钢琴",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "aed78866-7d98-4203-a7c6-92b68662fd29",
+          "name": "柔和电钢琴",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "vsco-piano-full",
+        "gain": 0.8,
+        "release": 0.3,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "3c2fa247-832a-43fa-9828-f287b491c5cc",
+      "instrument": "lead",
+      "kind": "tonal",
+      "name": "Flute",
+      "color": "#84afe2",
+      "volume": 0.72,
+      "pan": 0.12,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "bcaa85d5-df2a-4115-a606-4b77331a4881",
+          "name": "细碎旋律",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "98b9d842-c388-4789-b0d7-0b06c09eeac0",
+          "name": "细碎旋律",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "vsco-flute",
+        "gain": 0.7,
+        "release": 0.18,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "2c03c16b-7c27-48cc-84b9-d3ff8275a9bd",
+      "instrument": "pad",
+      "kind": "tonal",
+      "name": "Cello",
+      "color": "#86bdca",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "c7f82126-7c1a-4b2e-adda-994c9b83aacf",
+          "name": "空气铺底",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "634f8d58-1880-4cb5-9d9f-8f7fe40286f9",
+          "name": "空气铺底",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "vsco-cello",
+        "gain": 0.6,
+        "release": 0.9,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "bc699d38-3492-41f7-a693-91a3eceaa01c",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "name": "Harp",
+      "color": "#ed91a1",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "af9729ec-45e0-4454-8da9-0cdd5f6ebc78",
+          "name": "清亮拨弦",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "f04b23b1-293b-40c8-8b97-e78e369e09a1",
+          "name": "清亮拨弦",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "vsco-harp",
+        "gain": 0.8,
+        "release": 0.8,
+        "cutoff": 18000
+      }
+    }
+  ]
+}

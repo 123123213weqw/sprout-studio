@@ -1,0 +1,1264 @@
+{
+  "version": 3,
+  "id": "c435ece1-95ac-4547-9092-87342cde9df9",
+  "name": "共享乐句 · 批量编排示例",
+  "style": "lofi",
+  "key": "A minor",
+  "bars": 16,
+  "bpm": 86,
+  "swing": 12,
+  "master": 0.75,
+  "seed": 271828,
+  "tracks": [
+    {
+      "id": "2a089505-2933-46f2-997b-05e512a6a697",
+      "instrument": "kick",
+      "kind": "drum",
+      "name": "底鼓",
+      "color": "#eda96b",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "link_050370af2d48e4d5",
+          "pitch": 36,
+          "start": 32,
+          "duration": 0.13,
+          "velocity": 109
+        },
+        {
+          "id": "link_7a2819ce8499145b",
+          "pitch": 36,
+          "start": 33.75,
+          "duration": 0.13,
+          "velocity": 98
+        },
+        {
+          "id": "link_9735d38e5d7aae91",
+          "pitch": 36,
+          "start": 34.5,
+          "duration": 0.13,
+          "velocity": 95
+        },
+        {
+          "id": "link_880000a511491690",
+          "pitch": 36,
+          "start": 36,
+          "duration": 0.13,
+          "velocity": 103
+        },
+        {
+          "id": "link_6b0aa2ace5e17577",
+          "pitch": 36,
+          "start": 37.75,
+          "duration": 0.13,
+          "velocity": 100
+        },
+        {
+          "id": "link_5fbd776eb1d8519d",
+          "pitch": 36,
+          "start": 38.5,
+          "duration": 0.13,
+          "velocity": 95
+        },
+        {
+          "id": "link_65ce3383518bd7d1",
+          "pitch": 36,
+          "start": 40,
+          "duration": 0.13,
+          "velocity": 109
+        },
+        {
+          "id": "link_9bd36da25775db17",
+          "pitch": 36,
+          "start": 41.75,
+          "duration": 0.13,
+          "velocity": 98
+        },
+        {
+          "id": "link_8ebcef347171c29d",
+          "pitch": 36,
+          "start": 42.5,
+          "duration": 0.13,
+          "velocity": 95
+        },
+        {
+          "id": "link_6a2afe44ae6a80d4",
+          "pitch": 36,
+          "start": 44,
+          "duration": 0.13,
+          "velocity": 103
+        },
+        {
+          "id": "link_0d6b58b32075f423",
+          "pitch": 36,
+          "start": 45.75,
+          "duration": 0.13,
+          "velocity": 100
+        },
+        {
+          "id": "link_a343e6ce88b552c1",
+          "pitch": 36,
+          "start": 46.5,
+          "duration": 0.13,
+          "velocity": 95
+        },
+        {
+          "id": "link_2844aa3e4a4f1423",
+          "pitch": 36,
+          "start": 48,
+          "duration": 0.13,
+          "velocity": 109
+        },
+        {
+          "id": "link_8dced4b973cc8dd1",
+          "pitch": 36,
+          "start": 49.75,
+          "duration": 0.13,
+          "velocity": 98
+        },
+        {
+          "id": "link_ecc6c129a909464f",
+          "pitch": 36,
+          "start": 50.5,
+          "duration": 0.13,
+          "velocity": 95
+        },
+        {
+          "id": "link_0fee3045ada31cba",
+          "pitch": 36,
+          "start": 52,
+          "duration": 0.13,
+          "velocity": 103
+        },
+        {
+          "id": "link_774227e7cc081c8d",
+          "pitch": 36,
+          "start": 53.75,
+          "duration": 0.13,
+          "velocity": 100
+        },
+        {
+          "id": "link_017fe20ce7f00887",
+          "pitch": 36,
+          "start": 54.5,
+          "duration": 0.13,
+          "velocity": 95
+        },
+        {
+          "id": "link_bea28226829d57e3",
+          "pitch": 36,
+          "start": 56,
+          "duration": 0.13,
+          "velocity": 109
+        },
+        {
+          "id": "link_a7a153db43313191",
+          "pitch": 36,
+          "start": 57.75,
+          "duration": 0.13,
+          "velocity": 98
+        },
+        {
+          "id": "link_1e761ec706a1e40f",
+          "pitch": 36,
+          "start": 58.5,
+          "duration": 0.13,
+          "velocity": 95
+        },
+        {
+          "id": "link_c81b4b7778c68a7a",
+          "pitch": 36,
+          "start": 60,
+          "duration": 0.13,
+          "velocity": 103
+        },
+        {
+          "id": "link_67dbada6c47cd74d",
+          "pitch": 36,
+          "start": 61.75,
+          "duration": 0.13,
+          "velocity": 100
+        },
+        {
+          "id": "link_ae4b2fdd270845c7",
+          "pitch": 36,
+          "start": 62.5,
+          "duration": 0.13,
+          "velocity": 95
+        }
+      ],
+      "clips": [
+        {
+          "id": "e153dd41-7b0f-43ff-9928-635459be888f",
+          "name": "底鼓",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "69ba7a6c-3dbc-43ca-8c6b-401f18d1f07f",
+          "name": "底鼓",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "bf34091c-2253-467a-9e20-c520ae4b1dee",
+          "name": "底鼓",
+          "start": 16,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "707327ed-479d-4f3c-81f4-bdb4b4daea40",
+          "name": "底鼓",
+          "start": 24,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "1df023a0-5f6c-4410-91fa-32f15003e385",
+          "name": "雨夜底鼓 · 两小节",
+          "start": 32,
+          "length": 8,
+          "muted": false,
+          "patternId": "5ab2933d-519d-4f43-b625-148f363e46e3"
+        },
+        {
+          "id": "55d7b516-a67d-414f-a995-c88c83bd8b18",
+          "name": "雨夜底鼓 · 两小节",
+          "start": 40,
+          "length": 8,
+          "muted": false,
+          "patternId": "5ab2933d-519d-4f43-b625-148f363e46e3"
+        },
+        {
+          "id": "cac07fbe-90ba-4a6a-95d9-cb5bcbd5b6d2",
+          "name": "雨夜底鼓 · 两小节",
+          "start": 48,
+          "length": 8,
+          "muted": false,
+          "patternId": "5ab2933d-519d-4f43-b625-148f363e46e3"
+        },
+        {
+          "id": "eb66a97b-aeae-4d6a-b45d-c8fc1774509a",
+          "name": "雨夜底鼓 · 两小节",
+          "start": 56,
+          "length": 8,
+          "muted": false,
+          "patternId": "5ab2933d-519d-4f43-b625-148f363e46e3"
+        }
+      ]
+    },
+    {
+      "id": "1e5e27f0-9d69-41e1-91d9-04637829aaff",
+      "instrument": "snare",
+      "kind": "drum",
+      "name": "军鼓",
+      "color": "#e8bc80",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "2cb4eaac-653a-48a1-867d-b3ecfa85f779",
+          "name": "军鼓",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "421c82fe-ed2f-46ef-81a6-55406eacc878",
+          "name": "军鼓",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "712a6951-0623-4341-83d6-f7ede63ce8f7",
+          "name": "军鼓",
+          "start": 16,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "66ba218b-2060-4a96-b267-6e8173aa135e",
+          "name": "军鼓",
+          "start": 24,
+          "length": 8,
+          "muted": false
+        }
+      ]
+    },
+    {
+      "id": "79207c7f-b9ef-4e4c-b107-48c7365d14c9",
+      "instrument": "hat",
+      "kind": "drum",
+      "name": "踩镲",
+      "color": "#d6d995",
+      "volume": 0.45,
+      "pan": 0.18,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "990f3b59-4f20-495c-99fe-32676324bf51",
+          "name": "踩镲",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "68ff2f55-9dd2-43b1-8b26-243719a60aee",
+          "name": "踩镲",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "c7265b8b-439b-415e-afad-4e5a65a8cb04",
+          "name": "踩镲",
+          "start": 16,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "b1c50f44-58c0-4ffb-89e4-52127834e430",
+          "name": "踩镲",
+          "start": 24,
+          "length": 8,
+          "muted": false
+        }
+      ]
+    },
+    {
+      "id": "a3db73fe-adf5-41ea-b4d5-0dd2ec04f8c9",
+      "instrument": "bass",
+      "kind": "tonal",
+      "name": "温暖贝斯",
+      "color": "#77cabb",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "bc9ca888-6465-4e34-915d-a55cc8024b14",
+          "name": "温暖贝斯",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "3dfc3928-d0e9-4a64-899f-3636a05dd61d",
+          "name": "温暖贝斯",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "0f6a7bf1-ef94-4de5-8a67-935ec0db84b5",
+          "name": "温暖贝斯",
+          "start": 16,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "905b82c1-5670-4557-abe0-75908f50accd",
+          "name": "温暖贝斯",
+          "start": 24,
+          "length": 8,
+          "muted": false
+        }
+      ]
+    },
+    {
+      "id": "64729743-48d4-415d-88db-72894ef17d4c",
+      "instrument": "keys",
+      "kind": "tonal",
+      "name": "柔和电钢琴",
+      "color": "#b4a0e2",
+      "volume": 0.62,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "link_e8a3d648230d1dba",
+          "pitch": 57,
+          "start": 32,
+          "duration": 2.1,
+          "velocity": 59
+        },
+        {
+          "id": "link_32822e94c4bd54bd",
+          "pitch": 60,
+          "start": 32,
+          "duration": 2.1,
+          "velocity": 60
+        },
+        {
+          "id": "link_0aa4576109d99fc3",
+          "pitch": 64,
+          "start": 32,
+          "duration": 2.1,
+          "velocity": 56
+        },
+        {
+          "id": "link_4b8a0a2380acc2e3",
+          "pitch": 67,
+          "start": 32,
+          "duration": 2.1,
+          "velocity": 54
+        },
+        {
+          "id": "link_e44b8a03be75a43f",
+          "pitch": 57,
+          "start": 34.5,
+          "duration": 1.35,
+          "velocity": 67
+        },
+        {
+          "id": "link_92a9cdee7e88ab8f",
+          "pitch": 60,
+          "start": 34.5,
+          "duration": 1.35,
+          "velocity": 59
+        },
+        {
+          "id": "link_fd5cd29c6b82fe3c",
+          "pitch": 64,
+          "start": 34.5,
+          "duration": 1.35,
+          "velocity": 58
+        },
+        {
+          "id": "link_614661bfc955a1c2",
+          "pitch": 67,
+          "start": 34.5,
+          "duration": 1.35,
+          "velocity": 49
+        },
+        {
+          "id": "link_5db1a45c846c57d3",
+          "pitch": 57,
+          "start": 36,
+          "duration": 2.1,
+          "velocity": 66
+        },
+        {
+          "id": "link_8b79b0742cdbfb98",
+          "pitch": 60,
+          "start": 36,
+          "duration": 2.1,
+          "velocity": 57
+        },
+        {
+          "id": "link_66462a9d10af36b5",
+          "pitch": 64,
+          "start": 36,
+          "duration": 2.1,
+          "velocity": 56
+        },
+        {
+          "id": "link_6d50dd4803c1911b",
+          "pitch": 67,
+          "start": 36,
+          "duration": 2.1,
+          "velocity": 55
+        },
+        {
+          "id": "link_af1751a0c8862b2f",
+          "pitch": 57,
+          "start": 38.5,
+          "duration": 1.35,
+          "velocity": 65
+        },
+        {
+          "id": "link_c8392e0b6012f26e",
+          "pitch": 60,
+          "start": 38.5,
+          "duration": 1.35,
+          "velocity": 62
+        },
+        {
+          "id": "link_4212c67a924e4c94",
+          "pitch": 64,
+          "start": 38.5,
+          "duration": 1.35,
+          "velocity": 53
+        },
+        {
+          "id": "link_1ba9e3c7fb1bf25d",
+          "pitch": 67,
+          "start": 38.5,
+          "duration": 1.35,
+          "velocity": 57
+        },
+        {
+          "id": "link_b733f4b8680ce124",
+          "pitch": 57,
+          "start": 44,
+          "duration": 2.1,
+          "velocity": 59
+        },
+        {
+          "id": "link_80c00b99d6ec21c7",
+          "pitch": 60,
+          "start": 44,
+          "duration": 2.1,
+          "velocity": 60
+        },
+        {
+          "id": "link_47dd8225ba511a61",
+          "pitch": 64,
+          "start": 44,
+          "duration": 2.1,
+          "velocity": 56
+        },
+        {
+          "id": "link_d233d60d5707d685",
+          "pitch": 67,
+          "start": 44,
+          "duration": 2.1,
+          "velocity": 54
+        },
+        {
+          "id": "link_6550aa1af3bdc125",
+          "pitch": 57,
+          "start": 46.5,
+          "duration": 1.35,
+          "velocity": 67
+        },
+        {
+          "id": "link_62b81fa200ee0e1d",
+          "pitch": 60,
+          "start": 46.5,
+          "duration": 1.35,
+          "velocity": 59
+        },
+        {
+          "id": "link_c99103176a5a53ae",
+          "pitch": 64,
+          "start": 46.5,
+          "duration": 1.35,
+          "velocity": 58
+        },
+        {
+          "id": "link_994ddd1b0475bfd8",
+          "pitch": 67,
+          "start": 46.5,
+          "duration": 1.35,
+          "velocity": 49
+        },
+        {
+          "id": "link_5bf203498ec2643d",
+          "pitch": 57,
+          "start": 48,
+          "duration": 2.1,
+          "velocity": 66
+        },
+        {
+          "id": "link_6468c056f220c266",
+          "pitch": 60,
+          "start": 48,
+          "duration": 2.1,
+          "velocity": 57
+        },
+        {
+          "id": "link_7df4949544e904eb",
+          "pitch": 64,
+          "start": 48,
+          "duration": 2.1,
+          "velocity": 56
+        },
+        {
+          "id": "link_1999fa0c00bf4fc9",
+          "pitch": 67,
+          "start": 48,
+          "duration": 2.1,
+          "velocity": 55
+        },
+        {
+          "id": "link_ee183417550568e5",
+          "pitch": 57,
+          "start": 50.5,
+          "duration": 1.35,
+          "velocity": 65
+        },
+        {
+          "id": "link_36159ebb6c955d5c",
+          "pitch": 60,
+          "start": 50.5,
+          "duration": 1.35,
+          "velocity": 62
+        },
+        {
+          "id": "link_1b6484d677f0a71a",
+          "pitch": 64,
+          "start": 50.5,
+          "duration": 1.35,
+          "velocity": 53
+        },
+        {
+          "id": "link_5b8aaac8d0ee8d4f",
+          "pitch": 67,
+          "start": 50.5,
+          "duration": 1.35,
+          "velocity": 57
+        },
+        {
+          "id": "link_61cd3789547a2ae6",
+          "pitch": 57,
+          "start": 56,
+          "duration": 2.1,
+          "velocity": 59
+        },
+        {
+          "id": "link_155cefe2463690a1",
+          "pitch": 60,
+          "start": 56,
+          "duration": 2.1,
+          "velocity": 60
+        },
+        {
+          "id": "link_3ed0393cd9287287",
+          "pitch": 64,
+          "start": 56,
+          "duration": 2.1,
+          "velocity": 56
+        },
+        {
+          "id": "link_f5baa53c995be257",
+          "pitch": 67,
+          "start": 56,
+          "duration": 2.1,
+          "velocity": 54
+        },
+        {
+          "id": "link_f18c1f17373ad3bb",
+          "pitch": 57,
+          "start": 58.5,
+          "duration": 1.35,
+          "velocity": 67
+        },
+        {
+          "id": "link_49d1b6652eb706c3",
+          "pitch": 60,
+          "start": 58.5,
+          "duration": 1.35,
+          "velocity": 59
+        },
+        {
+          "id": "link_d1d3145f67096570",
+          "pitch": 64,
+          "start": 58.5,
+          "duration": 1.35,
+          "velocity": 58
+        },
+        {
+          "id": "link_3fab0f5d3336bca6",
+          "pitch": 67,
+          "start": 58.5,
+          "duration": 1.35,
+          "velocity": 49
+        },
+        {
+          "id": "link_e9b3c3a4c5b9326f",
+          "pitch": 57,
+          "start": 60,
+          "duration": 2.1,
+          "velocity": 66
+        },
+        {
+          "id": "link_95f13663010e10e4",
+          "pitch": 60,
+          "start": 60,
+          "duration": 2.1,
+          "velocity": 57
+        },
+        {
+          "id": "link_f9a263b8c9937c39",
+          "pitch": 64,
+          "start": 60,
+          "duration": 2.1,
+          "velocity": 56
+        },
+        {
+          "id": "link_a2b7f35fd64563ef",
+          "pitch": 67,
+          "start": 60,
+          "duration": 2.1,
+          "velocity": 55
+        },
+        {
+          "id": "link_2402de963ba5d9ab",
+          "pitch": 57,
+          "start": 62.5,
+          "duration": 1.35,
+          "velocity": 65
+        },
+        {
+          "id": "link_bd1904c3930905ca",
+          "pitch": 60,
+          "start": 62.5,
+          "duration": 1.35,
+          "velocity": 62
+        },
+        {
+          "id": "link_981a397a8f9b3fd8",
+          "pitch": 64,
+          "start": 62.5,
+          "duration": 1.35,
+          "velocity": 53
+        },
+        {
+          "id": "link_c8dfb6b1168107d9",
+          "pitch": 67,
+          "start": 62.5,
+          "duration": 1.35,
+          "velocity": 57
+        }
+      ],
+      "clips": [
+        {
+          "id": "9d034f5c-917d-47e0-9463-8e7090eeded5",
+          "name": "柔和电钢琴",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "dd548385-f4a4-4a3f-a50d-c25ba1c8d80c",
+          "name": "柔和电钢琴",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "b050f23f-e895-42e3-9dc5-75f241eea336",
+          "name": "柔和电钢琴",
+          "start": 16,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "55347a73-1f61-45d2-abae-71473a9368c9",
+          "name": "柔和电钢琴",
+          "start": 24,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "5893cc23-175f-4923-8c99-ac9bf0d4b5a2",
+          "name": "柔和电钢琴",
+          "start": 32,
+          "length": 8,
+          "muted": false,
+          "patternId": "cb2d0ef1-8431-4c87-98f9-54c0cf819955"
+        },
+        {
+          "id": "e762d7e1-878b-4fd9-9346-48bf06a55601",
+          "name": "柔和电钢琴",
+          "start": 44,
+          "length": 8,
+          "muted": true,
+          "patternId": "cb2d0ef1-8431-4c87-98f9-54c0cf819955"
+        },
+        {
+          "id": "28c2855a-c0f6-4578-afbc-9970ed86cbe6",
+          "name": "柔和电钢琴",
+          "start": 56,
+          "length": 8,
+          "muted": false,
+          "patternId": "cb2d0ef1-8431-4c87-98f9-54c0cf819955"
+        }
+      ]
+    },
+    {
+      "id": "90cd026e-013f-400a-9cd2-5cc51b4d7e71",
+      "instrument": "lead",
+      "kind": "tonal",
+      "name": "细碎旋律",
+      "color": "#84afe2",
+      "volume": 0.72,
+      "pan": 0.12,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "link_e11bcaa6bd0a1e69",
+          "pitch": 76,
+          "start": 32.5,
+          "duration": 0.45,
+          "velocity": 70
+        },
+        {
+          "id": "link_14c0d8caf9ee3212",
+          "pitch": 74,
+          "start": 33.25,
+          "duration": 0.45,
+          "velocity": 66
+        },
+        {
+          "id": "link_2b5d2d22797f9165",
+          "pitch": 76,
+          "start": 34.5,
+          "duration": 0.45,
+          "velocity": 70
+        },
+        {
+          "id": "link_3b5c5ccffacb6082",
+          "pitch": 79,
+          "start": 35.25,
+          "duration": 0.65,
+          "velocity": 63
+        },
+        {
+          "id": "link_2c5aa2d1d832f09e",
+          "pitch": 76,
+          "start": 36,
+          "duration": 0.45,
+          "velocity": 69
+        },
+        {
+          "id": "link_6cbfe71123a5c398",
+          "pitch": 72,
+          "start": 36.75,
+          "duration": 0.45,
+          "velocity": 65
+        },
+        {
+          "id": "link_5a81793b48fa0e2f",
+          "pitch": 76,
+          "start": 37.5,
+          "duration": 0.45,
+          "velocity": 68
+        },
+        {
+          "id": "link_5d8bf2838e274bdb",
+          "pitch": 79,
+          "start": 38.75,
+          "duration": 0.65,
+          "velocity": 70
+        },
+        {
+          "id": "link_836e5acc4f224375",
+          "pitch": 76,
+          "start": 44.5,
+          "duration": 0.45,
+          "velocity": 70
+        },
+        {
+          "id": "link_4e8876cc0c4ca15e",
+          "pitch": 74,
+          "start": 45.25,
+          "duration": 0.45,
+          "velocity": 66
+        },
+        {
+          "id": "link_d2d24158df01b859",
+          "pitch": 76,
+          "start": 46.5,
+          "duration": 0.45,
+          "velocity": 70
+        },
+        {
+          "id": "link_a2f52304f03e05de",
+          "pitch": 79,
+          "start": 47.25,
+          "duration": 0.65,
+          "velocity": 63
+        },
+        {
+          "id": "link_be469c2b60ad16a2",
+          "pitch": 76,
+          "start": 48,
+          "duration": 0.45,
+          "velocity": 69
+        },
+        {
+          "id": "link_63716aa06994b154",
+          "pitch": 72,
+          "start": 48.75,
+          "duration": 0.45,
+          "velocity": 65
+        },
+        {
+          "id": "link_d624866bf780bc23",
+          "pitch": 76,
+          "start": 49.5,
+          "duration": 0.45,
+          "velocity": 68
+        },
+        {
+          "id": "link_c8d0afb25ff22d17",
+          "pitch": 79,
+          "start": 50.75,
+          "duration": 0.65,
+          "velocity": 70
+        },
+        {
+          "id": "link_239e06f90b4a1134",
+          "pitch": 76,
+          "start": 56.5,
+          "duration": 0.45,
+          "velocity": 70
+        },
+        {
+          "id": "link_707cd13e48a4c997",
+          "pitch": 74,
+          "start": 57.25,
+          "duration": 0.45,
+          "velocity": 66
+        },
+        {
+          "id": "link_7f140e3eb9613174",
+          "pitch": 76,
+          "start": 58.5,
+          "duration": 0.45,
+          "velocity": 70
+        },
+        {
+          "id": "link_3e7cafb897ddec73",
+          "pitch": 79,
+          "start": 59.25,
+          "duration": 0.65,
+          "velocity": 63
+        },
+        {
+          "id": "link_695a33b99e1e05ab",
+          "pitch": 76,
+          "start": 60,
+          "duration": 0.45,
+          "velocity": 69
+        },
+        {
+          "id": "link_29a916977998aa6d",
+          "pitch": 72,
+          "start": 60.75,
+          "duration": 0.45,
+          "velocity": 65
+        },
+        {
+          "id": "link_15c8005650b0ef82",
+          "pitch": 76,
+          "start": 61.5,
+          "duration": 0.45,
+          "velocity": 68
+        },
+        {
+          "id": "link_b25ccaa97db6366a",
+          "pitch": 79,
+          "start": 62.75,
+          "duration": 0.65,
+          "velocity": 70
+        }
+      ],
+      "clips": [
+        {
+          "id": "6e95256b-7dd7-4f8f-8f2c-045be9329c1c",
+          "name": "细碎旋律",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "b01a9078-551d-4859-8999-4a52ff8a414d",
+          "name": "细碎旋律",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "a045e268-842a-449c-92a2-ff209ded7657",
+          "name": "细碎旋律",
+          "start": 16,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "d7b64a1a-9332-4363-8506-edd0e8d0189c",
+          "name": "细碎旋律",
+          "start": 24,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "0b2fd2ef-7494-4e06-b96b-4272f691f660",
+          "name": "雨夜旋律 · 两小节",
+          "start": 32,
+          "length": 8,
+          "muted": false,
+          "patternId": "997bf3c1-edee-4e05-ba15-c9e1e601ae35"
+        },
+        {
+          "id": "86de19aa-0034-47d6-9582-c594a3307f75",
+          "name": "雨夜旋律 · 两小节",
+          "start": 44,
+          "length": 8,
+          "muted": false,
+          "patternId": "997bf3c1-edee-4e05-ba15-c9e1e601ae35"
+        },
+        {
+          "id": "170c38cf-2dc1-444f-a4c7-d2d20d070969",
+          "name": "雨夜旋律 · 两小节",
+          "start": 56,
+          "length": 8,
+          "muted": false,
+          "patternId": "997bf3c1-edee-4e05-ba15-c9e1e601ae35"
+        }
+      ]
+    }
+  ],
+  "loopRange": {
+    "start": 32,
+    "end": 64
+  },
+  "patterns": [
+    {
+      "id": "cb2d0ef1-8431-4c87-98f9-54c0cf819955",
+      "name": "柔和电钢琴",
+      "instrument": "keys",
+      "kind": "tonal",
+      "length": 8,
+      "notes": [
+        {
+          "id": "0f3af7bc-fc95-46a4-bf05-a825369468c5",
+          "pitch": 57,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 59
+        },
+        {
+          "id": "87e5b5fb-d042-49f8-a260-4e5197aee68d",
+          "pitch": 60,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 60
+        },
+        {
+          "id": "8adfd901-5b60-4964-94a5-4455e56d40bf",
+          "pitch": 64,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 56
+        },
+        {
+          "id": "e2d56c57-9116-46bc-bfde-e6fa1a1a5089",
+          "pitch": 67,
+          "start": 0,
+          "duration": 2.1,
+          "velocity": 54
+        },
+        {
+          "id": "f906e337-7b18-4f61-9d47-8faccdeb9d29",
+          "pitch": 57,
+          "start": 2.5,
+          "duration": 1.35,
+          "velocity": 67
+        },
+        {
+          "id": "d3e6593e-ca30-43f5-bf44-3d27ed470fef",
+          "pitch": 60,
+          "start": 2.5,
+          "duration": 1.35,
+          "velocity": 59
+        },
+        {
+          "id": "65039f73-655e-49bb-97dc-a3e623511d48",
+          "pitch": 64,
+          "start": 2.5,
+          "duration": 1.35,
+          "velocity": 58
+        },
+        {
+          "id": "a119f927-383a-4513-b304-dc99f9c7c089",
+          "pitch": 67,
+          "start": 2.5,
+          "duration": 1.35,
+          "velocity": 49
+        },
+        {
+          "id": "4d8d1b50-2470-4d05-8a69-399d522eb75c",
+          "pitch": 57,
+          "start": 4,
+          "duration": 2.1,
+          "velocity": 66
+        },
+        {
+          "id": "c10a0b79-f6f5-4512-9c80-38e6e5d5b2e7",
+          "pitch": 60,
+          "start": 4,
+          "duration": 2.1,
+          "velocity": 57
+        },
+        {
+          "id": "05549f66-23ce-452f-8630-c800c19e782f",
+          "pitch": 64,
+          "start": 4,
+          "duration": 2.1,
+          "velocity": 56
+        },
+        {
+          "id": "cc81dbcc-f108-4d2b-a205-ff2811d51da3",
+          "pitch": 67,
+          "start": 4,
+          "duration": 2.1,
+          "velocity": 55
+        },
+        {
+          "id": "378c0309-8171-476b-89c6-19d865ec50fe",
+          "pitch": 57,
+          "start": 6.5,
+          "duration": 1.35,
+          "velocity": 65
+        },
+        {
+          "id": "03f4e963-449c-4aa1-a901-9c0f636ef3d2",
+          "pitch": 60,
+          "start": 6.5,
+          "duration": 1.35,
+          "velocity": 62
+        },
+        {
+          "id": "c470f9ee-f9f0-4bc7-92ae-3c8c23c7865e",
+          "pitch": 64,
+          "start": 6.5,
+          "duration": 1.35,
+          "velocity": 53
+        },
+        {
+          "id": "132f3003-a5e1-43a8-938c-5edeca4f0e23",
+          "pitch": 67,
+          "start": 6.5,
+          "duration": 1.35,
+          "velocity": 57
+        }
+      ]
+    },
+    {
+      "id": "5ab2933d-519d-4f43-b625-148f363e46e3",
+      "name": "雨夜底鼓 · 两小节",
+      "instrument": "kick",
+      "kind": "drum",
+      "length": 8,
+      "notes": [
+        {
+          "id": "d67c3e15-6d11-4768-b06f-d5a64fef6d6f",
+          "pitch": 36,
+          "start": 0,
+          "duration": 0.13,
+          "velocity": 109
+        },
+        {
+          "id": "580decf4-7c30-4a2f-8d44-c43c49d16280",
+          "pitch": 36,
+          "start": 1.75,
+          "duration": 0.13,
+          "velocity": 98
+        },
+        {
+          "id": "56fe5ef5-233b-4aa0-8ac7-39d41b131400",
+          "pitch": 36,
+          "start": 2.5,
+          "duration": 0.13,
+          "velocity": 95
+        },
+        {
+          "id": "c7954e41-abd0-4020-9292-bef516a42e2e",
+          "pitch": 36,
+          "start": 4,
+          "duration": 0.13,
+          "velocity": 103
+        },
+        {
+          "id": "ff21f2f0-63c0-4cb8-9c73-26fb91ca9a57",
+          "pitch": 36,
+          "start": 5.75,
+          "duration": 0.13,
+          "velocity": 100
+        },
+        {
+          "id": "be599c13-3f6e-4109-be7d-fe8aa94e0d33",
+          "pitch": 36,
+          "start": 6.5,
+          "duration": 0.13,
+          "velocity": 95
+        }
+      ]
+    },
+    {
+      "id": "997bf3c1-edee-4e05-ba15-c9e1e601ae35",
+      "name": "雨夜旋律 · 两小节",
+      "instrument": "lead",
+      "kind": "tonal",
+      "length": 8,
+      "notes": [
+        {
+          "id": "7e793be5-5d68-44ed-ba74-d7fccacd63d3",
+          "pitch": 76,
+          "start": 0.5,
+          "duration": 0.45,
+          "velocity": 70
+        },
+        {
+          "id": "0c2c4b8e-d6ae-4d0a-9337-7d7b8b2d0029",
+          "pitch": 74,
+          "start": 1.25,
+          "duration": 0.45,
+          "velocity": 66
+        },
+        {
+          "id": "928426e8-0345-4c4b-b711-2ea46c903d85",
+          "pitch": 76,
+          "start": 2.5,
+          "duration": 0.45,
+          "velocity": 70
+        },
+        {
+          "id": "1bfe649b-ba0e-4850-abb1-aef39f20e8a5",
+          "pitch": 79,
+          "start": 3.25,
+          "duration": 0.65,
+          "velocity": 63
+        },
+        {
+          "id": "e350f70d-0683-484d-b5ee-3ff969b9df29",
+          "pitch": 76,
+          "start": 4,
+          "duration": 0.45,
+          "velocity": 69
+        },
+        {
+          "id": "9913cfdc-4640-4d69-a94e-e2a2e82d7f16",
+          "pitch": 72,
+          "start": 4.75,
+          "duration": 0.45,
+          "velocity": 65
+        },
+        {
+          "id": "1b3415ba-828c-4d3e-8842-6dfd1cd180ab",
+          "pitch": 76,
+          "start": 5.5,
+          "duration": 0.45,
+          "velocity": 68
+        },
+        {
+          "id": "209a5aae-3cf0-4f3b-adfd-b0edd52522cd",
+          "pitch": 79,
+          "start": 6.75,
+          "duration": 0.65,
+          "velocity": 70
+        }
+      ]
+    }
+  ]
+}
