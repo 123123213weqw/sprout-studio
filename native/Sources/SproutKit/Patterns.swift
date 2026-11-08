@@ -38,16 +38,23 @@ func normalizePatterns(_ input: JSONValue) throws -> [JSONValue] {
         var noteIds = Set<String>()
         var notes: [JSONObject] = []
         for nv in noteList {
-            guard let n = nv.asObject,
-                  let nid = n["id"]?.asString, jsSafeId(nid), !noteIds.contains(nid),
-                  let pitch = n["pitch"]?.asNumber, jsIsInteger(pitch), pitch >= 24, pitch <= 108,
-                  meta.kind != "drum" || pitch == Double(meta.pitch ?? -1),
-                  let start = n["start"]?.asNumber, jsIsFinite(start), start >= 0,
-                  let duration = n["duration"]?.asNumber, jsIsFinite(duration), duration >= 0.03125,
-                  start + duration <= length + EPS,
-                  let velocity = n["velocity"]?.asNumber, jsIsFinite(velocity), velocity >= 1, velocity <= 127 else {
+            guard let n = nv.asObject else { throw SproutError("Pattern 音符不合法") }
+            let idRaw: String? = n["id"]?.asString
+            let pitchRaw: Double? = n["pitch"]?.asNumber
+            let startRaw: Double? = n["start"]?.asNumber
+            let durationRaw: Double? = n["duration"]?.asNumber
+            let velocityRaw: Double? = n["velocity"]?.asNumber
+            guard let nid = idRaw, let pitch = pitchRaw, let start = startRaw,
+                  let duration = durationRaw, let velocity = velocityRaw else {
                 throw SproutError("Pattern 音符不合法")
             }
+            let idOk: Bool = jsSafeId(nid) && !noteIds.contains(nid)
+            let pitchOk: Bool = jsIsInteger(pitch) && pitch >= 24 && pitch <= 108
+                && !(meta.kind == "drum" && pitch != Double(meta.pitch ?? -1))
+            let spanOk: Bool = jsIsFinite(start) && start >= 0
+                && jsIsFinite(duration) && duration >= 0.03125 && start + duration <= length + EPS
+            let velOk: Bool = jsIsFinite(velocity) && velocity >= 1 && velocity <= 127
+            guard idOk, pitchOk, spanOk, velOk else { throw SproutError("Pattern 音符不合法") }
             noteIds.insert(nid)
             var note = JSONObject()
             note["id"] = .string(nid)

@@ -37,12 +37,12 @@ func ensureClips(_ project: inout JSONObject, strict: Bool) throws {
         }
         var clips: [JSONObject] = []
         for cv in rawClips {
-            guard let c = cv.asObject,
-                  let s = c["start"]?.asNumber, jsIsFinite(s),
-                  let l = c["length"]?.asNumber, jsIsFinite(l),
-                  s >= 0, l >= 0.25, s + l <= end + EPS else {
-                throw SproutError("音块位置或长度不合法")
-            }
+            guard let c = cv.asObject else { throw SproutError("音块位置或长度不合法") }
+            let startNum: Double? = c["start"]?.asNumber
+            let lengthNum: Double? = c["length"]?.asNumber
+            guard let s = startNum, let l = lengthNum else { throw SproutError("音块位置或长度不合法") }
+            let geometryOk: Bool = jsIsFinite(s) && jsIsFinite(l) && s >= 0 && l >= 0.25 && s + l <= end + EPS
+            guard geometryOk else { throw SproutError("音块位置或长度不合法") }
             let cid: String
             if let raw = c["id"]?.asString, jsSafeId(raw), !clipIds.contains(raw) { cid = raw } else { cid = jsUid() }
             clipIds.insert(cid)

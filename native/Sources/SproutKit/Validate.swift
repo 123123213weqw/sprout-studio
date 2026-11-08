@@ -85,13 +85,20 @@ public func validateProject(_ input: JSONValue) throws -> JSONObject {
 
         var outNotes: [JSONObject] = []
         for nv in notesIn {
-            guard let n = nv.asObject,
-                  let pitch = n["pitch"]?.asNumber, jsIsInteger(pitch), pitch >= 24, pitch <= 108,
-                  let start = n["start"]?.asNumber, jsIsFinite(start), start >= 0, start <= bars * 4 - 0.03125,
-                  let duration = n["duration"]?.asNumber, jsIsFinite(duration), duration >= 0.03125, duration <= bars * 4,
-                  let velocity = n["velocity"]?.asNumber, jsIsFinite(velocity), velocity >= 1, velocity <= 127 else {
+            guard let n = nv.asObject else { throw SproutError("音符数据不合法") }
+            let pitchRaw: Double? = n["pitch"]?.asNumber
+            let startRaw: Double? = n["start"]?.asNumber
+            let durationRaw: Double? = n["duration"]?.asNumber
+            let velocityRaw: Double? = n["velocity"]?.asNumber
+            guard let pitch = pitchRaw, let start = startRaw,
+                  let duration = durationRaw, let velocity = velocityRaw else {
                 throw SproutError("音符数据不合法")
             }
+            let pitchOk: Bool = jsIsInteger(pitch) && pitch >= 24 && pitch <= 108
+            let spanOk: Bool = jsIsFinite(start) && start >= 0 && start <= bars * 4 - 0.03125
+                && jsIsFinite(duration) && duration >= 0.03125 && duration <= bars * 4
+            let velOk: Bool = jsIsFinite(velocity) && velocity >= 1 && velocity <= 127
+            guard pitchOk, spanOk, velOk else { throw SproutError("音符数据不合法") }
             let nid: String
             if let raw = n["id"]?.asString, jsSafeId(raw), !noteIds.contains(raw) { nid = raw } else { nid = jsUid() }
             noteIds.insert(nid)

@@ -126,10 +126,18 @@ public func normalizeSound(_ instrument: String, _ input: JSONValue) throws -> J
         result[k] = obj[k] ?? dv
     }
     for field in definition.fields {
-        guard let v = result[field.key]?.asNumber, jsIsFinite(v), v >= field.min, v <= field.max else {
-            throw SproutError("\(field.label)须为 \(jsNumber(field.min))–\(jsNumber(field.max)) \(field.unit)")
+        let raw: Double? = result[field.key]?.asNumber
+        let valid: Bool
+        if let v = raw {
+            valid = jsIsFinite(v) && v >= field.min && v <= field.max
+        } else {
+            valid = false
         }
-        result[field.key] = .number(round4(v))
+        guard valid else {
+            let message: String = field.label + "须为 " + jsNumber(field.min) + "–" + jsNumber(field.max) + " " + field.unit
+            throw SproutError(message)
+        }
+        result[field.key] = .number(round4(raw!))
     }
     if definition.kind == "tonal" {
         guard let wf = result["waveform"]?.asString, Tables.shared.waveforms.contains(wf) else {
