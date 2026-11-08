@@ -1,0 +1,266 @@
+{
+  "version": 2,
+  "id": "8f0e0abc-302b-40f2-a15c-7e7b74897c5a",
+  "name": "独立练习 · 已命名",
+  "style": "lofi",
+  "key": "A minor",
+  "bars": 8,
+  "bpm": 86,
+  "swing": 12,
+  "master": 0.75,
+  "seed": 271828,
+  "tracks": [
+    {
+      "id": "1f778b89-4405-4bfe-acb0-97e5e4a08ef6",
+      "instrument": "kick",
+      "kind": "drum",
+      "name": "底鼓",
+      "color": "#eda96b",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "c60eb430-b4ad-4b35-8e87-2b902bef2659",
+          "name": "底鼓",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "01e33e3e-357c-4513-a5e5-b77a36f9d293",
+          "name": "底鼓",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "36d87263-803c-4fe9-b027-153d68cb92f4",
+          "name": "底鼓",
+          "start": 16,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "792733bc-74af-429b-8607-1c98e2928ba6",
+          "name": "底鼓",
+          "start": 24,
+          "length": 8,
+          "muted": false
+        }
+      ]
+    },
+    {
+      "id": "6b78c6c7-2f26-404b-89e4-b45c1bb8d150",
+      "instrument": "snare",
+      "kind": "drum",
+      "name": "军鼓",
+      "color": "#e8bc80",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "0ead5e84-a048-4f90-b5a3-499788dd904a",
+          "name": "军鼓",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "2a52e4be-b4a5-48d1-b01c-a50d9a7e168b",
+          "name": "军鼓",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "c238a928-44c7-4c87-b1af-e7efca4e75a5",
+          "name": "军鼓",
+          "start": 16,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "e479b220-adb1-4958-afc9-4f7e49a3ef71",
+          "name": "军鼓",
+          "start": 24,
+          "length": 8,
+          "muted": false
+        }
+      ]
+    },
+    {
+      "id": "e02ed2b9-ef5d-4d77-867d-70245033b466",
+      "instrument": "hat",
+      "kind": "drum",
+      "name": "踩镲",
+      "color": "#d6d995",
+      "volume": 0.45,
+      "pan": 0.18,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "c7297150-af6b-4b69-a116-edb6de0c4830",
+          "name": "踩镲",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "533b4cc0-2c81-4e0c-902a-b2db4ab2e8f5",
+          "name": "踩镲",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "4e3feede-53d8-43a4-9e0e-d4c98557c0a7",
+          "name": "踩镲",
+          "start": 16,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "1847237a-d3fe-463c-9ac8-34bdf0783a5a",
+          "name": "踩镲",
+          "start": 24,
+          "length": 8,
+          "muted": false
+        }
+      ]
+    },
+    {
+      "id": "24886e05-ef17-4320-b286-29b7adaffc78",
+      "instrument": "bass",
+      "kind": "tonal",
+      "name": "温暖贝斯",
+      "color": "#77cabb",
+      "volume": 0.72,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "5428e6fe-b0c6-4e9f-8f1c-292c4351be51",
+          "name": "温暖贝斯",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "cc9176d3-16b4-4bda-a50a-2bed316f3597",
+          "name": "温暖贝斯",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "b5d892fb-15b2-41f8-93be-352f588d2d7f",
+          "name": "温暖贝斯",
+          "start": 16,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "e07c1939-34f5-41df-aa8f-843885eae366",
+          "name": "温暖贝斯",
+          "start": 24,
+          "length": 8,
+          "muted": false
+        }
+      ]
+    },
+    {
+      "id": "64875f21-edf4-4e28-b0b1-bec3b2febd67",
+      "instrument": "keys",
+      "kind": "tonal",
+      "name": "柔和电钢琴",
+      "color": "#b4a0e2",
+      "volume": 0.62,
+      "pan": 0,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "50dac9e4-661c-4f60-85a7-03453440fc33",
+          "name": "柔和电钢琴",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "dc429fe5-0c54-4f96-8bce-c415c96f781e",
+          "name": "柔和电钢琴",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "2afcd3a2-f221-4dcb-a9b5-1afebcc82d45",
+          "name": "柔和电钢琴",
+          "start": 16,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "3bc5a374-fca8-4d89-a9e1-17f080dc1a58",
+          "name": "柔和电钢琴",
+          "start": 24,
+          "length": 8,
+          "muted": false
+        }
+      ]
+    },
+    {
+      "id": "89fd1232-d9d2-4085-b1b0-94eb967ef87c",
+      "instrument": "lead",
+      "kind": "tonal",
+      "name": "细碎旋律",
+      "color": "#84afe2",
+      "volume": 0.72,
+      "pan": 0.12,
+      "muted": false,
+      "solo": false,
+      "notes": [],
+      "clips": [
+        {
+          "id": "b5c37c2e-5256-435c-9716-9a9f2bf68216",
+          "name": "细碎旋律",
+          "start": 0,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "4dc680f9-d81b-4e30-a604-abc636caf3be",
+          "name": "细碎旋律",
+          "start": 8,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "ab4ab803-1d80-4d17-bac3-6a7f3b5e6c86",
+          "name": "细碎旋律",
+          "start": 16,
+          "length": 8,
+          "muted": false
+        },
+        {
+          "id": "83f91581-56ec-4967-bb4d-40dd122f6fc9",
+          "name": "细碎旋律",
+          "start": 24,
+          "length": 8,
+          "muted": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1833 @@
+{
+  "version": 1,
+  "instruments": {
+    "kick": {
+      "name": "底鼓",
+      "label": "KICK",
+      "kind": "drum",
+      "icon": "●",
+      "color": "#eda96b",
+      "pitch": 36
+    },
+    "snare": {
+      "name": "军鼓",
+      "label": "SNARE",
+      "kind": "drum",
+      "icon": "≋",
+      "color": "#e8bc80",
+      "pitch": 38
+    },
+    "hat": {
+      "name": "踩镲",
+      "label": "HI-HAT",
+      "kind": "drum",
+      "icon": "×",
+      "color": "#d6d995",
+      "pitch": 42
+    },
+    "bass": {
+      "name": "温暖贝斯",
+      "label": "BASS",
+      "kind": "tonal",
+      "icon": "≋",
+      "color": "#77cabb"
+    },
+    "keys": {
+      "name": "柔和电钢琴",
+      "label": "E-PIANO",
+      "kind": "tonal",
+      "icon": "▥",
+      "color": "#b4a0e2"
+    },
+    "lead": {
+      "name": "细碎旋律",
+      "label": "MELODY",
+      "kind": "tonal",
+      "icon": "⌁",
+      "color": "#84afe2"
+    },
+    "pad": {
+      "name": "空气铺底",
+      "label": "PAD",
+      "kind": "tonal",
+      "icon": "∿",
+      "color": "#86bdca"
+    },
+    "pluck": {
+      "name": "清亮拨弦",
+      "label": "PLUCK",
+      "kind": "tonal",
+      "icon": "⋮",
+      "color": "#ed91a1"
+    }
+  },
+  "keys": {
+    "A minor": {
+      "root": 57,
+      "scale": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        8,
+        10
+      ],
+      "mode": "minor"
+    },
+    "C major": {
+      "root": 60,
+      "scale": [
+        0,
+        2,
+        4,
+        5,
+        7,
+        9,
+        11
+      ],
+      "mode": "major"
+    },
+    "D minor": {
+      "root": 50,
+      "scale": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        8,
+        10
+      ],
+      "mode": "minor"
+    },
+    "E minor": {
+      "root": 52,
+      "scale": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        8,
+        10
+      ],
+      "mode": "minor"
+    },
+    "G major": {
+      "root": 55,
+      "scale": [
+        0,
+        2,
+        4,
+        5,
+        7,
+        9,
+        11
+      ],
+      "mode": "major"
+    },
+    "F major": {
+      "root": 53,
+      "scale": [
+        0,
+        2,
+        4,
+        5,
+        7,
+        9,
+        11
+      ],
+      "mode": "major"
+    }
+  },
+  "styles": [
+    {
+      "id": "lofi",
+      "icon": "☾",
+      "name": "Lo-fi",
+      "desc": "温暖 · 松弛 · 雨夜",
+      "bpm": 86
+    },
+    {
+      "id": "hiphop",
+      "icon": "≋",
+      "name": "Hip-hop",
+      "desc": "节奏 · 厚实 · 律动",
+      "bpm": 92
+    },
+    {
+      "id": "house",
+      "icon": "⌁",
+      "name": "House",
+      "desc": "明亮 · 跳舞 · 能量",
+      "bpm": 124
+    },
+    {
+      "id": "ambient",
+      "icon": "∿",
+      "name": "Ambient",
+      "desc": "空灵 · 氛围 · 沉浸",
+      "bpm": 72
+    }
+  ],
+  "sectionKinds": {
+    "intro": "前奏",
+    "verse": "主歌",
+    "chorus": "副歌",
+    "bridge": "过渡",
+    "outro": "尾奏",
+    "custom": "自定义"
+  },
+  "waveforms": {
+    "native": "原生多层",
+    "sine": "正弦 · 纯净",
+    "triangle": "三角 · 柔和",
+    "sawtooth": "锯齿 · 丰富",
+    "square": "方波 · 明显"
+  },
+  "sound": {
+    "defaults": {
+      "kick": {
+        "decay": 0.37,
+        "tone": 43
+      },
+      "snare": {
+        "decay": 0.19,
+        "tone": 1800,
+        "body": 0.3
+      },
+      "hat": {
+        "decay": 0.085,
+        "tone": 8000
+      },
+      "bass": {
+        "attack": 0.008,
+        "decay": 0.08,
+        "sustain": 0.82,
+        "release": 0.06,
+        "cutoff": 800,
+        "resonance": 0.55,
+        "waveform": "native"
+      },
+      "keys": {
+        "attack": 0.008,
+        "decay": 0.35,
+        "sustain": 0.72,
+        "release": 0.17,
+        "cutoff": 3200,
+        "resonance": 0.55,
+        "waveform": "native"
+      },
+      "lead": {
+        "attack": 0.008,
+        "decay": 0.12,
+        "sustain": 0.82,
+        "release": 0.15,
+        "cutoff": 3200,
+        "resonance": 0.55,
+        "waveform": "native"
+      },
+      "pad": {
+        "attack": 0.28,
+        "decay": 0.6,
+        "sustain": 0.8,
+        "release": 0.6,
+        "cutoff": 1500,
+        "resonance": 0.55,
+        "waveform": "native"
+      },
+      "pluck": {
+        "attack": 0.008,
+        "decay": 0.24,
+        "sustain": 0.15,
+        "release": 0.24,
+        "cutoff": 3200,
+        "resonance": 0.55,
+        "waveform": "native"
+      }
+    },
+    "definitions": {
+      "kick": {
+        "kind": "drum",
+        "fields": [
+          {
+            "key": "decay",
+            "min": 0.02,
+            "max": 1.5,
+            "label": "鼓声长短",
+            "unit": "秒"
+          },
+          {
+            "key": "tone",
+            "min": 30,
+            "max": 100,
+            "label": "鼓体音高",
+            "unit": "Hz"
+          }
+        ]
+      },
+      "snare": {
+        "kind": "drum",
+        "fields": [
+          {
+            "key": "decay",
+            "min": 0.02,
+            "max": 1.5,
+            "label": "鼓声长短",
+            "unit": "秒"
+          },
+          {
+            "key": "tone",
+            "min": 300,
+            "max": 6000,
+            "label": "明亮程度",
+            "unit": "Hz"
+          },
+          {
+            "key": "body",
+            "min": 0,
+            "max": 1,
+            "label": "鼓体 / 沙沙声",
+            "unit": "比例"
+          }
+        ]
+      },
+      "hat": {
+        "kind": "drum",
+        "fields": [
+          {
+            "key": "decay",
+            "min": 0.02,
+            "max": 1.5,
+            "label": "鼓声长短",
+            "unit": "秒"
+          },
+          {
+            "key": "tone",
+            "min": 2000,
+            "max": 14000,
+            "label": "明亮程度",
+            "unit": "Hz"
+          }
+        ]
+      },
+      "bass": {
+        "kind": "tonal",
+        "fields": [
+          {
+            "key": "attack",
+            "min": 0.001,
+            "max": 2,
+            "label": "慢慢出现",
+            "unit": "秒"
+          },
+          {
+            "key": "release",
+            "min": 0.005,
+            "max": 3,
+            "label": "松开后余音",
+            "unit": "秒"
+          },
+          {
+            "key": "cutoff",
+            "min": 30,
+            "max": 18000,
+            "label": "明亮程度",
+            "unit": "Hz"
+          },
+          {
+            "key": "sustain",
+            "min": 0,
+            "max": 1,
+            "label": "持续的音量",
+            "unit": "比例"
+          },
+          {
+            "key": "decay",
+            "min": 0.005,
+            "max": 2,
+            "label": "从峰值落下",
+            "unit": "秒"
+          },
+          {
+            "key": "resonance",
+            "min": 0.1,
+            "max": 4,
+            "label": "滤波突出感",
+            "unit": "Q"
+          }
+        ]
+      },
+      "keys": {
+        "kind": "tonal",
+        "fields": [
+          {
+            "key": "attack",
+            "min": 0.001,
+            "max": 2,
+            "label": "慢慢出现",
+            "unit": "秒"
+          },
+          {
+            "key": "release",
+            "min": 0.005,
+            "max": 3,
+            "label": "松开后余音",
+            "unit": "秒"
+          },
+          {
+            "key": "cutoff",
+            "min": 30,
+            "max": 18000,
+            "label": "明亮程度",
+            "unit": "Hz"
+          },
+          {
+            "key": "sustain",
+            "min": 0,
+            "max": 1,
+            "label": "持续的音量",
+            "unit": "比例"
+          },
+          {
+            "key": "decay",
+            "min": 0.005,
+            "max": 2,
+            "label": "从峰值落下",
+            "unit": "秒"
+          },
+          {
+            "key": "resonance",
+            "min": 0.1,
+            "max": 4,
+            "label": "滤波突出感",
+            "unit": "Q"
+          }
+        ]
+      },
+      "lead": {
+        "kind": "tonal",
+        "fields": [
+          {
+            "key": "attack",
+            "min": 0.001,
+            "max": 2,
+            "label": "慢慢出现",
+            "unit": "秒"
+          },
+          {
+            "key": "release",
+            "min": 0.005,
+            "max": 3,
+            "label": "松开后余音",
+            "unit": "秒"
+          },
+          {
+            "key": "cutoff",
+            "min": 30,
+            "max": 18000,
+            "label": "明亮程度",
+            "unit": "Hz"
+          },
+          {
+            "key": "sustain",
+            "min": 0,
+            "max": 1,
+            "label": "持续的音量",
+            "unit": "比例"
+          },
+          {
+            "key": "decay",
+            "min": 0.005,
+            "max": 2,
+            "label": "从峰值落下",
+            "unit": "秒"
+          },
+          {
+            "key": "resonance",
+            "min": 0.1,
+            "max": 4,
+            "label": "滤波突出感",
+            "unit": "Q"
+          }
+        ]
+      },
+      "pad": {
+        "kind": "tonal",
+        "fields": [
+          {
+            "key": "attack",
+            "min": 0.001,
+            "max": 2,
+            "label": "慢慢出现",
+            "unit": "秒"
+          },
+          {
+            "key": "release",
+            "min": 0.005,
+            "max": 3,
+            "label": "松开后余音",
+            "unit": "秒"
+          },
+          {
+            "key": "cutoff",
+            "min": 30,
+            "max": 18000,
+            "label": "明亮程度",
+            "unit": "Hz"
+          },
+          {
+            "key": "sustain",
+            "min": 0,
+            "max": 1,
+            "label": "持续的音量",
+            "unit": "比例"
+          },
+          {
+            "key": "decay",
+            "min": 0.005,
+            "max": 2,
+            "label": "从峰值落下",
+            "unit": "秒"
+          },
+          {
+            "key": "resonance",
+            "min": 0.1,
+            "max": 4,
+            "label": "滤波突出感",
+            "unit": "Q"
+          }
+        ]
+      },
+      "pluck": {
+        "kind": "tonal",
+        "fields": [
+          {
+            "key": "attack",
+            "min": 0.001,
+            "max": 2,
+            "label": "慢慢出现",
+            "unit": "秒"
+          },
+          {
+            "key": "release",
+            "min": 0.005,
+            "max": 3,
+            "label": "松开后余音",
+            "unit": "秒"
+          },
+          {
+            "key": "cutoff",
+            "min": 30,
+            "max": 18000,
+            "label": "明亮程度",
+            "unit": "Hz"
+          },
+          {
+            "key": "sustain",
+            "min": 0,
+            "max": 1,
+            "label": "持续的音量",
+            "unit": "比例"
+          },
+          {
+            "key": "decay",
+            "min": 0.005,
+            "max": 2,
+            "label": "从峰值落下",
+            "unit": "秒"
+          },
+          {
+            "key": "resonance",
+            "min": 0.1,
+            "max": 4,
+            "label": "滤波突出感",
+            "unit": "Q"
+          }
+        ]
+      }
+    }
+  },
+  "controlDefaults": {
+    "density": 50,
+    "complexity": 35,
+    "energy": 50,
+    "humanize": 15,
+    "progression": "warm",
+    "voiceLeading": true,
+    "seed": 271828
+  },
+  "limits": {
+    "barLengths": [
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxBars": 64,
+    "maxBeats": 256,
+    "maxProjectNotes": 12000,
+    "patternLimits": {
+      "patterns": 64,
+      "notes": 12000,
+      "perPattern": 4000
+    }
+  },
+  "samplePresets": [
+    {
+      "id": "vsco-piano",
+      "instrument": "keys",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.2
+    },
+    {
+      "id": "vsco-kick",
+      "instrument": "kick",
+      "kind": "drum",
+      "gain": 0.85,
+      "release": 0.55
+    },
+    {
+      "id": "vsco-snare",
+      "instrument": "snare",
+      "kind": "drum",
+      "gain": 0.7,
+      "release": 0.4
+    },
+    {
+      "id": "vsco-cymbal",
+      "instrument": "hat",
+      "kind": "drum",
+      "gain": 0.45,
+      "release": 0.18
+    },
+    {
+      "id": "vsco-piano-full",
+      "instrument": "keys",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.3
+    },
+    {
+      "id": "vsco-bass",
+      "instrument": "bass",
+      "kind": "tonal",
+      "gain": 0.95,
+      "release": 0.3
+    },
+    {
+      "id": "vsco-flute",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.7,
+      "release": 0.18
+    },
+    {
+      "id": "vsco-cello",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.6,
+      "release": 0.9
+    },
+    {
+      "id": "vsco-harp",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.8
+    },
+    {
+      "id": "karoryfer-guitar",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.45
+    },
+    {
+      "id": "vsco-violin",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.35
+    },
+    {
+      "id": "vsco-clarinet",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.7,
+      "release": 0.2
+    },
+    {
+      "id": "sonic-kick",
+      "instrument": "kick",
+      "kind": "drum",
+      "gain": 0.85,
+      "release": 0.45
+    },
+    {
+      "id": "sonic-snare",
+      "instrument": "snare",
+      "kind": "drum",
+      "gain": 0.75,
+      "release": 0.3
+    },
+    {
+      "id": "sonic-hat",
+      "instrument": "hat",
+      "kind": "drum",
+      "gain": 0.6,
+      "release": 0.14
+    },
+    {
+      "id": "fluid-000",
+      "instrument": "keys",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-001",
+      "instrument": "keys",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-002",
+      "instrument": "keys",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-003",
+      "instrument": "keys",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-004",
+      "instrument": "keys",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-005",
+      "instrument": "keys",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-006",
+      "instrument": "keys",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-007",
+      "instrument": "keys",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-008",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-009",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-010",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-011",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-012",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-013",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-014",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-015",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-016",
+      "instrument": "keys",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-017",
+      "instrument": "keys",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-018",
+      "instrument": "keys",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-019",
+      "instrument": "keys",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-020",
+      "instrument": "keys",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-021",
+      "instrument": "keys",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-022",
+      "instrument": "keys",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-023",
+      "instrument": "keys",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-024",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-025",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-026",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-027",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-028",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-029",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-030",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-031",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-032",
+      "instrument": "bass",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.25
+    },
+    {
+      "id": "fluid-033",
+      "instrument": "bass",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.25
+    },
+    {
+      "id": "fluid-034",
+      "instrument": "bass",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.25
+    },
+    {
+      "id": "fluid-035",
+      "instrument": "bass",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.25
+    },
+    {
+      "id": "fluid-036",
+      "instrument": "bass",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.25
+    },
+    {
+      "id": "fluid-037",
+      "instrument": "bass",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.25
+    },
+    {
+      "id": "fluid-038",
+      "instrument": "bass",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.25
+    },
+    {
+      "id": "fluid-039",
+      "instrument": "bass",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.25
+    },
+    {
+      "id": "fluid-040",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-041",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-042",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-043",
+      "instrument": "bass",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.25
+    },
+    {
+      "id": "fluid-044",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-045",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-046",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-047",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-048",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-049",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-050",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-051",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-052",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-053",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-054",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-055",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-056",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-057",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-058",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-059",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-060",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-061",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-062",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-063",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-064",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-065",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-066",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-067",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-068",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-069",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-070",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-071",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-072",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-073",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-074",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-075",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-076",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-077",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-078",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-079",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-080",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-081",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-082",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-083",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-084",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-085",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-086",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-087",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-088",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-089",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-090",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-091",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-092",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-093",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-094",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-095",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-096",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-097",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-098",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-099",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-100",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-101",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-102",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-103",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.5
+    },
+    {
+      "id": "fluid-104",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-105",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-106",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-107",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-108",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-109",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-110",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-111",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-112",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-113",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-114",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-115",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-116",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-117",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-118",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-119",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.85,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-120",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-121",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-122",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-123",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-124",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-125",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-126",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "fluid-127",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.75,
+      "release": 0.35
+    },
+    {
+      "id": "edm-bass-1",
+      "instrument": "bass",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.3
+    },
+    {
+      "id": "edm-bass-2",
+      "instrument": "bass",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.3
+    },
+    {
+      "id": "edm-bass-3",
+      "instrument": "bass",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.3
+    },
+    {
+      "id": "edm-bass-4",
+      "instrument": "bass",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.3
+    },
+    {
+      "id": "edm-bass-5",
+      "instrument": "bass",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.3
+    },
+    {
+      "id": "edm-bass-6",
+      "instrument": "bass",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.3
+    },
+    {
+      "id": "edm-lead-1",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.3
+    },
+    {
+      "id": "edm-lead-2",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.3
+    },
+    {
+      "id": "edm-lead-3",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.3
+    },
+    {
+      "id": "edm-lead-4",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.3
+    },
+    {
+      "id": "edm-lead-5",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.3
+    },
+    {
+      "id": "edm-lead-6",
+      "instrument": "lead",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.3
+    },
+    {
+      "id": "edm-pad-1",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.7
+    },
+    {
+      "id": "edm-pad-2",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.7
+    },
+    {
+      "id": "edm-pad-3",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.7
+    },
+    {
+      "id": "edm-pad-4",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.7
+    },
+    {
+      "id": "edm-pad-5",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.7
+    },
+    {
+      "id": "edm-pad-6",
+      "instrument": "pad",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.7
+    },
+    {
+      "id": "edm-pluck-1",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.3
+    },
+    {
+      "id": "edm-pluck-2",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.3
+    },
+    {
+      "id": "edm-pluck-3",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.3
+    },
+    {
+      "id": "edm-pluck-4",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.3
+    },
+    {
+      "id": "edm-pluck-5",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.3
+    },
+    {
+      "id": "edm-pluck-6",
+      "instrument": "pluck",
+      "kind": "tonal",
+      "gain": 0.8,
+      "release": 0.3
+    },
+    {
+      "id": "edm-kick-1",
+      "instrument": "kick",
+      "kind": "drum",
+      "gain": 0.85,
+      "release": 0.5
+    },
+    {
+      "id": "edm-kick-2",
+      "instrument": "kick",
+      "kind": "drum",
+      "gain": 0.85,
+      "release": 0.5
+    },
+    {
+      "id": "edm-kick-3",
+      "instrument": "kick",
+      "kind": "drum",
+      "gain": 0.85,
+      "release": 0.5
+    },
+    {
+      "id": "edm-kick-4",
+      "instrument": "kick",
+      "kind": "drum",
+      "gain": 0.85,
+      "release": 0.5
+    },
+    {
+      "id": "edm-snare-1",
+      "instrument": "snare",
+      "kind": "drum",
+      "gain": 0.7,
+      "release": 0.5
+    },
+    {
+      "id": "edm-snare-2",
+      "instrument": "snare",
+      "kind": "drum",
+      "gain": 0.7,
+      "release": 0.5
+    },
+    {
+      "id": "edm-snare-3",
+      "instrument": "snare",
+      "kind": "drum",
+      "gain": 0.7,
+      "release": 0.5
+    },
+    {
+      "id": "edm-snare-4",
+      "instrument": "snare",
+      "kind": "drum",
+      "gain": 0.7,
+      "release": 0.5
+    },
+    {
+      "id": "edm-hat-1",
+      "instrument": "hat",
+      "kind": "drum",
+      "gain": 0.55,
+      "release": 0.2
+    },
+    {
+      "id": "edm-hat-2",
+      "instrument": "hat",
+      "kind": "drum",
+      "gain": 0.55,
+      "release": 0.2
+    },
+    {
+      "id": "edm-hat-3",
+      "instrument": "hat",
+      "kind": "drum",
+      "gain": 0.55,
+      "release": 0.2
+    },
+    {
+      "id": "edm-hat-4",
+      "instrument": "hat",
+      "kind": "drum",
+      "gain": 0.55,
+      "release": 0.65
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "version": 3,
+  "id": "acoustic-held-v28",
+  "name": "Violin and clarinet held-note check",
+  "style": "lofi",
+  "key": "A minor",
+  "bars": 4,
+  "bpm": 82,
+  "swing": 0,
+  "master": 0.75,
+  "seed": 192801,
+  "tracks": [
+    {
+      "id": "acoustic-violin",
+      "instrument": "lead",
+      "kind": "tonal",
+      "name": "Solo violin",
+      "color": "#84afe2",
+      "volume": 0.7,
+      "pan": 0.22,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "held-0",
+          "pitch": 69,
+          "start": 0,
+          "duration": 14,
+          "velocity": 80
+        }
+      ],
+      "clips": [
+        {
+          "id": "acoustic-violin-clip",
+          "name": "Solo violin",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "vsco-violin",
+        "gain": 0.8,
+        "release": 0.35,
+        "cutoff": 18000
+      }
+    },
+    {
+      "id": "acoustic-clarinet",
+      "instrument": "lead",
+      "kind": "tonal",
+      "name": "Clarinet",
+      "color": "#84afe2",
+      "volume": 0.5,
+      "pan": 0.04,
+      "muted": false,
+      "solo": false,
+      "notes": [
+        {
+          "id": "held-1",
+          "pitch": 62,
+          "start": 0,
+          "duration": 14,
+          "velocity": 80
+        }
+      ],
+      "clips": [
+        {
+          "id": "acoustic-clarinet-clip",
+          "name": "Clarinet",
+          "start": 0,
+          "length": 16,
+          "muted": false
+        }
+      ],
+      "sampler": {
+        "preset": "vsco-clarinet",
+        "gain": 0.7,
+        "release": 0.2,
+        "cutoff": 18000
+      }
+    }
+  ],
+  "loopRange": {
+    "start": 0,
+    "end": 16
+  },
+  "patterns": []
+}

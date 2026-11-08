@@ -1,0 +1,29 @@
+name: Native CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: native-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  swift-test:
+    name: Swift tests (SproutKit + SproutAudio)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: swift-actions/setup-swift@v2
+        with:
+          swift-version: "6.0"
+      # 互维护防漂移:shared/*.json 与各栈消费点必须一致
+      - run: node tools/sync-shared.mjs && git diff --exit-code
+      # SproutKit/SproutAudio 均为纯 Swift(离线渲染器不含 Apple 专属 API),
+      # Linux 直接跑全部对拍测试;采样渲染测试在无媒体目录时自动跳过
+      - run: swift test --package-path native
