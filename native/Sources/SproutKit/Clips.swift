@@ -1,7 +1,7 @@
 // ensureClips:音块所有权与音符归属。对应 dist/clips.js 的同名导出(仅校验路径)。
 
 func ensureClips(_ project: inout JSONObject, strict: Bool) throws {
-    let end = (project["bars"]?.asNumber ?? 0) * 4
+    let end = (jnum(project, "bars", 0)) * 4
     var clipIds = Set<String>()
 
     if project.has("sections"), let sections = project["sections"] {
@@ -16,7 +16,7 @@ func ensureClips(_ project: inout JSONObject, strict: Bool) throws {
         let trackName = track["name"]?.asString ?? ""
 
         if !track.has("clips") {
-            let span = (project["version"]?.asNumber ?? 0) >= 2 ? 8.0 : end
+            let span = (jnum(project, "version", 0)) >= 2 ? 8.0 : end
             var built: [JSONValue] = []
             var start: Double = 0
             while start < end {
@@ -55,10 +55,10 @@ func ensureClips(_ project: inout JSONObject, strict: Bool) throws {
             if let pid = c["patternId"] { out["patternId"] = pid }
             clips.append(out)
         }
-        clips = stableSorted(clips) { ($0["start"]?.asNumber ?? 0) < ($1["start"]?.asNumber ?? 0) }
+        clips = stableSorted(clips) { jnum($0, "start") < jnum($1, "start") }
         for i in stride(from: 1, to: clips.count, by: 1) {
             let prev = clips[i - 1], cur = clips[i]
-            if (cur["start"]?.asNumber ?? 0) < (prev["start"]?.asNumber ?? 0) + (prev["length"]?.asNumber ?? 0) - EPS {
+            if (jnum(cur, "start", 0)) < (jnum(prev, "start", 0)) + (jnum(prev, "length", 0)) - EPS {
                 throw SproutError("同一轨道的音块不能重叠")
             }
         }
@@ -66,18 +66,18 @@ func ensureClips(_ project: inout JSONObject, strict: Bool) throws {
         var notes = track["notes"]?.asArray ?? []
         for ni in notes.indices {
             guard var note = notes[ni].asObject else { continue }
-            let nStart = note["start"]?.asNumber ?? 0
-            let nDur = note["duration"]?.asNumber ?? 0
+            let nStart = jnum(note, "start", 0)
+            let nDur = jnum(note, "duration", 0)
 
             var regionIndex: Int? = clips.firstIndex { c in
-                let cs = c["start"]?.asNumber ?? 0, cl = c["length"]?.asNumber ?? 0
+                let cs = jnum(c, "start", 0), cl = jnum(c, "length", 0)
                 return nStart >= cs - EPS && nStart < cs + cl - EPS
             }
             if regionIndex == nil {
                 if strict { throw SproutError("音符必须位于一个音块内") }
                 var previousEnd: Double? = nil
                 for c in clips {
-                    let cs = c["start"]?.asNumber ?? 0, cl = c["length"]?.asNumber ?? 0
+                    let cs = jnum(c, "start", 0), cl = jnum(c, "length", 0)
                     if cs + cl <= nStart + EPS { previousEnd = cs + cl }
                 }
                 var nextStart: Double? = nil
@@ -97,13 +97,13 @@ func ensureClips(_ project: inout JSONObject, strict: Bool) throws {
                 }
                 let regionId = region["id"]?.asString ?? ""
                 clips.append(region)
-                clips = stableSorted(clips) { ($0["start"]?.asNumber ?? 0) < ($1["start"]?.asNumber ?? 0) }
+                clips = stableSorted(clips) { jnum($0, "start") < jnum($1, "start") }
                 regionIndex = clips.firstIndex { $0["id"]?.asString == regionId }
             }
 
             let region = clips[regionIndex ?? 0]
-            let rStart = region["start"]?.asNumber ?? 0
-            let rLen = region["length"]?.asNumber ?? 0
+            let rStart = jnum(region, "start", 0)
+            let rLen = jnum(region, "length", 0)
             let rEnd = rStart + rLen
             if strict, nStart + nDur > rEnd + EPS {
                 throw SproutError("音符超出所属音块的边界")

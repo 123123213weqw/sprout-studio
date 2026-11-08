@@ -92,7 +92,7 @@ public enum Tables {
             for (name, v) in objs.pairs {
                 guard let o = v.asObject else { continue }
                 keys[name] = KeyInfo(
-                    root: o["root"]?.asNumber ?? 60,
+                    root: jnum(o, "root", 60),
                     scale: (o["scale"]?.asArray ?? []).compactMap { $0.asNumber },
                     mode: o["mode"]?.asString ?? "major"
                 )
@@ -130,8 +130,8 @@ public enum Tables {
                 presets[id] = SamplePresetInfo(
                     instrument: instrument,
                     kind: o["kind"]?.asString ?? "tonal",
-                    gain: o["gain"]?.asNumber ?? 1,
-                    release: o["release"]?.asNumber ?? 0.2
+                    gain: jnum(o, "gain", 1),
+                    release: jnum(o, "release", 0.2)
                 )
             }
         }
@@ -144,7 +144,7 @@ public enum Tables {
         let waveforms: Set<String> = Set(root["waveforms"]?.asObject?.keys ?? [])
         let barLengths: [Double] = (limits["barLengths"]?.asArray ?? []).compactMap { $0.asNumber }
         let maxBars: Int = limits["maxBars"]?.asNumber.map(Int.init) ?? 64
-        let maxBeats: Double = limits["maxBeats"]?.asNumber ?? 256
+        let maxBeats: Double = jnum(limits, "maxBeats", 256)
         let maxNotes: Int = limits["maxProjectNotes"]?.asNumber.map(Int.init) ?? 12000
         let patternPatterns: Int = pattern["patterns"]?.asNumber.map(Int.init) ?? 64
         let patternNotes: Int = pattern["notes"]?.asNumber.map(Int.init) ?? 12000

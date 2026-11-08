@@ -69,9 +69,9 @@ public enum Samples {
                 root: a["root"]?.asNumber.map(Int.init) ?? 60,
                 maxVelocity: a["maxVelocity"]?.asNumber.map(Int.init) ?? 127,
                 frames: a["frames"]?.asNumber.map(Int.init) ?? 0,
-                sampleRate: a["sampleRate"]?.asNumber ?? 44100,
+                sampleRate: jnum(a, "sampleRate", 44100),
                 channels: a["channels"]?.asNumber.map(Int.init) ?? 1,
-                peak: a["peak"]?.asNumber ?? 1,
+                peak: jnum(a, "peak", 1),
                 roundRobin: a["roundRobin"]?.asNumber.map(Int.init),
                 velocityAnchor: a["velocityAnchor"]?.asNumber,
                 tuneCents: a["tuneCents"]?.asNumber,
@@ -88,8 +88,8 @@ public enum Samples {
                     id: id,
                     instrument: p["instrument"]?.asString ?? "",
                     kind: p["kind"]?.asString ?? "tonal",
-                    gain: p["gain"]?.asNumber ?? 1,
-                    release: p["release"]?.asNumber ?? 0.2,
+                    gain: jnum(p, "gain", 1),
+                    release: jnum(p, "release", 0.2),
                     attack: p["attack"]?.asNumber,
                     balance: p["balance"]?.asNumber,
                     program: p["program"]?.asNumber.map(Int.init),
@@ -196,9 +196,9 @@ public struct SampleVoicePlan {
 public func sampleVoicePlan(instrument: String, settings: JSONValue, pitch: Int, duration: Double, velocity: Int, bufferDuration: Double, assetId: String? = nil) throws -> SampleVoicePlan {
     let config = try normalizeSampler(instrument, settings)
     let configPresetId = config["preset"]?.asString ?? ""
-    let configGain = config["gain"]?.asNumber ?? 1
-    let configRelease = config["release"]?.asNumber ?? 0.2
-    let configCutoff = config["cutoff"]?.asNumber ?? 18000
+    let configGain = jnum(config, "gain", 1)
+    let configRelease = jnum(config, "release", 0.2)
+    let configCutoff = jnum(config, "cutoff", 18000)
     let preset = try Samples.samplePreset(configPresetId)
     let chosen = try pickSample(presetId: configPresetId, pitch: pitch, velocity: velocity)
     let asset: SampleAsset
@@ -269,10 +269,10 @@ public func audioTailSeconds(_ project: JSONObject) -> Double {
         let kind = t["kind"]?.asString ?? "tonal"
         if let sampler = t["sampler"] {
             let s = (try? normalizeSampler(instrument, sampler)) ?? JSONObject()
-            tail = max(tail, (s["release"]?.asNumber ?? 0) + 1.02)
+            tail = max(tail, (jnum(s, "release", 0)) + 1.02)
         } else if let sound = t["sound"] {
             let s = (try? normalizeSound(instrument, sound)) ?? JSONObject()
-            let extra = kind == "drum" ? (s["decay"]?.asNumber ?? 0) + 0.02 : (s["release"]?.asNumber ?? 0) + 0.02
+            let extra = kind == "drum" ? (jnum(s, "decay", 0)) + 0.02 : (jnum(s, "release", 0)) + 0.02
             tail = max(tail, extra + 1)
         }
     }

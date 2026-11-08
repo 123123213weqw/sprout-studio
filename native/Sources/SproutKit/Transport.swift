@@ -39,11 +39,11 @@ public func swungBeat(_ start: Double, _ swing: Double) -> Double {
 }
 
 public func performanceBeat(_ note: JSONObject, _ swing: Double, _ clip: JSONObject?) -> Double {
-    var beat = swungBeat(note["start"]?.asNumber ?? 0, swing) + (note["timingOffset"]?.asNumber ?? 0)
+    var beat = swungBeat(jnum(note, "start", 0), swing) + (jnum(note, "timingOffset", 0))
     if let clip = clip {
-        let cs = clip["start"]?.asNumber ?? 0
-        let cl = clip["length"]?.asNumber ?? 0
-        let nd = note["duration"]?.asNumber ?? 0
+        let cs = jnum(clip, "start", 0)
+        let cl = jnum(clip, "length", 0)
+        let nd = jnum(note, "duration", 0)
         beat = max(cs, min(beat, cs + cl - nd))
     }
     return beat
@@ -52,7 +52,7 @@ public func performanceBeat(_ note: JSONObject, _ swing: Double, _ clip: JSONObj
 /// 音符所属音块(按起点,EPS 半开窗)。对应 clips.js 的 clipAt。
 public func clipAt(_ clips: [JSONObject], _ beat: Double) -> JSONObject? {
     return clips.first { c in
-        let cs = c["start"]?.asNumber ?? 0, cl = c["length"]?.asNumber ?? 0
+        let cs = jnum(c, "start", 0), cl = jnum(c, "length", 0)
         return beat >= cs - EPS && beat < cs + cl - EPS
     }
 }
@@ -62,17 +62,17 @@ public func audibleNotes(_ track: JSONObject) -> [JSONObject] {
     let clips = (track["clips"]?.asArray ?? []).compactMap(\.asObject)
     return (track["notes"]?.asArray ?? []).compactMap { nv in
         guard let n = nv.asObject else { return nil }
-        let start = n["start"]?.asNumber ?? 0
+        let start = jnum(n, "start", 0)
         return clipAt(clips, start)?["muted"]?.asBool == true ? nil : n
     }
 }
 
 public func playbackPlan(_ project: JSONObject, range: JSONValue? = nil, trackIds: [String]? = nil, from: Double? = nil) throws -> PlaybackPlan {
-    let bars = project["bars"]?.asNumber ?? 0
-    let bpm = project["bpm"]?.asNumber ?? 120
-    let swing = project["swing"]?.asNumber ?? 0
+    let bars = jnum(project, "bars", 0)
+    let bpm = jnum(project, "bpm", 120)
+    let swing = jnum(project, "swing", 0)
     let window = try normalizeRange(range ?? .null, bars * 4)
-    let windowStart = window["start"]?.asNumber ?? 0
+    let windowStart = jnum(window, "start", 0)
     let windowEnd = window["end"]?.asNumber ?? bars * 4
 
     var left = windowStart
@@ -95,18 +95,18 @@ public func playbackPlan(_ project: JSONObject, range: JSONValue? = nil, trackId
         if let idSet, idSet.contains(t["id"]?.asString ?? "") == false { continue }
         let clips = (t["clips"]?.asArray ?? []).compactMap(\.asObject)
         for n in audibleNotes(t) {
-            let originalBeat = performanceBeat(n, swing, clipAt(clips, n["start"]?.asNumber ?? 0))
-            let noteDur = n["duration"]?.asNumber ?? 0
+            let originalBeat = performanceBeat(n, swing, clipAt(clips, jnum(n, "start", 0)))
+            let noteDur = jnum(n, "duration", 0)
             let end = min(originalBeat + noteDur, windowEnd)
             let beat = max(originalBeat, left)
             if end - beat <= EPS { continue }
             events.append(PlanEvent(
                 trackIndex: ti,
                 noteId: n["id"]?.asString ?? "",
-                pitch: n["pitch"]?.asNumber ?? 0,
-                start: n["start"]?.asNumber ?? 0,
+                pitch: jnum(n, "pitch", 0),
+                start: jnum(n, "start", 0),
                 duration: round4(end - beat),
-                velocity: n["velocity"]?.asNumber ?? 0,
+                velocity: jnum(n, "velocity", 0),
                 timingOffset: n.has("timingOffset") ? n["timingOffset"]?.asNumber : nil,
                 beat: round4(beat),
                 originalBeat: originalBeat,

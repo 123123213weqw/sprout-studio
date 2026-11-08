@@ -25,10 +25,10 @@ private func midiChunk(_ type: String, _ bytes: [UInt8]) -> [UInt8] {
 public func encodeMIDI(_ project: JSONObject) throws -> [UInt8] {
     let p = try validateProject(.object(project))
     let ppq = 480
-    let bpm = p["bpm"]?.asNumber ?? 120
+    let bpm = jnum(p, "bpm", 120)
     let key = p["key"]?.asString ?? "C major"
-    let bars = Int(p["bars"]?.asNumber ?? 4)
-    let swing = p["swing"]?.asNumber ?? 0
+    let bars = Int(jnum(p, "bars", 4))
+    let swing = jnum(p, "swing", 0)
     let totalTicks = bars * 4 * ppq
     let tempo = Int((60000000 / bpm).rounded())
     let keySignatures: [String: [UInt8]] = [
@@ -67,15 +67,15 @@ public func encodeMIDI(_ project: JSONObject) throws -> [UInt8] {
             }
             events.append(EV(tick: 0, order: 0, data: [UInt8(192 | channel), UInt8(program)]))
         }
-        let volume = Int(((t["volume"]?.asNumber ?? 0.7) * 127).rounded())
-        let pan = Int((((t["pan"]?.asNumber ?? 0) + 1) * 63.5).rounded())
+        let volume = Int(((jnum(t, "volume", 0.7)) * 127).rounded())
+        let pan = Int((((jnum(t, "pan", 0)) + 1) * 63.5).rounded())
         events.append(EV(tick: 0, order: 0, data: [UInt8(176 | channel), 7, UInt8(volume)]))
         events.append(EV(tick: 0, order: 0, data: [UInt8(176 | channel), 10, UInt8(pan)]))
 
         let clips = (t["clips"]?.asArray ?? []).compactMap(\.asObject)
         for n in audibleNotes(t) {
-            let clip = clipAt(clips, n["start"]?.asNumber ?? 0)
-            var midiPitch = Int(n["pitch"]?.asNumber ?? 60)
+            let clip = clipAt(clips, jnum(n, "start", 0))
+            var midiPitch = Int(jnum(n, "pitch", 60))
             if kind == "drum", let sampler = t["sampler"]?.asObject,
                let presetId = sampler["preset"]?.asString,
                let preset = Samples.shared.presets[presetId], let mp = preset.midiPitch {
@@ -83,8 +83,8 @@ public func encodeMIDI(_ project: JSONObject) throws -> [UInt8] {
             }
             let pb = performanceBeat(n, swing, clip)
             let start = Int((pb * Double(ppq)).rounded())
-            let end = min(totalTicks, Int(((pb + (n["duration"]?.asNumber ?? 0)) * Double(ppq)).rounded()))
-            events.append(EV(tick: start, order: 2, data: [UInt8(144 | channel), UInt8(midiPitch), UInt8(Int(n["velocity"]?.asNumber ?? 100))]))
+            let end = min(totalTicks, Int(((pb + (jnum(n, "duration", 0))) * Double(ppq)).rounded()))
+            events.append(EV(tick: start, order: 2, data: [UInt8(144 | channel), UInt8(midiPitch), UInt8(Int(jnum(n, "velocity", 100)))]))
             events.append(EV(tick: max(start + 1, end), order: 1, data: [UInt8(128 | channel), UInt8(midiPitch), 0]))
         }
         events = stableSorted(events) { $0.tick != $1.tick ? $0.tick < $1.tick : $0.order < $1.order }

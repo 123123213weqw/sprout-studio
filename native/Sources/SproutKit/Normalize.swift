@@ -15,7 +15,7 @@ public func normalizeControls(_ input: JSONValue, seed: Double) throws -> JSONOb
 
     var out = JSONObject()
     for (k, dv) in defaults.pairs {
-        if k == "seed" { out[k] = .number(jsIsFinite(seed) ? seed : (defaults["seed"]?.asNumber ?? 271828)) }
+        if k == "seed" { out[k] = .number(jsIsFinite(seed) ? seed : (jnum(defaults, "seed", 271828))) }
         else if let iv = obj[k] { out[k] = iv } else { out[k] = dv }
     }
     for key in ["density", "complexity", "energy", "humanize"] {
@@ -99,11 +99,11 @@ func normalizeSections(_ input: JSONValue, _ end: Double) throws -> [JSONValue] 
         sections.append(out)
     }
     let sorted = stableSorted(sections) { a, b in
-        (a["start"]?.asNumber ?? 0) < (b["start"]?.asNumber ?? 0)
+        (jnum(a, "start", 0)) < (jnum(b, "start", 0))
     }
     for i in stride(from: 1, to: sorted.count, by: 1) {
         let prev = sorted[i - 1], cur = sorted[i]
-        if (cur["start"]?.asNumber ?? 0) < (prev["start"]?.asNumber ?? 0) + (prev["length"]?.asNumber ?? 0) {
+        if (jnum(cur, "start", 0)) < (jnum(prev, "start", 0)) + (jnum(prev, "length", 0)) {
             throw SproutError("歌曲段落不能重叠")
         }
     }
@@ -164,7 +164,7 @@ public func normalizeSampler(_ instrument: String, _ input: JSONValue) throws ->
     out["preset"] = .string(presetId)
     let gain = obj["gain"]?.asNumber ?? preset.gain
     let release = obj["release"]?.asNumber ?? preset.release
-    let cutoff = obj["cutoff"]?.asNumber ?? 18000
+    let cutoff = jnum(obj, "cutoff", 18000)
     for (key, value, lo, hi) in [("gain", gain, 0.05, 1.5), ("release", release, 0.02, 2.0), ("cutoff", cutoff, 200.0, 18000.0)] {
         guard jsIsFinite(value), value >= lo, value <= hi else {
             throw SproutError("采样参数超出范围：" + key)

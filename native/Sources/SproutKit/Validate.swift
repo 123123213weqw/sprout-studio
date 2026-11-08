@@ -74,8 +74,8 @@ public func validateProject(_ input: JSONValue) throws -> JSONObject {
         out["kind"] = .string(meta.kind)
         out["name"] = .string(jsStringField(t["name"], fallback: meta.name, limit: 40))
         out["color"] = .string(meta.color)
-        out["volume"] = .number(clamp(jsIsFinite(t["volume"]?.asNumber ?? .nan) ? t["volume"]!.asNumber! : 0.7, 0, 1))
-        out["pan"] = .number(clamp(jsIsFinite(t["pan"]?.asNumber ?? .nan) ? t["pan"]!.asNumber! : 0, -1, 1))
+        out["volume"] = .number(clamp(jsIsFinite(jnum(t, "volume", Double.nan)) ? t["volume"]!.asNumber! : 0.7, 0, 1))
+        out["pan"] = .number(clamp(jsIsFinite(jnum(t, "pan", Double.nan)) ? t["pan"]!.asNumber! : 0, -1, 1))
         out["muted"] = .bool(t["muted"]?.asBool == true)
         out["solo"] = .bool(t["solo"]?.asBool == true)
         out["notes"] = .array([])
@@ -119,9 +119,9 @@ public func validateProject(_ input: JSONValue) throws -> JSONObject {
         total += outNotes.count
         if total > Tables.shared.maxProjectNotes { throw SproutError("工程超过 12000 音符上限") }
         outNotes = stableSorted(outNotes) { a, b in
-            let sa = a["start"]?.asNumber ?? 0, sb = b["start"]?.asNumber ?? 0
+            let sa = jnum(a, "start", 0), sb = jnum(b, "start", 0)
             if sa != sb { return sa < sb }
-            return (a["pitch"]?.asNumber ?? 0) < (b["pitch"]?.asNumber ?? 0)
+            return (jnum(a, "pitch", 0)) < (jnum(b, "pitch", 0))
         }
         out["notes"] = .array(outNotes.map { .object($0) })
         outTracks.append(.object(out))

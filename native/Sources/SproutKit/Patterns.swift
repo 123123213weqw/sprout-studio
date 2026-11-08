@@ -82,9 +82,9 @@ func normalizePatterns(_ input: JSONValue) throws -> [JSONValue] {
         }
         // 完整三级决胜(起点、音高、ID),无需稳定排序;ID 按 UTF-16 序即码点序
         notes.sort { a, b in
-            let sa = a["start"]?.asNumber ?? 0, sb = b["start"]?.asNumber ?? 0
+            let sa = jnum(a, "start", 0), sb = jnum(b, "start", 0)
             if sa != sb { return sa < sb }
-            let pa = a["pitch"]?.asNumber ?? 0, pb = b["pitch"]?.asNumber ?? 0
+            let pa = jnum(a, "pitch", 0), pb = jnum(b, "pitch", 0)
             if pa != pb { return pa < pb }
             return (a["id"]?.asString ?? "") < (b["id"]?.asString ?? "")
         }
@@ -107,14 +107,14 @@ func normalizePatterns(_ input: JSONValue) throws -> [JSONValue] {
 func materializedNotes(pattern: JSONObject, clip: JSONObject) -> [JSONObject] {
     let clipId = clip["id"]?.asString ?? ""
     let patternId = pattern["id"]?.asString ?? ""
-    let clipStart = clip["start"]?.asNumber ?? 0
+    let clipStart = jnum(clip, "start", 0)
     let notes = pattern["notes"]?.asArray ?? []
     return notes.compactMap { nv in
         guard let n = nv.asObject else { return nil }
         var m = JSONObject()
         m["id"] = .string(instanceNoteId(clipId, patternId, n["id"]?.asString ?? ""))
         m["pitch"] = n["pitch"] ?? .null
-        m["start"] = .number(round4(clipStart + (n["start"]?.asNumber ?? 0)))
+        m["start"] = .number(round4(clipStart + (jnum(n, "start", 0))))
         m["duration"] = n["duration"] ?? .null
         m["velocity"] = n["velocity"] ?? .null
         if n.has("timingOffset") { m["timingOffset"] = n["timingOffset"]! }
@@ -128,10 +128,10 @@ func notesSignature(_ notes: [JSONObject], origin: Double, includeId: Bool) -> S
         var o = JSONObject()
         if includeId { o["id"] = n["id"] ?? .null }
         o["pitch"] = n["pitch"] ?? .null
-        o["start"] = .number(round4((n["start"]?.asNumber ?? 0) - origin))
-        o["duration"] = .number(round4(n["duration"]?.asNumber ?? 0))
-        o["velocity"] = .number((n["velocity"]?.asNumber ?? 0).rounded(.toNearestOrAwayFromZero))
-        o["timingOffset"] = .number(round4(n["timingOffset"]?.asNumber ?? 0))
+        o["start"] = .number(round4((jnum(n, "start", 0)) - origin))
+        o["duration"] = .number(round4(jnum(n, "duration", 0)))
+        o["velocity"] = .number((jnum(n, "velocity", 0)).rounded(.toNearestOrAwayFromZero))
+        o["timingOffset"] = .number(round4(jnum(n, "timingOffset", 0)))
         return jsCompactStringify(.object(o))
     }.sorted().joined(separator: "|")
 }
@@ -168,14 +168,14 @@ func synchronizePatterns(_ project: inout JSONObject, strict: Bool) throws {
             guard pKind == tKind, pKind != "drum" || pattern["instrument"]?.asString == track["instrument"]?.asString else {
                 throw SproutError("Pattern 与轨道音源不兼容")
             }
-            let clipStart = clip["start"]?.asNumber ?? 0
-            let clipLength = clip["length"]?.asNumber ?? 0
+            let clipStart = jnum(clip, "start", 0)
+            let clipLength = jnum(clip, "length", 0)
             let existing = notes.compactMap { nv -> JSONObject? in
                 guard let o = nv.asObject, let s = o["start"]?.asNumber else { return nil }
                 return s >= clipStart - EPS && s < clipStart + clipLength - EPS ? o : nil
             }
             let expected = materializedNotes(pattern: pattern, clip: clip)
-            let patternLength = pattern["length"]?.asNumber ?? 0
+            let patternLength = jnum(pattern, "length", 0)
             let same = abs(clipLength - patternLength) <= EPS
                 && notesSignature(existing, origin: clipStart, includeId: strict)
                     == notesSignature(expected, origin: clipStart, includeId: strict)

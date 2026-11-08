@@ -390,6 +390,12 @@ public func jsToFixedValue(_ x: Double, _ f: Int) -> Double {
 public func round4(_ d: Double) -> Double { jsToFixedValue(d, 4) }
 public func clamp(_ n: Double, _ lo: Double, _ hi: Double) -> Double { Swift.max(lo, Swift.min(hi, n)) }
 
+/// 从 JSONObject 取数值(缺省 0):小表达式,Linux 类型推断友好。
+@inline(__always)
+public func jnum(_ o: JSONObject, _ k: String, _ d: Double = 0) -> Double {
+    o[k]?.asNumber ?? d
+}
+
 /// JS sort 默认不稳定;这里用下标决胜实现稳定排序,语义对齐现代 JS 引擎。
 public func stableSorted<T>(_ items: [T], by areInIncreasingOrder: (T, T) -> Bool) -> [T] {
     items.enumerated().sorted { l, r in

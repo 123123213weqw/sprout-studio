@@ -240,8 +240,8 @@ func renderConfiguredVoice(_ instrument: String, pitch: Double, when: Double, du
     func hz(_ x: Double) -> Double { min(x, sr * 0.49) }
 
     if instrument == "kick" {
-        let tone = sound["tone"]?.asNumber ?? 43
-        let decay = sound["decay"]?.asNumber ?? 0.37
+        let tone = jnum(sound, "tone", 43)
+        let decay = jnum(sound, "decay", 0.37)
         let freq = hz(tone * 145 / 43)
         let finalFreq = hz(tone)
         let ramp = min(0.11, decay * 0.4)
@@ -263,7 +263,7 @@ func renderConfiguredVoice(_ instrument: String, pitch: Double, when: Double, du
         let isHat = instrument == "hat"
         let tone = sound["tone"]?.asNumber ?? (isHat ? 8000 : 1800)
         let decay = sound["decay"]?.asNumber ?? (isHat ? 0.085 : 0.19)
-        let body = sound["body"]?.asNumber ?? 0.3
+        let body = jnum(sound, "body", 0.3)
         if isHat || body < 1 {
             var filter = isHat
                 ? Biquad(highpass: hz(tone), Q: 0.7, sampleRate: sr)
@@ -298,8 +298,8 @@ func renderConfiguredVoice(_ instrument: String, pitch: Double, when: Double, du
     // 调性:envelopePlan 逐点线性 + 峰值系数 + 滤波
     let plan = try! envelopePlan(duration: max(0.00005, duration), sound: sound)
     let peak = (synthPeak[instrument] ?? 0.2) * v
-    let cutoff = sound["cutoff"]?.asNumber ?? 3200
-    let resonance = sound["resonance"]?.asNumber ?? 0.55
+    let cutoff = jnum(sound, "cutoff", 3200)
+    let resonance = jnum(sound, "resonance", 0.55)
     let waveform = sound["waveform"]?.asString ?? "native"
     let layers = synthLayers[instrument] ?? synthLayers["lead"]!
     let f = frequency(pitch)
@@ -345,7 +345,7 @@ public struct RenderStats {
 
 public func renderWAV(_ project: JSONObject, options: RenderOptions, store: SampleStore? = nil) throws -> (wav: [UInt8], stats: RenderStats) {
     let p = try validateProject(.object(project))
-    let bpm = p["bpm"]?.asNumber ?? 120
+    let bpm = jnum(p, "bpm", 120)
     let plan = try playbackPlan(p, range: options.range ?? .null, trackIds: options.trackIds)
     let tail = audioTailSeconds(p)
     let seconds = plan.seconds + tail
@@ -363,8 +363,8 @@ public func renderWAV(_ project: JSONObject, options: RenderOptions, store: Samp
         let kind = t["kind"]?.asString ?? "tonal"
         let muted = t["muted"]?.asBool == true
         let tSolo = t["solo"]?.asBool == true
-        let gain = muted || (solo && !tSolo) ? 0 : (t["volume"]?.asNumber ?? 0.7)
-        let (panL, panR) = panGains(t["pan"]?.asNumber ?? 0)
+        let gain = muted || (solo && !tSolo) ? 0 : (jnum(t, "volume", 0.7))
+        let (panL, panR) = panGains(jnum(t, "pan", 0))
         let send = kind == "drum" ? 0 : (instrument == "pad" ? 0.45 : 0.23)
         buses[i] = TrackBus(gain: gain, panL: panL, panR: panR, send: send, noise: noiseBuffer)
     }
@@ -401,7 +401,7 @@ public func renderWAV(_ project: JSONObject, options: RenderOptions, store: Samp
     }
 
     // 延迟回声:createGraph 的 send→delay→damp→{feedback→delay, wet(.18)→master}
-    let masterGain = p["master"]?.asNumber ?? 0.75
+    let masterGain = jnum(p, "master", 0.75)
     let delaySec = min(0.36, 60 / bpm * 0.5)
     let delayFrames = max(1, Int(delaySec * renderSampleRate))
     var delayL = [Double](repeating: 0, count: delayFrames)

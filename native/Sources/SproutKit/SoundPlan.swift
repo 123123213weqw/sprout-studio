@@ -18,10 +18,10 @@ public struct EnvelopePlan {
 
 public func envelopePlan(duration: Double, sound: JSONObject) throws -> EnvelopePlan {
     guard duration.isFinite, duration > 0 else { throw SproutError("音符时长须为正数") }
-    let attack = sound["attack"]?.asNumber ?? .nan
-    let decay = sound["decay"]?.asNumber ?? .nan
-    let sustain = sound["sustain"]?.asNumber ?? .nan
-    let release = sound["release"]?.asNumber ?? .nan
+    let attack = jnum(sound, "attack", Double.nan)
+    let decay = jnum(sound, "decay", Double.nan)
+    let sustain = jnum(sound, "sustain", Double.nan)
+    let release = jnum(sound, "release", Double.nan)
     guard [attack, decay, sustain, release].allSatisfy({ $0.isFinite }),
           attack > 0, decay > 0, release > 0, sustain >= 0, sustain <= 1 else {
         throw SproutError("包络参数不正确")
@@ -81,7 +81,7 @@ public func synthVoicePlan(instrument: String, pitch: Double, duration: Double, 
         layers: layers,
         envelope: env,
         peak: peak,
-        cutoff: cfg["cutoff"]?.asNumber ?? 3200,
-        resonance: cfg["resonance"]?.asNumber ?? 0.55
+        cutoff: jnum(cfg, "cutoff", 3200),
+        resonance: jnum(cfg, "resonance", 0.55)
     )
 }
