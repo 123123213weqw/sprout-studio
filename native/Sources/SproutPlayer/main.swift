@@ -21,6 +21,13 @@ final class PlayerModel: ObservableObject {
     @Published var busy = false
     @Published var samplesRoot: URL? = defaultSamplesRoot()
     @Published var rollEvents: [RollEvent] = []
+    @Published var selectedNoteId: String?
+
+    func deleteSelectedNote() {
+        guard let id = selectedNoteId else { return }
+        deleteNote(id: id)
+        selectedNoteId = nil
+    }
 
     let engine = RealtimeEngine()
     private var displayTimer: Timer?
@@ -33,6 +40,11 @@ final class PlayerModel: ObservableObject {
 
     var projectName: String { project?["name"]?.asString ?? "未打开工程" }
     var tracks: [JSONObject] { (project?["tracks"]?.asArray ?? []).compactMap(\.asObject) }
+
+    private func rollEventsContains(_ id: String) -> Bool {
+        // 选中有效性在重建后校验:音符可能被共享 Pattern 物化为 link_ id
+        rollEvents.contains { $0.noteId == id }
+    }
 
     func open(url: URL) {
         do {
@@ -74,22 +86,162 @@ final class PlayerModel: ObservableObject {
             rollEvents = []
             return
         }
+
         let list = (p["tracks"]?.asArray ?? []).compactMap(\.asObject)
         rollEvents = plan.events.compactMap { e in
             guard e.trackIndex < list.count else { return nil }
             let t = list[e.trackIndex]
             return RollEvent(
+                noteId: e.noteId,
+                trackId: t["id"]?.asString ?? "",
                 beat: e.beat, duration: e.duration, pitch: e.pitch, velocity: e.velocity,
                 colorHex: t["color"]?.asString ?? "#888888",
                 instrument: t["instrument"]?.asString ?? "lead",
                 kind: t["kind"]?.asString ?? "tonal"
             )
         }
+        if let id = selectedNoteId, !rollEvents.contains(where: { $0.noteId == id }) {
+            selectedNoteId = nil
+        }
     }
 
     func seek(to beat: Double) {
         engine.seek(to: beat)
         self.beat = engine.currentBeat
+    }
+
+    // MARK: - 编辑(整工程快照撤销)
+
+    let undoManager = UndoManager()
+    @Published var canUndoRedo = (false, false)
+
+    private func refreshUndoState() {
+        canUndoRedo = (undoManager.canUndo, undoManager.canRedo)
+    }
+
+    private func adopt(_ json: String) {
+        do {
+            let validated = try validateProject(try loadSprout(text: json))
+            project = validated
+            let wasPlaying = engine.playing
+            let position = engine.currentBeat
+            try engine.load(project: validated, samplesRoot: samplesRoot)
+            if wasPlaying {
+                try engine.play(from: position)
+            } else {
+                engine.seek(to: position)
+            }
+            rebuildRoll()
+            refreshUndoState()
+        } catch {
+            self.error = "\(error)"
+        }
+    }
+
+    /// 编辑入口:快照 → 修改 → 校验通过才采纳;失败保持原状。
+    func applyEdit(_ label: String, _ mutate: (JSONObject) -> JSONObject) {
+        guard let p = project else { return }
+        let oldJSON = serializeProject(p)
+        let next = mutate(p)
+        do {
+            _ = try validateProject(.object(next)) // 先验,失败不动
+        } catch {
+            self.error = "\(error)"
+            return
+        }
+        let newJSON = serializeProject(next)
+        adopt(newJSON)
+        undoManager.registerUndo(withTarget: self) { target in
+            target.swapBack(to: oldJSON, from: newJSON)
+        }
+        undoManager.setActionName(label)
+        refreshUndoState()
+    }
+
+    private func swapBack(to oldJSON: String, from newJSON: String) {
+        adopt(oldJSON)
+        undoManager.registerUndo(withTarget: self) { target in
+            target.swapBack(to: newJSON, from: oldJSON)
+        }
+        refreshUndoState()
+    }
+
+    func undo() { undoManager.undo(); refreshUndoState() }
+    func redo() { undoManager.redo(); refreshUndoState() }
+
+    // MARK: - 音符操作
+
+    private func noteTrack(id: String) -> (Int, Int)? {
+        guard let p = project else { return nil }
+        let list = (p["tracks"]?.asArray ?? [])
+        for ti in list.indices {
+            guard let t = list[ti].asObject else { continue }
+            let notes = t["notes"]?.asArray ?? []
+            for ni in notes.indices where notes[ni].asObject?["id"]?.asString == id {
+                return (ti, ni)
+            }
+        }
+        return nil
+    }
+
+    func updateNote(id: String, label: String, start: Double? = nil, pitch: Double? = nil, duration: Double? = nil) {
+        applyEdit(label) { p in
+            var next = p
+            var list = (next["tracks"]?.asArray ?? [])
+            for ti in list.indices {
+                guard var t = list[ti].asObject else { continue }
+                var notes = t["notes"]?.asArray ?? []
+                for ni in notes.indices {
+                    guard var n = notes[ni].asObject, n["id"]?.asString == id else { continue }
+                    if let s = start { n["start"] = .number(s) }
+                    if let p2 = pitch { n["pitch"] = .number(p2) }
+                    if let d = duration { n["duration"] = .number(d) }
+                    notes[ni] = .object(n)
+                }
+                t["notes"] = .array(notes)
+                list[ti] = .object(t)
+            }
+            next["tracks"] = .array(list)
+            return next
+        }
+    }
+
+    func deleteNote(id: String) {
+        applyEdit("删除音符") { p in
+            var next = p
+            var list = (next["tracks"]?.asArray ?? [])
+            for ti in list.indices {
+                guard var t = list[ti].asObject else { continue }
+                let notes = t["notes"]?.asArray ?? []
+                t["notes"] = .array(notes.filter { $0.asObject?["id"]?.asString != id })
+                list[ti] = .object(t)
+            }
+            next["tracks"] = .array(list)
+            return next
+        }
+    }
+
+    func createNote(trackId: String, beat: Double, pitch: Double, isDrum: Bool) {
+        applyEdit("新建音符") { p in
+            var next = p
+            var list = (next["tracks"]?.asArray ?? [])
+            for ti in list.indices {
+                guard var t = list[ti].asObject else { continue }
+                guard t["id"]?.asString == trackId else { continue }
+                var n = JSONObject()
+                n["id"] = .string(jsUid())
+                n["pitch"] = .number(pitch)
+                n["start"] = .number(beat)
+                n["duration"] = .number(isDrum ? 0.25 : 0.5)
+                n["velocity"] = .number(96)
+                var notes = t["notes"]?.asArray ?? []
+                notes.append(.object(n))
+                t["notes"] = .array(notes)
+                list[ti] = .object(t)
+            }
+            next["tracks"] = .array(list)
+            return next
+        }
     }
 
     func startDisplay() {
@@ -238,6 +390,10 @@ struct ContentView: View {
                     .font(.caption)
                     .foregroundStyle(.secondary)
                 Spacer()
+                Button { model.undo() } label: { Label("撤销", systemImage: "arrow.uturn.backward") }
+                    .disabled(!model.canUndoRedo.0)
+                Button { model.redo() } label: { Label("重做", systemImage: "arrow.uturn.forward") }
+                    .disabled(!model.canUndoRedo.1)
                 if model.busy { ProgressView().scaleEffect(0.6) }
                 Button("导出 WAV") { model.exportWAV() }.disabled(model.project == nil)
                 Button("导出 MIDI") { model.exportMIDI() }.DisabledStyle(disabled: model.project == nil)
@@ -324,9 +480,20 @@ extension View {
 
 final class AppDelegate: NSObject, NSApplicationDelegate {
     var window: NSWindow?
+    var playerModel: PlayerModel?
+    var keyMonitor: Any?
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         let model = PlayerModel()
+        playerModel = model
+        keyMonitor = NSEvent.addLocalMonitorForEvents(matching: .keyDown) { [weak self] event in
+            // Delete / Fn-Delete 删除选中音符
+            if event.keyCode == 51 || event.keyCode == 117, event.modifierFlags.intersection(.deviceIndependentFlagsMask).isEmpty {
+                self?.playerModel?.deleteSelectedNote()
+                return nil
+            }
+            return event
+        }
         let arguments = CommandLine.arguments
         if arguments.count > 1 {
             model.open(url: URL(fileURLWithPath: arguments[1]))
