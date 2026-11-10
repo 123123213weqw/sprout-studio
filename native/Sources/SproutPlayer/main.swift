@@ -22,6 +22,10 @@ final class PlayerModel: ObservableObject {
     @Published var samplesRoot: URL? = defaultSamplesRoot()
     @Published var rollEvents: [RollEvent] = []
     @Published var selectedNoteId: String?
+    @Published var showLibrary = false
+    @Published var vaultEntry: VaultEntry?
+    let vault = VaultStore(root: VaultStore.defaultRoot())
+    private var autosaveTimer: Timer?
 
     func deleteSelectedNote() {
         guard let id = selectedNoteId else { return }
@@ -47,19 +51,89 @@ final class PlayerModel: ObservableObject {
     }
 
     func open(url: URL) {
+        // 文件打开 = 导入工程库为新工程(与 Web 版「导入为新工程」语义一致)
         do {
             let text = try String(contentsOf: url, encoding: .utf8)
             let validated = try validateProject(try loadSprout(text: text))
-            project = validated
-            projectURL = url
-            totalBeats = jnum(validated, "bars", 4) * 4
-            try engine.load(project: validated, samplesRoot: samplesRoot)
-            rebuildRoll()
-            beat = 0
-            error = nil
+            let entry = try vault.importProject(validated)
+            openVaultEntry(entry)
         } catch {
             self.error = "\(error)"
         }
+    }
+
+    func importFileToVault(url: URL) {
+        open(url: url)
+    }
+
+    func openVaultEntry(_ entry: VaultEntry) {
+        do {
+            guard let loaded = try vault.open(id: entry.id) else {
+                error = "工程数据读取失败"
+                return
+            }
+            vaultEntry = entry
+            project = loaded
+            projectURL = nil
+            totalBeats = jnum(loaded, "bars", 4) * 4
+            selectedNoteId = nil
+            try engine.load(project: loaded, samplesRoot: samplesRoot)
+            rebuildRoll()
+            beat = 0
+            stopPlay()
+            error = nil
+            showLibrary = false
+        } catch {
+            self.error = "\(error)"
+        }
+    }
+
+    /// 启动时恢复上次打开的工程。
+    func openLastIfNeeded() {
+        guard project == nil,
+              let entries = try? vault.library(),
+              let last = entries.filter({ !$0.archived && $0.lastOpened != nil })
+                  .max(by: { $0.lastOpened ?? 0 < $1.lastOpened ?? 0 }) else { return }
+        openVaultEntry(last)
+    }
+
+    private func scheduleAutosave() {
+        guard vaultEntry != nil, project != nil else { return }
+        autosaveTimer?.invalidate()
+        autosaveTimer = Timer.scheduledTimer(withTimeInterval: 1.5, repeats: false) { [weak self] _ in
+            self?.flushAutosave()
+        }
+    }
+
+    private func flushAutosave() {
+        guard let entry = vaultEntry, let p = project else { return }
+        do {
+            try vault.save(id: entry.id, project: p, label: "自动保存", reason: "auto", autoVersion: true)
+        } catch {
+            self.error = "自动保存失败:\(error)"
+        }
+    }
+
+    func checkpointCurrent(label: String) {
+        guard let entry = vaultEntry, let p = project else { return }
+        do {
+            try vault.checkpoint(id: entry.id, project: p, label: label)
+        } catch {
+            self.error = "\(error)"
+        }
+    }
+
+    func restoreVersion(entry: VaultEntry, version: VaultVersion) {
+        // 恢复前先给当前内容留快照(与 Web 版一致)
+        if let p = project, entry.id == vaultEntry?.id {
+            try? vault.checkpoint(id: entry.id, project: p, label: "恢复版本前")
+        }
+        guard let restored = try? vault.versionProject(id: entry.id, versionId: version.id) else {
+            error = "版本数据读取失败"
+            return
+        }
+        adopt(serializeProject(restored))
+        vaultEntry = entry
     }
 
     func togglePlay() {
@@ -151,6 +225,7 @@ final class PlayerModel: ObservableObject {
         }
         let newJSON = serializeProject(next)
         adopt(newJSON)
+        scheduleAutosave()
         undoManager.registerUndo(withTarget: self) { target in
             target.swapBack(to: oldJSON, from: newJSON)
         }
@@ -268,6 +343,7 @@ final class PlayerModel: ObservableObject {
         p["tracks"] = .array(list)
         project = p
         engine.applyMix()
+        scheduleAutosave()
     }
 
     func trackFlag(_ track: JSONObject, _ key: String) -> Bool {
@@ -308,6 +384,20 @@ final class PlayerModel: ObservableObject {
                 try Data(bytes).write(to: url)
             } catch {
                 DispatchQueue.main.async { self?.error = "导出失败:\(error)" }
+            }
+        }
+    }
+
+    func exportProjectFile() {
+        guard let p = project else { return }
+        let panel = NSSavePanel()
+        panel.nameFieldStringValue = projectName + ".sprout"
+        panel.begin { _ in
+            guard let url = panel.url else { return }
+            do {
+                try serializeProject(p).write(to: url, atomically: true, encoding: .utf8)
+            } catch {
+                self.error = "导出失败:\(error)"
             }
         }
     }
@@ -390,6 +480,9 @@ struct ContentView: View {
                     .font(.caption)
                     .foregroundStyle(.secondary)
                 Spacer()
+                Button { model.showLibrary = true } label: { Label("工程库", systemImage: "music.note.list") }
+                Button { model.checkpointCurrent(label: "我的保存点") } label: { Label("存版本", systemImage: "bookmark") }
+                    .disabled(model.vaultEntry == nil)
                 Button { model.undo() } label: { Label("撤销", systemImage: "arrow.uturn.backward") }
                     .disabled(!model.canUndoRedo.0)
                 Button { model.redo() } label: { Label("重做", systemImage: "arrow.uturn.forward") }
@@ -397,6 +490,7 @@ struct ContentView: View {
                 if model.busy { ProgressView().scaleEffect(0.6) }
                 Button("导出 WAV") { model.exportWAV() }.disabled(model.project == nil)
                 Button("导出 MIDI") { model.exportMIDI() }.DisabledStyle(disabled: model.project == nil)
+                Button("导出工程") { model.exportProjectFile() }.DisabledStyle(disabled: model.project == nil)
             }
             .padding(12)
 
@@ -450,7 +544,13 @@ struct ContentView: View {
             }
         }
         .frame(minWidth: 1020, minHeight: 560)
-        .onAppear { model.startDisplay() }
+        .sheet(isPresented: $model.showLibrary) {
+            LibraryView(model: model)
+        }
+        .onAppear {
+            model.startDisplay()
+            model.openLastIfNeeded()
+        }
     }
 }
 
