@@ -1,0 +1,775 @@
+{
+ "version": 1,
+ "transpose": {
+  "acoustic-v28/acoustic-trio.sprout": {
+   "target": "C major",
+   "digest": "63d4a3e1"
+  },
+  "acoustic-v28/deepseek-natural-performance.sprout": {
+   "target": "C major",
+   "digest": "7e623062"
+  },
+  "acoustic-v28/deepseek-same-notes-new-voices.sprout": {
+   "target": "C major",
+   "digest": "a1b15935"
+  },
+  "acoustic-v28/guitar-alternate-takes.sprout": {
+   "target": "C major",
+   "digest": "7f197e10"
+  },
+  "acoustic-v28/held-strings-wind.sprout": {
+   "target": "C major",
+   "digest": "15c0b868"
+  },
+  "acoustic-v28/solo-clarinet.sprout": {
+   "target": "C major",
+   "digest": "0679c29c"
+  },
+  "acoustic-v28/solo-guitar.sprout": {
+   "target": "C major",
+   "digest": "ab67cf90"
+  },
+  "acoustic-v28/solo-violin.sprout": {
+   "target": "C major",
+   "digest": "bbb228e3"
+  },
+  "candidate-a.sprout": {
+   "target": "C major",
+   "digest": "9375ae0a"
+  },
+  "candidate-b.sprout": {
+   "target": "C major",
+   "digest": "e549737c"
+  },
+  "candidate-c.sprout": {
+   "target": "C major",
+   "digest": "d9012bef"
+  },
+  "candidate-mock-service.sprout": {
+   "target": "C major",
+   "digest": "20c23e4c"
+  },
+  "clip-edit-demo.sprout": {
+   "target": "C major",
+   "digest": "9deb347f"
+  },
+  "deepseek-batch-v27/ambient-sustain/composition.sprout": {
+   "target": "A minor",
+   "digest": "23272ca3"
+  },
+  "deepseek-batch-v27/drum-pocket/composition.sprout": {
+   "target": "C major",
+   "digest": "4707137d"
+  },
+  "deepseek-batch-v27/flute-clip/composition.sprout": {
+   "target": "C major",
+   "digest": "e20130cf"
+  },
+  "deepseek-batch-v27/numeric-harmony/composition.sprout": {
+   "target": "C major",
+   "digest": "ad2cf124"
+  },
+  "deepseek-batch-v27/scope-pressure/composition.sprout": {
+   "target": "C major",
+   "digest": "a8de09dd"
+  },
+  "deepseek-batch-v27/section-with-patterns/composition.sprout": {
+   "target": "C major",
+   "digest": "798a12fd"
+  },
+  "deepseek-live/bridge/composition.sprout": {
+   "target": "C major",
+   "digest": "9178237c"
+  },
+  "deepseek-live/bridge/input.sprout": {
+   "target": "C major",
+   "digest": "f30a7f25"
+  },
+  "deepseek-live/composition.sprout": {
+   "target": "C major",
+   "digest": "31ffb653"
+  },
+  "deepseek-live/descriptive/composition.sprout": {
+   "target": "C major",
+   "digest": "31ffb653"
+  },
+  "deepseek-live/descriptive/input.sprout": {
+   "target": "C major",
+   "digest": "95b9811d"
+  },
+  "deepseek-live/explicit/composition.sprout": {
+   "target": "C major",
+   "digest": "f30a7f25"
+  },
+  "deepseek-live/explicit/input.sprout": {
+   "target": "C major",
+   "digest": "95b9811d"
+  },
+  "deepseek-live/input.sprout": {
+   "target": "C major",
+   "digest": "95b9811d"
+  },
+  "deepseek-live/reviewed/composition.sprout": {
+   "target": "C major",
+   "digest": "35645a92"
+  },
+  "deepseek-live/reviewed/input.sprout": {
+   "target": "C major",
+   "digest": "f30a7f25"
+  },
+  "history-redone.sprout": {
+   "target": "C major",
+   "digest": "0b6937f5"
+  },
+  "history-renamed.sprout": {
+   "target": "C major",
+   "digest": "49020c28"
+  },
+  "history-restored.sprout": {
+   "target": "C major",
+   "digest": "f2d1fdeb"
+  },
+  "library-blank.sprout": {
+   "target": "C major",
+   "digest": "e0f97c85"
+  },
+  "library-copy-muted.sprout": {
+   "target": "C major",
+   "digest": "d9a72211"
+  },
+  "library-house-restored.sprout": {
+   "target": "C major",
+   "digest": "692b2242"
+  },
+  "library-house.sprout": {
+   "target": "C major",
+   "digest": "692b2242"
+  },
+  "library-import.sprout": {
+   "target": "C major",
+   "digest": "89911bbe"
+  },
+  "library-lofi.sprout": {
+   "target": "C major",
+   "digest": "b1a57afa"
+  },
+  "library-restored-original.sprout": {
+   "target": "C major",
+   "digest": "f2d1fdeb"
+  },
+  "long-song-demo.sprout": {
+   "target": "C major",
+   "digest": "f2d1fdeb"
+  },
+  "note-chord-demo.sprout": {
+   "target": "C major",
+   "digest": "0e871535"
+  },
+  "palette-demo.sprout": {
+   "target": "C major",
+   "digest": "8c400b86"
+  },
+  "pattern-managed-cross-track.sprout": {
+   "target": "C major",
+   "digest": "90e74210"
+  },
+  "pattern-series-baseline.sprout": {
+   "target": "C major",
+   "digest": "e9e70e83"
+  },
+  "pattern-series-demo.sprout": {
+   "target": "C major",
+   "digest": "b60556af"
+  },
+  "pattern-series-detached.sprout": {
+   "target": "C major",
+   "digest": "6be3ed92"
+  },
+  "pattern-series-independent.sprout": {
+   "target": "C major",
+   "digest": "41995cbf"
+  },
+  "pattern-series-managed.sprout": {
+   "target": "C major",
+   "digest": "a7f36a43"
+  },
+  "pattern-series-muted.sprout": {
+   "target": "C major",
+   "digest": "6be3ed92"
+  },
+  "pattern-series-ten.sprout": {
+   "target": "C major",
+   "digest": "127f7adb"
+  },
+  "performance-demo.sprout": {
+   "target": "C major",
+   "digest": "1dbee172"
+  },
+  "phrase-transform-clip-range.sprout": {
+   "target": "C major",
+   "digest": "ee65ba40"
+  },
+  "phrase-transform-demo.sprout": {
+   "target": "C major",
+   "digest": "1085dedd"
+  },
+  "phrase-transform-drums.sprout": {
+   "target": "C major",
+   "digest": "b7f05b77"
+  },
+  "phrase-transform-expanded.sprout": {
+   "target": "C major",
+   "digest": "354fd5fa"
+  },
+  "portable-arranged-demo.sprout": {
+   "target": "C major",
+   "digest": "778fe431"
+  },
+  "portable-copy-demo.sprout": {
+   "target": "C major",
+   "digest": "e7f42a18"
+  },
+  "portable-import-demo.sprout": {
+   "target": "C major",
+   "digest": "1b990819"
+  },
+  "portable-source-project.sprout": {
+   "target": "C major",
+   "digest": "1b990819"
+  },
+  "portable-target-library.sprout": {
+   "target": "C major",
+   "digest": "967fd8bb"
+  },
+  "portable-target-start.sprout": {
+   "target": "C major",
+   "digest": "e172a813"
+  },
+  "real-instruments-demo.sprout": {
+   "target": "C major",
+   "digest": "1b12d522"
+  },
+  "real-instruments-restored.sprout": {
+   "target": "C major",
+   "digest": "1b12d522"
+  },
+  "real-instruments-sustain-input.sprout": {
+   "target": "C major",
+   "digest": "135b1132"
+  },
+  "real-instruments-sustain-render.sprout": {
+   "target": "C major",
+   "digest": "135b1132"
+  },
+  "repeat-loop-demo.sprout": {
+   "target": "C major",
+   "digest": "012963fd"
+  },
+  "sampled-instruments-demo.sprout": {
+   "target": "C major",
+   "digest": "df928c06"
+  },
+  "sampled-instruments-original.sprout": {
+   "target": "C major",
+   "digest": "f2d1fdeb"
+  },
+  "sampled-instruments-restored.sprout": {
+   "target": "C major",
+   "digest": "df928c06"
+  },
+  "section-fill-gap.sprout": {
+   "target": "C major",
+   "digest": "56b6b84f"
+  },
+  "section-fill-mobile-snare.sprout": {
+   "target": "C major",
+   "digest": "5da3d836"
+  },
+  "section-fill-original.sprout": {
+   "target": "C major",
+   "digest": "f2d1fdeb"
+  },
+  "section-fill-restored.sprout": {
+   "target": "C major",
+   "digest": "f2d1fdeb"
+  },
+  "section-fill-rise.sprout": {
+   "target": "C major",
+   "digest": "10ed9c9a"
+  },
+  "service-demo-baseline.sprout": {
+   "target": "C major",
+   "digest": "1f8bddd1"
+  },
+  "service-demo.sprout": {
+   "target": "C major",
+   "digest": "cb42d12e"
+  },
+  "shared-pattern-demo.sprout": {
+   "target": "C major",
+   "digest": "2225e081"
+  },
+  "shared-transform-demo.sprout": {
+   "target": "C major",
+   "digest": "ca389c29"
+  },
+  "shared-transform-eight-before.sprout": {
+   "target": "C major",
+   "digest": "2b52899c"
+  },
+  "shared-transform-eight.sprout": {
+   "target": "C major",
+   "digest": "089376c8"
+  },
+  "shared-transform-extended.sprout": {
+   "target": "C major",
+   "digest": "64780711"
+  },
+  "shared-transform-extension-before.sprout": {
+   "target": "C major",
+   "digest": "14a63a82"
+  },
+  "shared-transform-mobile.sprout": {
+   "target": "C major",
+   "digest": "73dca0e9"
+  },
+  "shared-transform-original.sprout": {
+   "target": "C major",
+   "digest": "f2d1fdeb"
+  },
+  "shared-transform-region.sprout": {
+   "target": "C major",
+   "digest": "fe9fe445"
+  },
+  "shared-transform-restored.sprout": {
+   "target": "C major",
+   "digest": "f2d1fdeb"
+  },
+  "song-sections-demo.sprout": {
+   "target": "C major",
+   "digest": "565bd044"
+  },
+  "song-sections-start.sprout": {
+   "target": "C major",
+   "digest": "3e5f35ee"
+  },
+  "sound-collection-house.sprout": {
+   "target": "C major",
+   "digest": "355bc639"
+  },
+  "sound-collection-original.sprout": {
+   "target": "C major",
+   "digest": "df65436f"
+  },
+  "sound-collection-pad.sprout": {
+   "target": "C major",
+   "digest": "460e859c"
+  },
+  "sound-collection-restored.sprout": {
+   "target": "C major",
+   "digest": "f2d1fdeb"
+  },
+  "sound-design-demo.sprout": {
+   "target": "C major",
+   "digest": "58518331"
+  },
+  "sound-library-v29/acoustic-choir-sketch.sprout": {
+   "target": "C major",
+   "digest": "b423ff9c"
+  },
+  "sound-library-v29/edm-sketch.sprout": {
+   "target": "C major",
+   "digest": "f3641d9e"
+  },
+  "ui-simplified.sprout": {
+   "target": "C major",
+   "digest": "f2d1fdeb"
+  }
+ },
+ "resize": {
+  "acoustic-v28/acoustic-trio.sprout": {
+   "bars": 16,
+   "digest": "c8a81340"
+  },
+  "acoustic-v28/deepseek-natural-performance.sprout": {
+   "bars": 16,
+   "digest": "9f41bdfa"
+  },
+  "acoustic-v28/deepseek-same-notes-new-voices.sprout": {
+   "bars": 16,
+   "digest": "2f85884c"
+  },
+  "acoustic-v28/guitar-alternate-takes.sprout": {
+   "bars": 16,
+   "digest": "ee2af536"
+  },
+  "acoustic-v28/held-strings-wind.sprout": {
+   "bars": 16,
+   "digest": "c62398e7"
+  },
+  "acoustic-v28/solo-clarinet.sprout": {
+   "bars": 16,
+   "digest": "82ce043e"
+  },
+  "acoustic-v28/solo-guitar.sprout": {
+   "bars": 16,
+   "digest": "1c2e46cc"
+  },
+  "acoustic-v28/solo-violin.sprout": {
+   "bars": 16,
+   "digest": "4346b79e"
+  },
+  "candidate-a.sprout": {
+   "bars": 64,
+   "digest": "49bc28f2"
+  },
+  "candidate-b.sprout": {
+   "bars": 64,
+   "digest": "6f04ca3e"
+  },
+  "candidate-c.sprout": {
+   "bars": 64,
+   "digest": "a1084ce1"
+  },
+  "candidate-mock-service.sprout": {
+   "bars": 64,
+   "digest": "fcf16d22"
+  },
+  "clip-edit-demo.sprout": {
+   "bars": 16,
+   "digest": "090ebe66"
+  },
+  "deepseek-batch-v27/ambient-sustain/composition.sprout": {
+   "bars": 16,
+   "digest": "2751b234"
+  },
+  "deepseek-batch-v27/drum-pocket/composition.sprout": {
+   "bars": 16,
+   "digest": "345f7e9c"
+  },
+  "deepseek-batch-v27/flute-clip/composition.sprout": {
+   "bars": 16,
+   "digest": "8db8be9f"
+  },
+  "deepseek-batch-v27/numeric-harmony/composition.sprout": {
+   "bars": 16,
+   "digest": "e24d2af1"
+  },
+  "deepseek-batch-v27/scope-pressure/composition.sprout": {
+   "bars": 16,
+   "digest": "9c9e77fc"
+  },
+  "deepseek-batch-v27/section-with-patterns/composition.sprout": {
+   "bars": 32,
+   "digest": "87bcb596"
+  },
+  "deepseek-live/bridge/composition.sprout": {
+   "bars": 16,
+   "digest": "f658be53"
+  },
+  "deepseek-live/bridge/input.sprout": {
+   "bars": 16,
+   "digest": "ac8a398d"
+  },
+  "deepseek-live/composition.sprout": {
+   "bars": 16,
+   "digest": "52d5cb89"
+  },
+  "deepseek-live/descriptive/composition.sprout": {
+   "bars": 16,
+   "digest": "52d5cb89"
+  },
+  "deepseek-live/descriptive/input.sprout": {
+   "bars": 16,
+   "digest": "f67d255e"
+  },
+  "deepseek-live/explicit/composition.sprout": {
+   "bars": 16,
+   "digest": "ac8a398d"
+  },
+  "deepseek-live/explicit/input.sprout": {
+   "bars": 16,
+   "digest": "f67d255e"
+  },
+  "deepseek-live/input.sprout": {
+   "bars": 16,
+   "digest": "f67d255e"
+  },
+  "deepseek-live/reviewed/composition.sprout": {
+   "bars": 16,
+   "digest": "01eb9c9d"
+  },
+  "deepseek-live/reviewed/input.sprout": {
+   "bars": 16,
+   "digest": "ac8a398d"
+  },
+  "history-redone.sprout": {
+   "bars": 64,
+   "digest": "2880bbef"
+  },
+  "history-renamed.sprout": {
+   "bars": 64,
+   "digest": "764c526e"
+  },
+  "history-restored.sprout": {
+   "bars": 64,
+   "digest": "93148051"
+  },
+  "library-blank.sprout": {
+   "bars": 16,
+   "digest": "92b17632"
+  },
+  "library-copy-muted.sprout": {
+   "bars": 64,
+   "digest": "6aec4bc6"
+  },
+  "library-house-restored.sprout": {
+   "bars": 32,
+   "digest": "1f27345b"
+  },
+  "library-house.sprout": {
+   "bars": 32,
+   "digest": "1f27345b"
+  },
+  "library-import.sprout": {
+   "bars": 64,
+   "digest": "735d0558"
+  },
+  "library-lofi.sprout": {
+   "bars": 16,
+   "digest": "600b91b6"
+  },
+  "library-restored-original.sprout": {
+   "bars": 64,
+   "digest": "93148051"
+  },
+  "long-song-demo.sprout": {
+   "bars": 64,
+   "digest": "93148051"
+  },
+  "note-chord-demo.sprout": {
+   "bars": 16,
+   "digest": "f027fd97"
+  },
+  "palette-demo.sprout": {
+   "bars": 16,
+   "digest": "f74c2c76"
+  },
+  "pattern-managed-cross-track.sprout": {
+   "bars": 64,
+   "digest": "3f46c155"
+  },
+  "pattern-series-baseline.sprout": {
+   "bars": 16,
+   "digest": "fe22e70a"
+  },
+  "pattern-series-demo.sprout": {
+   "bars": 32,
+   "digest": "d739f8c0"
+  },
+  "pattern-series-detached.sprout": {
+   "bars": 32,
+   "digest": "7da8f38e"
+  },
+  "pattern-series-independent.sprout": {
+   "bars": 64,
+   "digest": "d2504c10"
+  },
+  "pattern-series-managed.sprout": {
+   "bars": 32,
+   "digest": "9c28088d"
+  },
+  "pattern-series-muted.sprout": {
+   "bars": 32,
+   "digest": "f2f86cf4"
+  },
+  "pattern-series-ten.sprout": {
+   "bars": 64,
+   "digest": "f46c1669"
+  },
+  "performance-demo.sprout": {
+   "bars": 32,
+   "digest": "a86aa807"
+  },
+  "phrase-transform-clip-range.sprout": {
+   "bars": 64,
+   "digest": "f3a1d59c"
+  },
+  "phrase-transform-demo.sprout": {
+   "bars": 64,
+   "digest": "92a42659"
+  },
+  "phrase-transform-drums.sprout": {
+   "bars": 64,
+   "digest": "5c34a890"
+  },
+  "phrase-transform-expanded.sprout": {
+   "bars": 64,
+   "digest": "10cf6c0a"
+  },
+  "portable-arranged-demo.sprout": {
+   "bars": 32,
+   "digest": "48b03a30"
+  },
+  "portable-copy-demo.sprout": {
+   "bars": 64,
+   "digest": "7c6424ee"
+  },
+  "portable-import-demo.sprout": {
+   "bars": 64,
+   "digest": "20b265c3"
+  },
+  "portable-source-project.sprout": {
+   "bars": 64,
+   "digest": "20b265c3"
+  },
+  "portable-target-library.sprout": {
+   "bars": 16,
+   "digest": "09836f52"
+  },
+  "portable-target-start.sprout": {
+   "bars": 16,
+   "digest": "4ca1037c"
+  },
+  "real-instruments-demo.sprout": {
+   "bars": 64,
+   "digest": "a7bdc664"
+  },
+  "real-instruments-restored.sprout": {
+   "bars": 64,
+   "digest": "a7bdc664"
+  },
+  "real-instruments-sustain-input.sprout": {
+   "bars": 16,
+   "digest": "01d6f693"
+  },
+  "real-instruments-sustain-render.sprout": {
+   "bars": 16,
+   "digest": "01d6f693"
+  },
+  "repeat-loop-demo.sprout": {
+   "bars": 32,
+   "digest": "9f5bbe24"
+  },
+  "sampled-instruments-demo.sprout": {
+   "bars": 64,
+   "digest": "34002c74"
+  },
+  "sampled-instruments-original.sprout": {
+   "bars": 64,
+   "digest": "93148051"
+  },
+  "sampled-instruments-restored.sprout": {
+   "bars": 64,
+   "digest": "34002c74"
+  },
+  "section-fill-gap.sprout": {
+   "bars": 64,
+   "digest": "63254bc7"
+  },
+  "section-fill-mobile-snare.sprout": {
+   "bars": 64,
+   "digest": "7604b3f2"
+  },
+  "section-fill-original.sprout": {
+   "bars": 64,
+   "digest": "93148051"
+  },
+  "section-fill-restored.sprout": {
+   "bars": 64,
+   "digest": "93148051"
+  },
+  "section-fill-rise.sprout": {
+   "bars": 64,
+   "digest": "0a380dee"
+  },
+  "service-demo-baseline.sprout": {
+   "bars": 64,
+   "digest": "2f7bcd93"
+  },
+  "service-demo.sprout": {
+   "bars": 64,
+   "digest": "530056a7"
+  },
+  "shared-pattern-demo.sprout": {
+   "bars": 32,
+   "digest": "6103cc88"
+  },
+  "shared-transform-demo.sprout": {
+   "bars": 64,
+   "digest": "447d81fb"
+  },
+  "shared-transform-eight-before.sprout": {
+   "bars": 64,
+   "digest": "57c9e973"
+  },
+  "shared-transform-eight.sprout": {
+   "bars": 64,
+   "digest": "1da84123"
+  },
+  "shared-transform-extended.sprout": {
+   "bars": 64,
+   "digest": "0bee36ca"
+  },
+  "shared-transform-extension-before.sprout": {
+   "bars": 64,
+   "digest": "064e3b11"
+  },
+  "shared-transform-mobile.sprout": {
+   "bars": 64,
+   "digest": "43ed0263"
+  },
+  "shared-transform-original.sprout": {
+   "bars": 64,
+   "digest": "93148051"
+  },
+  "shared-transform-region.sprout": {
+   "bars": 64,
+   "digest": "6909065b"
+  },
+  "shared-transform-restored.sprout": {
+   "bars": 64,
+   "digest": "93148051"
+  },
+  "song-sections-demo.sprout": {
+   "bars": 16,
+   "digest": "5096cfa3"
+  },
+  "song-sections-start.sprout": {
+   "bars": 16,
+   "digest": "cf079c6a"
+  },
+  "sound-collection-house.sprout": {
+   "bars": 32,
+   "digest": "7fb3533e"
+  },
+  "sound-collection-original.sprout": {
+   "bars": 64,
+   "digest": "a18d5edd"
+  },
+  "sound-collection-pad.sprout": {
+   "bars": 64,
+   "digest": "b351621e"
+  },
+  "sound-collection-restored.sprout": {
+   "bars": 64,
+   "digest": "93148051"
+  },
+  "sound-design-demo.sprout": {
+   "bars": 32,
+   "digest": "a2741b0a"
+  },
+  "sound-library-v29/acoustic-choir-sketch.sprout": {
+   "bars": 16,
+   "digest": "7de12985"
+  },
+  "sound-library-v29/edm-sketch.sprout": {
+   "bars": 16,
+   "digest": "f4c509ed"
+  },
+  "ui-simplified.sprout": {
+   "bars": 64,
+   "digest": "93148051"
+  }
+ }
+}

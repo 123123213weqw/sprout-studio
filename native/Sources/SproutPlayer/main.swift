@@ -388,6 +388,75 @@ final class PlayerModel: ObservableObject {
         }
     }
 
+    // MARK: - 工程属性与轨道管理(全部走 applyEdit,可撤销)
+
+    func setProjectField(_ label: String, _ key: String, _ value: JSONValue) {
+        applyEdit(label) { p in
+            var next = p
+            next[key] = value
+            return next
+        }
+        if key == "master" { engine.applyMix() }
+    }
+
+    func transposeToKey(_ newKey: String) {
+        guard let p = project else { return }
+        do {
+            let moved = try transposeProject(p, toKey: newKey)
+            applyEdit("移调到 \(newKey)") { _ in moved }
+        } catch {
+            self.error = "\(error)"
+        }
+    }
+
+    func changeBars(_ bars: Double, fill: String) {
+        guard let p = project else { return }
+        do {
+            let resized = try resizeProject(p, toBars: bars, fill: fill)
+            applyEdit("长度改为 \(Int(bars)) 小节") { _ in
+                var next = resized
+                next["loopRange"] = nil // 长度变化后清练习区,避免旧区间失配
+                return next
+            }
+            totalBeats = bars * 4
+        } catch {
+            self.error = "\(error)"
+        }
+    }
+
+    func addTrack(instrument: String) {
+        guard let meta = Tables.shared.instruments[instrument] else { return }
+        applyEdit("添加轨道") { p in
+            var next = p
+            var track = JSONObject()
+            track["id"] = .string(jsUid())
+            track["instrument"] = .string(instrument)
+            track["name"] = .string(meta.name)
+            track["kind"] = .string(meta.kind)
+            track["color"] = .string(meta.color)
+            track["volume"] = .number(instrument == "keys" ? 0.62 : instrument == "hat" ? 0.45 : 0.72)
+            track["pan"] = .number(instrument == "hat" ? 0.18 : instrument == "lead" ? 0.12 : 0)
+            track["muted"] = .bool(false)
+            track["solo"] = .bool(false)
+            track["notes"] = .array([])
+            var list = next["tracks"]?.asArray ?? []
+            guard list.count < 16 else { return p }
+            list.append(.object(track))
+            next["tracks"] = .array(list)
+            return next
+        }
+    }
+
+    func removeTrack(id: String) {
+        applyEdit("删除轨道") { p in
+            var next = p
+            let list = next["tracks"]?.asArray ?? []
+            guard list.count > 1 else { return p }
+            next["tracks"] = .array(list.filter { $0.asObject?["id"]?.asString != id })
+            return next
+        }
+    }
+
     func exportProjectFile() {
         guard let p = project else { return }
         let panel = NSSavePanel()
@@ -419,6 +488,75 @@ final class PlayerModel: ObservableObject {
 
 // MARK: - 视图
 
+struct ProjectBar: View {
+    @ObservedObject var model: PlayerModel
+    let project: JSONObject
+    private let keys = ["A minor", "C major", "D minor", "E minor", "G major", "F major"]
+    private let barOptions: [Double] = [4, 8, 16, 32, 64]
+
+    var body: some View {
+        HStack(spacing: 14) {
+            // 速度
+            HStack(spacing: 6) {
+                Text("速度").font(.caption).foregroundStyle(.secondary)
+                Stepper("\(Int(jnum(project, "bpm", 120)))", value: Binding(
+                    get: { jnum(project, "bpm", 120) },
+                    set: { model.setProjectField("改速度", "bpm", .number(min(200, max(40, $0)))) }
+                ), in: 40...200, step: 1)
+                .font(.body.monospacedDigit())
+            }
+            // 摇摆
+            HStack(spacing: 6) {
+                Text("摇摆 \(Int(jnum(project, "swing")))").font(.caption).foregroundStyle(.secondary)
+                Slider(value: Binding(
+                    get: { jnum(project, "swing") },
+                    set: { model.setProjectField("改摇摆", "swing", .number($0)) }
+                ), in: 0...45, step: 1)
+                .frame(width: 90)
+            }
+            // 调性 + 移调
+            HStack(spacing: 6) {
+                Text("调性").font(.caption).foregroundStyle(.secondary)
+                Picker("", selection: Binding(
+                    get: { project["key"]?.asString ?? "A minor" },
+                    set: { model.setProjectField("改调性", "key", .string($0)) }
+                )) { ForEach(keys, id: \.self) { Text($0) } }
+                .labelsHidden()
+                .frame(width: 118)
+                Menu("移调") {
+                    ForEach(keys.filter { $0 != (project["key"]?.asString ?? "") }, id: \.self) { key in
+                        Button("到 \(key)") { model.transposeToKey(key) }
+                    }
+                }
+                .menuStyle(.borderlessButton)
+                .fixedSize()
+            }
+            // 长度
+            HStack(spacing: 6) {
+                Text("长度").font(.caption).foregroundStyle(.secondary)
+                Picker("", selection: Binding(
+                    get: { jnum(project, "bars", 16) },
+                    set: { bars in model.changeBars(bars, fill: bars > jnum(project, "bars", 16) ? "repeat" : "blank") }
+                )) { ForEach(barOptions, id: \.self) { Text("\(Int($0)) 小节") } }
+                .labelsHidden()
+                .frame(width: 92)
+            }
+            Spacer()
+            // 主音量
+            HStack(spacing: 6) {
+                Image(systemName: "speaker.wave.2").font(.caption).foregroundStyle(.secondary)
+                Slider(value: Binding(
+                    get: { jnum(project, "master", 0.75) },
+                    set: { model.setProjectField("改主音量", "master", .number($0)) }
+                ), in: 0...1)
+                .frame(width: 110)
+            }
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, 6)
+    }
+}
+
 struct TrackRow: View {
     @ObservedObject var model: PlayerModel
     let track: JSONObject
@@ -445,7 +583,19 @@ struct TrackRow: View {
                 get: { jnum(track, "volume", 0.7) },
                 set: { model.updateTrack(id: id, key: "volume", value: .number($0)) }
             ), in: 0...1)
-            .frame(width: 130)
+            .frame(width: 110)
+            Slider(value: Binding(
+                get: { jnum(track, "pan") },
+                set: { model.updateTrack(id: id, key: "pan", value: .number($0)) }
+            ), in: -1...1)
+            .frame(width: 70)
+            Button {
+                model.removeTrack(id: id)
+            } label: {
+                Image(systemName: "trash")
+            }
+            .buttonStyle(.borderless)
+            .help("删除轨道")
         }
         .padding(.vertical, 2)
     }
@@ -500,6 +650,11 @@ struct ContentView: View {
 
             Divider()
 
+            if let p = model.project {
+                ProjectBar(model: model, project: p)
+                Divider()
+            }
+
             if model.project != nil {
                 HStack(spacing: 0) {
                     // 轨道侧栏
@@ -507,7 +662,22 @@ struct ContentView: View {
                         TrackRow(model: model, track: model.tracks[index])
                     }
                     .listStyle(.sidebar)
-                    .frame(width: 268)
+                    .frame(width: 300)
+                    .safeAreaInset(edge: .bottom) {
+                        Menu {
+                            ForEach(Array(Tables.shared.instruments.keys.sorted()), id: \.self) { instrument in
+                                Button(Tables.shared.instruments[instrument]?.name ?? instrument) {
+                                    model.addTrack(instrument: instrument)
+                                }
+                            }
+                        } label: {
+                            Label("添加轨道", systemImage: "plus.circle")
+                                .frame(maxWidth: .infinity)
+                        }
+                        .menuStyle(.borderlessButton)
+                        .padding(8)
+                        .background(.bar)
+                    }
                     Divider()
                     // 主区:走拍条 + 卷帘
                     VStack(spacing: 0) {

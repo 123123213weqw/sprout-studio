@@ -47,6 +47,19 @@ func run() -> Int32 {
             try Data(wav).write(to: URL(fileURLWithPath: out))
             print(String(format: "OK  %@  %.1fs  peak %.3f  %@", out, stats.seconds, stats.peak, stats.nonSilent ? "非静音" : "静音!"))
             return 0
+        } else if args[1] == "transform" {
+            // transform <file> transpose <key> | resize <bars> <blank|repeat>
+            guard args.count >= 4 else { FileHandle.standardError.write("参数不足\n".data(using: .utf8)!); return 2 }
+            let project = try validateProject(value)
+            let out: JSONObject
+            if args[3] == "transpose" {
+                out = try transposeProject(project, toKey: args[4])
+            } else {
+                let fill = args.count >= 6 ? args[5] : "repeat"
+                out = try resizeProject(project, toBars: Double(args[4]) ?? 16, fill: fill)
+            }
+            print(jsCompactStringify(stripIdsForDump(.object(out))))
+            return 0
         } else if args[1] == "mididump" {
             // 编码再解码,输出去掉随机 id 的紧凑工程 JSON(对拍调试用)
             let project = try validateProject(value)
