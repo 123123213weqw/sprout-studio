@@ -22,16 +22,18 @@ public struct SampleAsset {
 }
 
 public struct SamplePresetFull {
-    let id: String
-    let instrument: String
-    let kind: String
-    let gain: Double
-    let release: Double
-    let attack: Double?      // 缺省 .003(见 sampleVoicePlan)
-    let balance: Double?
-    let program: Int?
-    let midiPitch: Int?
-    let assets: [String]
+    public let id: String
+    public let name: String
+    public let previewDuration: Double?
+    public let instrument: String
+    public let kind: String
+    public let gain: Double
+    public let release: Double
+    public let attack: Double?      // 缺省 .003(见 sampleVoicePlan)
+    public let balance: Double?
+    public let program: Int?
+    public let midiPitch: Int?
+    public let assets: [String]
 }
 
 public enum Samples {
@@ -86,6 +88,8 @@ public enum Samples {
                 guard let p = pv.asObject else { continue }
                 presets[id] = SamplePresetFull(
                     id: id,
+                    name: p["name"]?.asString ?? id,
+                    previewDuration: p["previewDuration"]?.asNumber,
                     instrument: p["instrument"]?.asString ?? "",
                     kind: p["kind"]?.asString ?? "tonal",
                     gain: jnum(p, "gain", 1),

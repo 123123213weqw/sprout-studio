@@ -54,9 +54,9 @@ public enum Tables {
         public let sectionKinds: Set<String>
         public let waveforms: Set<String>
         public let soundDefaults: [String: JSONObject]     // 键序 = JS 字面量序,normalizeSound 依赖
-        let soundDefinitions: [String: SoundDefinition]
+        public let soundDefinitions: [String: SoundDefinition]
         public let controlDefaults: JSONObject             // 键序 = CONTROL_DEFAULTS 序
-        let barLengths: [Double]
+        public let barLengths: [Double]
         public let maxBars: Int
         public let maxBeats: Double
         public let maxProjectNotes: Int

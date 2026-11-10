@@ -12,6 +12,7 @@ final class M2LogicTests: XCTestCase {
     struct Canonical: Decodable {
         let transpose: [String: TransposeDigest]
         let resize: [String: ResizeDigest]
+        let soundPresets: [String: String]
         struct TransposeDigest: Decodable { let target: String; let digest: String }
         struct ResizeDigest: Decodable { let bars: Double; let digest: String?; let error: String? }
     }
@@ -32,6 +33,24 @@ final class M2LogicTests: XCTestCase {
         }
         return (canonical, projects)
     }
+
+    func testSoundPresetDigests() throws {
+        let (canonical, _) = try load()
+        XCTAssertEqual(canonicalSafe(canonical).count, 24)
+        var mismatches: [String] = []
+        for (key, expected) in canonical.soundPresets ?? [:] {
+            let parts = key.split(separator: ":").map(String.init)
+            guard parts.count == 2, let preset = try? soundPreset(instrument: parts[0], id: parts[1]) else {
+                mismatches.append("\(key): Swift 抛错")
+                continue
+            }
+            let digest = fnv32(jsCompactStringify(.object(preset)))
+            if digest != expected { mismatches.append("\(key): swift=\(digest) js=\(expected)") }
+        }
+        XCTAssertTrue(mismatches.isEmpty, "音色预设不一致:\(mismatches)")
+    }
+
+    private func canonicalSafe(_ c: Canonical) -> [String: String] { c.soundPresets ?? [:] }
 
     func testTransposeDigests() throws {
         let (canonical, projects) = try load()

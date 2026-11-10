@@ -8,6 +8,7 @@ try { readFileSync(`${repoRoot}dist/music.js`); } catch { from = '/tmp/sprout-di
 const { validateProject, transposeProject } = await import(`${from}/dist/music.js`);
 const { resizeProject } = await import(`${from}/dist/music.js`);
 const { checksum } = await import(`${from}/dist/storage.js`);
+const { soundPreset } = await import(`${from}/dist/sound.js`);
 
 const stripIds = value => JSON.parse(JSON.stringify(value, (k, v) => (k === 'id' ? undefined : v)));
 
@@ -34,7 +35,14 @@ for (const f of files) {
   }
 }
 
+const soundPresets = {};
+for (const instrument of ['kick', 'snare', 'hat', 'bass', 'keys', 'lead', 'pad', 'pluck']) {
+  for (const id of ['soft', 'clear', 'short']) {
+    soundPresets[`${instrument}:${id}`] = checksum(JSON.stringify(soundPreset(instrument, id)));
+  }
+}
+
 const outDir = join(repoRoot, 'shared/canonical');
 mkdirSync(outDir, { recursive: true });
-writeFileSync(join(outDir, 'm2-logic.json'), JSON.stringify({ version: 1, transpose, resize }, null, 1) + '\n');
+writeFileSync(join(outDir, 'm2-logic.json'), JSON.stringify({ version: 1, transpose, resize, soundPresets }, null, 1) + '\n');
 console.log(`m2-logic.json: ${Object.keys(transpose).length} transpose, ${Object.keys(resize).length} resize digests`);
