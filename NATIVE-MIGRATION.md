@@ -1,6 +1,6 @@
 # Sprout Studio 原生化迁移计划(Web/Electron → macOS 原生 Swift)
 
-状态:v2(2026-11-08,M0 已落地;维护模型按"双栈互维护"修订)
+状态:v3(2026-11-11,M0–M3 全部落地;见 §11 实绩总账)
 
 ## 0. 决策与目标
 
@@ -126,7 +126,21 @@ native/
 
 **M1 音频与 MIDI 实绩**(2026-11-08):MIDI 编解码(`encodeMIDI`/`decodeMIDI`)字节级与摘要级对拍 96/96、89/89;期间发现并修复 `toFixed` 语义差异(JS 对精确十进制展开舍入,乘法近似在 .5 边界翻转)——`jsToFixedValue` 用整数位分解实现精确版,全局生效。新增 `SproutAudio` target:纯 Swift 离线渲染器(Biquad/等功率声像/LCG 噪声/软拐压缩器/延迟回声、WAV 读写、SHA-256、采样库装载校验),`renderWAV` 对应 dist/audio.js 完整图结构;修一处 loop 单位 bug(loopStart/loopEnd 为秒,回绕按帧)。实测:合成工程、采样工程(小提琴/吉他/单簧管/EDM,媒体取自 Electron asar 解包 + SHA-256 校验)全部非静音不削波,release 模式渲染 32 秒立体声 <1 秒。CLI:`sproutkit-cli render/mididump/check/validate`。CI:新增 `native.yml`(Linux swift test + sync 防漂移)。剩余:M2 编辑器 UI、Player 壳、实时播放引擎(AVAudioEngine)。
 
-## 10. 待定项(默认值可改)
+## 11. 实绩总账(2026-11-11 全部缺口闭环)
+
+| # | 缺口 | 状态 |
+|---|---|---|
+| 1 | 轨道管理 + 工程属性(移调/长度,96+96 对拍) | ✓ #8 |
+| 2 | 音源浏览器(179 preset)+ 音色编辑(soundPreset 24/24 对拍) | ✓ #9 |
+| 3 | 离线灵感引擎(generateProject 288/28、提示词引擎 30/30 对拍) | ✓ #10 #12 |
+| 4 | 时间线音块 + Pattern 库(904/904 对拍,.sprout-patterns 互通) | ✓ #11 |
+| 5 | DeepSeek 助手 + 候选架(协议校验移植,Keychain,直连) | ✓ #12 |
+| 6 | App 打包(UTType/ad-hoc 签名/DMG,可切 Developer ID+公证)+ macOS CI | ✓ #13 |
+| 7 | 卷帘多选(⌘点选/⌘A/组拖拽/批量力度/批量删除) | ✓ #13 |
+
+对拍体系:M0 98/98 字节级;M1 transport/采样/发声/MIDI;M2 移调/长度;M3 生成;M4 音块/Pattern;M5 提示词——全部 CI 锁定。测试 28/28(Linux)+ 本地 macOS。公证需仓库主人的 Developer ID 证书(见 tools/package-app.sh 头注)。
+
+## 12. 待定项(默认值可改)
 
 - 最低系统:**macOS 14+**(SwiftUI Observation/新 API 自由度)
 - 应用名沿用 Sprout Studio,bundle id 另定(如 `com.sproutstudio.mac`)
