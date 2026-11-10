@@ -25,6 +25,49 @@ final class PlayerModel: ObservableObject {
     @Published var showLibrary = false
     @Published var soundInspectorTrackId: String?
     @Published var showPatterns = false
+    @Published var showAssistant = false
+
+    @Published var candidate: CandidateProject?
+    private var projectBeforeAudition: JSONObject?
+
+    func setCandidate(project: JSONObject, summary: String) {
+        candidate = CandidateProject(project: project, summary: summary)
+    }
+
+    /// 试听:临时换到候选播放,返回时恢复原工程。
+    func auditionCandidate() {
+        guard let c = candidate else { return }
+        if projectBeforeAudition == nil { projectBeforeAudition = project }
+        stopPlay()
+        project = c.project
+        totalBeats = jnum(c.project, "bars", 4) * 4
+        try? engine.load(project: c.project, samplesRoot: samplesRoot)
+        rebuildRoll()
+        try? engine.play()
+        syncTransport()
+    }
+
+    func applyCandidate() {
+        guard let c = candidate else { return }
+        if let before = projectBeforeAudition {
+            _ = before
+        }
+        projectBeforeAudition = nil
+        candidate = nil
+        applyEdit("应用助手候选") { _ in c.project }
+    }
+
+    func discardCandidate() {
+        candidate = nil
+        if let before = projectBeforeAudition {
+            projectBeforeAudition = nil
+            project = before
+            totalBeats = jnum(before, "bars", 4) * 4
+            try? engine.load(project: before, samplesRoot: samplesRoot)
+            rebuildRoll()
+            stopPlay()
+        }
+    }
     @Published var vaultEntry: VaultEntry?
     let vault = VaultStore(root: VaultStore.defaultRoot())
     private var autosaveTimer: Timer?
@@ -662,6 +705,18 @@ private struct TrackBox: Identifiable {
     let id: String
 }
 
+struct CandidateProject {
+    let project: JSONObject
+    let summary: String
+    var trackSummaries: [String] {
+        jarrPublic(project["tracks"]).compactMap { t in
+            guard let t = t.asObject else { return nil }
+            let notes = jarrPublic(t["notes"]).count
+            return "\(t["name"]?.asString ?? "")×\(notes)"
+        }
+    }
+}
+
 struct ProjectBar: View {
     @ObservedObject var model: PlayerModel
     let project: JSONObject
@@ -814,6 +869,8 @@ struct ContentView: View {
                 Button { model.showLibrary = true } label: { Label("工程库", systemImage: "music.note.list") }
                 Button { model.showPatterns = true } label: { Label("Pattern 库", systemImage: "square.stack.3d.up") }
                     .disabled(model.project == nil)
+                Button { model.showAssistant = true } label: { Label("助手", systemImage: "sparkles") }
+                    .disabled(model.project == nil)
                 Button { model.checkpointCurrent(label: "我的保存点") } label: { Label("存版本", systemImage: "bookmark") }
                     .disabled(model.vaultEntry == nil)
                 Button { model.undo() } label: { Label("撤销", systemImage: "arrow.uturn.backward") }
@@ -902,6 +959,9 @@ struct ContentView: View {
         }
         .sheet(isPresented: $model.showPatterns) {
             PatternLibraryView(model: model)
+        }
+        .sheet(isPresented: $model.showAssistant) {
+            AssistantView(model: model)
         }
         .sheet(item: Binding(
             get: { model.soundInspectorTrackId.map { TrackBox(id: $0) } },
