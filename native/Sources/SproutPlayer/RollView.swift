@@ -71,6 +71,9 @@ struct RollView: View {
                 ScrollView(.horizontal, showsIndicators: true) {
                     ZStack(alignment: .topLeading) {
                         VStack(spacing: 0) {
+                            TimelineView(model: model, pxPerBeat: pxPerBeat)
+                                .frame(width: contentWidth)
+                            Divider().frame(width: contentWidth)
                             noteCanvas.frame(width: contentWidth, height: tonalHeight)
                             drumCanvas.frame(width: contentWidth, height: drumHeight)
                         }

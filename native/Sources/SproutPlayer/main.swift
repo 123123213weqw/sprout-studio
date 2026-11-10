@@ -24,6 +24,7 @@ final class PlayerModel: ObservableObject {
     @Published var selectedNoteId: String?
     @Published var showLibrary = false
     @Published var soundInspectorTrackId: String?
+    @Published var showPatterns = false
     @Published var vaultEntry: VaultEntry?
     let vault = VaultStore(root: VaultStore.defaultRoot())
     private var autosaveTimer: Timer?
@@ -214,10 +215,11 @@ final class PlayerModel: ObservableObject {
     }
 
     /// 编辑入口:快照 → 修改 → 校验通过才采纳;失败保持原状。
-    func applyEdit(_ label: String, _ mutate: (JSONObject) -> JSONObject) {
+    func applyEdit(_ label: String, _ mutate: (JSONObject) throws -> JSONObject) {
         guard let p = project else { return }
         let oldJSON = serializeProject(p)
-        let next = mutate(p)
+        let next: JSONObject
+        do { next = try mutate(p) } catch { self.error = "\(error)"; return }
         do {
             _ = try validateProject(.object(next)) // 先验,失败不动
         } catch {
@@ -529,6 +531,92 @@ final class PlayerModel: ObservableObject {
         return "lead"
     }
 
+    // MARK: - 音块与 Pattern 操作(全部经 applyEdit,可撤销)
+
+    @Published var selectedClipId: String?
+
+    func clipOp(_ label: String, _ op: (JSONObject) throws -> JSONObject) {
+        applyEdit(label) { p in
+            try op(p)
+        }
+    }
+
+    func captureSelectedClipAsPattern(name: String) {
+        guard let clipId = selectedClipId else { error = "请先在时间线选择一个音块"; return }
+        // 找轨道
+        guard let p = project else { return }
+        for t in tracks where jarrPublic(t["clips"]).contains(where: { $0.asObject?["id"]?.asString == clipId }) {
+            let trackId = t["id"]?.asString ?? ""
+            do {
+                let result = try capturePattern(p, trackId: trackId, clipId: clipId, name: name, linkSource: true)
+                adopt(serializeProject(result.project))
+                scheduleAutosave()
+                return
+            } catch {
+                self.error = "\(error)"
+                return
+            }
+        }
+    }
+
+    func patternInstanceCount(_ patternId: String) -> Int {
+        guard let p = project else { return 0 }
+        return patternInstances(p, patternId: patternId).count
+    }
+
+    func placePatternAtEnd(patternId: String, trackId: String) {
+        guard let p = project else { return }
+        do {
+            let bars = jnum(p, "bars", 4)
+            let at = jnum(p, "loopRange") != 0 || p["loopRange"] != nil ? bars * 4 : bars * 4
+            let result = try placePattern(p, patternId: patternId, trackId: trackId, at: at, linked: true, extend: true)
+            adopt(serializeProject(result.project))
+            if result.extended { totalBeats = jnum(result.project, "bars", 4) * 4 }
+            scheduleAutosave()
+        } catch {
+            self.error = "\(error)"
+        }
+    }
+
+    func renamePattern(patternId: String, name: String) {
+        guard let p = project else { return }
+        do {
+            let result = try updatePattern(p, patternId: patternId, name: name)
+            adopt(serializeProject(result.project))
+            scheduleAutosave()
+        } catch {
+            self.error = "\(error)"
+        }
+    }
+
+    func deletePattern(patternId: String) {
+        guard let p = project else { return }
+        do {
+            let next = try removePattern(p, patternId: patternId, detach: true)
+            adopt(serializeProject(next))
+            scheduleAutosave()
+        } catch {
+            self.error = "\(error)"
+        }
+    }
+
+    func importPatternFile(url: URL) -> String? {
+        guard let text = try? String(contentsOf: url, encoding: .utf8),
+              let value = try? loadSprout(text: text) else { return "文件不是完整 JSON，没有导入任何乐句" }
+        do {
+            let imported = try validatePatternLibrary(value)
+            guard var p = project else { return nil }
+            var patterns = jarrPublic(p["patterns"])
+            patterns.append(contentsOf: imported)
+            p["patterns"] = .array(patterns)
+            adopt(serializeProject(try validateProject(.object(p))))
+            scheduleAutosave()
+            return "已导入 \(imported.count) 条乐句"
+        } catch {
+            return "\(error)"
+        }
+    }
+
     func removeTrack(id: String) {
         applyEdit("删除轨道") { p in
             var next = p
@@ -724,6 +812,8 @@ struct ContentView: View {
                     .foregroundStyle(.secondary)
                 Spacer()
                 Button { model.showLibrary = true } label: { Label("工程库", systemImage: "music.note.list") }
+                Button { model.showPatterns = true } label: { Label("Pattern 库", systemImage: "square.stack.3d.up") }
+                    .disabled(model.project == nil)
                 Button { model.checkpointCurrent(label: "我的保存点") } label: { Label("存版本", systemImage: "bookmark") }
                     .disabled(model.vaultEntry == nil)
                 Button { model.undo() } label: { Label("撤销", systemImage: "arrow.uturn.backward") }
@@ -809,6 +899,9 @@ struct ContentView: View {
         .frame(minWidth: 1020, minHeight: 560)
         .sheet(isPresented: $model.showLibrary) {
             LibraryView(model: model)
+        }
+        .sheet(isPresented: $model.showPatterns) {
+            PatternLibraryView(model: model)
         }
         .sheet(item: Binding(
             get: { model.soundInspectorTrackId.map { TrackBox(id: $0) } },

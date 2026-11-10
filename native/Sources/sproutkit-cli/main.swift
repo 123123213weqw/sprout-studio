@@ -12,6 +12,22 @@ func run() -> Int32 {
         FileHandle.standardError.write("用法: sproutkit validate <file> | check <file> <canonical>\n".data(using: .utf8)!)
         return 2
     }
+    if args[1] == "capture" {
+        do {
+            let project = try validateProject(try loadSprout(text: String(contentsOf: URL(fileURLWithPath: args[2]), encoding: .utf8))
+            )
+            let tracks = (project["tracks"]?.asArray ?? []).compactMap { $0.asObject }
+            guard let track = tracks.first,
+                  let clip = (track["clips"]?.asArray ?? []).first?.asObject,
+                  let trackId = track["id"]?.asString, let clipId = clip["id"]?.asString else { return 2 }
+            let result = try capturePattern(project, trackId: trackId, clipId: clipId, name: "测试乐句", linkSource: true)
+            print(jsCompactStringify(stripIdsForDump(.object(result.project))))
+            return 0
+        } catch {
+            FileHandle.standardError.write("\(error)\n".data(using: .utf8)!)
+            return 1
+        }
+    }
     if args[1] == "generate" {
         // generate <style> <key> <bars> <seed> [--controls](不依赖文件)
         guard args.count >= 6 else { FileHandle.standardError.write("参数不足\n".data(using: .utf8)!); return 2 }
