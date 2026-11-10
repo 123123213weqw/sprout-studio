@@ -130,6 +130,17 @@ public final class RealtimeEngine {
         if playing { stop() } else { try? play() }
     }
 
+    /// 点击卷帘定位:播放中从该拍重启,停止时只移动指针。
+    public func seek(to beat: Double) {
+        let clamped = max(loopRange.start, min(beat, loopRange.end - 0.001))
+        if playing {
+            try? play(from: clamped)
+        } else {
+            pausedBeat = clamped
+        }
+        onTransportChange?()
+    }
+
     public var currentBeat: Double {
         guard playing else { return pausedBeat }
         return startBeat + (ProcessInfo.processInfo.systemUptime - playStartUptime) / spb

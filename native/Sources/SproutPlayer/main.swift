@@ -20,6 +20,7 @@ final class PlayerModel: ObservableObject {
     @Published var error: String?
     @Published var busy = false
     @Published var samplesRoot: URL? = defaultSamplesRoot()
+    @Published var rollEvents: [RollEvent] = []
 
     let engine = RealtimeEngine()
     private var displayTimer: Timer?
@@ -41,6 +42,7 @@ final class PlayerModel: ObservableObject {
             projectURL = url
             totalBeats = jnum(validated, "bars", 4) * 4
             try engine.load(project: validated, samplesRoot: samplesRoot)
+            rebuildRoll()
             beat = 0
             error = nil
         } catch {
@@ -64,6 +66,30 @@ final class PlayerModel: ObservableObject {
 
     func syncTransport() {
         playing = engine.playing
+    }
+
+    /// 卷帘事件 = 播放计划事件(与音频调度同源)。
+    func rebuildRoll() {
+        guard let p = project, let plan = try? playbackPlan(p, range: .null) else {
+            rollEvents = []
+            return
+        }
+        let list = (p["tracks"]?.asArray ?? []).compactMap(\.asObject)
+        rollEvents = plan.events.compactMap { e in
+            guard e.trackIndex < list.count else { return nil }
+            let t = list[e.trackIndex]
+            return RollEvent(
+                beat: e.beat, duration: e.duration, pitch: e.pitch, velocity: e.velocity,
+                colorHex: t["color"]?.asString ?? "#888888",
+                instrument: t["instrument"]?.asString ?? "lead",
+                kind: t["kind"]?.asString ?? "tonal"
+            )
+        }
+    }
+
+    func seek(to beat: Double) {
+        engine.seek(to: beat)
+        self.beat = engine.currentBeat
     }
 
     func startDisplay() {
@@ -224,31 +250,35 @@ struct ContentView: View {
 
             Divider()
 
-            if let p = model.project {
-                VStack(alignment: .leading, spacing: 0) {
-                    // 走拍条
-                    GeometryReader { geo in
-                        ZStack(alignment: .leading) {
-                            RoundedRectangle(cornerRadius: 3).fill(.quaternary)
-                            RoundedRectangle(cornerRadius: 3).fill(Color.accentColor)
-                                .frame(width: max(0, min(1, model.beat / max(model.totalBeats, 1))) * geo.size.width)
-                            Rectangle().fill(.red).frame(width: 2)
-                                .offset(x: min(geo.size.width - 2, max(0, model.beat / max(model.totalBeats, 1)) * geo.size.width))
-                        }
+            if model.project != nil {
+                HStack(spacing: 0) {
+                    // 轨道侧栏
+                    List(0..<model.tracks.count, id: \.self) { index in
+                        TrackRow(model: model, track: model.tracks[index])
                     }
-                    .frame(height: 8)
-                    .padding(.horizontal, 12)
-                    .padding(.top, 8)
-                    Text(String(format: "%.1f / %.0f 拍", model.beat, model.totalBeats))
-                        .font(.caption.monospacedDigit())
-                        .foregroundStyle(.secondary)
+                    .listStyle(.sidebar)
+                    .frame(width: 268)
+                    Divider()
+                    // 主区:走拍条 + 卷帘
+                    VStack(spacing: 0) {
+                        GeometryReader { geo in
+                            ZStack(alignment: .leading) {
+                                RoundedRectangle(cornerRadius: 3).fill(.quaternary)
+                                RoundedRectangle(cornerRadius: 3).fill(Color.accentColor)
+                                    .frame(width: max(0, min(1, model.beat / max(model.totalBeats, 1))) * geo.size.width)
+                            }
+                        }
+                        .frame(height: 7)
                         .padding(.horizontal, 12)
-                        .frame(maxWidth: .infinity, alignment: .trailing)
+                        .padding(.top, 8)
+                        Text(String(format: "%.1f / %.0f 拍 · 点击卷帘定位", model.beat, model.totalBeats))
+                            .font(.caption.monospacedDigit())
+                            .foregroundStyle(.secondary)
+                            .padding(.horizontal, 12)
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                        RollView(model: model)
+                    }
                 }
-                List(0..<model.tracks.count, id: \.self) { index in
-                    TrackRow(model: model, track: model.tracks[index])
-                }
-                .listStyle(.inset)
             } else {
                 Spacer()
                 VStack(spacing: 8) {
@@ -263,7 +293,7 @@ struct ContentView: View {
                 Spacer()
             }
         }
-        .frame(minWidth: 680, minHeight: 420)
+        .frame(minWidth: 1020, minHeight: 560)
         .onAppear { model.startDisplay() }
     }
 }
