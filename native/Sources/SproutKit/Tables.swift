@@ -48,7 +48,7 @@ public enum Tables {
     public static let shared: TablesData = load()
 
     public struct TablesData {
-        let instruments: [String: InstrumentMeta]
+        public let instruments: [String: InstrumentMeta]
         public let keys: [String: KeyInfo]
         public let styleIds: Set<String>
         public let sectionKinds: Set<String>
