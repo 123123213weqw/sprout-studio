@@ -22,6 +22,7 @@ final class PlayerModel: ObservableObject {
     @Published var samplesRoot: URL? = defaultSamplesRoot()
     @Published var rollEvents: [RollEvent] = []
     @Published var selectedNoteId: String?
+    @Published var selectedNoteIds: Set<String> = []
     @Published var showLibrary = false
     @Published var soundInspectorTrackId: String?
     @Published var showPatterns = false
@@ -73,9 +74,77 @@ final class PlayerModel: ObservableObject {
     private var autosaveTimer: Timer?
 
     func deleteSelectedNote() {
-        guard let id = selectedNoteId else { return }
-        deleteNote(id: id)
+        let ids = selectedNoteIds.isEmpty ? Set([selectedNoteId].compactMap { $0 }) : selectedNoteIds
+        guard !ids.isEmpty else { return }
+        let list = ids
+        applyEdit("删除\(list.count) 个音符") { p in
+            var next = p
+            var tracks: [JSONValue] = []
+            for tv in jarrPublic(next["tracks"]) {
+                guard var t = tv.asObject else { tracks.append(tv); continue }
+                t["notes"] = .array(jarrPublic(t["notes"]).filter { nv in
+                    guard let n = nv.asObject else { return true }
+                    return !list.contains(n["id"]?.asString ?? "")
+                })
+                tracks.append(.object(t))
+            }
+            next["tracks"] = .array(tracks)
+            return next
+        }
+        selectedNoteIds = []
         selectedNoteId = nil
+    }
+
+    func selectAllNotes() {
+        selectedNoteIds = Set(rollEvents.map { $0.noteId })
+        selectedNoteId = selectedNoteIds.first
+    }
+
+    /// 批量移动(拍位/音高增量)。
+    func moveNotes(ids: Set<String>, startDelta: Double, pitchDelta: Double) {
+        applyEdit("移动\(ids.count) 个音符") { p in
+            var next = p
+            var tracks: [JSONValue] = []
+            for tv in jarrPublic(next["tracks"]) {
+                guard var t = tv.asObject else { tracks.append(tv); continue }
+                var notes: [JSONValue] = []
+                for nv in jarrPublic(t["notes"]) {
+                    guard var n = nv.asObject else { notes.append(nv); continue }
+                    if ids.contains(n["id"]?.asString ?? "") {
+                        n["start"] = .number(max(0, round4(jnum(n, "start") + startDelta)))
+                        n["pitch"] = .number(clamp(jnum(n, "pitch") + pitchDelta, 24, 108))
+                    }
+                    notes.append(.object(n))
+                }
+                t["notes"] = .array(notes)
+                tracks.append(.object(t))
+            }
+            next["tracks"] = .array(tracks)
+            return next
+        }
+    }
+
+    /// 批量设置力度。
+    func setVelocity(ids: Set<String>, velocity: Double) {
+        applyEdit("调力度") { p in
+            var next = p
+            var tracks: [JSONValue] = []
+            for tv in jarrPublic(next["tracks"]) {
+                guard var t = tv.asObject else { tracks.append(tv); continue }
+                var notes: [JSONValue] = []
+                for nv in jarrPublic(t["notes"]) {
+                    guard var n = nv.asObject else { notes.append(nv); continue }
+                    if ids.contains(n["id"]?.asString ?? "") {
+                        n["velocity"] = .number(clamp((velocity).rounded(), 1, 127))
+                    }
+                    notes.append(.object(n))
+                }
+                t["notes"] = .array(notes)
+                tracks.append(.object(t))
+            }
+            next["tracks"] = .array(tracks)
+            return next
+        }
     }
 
     let engine = RealtimeEngine()
@@ -222,6 +291,7 @@ final class PlayerModel: ObservableObject {
         if let id = selectedNoteId, !rollEvents.contains(where: { $0.noteId == id }) {
             selectedNoteId = nil
         }
+        selectedNoteIds = selectedNoteIds.intersection(Set(rollEvents.map { $0.noteId }))
     }
 
     func seek(to beat: Double) {
@@ -1014,8 +1084,13 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         playerModel = model
         keyMonitor = NSEvent.addLocalMonitorForEvents(matching: .keyDown) { [weak self] event in
             // Delete / Fn-Delete 删除选中音符
-            if event.keyCode == 51 || event.keyCode == 117, event.modifierFlags.intersection(.deviceIndependentFlagsMask).isEmpty {
+            let flags = event.modifierFlags.intersection(.deviceIndependentFlagsMask)
+            if event.keyCode == 51 || event.keyCode == 117, flags.isEmpty {
                 self?.playerModel?.deleteSelectedNote()
+                return nil
+            }
+            if event.keyCode == 0, flags == .command { // Cmd+A
+                self?.playerModel?.selectAllNotes()
                 return nil
             }
             return event

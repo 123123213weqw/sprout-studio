@@ -27,3 +27,21 @@ jobs:
       # SproutKit/SproutAudio 均为纯 Swift(离线渲染器不含 Apple 专属 API),
       # Linux 直接跑全部对拍测试;采样渲染测试在无媒体目录时自动跳过
       - run: swift test --package-path native
+
+  macos-app:
+    name: macOS tests + App 打包
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: swift-actions/setup-swift@v2
+        with:
+          swift-version: "6.0"
+      - run: swift test --package-path native
+      - name: 打包 SproutPlayer.app 与 DMG
+        run: ./tools/package-app.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: SproutPlayer-app
+          path: |
+            *.app
+            *.dmg

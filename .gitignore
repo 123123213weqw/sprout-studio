@@ -16,3 +16,8 @@ desktop.env
 
 # Swift 构建产物
 native/.build/
+
+# 原生打包产物
+*.dmg
+SproutPlayer.app/
+.app-stage/
