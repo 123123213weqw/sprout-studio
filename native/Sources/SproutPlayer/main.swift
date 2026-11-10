@@ -23,6 +23,7 @@ final class PlayerModel: ObservableObject {
     @Published var rollEvents: [RollEvent] = []
     @Published var selectedNoteId: String?
     @Published var showLibrary = false
+    @Published var soundInspectorTrackId: String?
     @Published var vaultEntry: VaultEntry?
     let vault = VaultStore(root: VaultStore.defaultRoot())
     private var autosaveTimer: Timer?
@@ -447,6 +448,87 @@ final class PlayerModel: ObservableObject {
         }
     }
 
+    // MARK: - 音源与音色
+
+    private func mutateTrack(_ trackId: String, _ label: String, _ mutate: (JSONObject) -> JSONObject) {
+        applyEdit(label) { p in
+            var next = p
+            var list: [JSONValue] = []
+            for element in (next["tracks"]?.asArray ?? []) {
+                if var obj = element.asObject, obj["id"]?.asString == trackId {
+                    obj = mutate(obj)
+                    list.append(.object(obj))
+                } else {
+                    list.append(element)
+                }
+            }
+            next["tracks"] = .array(list)
+            return next
+        }
+    }
+
+    /// presetId 为 nil 表示切回纯合成(清 sampler);有值时设置采样并清 sound。
+    func setTrackSampler(trackId: String, presetId: String?) {
+        mutateTrack(trackId, presetId == nil ? "切回合成音源" : "更换采样音源") { t in
+            var track = t
+            if let presetId = presetId {
+                var sampler = JSONObject()
+                sampler["preset"] = .string(presetId)
+                track["sampler"] = .object(sampler)
+                track["sound"] = nil
+            } else {
+                track["sampler"] = nil
+            }
+            return track
+        }
+    }
+
+    func updateTrackSamplerField(trackId: String, key: String, value: JSONValue) {
+        mutateTrack(trackId, "调采样参数") { t in
+            var track = t
+            if var sampler = track["sampler"]?.asObject {
+                sampler[key] = value
+                track["sampler"] = .object(sampler)
+            }
+            return track
+        }
+    }
+
+    func updateTrackSound(trackId: String, key: String, value: JSONValue) {
+        mutateTrack(trackId, "调音色") { t in
+            var track = t
+            if var sound = track["sound"]?.asObject {
+                sound[key] = value
+                track["sound"] = .object(sound)
+            } else {
+                var sound = JSONObject()
+                sound[key] = value
+                track["sound"] = .object(sound)
+            }
+            return track
+        }
+    }
+
+    func applySoundPreset(trackId: String, presetId: String) {
+        do {
+            let preset = try soundPreset(instrument: currentInstrument(trackId: trackId), id: presetId)
+            mutateTrack(trackId, "音色预设") { t in
+                var track = t
+                track["sound"] = .object(preset)
+                return track
+            }
+        } catch {
+            self.error = "\(error)"
+        }
+    }
+
+    private func currentInstrument(trackId: String) -> String {
+        for t in tracks where t["id"]?.asString == trackId {
+            return t["instrument"]?.asString ?? "lead"
+        }
+        return "lead"
+    }
+
     func removeTrack(id: String) {
         applyEdit("删除轨道") { p in
             var next = p
@@ -487,6 +569,10 @@ final class PlayerModel: ObservableObject {
 }
 
 // MARK: - 视图
+
+private struct TrackBox: Identifiable {
+    let id: String
+}
 
 struct ProjectBar: View {
     @ObservedObject var model: PlayerModel
@@ -589,6 +675,13 @@ struct TrackRow: View {
                 set: { model.updateTrack(id: id, key: "pan", value: .number($0)) }
             ), in: -1...1)
             .frame(width: 70)
+            Button {
+                model.soundInspectorTrackId = id
+            } label: {
+                Image(systemName: "slider.horizontal.3")
+            }
+            .buttonStyle(.borderless)
+            .help("音色与音源")
             Button {
                 model.removeTrack(id: id)
             } label: {
@@ -716,6 +809,16 @@ struct ContentView: View {
         .frame(minWidth: 1020, minHeight: 560)
         .sheet(isPresented: $model.showLibrary) {
             LibraryView(model: model)
+        }
+        .sheet(item: Binding(
+            get: { model.soundInspectorTrackId.map { TrackBox(id: $0) } },
+            set: { model.soundInspectorTrackId = $0?.id }
+        )) { box in
+            if let track = model.tracks.first(where: { $0["id"]?.asString == box.id }) {
+                SoundInspector(model: model, track: track)
+            } else {
+                EmptyView()
+            }
         }
         .onAppear {
             model.startDisplay()

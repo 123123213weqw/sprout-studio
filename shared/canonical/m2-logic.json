@@ -771,5 +771,31 @@
    "bars": 64,
    "digest": "93148051"
   }
+ },
+ "soundPresets": {
+  "kick:soft": "76c8279f",
+  "kick:clear": "c7ea6bbc",
+  "kick:short": "3fa2c07f",
+  "snare:soft": "b118bad9",
+  "snare:clear": "595ce34c",
+  "snare:short": "b4ed7e6d",
+  "hat:soft": "6ff691e8",
+  "hat:clear": "82ca46b6",
+  "hat:short": "f10e7418",
+  "bass:soft": "dad72fea",
+  "bass:clear": "32e1a5cc",
+  "bass:short": "ee2f20e3",
+  "keys:soft": "62579da8",
+  "keys:clear": "564bac61",
+  "keys:short": "e5d2a552",
+  "lead:soft": "1c30ee6a",
+  "lead:clear": "564bac61",
+  "lead:short": "e5d2a552",
+  "pad:soft": "2924f674",
+  "pad:clear": "a99a0918",
+  "pad:short": "c712aa9f",
+  "pluck:soft": "34c33151",
+  "pluck:clear": "564bac61",
+  "pluck:short": "e5d2a552"
  }
 }

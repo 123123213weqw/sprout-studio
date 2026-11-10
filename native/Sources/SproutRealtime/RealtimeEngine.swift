@@ -25,9 +25,52 @@ public final class RealtimeEngine {
     public var onTransportChange: (() -> Void)?
 
     private let monoFormat = AVAudioFormat(standardFormatWithSampleRate: renderSampleRate, channels: 1)!
+    private var previewPlayer: AVAudioPlayerNode?
+    private var previewBus: AVAudioMixerNode?
     private let stereoFormat = AVAudioFormat(standardFormatWithSampleRate: renderSampleRate, channels: 2)!
 
     public init() {}
+
+    /// 单音试听(音源浏览器用):临时通道,音量 0.45,与 JS previewNote 语义一致。
+    public func previewNote(instrument: String, pitch: Int, velocity: Int = 80, sound: JSONValue?, sampler: JSONValue?) throws {
+        if !engine.isRunning { try engine.start() }
+        if previewPlayer == nil {
+            let player = AVAudioPlayerNode()
+            let bus = AVAudioMixerNode()
+            bus.volume = 0.45
+            engine.attach(player)
+            engine.attach(bus)
+            engine.connect(player, to: bus, format: monoFormat)
+            engine.connect(bus, to: engine.mainMixerNode, format: monoFormat)
+            previewPlayer = player
+            previewBus = bus
+        }
+        guard let player = previewPlayer else { return }
+        player.stop()
+        let kind = Tables.shared.instruments[instrument]?.kind ?? "tonal"
+        var duration = 0.28
+        if let sampler = sampler,
+           let presetId = (try? normalizeSampler(instrument, sampler))?["preset"]?.asString,
+           let preset = Samples.shared.presets[presetId], let pd = preset.previewDuration {
+            duration = pd
+        }
+        let voice: VoiceRender
+        if let sampler = sampler, let store = store {
+            voice = try renderSampleVoiceBuffer(
+                store: store, instrument: instrument, settings: sampler,
+                pitch: pitch, when: 0, duration: duration, velocity: velocity,
+                take: 0, totalFrames: .max
+            )
+        } else if let soundValue = sound, let soundObj = soundValue.asObject {
+            voice = renderConfiguredVoiceBuffer(instrument, pitch: Double(pitch), when: 0, duration: duration, velocity: Double(velocity), sound: soundObj, totalFrames: .max)
+        } else {
+            voice = renderSynthDefaultVoiceBuffer(instrument, pitch: Double(pitch), when: 0, duration: duration, velocity: Double(velocity), totalFrames: .max)
+        }
+        guard !voice.samples.isEmpty, let buffer = pcmBuffer(voice.samples) else { return }
+        _ = kind
+        player.scheduleBuffer(buffer, at: nil, options: [], completionHandler: nil)
+        player.play()
+    }
 
     // MARK: - 装载
 

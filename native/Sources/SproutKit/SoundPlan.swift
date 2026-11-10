@@ -85,3 +85,67 @@ public func synthVoicePlan(instrument: String, pitch: Double, duration: Double, 
         resonance: jnum(cfg, "resonance", 0.55)
     )
 }
+
+// MARK: - 音色快捷预设(sound.js soundPreset:soft / clear / short)
+
+public let soundPresetIds = ["soft", "clear", "short"]
+
+public func soundPreset(instrument: String, id: String) throws -> JSONObject {
+    let defaults = try normalizeSound(instrument, .object(JSONObject()))
+    guard soundPresetIds.contains(id), let definition = Tables.shared.soundDefinitions[instrument] else {
+        throw SproutError("不存在这个音色预设")
+    }
+    var values = JSONObject()
+    if definition.kind == "tonal" {
+        let attack0 = jnum(defaults, "attack", 0.008)
+        let release0 = jnum(defaults, "release", 0.17)
+        let cutoff0 = jnum(defaults, "cutoff", 3200)
+        if id == "soft" {
+            values["attack"] = .number(max(0.05, attack0 * 1.5))
+            values["decay"] = .number(0.4)
+            values["sustain"] = .number(0.65)
+            values["release"] = .number(min(1.8, release0 * 2 + 0.2))
+            values["cutoff"] = .number(cutoff0 * 0.55)
+            values["resonance"] = .number(0.5)
+            values["waveform"] = .string("native")
+        } else if id == "clear" {
+            values["attack"] = .number(0.005)
+            values["decay"] = .number(0.12)
+            values["sustain"] = .number(0.75)
+            values["release"] = .number(0.14)
+            values["cutoff"] = .number(cutoff0 * 2.2)
+            values["resonance"] = .number(0.65)
+            values["waveform"] = .string("native")
+        } else {
+            values["attack"] = .number(0.003)
+            values["decay"] = .number(0.08)
+            values["sustain"] = .number(0.1)
+            values["release"] = .number(0.055)
+            values["cutoff"] = .number(cutoff0)
+            values["resonance"] = .number(0.5)
+            values["waveform"] = .string("native")
+        }
+    } else {
+        let decay0 = jnum(defaults, "decay", 0.2)
+        let tone0 = jnum(defaults, "tone", 1000)
+        if id == "soft" {
+            values["decay"] = .number(decay0 * 1.3)
+            values["tone"] = .number(tone0 * 0.8)
+        } else if id == "clear" {
+            values["decay"] = .number(decay0 * 0.8)
+            values["tone"] = .number(tone0 * 1.2)
+        } else {
+            values["decay"] = .number(decay0 * 0.4)
+            values["tone"] = .number(tone0)
+        }
+        if instrument == "snare" {
+            values["body"] = .number(id == "soft" ? 0.55 : id == "clear" ? 0.2 : 0.35)
+        }
+    }
+    for field in definition.fields {
+        if let raw = values[field.key]?.asNumber {
+            values[field.key] = .number(round4(clamp(raw, field.min, field.max)))
+        }
+    }
+    return try normalizeSound(instrument, .object(values))
+}
