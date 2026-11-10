@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "SproutKit",
+    platforms: [.macOS(.v13)],
     targets: [
         .target(
             name: "SproutKit",
@@ -12,6 +13,15 @@ let package = Package(
         .target(
             name: "SproutAudio",
             dependencies: ["SproutKit"]
+        ),
+        .target(
+            name: "SproutRealtime",
+            dependencies: ["SproutKit", "SproutAudio"]
+        ),
+        .executableTarget(
+            name: "SproutPlayer",
+            dependencies: ["SproutKit", "SproutAudio", "SproutRealtime"],
+            path: "Sources/SproutPlayer"
         ),
         .executableTarget(
             name: "sproutkit-cli",
