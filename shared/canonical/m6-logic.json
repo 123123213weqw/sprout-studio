@@ -1,0 +1,761 @@
+{
+ "version": 1,
+ "sections": {
+  "acoustic-v28/acoustic-trio.sprout": {
+   "tpl:verse-chorus": "24bc7054",
+   "tpl:four-parts": "14edeca0",
+   "add": "49509ef6"
+  },
+  "acoustic-v28/deepseek-natural-performance.sprout": {
+   "tpl:verse-chorus": "75268e0c",
+   "tpl:four-parts": "a20d9a7e",
+   "add": "19ea9818"
+  },
+  "acoustic-v28/deepseek-same-notes-new-voices.sprout": {
+   "tpl:verse-chorus": "5723778b",
+   "tpl:four-parts": "9d59651f",
+   "add": "6916c659"
+  },
+  "acoustic-v28/guitar-alternate-takes.sprout": {
+   "tpl:verse-chorus": "ba2f9a13",
+   "tpl:four-parts": "03cd86f9",
+   "add": "29d04a0f"
+  },
+  "acoustic-v28/held-strings-wind.sprout": {
+   "tpl:verse-chorus": "dc9046cc",
+   "tpl:four-parts": "3bd1f108",
+   "add": "e18eddce"
+  },
+  "acoustic-v28/solo-clarinet.sprout": {
+   "tpl:verse-chorus": "490f3a91",
+   "tpl:four-parts": "aa338273",
+   "add": "173de12d"
+  },
+  "acoustic-v28/solo-guitar.sprout": {
+   "tpl:verse-chorus": "9930e73a",
+   "tpl:four-parts": "f485ce02",
+   "add": "2a9fc1a4"
+  },
+  "acoustic-v28/solo-violin.sprout": {
+   "tpl:verse-chorus": "4ae82f33",
+   "tpl:four-parts": "9d7d6919",
+   "add": "618ab72f"
+  },
+  "candidate-a.sprout": {
+   "tpl:verse-chorus": "54d0e9dd",
+   "tpl:four-parts": "7d2ab8ce",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "fffb9520",
+   "fill:gentle:2": "d7430952",
+   "fill:rise:1": "87579f26",
+   "fill:rise:2": "a9e696c0",
+   "fill:break:1": "8fb874ec",
+   "fill:break:2": "b1ba16e2"
+  },
+  "candidate-b.sprout": {
+   "tpl:verse-chorus": "69322630",
+   "tpl:four-parts": "b5da56f7",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "498ab459",
+   "fill:gentle:2": "a6011a63",
+   "fill:rise:1": "56eaaa97",
+   "fill:rise:2": "35963829",
+   "fill:break:1": "99dfcc55",
+   "fill:break:2": "3330f6c3"
+  },
+  "candidate-c.sprout": {
+   "tpl:verse-chorus": "495362e7",
+   "tpl:four-parts": "07ecff58",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "4f9952fa",
+   "fill:gentle:2": "dff358ec",
+   "fill:rise:1": "5e12e00c",
+   "fill:rise:2": "27f64f36",
+   "fill:break:1": "4eca45e2",
+   "fill:break:2": "19abcc40"
+  },
+  "candidate-mock-service.sprout": {
+   "tpl:verse-chorus": "f12371e0",
+   "tpl:four-parts": "01ef94c7",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "b2d2e49d",
+   "fill:gentle:2": "b838ae73",
+   "fill:rise:1": "06e32467",
+   "fill:rise:2": "6c1a4ced",
+   "fill:break:1": "daf2a8c9",
+   "fill:break:2": "813569d3"
+  },
+  "clip-edit-demo.sprout": {
+   "tpl:verse-chorus": "e58c53ba",
+   "tpl:four-parts": "83736c61",
+   "add": "258050a9"
+  },
+  "deepseek-batch-v27/ambient-sustain/composition.sprout": {
+   "tpl:verse-chorus": "700d3b1a",
+   "tpl:four-parts": "e0187841",
+   "add": "d998aa09"
+  },
+  "deepseek-batch-v27/drum-pocket/composition.sprout": {
+   "tpl:verse-chorus": "1b8f1bb4",
+   "tpl:four-parts": "c0f88837",
+   "add": "78775bf3"
+  },
+  "deepseek-batch-v27/flute-clip/composition.sprout": {
+   "tpl:verse-chorus": "bb7d514f",
+   "tpl:four-parts": "54555b7e",
+   "add": "cb51c818"
+  },
+  "deepseek-batch-v27/numeric-harmony/composition.sprout": {
+   "tpl:verse-chorus": "a6b224f6",
+   "tpl:four-parts": "79d0db1c",
+   "add": "580de302"
+  },
+  "deepseek-batch-v27/scope-pressure/composition.sprout": {
+   "tpl:verse-chorus": "76ef3f9c",
+   "tpl:four-parts": "f2387a2e",
+   "add": "1a864348"
+  },
+  "deepseek-batch-v27/section-with-patterns/composition.sprout": {
+   "tpl:verse-chorus": "ec2f524d",
+   "tpl:four-parts": "84d2260f",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "88186a8f",
+   "fill:gentle:2": "7ca966d6",
+   "fill:rise:1": "aec2a69b",
+   "fill:rise:2": "ff4c2a1a",
+   "fill:break:1": "3ff47ee9",
+   "fill:break:2": "df4c9a90"
+  },
+  "deepseek-live/bridge/composition.sprout": {
+   "tpl:verse-chorus": "8bd32e5c",
+   "tpl:four-parts": "cae9736e",
+   "add": "31b89a08"
+  },
+  "deepseek-live/bridge/input.sprout": {
+   "tpl:verse-chorus": "ae604fc6",
+   "tpl:four-parts": "49cf298c",
+   "add": "7491f332"
+  },
+  "deepseek-live/composition.sprout": {
+   "tpl:verse-chorus": "6319abc2",
+   "tpl:four-parts": "02152e30",
+   "add": "8c3a43be"
+  },
+  "deepseek-live/descriptive/composition.sprout": {
+   "tpl:verse-chorus": "6319abc2",
+   "tpl:four-parts": "02152e30",
+   "add": "8c3a43be"
+  },
+  "deepseek-live/descriptive/input.sprout": {
+   "tpl:verse-chorus": "d560adee",
+   "tpl:four-parts": "3b3e5da4",
+   "add": "ee30cf1a"
+  },
+  "deepseek-live/explicit/composition.sprout": {
+   "tpl:verse-chorus": "ae604fc6",
+   "tpl:four-parts": "49cf298c",
+   "add": "7491f332"
+  },
+  "deepseek-live/explicit/input.sprout": {
+   "tpl:verse-chorus": "d560adee",
+   "tpl:four-parts": "3b3e5da4",
+   "add": "ee30cf1a"
+  },
+  "deepseek-live/input.sprout": {
+   "tpl:verse-chorus": "d560adee",
+   "tpl:four-parts": "3b3e5da4",
+   "add": "ee30cf1a"
+  },
+  "deepseek-live/reviewed/composition.sprout": {
+   "tpl:verse-chorus": "1177f6da",
+   "tpl:four-parts": "9d50fb78",
+   "add": "cf3de896"
+  },
+  "deepseek-live/reviewed/input.sprout": {
+   "tpl:verse-chorus": "ae604fc6",
+   "tpl:four-parts": "49cf298c",
+   "add": "7491f332"
+  },
+  "history-redone.sprout": {
+   "tpl:verse-chorus": "5990d0fe",
+   "tpl:four-parts": "12469c35",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "99a1a645",
+   "fill:gentle:2": "14ac3945",
+   "fill:rise:1": "7c936f11",
+   "fill:rise:2": "25b7e9c9",
+   "fill:break:1": "654825b7",
+   "fill:break:2": "4a349473"
+  },
+  "history-renamed.sprout": {
+   "tpl:verse-chorus": "073e2837",
+   "tpl:four-parts": "256a8cc8",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "01edbba8",
+   "fill:gentle:2": "9983dc02",
+   "fill:rise:1": "d6f5d94c",
+   "fill:rise:2": "2f5c6fce",
+   "fill:break:1": "3713a5d4",
+   "fill:break:2": "621552ba"
+  },
+  "history-restored.sprout": {
+   "tpl:verse-chorus": "f08daca0",
+   "tpl:four-parts": "2da11e87",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "365b56fb",
+   "fill:gentle:2": "9d9f6f33",
+   "fill:rise:1": "f273c227",
+   "fill:rise:2": "3d281ce7",
+   "fill:break:1": "4ea1d265",
+   "fill:break:2": "96008379"
+  },
+  "library-blank.sprout": {
+   "tpl:verse-chorus": "885bef39",
+   "tpl:four-parts": "b641c164",
+   "add": "35578c52"
+  },
+  "library-copy-muted.sprout": {
+   "tpl:verse-chorus": "53aa613a",
+   "tpl:four-parts": "fad936b1",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "6f6d1001",
+   "fill:gentle:2": "27218aa3",
+   "fill:rise:1": "bdd1b085",
+   "fill:rise:2": "2ce42ddf",
+   "fill:break:1": "c74c6645",
+   "fill:break:2": "a48e3b0b"
+  },
+  "library-house-restored.sprout": {
+   "tpl:verse-chorus": "96770618",
+   "tpl:four-parts": "18c43eda",
+   "add": "4c5c9c31"
+  },
+  "library-house.sprout": {
+   "tpl:verse-chorus": "96770618",
+   "tpl:four-parts": "18c43eda",
+   "add": "4c5c9c31"
+  },
+  "library-import.sprout": {
+   "tpl:verse-chorus": "13ec1e25",
+   "tpl:four-parts": "066a6b06",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "60b8c986",
+   "fill:gentle:2": "90a42f08",
+   "fill:rise:1": "86b04462",
+   "fill:rise:2": "ffea15bc",
+   "fill:break:1": "45893bba",
+   "fill:break:2": "d7c11350"
+  },
+  "library-lofi.sprout": {
+   "tpl:verse-chorus": "538e419c",
+   "tpl:four-parts": "836b9dbf",
+   "add": "3ab417fb"
+  },
+  "library-restored-original.sprout": {
+   "tpl:verse-chorus": "f08daca0",
+   "tpl:four-parts": "2da11e87",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "365b56fb",
+   "fill:gentle:2": "9d9f6f33",
+   "fill:rise:1": "f273c227",
+   "fill:rise:2": "3d281ce7",
+   "fill:break:1": "4ea1d265",
+   "fill:break:2": "96008379"
+  },
+  "long-song-demo.sprout": {
+   "tpl:verse-chorus": "f08daca0",
+   "tpl:four-parts": "2da11e87",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "365b56fb",
+   "fill:gentle:2": "9d9f6f33",
+   "fill:rise:1": "f273c227",
+   "fill:rise:2": "3d281ce7",
+   "fill:break:1": "4ea1d265",
+   "fill:break:2": "96008379"
+  },
+  "note-chord-demo.sprout": {
+   "tpl:verse-chorus": "65d20df7",
+   "tpl:four-parts": "58d9eb66",
+   "add": "0a884660"
+  },
+  "palette-demo.sprout": {
+   "tpl:verse-chorus": "3b9fc472",
+   "tpl:four-parts": "dca30c19",
+   "add": "284a2f41"
+  },
+  "pattern-managed-cross-track.sprout": {
+   "tpl:verse-chorus": "ad3a6e23",
+   "tpl:four-parts": "cf103074",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "a6928b00",
+   "fill:gentle:2": "e3369f58",
+   "fill:rise:1": "0292cd14",
+   "fill:rise:2": "be587ad4",
+   "fill:break:1": "fecfcc5a",
+   "fill:break:2": "9e911a96"
+  },
+  "pattern-series-baseline.sprout": {
+   "tpl:verse-chorus": "2e501a2d",
+   "tpl:four-parts": "21a46a42",
+   "add": "3f221432"
+  },
+  "pattern-series-demo.sprout": {
+   "tpl:verse-chorus": "45fab134",
+   "tpl:four-parts": "fa86d692",
+   "add": "b8813089"
+  },
+  "pattern-series-detached.sprout": {
+   "tpl:verse-chorus": "d12fb707",
+   "tpl:four-parts": "c8263d8d",
+   "add": "c583738a"
+  },
+  "pattern-series-independent.sprout": {
+   "tpl:verse-chorus": "edf0ff7a",
+   "tpl:four-parts": "2ff33985",
+   "add": "69bec0d8"
+  },
+  "pattern-series-managed.sprout": {
+   "tpl:verse-chorus": "62337ec9",
+   "tpl:four-parts": "99d4f37f",
+   "add": "34f50d38"
+  },
+  "pattern-series-muted.sprout": {
+   "tpl:verse-chorus": "d12fb707",
+   "tpl:four-parts": "c8263d8d",
+   "add": "c583738a"
+  },
+  "pattern-series-ten.sprout": {
+   "tpl:verse-chorus": "5859b3a0",
+   "tpl:four-parts": "6f40b7f3",
+   "add": "cbace8c6"
+  },
+  "performance-demo.sprout": {
+   "tpl:verse-chorus": "09915b28",
+   "tpl:four-parts": "cb65b71e",
+   "add": "9f23b81b"
+  },
+  "phrase-transform-clip-range.sprout": {
+   "tpl:verse-chorus": "35ec2d8b",
+   "tpl:four-parts": "22731b8c",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "bbb1ecc8",
+   "fill:gentle:2": "a859bba0",
+   "fill:rise:1": "3a34e62c",
+   "fill:rise:2": "a93884ec",
+   "fill:break:1": "521f0242",
+   "fill:break:2": "a4c3382e"
+  },
+  "phrase-transform-demo.sprout": {
+   "tpl:verse-chorus": "cdc83fe2",
+   "tpl:four-parts": "1591e189",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "78fd2bb5",
+   "fill:gentle:2": "68bcf23d",
+   "fill:rise:1": "f7f9c7a9",
+   "fill:rise:2": "65ddc569",
+   "fill:break:1": "5127efdf",
+   "fill:break:2": "300a771b"
+  },
+  "phrase-transform-drums.sprout": {
+   "tpl:verse-chorus": "8b4137a4",
+   "tpl:four-parts": "b8e94efb",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "7692ddef",
+   "fill:gentle:2": "e5c2f59f",
+   "fill:rise:1": "fc7cb2b3",
+   "fill:rise:2": "75a2404b",
+   "fill:break:1": "59ce5149",
+   "fill:break:2": "19936fc5"
+  },
+  "phrase-transform-expanded.sprout": {
+   "tpl:verse-chorus": "f4ee6aae",
+   "tpl:four-parts": "442e6625",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "e65a31f8",
+   "fill:gentle:2": "2ea4fc7e",
+   "fill:rise:1": "c6b9551c",
+   "fill:rise:2": "f5dcaed2",
+   "fill:break:1": "cf5ef594",
+   "fill:break:2": "0b289666"
+  },
+  "portable-arranged-demo.sprout": {
+   "tpl:verse-chorus": "8613227d",
+   "tpl:four-parts": "9360f4cb",
+   "add": "1f3f15b4"
+  },
+  "portable-copy-demo.sprout": {
+   "tpl:verse-chorus": "6d3cfc39",
+   "tpl:four-parts": "2e2a2f1c",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "82bdc708",
+   "fill:gentle:2": "237ebf50",
+   "fill:rise:1": "bdc9e17c",
+   "fill:rise:2": "a42b4a3c",
+   "fill:break:1": "183b787a",
+   "fill:break:2": "b55bcd86"
+  },
+  "portable-import-demo.sprout": {
+   "tpl:verse-chorus": "d20c4272",
+   "tpl:four-parts": "6745fced",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "7d44c389",
+   "fill:gentle:2": "319bea61",
+   "fill:rise:1": "fa97c3cd",
+   "fill:rise:2": "950a660d",
+   "fill:break:1": "a5ac965f",
+   "fill:break:2": "ff08380b"
+  },
+  "portable-source-project.sprout": {
+   "tpl:verse-chorus": "d20c4272",
+   "tpl:four-parts": "6745fced",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "7d44c389",
+   "fill:gentle:2": "319bea61",
+   "fill:rise:1": "fa97c3cd",
+   "fill:rise:2": "950a660d",
+   "fill:break:1": "a5ac965f",
+   "fill:break:2": "ff08380b"
+  },
+  "portable-target-library.sprout": {
+   "tpl:verse-chorus": "4f1dbbc5",
+   "tpl:four-parts": "04e4e9fa",
+   "add": "2829098a"
+  },
+  "portable-target-start.sprout": {
+   "tpl:verse-chorus": "efe725fb",
+   "tpl:four-parts": "83f73822",
+   "add": "15078504"
+  },
+  "real-instruments-demo.sprout": {
+   "tpl:verse-chorus": "f863955e",
+   "tpl:four-parts": "5890af15",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "bfbb21ed",
+   "fill:gentle:2": "8d9c309b",
+   "fill:rise:1": "e7e3a271",
+   "fill:rise:2": "17f9f85f",
+   "fill:break:1": "1c7a179d",
+   "fill:break:2": "7b9e56ff"
+  },
+  "real-instruments-restored.sprout": {
+   "tpl:verse-chorus": "f863955e",
+   "tpl:four-parts": "5890af15",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "bfbb21ed",
+   "fill:gentle:2": "8d9c309b",
+   "fill:rise:1": "e7e3a271",
+   "fill:rise:2": "17f9f85f",
+   "fill:break:1": "1c7a179d",
+   "fill:break:2": "7b9e56ff"
+  },
+  "real-instruments-sustain-input.sprout": {
+   "tpl:verse-chorus": "32fb643d",
+   "tpl:four-parts": "367e9a37",
+   "add": "d44ab959"
+  },
+  "real-instruments-sustain-render.sprout": {
+   "tpl:verse-chorus": "32fb643d",
+   "tpl:four-parts": "367e9a37",
+   "add": "d44ab959"
+  },
+  "repeat-loop-demo.sprout": {
+   "tpl:verse-chorus": "c9793624",
+   "tpl:four-parts": "9fa1580e",
+   "add": "448ffb25"
+  },
+  "sampled-instruments-demo.sprout": {
+   "tpl:verse-chorus": "571de215",
+   "tpl:four-parts": "116069d6",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "4ae0f054",
+   "fill:gentle:2": "bbc14c64",
+   "fill:rise:1": "c2ce7640",
+   "fill:rise:2": "6491a660",
+   "fill:break:1": "3ba08fcc",
+   "fill:break:2": "f427e874"
+  },
+  "sampled-instruments-original.sprout": {
+   "tpl:verse-chorus": "f08daca0",
+   "tpl:four-parts": "2da11e87",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "365b56fb",
+   "fill:gentle:2": "9d9f6f33",
+   "fill:rise:1": "f273c227",
+   "fill:rise:2": "3d281ce7",
+   "fill:break:1": "4ea1d265",
+   "fill:break:2": "96008379"
+  },
+  "sampled-instruments-restored.sprout": {
+   "tpl:verse-chorus": "571de215",
+   "tpl:four-parts": "116069d6",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "4ae0f054",
+   "fill:gentle:2": "bbc14c64",
+   "fill:rise:1": "c2ce7640",
+   "fill:rise:2": "6491a660",
+   "fill:break:1": "3ba08fcc",
+   "fill:break:2": "f427e874"
+  },
+  "section-fill-gap.sprout": {
+   "tpl:verse-chorus": "f61c1894",
+   "tpl:four-parts": "35527e8b",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "a828b69d",
+   "fill:gentle:2": "98894d9f",
+   "fill:rise:1": "e34fc169",
+   "fill:rise:2": "93f1854b",
+   "fill:break:1": "f763dec1",
+   "fill:break:2": "dec742fb"
+  },
+  "section-fill-mobile-snare.sprout": {
+   "tpl:verse-chorus": "38e4c0ad",
+   "tpl:four-parts": "ad9464be",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "80dc787c",
+   "fill:gentle:2": "de37f1b2",
+   "fill:rise:1": "2a12481c",
+   "fill:rise:2": "237c56aa",
+   "fill:break:1": "e28f197a",
+   "fill:break:2": "72608170"
+  },
+  "section-fill-original.sprout": {
+   "tpl:verse-chorus": "f08daca0",
+   "tpl:four-parts": "2da11e87",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "365b56fb",
+   "fill:gentle:2": "9d9f6f33",
+   "fill:rise:1": "f273c227",
+   "fill:rise:2": "3d281ce7",
+   "fill:break:1": "4ea1d265",
+   "fill:break:2": "96008379"
+  },
+  "section-fill-restored.sprout": {
+   "tpl:verse-chorus": "f08daca0",
+   "tpl:four-parts": "2da11e87",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "365b56fb",
+   "fill:gentle:2": "9d9f6f33",
+   "fill:rise:1": "f273c227",
+   "fill:rise:2": "3d281ce7",
+   "fill:break:1": "4ea1d265",
+   "fill:break:2": "96008379"
+  },
+  "section-fill-rise.sprout": {
+   "tpl:verse-chorus": "f8ad8c81",
+   "tpl:four-parts": "539100e2",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "7e2a3b3a",
+   "fill:gentle:2": "5ec82aca",
+   "fill:rise:1": "22c4d6c6",
+   "fill:rise:2": "5da116ee",
+   "fill:break:1": "fa40d3d2",
+   "fill:break:2": "5b6c1de6"
+  },
+  "service-demo-baseline.sprout": {
+   "tpl:verse-chorus": "6d4461f6",
+   "tpl:four-parts": "a1d6645d",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "8bcd83e1",
+   "fill:gentle:2": "e41be669",
+   "fill:rise:1": "8075e3fd",
+   "fill:rise:2": "f1af5ebd",
+   "fill:break:1": "a1548af7",
+   "fill:break:2": "1e5db26b"
+  },
+  "service-demo.sprout": {
+   "tpl:verse-chorus": "d9f43a9d",
+   "tpl:four-parts": "7671f98e",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "53c6fbb2",
+   "fill:gentle:2": "7c47603a",
+   "fill:rise:1": "22584a2e",
+   "fill:rise:2": "ec919bee",
+   "fill:break:1": "6077b70c",
+   "fill:break:2": "e4085550"
+  },
+  "shared-pattern-demo.sprout": {
+   "tpl:verse-chorus": "2f37e48b",
+   "tpl:four-parts": "27953e09",
+   "add": "11800534"
+  },
+  "shared-transform-demo.sprout": {
+   "tpl:verse-chorus": "27544f02",
+   "tpl:four-parts": "0e8f2875",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "08a00a41",
+   "fill:gentle:2": "ef552789",
+   "fill:rise:1": "a5c33615",
+   "fill:rise:2": "e333dcd5",
+   "fill:break:1": "f7dd9f3b",
+   "fill:break:2": "c34686a7"
+  },
+  "shared-transform-eight-before.sprout": {
+   "tpl:verse-chorus": "ad94e50b",
+   "tpl:four-parts": "61e2810c",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "89ccc008",
+   "fill:gentle:2": "86f1a4f0",
+   "fill:rise:1": "f52d432c",
+   "fill:rise:2": "ddd50a6c",
+   "fill:break:1": "7ed13766",
+   "fill:break:2": "3fe27df2"
+  },
+  "shared-transform-eight.sprout": {
+   "tpl:verse-chorus": "3efac927",
+   "tpl:four-parts": "059c43b8",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "9fa7c23c",
+   "fill:gentle:2": "f3bf9994",
+   "fill:rise:1": "fa92d7d8",
+   "fill:rise:2": "791e8818",
+   "fill:break:1": "5c115bc2",
+   "fill:break:2": "2f938916"
+  },
+  "shared-transform-extended.sprout": {
+   "tpl:verse-chorus": "a42dc989",
+   "tpl:four-parts": "6a76670a",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "5ef5e1c1",
+   "fill:gentle:2": "98e8faa7",
+   "fill:rise:1": "a161d5d5",
+   "fill:rise:2": "1187e46b",
+   "fill:break:1": "e95c8b2d",
+   "fill:break:2": "ea544f0f"
+  },
+  "shared-transform-extension-before.sprout": {
+   "tpl:verse-chorus": "118649b1",
+   "tpl:four-parts": "750989fe",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "a3596372",
+   "fill:gentle:2": "1dc8b67a",
+   "fill:rise:1": "4686ae5e",
+   "fill:rise:2": "42e7049e",
+   "fill:break:1": "ac847af8",
+   "fill:break:2": "c5ce8dcc"
+  },
+  "shared-transform-mobile.sprout": {
+   "tpl:verse-chorus": "b04906f2",
+   "tpl:four-parts": "b2fa07f5",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "e111d559",
+   "fill:gentle:2": "d492cb11",
+   "fill:rise:1": "2ead8695",
+   "fill:rise:2": "2dec6a55",
+   "fill:break:1": "db2392cb",
+   "fill:break:2": "2298b44f"
+  },
+  "shared-transform-original.sprout": {
+   "tpl:verse-chorus": "f08daca0",
+   "tpl:four-parts": "2da11e87",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "365b56fb",
+   "fill:gentle:2": "9d9f6f33",
+   "fill:rise:1": "f273c227",
+   "fill:rise:2": "3d281ce7",
+   "fill:break:1": "4ea1d265",
+   "fill:break:2": "96008379"
+  },
+  "shared-transform-region.sprout": {
+   "tpl:verse-chorus": "9e909cde",
+   "tpl:four-parts": "8bfa1321",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "eea54e9d",
+   "fill:gentle:2": "e26862a5",
+   "fill:rise:1": "6ce12c41",
+   "fill:rise:2": "85d2e581",
+   "fill:break:1": "21bcad1b",
+   "fill:break:2": "bce1e967"
+  },
+  "shared-transform-restored.sprout": {
+   "tpl:verse-chorus": "f08daca0",
+   "tpl:four-parts": "2da11e87",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "365b56fb",
+   "fill:gentle:2": "9d9f6f33",
+   "fill:rise:1": "f273c227",
+   "fill:rise:2": "3d281ce7",
+   "fill:break:1": "4ea1d265",
+   "fill:break:2": "96008379"
+  },
+  "song-sections-demo.sprout": {
+   "tpl:verse-chorus": "b8a869d4",
+   "tpl:four-parts": "8d6c5fe5",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "9879b548",
+   "fill:gentle:2": "b5665032",
+   "fill:rise:1": "b45c65f7",
+   "fill:rise:2": "2c1d3761",
+   "fill:break:1": "103483c2",
+   "fill:break:2": "b0368fe4"
+  },
+  "song-sections-start.sprout": {
+   "tpl:verse-chorus": "9ebabc57",
+   "tpl:four-parts": "a4c4babd",
+   "add": "eee70573"
+  },
+  "sound-collection-house.sprout": {
+   "tpl:verse-chorus": "79f4b8b1",
+   "tpl:four-parts": "9b59ed13",
+   "add": "f3774b44"
+  },
+  "sound-collection-original.sprout": {
+   "tpl:verse-chorus": "811f22b4",
+   "tpl:four-parts": "bf508e2b",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "fb748647",
+   "fill:gentle:2": "8d68242f",
+   "fill:rise:1": "449088cb",
+   "fill:rise:2": "84b2e80b",
+   "fill:break:1": "a3082e95",
+   "fill:break:2": "63b32181"
+  },
+  "sound-collection-pad.sprout": {
+   "tpl:verse-chorus": "43439a67",
+   "tpl:four-parts": "ad5e60d8",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "189767ec",
+   "fill:gentle:2": "0c55cd94",
+   "fill:rise:1": "f2d46af8",
+   "fill:rise:2": "44e98938",
+   "fill:break:1": "fd851302",
+   "fill:break:2": "00035816"
+  },
+  "sound-collection-restored.sprout": {
+   "tpl:verse-chorus": "f08daca0",
+   "tpl:four-parts": "2da11e87",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "365b56fb",
+   "fill:gentle:2": "9d9f6f33",
+   "fill:rise:1": "f273c227",
+   "fill:rise:2": "3d281ce7",
+   "fill:break:1": "4ea1d265",
+   "fill:break:2": "96008379"
+  },
+  "sound-design-demo.sprout": {
+   "tpl:verse-chorus": "8b3ac615",
+   "tpl:four-parts": "c3eb3303",
+   "add": "9f0348d2"
+  },
+  "sound-library-v29/acoustic-choir-sketch.sprout": {
+   "tpl:verse-chorus": "fead91db",
+   "tpl:four-parts": "73e869d1",
+   "add": "7a43a957"
+  },
+  "sound-library-v29/edm-sketch.sprout": {
+   "tpl:verse-chorus": "1741e9b8",
+   "tpl:four-parts": "f26785fc",
+   "add": "c6fdf28a"
+  },
+  "ui-simplified.sprout": {
+   "tpl:verse-chorus": "f08daca0",
+   "tpl:four-parts": "2da11e87",
+   "add": "error:歌曲段落不能重叠",
+   "fill:gentle:1": "365b56fb",
+   "fill:gentle:2": "9d9f6f33",
+   "fill:rise:1": "f273c227",
+   "fill:rise:2": "3d281ce7",
+   "fill:break:1": "4ea1d265",
+   "fill:break:2": "96008379"
+  }
+ }
+}

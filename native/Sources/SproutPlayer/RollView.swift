@@ -71,6 +71,9 @@ struct RollView: View {
                 ScrollView(.horizontal, showsIndicators: true) {
                     ZStack(alignment: .topLeading) {
                         VStack(spacing: 0) {
+                            SectionsBar(model: model, pxPerBeat: pxPerBeat)
+                                .frame(width: contentWidth)
+                            Divider().frame(width: contentWidth)
                             TimelineView(model: model, pxPerBeat: pxPerBeat)
                                 .frame(width: contentWidth)
                             Divider().frame(width: contentWidth)
