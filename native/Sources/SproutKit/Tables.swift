@@ -3,6 +3,14 @@
 
 import Foundation
 
+public struct StyleInfo: Equatable {
+    public let id: String
+    public let name: String
+    public let icon: String
+    public let desc: String
+    public let bpm: Double
+}
+
 public struct SproutError: Error, CustomStringConvertible {
     public let message: String
     public init(_ message: String) { self.message = message }
@@ -51,6 +59,7 @@ public enum Tables {
         public let instruments: [String: InstrumentMeta]
         public let keys: [String: KeyInfo]
         public let styleIds: Set<String>
+        public let styles: [StyleInfo]
         public let sectionKinds: Set<String>
         public let waveforms: Set<String>
         public let soundDefaults: [String: JSONObject]     // 键序 = JS 字面量序,normalizeSound 依赖
@@ -150,10 +159,25 @@ public enum Tables {
         let patternNotes: Int = pattern["notes"]?.asNumber.map(Int.init) ?? 12000
         let patternPerPattern: Int = pattern["perPattern"]?.asNumber.map(Int.init) ?? 4000
 
+        var styleList: [StyleInfo] = []
+        if let styleArray = root["styles"]?.asArray {
+            for sv in styleArray {
+                guard let s = sv.asObject, let id = s["id"]?.asString else { continue }
+                styleList.append(StyleInfo(
+                    id: id,
+                    name: s["name"]?.asString ?? id,
+                    icon: s["icon"]?.asString ?? "",
+                    desc: s["desc"]?.asString ?? "",
+                    bpm: s["bpm"]?.asNumber ?? 86
+                ))
+            }
+        }
+
         return TablesData(
             instruments: instruments,
             keys: keys,
             styleIds: styleIds,
+            styles: styleList,
             sectionKinds: sectionKinds,
             waveforms: waveforms,
             soundDefaults: soundDefaults,
