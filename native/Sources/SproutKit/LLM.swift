@@ -2,6 +2,9 @@
 // URLSession 调用。校验规则与 deepseek.mjs 逐条一致(错误码语义)。
 
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 public enum LLMError: Error, CustomStringConvertible {
     case providerProject, providerEmpty, configuration, inputScope, network

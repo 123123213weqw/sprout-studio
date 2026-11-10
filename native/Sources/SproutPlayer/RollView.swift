@@ -155,9 +155,19 @@ struct RollView: View {
 
     private func handleSingleTap(at point: CGPoint) {
         if let hit = hitTest(point) {
+            if NSEvent.modifierFlags.contains(.command) {
+                if model.selectedNoteIds.contains(hit.event.noteId) {
+                    model.selectedNoteIds.remove(hit.event.noteId)
+                } else {
+                    model.selectedNoteIds.insert(hit.event.noteId)
+                }
+            } else {
+                model.selectedNoteIds = [hit.event.noteId]
+            }
             model.selectedNoteId = hit.event.noteId
         } else {
             model.selectedNoteId = nil
+            model.selectedNoteIds = []
             model.seek(to: Double(point.x / pxPerBeat))
         }
     }
@@ -209,10 +219,19 @@ struct RollView: View {
     private func commitDrag() {
         guard let context = drag else { return }
         drag = nil
+        let group = model.selectedNoteIds.contains(context.event.noteId)
+            ? model.selectedNoteIds
+            : [context.event.noteId]
         switch context.mode {
         case .move:
-            if context.beat != context.event.beat || context.pitch != context.event.pitch {
-                model.updateNote(id: context.event.noteId, label: "移动音符", start: context.beat, pitch: context.pitch)
+            let startDelta = context.beat - context.event.beat
+            let pitchDelta = context.pitch - context.event.pitch
+            if startDelta != 0 || pitchDelta != 0 {
+                if group.count > 1 {
+                    model.moveNotes(ids: group, startDelta: startDelta, pitchDelta: pitchDelta)
+                } else {
+                    model.updateNote(id: context.event.noteId, label: "移动音符", start: context.beat, pitch: context.pitch)
+                }
             }
         case .resize:
             if context.duration != context.event.duration {
@@ -254,7 +273,7 @@ struct RollView: View {
                     width: max(2.4, CGFloat(duration) * pxPerBeat - 1.2),
                     height: noteH
                 )
-                let selected = model.selectedNoteId == event.noteId
+                let selected = model.selectedNoteId == event.noteId || model.selectedNoteIds.contains(event.noteId)
                 context.fill(Path(roundedRect: rect, cornerRadius: 1.5),
                              with: .color(color(event.colorHex).opacity(alpha)))
                 if selected {
@@ -296,7 +315,7 @@ struct RollView: View {
                     height: laneH - 6
                 )
                 context.fill(Path(roundedRect: rect, cornerRadius: 3), with: .color(color(event.colorHex).opacity(alpha)))
-                if model.selectedNoteId == event.noteId {
+                if model.selectedNoteId == event.noteId || model.selectedNoteIds.contains(event.noteId) {
                     context.stroke(Path(roundedRect: rect.insetBy(dx: -1, dy: -1), cornerRadius: 4),
                                    with: .color(.white.opacity(0.9)), lineWidth: 1.2)
                 }
