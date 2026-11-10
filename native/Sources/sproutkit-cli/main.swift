@@ -28,6 +28,19 @@ func run() -> Int32 {
             return 1
         }
     }
+    if args[1] == "fromprompt" {
+        do {
+            let project = try validateProject(try loadSprout(text: String(contentsOf: URL(fileURLWithPath: args[2]), encoding: .utf8)))
+            var controls = JSONObject()
+            controls["seed"] = .number(7777)
+            let result = try generateFromPrompt(project, args[3], scope: args.count > 4 ? args[4] : "all", controls: controls)
+            print(jsCompactStringify(stripIdsForDump(.object(result.project))))
+            return 0
+        } catch {
+            FileHandle.standardError.write("\(error)\n".data(using: .utf8)!)
+            return 1
+        }
+    }
     if args[1] == "generate" {
         // generate <style> <key> <bars> <seed> [--controls](不依赖文件)
         guard args.count >= 6 else { FileHandle.standardError.write("参数不足\n".data(using: .utf8)!); return 2 }
