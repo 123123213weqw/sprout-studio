@@ -15,7 +15,14 @@ public func normalizeControls(_ input: JSONValue, seed: Double) throws -> JSONOb
 
     var out = JSONObject()
     for (k, dv) in defaults.pairs {
-        if k == "seed" { out[k] = .number(jsIsFinite(seed) ? seed : (jnum(defaults, "seed", 271828))) }
+        if k == "seed" {
+            // {...CONTROL_DEFAULTS, seed, ...input}:输入 seed 优先于参数
+            if let iv = obj[k], let n = iv.asNumber, jsIsFinite(n) {
+                out[k] = .number(n)
+            } else {
+                out[k] = .number(jsIsFinite(seed) ? seed : jnum(defaults, "seed", 271828))
+            }
+        }
         else if let iv = obj[k] { out[k] = iv } else { out[k] = dv }
     }
     for key in ["density", "complexity", "energy", "humanize"] {

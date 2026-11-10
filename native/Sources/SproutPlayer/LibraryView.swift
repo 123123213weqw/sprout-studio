@@ -111,6 +111,7 @@ struct NewProjectView: View {
     @State private var bpm: Double = 90
     @State private var key = "A minor"
     @State private var bars: Double = 16
+    @State private var style = ""
 
     private let keys = ["A minor", "C major", "D minor", "E minor", "G major", "F major"]
     private let barOptions: [Double] = [4, 8, 16, 32, 64]
@@ -135,13 +136,34 @@ struct NewProjectView: View {
                 Picker("", selection: $bars) { ForEach(barOptions, id: \.self) { Text("\(Int($0)) 小节") } }
                     .labelsHidden().frame(width: 120)
             }
+            VStack(alignment: .leading, spacing: 6) {
+                Text("起点").font(.caption).foregroundStyle(.secondary)
+                Picker("", selection: $style) {
+                    Text("空白工程").tag("")
+                    ForEach(Tables.shared.styles, id: \.id) { s in
+                        Text("\(s.icon) \(s.name)(\(Int(s.bpm)) BPM · \(s.desc))").tag(s.id)
+                    }
+                }
+                .labelsHidden()
+                .pickerStyle(.radioGroup)
+            }
             HStack {
                 Spacer()
                 Button("取消") { dismiss() }.keyboardShortcut(.cancelAction)
                 Button("创建并打开") {
                     do {
-                        let entry = try model.vault.create(name: name, bpm: bpm, key: key, bars: bars)
-                        model.openVaultEntry(entry)
+                        if style.isEmpty {
+                            let entry = try model.vault.create(name: name, bpm: bpm, key: key, bars: bars)
+                            model.openVaultEntry(entry)
+                        } else {
+                            // 四风格起点 = 本机灵感引擎模板(与 Web 版一致,不是模型调用)
+                            let project = try generateProject(GenerateOptions(
+                                style: style, key: key, bars: bars,
+                                seed: Int.random(in: 1...2_000_000_000)
+                            ))
+                            let entry = try model.vault.importProject(project, name: name.isEmpty ? nil : name)
+                            model.openVaultEntry(entry)
+                        }
                         onDone()
                         dismiss()
                     } catch {

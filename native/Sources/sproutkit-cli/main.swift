@@ -12,6 +12,29 @@ func run() -> Int32 {
         FileHandle.standardError.write("用法: sproutkit validate <file> | check <file> <canonical>\n".data(using: .utf8)!)
         return 2
     }
+    if args[1] == "generate" {
+        // generate <style> <key> <bars> <seed> [--controls](不依赖文件)
+        guard args.count >= 6 else { FileHandle.standardError.write("参数不足\n".data(using: .utf8)!); return 2 }
+        var composition: JSONObject? = nil
+        if args.contains("--controls") {
+            var c = JSONObject()
+            c["density"] = .number(80); c["complexity"] = .number(80); c["energy"] = .number(75)
+            c["humanize"] = .number(25); c["progression"] = .string("lift")
+            c["voiceLeading"] = .bool(false); c["seed"] = .number(424242)
+            composition = c
+        }
+        do {
+            let project = try generateProject(GenerateOptions(
+                style: args[2], key: args[3], bars: Double(args[4]) ?? 4,
+                seed: Int(args[5]) ?? 1, composition: composition
+            ))
+            print(jsCompactStringify(stripIdsForDump(.object(project))))
+            return 0
+        } catch {
+            FileHandle.standardError.write("生成失败:\(error)\n".data(using: .utf8)!)
+            return 1
+        }
+    }
     let url = URL(fileURLWithPath: args[2])
     guard let text = try? String(contentsOf: url, encoding: .utf8) else {
         FileHandle.standardError.write("无法读取 \(args[2])\n".data(using: .utf8)!)
