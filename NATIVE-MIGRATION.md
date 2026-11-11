@@ -1,6 +1,10 @@
 # Sprout Studio 原生化迁移计划(Web/Electron → macOS 原生 Swift)
 
-状态:v3(2026-11-11,M0–M3 全部落地;见 §11 实绩总账)
+状态:v4(2026-11-11,M0–M3 全部落地;Web 栈已退役,原生为唯一实现,见 §0a)
+
+## 0a. Web 栈退役(2026-11-11)
+
+逻辑层 100% 对拍完成后,Web/Electron 版整栈移除:`dist/`、Node 服务(server/bridge/llm)、JS 测试、desktop/ 与 node CI。原"双栈互维护"收敛为**原生唯一 + 基准锁定**:`shared/canonical/`(11 个基准,~7400 项)与 `shared/*.json` 数据源继续是契约;格式演进时以基准为可执行规范(如需重新生成基准,可从退役前的 git 历史检出 dist 运行 tools/gen-m*-canonical.mjs)。采样许可在 `shared/sample-licenses/`。
 
 ## 0. 决策与目标
 
