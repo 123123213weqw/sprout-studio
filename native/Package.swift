@@ -21,7 +21,8 @@ let package = Package(
         .executableTarget(
             name: "SproutPlayer",
             dependencies: ["SproutKit", "SproutAudio", "SproutRealtime"],
-            path: "Sources/SproutPlayer"
+            path: "Sources/SproutPlayer",
+            resources: [.copy("../SproutPlayerResources/AppIcon.icns")]
         ),
         .executableTarget(
             name: "sproutkit-cli",
