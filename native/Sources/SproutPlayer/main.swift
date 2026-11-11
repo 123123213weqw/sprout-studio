@@ -648,6 +648,12 @@ final class PlayerModel: ObservableObject {
 
     @Published var selectedClipId: String?
 
+    func applySectionOp(_ label: String, _ op: (JSONObject) throws -> JSONObject) {
+        applyEdit(label) { p in
+            try op(p)
+        }
+    }
+
     func clipOp(_ label: String, _ op: (JSONObject) throws -> JSONObject) {
         applyEdit(label) { p in
             try op(p)

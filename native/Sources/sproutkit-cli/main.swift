@@ -28,6 +28,27 @@ func run() -> Int32 {
             return 1
         }
     }
+    if args[1] == "fill" {
+        do {
+            let project = try validateProject(try loadSprout(text: String(contentsOf: URL(fileURLWithPath: args[2]), encoding: .utf8)))
+            let sections = (project["sections"]?.asArray ?? []).compactMap { $0.asObject }
+            guard let section = sections.last, let sectionId = section["id"]?.asString else { return 2 }
+            let drumIds = (project["tracks"]?.asArray ?? []).compactMap { $0.asObject }
+                .filter { $0["kind"]?.asString == "drum" }.map { $0["id"]?.asString ?? "" }
+            var controls = JSONObject()
+            controls["style"] = .string(args.count > 3 ? args[3] : "gentle")
+            controls["bars"] = .number(1)
+            controls["energy"] = .number(70)
+            controls["seed"] = .number(42)
+            controls["fillGaps"] = .bool(true)
+            let result = try planSectionFill(project, sectionId: sectionId, trackIds: drumIds, controls: controls)
+            print(jsCompactStringify(stripIdsForDump(.object(result.project))))
+            return 0
+        } catch {
+            FileHandle.standardError.write("\(error)\n".data(using: .utf8)!)
+            return 1
+        }
+    }
     if args[1] == "fromprompt" {
         do {
             let project = try validateProject(try loadSprout(text: String(contentsOf: URL(fileURLWithPath: args[2]), encoding: .utf8)))
