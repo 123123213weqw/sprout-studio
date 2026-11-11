@@ -277,3 +277,226 @@ public func planSectionFill(_ project: JSONObject, sectionId: String, trackIds: 
     }
     return (next, report)
 }
+
+// MARK: - 段落复制/移动/清空(sections.js planSection + sliceNote/sliceClip)
+
+private func sliceNote(_ n: JSONObject, _ a: Double, _ b: Double, fresh: Bool, used: inout Set<String>) throws -> JSONObject? {
+    let noteStart = jnum(n, "start")
+    let stop0 = noteStart + jnum(n, "duration", 0.125)
+    let start = max(noteStart, a)
+    let stop = min(stop0, b)
+    if stop <= start + EPS { return nil }
+    if stop - start < 0.03125 - EPS {
+        throw SproutError("段落切点产生过短音符，无法完整保留片段，请调整段落边界")
+    }
+    var out = n
+    let id = n["id"]?.asString ?? ""
+    out["id"] = .string(fresh || used.contains(id) ? jsUid() : id)
+    out["start"] = .number(round4(start))
+    out["duration"] = .number(round4(stop - start))
+    used.insert(id)
+    if out.has("timingOffset") {
+        let dur = jnum(out, "duration")
+        let offset = round4(max(a - start, min(jnum(out, "timingOffset"), b - start - dur)))
+        out["timingOffset"] = .number(offset)
+    }
+    return out
+}
+
+private struct SlicedPart {
+    var clip: JSONObject
+    var notes: [JSONObject]
+    var limitedTiming: Int
+}
+
+private func sliceClip(_ track: JSONObject, _ clip: JSONObject, _ a: Double, _ b: Double,
+                       patterns: [JSONObject], fresh: Bool, used: inout Set<String>,
+                       linked: Bool = false, wholeMove: Bool = false) throws -> SlicedPart {
+    if b - a < 0.25 - EPS { throw SproutError("段落切点产生过短音块，请调整段落边界") }
+    let cs = jnum(clip, "start"), cl = jnum(clip, "length", 4)
+    let whole = abs(a - cs) < EPS && abs(b - (cs + cl)) < EPS
+    var next = clip
+    next["id"] = .string(fresh ? jsUid() : (clip["id"]?.asString ?? jsUid()))
+    next["start"] = .number(round4(a))
+    next["length"] = .number(round4(b - a))
+    if !whole || (!linked && !wholeMove) { next["patternId"] = nil }
+    var limitedTiming = 0
+    var notes: [JSONObject] = []
+    for n in notesInClip(track, clip) {
+        if let part = try sliceNote(n, a, b, fresh: fresh, used: &used) {
+            if jnum(part, "timingOffset") != jnum(n, "timingOffset") { limitedTiming += 1 }
+            notes.append(part)
+        }
+    }
+    if next.has("patternId"), fresh, let pid = next["patternId"]?.asString,
+       let pattern = patterns.first(where: { $0["id"]?.asString == pid }) {
+        notes = materializedNotes(pattern: pattern, clip: next)
+    }
+    return SlicedPart(clip: next, notes: notes, limitedTiming: limitedTiming)
+}
+
+public struct SectionOpReport {
+    public var tracks = 0
+    public var clips = 0
+    public var crossingClips = 0
+    public var crossingNotes = 0
+    public var linkedCopies = 0
+    public var detached = 0
+    public var limitedTiming = 0
+    public var addedNotes = 0
+    public var removedNotes = 0
+    public var extended = false
+}
+
+public func planSection(_ project: JSONObject, sectionId: String, action: String,
+                        start: Double? = nil, linked: Bool = false, extend: Bool = false,
+                        name: String? = nil) throws -> (project: JSONObject, sectionId: String?, clipIds: [String], report: SectionOpReport) {
+    let before = try validateProject(.object(project))
+    let section = try sectionAt(before, sectionId)
+    let a = jnum(section, "start")
+    let b = a + jnum(section, "length", 4)
+    var out = before
+    var report = SectionOpReport()
+
+    guard ["copy", "move", "clear", "label-delete"].contains(action) else {
+        throw SproutError("段落操作不正确")
+    }
+    if action == "label-delete" {
+        out["sections"] = .array(jarr(out["sections"]).filter { jobj($0)?["id"]?.asString != sectionId })
+        if jarr(out["sections"]).isEmpty { out["sections"] = nil }
+        return (out, nil, [], report)
+    }
+
+    var targetStart: Double = 0
+    if action != "clear" {
+        guard let s = start, jsIsInteger(s), s >= 0, Int(s) % 4 == 0 else {
+            throw SproutError("目标起点须是完整小节")
+        }
+        targetStart = s
+        if a < targetStart + (b - a) - EPS && targetStart < b - EPS {
+            throw SproutError("源段落与目标范围不能重叠")
+        }
+        let need = targetStart + (b - a)
+        if need > jnum(out, "bars", 4) * 4 {
+            if !extend { throw SproutError("目标超出工程，可明确选择延长为留白") }
+            out["bars"] = .number(try expandedBars(need, current: jnum(out, "bars", 4)))
+            report.extended = true
+        }
+        var target = section
+        target["id"] = .string(action == "copy" ? jsUid() : (section["id"]?.asString ?? jsUid()))
+        if let name = name {
+            target["name"] = .string(jsSlice16(name, 40))
+        } else if action == "copy" {
+            target["name"] = .string(jsSlice16((section["name"]?.asString ?? "段落") + " · 副本", 40))
+        }
+        target["start"] = .number(targetStart)
+        let kept = jarr(out["sections"]).filter { action == "copy" || jobj($0)?["id"]?.asString != sectionId }
+        out["sections"] = .array(try normalizeSections(.array(kept + [.object(target)]), jnum(out, "bars", 4) * 4))
+        // 目标范围已有音块则拒绝
+        for t in jarr(before["tracks"]).compactMap(jobj) {
+            for c in jarr(t["clips"]).compactMap(jobj) {
+                let cs = jnum(c, "start"), cl = jnum(c, "length", 4)
+                if cs < targetStart + (b - a) - EPS && targetStart < cs + cl - EPS {
+                    throw SproutError("目标范围已有音块，不能覆盖。请先移走，或换一个空白位置")
+                }
+            }
+        }
+    }
+
+    let patterns = jarr(before["patterns"]).compactMap(jobj)
+    let beforeTracks = jarr(before["tracks"]).compactMap(jobj)
+    var movedIds: [String] = []
+    var tracksOut: [JSONValue] = []
+    for tv in jarr(out["tracks"]) {
+        guard var track = jobj(tv), let trackId = track["id"]?.asString,
+              let source = beforeTracks.first(where: { $0["id"]?.asString == trackId }) else {
+            tracksOut.append(tv)
+            continue
+        }
+        let hit = jarr(source["clips"]).compactMap(jobj).filter { c in
+            let cs = jnum(c, "start"), cl = jnum(c, "length", 4)
+            return cs < b - EPS && a < cs + cl - EPS
+        }
+        if hit.isEmpty { tracksOut.append(tv); continue }
+        report.tracks += 1
+        report.clips += hit.count
+        var retained: [SlicedPart] = []
+        var pieces: [SlicedPart] = []
+        var used = Set<String>()
+        let hitIds = Set(hit.map { $0["id"]?.asString ?? "" })
+        for clip in jarr(source["clips"]).compactMap(jobj) {
+            if !hitIds.contains(clip["id"]?.asString ?? "") {
+                retained.append(SlicedPart(clip: clip, notes: notesInClip(source, clip), limitedTiming: 0))
+                continue
+            }
+            let cs = jnum(clip, "start"), cl = jnum(clip, "length", 4)
+            let left = max(a, cs), right = min(b, cs + cl)
+            let whole = left == cs && right == cs + cl
+            if !whole { report.crossingClips += 1 }
+            for n in notesInClip(source, clip) {
+                let ns = jnum(n, "start"), nd = jnum(n, "duration", 0.125)
+                if (ns < left - EPS && ns + nd > left + EPS) || (ns < right - EPS && ns + nd > right + EPS) {
+                    report.crossingNotes += 1
+                }
+            }
+            if action == "copy" {
+                retained.append(SlicedPart(clip: clip, notes: notesInClip(source, clip), limitedTiming: 0))
+            } else {
+                var first = true
+                for (lo, hi) in [(cs, left), (right, cs + cl)] {
+                    if hi > lo + EPS {
+                        var part = try sliceClip(source, clip, lo, hi, patterns: patterns, fresh: false, used: &used)
+                        if !first { part.clip["id"] = .string(jsUid()) }
+                        first = false
+                        if clip.has("patternId") && !part.clip.has("patternId") { report.detached += 1 }
+                        report.limitedTiming += part.limitedTiming
+                        retained.append(part)
+                    }
+                }
+            }
+            if action != "clear" {
+                var part = try sliceClip(source, clip, left, right, patterns: patterns,
+                                         fresh: action == "copy" || !whole,
+                                         used: &used,
+                                         linked: action == "copy" && linked,
+                                         wholeMove: action == "move" && whole)
+                if part.clip.has("patternId") && action == "copy" { report.linkedCopies += 1 }
+                if clip.has("patternId") && !part.clip.has("patternId") { report.detached += 1 }
+                report.limitedTiming += part.limitedTiming
+                let delta = targetStart - a
+                part.clip["start"] = .number(round4(jnum(part.clip, "start") + delta))
+                for i in part.notes.indices {
+                    part.notes[i]["start"] = .number(round4(jnum(part.notes[i], "start") + delta))
+                }
+                pieces.append(part)
+                movedIds.append(part.clip["id"]?.asString ?? "")
+            }
+        }
+        let all = retained + pieces
+        track["clips"] = .array(all.map { .object($0.clip) })
+        var flatNotes: [JSONValue] = []
+        for part in all { flatNotes.append(contentsOf: part.notes.map { .object($0) }) }
+        track["notes"] = .array(flatNotes)
+        guard jarr(track["clips"]).count <= 256 else { throw SproutError("段落操作超过每轨 256 音块上限") }
+        let oldIds = Set(jarr(source["notes"]).compactMap { jobj($0)?["id"]?.asString })
+        let newIds = Set(jarr(track["notes"]).compactMap { jobj($0)?["id"]?.asString })
+        report.addedNotes += newIds.subtracting(oldIds).count
+        report.removedNotes += oldIds.subtracting(newIds).count
+        tracksOut.append(.object(track))
+    }
+    out["tracks"] = .array(tracksOut)
+
+    try ensureClips(&out, strict: false)
+    let result = try validateProject(.object(out))
+    let resultSectionId: String?
+    if action == "copy" {
+        var found: String?
+        for sv in jarr(result["sections"]) {
+            if let s = jobj(sv), jnum(s, "start") == targetStart { found = s["id"]?.asString; break }
+        }
+        resultSectionId = found
+    } else {
+        resultSectionId = sectionId
+    }
+    return (result, resultSectionId, movedIds, report)
+}

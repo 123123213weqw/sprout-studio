@@ -73,6 +73,27 @@ struct SectionsBar: View {
                 Button("编辑…") { editDialog(section) }
                 Button("生成过门…") { fillDialog(section) }
                 Divider()
+                Button("复制到曲末") {
+                    let sid = id
+                    model.applySectionOp("复制段落") { p in
+                        try planSection(p, sectionId: sid, action: "copy",
+                                        start: jnum(p, "bars", 4) * 4, extend: true).project
+                    }
+                }
+                Button("移动到曲末") {
+                    let sid = id
+                    model.applySectionOp("移动段落") { p in
+                        try planSection(p, sectionId: sid, action: "move",
+                                        start: jnum(p, "bars", 4) * 4, extend: true).project
+                    }
+                }
+                Button("清空内容(保留标签)") {
+                    let sid = id
+                    model.applySectionOp("清空段落") { p in
+                        try planSection(p, sectionId: sid, action: "clear").project
+                    }
+                }
+                Divider()
                 Button("删除段落", role: .destructive) {
                     model.applySectionOp("删除段落") { p in try deleteSection(p, id: id) }
                 }

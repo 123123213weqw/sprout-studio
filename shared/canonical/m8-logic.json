@@ -1,0 +1,327 @@
+{
+ "version": 1,
+ "sectionOps": {
+  "candidate-a.sprout": {
+   "s0:copy-end": "ff85e29c",
+   "s0:copy-linked": "ff85e29c",
+   "s0:move-end": "a78dbf7e",
+   "s0:clear": "5e3a342a",
+   "s0:label-delete": "e0967e00"
+  },
+  "candidate-b.sprout": {
+   "s0:copy-end": "ee78bbe5",
+   "s0:copy-linked": "ee78bbe5",
+   "s0:move-end": "308eac41",
+   "s0:clear": "6d5b4dfb",
+   "s0:label-delete": "07728adb"
+  },
+  "candidate-c.sprout": {
+   "s0:copy-end": "189598a4",
+   "s0:copy-linked": "189598a4",
+   "s0:move-end": "4a9af856",
+   "s0:clear": "e2732f74",
+   "s0:label-delete": "739d473e"
+  },
+  "candidate-mock-service.sprout": {
+   "s0:copy-end": "d16a29db",
+   "s0:copy-linked": "d16a29db",
+   "s0:move-end": "1e4b35c7",
+   "s0:clear": "fb8bd73b",
+   "s0:label-delete": "41b98f4b"
+  },
+  "deepseek-batch-v27/section-with-patterns/composition.sprout": {
+   "s0:copy-end": "15bfeddd",
+   "s0:copy-linked": "15bfeddd",
+   "s0:move-end": "331c1406",
+   "s0:clear": "bde78430",
+   "s0:label-delete": "8cd926bb"
+  },
+  "history-redone.sprout": {
+   "s0:copy-end": "c0daed2d",
+   "s0:copy-linked": "c0daed2d",
+   "s0:move-end": "1031f8e9",
+   "s0:clear": "1a4de72d",
+   "s0:label-delete": "db8c947d"
+  },
+  "history-renamed.sprout": {
+   "s0:copy-end": "a4cced98",
+   "s0:copy-linked": "a4cced98",
+   "s0:move-end": "1e27781a",
+   "s0:clear": "d217cd94",
+   "s0:label-delete": "69fe700e"
+  },
+  "history-restored.sprout": {
+   "s0:copy-end": "5a8a5a33",
+   "s0:copy-linked": "5a8a5a33",
+   "s0:move-end": "3ba9291f",
+   "s0:clear": "feaac863",
+   "s0:label-delete": "73099e8b"
+  },
+  "library-copy-muted.sprout": {
+   "s0:copy-end": "1740c4ec",
+   "s0:copy-linked": "1740c4ec",
+   "s0:move-end": "2fe68495",
+   "s0:clear": "80a53b88",
+   "s0:label-delete": "30dfbee9"
+  },
+  "library-import.sprout": {
+   "s0:copy-end": "f4b177f0",
+   "s0:copy-linked": "f4b177f0",
+   "s0:move-end": "0f0deef8",
+   "s0:clear": "c7e4ef64",
+   "s0:label-delete": "67758aa8"
+  },
+  "library-restored-original.sprout": {
+   "s0:copy-end": "5a8a5a33",
+   "s0:copy-linked": "5a8a5a33",
+   "s0:move-end": "3ba9291f",
+   "s0:clear": "feaac863",
+   "s0:label-delete": "73099e8b"
+  },
+  "long-song-demo.sprout": {
+   "s0:copy-end": "5a8a5a33",
+   "s0:copy-linked": "5a8a5a33",
+   "s0:move-end": "3ba9291f",
+   "s0:clear": "feaac863",
+   "s0:label-delete": "73099e8b"
+  },
+  "pattern-managed-cross-track.sprout": {
+   "s0:copy-end": "3153550b",
+   "s0:copy-linked": "3153550b",
+   "s0:move-end": "ba0d2aba",
+   "s0:clear": "feaac863",
+   "s0:label-delete": "8238c62a"
+  },
+  "phrase-transform-clip-range.sprout": {
+   "s0:copy-end": "734436f4",
+   "s0:copy-linked": "734436f4",
+   "s0:move-end": "2a209c20",
+   "s0:clear": "42a325a6",
+   "s0:label-delete": "55e4fc72"
+  },
+  "phrase-transform-demo.sprout": {
+   "s0:copy-end": "9052552b",
+   "s0:copy-linked": "9052552b",
+   "s0:move-end": "1b162079",
+   "s0:clear": "feaac863",
+   "s0:label-delete": "4638b031"
+  },
+  "phrase-transform-drums.sprout": {
+   "s0:copy-end": "33e518fe",
+   "s0:copy-linked": "33e518fe",
+   "s0:move-end": "ceb7211e",
+   "s0:clear": "feaac863",
+   "s0:label-delete": "e243620f"
+  },
+  "phrase-transform-expanded.sprout": {
+   "s0:copy-end": "error:超过 64 小节工程上限",
+   "s0:copy-linked": "error:超过 64 小节工程上限",
+   "s0:move-end": "error:超过 64 小节工程上限",
+   "s0:clear": "39392d34",
+   "s0:label-delete": "e78a52ba"
+  },
+  "portable-copy-demo.sprout": {
+   "s0:copy-end": "74267050",
+   "s0:copy-linked": "74267050",
+   "s0:move-end": "ecaf53e4",
+   "s0:clear": "9694a620",
+   "s0:label-delete": "844642f8"
+  },
+  "portable-import-demo.sprout": {
+   "s0:copy-end": "53a91d61",
+   "s0:copy-linked": "53a91d61",
+   "s0:move-end": "96c61ec5",
+   "s0:clear": "1b834171",
+   "s0:label-delete": "739c0df9"
+  },
+  "portable-source-project.sprout": {
+   "s0:copy-end": "53a91d61",
+   "s0:copy-linked": "53a91d61",
+   "s0:move-end": "96c61ec5",
+   "s0:clear": "1b834171",
+   "s0:label-delete": "739c0df9"
+  },
+  "real-instruments-demo.sprout": {
+   "s0:copy-end": "6727a365",
+   "s0:copy-linked": "6727a365",
+   "s0:move-end": "3f1a7e38",
+   "s0:clear": "3decf96c",
+   "s0:label-delete": "ab56a91d"
+  },
+  "real-instruments-restored.sprout": {
+   "s0:copy-end": "6727a365",
+   "s0:copy-linked": "6727a365",
+   "s0:move-end": "3f1a7e38",
+   "s0:clear": "3decf96c",
+   "s0:label-delete": "ab56a91d"
+  },
+  "sampled-instruments-demo.sprout": {
+   "s0:copy-end": "c667ed02",
+   "s0:copy-linked": "c667ed02",
+   "s0:move-end": "f8119f48",
+   "s0:clear": "d4f67c92",
+   "s0:label-delete": "b0a05ad8"
+  },
+  "sampled-instruments-original.sprout": {
+   "s0:copy-end": "5a8a5a33",
+   "s0:copy-linked": "5a8a5a33",
+   "s0:move-end": "3ba9291f",
+   "s0:clear": "feaac863",
+   "s0:label-delete": "73099e8b"
+  },
+  "sampled-instruments-restored.sprout": {
+   "s0:copy-end": "c667ed02",
+   "s0:copy-linked": "c667ed02",
+   "s0:move-end": "f8119f48",
+   "s0:clear": "d4f67c92",
+   "s0:label-delete": "b0a05ad8"
+  },
+  "section-fill-gap.sprout": {
+   "s0:copy-end": "69b13b41",
+   "s0:copy-linked": "69b13b41",
+   "s0:move-end": "aa2d6853",
+   "s0:clear": "396f6dbd",
+   "s0:label-delete": "725fdfff"
+  },
+  "section-fill-mobile-snare.sprout": {
+   "s0:copy-end": "f3aedb62",
+   "s0:copy-linked": "f3aedb62",
+   "s0:move-end": "d3c080ac",
+   "s0:clear": "5b382e46",
+   "s0:label-delete": "0a6b8ad0"
+  },
+  "section-fill-original.sprout": {
+   "s0:copy-end": "5a8a5a33",
+   "s0:copy-linked": "5a8a5a33",
+   "s0:move-end": "3ba9291f",
+   "s0:clear": "feaac863",
+   "s0:label-delete": "73099e8b"
+  },
+  "section-fill-restored.sprout": {
+   "s0:copy-end": "5a8a5a33",
+   "s0:copy-linked": "5a8a5a33",
+   "s0:move-end": "3ba9291f",
+   "s0:clear": "feaac863",
+   "s0:label-delete": "73099e8b"
+  },
+  "section-fill-rise.sprout": {
+   "s0:copy-end": "34e134a4",
+   "s0:copy-linked": "34e134a4",
+   "s0:move-end": "8c9fe672",
+   "s0:clear": "76607782",
+   "s0:label-delete": "a9174ca4"
+  },
+  "service-demo-baseline.sprout": {
+   "s0:copy-end": "c3d84e89",
+   "s0:copy-linked": "c3d84e89",
+   "s0:move-end": "98faf2a1",
+   "s0:clear": "9e6cc619",
+   "s0:label-delete": "dc702c95"
+  },
+  "service-demo.sprout": {
+   "s0:copy-end": "74537cc1",
+   "s0:copy-linked": "74537cc1",
+   "s0:move-end": "6ec83380",
+   "s0:clear": "670df90f",
+   "s0:label-delete": "ca7c6c40"
+  },
+  "shared-transform-demo.sprout": {
+   "s0:copy-end": "2f7bb5c5",
+   "s0:copy-linked": "2f7bb5c5",
+   "s0:move-end": "1ec983bd",
+   "s0:clear": "f615e4c5",
+   "s0:label-delete": "62f38e11"
+  },
+  "shared-transform-eight-before.sprout": {
+   "s0:copy-end": "5a54e1cb",
+   "s0:copy-linked": "5a54e1cb",
+   "s0:move-end": "33239c28",
+   "s0:clear": "a780751b",
+   "s0:label-delete": "bf49eaf2"
+  },
+  "shared-transform-eight.sprout": {
+   "s0:copy-end": "a08b581f",
+   "s0:copy-linked": "a08b581f",
+   "s0:move-end": "f3c67aa8",
+   "s0:clear": "aed440d3",
+   "s0:label-delete": "51f18136"
+  },
+  "shared-transform-extended.sprout": {
+   "s0:copy-end": "error:超过 64 小节工程上限",
+   "s0:copy-linked": "error:超过 64 小节工程上限",
+   "s0:move-end": "error:超过 64 小节工程上限",
+   "s0:clear": "2cb912e5",
+   "s0:label-delete": "b390ab95"
+  },
+  "shared-transform-extension-before.sprout": {
+   "s0:copy-end": "f9ba417a",
+   "s0:copy-linked": "f9ba417a",
+   "s0:move-end": "90b77646",
+   "s0:clear": "82ab1b8a",
+   "s0:label-delete": "d3e24de2"
+  },
+  "shared-transform-mobile.sprout": {
+   "s0:copy-end": "e7c338fd",
+   "s0:copy-linked": "e7c338fd",
+   "s0:move-end": "989ecc2d",
+   "s0:clear": "00485975",
+   "s0:label-delete": "fbefaac9"
+  },
+  "shared-transform-original.sprout": {
+   "s0:copy-end": "5a8a5a33",
+   "s0:copy-linked": "5a8a5a33",
+   "s0:move-end": "3ba9291f",
+   "s0:clear": "feaac863",
+   "s0:label-delete": "73099e8b"
+  },
+  "shared-transform-region.sprout": {
+   "s0:copy-end": "1da7bf37",
+   "s0:copy-linked": "1da7bf37",
+   "s0:move-end": "2289e983",
+   "s0:clear": "c3034ff1",
+   "s0:label-delete": "0af0d79d"
+  },
+  "shared-transform-restored.sprout": {
+   "s0:copy-end": "5a8a5a33",
+   "s0:copy-linked": "5a8a5a33",
+   "s0:move-end": "3ba9291f",
+   "s0:clear": "feaac863",
+   "s0:label-delete": "73099e8b"
+  },
+  "song-sections-demo.sprout": {
+   "s0:copy-end": "4ee6c9a4",
+   "s0:copy-linked": "4ee6c9a4",
+   "s0:move-end": "afed5237",
+   "s0:clear": "ebed2f9a",
+   "s0:label-delete": "a71da561"
+  },
+  "sound-collection-original.sprout": {
+   "s0:copy-end": "3dcd53ab",
+   "s0:copy-linked": "3dcd53ab",
+   "s0:move-end": "1bdb2763",
+   "s0:clear": "22703a8f",
+   "s0:label-delete": "09cfe4df"
+  },
+  "sound-collection-pad.sprout": {
+   "s0:copy-end": "e77f48fc",
+   "s0:copy-linked": "e77f48fc",
+   "s0:move-end": "77096d56",
+   "s0:clear": "81539404",
+   "s0:label-delete": "c9b95fbe"
+  },
+  "sound-collection-restored.sprout": {
+   "s0:copy-end": "5a8a5a33",
+   "s0:copy-linked": "5a8a5a33",
+   "s0:move-end": "3ba9291f",
+   "s0:clear": "feaac863",
+   "s0:label-delete": "73099e8b"
+  },
+  "ui-simplified.sprout": {
+   "s0:copy-end": "5a8a5a33",
+   "s0:copy-linked": "5a8a5a33",
+   "s0:move-end": "3ba9291f",
+   "s0:clear": "feaac863",
+   "s0:label-delete": "73099e8b"
+  }
+ }
+}
