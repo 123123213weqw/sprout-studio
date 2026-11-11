@@ -96,6 +96,25 @@ final class PlayerModel: ObservableObject {
         selectedNoteId = nil
     }
 
+    func applyPerformancePreset(ids: Set<String>, controls: JSONObject) {
+        guard !ids.isEmpty else { return }
+        // 找到选中音符所在的(第一条)轨道
+        for t in tracks {
+            let trackIds = Set(jarrPublic(t["notes"]).compactMap { $0.asObject?["id"]?.asString })
+            guard ids.isSubset(of: trackIds) else { continue }
+            guard let trackId = t["id"]?.asString else { return }
+            applyEdit("演奏整理") { p in
+                guard let result = try planPerformance(p, trackId: trackId, scope: "selected",
+                                                       ids: Array(ids), controls: controls).project else {
+                    throw SproutError("整理被拒绝：请扩大选择或降低强度")
+                }
+                return result
+            }
+            return
+        }
+        error = "跨轨道多选暂不支持整理，请单轨选择"
+    }
+
     func selectAllNotes() {
         selectedNoteIds = Set(rollEvents.map { $0.noteId })
         selectedNoteId = selectedNoteIds.first

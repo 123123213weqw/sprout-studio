@@ -1,0 +1,635 @@
+{
+ "version": 1,
+ "performance": {
+  "acoustic-v28/acoustic-trio.sprout": {
+   "pluck:tidy": "c37e66cf",
+   "pluck:natural": "7bf37a1d",
+   "pluck:soft": "240a1af3",
+   "pluck:strong": "1574e2d0",
+   "pluck:trim": "ed1e08c8"
+  },
+  "acoustic-v28/deepseek-natural-performance.sprout": {
+   "kick:tidy": "25a43634",
+   "kick:natural": "d79ef666",
+   "kick:soft": "19bf6c42",
+   "kick:strong": "f72e2e54",
+   "kick:trim": "b5b24214"
+  },
+  "acoustic-v28/deepseek-same-notes-new-voices.sprout": {
+   "kick:tidy": "30eddf2a",
+   "kick:natural": "50c6e3de",
+   "kick:soft": "4215515f",
+   "kick:strong": "68e88dd1",
+   "kick:trim": "ffeb68c2"
+  },
+  "acoustic-v28/guitar-alternate-takes.sprout": {
+   "pluck:tidy": "badc1f46",
+   "pluck:natural": "b5e9b659",
+   "pluck:soft": "fd53c40e",
+   "pluck:strong": "9c1c419a",
+   "pluck:trim": "271c06ea"
+  },
+  "acoustic-v28/held-strings-wind.sprout": {
+   "lead:tidy": "99ebfbc9",
+   "lead:natural": "28f10e66",
+   "lead:soft": "1ac1b66f",
+   "lead:strong": "fb849b00",
+   "lead:trim": "99ebfbc9"
+  },
+  "acoustic-v28/solo-clarinet.sprout": {
+   "lead:tidy": "4a24e8e8",
+   "lead:natural": "182267aa",
+   "lead:soft": "00902a83",
+   "lead:strong": "65056b0e",
+   "lead:trim": "91b410cb"
+  },
+  "acoustic-v28/solo-guitar.sprout": {
+   "pluck:tidy": "f7d3d79d",
+   "pluck:natural": "f0897983",
+   "pluck:soft": "7f2c90f1",
+   "pluck:strong": "f4bb0dae",
+   "pluck:trim": "68751746"
+  },
+  "acoustic-v28/solo-violin.sprout": {
+   "lead:tidy": "2e1ff5d6",
+   "lead:natural": "9a0cc686",
+   "lead:soft": "0a5925f6",
+   "lead:strong": "024ec62b",
+   "lead:trim": "89f303ba"
+  },
+  "candidate-a.sprout": {
+   "kick:tidy": "7d2ab8ce",
+   "kick:natural": "e27e1c90",
+   "kick:soft": "ea78b963",
+   "kick:strong": "c8f555e3",
+   "kick:trim": "f479f5b9"
+  },
+  "candidate-b.sprout": {
+   "kick:tidy": "b5da56f7",
+   "kick:natural": "cc78a401",
+   "kick:soft": "c7d9160e",
+   "kick:strong": "98e18a8e",
+   "kick:trim": "d89a05f6"
+  },
+  "candidate-c.sprout": {
+   "kick:tidy": "07ecff58",
+   "kick:natural": "42ebcf96",
+   "kick:soft": "1290f15d",
+   "kick:strong": "a5c43fdd",
+   "kick:trim": "ad7395dc"
+  },
+  "candidate-mock-service.sprout": {
+   "kick:tidy": "01ef94c7",
+   "kick:natural": "242fe345",
+   "kick:soft": "bc4dbab2",
+   "kick:strong": "87cd4732",
+   "kick:trim": "719dd6fa"
+  },
+  "clip-edit-demo.sprout": {
+   "kick:tidy": "0f8e70da",
+   "kick:natural": "62337174",
+   "kick:soft": "4ed81e4d",
+   "kick:strong": "754a4891",
+   "kick:trim": "a937d6ef"
+  },
+  "deepseek-batch-v27/ambient-sustain/composition.sprout": {
+   "hat:tidy": "5d6a4dfa",
+   "hat:natural": "3cd952f6",
+   "hat:soft": "cd7c5e8f",
+   "hat:strong": "883be328",
+   "hat:trim": "5cb75ad2"
+  },
+  "deepseek-batch-v27/drum-pocket/composition.sprout": {
+   "kick:tidy": "d5758aac",
+   "kick:natural": "aef7e961",
+   "kick:soft": "77468cc8",
+   "kick:strong": "1cb472de",
+   "kick:trim": "2f831945"
+  },
+  "deepseek-batch-v27/flute-clip/composition.sprout": {
+   "kick:tidy": "7ad96cfd",
+   "kick:natural": "ca465254",
+   "kick:soft": "39c7a175",
+   "kick:strong": "c7979c3c",
+   "kick:trim": "e3fc2065"
+  },
+  "deepseek-batch-v27/numeric-harmony/composition.sprout": {
+   "kick:tidy": "5c28c727",
+   "kick:natural": "9a993953",
+   "kick:soft": "bc3b3692",
+   "kick:strong": "20dc5b94",
+   "kick:trim": "152b8e5f"
+  },
+  "deepseek-batch-v27/scope-pressure/composition.sprout": {
+   "kick:tidy": "b301a28d",
+   "kick:natural": "37cb0c7e",
+   "kick:soft": "ec834ead",
+   "kick:strong": "5ed0f614",
+   "kick:trim": "fc46bff6"
+  },
+  "deepseek-batch-v27/section-with-patterns/composition.sprout": {
+   "kick:tidy": "84d2260f",
+   "kick:natural": "a4f676e6",
+   "kick:soft": "74fa295f",
+   "kick:strong": "2437a16a",
+   "kick:trim": "aeaedfef"
+  },
+  "deepseek-live/bridge/composition.sprout": {
+   "kick:tidy": "076c92cd",
+   "kick:natural": "e9fe32d9",
+   "kick:soft": "c55da95a",
+   "kick:strong": "4f0d9da1",
+   "kick:trim": "f25877a4"
+  },
+  "deepseek-live/bridge/input.sprout": {
+   "kick:tidy": "21253d77",
+   "kick:natural": "7df4ba63",
+   "kick:soft": "334c2eba",
+   "kick:strong": "7dd0bfbb",
+   "kick:trim": "5b1fa868"
+  },
+  "deepseek-live/composition.sprout": {
+   "kick:tidy": "a0525d3b",
+   "kick:natural": "0edd3c07",
+   "kick:soft": "5a60194d",
+   "kick:strong": "291bf249",
+   "kick:trim": "64ce1043"
+  },
+  "deepseek-live/descriptive/composition.sprout": {
+   "kick:tidy": "a0525d3b",
+   "kick:natural": "0edd3c07",
+   "kick:soft": "5a60194d",
+   "kick:strong": "291bf249",
+   "kick:trim": "64ce1043"
+  },
+  "deepseek-live/descriptive/input.sprout": {},
+  "deepseek-live/explicit/composition.sprout": {
+   "kick:tidy": "21253d77",
+   "kick:natural": "7df4ba63",
+   "kick:soft": "334c2eba",
+   "kick:strong": "7dd0bfbb",
+   "kick:trim": "5b1fa868"
+  },
+  "deepseek-live/explicit/input.sprout": {},
+  "deepseek-live/input.sprout": {},
+  "deepseek-live/reviewed/composition.sprout": {
+   "kick:tidy": "155922a3",
+   "kick:natural": "c1cee637",
+   "kick:soft": "422687de",
+   "kick:strong": "92bff8cf",
+   "kick:trim": "050deee4"
+  },
+  "deepseek-live/reviewed/input.sprout": {
+   "kick:tidy": "21253d77",
+   "kick:natural": "7df4ba63",
+   "kick:soft": "334c2eba",
+   "kick:strong": "7dd0bfbb",
+   "kick:trim": "5b1fa868"
+  },
+  "history-redone.sprout": {
+   "kick:tidy": "12469c35",
+   "kick:natural": "03e02edf",
+   "kick:soft": "cdd1a52e",
+   "kick:strong": "753de126",
+   "kick:trim": "5bb77d25"
+  },
+  "history-renamed.sprout": {
+   "kick:tidy": "256a8cc8",
+   "kick:natural": "7b85b152",
+   "kick:soft": "28d85769",
+   "kick:strong": "1bdf0055",
+   "kick:trim": "20bd591a"
+  },
+  "history-restored.sprout": {
+   "kick:tidy": "2da11e87",
+   "kick:natural": "78a2d05d",
+   "kick:soft": "9a498360",
+   "kick:strong": "937a5ee0",
+   "kick:trim": "d5a15a1b"
+  },
+  "library-blank.sprout": {},
+  "library-copy-muted.sprout": {
+   "kick:tidy": "fad936b1",
+   "kick:natural": "21cfdc63",
+   "kick:soft": "308a00da",
+   "kick:strong": "64dd4afe",
+   "kick:trim": "300ab4ab"
+  },
+  "library-house-restored.sprout": {
+   "kick:tidy": "77f6db92",
+   "kick:natural": "89fd71fe",
+   "kick:soft": "6d1d7112",
+   "kick:strong": "7117c933",
+   "kick:trim": "97d16830"
+  },
+  "library-house.sprout": {
+   "kick:tidy": "77f6db92",
+   "kick:natural": "89fd71fe",
+   "kick:soft": "6d1d7112",
+   "kick:strong": "7117c933",
+   "kick:trim": "97d16830"
+  },
+  "library-import.sprout": {
+   "kick:tidy": "066a6b06",
+   "kick:natural": "bd99c258",
+   "kick:soft": "d25fdedb",
+   "kick:strong": "6bec2d9f",
+   "kick:trim": "f429b210"
+  },
+  "library-lofi.sprout": {
+   "kick:tidy": "77f6dea4",
+   "kick:natural": "defdc9ca",
+   "kick:soft": "b5b3d9b5",
+   "kick:strong": "e9cbec21",
+   "kick:trim": "1e622508"
+  },
+  "library-restored-original.sprout": {
+   "kick:tidy": "2da11e87",
+   "kick:natural": "78a2d05d",
+   "kick:soft": "9a498360",
+   "kick:strong": "937a5ee0",
+   "kick:trim": "d5a15a1b"
+  },
+  "long-song-demo.sprout": {
+   "kick:tidy": "2da11e87",
+   "kick:natural": "78a2d05d",
+   "kick:soft": "9a498360",
+   "kick:strong": "937a5ee0",
+   "kick:trim": "d5a15a1b"
+  },
+  "note-chord-demo.sprout": {
+   "kick:tidy": "061e2a95",
+   "kick:natural": "b0b32e2b",
+   "kick:soft": "62678eaa",
+   "kick:strong": "ce3664f6",
+   "kick:trim": "069d2fa8"
+  },
+  "palette-demo.sprout": {
+   "kick:tidy": "2fca34a0",
+   "kick:natural": "d9f04781",
+   "kick:soft": "a3087ae5",
+   "kick:strong": "382616f8",
+   "kick:trim": "38cca882"
+  },
+  "pattern-managed-cross-track.sprout": {
+   "kick:tidy": "cf103074",
+   "kick:natural": "a998a612",
+   "kick:soft": "a4e5d045",
+   "kick:strong": "6edb02c5",
+   "kick:trim": "d7b41d20"
+  },
+  "pattern-series-baseline.sprout": {},
+  "pattern-series-demo.sprout": {
+   "kick:tidy": "b4900df8",
+   "kick:natural": "71fbe5b6",
+   "kick:soft": "8dfc56f9",
+   "kick:strong": "121edd11",
+   "kick:trim": "7049a234"
+  },
+  "pattern-series-detached.sprout": {
+   "kick:tidy": "7096124d",
+   "kick:natural": "7871e04b",
+   "kick:soft": "0247e2ee",
+   "kick:strong": "28b475c6",
+   "kick:trim": "3d2ec141"
+  },
+  "pattern-series-independent.sprout": {
+   "kick:tidy": "5403f993",
+   "kick:natural": "67c6fbe9",
+   "kick:soft": "189c17d2",
+   "kick:strong": "9c74088e",
+   "kick:trim": "cbb72067"
+  },
+  "pattern-series-managed.sprout": {
+   "kick:tidy": "260e9a33",
+   "kick:natural": "82ac3e69",
+   "kick:soft": "a22dc516",
+   "kick:strong": "87abb3fe",
+   "kick:trim": "acacf62f"
+  },
+  "pattern-series-muted.sprout": {
+   "kick:tidy": "7096124d",
+   "kick:natural": "7871e04b",
+   "kick:soft": "0247e2ee",
+   "kick:strong": "28b475c6",
+   "kick:trim": "3d2ec141"
+  },
+  "pattern-series-ten.sprout": {
+   "keys:tidy": "6b7d35f1",
+   "keys:natural": "7bb4fc58",
+   "keys:soft": "c0bf1197",
+   "keys:strong": "f4bfe99a",
+   "keys:trim": "6df4f663"
+  },
+  "performance-demo.sprout": {
+   "kick:tidy": "2bc70bae",
+   "kick:natural": "907abacb",
+   "kick:soft": "8b56965f",
+   "kick:strong": "37d36e36",
+   "kick:trim": "02d3af24"
+  },
+  "phrase-transform-clip-range.sprout": {
+   "kick:tidy": "22731b8c",
+   "kick:natural": "3347463a",
+   "kick:soft": "b623e633",
+   "kick:strong": "8bc933b3",
+   "kick:trim": "2c139968"
+  },
+  "phrase-transform-demo.sprout": {
+   "kick:tidy": "1591e189",
+   "kick:natural": "a1ee2067",
+   "kick:soft": "6ae2201e",
+   "kick:strong": "fd6fd39e",
+   "kick:trim": "1e7e8e55"
+  },
+  "phrase-transform-drums.sprout": {
+   "kick:tidy": "483079f9",
+   "kick:natural": "161a07f8",
+   "kick:soft": "2ea0c88c",
+   "kick:strong": "c46ec000",
+   "kick:trim": "9342f712"
+  },
+  "phrase-transform-expanded.sprout": {
+   "kick:tidy": "c2bf1ae4",
+   "kick:natural": "61641666",
+   "kick:soft": "f108437b",
+   "kick:strong": "229d0e17",
+   "kick:trim": "0fd0682e"
+  },
+  "portable-arranged-demo.sprout": {
+   "kick:tidy": "4082c827",
+   "kick:natural": "5770aef3",
+   "kick:soft": "2d50a76b",
+   "kick:strong": "76a95a67",
+   "kick:trim": "3906299a"
+  },
+  "portable-copy-demo.sprout": {
+   "kick:tidy": "2e2a2f1c",
+   "kick:natural": "9dadf982",
+   "kick:soft": "a0b341f9",
+   "kick:strong": "c380e379",
+   "kick:trim": "a7f10268"
+  },
+  "portable-import-demo.sprout": {
+   "kick:tidy": "6745fced",
+   "kick:natural": "34c6ca17",
+   "kick:soft": "6eab7fb2",
+   "kick:strong": "8cba7332",
+   "kick:trim": "e8c7da69"
+  },
+  "portable-source-project.sprout": {
+   "kick:tidy": "6745fced",
+   "kick:natural": "34c6ca17",
+   "kick:soft": "6eab7fb2",
+   "kick:strong": "8cba7332",
+   "kick:trim": "e8c7da69"
+  },
+  "portable-target-library.sprout": {},
+  "portable-target-start.sprout": {},
+  "real-instruments-demo.sprout": {
+   "kick:tidy": "5890af15",
+   "kick:natural": "bd00d907",
+   "kick:soft": "bbb83f6c",
+   "kick:strong": "d2da43b8",
+   "kick:trim": "5efadcdf"
+  },
+  "real-instruments-restored.sprout": {
+   "kick:tidy": "5890af15",
+   "kick:natural": "bd00d907",
+   "kick:soft": "bbb83f6c",
+   "kick:strong": "d2da43b8",
+   "kick:trim": "5efadcdf"
+  },
+  "real-instruments-sustain-input.sprout": {
+   "kick:tidy": "6c61ba66",
+   "kick:natural": "3431c4d2",
+   "kick:soft": "a09a54c4",
+   "kick:strong": "3ed3fd1c",
+   "kick:trim": "b1b6d4d7"
+  },
+  "real-instruments-sustain-render.sprout": {
+   "kick:tidy": "6c61ba66",
+   "kick:natural": "3431c4d2",
+   "kick:soft": "a09a54c4",
+   "kick:strong": "3ed3fd1c",
+   "kick:trim": "b1b6d4d7"
+  },
+  "repeat-loop-demo.sprout": {
+   "kick:tidy": "2508a44c",
+   "kick:natural": "9b130e3b",
+   "kick:soft": "21a6be37",
+   "kick:strong": "932ce688",
+   "kick:trim": "4f0f8c86"
+  },
+  "sampled-instruments-demo.sprout": {
+   "kick:tidy": "116069d6",
+   "kick:natural": "bf362944",
+   "kick:soft": "cfff133b",
+   "kick:strong": "545dee4f",
+   "kick:trim": "43fc675c"
+  },
+  "sampled-instruments-original.sprout": {
+   "kick:tidy": "2da11e87",
+   "kick:natural": "78a2d05d",
+   "kick:soft": "9a498360",
+   "kick:strong": "937a5ee0",
+   "kick:trim": "d5a15a1b"
+  },
+  "sampled-instruments-restored.sprout": {
+   "kick:tidy": "116069d6",
+   "kick:natural": "bf362944",
+   "kick:soft": "cfff133b",
+   "kick:strong": "545dee4f",
+   "kick:trim": "43fc675c"
+  },
+  "section-fill-gap.sprout": {
+   "kick:tidy": "35527e8b",
+   "kick:natural": "0c7520a9",
+   "kick:soft": "a53c07ac",
+   "kick:strong": "48ca7a2c",
+   "kick:trim": "42f718e7"
+  },
+  "section-fill-mobile-snare.sprout": {
+   "kick:tidy": "ad9464be",
+   "kick:natural": "a6ef030c",
+   "kick:soft": "a63f335f",
+   "kick:strong": "a3c953df",
+   "kick:trim": "bb94e5c2"
+  },
+  "section-fill-original.sprout": {
+   "kick:tidy": "2da11e87",
+   "kick:natural": "78a2d05d",
+   "kick:soft": "9a498360",
+   "kick:strong": "937a5ee0",
+   "kick:trim": "d5a15a1b"
+  },
+  "section-fill-restored.sprout": {
+   "kick:tidy": "2da11e87",
+   "kick:natural": "78a2d05d",
+   "kick:soft": "9a498360",
+   "kick:strong": "937a5ee0",
+   "kick:trim": "d5a15a1b"
+  },
+  "section-fill-rise.sprout": {
+   "kick:tidy": "539100e2",
+   "kick:natural": "57b94b58",
+   "kick:soft": "d4ec129f",
+   "kick:strong": "54d84f1f",
+   "kick:trim": "b8c9fccc"
+  },
+  "service-demo-baseline.sprout": {
+   "kick:tidy": "a1d6645d",
+   "kick:natural": "6382aaff",
+   "kick:soft": "c4a99576",
+   "kick:strong": "67d892f6",
+   "kick:trim": "d16b7381"
+  },
+  "service-demo.sprout": {
+   "kick:tidy": "7671f98e",
+   "kick:natural": "bdc728f4",
+   "kick:soft": "58fcb5f1",
+   "kick:strong": "e27bf971",
+   "kick:trim": "f1c763d2"
+  },
+  "shared-pattern-demo.sprout": {
+   "kick:tidy": "0701b09b",
+   "kick:natural": "78f9d612",
+   "kick:soft": "ae29a0e6",
+   "kick:strong": "c9747323",
+   "kick:trim": "c23d971d"
+  },
+  "shared-transform-demo.sprout": {
+   "kick:tidy": "0e8f2875",
+   "kick:natural": "37ca14c3",
+   "kick:soft": "a943994a",
+   "kick:strong": "afabc6ca",
+   "kick:trim": "b8b11e61"
+  },
+  "shared-transform-eight-before.sprout": {
+   "kick:tidy": "61e2810c",
+   "kick:natural": "f4d97aee",
+   "kick:soft": "7e7e4899",
+   "kick:strong": "12019d19",
+   "kick:trim": "b27697a8"
+  },
+  "shared-transform-eight.sprout": {
+   "kick:tidy": "059c43b8",
+   "kick:natural": "fe3f2b5a",
+   "kick:soft": "3564fa9d",
+   "kick:strong": "5e9a1d1d",
+   "kick:trim": "874e57dc"
+  },
+  "shared-transform-extended.sprout": {
+   "kick:tidy": "1690dfbd",
+   "kick:natural": "c69acf0f",
+   "kick:soft": "bad73b30",
+   "kick:strong": "68ffa06c",
+   "kick:trim": "93002a97"
+  },
+  "shared-transform-extension-before.sprout": {
+   "kick:tidy": "750989fe",
+   "kick:natural": "de197060",
+   "kick:soft": "1eae9df1",
+   "kick:strong": "b9d7eb71",
+   "kick:trim": "60cc8852"
+  },
+  "shared-transform-mobile.sprout": {
+   "kick:tidy": "b2fa07f5",
+   "kick:natural": "52277ce3",
+   "kick:soft": "90d67a72",
+   "kick:strong": "90719ff2",
+   "kick:trim": "893f5ef9"
+  },
+  "shared-transform-original.sprout": {
+   "kick:tidy": "2da11e87",
+   "kick:natural": "78a2d05d",
+   "kick:soft": "9a498360",
+   "kick:strong": "937a5ee0",
+   "kick:trim": "d5a15a1b"
+  },
+  "shared-transform-region.sprout": {
+   "kick:tidy": "8bfa1321",
+   "kick:natural": "2acc24a3",
+   "kick:soft": "2542ab84",
+   "kick:strong": "7be33a04",
+   "kick:trim": "33804c3d"
+  },
+  "shared-transform-restored.sprout": {
+   "kick:tidy": "2da11e87",
+   "kick:natural": "78a2d05d",
+   "kick:soft": "9a498360",
+   "kick:strong": "937a5ee0",
+   "kick:trim": "d5a15a1b"
+  },
+  "song-sections-demo.sprout": {
+   "kick:tidy": "de6e223f",
+   "kick:natural": "8164a469",
+   "kick:soft": "b1238fc0",
+   "kick:strong": "36d3aaac",
+   "kick:trim": "501ed80c"
+  },
+  "song-sections-start.sprout": {
+   "kick:tidy": "5cb6cc8a",
+   "kick:natural": "8a0177c8",
+   "kick:soft": "2ae7f9b7",
+   "kick:strong": "f60723db",
+   "kick:trim": "00d92395"
+  },
+  "sound-collection-house.sprout": {
+   "kick:tidy": "37dc9eb1",
+   "kick:natural": "b9b77285",
+   "kick:soft": "b6a6e331",
+   "kick:strong": "7e05f1aa",
+   "kick:trim": "0d55835f"
+  },
+  "sound-collection-original.sprout": {
+   "kick:tidy": "bf508e2b",
+   "kick:natural": "246dcafd",
+   "kick:soft": "c973ffe8",
+   "kick:strong": "1a26db68",
+   "kick:trim": "3c12e5e7"
+  },
+  "sound-collection-pad.sprout": {
+   "kick:tidy": "ad5e60d8",
+   "kick:natural": "4927184a",
+   "kick:soft": "e4a7cfdd",
+   "kick:strong": "f29f145d",
+   "kick:trim": "c938978c"
+  },
+  "sound-collection-restored.sprout": {
+   "kick:tidy": "2da11e87",
+   "kick:natural": "78a2d05d",
+   "kick:soft": "9a498360",
+   "kick:strong": "937a5ee0",
+   "kick:trim": "d5a15a1b"
+  },
+  "sound-design-demo.sprout": {
+   "kick:tidy": "242ac015",
+   "kick:natural": "00f28600",
+   "kick:soft": "8b4526fc",
+   "kick:strong": "f543455d",
+   "kick:trim": "8ec03043"
+  },
+  "sound-library-v29/acoustic-choir-sketch.sprout": {
+   "keys:tidy": "d15f12d6",
+   "keys:natural": "bbae0952",
+   "keys:soft": "d42820ac",
+   "keys:strong": "469989fb",
+   "keys:trim": "8901c39b"
+  },
+  "sound-library-v29/edm-sketch.sprout": {
+   "kick:tidy": "fcc0b17d",
+   "kick:natural": "8d9e0ba2",
+   "kick:soft": "a6c34cb9",
+   "kick:strong": "08379401",
+   "kick:trim": "b583f10a"
+  },
+  "ui-simplified.sprout": {
+   "kick:tidy": "2da11e87",
+   "kick:natural": "78a2d05d",
+   "kick:soft": "9a498360",
+   "kick:strong": "937a5ee0",
+   "kick:trim": "d5a15a1b"
+  }
+ }
+}
