@@ -1,3 +1,8 @@
+> **2026-11-11 起本仓库进入原生阶段**:Web/Electron 版已在本次提交退役(`dist/`、Node 服务与 JS 测试已移除,历史在 git tag/早期提交中)。
+> 当前应用是 **macOS 原生版**:`native/`(SwiftUI + AVAudioEngine),构建与打包见 `tools/package-app.sh`,迁移全程与设计见 `NATIVE-MIGRATION.md`。
+> 采样许可文件移至 `shared/sample-licenses/`;`.sprout` 格式契约由 `shared/canonical/` 基准与 `native` 测试锁定。
+> 以下内容为 Web 版历史文档,保留作语义参考。
+
 # Sprout Studio — desktop and local web studio
 
 Beginner-friendly music studio with 179 playable presets, MIDI/WAV export and an optional DeepSeek composition assistant.
