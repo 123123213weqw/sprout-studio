@@ -27,6 +27,7 @@ final class PlayerModel: ObservableObject {
     @Published var soundInspectorTrackId: String?
     @Published var showPatterns = false
     @Published var showAssistant = false
+    @Published var showLoopRange = false
 
     @Published var candidate: CandidateProject?
     private var projectBeforeAudition: JSONObject?
@@ -487,6 +488,64 @@ final class PlayerModel: ObservableObject {
                 }
             }
         }
+    }
+
+
+    @Published var metronomeEnabled: Bool = false {
+        didSet { engine.metronomeEnabled = metronomeEnabled }
+    }
+
+    func exportStems() {
+        guard let p = project else { return }
+        let panel = NSOpenPanel()
+        panel.canChooseDirectories = true
+        panel.canChooseFiles = false
+        panel.message = "选择分轨 WAV 的保存目录(每轨一个文件)"
+        panel.begin { [weak self] response in
+            guard response == .OK, let dir = panel.url, let self = self else { return }
+            self.busy = true
+            let tracks = self.tracks
+            let base = self.projectName
+            DispatchQueue.global(qos: .userInitiated).async {
+                for track in tracks {
+                    guard let trackId = track["id"]?.asString,
+                          let instrument = track["instrument"]?.asString else { continue }
+                    do {
+                        let (wav, stats) = try renderWAV(p, options: RenderOptions(
+                            trackIds: [trackId], samplesRoot: self.samplesRoot
+                        ))
+                        guard stats.nonSilent else { continue }
+                        let safe = instrument.replacingOccurrences(of: "/", with: "-")
+                        let url = dir.appendingPathComponent("\(base)-\(safe).wav")
+                        try? Data(wav).write(to: url)
+                    } catch {
+                        DispatchQueue.main.async { self.error = "分轨导出失败:\(error)" }
+                    }
+                }
+                DispatchQueue.main.async { self.busy = false }
+            }
+        }
+    }
+
+    /// 循环区(练习范围):工程数据 loopRange,引擎播放循环已支持。
+    func setLoopRange(start: Double, end: Double) {
+        guard var p = project else { return }
+        var range = JSONObject()
+        range["start"] = .number(max(0, start))
+        range["end"] = .number(end)
+        p["loopRange"] = .object(range)
+        applyEdit("设置循环区") { _ in p }
+    }
+
+    func clearLoopRange() {
+        guard var p = project else { return }
+        p["loopRange"] = nil
+        applyEdit("清除循环区") { _ in p }
+    }
+
+    var loopRange: (start: Double, end: Double)? {
+        guard let range = project?["loopRange"]?.asObject else { return nil }
+        return (jnum(range, "start"), jnum(range, "end"))
     }
 
     func exportMIDI() {
@@ -964,6 +1023,12 @@ struct ContentView: View {
                 Button("导出 WAV") { model.exportWAV() }.disabled(model.project == nil)
                 Button("导出 MIDI") { model.exportMIDI() }.DisabledStyle(disabled: model.project == nil)
                 Button("导出工程") { model.exportProjectFile() }.DisabledStyle(disabled: model.project == nil)
+                Button("分轨导出") { model.exportStems() }.DisabledStyle(disabled: model.project == nil)
+                Button { model.metronomeEnabled.toggle() } label: {
+                    Image(systemName: model.metronomeEnabled ? "metronome" : "metronome.circle")
+                }
+                .help("节拍器")
+                Button("循环区…") { model.showLoopRange = true }.DisabledStyle(disabled: model.project == nil)
             }
             .padding(12)
 
@@ -1045,6 +1110,9 @@ struct ContentView: View {
         }
         .sheet(isPresented: $model.showAssistant) {
             AssistantView(model: model)
+        }
+        .sheet(isPresented: $model.showLoopRange) {
+            LoopRangeView(model: model)
         }
         .sheet(item: Binding(
             get: { model.soundInspectorTrackId.map { TrackBox(id: $0) } },
