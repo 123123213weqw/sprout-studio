@@ -23,17 +23,19 @@ struct TimelineView: View {
         let trackId = track["id"]?.asString ?? ""
         let color = Color(nsColor: NSColor(hex: track["color"]?.asString ?? "#888888") ?? .gray)
         return ZStack(alignment: .leading) {
-            Rectangle().fill(Color(nsColor: .controlBackgroundColor)).frame(height: 17)
+            Rectangle().fill(Color(nsColor: .controlBackgroundColor)).frame(height: 26)
             ForEach(Array(jarrPublic(track["clips"]).enumerated()), id: \.offset) { _, cv in
                 if let clip = cv.asObject {
                     clipBlock(clip, trackId: trackId, color: color, muted: clip["muted"]?.asBool == true, linked: clip.has("patternId"))
                 }
             }
         }
-        .frame(height: 17)
+        .frame(height: 26)
         .overlay(alignment: .leading) {
             Text(track["name"]?.asString ?? "")
-                .font(.system(size: 8))
+                .font(.system(size: 11, weight: .medium))
+                .foregroundColor(.white)
+                .shadow(color: .black.opacity(0.6), radius: 1.5)
                 .padding(.horizontal, 3)
                 .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 2))
                 .offset(x: 2, y: 0)
@@ -100,8 +102,8 @@ struct TimelineView: View {
                     }
                 }
         }
-        .frame(width: max(4, CGFloat(length) * pxPerBeat - 1), height: 15)
-        .offset(x: CGFloat(start) * pxPerBeat + 0.5, y: 1)
+        .frame(width: max(6, CGFloat(length) * pxPerBeat - 2), height: 22)
+        .offset(x: CGFloat(start) * pxPerBeat + 1, y: 2)
         .contentShape(Rectangle())
         .onTapGesture { model.selectedClipId = clipId }
         .contextMenu {

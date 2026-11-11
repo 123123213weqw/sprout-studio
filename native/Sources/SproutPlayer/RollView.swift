@@ -28,7 +28,7 @@ private func snap(_ beat: Double) -> Double {
 
 struct RollView: View {
     @ObservedObject var model: PlayerModel
-    var pxPerBeat: CGFloat = 26
+    var pxPerBeat: CGFloat = 34
     @State private var anchorBeat: Double = -1
 
     // 编辑状态
@@ -54,7 +54,7 @@ struct RollView: View {
         return (lo - pad, hi + pad)
     }
 
-    private var tonalHeight: CGFloat { 300 }
+    private var tonalHeight: CGFloat { 380 }
     private var drumLanes: [String] {
         var order: [String] = []
         for event in drumEvents where !order.contains(event.instrument) {
@@ -62,7 +62,7 @@ struct RollView: View {
         }
         return order.isEmpty ? ["kick", "snare", "hat"] : order
     }
-    private var drumHeight: CGFloat { CGFloat(drumLanes.count) * 22 }
+    private var drumHeight: CGFloat { CGFloat(drumLanes.count) * 30 }
 
     var body: some View {
         let contentWidth = CGFloat(model.totalBeats) * pxPerBeat
@@ -127,7 +127,7 @@ struct RollView: View {
     private func lanePitch(at point: CGPoint) -> (instrument: String, pitch: Double)? {
         let y = point.y - tonalHeight
         guard y >= 0, !drumLanes.isEmpty else { return nil }
-        let index = min(drumLanes.count - 1, max(0, Int(y / 22)))
+        let index = min(drumLanes.count - 1, max(0, Int(y / 30)))
         let instrument = drumLanes[index]
         let pitch = ["kick": 36.0, "snare": 38.0, "hat": 42.0][instrument] ?? 36.0
         return (instrument, pitch)
@@ -256,7 +256,7 @@ struct RollView: View {
                 path.addLine(to: CGPoint(x: x, y: size.height))
                 context.stroke(path, with: .color(.gray.opacity(bar % 4 == 0 ? 0.35 : 0.18)), lineWidth: 1)
                 if bar % 4 == 0 {
-                    context.draw(Text("\(bar)").font(.system(size: 9)).foregroundColor(.secondary), at: CGPoint(x: x + 10, y: 8))
+                    context.draw(Text("\(bar)").font(.system(size: 13, weight: .medium)).foregroundColor(.primary), at: CGPoint(x: x + 12, y: 10))
                 }
             }
             let rowH = size.height / CGFloat(span)
@@ -299,7 +299,7 @@ struct RollView: View {
             }
             for (i, lane) in lanes.enumerated() {
                 let y0 = CGFloat(i) * laneH
-                context.draw(Text(lane.uppercased()).font(.system(size: 8)).foregroundColor(.secondary),
+                context.draw(Text(lane.uppercased()).font(.system(size: 10)).foregroundColor(.secondary),
                              at: CGPoint(x: 22, y: y0 + laneH / 2))
             }
             for event in drumEvents {

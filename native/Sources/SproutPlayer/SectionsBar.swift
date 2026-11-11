@@ -19,18 +19,18 @@ struct SectionsBar: View {
     var body: some View {
         let sections = jarrPublic(model.project?["sections"]).compactMap { $0.asObject }
         return ZStack(alignment: .leading) {
-            Rectangle().fill(Color(nsColor: .controlBackgroundColor)).frame(height: 20)
+            Rectangle().fill(Color(nsColor: .controlBackgroundColor)).frame(height: 30)
             ForEach(0..<sections.count, id: \.self) { index in
                 block(sections[index])
             }
             if sections.isEmpty {
                 Text("没有段落 · 用右侧「段落」菜单生成骨架")
-                    .font(.system(size: 8)).foregroundStyle(.tertiary)
+                    .font(.system(size: 11)).foregroundStyle(.tertiary)
                     .padding(.leading, 4)
                     .allowsHitTesting(false)
             }
         }
-        .frame(height: 20)
+        .frame(height: 30)
         .overlay(alignment: .trailing) {
             Menu {
                 Button("骨架:主歌/副歌") { model.applySectionOp("套用主歌/副歌骨架") { p in try sectionTemplate(p, template: "verse-chorus") } }
@@ -38,7 +38,7 @@ struct SectionsBar: View {
                 Divider()
                 Button("新建段落(0 起,4 小节)…") { addSectionDialog() }
             } label: {
-                Text("段落").font(.system(size: 9)).padding(.horizontal, 5)
+                Text("段落").font(.system(size: 11)).padding(.horizontal, 5)
                     .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 3))
             }
             .menuStyle(.borderlessButton)
@@ -60,13 +60,13 @@ struct SectionsBar: View {
         let width: CGFloat = max(24, CGFloat(length) * pxPerBeat - 2)
         let fill = kindColors[kind]?.opacity(selected ? 0.55 : 0.35)
         return Text("\(section["name"]?.asString ?? "")")
-            .font(.system(size: 9, weight: selected ? .semibold : .regular))
+            .font(.system(size: 12, weight: selected ? .semibold : .regular))
             .lineLimit(1)
             .padding(.horizontal, 4)
             .frame(width: width, height: 16, alignment: .center)
             .background(fill ?? Color.accentColor.opacity(0.35), in: RoundedRectangle(cornerRadius: 3))
             .overlay(RoundedRectangle(cornerRadius: 3).strokeBorder(borderColor(selected), lineWidth: selected ? 1.2 : 0.5))
-            .offset(x: CGFloat(start) * pxPerBeat + 1, y: 2)
+            .offset(x: CGFloat(start) * pxPerBeat + 1, y: 3)
             .help("\(section["name"]?.asString ?? "") · \(Int(length / 4)) 小节")
             .onTapGesture { selectedSectionId = id }
             .contextMenu {

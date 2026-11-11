@@ -1064,9 +1064,9 @@ struct TrackRow: View {
         let noteCount = track["notes"]?.asArray?.count ?? 0
         return HStack(spacing: 10) {
             Circle().fill(color).frame(width: 10, height: 10)
-            VStack(alignment: .leading, spacing: 1) {
-                Text(track["name"]?.asString ?? instrument).font(.body.weight(.medium))
-                Text("\(instrument) · \(noteCount) 音符").font(.caption).foregroundStyle(.secondary)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(track["name"]?.asString ?? instrument).font(.system(.body, design: .default, weight: .semibold))
+                Text("\(instrument) · \(noteCount) 音符").font(.subheadline).foregroundStyle(.secondary)
             }
             Spacer()
             Button("独奏") { model.updateTrack(id: id, key: "solo", value: .bool(!model.trackFlag(track, "solo"))) }
@@ -1133,27 +1133,32 @@ struct ContentView: View {
                     .font(.caption)
                     .foregroundStyle(.secondary)
                 Spacer()
-                Button { model.showLibrary = true } label: { Label("工程库", systemImage: "music.note.list") }
-                Button { model.showPatterns = true } label: { Label("Pattern 库", systemImage: "square.stack.3d.up") }
-                    .disabled(model.project == nil)
-                Button { model.showAssistant = true } label: { Label("助手", systemImage: "sparkles") }
-                    .disabled(model.project == nil)
-                Button { model.checkpointCurrent(label: "我的保存点") } label: { Label("存版本", systemImage: "bookmark") }
-                    .disabled(model.vaultEntry == nil)
-                Button { model.undo() } label: { Label("撤销", systemImage: "arrow.uturn.backward") }
-                    .disabled(!model.canUndoRedo.0)
-                Button { model.redo() } label: { Label("重做", systemImage: "arrow.uturn.forward") }
-                    .disabled(!model.canUndoRedo.1)
-                if model.busy { ProgressView().scaleEffect(0.6) }
-                Button("导出 WAV") { model.exportWAV() }.disabled(model.project == nil)
-                Button("导出 MIDI") { model.exportMIDI() }.DisabledStyle(disabled: model.project == nil)
-                Button("导出工程") { model.exportProjectFile() }.DisabledStyle(disabled: model.project == nil)
-                Button("分轨导出") { model.exportStems() }.DisabledStyle(disabled: model.project == nil)
+                Button { model.showLibrary = true } label: { Image(systemName: "music.note.list") }
+                    .help("工程库").disabled(model.project == nil)
+                Button { model.showPatterns = true } label: { Image(systemName: "square.stack.3d.up") }
+                    .help("Pattern 库").disabled(model.project == nil)
+                Button { model.showAssistant = true } label: { Image(systemName: "sparkles") }
+                    .help("助手(离线灵感 / DeepSeek)").disabled(model.project == nil)
+                Button { model.checkpointCurrent(label: "我的保存点") } label: { Image(systemName: "bookmark") }
+                    .help("存版本").disabled(model.vaultEntry == nil)
+                Button { model.undo() } label: { Image(systemName: "arrow.uturn.backward") }
+                    .help("撤销").disabled(!model.canUndoRedo.0)
+                Button { model.redo() } label: { Image(systemName: "arrow.uturn.forward") }
+                    .help("重做").disabled(!model.canUndoRedo.1)
                 Button { model.metronomeEnabled.toggle() } label: {
                     Image(systemName: model.metronomeEnabled ? "metronome" : "metronome.circle")
                 }
                 .help("节拍器")
-                Button("循环区…") { model.showLoopRange = true }.DisabledStyle(disabled: model.project == nil)
+                if model.busy { ProgressView().scaleEffect(0.7) }
+                Menu("导出") {
+                    Button("WAV 音频…") { model.exportWAV() }
+                    Button("MIDI…") { model.exportMIDI() }
+                    Button("工程文件 (.sprout)…") { model.exportProjectFile() }
+                    Divider()
+                    Button("分轨 WAV(每轨一文件)…") { model.exportStems() }
+                }
+                .disabled(model.project == nil)
+                Button("循环区") { model.showLoopRange = true }.DisabledStyle(disabled: model.project == nil)
             }
             .padding(12)
 
@@ -1214,19 +1219,19 @@ struct ContentView: View {
                 }
             } else {
                 Spacer()
-                VStack(spacing: 8) {
-                    Image(systemName: "music.note.house").font(.system(size: 42)).foregroundStyle(.secondary)
-                    Text("打开一个 .sprout 工程开始播放").foregroundStyle(.secondary)
+                VStack(spacing: 14) {
+                    Image(systemName: "music.note.house").font(.system(size: 64)).foregroundStyle(.secondary)
+                    Text("打开一个 .sprout 工程开始播放").font(.title3).foregroundStyle(.secondary)
                     if model.samplesRoot == nil {
                         Text("未找到采样目录:含采样音源的工程将回退为合成音色。可从菜单选择采样目录。")
-                            .font(.caption).foregroundStyle(.orange)
+                            .font(.callout).foregroundStyle(.orange)
                             .frame(maxWidth: 420)
                     }
                 }
                 Spacer()
             }
         }
-        .frame(minWidth: 1020, minHeight: 560)
+        .frame(minWidth: 1060, minHeight: 620)
         .sheet(isPresented: $model.showLibrary) {
             LibraryView(model: model)
         }
@@ -1307,10 +1312,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             model.open(url: URL(fileURLWithPath: arguments[1]))
         }
         let content = NSHostingView(rootView: ContentView(model: model))
-        let window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 720, height: 460),
-                              styleMask: [.titled, .closable, .miniaturizable, .resizable],
+        let window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 1280, height: 800),
+                              styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
                               backing: .buffered, defer: false)
         window.title = "Sprout Player"
+        window.minSize = NSSize(width: 1080, height: 640)
+        window.titlebarAppearsTransparent = true
         window.contentView = content
         window.center()
         window.makeKeyAndOrderFront(nil)
