@@ -18,6 +18,7 @@ echo "== 组装 $APP"
 rm -rf "$STAGE" "$APP"
 mkdir -p "$STAGE/$APP/Contents/MacOS" "$STAGE/$APP/Contents/Resources"
 cp native/.build/release/SproutPlayer "$STAGE/$APP/Contents/MacOS/SproutPlayer"
+cp native/Sources/SproutPlayerResources/AppIcon.icns "$STAGE/$APP/Contents/Resources/AppIcon.icns"
 cat > "$STAGE/$APP/Contents/Info.plist" <<'PLIST'
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -30,6 +31,7 @@ cat > "$STAGE/$APP/Contents/Info.plist" <<'PLIST'
     <key>CFBundleShortVersionString</key><string>1.0</string>
     <key>CFBundlePackageType</key><string>APPL</string>
     <key>CFBundleExecutable</key><string>SproutPlayer</string>
+    <key>CFBundleIconFile</key><string>AppIcon</string>
     <key>LSMinimumSystemVersion</key><string>13.0</string>
     <key>NSHighResolutionCapable</key><true/>
     <key>NSMicrophoneUsageDescription</key><string>Sprout Player 不使用麦克风。</string>
