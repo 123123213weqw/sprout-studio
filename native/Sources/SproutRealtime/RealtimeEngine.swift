@@ -27,6 +27,9 @@ public final class RealtimeEngine {
     private let monoFormat = AVAudioFormat(standardFormatWithSampleRate: renderSampleRate, channels: 1)!
     private var previewPlayer: AVAudioPlayerNode?
     private var previewBus: AVAudioMixerNode?
+    private var metroPlayer: AVAudioPlayerNode?
+    private var metroBus: AVAudioMixerNode?
+    public var metronomeEnabled = false
     private let stereoFormat = AVAudioFormat(standardFormatWithSampleRate: renderSampleRate, channels: 2)!
 
     public init() {}
@@ -152,6 +155,29 @@ public final class RealtimeEngine {
             players[e.trackIndex].scheduleBuffer(buffer, at: at, options: [], completionHandler: nil)
         }
         let hostStartTime = AVAudioTime(hostTime: hostStart)
+        if metronomeEnabled, metroPlayer == nil {
+            let player = AVAudioPlayerNode()
+            let bus = AVAudioMixerNode()
+            bus.volume = 0.9
+            engine.attach(player)
+            engine.attach(bus)
+            engine.connect(player, to: bus, format: monoFormat)
+            engine.connect(bus, to: engine.mainMixerNode, format: monoFormat)
+            metroPlayer = player
+            metroBus = bus
+        }
+        if metronomeEnabled, let metro = metroPlayer {
+            metro.stop()
+            for m in plan.metronome {
+                let click = metronomeClick(accent: m.accent)
+                guard let buffer = pcmBuffer(click) else { continue }
+                let offset = AVAudioTime.hostTime(forSeconds: (m.beat - from) * spb)
+                metro.scheduleBuffer(buffer, at: AVAudioTime(hostTime: hostStart &+ offset), options: [], completionHandler: nil)
+            }
+            metro.play(at: hostStartTime)
+        } else {
+            metroPlayer?.stop()
+        }
         for player in players { player.play(at: hostStartTime) }
         playing = true
         playStartUptime = ProcessInfo.processInfo.systemUptime + leadSeconds
@@ -205,6 +231,16 @@ public final class RealtimeEngine {
                 self.pausedBeat = start
                 try? self.play(from: start)
             }
+        }
+    }
+
+    /// 节拍器咔哒:重音高八度,约 30ms。
+    private func metronomeClick(accent: Bool) -> [Double] {
+        let freq = accent ? 1568.0 : 1046.5
+        let count = Int(0.03 * renderSampleRate)
+        return (0..<count).map { i in
+            let t = Double(i) / renderSampleRate
+            return sin(2 * Double.pi * freq * t) * 0.35 * (1 - t / 0.03)
         }
     }
 
