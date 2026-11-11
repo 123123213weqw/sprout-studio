@@ -36,9 +36,7 @@ jobs:
     continue-on-error: true
     steps:
       - uses: actions/checkout@v4
-      - uses: swift-actions/setup-swift@v2
-        with:
-          swift-version: "6.0"
+      # macOS 直接用 runner 预装 Xcode 的 Swift(装独立工具链会与 SDK 版本不匹配)
       - run: swift test --package-path native
       - name: 打包 SproutPlayer.app 与 DMG
         run: ./tools/package-app.sh
