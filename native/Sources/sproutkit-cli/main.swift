@@ -28,6 +28,23 @@ func run() -> Int32 {
             return 1
         }
     }
+    if args[1] == "phrase" {
+        do {
+            let project = try validateProject(try loadSprout(text: String(contentsOf: URL(fileURLWithPath: args[2]), encoding: .utf8)))
+            let tracks = (project["tracks"]?.asArray ?? []).compactMap { $0.asObject }
+            guard let track = tracks.first(where: { $0["instrument"]?.asString == args[3] }),
+                  let clip = (track["clips"]?.asArray ?? []).first?.asObject,
+                  let trackId = track["id"]?.asString, let clipId = clip["id"]?.asString else { return 2 }
+            var controls = JSONObject()
+            controls["ratio"] = .number(0.5)
+            let result = try planPhraseTransform(project, trackId: trackId, clipId: clipId, controls: controls)
+            print(jsCompactStringify(stripIdsForDump(.object(result.project))))
+            return 0
+        } catch {
+            FileHandle.standardError.write("\(error)\n".data(using: .utf8)!)
+            return 1
+        }
+    }
     if args[1] == "fill" {
         do {
             let project = try validateProject(try loadSprout(text: String(contentsOf: URL(fileURLWithPath: args[2]), encoding: .utf8)))

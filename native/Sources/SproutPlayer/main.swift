@@ -647,6 +647,13 @@ final class PlayerModel: ObservableObject {
     // MARK: - 音块与 Pattern 操作(全部经 applyEdit,可撤销)
 
     @Published var selectedClipId: String?
+    var selectedClipTrackId: String? {
+        guard let clipId = selectedClipId else { return nil }
+        for t in tracks where jarrPublic(t["clips"]).contains(where: { $0.asObject?["id"]?.asString == clipId }) {
+            return t["id"]?.asString
+        }
+        return nil
+    }
 
     func applySectionOp(_ label: String, _ op: (JSONObject) throws -> JSONObject) {
         applyEdit(label) { p in

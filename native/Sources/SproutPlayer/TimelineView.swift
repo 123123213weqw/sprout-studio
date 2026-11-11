@@ -41,6 +41,45 @@ struct TimelineView: View {
         }
     }
 
+    private func transformDialog(_ clip: JSONObject) {
+        let alert = NSAlert()
+        alert.messageText = "乐句变换(整块应用,可撤销)"
+        let grid = NSStackView(frame: NSRect(x: 0, y: 0, width: 300, height: 120))
+        grid.orientation = .vertical
+        grid.spacing = 6
+        let ratio = NSPopUpButton(frame: NSRect(x: 0, y: 0, width: 120, height: 24))
+        ratio.addItems(withTitles: ["原速", "减半", "加倍"])
+        let transpose = NSPopUpButton(frame: NSRect(x: 0, y: 0, width: 120, height: 24))
+        transpose.addItems(withTitles: ["不移调", "+12 半音", "-12 半音", "+7(吸附 A 小调)", "-5(吸附 A 小调)"])
+        let timing = NSPopUpButton(frame: NSRect(x: 0, y: 0, width: 120, height: 24))
+        timing.addItems(withTitles: ["微偏移跟随", "保持", "清除"])
+        let reverse = NSButton(checkboxWithTitle: "倒序", target: nil, action: nil)
+        let extend = NSButton(checkboxWithTitle: "超出工程时空白延长", target: nil, action: nil)
+        for row in [[ratio, transpose], [timing, reverse], [extend]] {
+            let h = NSStackView(views: row)
+            h.orientation = .horizontal
+            h.distribution = .fillEqually
+            grid.addArrangedSubview(h)
+        }
+        alert.accessoryView = grid
+        alert.addButton(withTitle: "变换")
+        alert.addButton(withTitle: "取消")
+        guard alert.runModal() == .alertFirstButtonReturn else { return }
+        var controls = JSONObject()
+        controls["ratio"] = .number([1, 0.5, 2][ratio.indexOfSelectedItem])
+        let tp = transpose.indexOfSelectedItem
+        controls["transpose"] = .number([0, 12, -12, 7, -5][tp])
+        if tp >= 3 { controls["scale"] = .string("A minor") }
+        controls["timing"] = .string(["follow", "keep", "clear"][timing.indexOfSelectedItem])
+        controls["reverse"] = .bool(reverse.state == .on)
+        controls["extend"] = .bool(extend.state == .on)
+        let trackId = model.selectedClipTrackId ?? ""
+        let clipId = clip["id"]?.asString ?? ""
+        model.clipOp("乐句变换") { p in
+            try planPhraseTransform(p, trackId: trackId, clipId: clipId, controls: controls).project
+        }
+    }
+
     private func clipBlock(_ clip: JSONObject, trackId: String, color: Color, muted: Bool, linked: Bool) -> some View {
         let clipId = clip["id"]?.asString ?? ""
         let start = jnum(clip, "start")
@@ -72,6 +111,7 @@ struct TimelineView: View {
             Button("缩短 1 拍") { model.clipOp("缩短音块") { p in try resizeClip(p, trackId: trackId, clipId: clipId, to: max(0.25, length - 1)) } }
             Button("从中间分割") { model.clipOp("分割音块") { p in try splitClip(p, trackId: trackId, clipId: clipId, at: start + min(2, length / 2)).project } }
             Button(muted ? "取消静音" : "静音音块") { model.clipOp("音块静音") { p in try updateClip(p, trackId: trackId, clipId: clipId, start: start, length: length, muted: !muted) } }
+            Button("乐句变换…") { transformDialog(clip) }
             Divider()
             Button("存为共享 Pattern") { model.captureSelectedClipAsPattern(name: clip["name"]?.asString ?? "乐句") }
             if linked {
