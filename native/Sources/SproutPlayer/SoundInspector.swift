@@ -150,6 +150,7 @@ struct SoundInspector: View {
             HStack {
                 Text("音色 · \(track["name"]?.asString ?? instrument)").font(.title3.bold())
                 Spacer()
+                Button("收藏此音色") { model.saveSoundFavorite(trackId: trackId) }
                 Button("换音源…") { showBrowser = true }
                 Button("关闭") { dismiss() }
             }
@@ -188,6 +189,24 @@ struct SoundInspector: View {
                     } else {
                         Text("这条轨道使用默认合成参数;换音源后可调采样,或在下方试听当前音色。")
                             .font(.caption).foregroundStyle(.secondary)
+                    }
+                    if !model.soundFavorites.isEmpty {
+                        Text("收藏(\(model.soundFavorites.count)/32,跨工程)").font(.headline)
+                        ForEach(0..<model.soundFavorites.count, id: \.self) { index in
+                            let fav = model.soundFavorites[index]
+                            HStack {
+                                Circle().fill(Color(nsColor: .systemBlue)).frame(width: 8, height: 8)
+                                Text(fav["name"]?.asString ?? "").font(.body)
+                                Text(fav["instrument"]?.asString ?? "").font(.caption).foregroundStyle(.secondary)
+                                Spacer()
+                                Button("应用") { model.applySoundFavorite(fav, toTrack: trackId) }
+                                    .buttonStyle(.bordered)
+                                Button {
+                                    model.soundFavorites.remove(at: index)
+                                } label: { Image(systemName: "trash") }
+                                    .buttonStyle(.borderless)
+                            }
+                        }
                     }
                     Button {
                         try? model.engine.previewNote(

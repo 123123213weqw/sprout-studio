@@ -62,6 +62,15 @@ struct PatternLibraryView: View {
                         model.placePatternAtEnd(patternId: patternId, trackId: track["id"]?.asString ?? "")
                     }
                 }
+                Divider()
+                Text("连放多份(空白延长)").font(.caption2)
+                ForEach([2, 4, 8], id: \.self) { count in
+                    ForEach(Array(model.tracks.enumerated()), id: \.offset) { _, track in
+                        Button("\(count) 份 · \(track["name"]?.asString ?? "")") {
+                            model.placePatternSeries(patternId: patternId, trackId: track["id"]?.asString ?? "", count: count)
+                        }
+                    }
+                }
             }
             .fixedSize()
             Button("改名") {
