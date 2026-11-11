@@ -1,0 +1,556 @@
+{
+ "version": 1,
+ "arrange": {
+  "acoustic-v28/acoustic-trio.sprout": {},
+  "acoustic-v28/deepseek-natural-performance.sprout": {},
+  "acoustic-v28/deepseek-same-notes-new-voices.sprout": {},
+  "acoustic-v28/guitar-alternate-takes.sprout": {},
+  "acoustic-v28/held-strings-wind.sprout": {},
+  "acoustic-v28/solo-clarinet.sprout": {},
+  "acoustic-v28/solo-guitar.sprout": {},
+  "acoustic-v28/solo-violin.sprout": {},
+  "candidate-a.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "c57684a9",
+   "bass:inst-mute": "e4098a5c",
+   "bass:inst-unmute": "7d2ab8ce",
+   "bass:inst-detach": "7d2ab8ce",
+   "bass:inst-delete": "a3407754",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "candidate-b.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "9d2ea2ec",
+   "bass:inst-mute": "083fbd5d",
+   "bass:inst-unmute": "b5da56f7",
+   "bass:inst-detach": "b5da56f7",
+   "bass:inst-delete": "ae2b05c9",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "candidate-c.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "4f8a28bf",
+   "bass:inst-mute": "159292de",
+   "bass:inst-unmute": "07ecff58",
+   "bass:inst-detach": "07ecff58",
+   "bass:inst-delete": "b4411c92",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "candidate-mock-service.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "10e7d084",
+   "bass:inst-mute": "e591861d",
+   "bass:inst-unmute": "01ef94c7",
+   "bass:inst-detach": "01ef94c7",
+   "bass:inst-delete": "4990b13b",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "clip-edit-demo.sprout": {},
+  "deepseek-batch-v27/ambient-sustain/composition.sprout": {},
+  "deepseek-batch-v27/drum-pocket/composition.sprout": {},
+  "deepseek-batch-v27/flute-clip/composition.sprout": {},
+  "deepseek-batch-v27/numeric-harmony/composition.sprout": {},
+  "deepseek-batch-v27/scope-pressure/composition.sprout": {},
+  "deepseek-batch-v27/section-with-patterns/composition.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "4ca8931c",
+   "bass:inst-mute": "c991722f",
+   "bass:inst-unmute": "84d2260f",
+   "bass:inst-detach": "84d2260f",
+   "bass:inst-delete": "2f2ca641"
+  },
+  "deepseek-live/bridge/composition.sprout": {},
+  "deepseek-live/bridge/input.sprout": {},
+  "deepseek-live/composition.sprout": {},
+  "deepseek-live/descriptive/composition.sprout": {},
+  "deepseek-live/descriptive/input.sprout": {},
+  "deepseek-live/explicit/composition.sprout": {},
+  "deepseek-live/explicit/input.sprout": {},
+  "deepseek-live/input.sprout": {},
+  "deepseek-live/reviewed/composition.sprout": {},
+  "deepseek-live/reviewed/input.sprout": {},
+  "history-redone.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "76492fac",
+   "bass:inst-mute": "844005d7",
+   "bass:inst-unmute": "12469c35",
+   "bass:inst-detach": "12469c35",
+   "bass:inst-delete": "81ed39a1",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "history-renamed.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "640db8ed",
+   "bass:inst-mute": "9384e842",
+   "bass:inst-unmute": "256a8cc8",
+   "bass:inst-detach": "256a8cc8",
+   "bass:inst-delete": "81db545c",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "history-restored.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "7ab373ca",
+   "bass:inst-mute": "79226ee1",
+   "bass:inst-unmute": "2da11e87",
+   "bass:inst-detach": "2da11e87",
+   "bass:inst-delete": "3ccb357b",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "library-blank.sprout": {},
+  "library-copy-muted.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "40be845e",
+   "bass:inst-mute": "c8a86c06",
+   "bass:inst-unmute": "e8d9453c",
+   "bass:inst-detach": "fad936b1",
+   "bass:inst-delete": "236cccf0",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "library-house-restored.sprout": {},
+  "library-house.sprout": {},
+  "library-import.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "8d7d5e47",
+   "bass:inst-mute": "8c427eeb",
+   "bass:inst-unmute": "066a6b06",
+   "bass:inst-detach": "066a6b06",
+   "bass:inst-delete": "4124fbee",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "library-lofi.sprout": {},
+  "library-restored-original.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "7ab373ca",
+   "bass:inst-mute": "79226ee1",
+   "bass:inst-unmute": "2da11e87",
+   "bass:inst-detach": "2da11e87",
+   "bass:inst-delete": "3ccb357b",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "long-song-demo.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "7ab373ca",
+   "bass:inst-mute": "79226ee1",
+   "bass:inst-unmute": "2da11e87",
+   "bass:inst-detach": "2da11e87",
+   "bass:inst-delete": "3ccb357b",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "note-chord-demo.sprout": {},
+  "palette-demo.sprout": {},
+  "pattern-managed-cross-track.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "79e42e8f",
+   "bass:inst-mute": "79226ee1",
+   "bass:inst-unmute": "2da11e87",
+   "bass:inst-detach": "cf103074",
+   "bass:inst-delete": "3ccb357b",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "pattern-series-baseline.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "8db09a18"
+  },
+  "pattern-series-demo.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "6c689c0f",
+   "bass:inst-mute": "692d6541",
+   "bass:inst-unmute": "b4900df8",
+   "bass:inst-detach": "b4900df8",
+   "bass:inst-delete": "9c174698"
+  },
+  "pattern-series-detached.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "e14ba0fc",
+   "bass:inst-mute": "587facd0",
+   "bass:inst-unmute": "b4900df8",
+   "bass:inst-detach": "7096124d",
+   "bass:inst-delete": "95c2030d"
+  },
+  "pattern-series-independent.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "8f379b72",
+   "bass:inst-mute": "6bfdfa9a",
+   "bass:inst-unmute": "9e1e67fa",
+   "bass:inst-detach": "5403f993",
+   "bass:inst-delete": "a01b1875"
+  },
+  "pattern-series-managed.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "a9c9504c",
+   "bass:inst-mute": "9680f178",
+   "bass:inst-unmute": "d582f390",
+   "bass:inst-detach": "260e9a33",
+   "bass:inst-delete": "1b2164f3"
+  },
+  "pattern-series-muted.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "e14ba0fc",
+   "bass:inst-mute": "692d6541",
+   "bass:inst-unmute": "b4900df8",
+   "bass:inst-detach": "7096124d",
+   "bass:inst-delete": "9c174698"
+  },
+  "pattern-series-ten.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "f144b544",
+   "bass:inst-mute": "ff7d7c1f",
+   "bass:inst-unmute": "6b7d35f1",
+   "bass:inst-detach": "6b7d35f1",
+   "bass:inst-delete": "3a1edcc6"
+  },
+  "performance-demo.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "79bbcef4",
+   "bass:inst-mute": "5a107f71",
+   "bass:inst-unmute": "e352de64",
+   "bass:inst-detach": "e352de64",
+   "bass:inst-delete": "c49f53ec",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "phrase-transform-clip-range.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "4a5a73fd",
+   "bass:inst-mute": "7225e653",
+   "bass:inst-unmute": "22731b8c",
+   "bass:inst-detach": "22731b8c",
+   "bass:inst-delete": "5ee40574",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "phrase-transform-demo.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "cd8946b0",
+   "bass:inst-mute": "a51df6be",
+   "bass:inst-unmute": "1591e189",
+   "bass:inst-detach": "1591e189",
+   "bass:inst-delete": "b0c85321",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "phrase-transform-drums.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "1a9e8c7e",
+   "bass:inst-mute": "cc64bd05",
+   "bass:inst-unmute": "b8e94efb",
+   "bass:inst-detach": "b8e94efb",
+   "bass:inst-delete": "9fbcef2f",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "phrase-transform-expanded.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "error:超过 64 小节工程上限",
+   "bass:inst-mute": "aa3bf3ee",
+   "bass:inst-unmute": "c2bf1ae4",
+   "bass:inst-detach": "c2bf1ae4",
+   "bass:inst-delete": "3ee82614",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "portable-arranged-demo.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "cd7cbf5c",
+   "bass:inst-mute": "488ba562",
+   "bass:inst-unmute": "4082c827",
+   "bass:inst-detach": "4082c827",
+   "bass:inst-delete": "89ca443a"
+  },
+  "portable-copy-demo.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "2aa8b403",
+   "bass:inst-mute": "6492455e",
+   "bass:inst-unmute": "2e2a2f1c",
+   "bass:inst-detach": "2e2a2f1c",
+   "bass:inst-delete": "c1732f88",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "portable-import-demo.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "aa64cd60",
+   "bass:inst-mute": "80c61a33",
+   "bass:inst-unmute": "6745fced",
+   "bass:inst-detach": "6745fced",
+   "bass:inst-delete": "3f90a209",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "portable-source-project.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "aa64cd60",
+   "bass:inst-mute": "80c61a33",
+   "bass:inst-unmute": "6745fced",
+   "bass:inst-detach": "6745fced",
+   "bass:inst-delete": "3f90a209",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "portable-target-library.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "61878b30"
+  },
+  "portable-target-start.sprout": {},
+  "real-instruments-demo.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "2b75fc1c",
+   "bass:inst-mute": "0244c127",
+   "bass:inst-unmute": "5890af15",
+   "bass:inst-detach": "5890af15",
+   "bass:inst-delete": "914971f9",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "real-instruments-restored.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "2b75fc1c",
+   "bass:inst-mute": "0244c127",
+   "bass:inst-unmute": "5890af15",
+   "bass:inst-detach": "5890af15",
+   "bass:inst-delete": "914971f9",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "real-instruments-sustain-input.sprout": {},
+  "real-instruments-sustain-render.sprout": {},
+  "repeat-loop-demo.sprout": {},
+  "sampled-instruments-demo.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "ea66e70b",
+   "bass:inst-mute": "10f6f658",
+   "bass:inst-unmute": "116069d6",
+   "bass:inst-detach": "116069d6",
+   "bass:inst-delete": "3e02a346",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "sampled-instruments-original.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "7ab373ca",
+   "bass:inst-mute": "79226ee1",
+   "bass:inst-unmute": "2da11e87",
+   "bass:inst-detach": "2da11e87",
+   "bass:inst-delete": "3ccb357b",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "sampled-instruments-restored.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "ea66e70b",
+   "bass:inst-mute": "10f6f658",
+   "bass:inst-unmute": "116069d6",
+   "bass:inst-detach": "116069d6",
+   "bass:inst-delete": "3e02a346",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "section-fill-gap.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "c4cbf8ce",
+   "bass:inst-mute": "00c67395",
+   "bass:inst-unmute": "35527e8b",
+   "bass:inst-detach": "35527e8b",
+   "bass:inst-delete": "42fb8a3f",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "section-fill-mobile-snare.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "3cdd1bb1",
+   "bass:inst-mute": "6aea45b0",
+   "bass:inst-unmute": "ad9464be",
+   "bass:inst-detach": "ad9464be",
+   "bass:inst-delete": "7e2f7322",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "section-fill-original.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "7ab373ca",
+   "bass:inst-mute": "79226ee1",
+   "bass:inst-unmute": "2da11e87",
+   "bass:inst-detach": "2da11e87",
+   "bass:inst-delete": "3ccb357b",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "section-fill-restored.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "7ab373ca",
+   "bass:inst-mute": "79226ee1",
+   "bass:inst-unmute": "2da11e87",
+   "bass:inst-detach": "2da11e87",
+   "bass:inst-delete": "3ccb357b",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "section-fill-rise.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "cf524ac1",
+   "bass:inst-mute": "3d58bd64",
+   "bass:inst-unmute": "539100e2",
+   "bass:inst-detach": "539100e2",
+   "bass:inst-delete": "64686076",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "service-demo-baseline.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "3e3ef41c",
+   "bass:inst-mute": "7df84123",
+   "bass:inst-unmute": "a1d6645d",
+   "bass:inst-detach": "a1d6645d",
+   "bass:inst-delete": "1c315e61",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "service-demo.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "c5258233",
+   "bass:inst-mute": "5db3db64",
+   "bass:inst-unmute": "7671f98e",
+   "bass:inst-detach": "7671f98e",
+   "bass:inst-delete": "b012dcc4",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "shared-pattern-demo.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "70035105",
+   "bass:inst-mute": "0946402b",
+   "bass:inst-unmute": "1b6a7a5d",
+   "bass:inst-detach": "1b6a7a5d",
+   "bass:inst-delete": "1818bd2a"
+  },
+  "shared-transform-demo.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "faf80166",
+   "bass:inst-mute": "00aab47f",
+   "bass:inst-unmute": "0e8f2875",
+   "bass:inst-detach": "0e8f2875",
+   "bass:inst-delete": "92227f4d",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "shared-transform-eight-before.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "f38a10c7",
+   "bass:inst-mute": "6b4676f6",
+   "bass:inst-unmute": "61e2810c",
+   "bass:inst-detach": "61e2810c",
+   "bass:inst-delete": "3ccb357b",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "shared-transform-eight.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "9426ee91",
+   "bass:inst-mute": "5f6d5daa",
+   "bass:inst-unmute": "059c43b8",
+   "bass:inst-detach": "059c43b8",
+   "bass:inst-delete": "4d85ee0b",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "shared-transform-extended.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "error:超过 64 小节工程上限",
+   "bass:inst-mute": "e5da1fef",
+   "bass:inst-unmute": "1690dfbd",
+   "bass:inst-detach": "1690dfbd",
+   "bass:inst-delete": "960e8df7",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "shared-transform-extension-before.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "35fab19f",
+   "bass:inst-mute": "169052c4",
+   "bass:inst-unmute": "750989fe",
+   "bass:inst-detach": "750989fe",
+   "bass:inst-delete": "ca4173f2",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "shared-transform-mobile.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "4e0d99ec",
+   "bass:inst-mute": "772ff2ff",
+   "bass:inst-unmute": "b2fa07f5",
+   "bass:inst-detach": "b2fa07f5",
+   "bass:inst-delete": "e4c2a28d",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "shared-transform-original.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "7ab373ca",
+   "bass:inst-mute": "79226ee1",
+   "bass:inst-unmute": "2da11e87",
+   "bass:inst-detach": "2da11e87",
+   "bass:inst-delete": "3ccb357b",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "shared-transform-region.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "f760f470",
+   "bass:inst-mute": "4d9ac91f",
+   "bass:inst-unmute": "8bfa1321",
+   "bass:inst-detach": "8bfa1321",
+   "bass:inst-delete": "7c253119",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "shared-transform-restored.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "7ab373ca",
+   "bass:inst-mute": "79226ee1",
+   "bass:inst-unmute": "2da11e87",
+   "bass:inst-detach": "2da11e87",
+   "bass:inst-delete": "3ccb357b",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "song-sections-demo.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "0a8cf1be",
+   "bass:inst-mute": "28eb5c5d",
+   "bass:inst-unmute": "de6e223f",
+   "bass:inst-detach": "de6e223f",
+   "bass:inst-delete": "dda5aedf",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "song-sections-start.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "658c833d",
+   "bass:inst-mute": "975b2138",
+   "bass:inst-unmute": "5cb6cc8a",
+   "bass:inst-detach": "5cb6cc8a",
+   "bass:inst-delete": "75264f84",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "sound-collection-house.sprout": {
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "sound-collection-original.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "feaa0366",
+   "bass:inst-mute": "cd281c2d",
+   "bass:inst-unmute": "bf508e2b",
+   "bass:inst-detach": "bf508e2b",
+   "bass:inst-delete": "c009fd7f",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "sound-collection-pad.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "84c423b3",
+   "bass:inst-mute": "490e1a2e",
+   "bass:inst-unmute": "ad5e60d8",
+   "bass:inst-detach": "ad5e60d8",
+   "bass:inst-delete": "6182336c",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "sound-collection-restored.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "7ab373ca",
+   "bass:inst-mute": "79226ee1",
+   "bass:inst-unmute": "2da11e87",
+   "bass:inst-detach": "2da11e87",
+   "bass:inst-delete": "3ccb357b",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "sound-design-demo.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "31d55273",
+   "bass:inst-mute": "9d821765",
+   "bass:inst-unmute": "f2f7f783",
+   "bass:inst-detach": "f2f7f783",
+   "bass:inst-delete": "a9542a88",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  },
+  "sound-library-v29/acoustic-choir-sketch.sprout": {},
+  "sound-library-v29/edm-sketch.sprout": {},
+  "ui-simplified.sprout": {
+   "bass:series2": "error:第 1 份的第 1 小节已有音块，整组没有放置",
+   "bass:series4-unlinked": "7ab373ca",
+   "bass:inst-mute": "79226ee1",
+   "bass:inst-unmute": "2da11e87",
+   "bass:inst-detach": "2da11e87",
+   "bass:inst-delete": "3ccb357b",
+   "sounds-roundtrip": "error:音色文件须为不超过 256 KiB 的文本"
+  }
+ }
+}

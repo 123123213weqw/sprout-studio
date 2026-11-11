@@ -782,6 +782,112 @@ final class PlayerModel: ObservableObject {
         }
     }
 
+    // MARK: - Pattern 批量放置与实例批量
+
+    func placePatternSeries(patternId: String, trackId: String, count: Int) {
+        guard let p = project else { return }
+        do {
+            let result = try planPatternSeries(p, patternId: patternId, trackId: trackId,
+                                               start: jnum(p, "bars", 4) * 4, count: count,
+                                               linked: true, extend: true)
+            adopt(serializeProject(result.project))
+            if result.extended { totalBeats = jnum(result.project, "bars", 4) * 4 }
+            scheduleAutosave()
+        } catch {
+            self.error = "\(error)"
+        }
+    }
+
+    /// 时间线上已选共享块的批量操作
+    func patternInstanceAction(_ action: String) {
+        guard let clipId = selectedClipId, let p = project else { return }
+        // 找到该块关联的 patternId
+        var linkedPatternId: String?
+        for t in tracks {
+            for c in jarrPublic(t["clips"]).compactMap({ $0.asObject }) where c["id"]?.asString == clipId {
+                linkedPatternId = c["patternId"]?.asString
+            }
+        }
+        guard let patternId = linkedPatternId else { error = "请选择一个共享音块"; return }
+        do {
+            let next = try planPatternInstances(p, patternId: patternId, clipIds: [clipId], action: action)
+            adopt(serializeProject(next))
+            scheduleAutosave()
+        } catch {
+            self.error = "\(error)"
+        }
+    }
+
+    // MARK: - 音色收藏(跨工程 UserDefaults 存储)
+
+    @Published var soundFavorites: [JSONObject] = [] {
+        didSet { persistSoundFavorites() }
+    }
+
+    private func persistSoundFavorites() {
+        let text = jsStringify(.array(soundFavorites.map { .object($0) }))
+        UserDefaults.standard.set(text, forKey: "sprout-sound-favorites")
+    }
+
+    func loadSoundFavorites() {
+        guard let text = UserDefaults.standard.string(forKey: "sprout-sound-favorites"),
+              let value = try? parseJSON(text) else { return }
+        soundFavorites = jarrPublic(value).compactMap { $0.asObject }
+    }
+
+    func saveSoundFavorite(trackId: String) {
+        guard let t = tracks.first(where: { $0["id"]?.asString == trackId }) else { return }
+        var entry = JSONObject()
+        entry["id"] = .string(jsUid())
+        entry["name"] = t["name"] ?? .string("音色")
+        entry["instrument"] = t["instrument"]!
+        entry["sound"] = t["sound"] ?? .null
+        entry["createdAt"] = .number(Date().timeIntervalSince1970)
+        entry["archived"] = .bool(false)
+        guard soundFavorites.count < 32 else { error = "音色收藏最多 32 条"; return }
+        soundFavorites.append(entry)
+    }
+
+    func applySoundFavorite(_ entry: JSONObject, toTrack trackId: String) {
+        guard let t = tracks.first(where: { $0["id"]?.asString == trackId }),
+              let instrument = t["instrument"]?.asString else { return }
+        do {
+            if let sound = try collectionForTrack(entry, target: instrument) {
+                mutateTrackPublic(trackId, "应用收藏音色") { track in
+                    var next = track
+                    next["sound"] = .object(sound)
+                    return next
+                }
+            } else {
+                mutateTrackPublic(trackId, "清除音色(用原始)") { track in
+                    var next = track
+                    next["sound"] = nil
+                    return next
+                }
+            }
+        } catch {
+            self.error = "\(error)"
+        }
+    }
+
+    /// 给 Player 公开的轨道级修改入口。
+    func mutateTrackPublic(_ trackId: String, _ label: String, _ mutate: @escaping (JSONObject) -> JSONObject) {
+        applyEdit(label) { p in
+            var next = p
+            var list: [JSONValue] = []
+            for element in jarrPublic(next["tracks"]) {
+                if var obj = element.asObject, obj["id"]?.asString == trackId {
+                    obj = mutate(obj)
+                    list.append(.object(obj))
+                } else {
+                    list.append(element)
+                }
+            }
+            next["tracks"] = .array(list)
+            return next
+        }
+    }
+
     func renamePattern(patternId: String, name: String) {
         guard let p = project else { return }
         do {
@@ -1146,6 +1252,7 @@ struct ContentView: View {
         .onAppear {
             model.startDisplay()
             model.openLastIfNeeded()
+            model.loadSoundFavorites()
         }
     }
 }
