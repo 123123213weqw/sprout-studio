@@ -28,6 +28,26 @@ func run() -> Int32 {
             return 1
         }
     }
+    if args[1] == "perf" {
+        do {
+            let project = try validateProject(try loadSprout(text: String(contentsOf: URL(fileURLWithPath: args[2]), encoding: .utf8)))
+            let tracks = (project["tracks"]?.asArray ?? []).compactMap { $0.asObject }
+            guard let track = tracks.first(where: { ($0["notes"]?.asArray?.count ?? 0) > 0 }) else { return 2 }
+            let trackId = track["id"]?.asString ?? ""
+            var controls = JSONObject()
+            for (k, v) in performanceDefaults { controls[k] = v }
+            controls["overlap"] = .string("trim")
+            controls["timing"] = .string("natural")
+            let result = try planPerformance(project, trackId: trackId, scope: "track", ids: [], controls: controls)
+            FileHandle.standardError.write("timing=\(result.report.timing) changed=\(result.report.changed)\n".data(using: .utf8)!)
+            guard let applied = result.project else { return 3 }
+            print(jsCompactStringify(stripIdsForDump(.object(applied))))
+            return 0
+        } catch {
+            FileHandle.standardError.write("\(error)\n".data(using: .utf8)!)
+            return 1
+        }
+    }
     if args[1] == "phrase" {
         do {
             let project = try validateProject(try loadSprout(text: String(contentsOf: URL(fileURLWithPath: args[2]), encoding: .utf8)))
